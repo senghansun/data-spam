@@ -1,0 +1,83 @@
+﻿Delivered-To: nichoadiswara29@gmail.com
+Received: by 10.37.65.212 with SMTP id o203csp521594yba;
+        Fri, 19 May 2017 20:51:51 -0700 (PDT)
+X-Received: by 10.98.59.148 with SMTP id w20mr13707449pfj.137.1495252311433;
+        Fri, 19 May 2017 20:51:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495252311; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EdlIljVNd0+wRUdKcZjIfd1cXa/QgLJSDRNxuRtTq2J7UTDRRPzKE20uztalIjCcJV
+         p8SvQ15XFEYWratObaqXTMQpVblAjf8c32zPZkVObUfyGQVGV4INFwN115oznX9hnhYI
+         JUxh1Y+EoaaiNINosGGkvT2/Diso26fSZ0LD4aQ0TbNfVOm5f/Qp+Txdm9ruoeYsCHOq
+         yGBY1fmOdbV7d4A+sbsCHmThNxQfggb9zcnWli5FkzFZO2J+l8G5zfnvspo7mi6Wy9QT
+         gv5fi+aCOR35i4K6IB+z+ipNk/MWAYQ60vr4nuo/L2iSqu8H2YtRDQDFWLwZeDG59P3M
+         GJjw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-length:mime-version:subject:references:in-reply-to
+         :message-id:to:reply-to:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=gZ4KKbKN2EWf6FaHV6400VXhNS9E1baxb+T+3UhbPtA=;
+        b=Koa90loiRmXENZpQ/DdDfEdv8ghODzUhFqxWxMEFsQviyQGNreS93AORM0s7wFMT/8
+         94cC49sGGHW/Gk4YiXXKnLxhvstZfe1MFcQRludSI28rx2gGqiAzO5RODssD67ke+F9N
+         83aKCsq7d0A64u0q0VYZpF2dP5tNuA/aLOymfwCwam0kAp8lJr0sLnTzQO1Q9go5XW0A
+         ZCFlC17e2utWt3yCJhflQbzAnw2f/Omz8Eqp1UqRKHoEM4+lZI1ORha9me2qSlU5PMbP
+         Rkw4BXOmZtM0mPymhJg/73rvjrHm1bkH3l9X/BoliODh928a/ljV0j7/mwzQsYjEDNCt
+         zQXg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com;
+       spf=pass (google.com: domain of antoniwahyu17@yahoo.com designates 106.10.241.44 as permitted sender) smtp.mailfrom=antoniwahyu17@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <antoniwahyu17@yahoo.com>
+Received: from sonic307-27.consmr.mail.sg3.yahoo.com (sonic307-27.consmr.mail.sg3.yahoo.com. [106.10.241.44])
+        by mx.google.com with ESMTPS id l71si8572628pfi.412.2017.05.19.20.51.44
+        for <nichoadiswara29@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 19 May 2017 20:51:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of antoniwahyu17@yahoo.com designates 106.10.241.44 as permitted sender) client-ip=106.10.241.44;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com;
+       spf=pass (google.com: domain of antoniwahyu17@yahoo.com designates 106.10.241.44 as permitted sender) smtp.mailfrom=antoniwahyu17@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1495252303; bh=gZ4KKbKN2EWf6FaHV6400VXhNS9E1baxb+T+3UhbPtA=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=EuVgutpnrWsWxndf7m9u/cpU4d3Fe2BdRal09pz59+/6aADvo18DDXw22rKFb0oqA52GW35b/e6YpXxbBdb5lThd8BTWe9Eb8PxaObvLHIKliYhVWLdBUylyv7EMd1KT2NTUNUB/t+/Tm5F645W68w3y0Xs8oCbHGvoQl1DgZ9bNE6oA8c/u+OR8hcG8TQA+7OoNvBM3/6uZx6IPyuI9kxV+DCiCe1bX3GMFq3fbkpzLfS6zN5lDt467UqdWXfvrU9GR7EuyIARgtHvGvHzZdSAAng445zSLMN3gTJ2nmdpz+IzVaNVAUeC+GQRSyrWHmLdl9gTNkV1zi9lamyFBPw==
+X-YMail-OSG: J3x357IVM1mrQ9jbyeyY3ToW6d62ByPJyYFu9z1PtSXIow4660SL0V0pzRFu6Um 1Xk5OoLUoYXmT1dZSuXsKdnjbGhxbUaTcfGPBC722emzgvnx8lPFiFIKhgf2OADIvSkZb5MIlN4v bJky6dSOB1YJMJOYYEwGAQ8hH0nbygwpJooWIHgWAgKAU9mouxgYZE_cvsjKWPriEQW55NhzYhIE XCK0wvC5xlWGHURHVW1lKlTKGw1n9wt0QrYDxkVkIVFv3s0iOBM9G0DPWzRY0XwhEhKHp.7vtIlY IZXpPwIswP1kmagSFsGUfXO8aa.fRr1uedgNeiws3.eorWsSVpX6EvmibDPO_IGKxIVr3ySym070 ue6ClWPzvbKD_24kTvejW_3a67fxZCJmDd090XOBStpsgnAuY6GOaKtdumTw1ipQ7LNI_FO2rdER RKl1hrclkUxXvKSOTt_N3ZEbT_VbJNqMeKf8xu6kKcEyugJXQMMa3zAbC596Dbukf79Oo47uzevO 9DXWJ0bClJKrsQDafVaobOlLR5GnAuPN.t_r3zgxIy19X6KA-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic307.consmr.mail.sg3.yahoo.com with HTTP; Sat, 20 May 2017 03:51:43 +0000
+Date: Sat, 20 May 2017 03:51:42 +0000 (UTC)
+From: Antoni Wahyu <antoniwahyu17@yahoo.com>
+Reply-To: Antoni Wahyu <antoniwahyu17@yahoo.com>
+To: Nicho As <nichoadiswara29@gmail.com>
+Message-ID: <970185168.2125573.1495252302367@mail.yahoo.com>
+In-Reply-To: <400aa043-f5ca-479d-984f-d283ba202ac1@email.android.com>
+References: <400aa043-f5ca-479d-984f-d283ba202ac1@email.android.com>
+Subject: Trs: Foto babeh4
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_2125572_2111461091.1495252302367"
+X-Mailer: WebService/1.1.9679 YahooMailNeo Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 Firefox/52.0
+Content-Length: 1230734
+
+------=_Part_2125572_2111461091.1495252302367
+Content-Type: multipart/alternative; boundary="----=_Part_2125571_1989748769.1495252302366"
+
+------=_Part_2125571_1989748769.1495252302366
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+  
+ Untuk buat buku panduan 1000 hari almarhum Bpk.FX Saridal
+
+
+   
+------=_Part_2125571_1989748769.1495252302366
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div style="color:#000; background-color:#fff; font-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-size:13px"><div id="yui_3_16_0_ym19_1_1495251961029_2908"><span></span></div><div class="qtdSeparateBR" id="yui_3_16_0_ym19_1_1495251961029_2914"><br><br></div>  <div class="yahoo_quoted" id="yui_3_16_0_ym19_1_1495251961029_2781" style="display: block;"> <div style="font-family: Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 13px;" id="yui_3_16_0_ym19_1_1495251961029_2780"><br> Untuk buat buku panduan 1000 hari almarhum Bpk.FX Saridal<br><div style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;" id="yui_3_16_0_ym19_1_1495251961029_2779"><div class="y_msg_container" id="yui_3_16_0_ym19_1_1495251961029_2794"><div id="yiv8499583772"><div></div></div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_2125571_1989748769.1495252302366--
+------=_Part_2125572_2111461091.1495252302367
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="20170519_163341.jpg"
+Content-ID: <1791dfd2-d33b-d46d-c7b4-e4bd7858ae5e@yahoo.com>
+
+
+------=_Part_2125572_2111461091.1495252302367--

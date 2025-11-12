@@ -1,0 +1,361 @@
+Delivered-To: jordyjonathan6@gmail.com
+Received: by 10.25.159.206 with SMTP id i197csp330021lfe;
+        Thu, 2 Mar 2017 07:51:46 -0800 (PST)
+X-Received: by 10.223.128.202 with SMTP id 68mr14257331wrl.92.1488469906160;
+        Thu, 02 Mar 2017 07:51:46 -0800 (PST)
+Return-Path: <fajar.perdhana@umn.ac.id>
+Received: from mail-wm0-x22e.google.com (mail-wm0-x22e.google.com. [2a00:1450:400c:c09::22e])
+        by mx.google.com with ESMTPS id h28si26374858wmi.75.2017.03.02.07.51.45
+        for <jordyjonathan6@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 02 Mar 2017 07:51:46 -0800 (PST)
+Received-SPF: neutral (google.com: 2a00:1450:400c:c09::22e is neither permitted nor denied by best guess record for domain of fajar.perdhana@umn.ac.id) client-ip=2a00:1450:400c:c09::22e;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2a00:1450:400c:c09::22e is neither permitted nor denied by best guess record for domain of fajar.perdhana@umn.ac.id) smtp.mailfrom=fajar.perdhana@umn.ac.id
+Received: by mail-wm0-x22e.google.com with SMTP id v186so138216717wmd.0
+        for <jordyjonathan6@gmail.com>; Thu, 02 Mar 2017 07:51:45 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=/b5fDafr19jhTE+w5dU2KC76jS7lTlQlH5M29dvaLyI=;
+        b=lJQFWV/w2RZgDn42PEJdUBcPBKQEcW88tLDKjAcgU/oLvdSSU41B5DtQZsnbxmULQD
+         9QVzC0utQrSpAt+XCwl75jJVL88HpcfPbW10zBojDt3m3a4uu8ENI7jyOiMFIwgxBuKm
+         1HMdpH4hjyhzJ1/55pfLMuYE3i6d89t662rdWta04z90XV80RXXjQSvsEbCFYKhaQ8R4
+         Xj+GIgZGa2aqPgkaGmvSvJbI7w3mFHUZAHOrAqK9507DwLrlJKTlYebmoEEnlJq00C1I
+         zEnlgMgqW9zeULW8QlXP87bH8jZOKe8fAoQhmrCxd38u5RAgt0DvINg1hPhwVtDybvAD
+         dwxQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=/b5fDafr19jhTE+w5dU2KC76jS7lTlQlH5M29dvaLyI=;
+        b=DVFSwtYGGFQXIhYKqTz/E35k+JqoetFlUPBXkkS1JMp0lDyrxhIVquzId1m2UNH+sz
+         IuvAlwRQNdCuFYGNMR+JFqmE0d+92OG33XgEuisSPk8Q5JkleFsy2u41MKN3ap6yI6Mu
+         Gy/1aefSPV+7oxTtQiiT07NTHBYlX1+AIpx5xTSYgZlNiPAQ6CyfPjp/AhdDyes7wWvo
+         e1zM1L4tAn9dN5zzfcigOqw8y6G0vitQzgup9T9bujzH9VBu0+fYEcxXyTOoXTdt2BTm
+         XAirfeY5yDGVZ+1LGeUnKAZJ47KCFUvN1DargxH6r7EoefghN7PV9aXSQct+exsjyoJ4
+         789w==
+X-Gm-Message-State: AMke39lM33rch27Uehw/XAzu1jdUkxRSrOAyPz0mW5dXT+ST2EODKlx+fVIXDbPIanE1LtvCSQdkXfL9nYnhDu8Ks1SyoJ9lfmOfG2wCH7yOZBRIz9cH23r3tvpwxdC1hYdAPKzVr9hT/2qCDgBxq2c=
+X-Received: by 10.28.102.86 with SMTP id a83mr9055360wmc.76.1488469905508; Thu, 02 Mar 2017 07:51:45 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.28.24.80 with HTTP; Thu, 2 Mar 2017 07:51:44 -0800 (PST)
+In-Reply-To: <CALjFak+_q611wKoj_Z8+8r873DnReTCFaX92TAi+EM=pLGkhPQ@mail.gmail.com>
+References: <CALjFak+DdDzmR+MBBKsGt7vpjWL22eF2WAj65NaA0OeJ+VL5Dg@mail.gmail.com> <CA+aOvP8ZBE7fFCh8-zNz5Ciu2st6MQLVv1fe09TW_CMtYZwuFw@mail.gmail.com> <CALjFakKnDPBX3A154aQc1CxOiObAMHnoqgvdDNkqy5J2z=G5vQ@mail.gmail.com> <CA+aOvP-p7+DLMqWDcBXodiJ+eEW4Xe3MvaMU=LwO-A3sF25DZA@mail.gmail.com> <CALjFak+_q611wKoj_Z8+8r873DnReTCFaX92TAi+EM=pLGkhPQ@mail.gmail.com>
+From: "YUNIAR FAJAR PERDHANA (040541)" <fajar.perdhana@umn.ac.id>
+Date: Thu, 2 Mar 2017 22:51:44 +0700
+Message-ID: <CA+aOvP8Nw0u-W7S3NfmsjWQ0ThYcwf2fmWrdjM=DDArxpEwOSw@mail.gmail.com>
+Subject: Re: mau nanya sedikit mengenai topik skripsi.
+To: jordy jonathan <jordyjonathan6@gmail.com>
+Content-Type: multipart/alternative; boundary=001a114b2ec4fa25ff0549c16761
+
+--001a114b2ec4fa25ff0549c16761
+Content-Type: text/plain; charset=UTF-8
+
+Kemarin kita selain ubah template, versi Moodlenya kita upgrade juga, Jor.
+Dulunya pake Moodle 2.9, ini pake Moodle 3.1.
+Terus secara infrastruktur juga berubah. Dulu folder Moodledata (tempat
+nyimpen data-data Moodle) digabung dalam satu storage dengan file-file
+aplikasi Moodle-nya. Sekarang Moodledata dipisah pake NAS (network attached
+storage) - tentang yang ini Mas Gama yang lebih tau.
+
+*Yuniar Fajar Perdhana*
+*E-learning Officer*
+Biro Pusat Pembelajaran
+Universitas Multimedia Nusantara
+
+E-mail : fajar.perdhana@umn.ac.id
+Phone : +62-21-5422.0808 ext. 2601
+Mobile : +62852.9498.3636
+
+2017-03-02 22:44 GMT+07:00 jordy jonathan <jordyjonathan6@gmail.com>:
+
+> mas fajar, mau nanya lagi dong. kan skarang tampilan e-learning berubah
+> jadi yang baru. nah, ada lagi gak yang berubah selain tampilannya ?
+>
+> 2017-03-02 20:49 GMT+07:00 YUNIAR FAJAR PERDHANA (040541) <
+> fajar.perdhana@umn.ac.id>:
+>
+>> Ngga boleh jor
+>>
+>> haha
+>>
+>> Boleh lah
+>>
+>> *Yuniar Fajar Perdhana*
+>> *E-learning Officer*
+>> Biro Pusat Pembelajaran
+>> Universitas Multimedia Nusantara
+>>
+>> E-mail : fajar.perdhana@umn.ac.id
+>> Phone : +62-21-5422.0808 ext. 2601 <+62%2021%2054220808>
+>> Mobile : +62852.9498.3636 <+62%20852-9498-3636>
+>>
+>> 2017-03-02 20:48 GMT+07:00 jordy jonathan <jordyjonathan6@gmail.com>:
+>>
+>>> okedeh thank you mas fajar, saya boleh nanya2 lagi kan mas mengenai
+>>> moodle?
+>>>
+>>> 2017-03-02 20:44 GMT+07:00 YUNIAR FAJAR PERDHANA (040541) <
+>>> fajar.perdhana@umn.ac.id>:
+>>>
+>>>> Halo Jor
+>>>>
+>>>> E-learning yang ini pake Moodle 3.1, jor
+>>>>
+>>>> *Yuniar Fajar Perdhana*
+>>>> *E-learning Officer*
+>>>> Biro Pusat Pembelajaran
+>>>> Universitas Multimedia Nusantara
+>>>>
+>>>> E-mail : fajar.perdhana@umn.ac.id
+>>>> Phone : +62-21-5422.0808 ext. 2601 <+62%2021%2054220808>
+>>>> Mobile : +62852.9498.3636 <+62%20852-9498-3636>
+>>>>
+>>>> 2017-03-02 20:42 GMT+07:00 jordy jonathan <jordyjonathan6@gmail.com>:
+>>>>
+>>>>> mas fajar, saya mau tanya tentang versi moodle e-learning itu versinya
+>>>>> berapa ya mas ?
+>>>>>
+>>>>
+>>>>
+>>>>
+>>>> *Universitas   Multimedia   Nusantara*
+>>>> *"Excellent Career Begins With Excellent Education"*
+>>>> Jl. Scientia Boulevard, Gading Serpong,
+>>>> Tangerang, Banten - 15811 Indonesia
+>>>> (t) +62-21.5422.0808; (f) +62-21.5422.0800;
+>>>> Facebook: Universitas Multimedia Nusantara
+>>>> Twitter: @umn_serpong
+>>>> Web: www.umn.ac.id
+>>>
+>>>
+>>>
+>>
+>>
+>> *Universitas   Multimedia   Nusantara*
+>> *"Excellent Career Begins With Excellent Education"*
+>> Jl. Scientia Boulevard, Gading Serpong,
+>> Tangerang, Banten - 15811 Indonesia
+>> (t) +62-21.5422.0808; (f) +62-21.5422.0800;
+>> Facebook: Universitas Multimedia Nusantara
+>> Twitter: @umn_serpong
+>> Web: www.umn.ac.id
+>>
+>
+>
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21.5422.0808; (f) +62-21.5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id
+
+--001a114b2ec4fa25ff0549c16761
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Kemarin kita selain ubah template, versi Moodlenya kita up=
+grade juga, Jor. Dulunya pake Moodle 2.9, ini pake Moodle 3.1.<div>Terus se=
+cara infrastruktur juga berubah. Dulu folder Moodledata (tempat nyimpen dat=
+a-data Moodle) digabung dalam satu storage dengan file-file aplikasi Moodle=
+-nya. Sekarang Moodledata dipisah pake NAS (network attached storage) - ten=
+tang yang ini Mas Gama yang lebih tau.</div></div><div class=3D"gmail_extra=
+"><br clear=3D"all"><div><div class=3D"gmail_signature" data-smartmail=3D"g=
+mail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr=
+"><div dir=3D"ltr"><div style=3D"font-size:12.8px"><b style=3D"font-family:=
+arial,helvetica,sans-serif;font-size:12.8px">Yuniar Fajar Perdhana</b><br><=
+/div><div><div style=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, h=
+elvetica, sans-serif"><i>E-learning Officer</i></font></div><div><font face=
+=3D"arial, helvetica, sans-serif" size=3D"2">Biro Pusat Pembelajaran<br>Uni=
+versitas Multimedia Nusantara</font></div><div style=3D"font-size:12.8px"><=
+font size=3D"2" face=3D"arial, helvetica, sans-serif"><br></font></div><div=
+ style=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, helvetica, sans=
+-serif">E-mail :=C2=A0<a href=3D"mailto:fajar.perdhana@umn.ac.id" style=3D"=
+color:rgb(17,85,204)" target=3D"_blank">fajar.perdhana@umn.ac.id<br></a></f=
+ont></div><div style=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, h=
+elvetica, sans-serif">Phone : +62-21-5422.0808 ext. 2601<br>Mobile : +62852=
+.9498.3636<br></font></div></div></div></div></div></div></div></div></div>=
+</div>
+<br><div class=3D"gmail_quote">2017-03-02 22:44 GMT+07:00 jordy jonathan <s=
+pan dir=3D"ltr">&lt;<a href=3D"mailto:jordyjonathan6@gmail.com" target=3D"_=
+blank">jordyjonathan6@gmail.com</a>&gt;</span>:<br><blockquote class=3D"gma=
+il_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-lef=
+t:1ex"><div dir=3D"ltr">mas fajar, mau nanya lagi dong. kan skarang tampila=
+n e-learning berubah jadi yang baru. nah, ada lagi gak yang berubah selain =
+tampilannya ?</div><div class=3D"HOEnZb"><div class=3D"h5"><div class=3D"gm=
+ail_extra"><br><div class=3D"gmail_quote">2017-03-02 20:49 GMT+07:00 YUNIAR=
+ FAJAR PERDHANA (040541) <span dir=3D"ltr">&lt;<a href=3D"mailto:fajar.perd=
+hana@umn.ac.id" target=3D"_blank">fajar.perdhana@umn.ac.id</a>&gt;</span>:<=
+br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left=
+:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Ngga boleh jor<div><br><=
+/div><div>haha</div><div><br></div><div>Boleh lah</div></div><div class=3D"=
+gmail_extra"><span><br clear=3D"all"><div><div class=3D"m_22399002451139343=
+40m_6508815319034182157gmail_signature" data-smartmail=3D"gmail_signature">=
+<div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"lt=
+r"><div style=3D"font-size:12.8px"><b style=3D"font-family:arial,helvetica,=
+sans-serif;font-size:12.8px">Yuniar Fajar Perdhana</b><br></div><div><div s=
+tyle=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, helvetica, sans-s=
+erif"><i>E-learning Officer</i></font></div><div><font face=3D"arial, helve=
+tica, sans-serif" size=3D"2">Biro Pusat Pembelajaran<br>Universitas Multime=
+dia Nusantara</font></div><div style=3D"font-size:12.8px"><font size=3D"2" =
+face=3D"arial, helvetica, sans-serif"><br></font></div><div style=3D"font-s=
+ize:12.8px"><font size=3D"2" face=3D"arial, helvetica, sans-serif">E-mail :=
+=C2=A0<a href=3D"mailto:fajar.perdhana@umn.ac.id" style=3D"color:rgb(17,85,=
+204)" target=3D"_blank">fajar.perdhana@umn.ac.id<br></a></font></div><div s=
+tyle=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, helvetica, sans-s=
+erif">Phone : <a href=3D"tel:+62%2021%2054220808" value=3D"+622154220808" t=
+arget=3D"_blank">+62-21-5422.0808 ext. 2601</a><br>Mobile : <a href=3D"tel:=
++62%20852-9498-3636" value=3D"+6285294983636" target=3D"_blank">+62852.9498=
+.3636</a><br></font></div></div></div></div></div></div></div></div></div><=
+/div>
+<br></span><div><div class=3D"m_2239900245113934340h5"><div class=3D"gmail_=
+quote">2017-03-02 20:48 GMT+07:00 jordy jonathan <span dir=3D"ltr">&lt;<a h=
+ref=3D"mailto:jordyjonathan6@gmail.com" target=3D"_blank">jordyjonathan6@gm=
+ail.com</a>&gt;</span>:<br><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">=
+okedeh thank you mas fajar, saya boleh nanya2 lagi kan mas mengenai moodle?=
+</div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote"><div><div c=
+lass=3D"m_2239900245113934340m_6508815319034182157h5">2017-03-02 20:44 GMT+=
+07:00 YUNIAR FAJAR PERDHANA (040541) <span dir=3D"ltr">&lt;<a href=3D"mailt=
+o:fajar.perdhana@umn.ac.id" target=3D"_blank">fajar.perdhana@umn.ac.id</a>&=
+gt;</span>:<br></div></div><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div><div class=
+=3D"m_2239900245113934340m_6508815319034182157h5"><div dir=3D"ltr">Halo Jor=
+<div><br></div><div>E-learning yang ini pake=C2=A0Moodle 3.1, jor</div></di=
+v><div class=3D"gmail_extra"><br clear=3D"all"><div><div class=3D"m_2239900=
+245113934340m_6508815319034182157m_-6192518816277153241m_-50507188734290243=
+12gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><div style=3D"font=
+-size:12.8px"><b style=3D"font-family:arial,helvetica,sans-serif;font-size:=
+12.8px">Yuniar Fajar Perdhana</b><br></div><div><div style=3D"font-size:12.=
+8px"><font size=3D"2" face=3D"arial, helvetica, sans-serif"><i>E-learning O=
+fficer</i></font></div><div><font face=3D"arial, helvetica, sans-serif" siz=
+e=3D"2">Biro Pusat Pembelajaran<br>Universitas Multimedia Nusantara</font><=
+/div><div style=3D"font-size:12.8px"><font size=3D"2" face=3D"arial, helvet=
+ica, sans-serif"><br></font></div><div style=3D"font-size:12.8px"><font siz=
+e=3D"2" face=3D"arial, helvetica, sans-serif">E-mail :=C2=A0<a href=3D"mail=
+to:fajar.perdhana@umn.ac.id" style=3D"color:rgb(17,85,204)" target=3D"_blan=
+k">fajar.perdhana@umn.ac.id<br></a></font></div><div style=3D"font-size:12.=
+8px"><font size=3D"2" face=3D"arial, helvetica, sans-serif">Phone : <a href=
+=3D"tel:+62%2021%2054220808" value=3D"+622154220808" target=3D"_blank">+62-=
+21-5422.0808 ext. 2601</a><br>Mobile : <a href=3D"tel:+62%20852-9498-3636" =
+value=3D"+6285294983636" target=3D"_blank">+62852.9498.3636</a><br></font><=
+/div></div></div></div></div></div></div></div></div></div><span>
+<br><div class=3D"gmail_quote">2017-03-02 20:42 GMT+07:00 jordy jonathan <s=
+pan dir=3D"ltr">&lt;<a href=3D"mailto:jordyjonathan6@gmail.com" target=3D"_=
+blank">jordyjonathan6@gmail.com</a>&gt;</span>:<br><blockquote class=3D"gma=
+il_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-lef=
+t:1ex"><div dir=3D"ltr">mas fajar, saya mau tanya tentang versi moodle e-le=
+arning itu versinya berapa ya mas ?</div>
+</blockquote></div><br></span></div>
+
+<br>
+</div></div><div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-=
+serif"><b style=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" si=
+ze=3D"4"><img src=3D"https://upload.wikimedia.org/wikipedia/id/a/a4/Logo_UM=
+NColor_small.jpg"><br>Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font>=
+</b></div><div style=3D"font-size:1.3em"><font face=3D"arial, sans-serif" c=
+olor=3D"#0000ff" size=3D"2"><span style=3D"background-color:rgb(255,255,255=
+)"><b><i>&quot;<font>Excellent Career Begins With Excellent Education</font=
+>&quot;</i></b></span></font></div><div style=3D"font-size:1.3em"><span sty=
+le=3D"font-size:small;font-family:arial,sans-serif;background-color:rgb(255=
+,255,255)">Jl. Scientia Boulevard, Gading Serpong,</span></div><font size=
+=3D"2"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255=
+,255,255)">Tangerang, Banten - 15811 Indonesia</span><br style=3D"font-fami=
+ly:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)">(t)=C2=A0</span>=
+<a value=3D"+622154220808" style=3D"font-family:arial,sans-serif;color:rgb(=
+17,85,204);background-color:rgb(255,255,255)">+62-21.5422.0808</a><span sty=
+le=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">; (f)=
+=C2=A0</span><a value=3D"+622154220800" style=3D"font-family:arial,sans-ser=
+if;color:rgb(17,85,204);background-color:rgb(255,255,255)">+62-21.5422.0800=
+</a><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">;</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Facebook: Universitas Multimedia Nusantara</span><br =
+style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><s=
+pan style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)=
+">Twitter: @umn_serpong</span><br style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif=
+;background-color:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.=
+umn.ac.id/" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);back=
+ground-color:rgb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span sty=
+le=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"></spa=
+n></font></blockquote></div><br></div>
+</blockquote></div><br></div></div></div><div class=3D"m_223990024511393434=
+0HOEnZb"><div class=3D"m_2239900245113934340h5">
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><b st=
+yle=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" size=3D"4"><im=
+g src=3D"https://upload.wikimedia.org/wikipedia/id/a/a4/Logo_UMNColor_small=
+.jpg"><br>Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font></b></div><d=
+iv style=3D"font-size:1.3em"><font face=3D"arial, sans-serif" color=3D"#000=
+0ff" size=3D"2"><span style=3D"background-color:rgb(255,255,255)"><b><i>&qu=
+ot;<font>Excellent Career Begins With Excellent Education</font>&quot;</i><=
+/b></span></font></div><div style=3D"font-size:1.3em"><span style=3D"font-s=
+ize:small;font-family:arial,sans-serif;background-color:rgb(255,255,255)">J=
+l. Scientia Boulevard, Gading Serpong,</span></div><font size=3D"2"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Tan=
+gerang, Banten - 15811 Indonesia</span><br style=3D"font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)"><span style=3D"font-family:arial,s=
+ans-serif;background-color:rgb(255,255,255)">(t)=C2=A0</span><a value=3D"+6=
+22154220808" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);bac=
+kground-color:rgb(255,255,255)">+62-21.5422.0808</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)">; (f)=C2=A0</span><=
+a value=3D"+622154220800" style=3D"font-family:arial,sans-serif;color:rgb(1=
+7,85,204);background-color:rgb(255,255,255)">+62-21.5422.0800</a><span styl=
+e=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">;</spa=
+n><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,25=
+5)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">Facebook: Universitas Multimedia Nusantara</span><br style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"f=
+ont-family:arial,sans-serif;background-color:rgb(255,255,255)">Twitter: @um=
+n_serpong</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.umn.ac.id/" st=
+yle=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:r=
+gb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)"></span></font></div=
+></div></blockquote></div><br></div>
+</div></div></blockquote></div><br></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><b st=
+yle=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" size=3D"4"><im=
+g src=3D"https://upload.wikimedia.org/wikipedia/id/a/a4/Logo_UMNColor_small=
+.jpg"><br>Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font></b></div><d=
+iv style=3D"font-size:1.3em"><font face=3D"arial, sans-serif" color=3D"#000=
+0ff" size=3D"2"><span style=3D"background-color:rgb(255,255,255)"><b><i>&qu=
+ot;<font>Excellent Career Begins With Excellent Education</font>&quot;</i><=
+/b></span></font></div><div style=3D"font-size:1.3em"><span style=3D"font-s=
+ize:small;font-family:arial,sans-serif;background-color:rgb(255,255,255)">J=
+l. Scientia Boulevard, Gading Serpong,</span></div><font size=3D"2"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Tan=
+gerang, Banten - 15811 Indonesia</span><br style=3D"font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)"><span style=3D"font-family:arial,s=
+ans-serif;background-color:rgb(255,255,255)">(t)=C2=A0</span><a value=3D"+6=
+22154220808" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);bac=
+kground-color:rgb(255,255,255)">+62-21.5422.0808</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)">; (f)=C2=A0</span><=
+a value=3D"+622154220800" style=3D"font-family:arial,sans-serif;color:rgb(1=
+7,85,204);background-color:rgb(255,255,255)">+62-21.5422.0800</a><span styl=
+e=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">;</spa=
+n><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,25=
+5)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">Facebook: Universitas Multimedia Nusantara</span><br style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"f=
+ont-family:arial,sans-serif;background-color:rgb(255,255,255)">Twitter: @um=
+n_serpong</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.umn.ac.id/" st=
+yle=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:r=
+gb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)"></span></font>
+--001a114b2ec4fa25ff0549c16761--

@@ -1,0 +1,1127 @@
+X-Apparently-To: jramantha@ymail.com; Thu, 20 Jul 2017 10:15:39 +0000
+Return-Path: <v-ddpogkl_cpmnlhdcbi_ehldgnkf_ehldgnkf_a@bounce.e.englishtown.com>
+Received-SPF: pass (domain of bounce.e.englishtown.com designates 74.121.52.58 as permitted sender)
+X-YMailISG: itD5tcoWLDuqK.qeRbwv7irNqLYjjfnHVaMRaed.SMIJWx0m
+ 078fzuWvBrHNu2FLi1dwV8fth5_ntlZ1VORePlWRihTs2CUsRzsg3gCd37dc
+ aH9xRBHcYGOkOJWhIqI1Zkf.l9_13wHJI99ohmGnuemZ2org6w3dzWf9_GAU
+ U7buckeUKIy7J8ArPA9lG2f3Kdq_X0ReBy6FmcFisH0nGwoHXP9PcZf0VRWl
+ OFpIK6x3pBvvcR.DaXNq3uGY.GU2tGfrHK3AA6oCNn8r9UjrJD5OP8NBjmt4
+ 7mXWqSOoIRz_a2mf340NPQ70Q_rZl1iBffAixeSzBn9i0eeF3niJtz3aO81F
+ p1nUz4LWbtxAeCJmcf28lp79wPM6LIjg.5UxjMIVP3jXNQuGeng.tJTwKhQ5
+ nQWMouL1nBzGWS7tQuvu2KTkuV2proHSFqRxa6vBe6uP7g5szv.C7aHpO1Fs
+ t0BxqjS7JIvQ6FqRQyULz9zLbrojXNaDeFKjRkkGh9RaLtDriyrXbFdvAZpA
+ 5OYazXDcpaYPYvz8OHlSZavO343urz4qVi_3KmQbc4IHFP8VtgztVjRP01Rv
+ IaY1ko2P8b6dyQHmFHDIlGqBHKoe5wqdz9N5pMlr8rvPl.ujzAMjolRv_TH5
+ GzGjJjvtcMIzfcAcPw8qNmhWcLkgRVZSSf.9FWYdwLTRsTfzeRUQm8y3zVx4
+ .FTZRz0ZKtRwwEMKq6V3DaDQOqISK_6uddw0WeJ5iK4_aY4d7mJ7sZR_giAz
+ EKk_Yn3_pUKebJDHU7gx_R0QY9aU8VlGUKrt4.4kG39SVAwinZpCS47h7FOY
+ Ua4Qm56DMiDyW25h64HD16NkLEuAne.CKxbbkROUNDBvpeM5_amjNglHvyVV
+ 7qZy57NIZz7BDxoF_uQ8R4M5mn6AdVkL0qQ_kO1t_fU2_g103Q.0XHpjFpVy
+ Hroi9lE361hpYfLwbRZQKlt_l_xm7JShlVhOKzC17d1HmhOixb_dkx_gO9rR
+ xNKq0rhw24F4IbfiultX46P8aDsv8sUvltT.Ypklq62TNr1qGoz38qpwb1iy
+ jgD.Rt7Vz7kQ2zCptFP6jeXMbeUvKRn1wu0I9xuVIyNNnYi1R5A0.61ZB2Dv
+ 1fJl9qqpoOYhfar3xDlF_kvtPSNorgEfVTGZqW45VILJehKqNVgLunD.Et2F
+ ecvyfg8efp3zG_K921OJl4fRziWmO1hrk3xzuToqtG_baAzXbwtkQnqv7d3A
+ V2Bnoi60pWw23s5nr71s6c6BNmeKT1StwyW89NQCgBGjTgfG.9vBI8GC2xMo
+ GDNMhnv3MNVxStKas2SRAqPjJV3xj7aKzdV7h0noa_wwb0QpcJzt22quKJVa
+ Wb1u4czoFQrMhmiD2lpK90KcZHc7EJx_MsTnRYlr7MhORQtPFHaty.M-
+X-Originating-IP: [74.121.52.58]
+Authentication-Results: mta1434.mail.ne1.yahoo.com  from=info.ef.com; domainkeys=pass (ok);  from=info.ef.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail4081.educationfirst.mkt4678.com) (74.121.52.58)
+  by mta1434.mail.ne1.yahoo.com with SMTP; Thu, 20 Jul 2017 10:15:39 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=spop1024; d=info.ef.com;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe; i=offer@info.ef.com;
+ bh=CtT2zhXN/RczShBwCITfzVuUqDA=;
+ b=ZY88EUvtTMIkkZP9lDTn+qEyiFjcpu3m4Vr0N2Ry5NFRAYFC1JApxq+WtH5PkvwYPAyvEto0c95L
+   dKcIDX1P3SUCN3X9rK+rEZutaMVhAGh7oRgxuzdTw1FgLsQqLdIChPY3Zn75pbR3RTNUjzBCVWQs
+   lkcLbcLVr6SKR198hSg=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=spop1024; d=info.ef.com;
+ b=cM01vP05YlzX++dIfAgsu/owLqiSzxE6cJoDMOGL+UahnzHi9L0EHE+TZae5kA9KDy+NwxMLETbQ
+   kIM6xdqnDAXWVbYcLIEQwq/qDUPrfEiioCZenKflZK3n69jA1SZKGpXcGQvZW0fDuoUydHGdki8q
+   ahp9+GgteSzKDibMdZA=;
+Received: by mail4081.educationfirst.mkt4678.com id he21cm19if4n for <jramantha@ymail.com>; Thu, 20 Jul 2017 10:15:35 +0000 (envelope-from <v-ddpogkl_cpmnlhdcbi_ehldgnkf_ehldgnkf_a@bounce.e.englishtown.com>)
+Date: Thu, 20 Jul 2017 10:15:34 +0000 (GMT)
+From: EF English First <offer@info.ef.com>
+Reply-To: offer@info.ef.com
+To: jramantha@ymail.com
+Message-ID: <671372873.768169091500545734982.JavaMail.app@rbg43.atlis1>
+Subject: =?utf-8?Q?=F0=9F=92=B5Diskon_Hingga_1,9_Juta_+_Mer?=
+ =?utf-8?Q?chandise_Keren._Ambil_di_sini!?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_383939_97624873.1500545733435"
+x-mid: 54519467
+X-CSA-Complaints: whitelist-complaints@eco.de
+x-rpcampaign: sp54519467
+Feedback-ID: pod4_39929_54519467_1202941349:pod4_39929:ibmsilverpop
+x-job: 54519467
+x-orgId: 39929
+List-Unsubscribe: <mailto:v-ddpogkl_cpmnlhdcbi_ehldgnkf_ehldgnkf_a@bounce.e.englishtown.com?subject=Unsubscribe>
+Content-Length: 45047
+
+------=_Part_383939_97624873.1500545733435
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta name=3D"HandheldFriendly" content=3D"true" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<!--[if gte IE 7]><html class=3D"ie8plus" xmlns=3D"http://www.w3.org/1999/x=
+html"><![endif]-->
+<!--[if IEMobile]><html class=3D"ie8plus" xmlns=3D"http://www.w3.org/1999/x=
+html"><![endif]-->
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<meta name=3D"generator" content=3D"EDMdesigner, www.edmdesigner.com">
+<title>=F0=9F=92=B5Diskon Hingga 1,9 Juta + Merchandise Keren. Ambil di sin=
+i!</title>
+
+
+
+<style type=3D"text/css" media=3D"screen">
+* {line-height: inherit;}
+.ExternalClass * { line-height: 100%; }
+body, p{margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:none=
+; -ms-text-size-adjust:none;} img{line-height:100%; outline:none; text-deco=
+ration:none; -ms-interpolation-mode: bicubic;} a img{border: none;} #backgr=
+oundTable {margin:0; padding:0; width:100% !important; } a, a:link, .no-det=
+ect-local a, .appleLinks a{color:#5555ff !important; text-decoration: under=
+line;} .ExternalClass {display: block !important; width:100%;} .ExternalCla=
+ss, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalCl=
+ass td, .ExternalClass div { line-height: inherit; } table td {border-colla=
+pse:collapse;mso-table-lspace: 0pt; mso-table-rspace: 0pt;} sup{position: r=
+elative; top: 4px; line-height:7px !important;font-size:11px !important;} .=
+mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {text-decoratio=
+n: default; color: #5555ff !important; pointer-events: auto; cursor: defaul=
+t;} .no-detect a{text-decoration: none; color: #5555ff; pointer-events: aut=
+o; cursor: default;} {color: #5555ff;} span {color: inherit; border-bottom:=
+ none;} span:hover { background-color: transparent; }
+
+.nounderline {text-decoration: none !important;}
+h1, h2, h3 { margin:0; padding:0; }
+p {Margin: 0px !important; }
+
+table[class=3D"email-root-wrapper"] { width: 600px !important; }
+
+body {
+}
+body { min-width: 280px; width: 100%;}
+td[class=3D"pattern"] .c294p50r { width: 50%;}
+td[class=3D"pattern"] .c56p10n { width: 10%;}
+td[class=3D"pattern"] .c340p60n { width: 60.00000000000006%;}
+td[class=3D"pattern"] .c49p14n { width: 14.655172413793101%;}
+td[class=3D"pattern"] .c68p20n { width: 20.114942528735632%;}
+td[class=3D"pattern"] .c34p10n { width: 10%;}
+td[class=3D"pattern"] .c180p53n { width: 53.06614236741267%;}
+
+</style>
+<style>
+@media only screen and (max-width: 599px),
+only screen and (max-device-width: 599px),
+only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+ .email-root-wrapper { width: 100% !important; }
+ .full-width { width: 100% !important; height: auto !important; text-align:=
+center;}
+ .fullwidthhalfleft {width:100% !important;}
+ .fullwidthhalfright {width:100% !important;}
+ .fullwidthhalfinner {width:100% !important; margin: 0 auto !important; flo=
+at: none !important; margin-left: auto !important; margin-right: auto !impo=
+rtant; clear:both !important; }
+ .hide { display:none !important; width:0px !important;height:0px !importan=
+t; overflow:hidden; }
+ .desktop-hide { display:block !important; width:100% !important;height:aut=
+o !important; overflow:hidden; max-height: inherit !important; }
+  .c294p50r { width: 100% !important; float:none;}
+.c56p10n { width: 10% !important;}
+.c340p60n { width: 60.00000000000006% !important;}
+.c49p14n { width: 14.655172413793101% !important;}
+.c68p20n { width: 20.114942528735632% !important;}
+.c34p10n { width: 10% !important;}
+.c180p53n { width: 53.06614236741267% !important;}
+
+}
+</style>
+<style>
+@media only screen and (min-width: 600px) {
+  td[class=3D"pattern"] .c294p50r { width: 294px !important;}
+td[class=3D"pattern"] .c56p10n { width: 10% !important;}
+td[class=3D"pattern"] .c340p60n { width: 60.00000000000006% !important;}
+td[class=3D"pattern"] .c49p14n { width: 14.655172413793101% !important;}
+td[class=3D"pattern"] .c68p20n { width: 20.114942528735632% !important;}
+td[class=3D"pattern"] .c34p10n { width: 10% !important;}
+td[class=3D"pattern"] .c180p53n { width: 53.06614236741267% !important;}
+
+}
+@media only screen and (max-width: 599px),
+only screen and (max-device-width: 599px),
+only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+  table[class=3D"email-root-wrapper"] { width: 100% !important; }
+  td[class=3D"wrap"] .full-width { width: 100% !important; height: auto !im=
+portant;}
+
+  td[class=3D"wrap"] .fullwidthhalfleft {width:100% !important;}
+  td[class=3D"wrap"] .fullwidthhalfright {width:100% !important;}
+  td[class=3D"wrap"] .fullwidthhalfinner {width:100% !important; margin: 0 =
+auto !important; float: none !important; margin-left: auto !important; marg=
+in-right: auto !important; clear:both !important; }
+  td[class=3D"wrap"] .hide { display:none !important; width:0px;height:0px;=
+ overflow:hidden; }
+
+  td[class=3D"pattern"] .c294p50r { width: 100% !important; }
+td[class=3D"pattern"] .c56p10n { width: 10% !important; }
+td[class=3D"pattern"] .c340p60n { width: 60.00000000000006% !important; }
+td[class=3D"pattern"] .c49p14n { width: 14.655172413793101% !important; }
+td[class=3D"pattern"] .c68p20n { width: 20.114942528735632% !important; }
+td[class=3D"pattern"] .c34p10n { width: 10% !important; }
+td[class=3D"pattern"] .c180p53n { width: 53.06614236741267% !important; }
+
+}
+
+@media yahoo{
+table {float: none !important;height:auto; }
+table[align=3D"left"] {float:left !important; }
+td[align=3D"left"] {float:left !important;height:auto; }
+table[align=3D"center"] {margin:0 auto; }
+td[align=3D"center"] {margin:0 auto;height:auto; }
+table[align=3D"right"] {float:right !important; }
+td[align=3D"right"] {float:right !important;height:auto; }
+}
+
+
+</style>
+
+<!--[if (gte IE 7) & (vml)]>
+<style type=3D"text/css">
+html, body {margin:0 !important; padding:0px !important;}
+img.full-width { position: relative !important; }
+
+.img548x111 { width: 548px !important; height: 111px !important;}
+.img274x274 { width: 274px !important; height: 274px !important;}
+.img549x0 { width: 549px !important; height: 0px !important;}
+.img274x276 { width: 274px !important; height: 276px !important;}
+.img35x35 { width: 35px !important; height: 35px !important;}
+.img40x36 { width: 40px !important; height: 36px !important;}
+.img61x30 { width: 61px !important; height: 30px !important;}
+
+</style>
+<![endif]-->
+
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+.mso-font-fix-arial { font-family: Arial, sans-serif;}
+.mso-font-fix-georgia { font-family: Georgia, sans-serif;}
+.mso-font-fix-tahoma { font-family: Tahoma, sans-serif;}
+.mso-font-fix-times_new_roman { font-family: 'Times New Roman', sans-serif;=
+}
+.mso-font-fix-trebuchet_ms { font-family: 'Trebuchet MS', sans-serif;}
+.mso-font-fix-verdana { font-family: Verdana, sans-serif;}
+</style>
+<![endif]-->
+
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+table, td {
+border-collapse: collapse !important;
+mso-table-lspace: 0px !important;
+mso-table-rspace: 0px !important;
+}
+
+.email-root-wrapper { width 600px !important;}
+.imglink { font-size: 0px; }
+.edm_button { font-size: 0px; }
+</style>
+<![endif]-->
+
+<!--[if gte mso 15]>
+<style type=3D"text/css">
+table {
+font-size:0px;
+mso-margin-top-alt:0px;
+}
+
+.fullwidthhalfleft {
+width: 49% !important;
+float:left !important;
+}
+
+.fullwidthhalfright {
+width: 50% !important;
+float:right !important;
+}
+</style>
+<![endif]-->
+<STYLE type=3D"text/css" media=3D"(pointer) and (min-color-index:0)">
+html, body {background-image: none !important; background-color: transparen=
+t !important; margin:0 !important; padding:0 !important;}
+</STYLE>
+
+</head>
+<body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=3D"0"=
+ offset=3D"0" background=3D"" bgcolor=3D"" style=3D"font-family:Arial, sans=
+-serif; font-size:0px;margin:0;padding:0; ">
+<!--[if t]><![endif]--><!--[if t]><![endif]--><!--[if t]><![endif]--><!--[i=
+f t]><![endif]--><!--[if t]><![endif]--><!--[if t]><![endif]-->
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+background=3D""  height=3D"100%" width=3D"100%" id=3D"backgroundTable">
+    <tr>
+        <td class=3D"wrap" align=3D"center" valign=3D"top" width=3D"100%">
+          <center>
+<!-- content -->
+<div style=3D"padding: 0px;"><table cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"600" align=3D"center" class=3D"email-root-wrapper" =
+style=3D"max-width: 600px; min-width: 240px; margin: 0 auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"600" align=3D"center" class=3D"email-root-wrapper" =
+style=3D"max-width: 600px; min-width: 240px; margin: 0 auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border: 0px none;">
+<tr><td valign=3D"top" style=3D"padding-top: 5px; padding-right: 6px; paddi=
+ng-bottom: 5px; padding-left: 6px;"><table cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%">
+<tr><td style=3D"padding: 0px;"><table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 13px; color: #808080; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;text-align: c=
+enter;">Sambut tahun ajaran baru dengan promo terbaru dari EF</p></div></td=
+>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border: 0px none;">
+<tr><td valign=3D"top" style=3D"padding-top: 5px;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%">
+<tr><td class=3D"pattern" style=3D"padding: 0px;"><table cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border: 0px none;">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td style=3D"padding: 0px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"548"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_ef_co_id_engl=
+ishfirst_defa" href=3D"http://links.e.englishtown.com/ctt?kn=3D2&ms=3DNTQ1M=
+Tk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" t=
+arget=3D"_blank" class=3D"imglink" ><img   src=3D"https://images-app.edmdes=
+igner.com/0f6713d9b164d141a7c7c6879f51244d.jpg" width=3D"548" height=3D"111=
+" alt=3D"EFriends Story" border=3D"0" class=3D"full-width img548x111" style=
+=3D"display: block; width: 100%; height: auto;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><em><strong><u>Promo</u></strong></em></div></t=
+d>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0; mso-cellspacing: 0in;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" width=3D"294=
+"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"274"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_ef_co_id_bts1=
+7_utm_source_" href=3D"http://links.e.englishtown.com/ctt?kn=3D16&ms=3DNTQ1=
+MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" =
+target=3D"_blank" class=3D"imglink" ><img   src=3D"https://images-app.edmde=
+signer.com/f99b2d91938eeade7e20d064af53eff1.jpg" width=3D"274" height=3D"27=
+4" alt=3D"Back to School" border=3D"0" class=3D"full-width img274x274" styl=
+e=3D"display: block; width: 100%; height: auto;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]></td><td valign=3D"top" style=3D"padding:0;"><![endif]--=
+>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" widt=
+h=3D"294"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><strong>Bac=
+k To School</strong></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 14px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;">Liburan sek=
+olah sudah usai, saatnya kembali ke sekolah! Yuk sambut tahun ajaran baru d=
+engan promo terbaru dari EF. Dapatkan DISKON kursus hingga 1,9 juta untuk p=
+endaftaran siswa baru di EF & Merchandise Keren.</p><p style=3D"padding: 0;=
+ margin: 0;">&nbsp;</p><p style=3D"padding: 0; margin: 0;">Tunggu apa lagi,=
+ ambil promonya sekarang juga!</p><p style=3D"padding: 0; margin: 0;">&nbsp=
+;</p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width" style=3D"te=
+xt-align: center; color: #000;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 5px;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"full-width" style=3D"bo=
+rder: 0px none; border-radius: 5px; border-collapse: separate !important;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 0px;"><a name=3D"ww=
+w_ef_co_id_bts17_utm_so_1" href=3D"http://links.e.englishtown.com/ctt?kn=3D=
+5&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=
+=3D1&rt=3D0" target=3D"_blank" class=3D"edm_button" style=3D"text-decoratio=
+n: none;" ><span style=3D"font-family: arial; font-size: 14px; color: #0000=
+00; line-height: 14px; text-decoration: none;"><span style=3D"color: #e6078=
+8;"><strong>Klik di sini &gt;</strong></span></span> </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"551"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 1px;"><img   src=3D"https://images=
+-app.edmdesigner.com/597dbbc36d99c63f0a402cca76ef347d.jpg" width=3D"549" he=
+ight=3D"0" alt=3D"" border=3D"0" class=3D"full-width img549x0" style=3D"dis=
+play: block; width: 100%; height: auto;"   /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><b><i><u>EF News</u></i></b></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0; mso-cellspacing: 0in;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" width=3D"294=
+"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"274"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_ef_co_id_engl=
+ishfirst_efbl" href=3D"http://links.e.englishtown.com/ctt?kn=3D14&ms=3DNTQ1=
+MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" =
+target=3D"_blank" class=3D"imglink" ><img   src=3D"https://images-app.edmde=
+signer.com/4410f251c7c81da345beebdae3be653a.jpg" width=3D"274" height=3D"27=
+4" alt=3D"EF News" border=3D"0" class=3D"full-width img274x274" style=3D"di=
+splay: block; width: 100%; height: auto;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]></td><td valign=3D"top" style=3D"padding:0;"><![endif]--=
+>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" widt=
+h=3D"294"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><b>Bendera =
+EF di Puncak Gunung Everest </b></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 14px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;">Percaya ga =
+di tahun 2016 lalu, bendera EF berkibar di puncak Gunung Everest? Untuk nai=
+k sampai ke puncak Gunung Everest bukanlah hal yang mudah. Suhu yang dingin=
+, kadar oksigen yang sedikit, jalur pendakian yang curam menjadi tantangan =
+untuk sampai ke puncaknya. Kami percaya <strong>Nothing is Impossible.</str=
+ong></p><p style=3D"padding: 0; margin: 0;">&nbsp;</p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width" style=3D"te=
+xt-align: center; color: #000;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 5px;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"full-width" style=3D"bo=
+rder: 0px none; border-radius: 5px; border-collapse: separate !important;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 0px;"><a name=3D"ww=
+w_ef_co_id_englishfirst_1" href=3D"http://links.e.englishtown.com/ctt?kn=3D=
+17&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=
+=3D1&rt=3D0" target=3D"_blank" class=3D"edm_button" style=3D"text-decoratio=
+n: none;" ><span style=3D"font-family: arial; font-size: 14px; color: #0000=
+00; line-height: 14px; text-decoration: none;"><span style=3D"color: #e6078=
+8;"><strong>Baca lebih lanjut &gt;</strong></span></span> </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"551"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 1px;"><img   src=3D"https://images=
+-app.edmdesigner.com/597dbbc36d99c63f0a402cca76ef347d.jpg" width=3D"549" he=
+ight=3D"0" alt=3D"" border=3D"0" class=3D"full-width img549x0" style=3D"dis=
+play: block; width: 100%; height: auto;"   /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><em><strong><u>EF Blog</u></strong></em></div><=
+/td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0; mso-cellspacing: 0in;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" width=3D"294=
+"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"274"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_ef_co_id_engl=
+ishfirst_2" href=3D"http://links.e.englishtown.com/ctt?kn=3D19&ms=3DNTQ1MTk=
+0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" tar=
+get=3D"_blank" class=3D"imglink" ><img   src=3D"https://images-app.edmdesig=
+ner.com/3e4319e94a9591638f790220e521b363.jpg" width=3D"274" height=3D"276" =
+alt=3D"EF Blog Indonesia" border=3D"0" class=3D"full-width img274x276" styl=
+e=3D"display: block; width: 100%; height: auto;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]></td><td valign=3D"top" style=3D"padding:0;"><![endif]--=
+>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" widt=
+h=3D"294"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><strong>Tip=
+s Pergi ke Mal ala Orang Amerika </strong></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 14px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;">Pusat perbe=
+lanjaan seperti mal memang jarang di expose di berbagai media Amerika, tapi=
+ ternyata ada beberapa gaya tersendiri yang umumnya dilakukan oleh orang Am=
+erika saat mereka pergi ke mal. Simak beberapa tips pergi ke mal ala orang =
+Amerika.</p><p style=3D"padding: 0; margin: 0;">&nbsp;</p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width" style=3D"te=
+xt-align: center; color: #000;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 5px;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"full-width" style=3D"bo=
+rder: 0px none; border-radius: 5px; border-collapse: separate !important;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 0px;"><a name=3D"ww=
+w_ef_co_id_englishfirst_3" href=3D"http://links.e.englishtown.com/ctt?kn=3D=
+21&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=
+=3D1&rt=3D0" target=3D"_blank" class=3D"edm_button" style=3D"text-decoratio=
+n: none;" ><span style=3D"font-family: arial; font-size: 14px; color: #0000=
+00; line-height: 14px; text-decoration: none;"><span style=3D"color: #e6078=
+8;"><strong>Lihat tipsnya di sini &gt;</strong></span></span> </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"551"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 1px;"><img   src=3D"https://images=
+-app.edmdesigner.com/597dbbc36d99c63f0a402cca76ef347d.jpg" width=3D"549" he=
+ight=3D"0" alt=3D"" border=3D"0" class=3D"full-width img549x0" style=3D"dis=
+play: block; width: 100%; height: auto;"   /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><em><strong><u>Social Media</u></strong></em></=
+div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0; mso-cellspacing: 0in;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" width=3D"294=
+"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 10px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"274"  class=3D"full-wi=
+dth" style=3D"border: 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_youtube_com_w=
+atch_v_TqaI_l" href=3D"http://links.e.englishtown.com/ctt?kn=3D9&ms=3DNTQ1M=
+Tk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" t=
+arget=3D"_blank" class=3D"imglink" ><img   src=3D"https://images-app.edmdes=
+igner.com/71564c2cbb5f35e6d656f2d1d4776861.jpg" width=3D"274" height=3D"274=
+" alt=3D"Social Media" border=3D"0" class=3D"full-width img274x274" style=
+=3D"display: block; width: 100%; height: auto;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]></td><td valign=3D"top" style=3D"padding:0;"><![endif]--=
+>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" widt=
+h=3D"294"  class=3D"c294p50r" style=3D"float: left;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 18px; color: #000000; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><strong>Cob=
+a DIY Perlengkapan Sekolah </strong></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 14px; color: #000000; line-height: 18px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;">Kembali ke =
+sekolah, saatnya siapkan perlengkapan sekolah yang bisa kamu buat lewat bar=
+ang-barang yang ada di sekitar kamu, seperti: tempat pensil, book holder da=
+n perlengkapan lainnya. Yuk lihat caranya di video berikut ini.</p><p style=
+=3D"padding: 0; margin: 0;">&nbsp;</p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"left" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" align=3D"left" class=3D"full-width" style=3D"te=
+xt-align: center; color: #000;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 5px;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"full-width" style=3D"bo=
+rder: 0px none; border-radius: 5px; border-collapse: separate !important;">
+<tr><td valign=3D"top" align=3D"left" style=3D"padding: 0px;"><a name=3D"ww=
+w_youtube_com_watch_v_T_1" href=3D"http://links.e.englishtown.com/ctt?kn=3D=
+3&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=
+=3D1&rt=3D0" target=3D"_blank" class=3D"edm_button" style=3D"text-decoratio=
+n: none;" ><span style=3D"font-family: arial; font-size: 14px; color: #0000=
+00; line-height: 14px; text-decoration: none;"><span style=3D"color: #e6078=
+8;"><strong>Lihat caranya di sini &gt;</strong></span></span> </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border: 0px none;">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td style=3D"padding: 0px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" bgcolor=3D"#000000" style=3D"bor=
+der: 0px none; background-color: #000000;">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td style=3D"padding: 0px;"><table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 15px;"><table cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 14px; color: #ffffff; line-height: 22px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><b> (021) 5=
+46 1999 </b></p><p style=3D"padding: 0; margin: 0;">&nbsp;</p><p style=3D"p=
+adding: 0; margin: 0;"><a name=3D"www_ef_co_id_englishfirst_4" href=3D"http=
+://links.e.englishtown.com/ctt?kn=3D10&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4M=
+TA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" style=3D"color: #ffffff !im=
+portant; text-decoration: underline !important;" target=3D"_blank" ><font s=
+tyle=3D"color: #ffffff;"><span style=3D"font-size: 12px;">www.ef.co.id</spa=
+n></font></a><span style=3D"font-size: 12px;"> | <a name=3D"www_ef_co_id_en=
+glishfirst_mobi" href=3D"http://links.e.englishtown.com/ctt?kn=3D18&ms=3DNT=
+Q1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0=
+" style=3D"color: #ffffff !important; text-decoration: underline !important=
+;" target=3D"_blank" ><font style=3D"color: #ffffff;">m.ef.co.id</font></a>=
+ | <a name=3D"www_ef_co_id_efblog__utm_sourc" href=3D"http://links.e.englis=
+htown.com/ctt?kn=3D1&ms=3DNTQ1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMT=
+IwMjk0MTM0OQS2&mt=3D1&rt=3D0" style=3D"color: #ffffff !important; text-deco=
+ration: underline !important;" target=3D"_blank" ><font style=3D"color: #ff=
+ffff;"><u>www.ef.co.id/efblog</u></font></a></span></p><p style=3D"padding:=
+ 0; margin: 0;">&nbsp;</p><p style=3D"padding: 0; margin: 0;"><font color=
+=3D"#696969"><span style=3D"font-size: 12px;"><b> EF Gading Serpong<br />
+Jl Boulevard Gading Serpong blok AA 4 No 43 - 45<br />
+Tangerang 15810<br />
+<br />
+
+
+</b></span></font></p><p style=3D"padding: 0; margin: 0;">&nbsp;</p><p styl=
+e=3D"padding: 0; margin: 0;">&nbsp;</p><p style=3D"padding: 0; margin: 0;">=
+&nbsp;</p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" bgcolor=3D"#000000" style=3D"bor=
+der: 0px none; background-color: #000000;">
+<tr><td valign=3D"top" style=3D"padding: 5px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr><td class=3D"pattern" style=3D"padding: 0px;"><table cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" width=3D"56" class=3D"c56p10n" style=3D"padding: 0px=
+;"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"35"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_facebook_com_=
+englishfirst_" href=3D"http://links.e.englishtown.com/ctt?kn=3D6&ms=3DNTQ1M=
+Tk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" t=
+arget=3D"_blank" class=3D"imglink" ><img   src=3D"http://ak2.englishtown.co=
+m/_imgs/englishfirst/gud/common/footer/socials/icon1_id.png?nocache=3D20150=
+228" width=3D"35" height=3D"35" alt=3D"Facebook" border=3D"0" class=3D"img3=
+5x35" style=3D"display: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"56" class=3D"c56p10n" style=3D"padding: 0px;"><=
+table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"35"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_twitter_com_E=
+F_EnglishFirs" href=3D"http://links.e.englishtown.com/ctt?kn=3D11&ms=3DNTQ1=
+MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" =
+target=3D"_blank" class=3D"imglink" ><img   src=3D"http://ak1.englishtown.c=
+om/_imgs/englishfirst/gud/common/footer/socials/icon2_id.png?nocache=3D2015=
+0228" width=3D"35" height=3D"35" alt=3D"Twitter" border=3D"0" class=3D"img3=
+5x35" style=3D"display: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"56" class=3D"c56p10n" style=3D"padding: 0px;"><=
+table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"35"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_youtube_com_c=
+hannel_UCd8LZ" href=3D"http://links.e.englishtown.com/ctt?kn=3D15&ms=3DNTQ1=
+MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" =
+target=3D"_blank" class=3D"imglink" ><img   src=3D"http://ak2.englishtown.c=
+om/_imgs/englishfirst/gud/common/footer/socials/icon3_id.png?nocache=3D2015=
+0228" width=3D"35" height=3D"35" alt=3D"YouTube" border=3D"0" class=3D"img3=
+5x35" style=3D"display: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"56" class=3D"c56p10n" style=3D"padding: 0px;"><=
+table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"40"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_instagram_com=
+_ef_englishfi" href=3D"http://links.e.englishtown.com/ctt?kn=3D12&ms=3DNTQ1=
+MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" =
+target=3D"_blank" class=3D"imglink" ><img   src=3D"https://res.cloudinary.c=
+om/hatafavyc/image/upload/v1461660007/prb4oe4koqyzpmmomlho.jpg" width=3D"40=
+" height=3D"36" alt=3D"Instagram" border=3D"0" class=3D"img40x36" style=3D"=
+display: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"340" class=3D"c340p60n pattern" style=3D"paddin=
+g: 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%">
+<tr><td valign=3D"top" width=3D"49" class=3D"c49p14n" style=3D"padding: 0px=
+;"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"35"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><a name=3D"www_linkedin_com_=
+company_ef_en" href=3D"http://links.e.englishtown.com/ctt?kn=3D7&ms=3DNTQ1M=
+Tk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" t=
+arget=3D"_blank" class=3D"imglink" ><img   src=3D"https://res.cloudinary.co=
+m/hatafavyc/image/upload/v1456295522/pktmnnywijaellzto1du.png" width=3D"35"=
+ height=3D"35" alt=3D"LinkedIn" border=3D"0" class=3D"img35x35" style=3D"di=
+splay: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"68" class=3D"c68p20n" style=3D"padding: 0px;"><=
+table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr><td align=3D"center" style=3D"padding: 0px;"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" align=3D"center">
+<tr><td valign=3D"top" align=3D"center" style=3D"padding: 0px;"><table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"61"  style=3D"border:=
+ 0px none; height: auto;">
+<tr><td valign=3D"top" style=3D"padding-top: 6px;"><a name=3D"www_ef_co_id_=
+englishfirst_5" href=3D"http://links.e.englishtown.com/ctt?kn=3D13&ms=3DNTQ=
+1MTk0NjcS1&r=3DMjA1MzE0Nzk4MTA0S0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0"=
+ target=3D"_blank" class=3D"imglink" ><img   src=3D"https://res.cloudinary.=
+com/hatafavyc/image/upload/v1453980306/tnfxyfumroluedytegzg.png" width=3D"6=
+1" height=3D"30" alt=3D"EF Blog ID" border=3D"0" class=3D"img61x30" style=
+=3D"display: block;"  /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td valign=3D"top" width=3D"34" class=3D"c34p10n" style=3D"padding: 0px;"><=
+/td>
+<td valign=3D"top" width=3D"34" class=3D"c34p10n" style=3D"padding: 0px;"><=
+/td>
+<td valign=3D"top" width=3D"180" class=3D"c180p53n hide" style=3D"padding: =
+0px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding-top: 70px; padding-right: 15px; pad=
+ding-bottom: 15px; padding-left: 15px;"><table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top"><div style=3D"text-align: left; font-family: arial; =
+font-size: 10px; color: #ffffff; line-height: 14px; mso-line-height: exactl=
+y; vertical-align: middle;"><p style=3D"padding: 0; margin: 0;"><span style=
+=3D"font-size: 11px; color: #696969;"><a name=3D"ip_ef_ef_com" href=3D"mail=
+to:ip.ef@ef.com" style=3D"color: #ffffff !important; text-decoration: under=
+line !important;" target=3D"_blank" ><font style=3D"color: #ffffff;">=C2=A9=
+ EF Education First 2017</font></a>. Hak cipta dilindungi Undang-undang.<br=
+><br>Keputusan akhir yang bersangkutan dengan promosi ini berada di pihak E=
+F English First.<br>Untuk memastikan Anda selalu dapat menerima email kami,=
+ mohon tambahkan <a name=3D"offer_info_ef_com_subject_Unsu" href=3D"mailto:=
+offer@info.ef.com?subject=3DUnsubscribe" style=3D"color: #ffffff !important=
+; text-decoration: underline !important;" target=3D"_blank" ><font style=3D=
+"color: #ffffff;">offer@info.ef.com</font></a><br>ke dalam daftar kontak An=
+da.</span></p><p style=3D"padding: 0; margin: 0;">&nbsp;</p><p style=3D"pad=
+ding: 0; margin: 0;"><span style=3D"font-size: 11px; color: #696969;">Jika =
+Anda tak ingin menerima penawaran khusus dari EF English First, silahkan kl=
+i</span><span style=3D"font-size: 11px;"><span style=3D"color: #696969;">k =
+</span><a name=3D"www_ef_co_id_englishfirst" style=3D"color: #ffffff !impor=
+tant; text-decoration: underline !important;"  href=3D"http://links.e.engli=
+shtown.com/servlet/OneClickOptOutServlet?m=3D54519467&r=3DMjA1MzE0Nzk4MTA0S=
+0&b=3D0&j=3DMTIwMjk0MTM0OQS2&mt=3D1&rt=3D0" target=3D"_blank"><font style=
+=3D"color: #ffffff;"><span style=3D"color: #696969;">di sini</span></font><=
+/a></span><br><span style=3D"font-size: 11px; color: #696969;">Jangan memba=
+las ke alamat email ini.</span></p></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr><td valign=3D"top" style=3D"padding: 0px;"><table cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"600" align=3D"center" class=3D"email-root-wrapper" =
+style=3D"max-width: 600px; min-width: 240px; margin: 0 auto;">
+<tr><td valign=3D"top" style=3D"padding: 0px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!-- content end -->
+          </center>
+        </td>
+    </tr>
+  </table>
+<IMG src=3D"http://links.e.englishtown.com/open/log/54519467/MjA1MzE0Nzk4MT=
+A0S0/0/MTIwMjk0MTM0OQS2/1/0" style=3D"display: none"></body>
+</html>
+
+
+
+------=_Part_383939_97624873.1500545733435--

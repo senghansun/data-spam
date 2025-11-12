@@ -1,0 +1,172 @@
+Delivered-To: jordy.jonathan@student.umn.ac.id
+Received: by 10.202.72.198 with SMTP id v189csp892222oia;
+        Sun, 3 Apr 2016 19:34:08 -0700 (PDT)
+X-Received: by 10.66.55.39 with SMTP id o7mr48962943pap.13.1459737248650;
+        Sun, 03 Apr 2016 19:34:08 -0700 (PDT)
+Return-Path: <elearning@umn.ac.id>
+Received: from mail-pf0-x22e.google.com (mail-pf0-x22e.google.com. [2607:f8b0:400e:c00::22e])
+        by mx.google.com with ESMTPS id e83si22918676pfb.131.2016.04.03.19.34.08
+        for <jordy.jonathan@student.umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 03 Apr 2016 19:34:08 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400e:c00::22e is neither permitted nor denied by best guess record for domain of elearning@umn.ac.id) client-ip=2607:f8b0:400e:c00::22e;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:400e:c00::22e is neither permitted nor denied by best guess record for domain of elearning@umn.ac.id) smtp.mailfrom=elearning@umn.ac.id
+Received: by mail-pf0-x22e.google.com with SMTP id e128so111965607pfe.3
+        for <jordy.jonathan@student.umn.ac.id>; Sun, 03 Apr 2016 19:34:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=from:date:to:subject:message-id:precedence:list-id:list-help
+         :mime-version:content-transfer-encoding;
+        bh=mUQkxpanzjYek5wbMMWjhBFnlZosDpKMNDAGLfaQtmc=;
+        b=adPYijdVqMyfKw1FGXdzIgd63iQWNOK2OJy17Cx1Do1Bz5ukZHATUXpZdMGqeGy1L4
+         k3HA1S0nzQ+E+BL/5O/mhYxFyn1cRylSqtnvyN0hxv4UingqpO8H34IHj0NGNHK33F+w
+         rKdwwuQpP6fSn6kWyB+vVgy0b9Cu/1i6peAPEddTdD22+cacFuk0zhu1km67BhXnjVQ4
+         noljVu+ZTHae4aDh1twrj3ItWOlGCEIp9y/+osze2ZbZPjzr4XOIwXnufQxGld6f0DAU
+         rpEl0QBXCX14Pgn+MFNzw9VssccZ1SEFVgFMZ1yIQWAZ+G0YI86rPe7lsbgtGTYn0Pau
+         VWuA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:from:date:to:subject:message-id:precedence
+         :list-id:list-help:mime-version:content-transfer-encoding;
+        bh=mUQkxpanzjYek5wbMMWjhBFnlZosDpKMNDAGLfaQtmc=;
+        b=NG47Lq/YhLGVM3GNz6VpkkaCM1dUBW2UjkG3XJ5+3QFzO/8E3+EErA71IVLFuO9qIH
+         5a0tjgSJIFzeZWt77sRRyfhrP0Bq21F5q9aiRlCgk7sJreMkMJOg6nvkNJB6+jf9lvAd
+         g99M9N7VksLe0bNRX3gAvjKxZG4yffFt/8ctzd+wpaBbI/HF3rV85GbulB7x3fUdNeej
+         MKxfy8NFlrmYl3aQ5Y67NQKrAPcYb4uin50W2EWVqu7WrEc0hSZhWVRJES2qXGL+eOZH
+         +R/HFA1ToJxQi1RjqlG2X1DtLXfdQ3B01LCwgonqbgBjGZ3vMqknabSr92qTkmqBy4vj
+         q7RA==
+X-Gm-Message-State: AD7BkJI7Lpc4ueWDHlNUl+7sDUHqBOgpynXY5xIEfOu6WdxbfyJ9SP53PBTRxFjMDfvsMWJ77GAeHDWgD5mJdYn/r1wtNk9CroL2nEh/UG38wAJ3XjsWN+BVYI+EvPQ+KpowkQ0CXEFytjJJ11mb
+X-Received: by 10.98.17.74 with SMTP id z71mr17066362pfi.30.1459737247840;
+        Sun, 03 Apr 2016 19:34:07 -0700 (PDT)
+Return-Path: <elearning@umn.ac.id>
+Received: from localhost.localdomain ([139.0.20.234])
+        by smtp.gmail.com with ESMTPSA id n11sm35037982pfb.74.2016.04.03.19.34.06
+        for <jordy.jonathan@student.umn.ac.id>
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 03 Apr 2016 19:34:06 -0700 (PDT)
+From: "P.M. Winarno" <elearning@umn.ac.id>
+X-Google-Original-From: "P.M. Winarno" <pmwinarno@umn.ac.id>
+Date: Mon, 4 Apr 2016 09:33:02 -0400
+Return-Path: <arman.atmojo@umn.ac.id>
+To: Jordy Jonathan <jordy.jonathan@student.umn.ac.id>
+Subject: IF727/15-21/B: Revisi Materi Sessi 7
+Message-ID: <2d5b95c157f9ac753d461dbf54554700f467ea61e427d36d58ae91d7d23e14b5@elearning.umn.ac.id>
+X-Priority: 3
+X-Mailer: PHPMailer Moodle 2013111810 (https://github.com/PHPMailer/PHPMailer/)
+Precedence: Bulk
+List-Id: "News forum" <moodleforum1218@elearning.umn.ac.id>
+List-Help: http://elearning.umn.ac.id/mod/forum/view.php?f=1218
+X-Course-Id: 3197
+X-Course-Name: Riset Teknologi Informasi
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_72f2e2f6a92cb3ec75bc0a8415ff1d48"
+Content-Transfer-Encoding: quoted-printable
+
+--b1_72f2e2f6a92cb3ec75bc0a8415ff1d48
+Content-Type: text/plain; charset=UTF-8
+
+
+IF727/15-21/B -> Forums -> News forum -> Revisi Materi Sessi 7
+http://elearning.umn.ac.id/mod/forum/discuss.php?d=1286
+---------------------------------------------------------------------
+Revisi Materi Sessi 7
+by P.M. Winarno - Monday, 4 April 2016, 8:50 AM
+---------------------------------------------------------------------
+Para mahasiswa dipersilakan mengunduh ulang materi sessi 7 Revisi. 
+
+Salam, 
+
+Pak Winarno
+
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+http://elearning.umn.ac.id/mod/forum/index.php?id=3197
+
+
+
+-- 
+
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--b1_72f2e2f6a92cb3ec75bc0a8415ff1d48
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<head></head>
+<body id=3D"email">
+
+<div class=3D"navbar"><a target=3D"_blank" href=3D"http://elearning.umn.ac.=
+id/course/view.php?id=3D3197">IF727/15-21/B</a> &raquo; <a target=3D"_blank=
+" href=3D"http://elearning.umn.ac.id/mod/forum/index.php?id=3D3197">Forums<=
+/a> &raquo; <a target=3D"_blank" href=3D"http://elearning.umn.ac.id/mod/for=
+um/view.php?f=3D1218">News forum</a> &raquo; <a target=3D"_blank" href=3D"h=
+ttp://elearning.umn.ac.id/mod/forum/discuss.php?d=3D1286">Revisi Materi Ses=
+si 7</a></div><table border=3D"0" cellpadding=3D"3" cellspacing=3D"0" class=
+=3D"forumpost"><tr class=3D"header"><td width=3D"35" valign=3D"top" class=
+=3D"picture left"><a href=3D"http://elearning.umn.ac.id/user/view.php?id=3D=
+1068&amp;course=3D3197"><img src=3D"http://elearning.umn.ac.id/theme/image.=
+php/_s/bcu/core/1458303649/u/f2" alt=3D"Picture of P.M. Winarno" title=3D"P=
+icture of P.M. Winarno" class=3D"userpicture defaultuserpic" width=3D"35" h=
+eight=3D"35" /></a></td><td class=3D"topic starter"><div class=3D"subject">=
+Revisi Materi Sessi 7</div><div class=3D"author">by <a href=3D"http://elear=
+ning.umn.ac.id/user/view.php?id=3D1068&amp;course=3D3197">P.M. Winarno</a> =
+- Monday, 4 April 2016, 8:50 AM</div></td></tr><tr><td class=3D"left side" =
+valign=3D"top">&nbsp;</td><td class=3D"content"><p>Para mahasiswa dipersila=
+kan mengunduh ulang materi sessi 7 Revisi.</p>
+<p></p>
+<p>Salam,</p>
+<p>Pak Winarno</p><div class=3D"commands"></div><div class=3D"link"><a targ=
+et=3D"_blank" href=3D"http://elearning.umn.ac.id/mod/forum/discuss.php?d=3D=
+1286#p2439">See this post in context</a></div></td></tr></table>
+
+<hr /><div class=3D"mdl-align unsubscribelink"><a href=3D'http://elearning.=
+umn.ac.id/mod/forum/index.php?id=3D3197'>Change your forum digest preferenc=
+es</a></div></body>
+
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font>
+--b1_72f2e2f6a92cb3ec75bc0a8415ff1d48--

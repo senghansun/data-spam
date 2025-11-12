@@ -1,0 +1,95 @@
+﻿Delivered-To: nichoadiswara29@gmail.com
+Received: by 10.152.8.137 with SMTP id r9csp227642laa;
+        Fri, 7 Nov 2014 07:44:21 -0800 (PST)
+X-Received: by 10.68.180.130 with SMTP id do2mr13165157pbc.28.1415375060855;
+        Fri, 07 Nov 2014 07:44:20 -0800 (PST)
+Return-Path: <customer@boltsuper4g.com>
+Received: from smtpb01.boltsuper4g.com (smtpb01.boltsuper4g.com. [116.50.26.98])
+        by mx.google.com with ESMTP id rx10si9420490pab.77.2014.11.07.07.44.18
+        for <multiple recipients>;
+        Fri, 07 Nov 2014 07:44:20 -0800 (PST)
+Received-SPF: pass (google.com: domain of customer@boltsuper4g.com designates 116.50.26.98 as permitted sender) client-ip=116.50.26.98;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of customer@boltsuper4g.com designates 116.50.26.98 as permitted sender) smtp.mail=customer@boltsuper4g.com
+Date: Fri, 07 Nov 2014 07:44:20 -0800 (PST)
+Message-Id: <545ce8d4.aa8e420a.4ed9.ffffdf30SMTPIN_ADDED_MISSING@mx.google.com>
+Received: from CGRNSV02.boltsuper4g.com (unknown [202.62.16.103]) by smtpb01.boltsuper4g.com (Postfix) with ESMTP id AD8038C01; Fri,
+  7 Nov 2014 22:37:45 +0700 (WIT)
+Content-Type: multipart/related; boundary="===============2090375985=="
+MIME-Version: 1.0
+Subject: Setting Email Client pada Jaringan BOLT!
+From: BOLTSUPER4G <customer@boltsuper4g.com>
+To: customer@boltsuper4g.com
+
+--===============2090375985==
+Content-Type: multipart/alternative; boundary="===============1852450079=="
+MIME-Version: 1.0
+
+--===============1852450079==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+This is the alternative plain text message.
+--===============1852450079==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<p><strong>Hi BOLT!ers,</strong></p>
+<p>Kami ingin menginformasikan beberapa hal berikut ini untuk memberikan layanan internet yang lebih aman bagi BOLT!ers:</p>
+<ol>
+<li>BOLT! akan melakukan penyaringan terhadap spam pada jaringan BOLT! dengan cara melakukan penutupan port 25 (SMTP) ke internet, yang biasanya digunakan oleh email client seperti Microsoft Outlook, Mozilla Thunderbird, Apple Mail dan koneksi di gadget lainnya (Powerphone).</li>
+<li>Proses akan dilakukan pada 12 November 2014.</li>
+<li>Ditutupnya port 25 (SMTP) akan menyebabkan gagalnya pengiriman email melalui email client atau koneksi melalui gadget lainnya jika server tujuan menggunakan port 25.</li>
+<li>Silakan melakukan pengaturan SMTP agar tetap dapat melakukan pengiriman email dari jaringan BOLT!. Berikut adalah pengaturan SMTP konfigurasi BOLT!. <br />&bull; Server : smtp.internux.co.id<br />&bull; Port : 25<br />&bull; Security/Encryption : none<br />&bull; Authentication : none</li>
+</ol>
+<p>Contoh pengaturan SMTP:</p>
+<table style="height: 190px;" border="1" width="901" cellspacing="0">
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Microsoft Outlook 2010</strong></td>
+<td style="text-align: center;"><strong><span lang="IN">Mozilla Thunderbird</span></strong></td>
+<td style="text-align: center;"><strong><span lang="IN">Apple Mail</span></strong></td>
+<td style="text-align: center;"><strong>Android</strong></td>
+</tr>
+<tr>
+<td width="200px">
+<ul style="list-style-type: square;">
+<li>Klik pada menu <strong>File&gt;Info&gt;Account Setting</strong></li>
+<li>Pada email yang akan diedit <strong>klik 2 kali</strong></li>
+<li>Di tab <strong>Outgoing mail server(SMTP)</strong> silakan isi: <strong>smtp.internux.co.id</strong></li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: square;">
+<li>Klik pada menu <strong>Tools&gt;Account Setting&gt;Outgoing Server (SMTP)</strong></li>
+<li>Di tab <strong>Server Name</strong> silakan isi: <strong>smtp.internux.co.id</strong></li>
+<li>Di tab <strong>Port</strong> silakan isi: <strong>25</strong></li>
+<li>Di tab <strong>Security : none</strong></li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: square;">
+<li>Klik pada <strong>Menu Mail&gt;Preferences&gt; Account</strong></li>
+<li>Jika sebelumnya menggunakan SMTP lain, maka lakukan <strong>Edit SMTP Server List</strong></li>
+<li>Di tab <strong>Outgoing mail server(SMTP)</strong> silakan isi: <strong>smtp.internux.co.id</strong></li>
+</ul>
+</td>
+<td style="text-align: center;">
+<ul style="list-style-type: square;">
+<li style="text-align: left;">Pilih Menu <strong>Setting&gt;Account&gt;Add Account</strong> (isi Email dan Password)<strong>&gt;Manual Setup-Tipe Account</strong></li>
+<li style="text-align: left;">Pada <strong>Outgoing server setting silakan isi: smtp.internux.co.id</strong></li>
+<li style="text-align: left;">Di tab <strong>Port</strong> silakan isi: <strong>25</strong></li>
+<li style="text-align: left;">Di tab <strong>Security : none</strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Untuk informasi lebih lanjut, dapat menghubungi Customer Service kami melalui 021 2963 2222.</p>
+<p>Selamat menikmati internetan 10X lebih cepat.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Salam <strong>BOLT!</strong></p>
+--===============1852450079==--
+--===============2090375985==--

@@ -1,0 +1,864 @@
+Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.178.140 with SMTP id b134csp2043044vkf;
+        Thu, 13 Jul 2017 00:05:51 -0700 (PDT)
+X-Received: by 10.237.52.101 with SMTP id w92mr3165422qtd.156.1499929551866;
+        Thu, 13 Jul 2017 00:05:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499929551; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OH9Qz3w8SShY6GdUObPpm9rNPL1zBEyZGcTlXwp2jcBtpzZkuG/OyJRvlqIvQxTuxG
+         MCMsX0JE/t8eIoX3+o/U2roZJcQGX5FRKsu35FqsnUEtUyZRh1dcYl8jRk1Q02W1jCAs
+         YKzVjC9ynrgziwd6pY8ZNaTm3F/53cB2CYp5Z4Awfpmr8GW+8IOOX5Kb9HBMyn32KAfN
+         tRG6IlPLQKYiv8A/TwGEzcAA3TxCyXlbfhCRiA9TM96GVYyWQLXWl/DU6Jv1g0mzYFDj
+         INqtbiCxdz6jfAC1iXGunq1HfUWsPJiNR5gblcu0/SYoo3GNbv/J2KhiSIfTbIG2vK09
+         cKcQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:content-transfer-encoding
+         :date:sender:domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=aopTJbHWGUEogMEN3QKKo0zc1BEuplOgZQWdh1y4E6I=;
+        b=bQO9PDF8KaF/rS6JXzw97RWTc9AU0Pvx58eRQh5fzQjNRtfV3ymNX8CpnhvyhHbPGT
+         FPz/zBsWalrAkfLzdqgD7IJeV+XMz07/i0qIjc7gInupeVgYYJlYIm1PAK7unksNAt5x
+         g3/vQ4mdywEO+gUhwoKaIDd7Uj/tDcuXUfu+tK9W3b9O80J5n6/lDmAnt/UZlrC6TlFo
+         B6TvZr+ijmf4uAyN/D3aAssg9H47L6OWZflHXDFCM714fzxJnP3RRRWp10mMuMBufK9a
+         Rk5NigWy7E5RPKv7WjDEes8wBilsOb5Jins7WT/E8UiPPm+hQNwdtvNrQ2F7lVnD2VXj
+         Cv5g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@noreply.bukalapak.com header.b=bXrciBhJ;
+       dkim=pass header.i=@mailgun.org header.b=VLAvFd6K;
+       spf=pass (google.com: domain of bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com designates 104.130.122.223 as permitted sender) smtp.mailfrom=bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com>
+Received: from mail223.static.mailgun.info (mail223.static.mailgun.info. [104.130.122.223])
+        by mx.google.com with UTF8SMTPS id 46si4473737qtb.24.2017.07.13.00.05.51
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 13 Jul 2017 00:05:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com designates 104.130.122.223 as permitted sender) client-ip=104.130.122.223;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@noreply.bukalapak.com header.b=bXrciBhJ;
+       dkim=pass header.i=@mailgun.org header.b=VLAvFd6K;
+       spf=pass (google.com: domain of bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com designates 104.130.122.223 as permitted sender) smtp.mailfrom=bounce+216029.b2717-nikosatrianto=gmail.com@noreply.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=noreply.bukalapak.com; q=dns/txt; s=mx; t=1499929551; h=Mime-Version: Content-Type: Subject: From: To: Message-Id: Content-Transfer-Encoding: Date: Sender: X-Feedback-Id; bh=aopTJbHWGUEogMEN3QKKo0zc1BEuplOgZQWdh1y4E6I=; b=bXrciBhJqmEhxyP0bXojtpiOoemBjMjOy5apo1j9pyKN3ns4ru2wWzgkkEAHrupz6IUucG4n 55USfEjr37aFx5B9wPSeGPPBI7MXwg/hDxyfrPdGHC2jVmQfHDIYIfmcqxGlZySglsqeNLbh lcX+Xrwt0S6FmGfw5gIk1S2cnVo=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=noreply.bukalapak.com; s=mx; q=dns; h=X-Feedback-Id: Sender: Date: Content-Transfer-Encoding: Message-Id: To: From: Subject: Content-Type: Mime-Version; b=uw2JE3QFJCW6kfcfJWKGkSV0+SBxoXjzS8BnyRRu7kns1ILGlh9sU75hC+J0WeG8Bfl/J3 uvckVlIygthKciaAuHJ1sI8KS5mC2CNwMmu87fsV6CXjJttJjqPfOet0WA0x4s9fRPbCfriA Hsi3FJQbBbDFz5vNr4EwyASEjGD4M=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1499929551; h=Mime-Version: Content-Type: Subject: From: To: Message-Id: Content-Transfer-Encoding: Date: Sender: X-Feedback-Id; bh=aopTJbHWGUEogMEN3QKKo0zc1BEuplOgZQWdh1y4E6I=; b=VLAvFd6KWbgMd5AwtsKzpb7pLrqOwngl5ywrk+MfcbQWM4H+zW3TAJZAx8NKNzmVf6SUqODL BJxNIE4IFK9wlpJX0ic+XlLamv/A2utcxTwl8tVqyaQg4u2eU/kOFlg29cPfuIsbAEhGfO76 DWKavr5ETh7ZeiU6rfE2vnLKBaw=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns; h=X-Feedback-Id: Sender: Date: Content-Transfer-Encoding: Message-Id: To: From: Subject: Content-Type: Mime-Version; b=B0NwAZOt6JDF5C/w2AzwBRMyGCVbf5fO4Fi1VYfIUqEu2ue8LWhzFHKJkA0zc2j1oRTvM/ VTfKdCDaMDHDoDFfTpXlFgph41K+fs+dB/mz1GvSbiy5ZyW7bGDVxPeWl38GmuYs828O0Rog 9acgMJcxlC9TuQ2Hx9rkhTcKQiLx0=
+X-Feedback-Id: 5714ae9a4cd30028b9e92ee7:mailgun
+Sender: mail@noreply.bukalapak.com
+Date: Thu, 13 Jul 2017 07:05:51 +0000
+X-Mailgun-Sending-Ip: 104.130.122.223
+X-Mailgun-Sid: WyI3NDEzNCIsICJuaWtvc2F0cmlhbnRvQGdtYWlsLmNvbSIsICJiMjcxNyJd
+Content-Transfer-Encoding: quoted-printable
+Received: by luna.mailgun.net with HTTP; Thu, 13 Jul 2017 07:05:51 +0000
+Message-Id: <20170713070551.8611.7522E4A1D711B0EF@noreply.bukalapak.com>
+X-Mc-Tags: courier_delivered
+To: nikosatrianto@gmail.com
+From: mail@noreply.bukalapak.com
+Subject: Pesanan Sudah Sampai Menurut Tracking Jasa Pengiriman, Segera Konfirmasi dan Beri Feedback Pelapak! - Relay 4 kaki 40A transparan... - #170456732422
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Pesanan Sudah Sampai Menurut Tracking Jasa Pengiriman, Segera Konfir=
+masi dan Beri Feedback Pelapak! - Relay 4 kaki 40A transparan... - #1704567=
+32422</title>
+
+
+<style>body {
+width: 100% !important;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+}
+body {
+margin: 0; padding: 0;
+}
+img {
+border: 0 none; height: auto; line-height: 100%; outline: none; text-decora=
+tion: none;
+}
+body {
+background-color: #f8f8f8;
+}
+</style>
+</head>
+<body leftmargin=3D"0" marginheight=3D"0" marginwidth=3D"0" offset=3D"0" to=
+pmargin=3D"0" style=3D"width: 100% !important; -webkit-text-size-adjust: no=
+ne; margin: 0; padding: 0;" bgcolor=3D"#f8f8f8">
+<center class=3D"simplifyEmailCenterWrapper" style=3D"display: block; text-=
+align: center;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" id=
+=3D"simplifyEmailOuterTable" width=3D"100%" style=3D"border-collapse: colla=
+pse; border-spacing: 0; margin: 0; padding: 0;">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"templateContainer" width=3D"600" style=3D"border-collapse: collapse;=
+ border-spacing: 0; margin: 0 auto; padding: 0;">
+<tr>
+<td align=3D"left" style=3D'border-collapse: collapse; border-spacing: 0; f=
+ont-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; =
+padding: 0;'>
+<table width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0=
+; margin: 0; padding: 0;">
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td width=3D"550" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'>
+<img src=3D"https://www.bukalapak.com/images/logo/single_352x56_0_red_03052=
+016.png" style=3D"width: 176px; height: 28px; line-height: 100%; outline: n=
+one; text-decoration: none; border: 0 none;">
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#ffffff" id=3D"contentContainer" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #999; =
+line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" width=3D"100%" style=3D"border-collapse: collapse; bo=
+rder-spacing: 0; margin: 0; padding: 0;">
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td align=3D"left" width=3D"550" style=3D'border-collapse: collapse; border=
+-spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.=
+5; margin: 0; padding: 0;'>
+<table align=3D"left" width=3D"100%" style=3D"border-collapse: collapse; bo=
+rder-spacing: 0; margin: 0; padding: 0;">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<div style=3D"margin: 10px 2px;">
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Hai Niko satrianto,</p>
+
+</div>
+<div style=3D"margin: 10px 2px;">
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Berdasarkan data yang kami terim=
+a dari tracking jasa pengiriman, barang dari transaksi berikut telah sampai=
+ di tujuan:</p>
+<br>
+<table border=3D"0" cellpadding=3D"5" cellspacing=3D"0" id=3D"templateList"=
+ width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0; font=
+-size: 12px; border-bottom-color: #CCCCCC; border-bottom-width: 1px; border=
+-bottom-style: solid; margin: 0 0 25px; padding: 0;" bgcolor=3D"#FFFFFF">
+<tr>
+<th colspan=3D"4" style=3D"border-bottom-style: none; color: #FFFFFF; paddi=
+ng-left: 10px; padding-right: 10px;" bgcolor=3D"#900135">
+<h2 style=3D'font-family: "Arial", sans-serif; color: #FFFFFF; line-height:=
+ 1.5; font-size: 14px; margin: 0; padding: 5px 0;'>Transaksi #<a target=3D"=
+_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%3A%2F%2Fwww.b=
+ukalapak.com%2Fpayment%2Ftransactions%2F456732422&amp;llsttu=3D83c6d937f16a=
+d7f31be5214a9d90ab40d3acc011b82b524cd1e5ea2b0c9b71fd&amp;subject=3DPesanan+=
+Sudah+Sampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri=
++Feedback+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp=
+;tag=3Dcourier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrian=
+to%40gmail.com" style=3D'font-family: "Arial", sans-serif; color: #FFFFFF !=
+important; line-height: 1.5; text-decoration: none; font-size: 14px; margin=
+: 0; padding: 0;'>170456732422</a>
+</h2>
+</th>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Waktu Transaksi</span>
+</td>
+<td align=3D"left" valign=3D"top" style=3D'border-collapse: collapse; borde=
+r-spacing: 0; font-family: "Arial", sans-serif; color: #555; line-height: 1=
+.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; border-bottom-s=
+tyle: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFFF">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>12 Juli 2017 03.27 WIB</span>
+</td>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Pembeli</span>
+</td>
+<td align=3D"left" valign=3D"top" style=3D'border-collapse: collapse; borde=
+r-spacing: 0; font-family: "Arial", sans-serif; color: #555; line-height: 1=
+.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; border-bottom-s=
+tyle: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFFF">
+<a target=3D"_blank" style=3D'color: #a30046 !important; font-family: "Aria=
+l", sans-serif; line-height: 1.5; text-decoration: none; font-size: 14px; m=
+argin: 0; padding: 0;' href=3D"http://glimpsetrack.net/redirect?link=3Dhttp=
+s%3A%2F%2Fwww.bukalapak.com%2Fu%2Fniko_satrianto&amp;llsttu=3D266a4a1d0635e=
+fc5767490d1d37b0dd2dee6e1925e52a70ab71db6f691d6c1df&amp;subject=3DPesanan+S=
+udah+Sampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+=
+Feedback+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;=
+tag=3Dcourier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatriant=
+o%40gmail.com">Niko satrianto</a>
+</td>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Pelapak</span>
+</td>
+<td align=3D"left" valign=3D"top" style=3D'border-collapse: collapse; borde=
+r-spacing: 0; font-family: "Arial", sans-serif; color: #555; line-height: 1=
+.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; border-bottom-s=
+tyle: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFFF">
+<a style=3D'color: #a30046 !important; font-family: "Arial", sans-serif; li=
+ne-height: 1.5; text-decoration: none; font-size: 14px; margin: 0; padding:=
+ 0;' href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%3A%2F%2Fwww.buka=
+lapak.com%2Fu%2Fgsm_grosir_shop_motor&amp;llsttu=3D6cb445fcd42200215c0545a7=
+801f300e09838deacd46e5c657c90b56f7f0ada1&amp;subject=3DPesanan+Sudah+Sampai=
++Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pe=
+lapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcouri=
+er_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.c=
+om">Lorenzo Motor Sports</a>
+</td>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Jasa Pengiriman</span>
+</td>
+<td align=3D"left" valign=3D"top" style=3D'border-collapse: collapse; borde=
+r-spacing: 0; font-family: "Arial", sans-serif; color: #555; line-height: 1=
+.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; border-bottom-s=
+tyle: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFFF">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>JNE REG</span>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #555; line-height: 1.5; border-botto=
+m-color: #CCCCCC; border-bottom-width: 1px; border-bottom-style: solid; mar=
+gin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFFF">
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>
+<strong style=3D"color: #555; font-size: 14px;">Catatan Pembeli :</strong>
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Yang Captain America</p>
+</td>
+</tr>
+<tr>
+<th colspan=3D"4" style=3D"border-bottom-style: none; color: #FFFFFF; paddi=
+ng-left: 10px; padding-right: 10px;" bgcolor=3D"#900135"></th>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Nomor Resi Pengiriman</span>
+</td>
+<td align=3D"right" valign=3D"top" width=3D"25%" style=3D'border-collapse: =
+collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555;=
+ line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; =
+border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFF=
+FF">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>AEK46065</span>
+</td>
+</tr>
+<tr>
+<td align=3D"left" colspan=3D"3" valign=3D"top" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555; =
+line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; b=
+order-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFFF=
+F">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>Jasa Pengiriman</span>
+</td>
+<td align=3D"right" valign=3D"top" width=3D"25%" style=3D'border-collapse: =
+collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #555;=
+ line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px; =
+border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FFFF=
+FF">
+<span style=3D'font-family: "Arial", sans-serif; color: #555; line-height: =
+1.5; font-size: 14px; margin: 0; padding: 0;'>wahana</span>
+</td>
+</tr>
+<tr>
+<th colspan=3D"4" style=3D"border-bottom-style: none; color: #FFFFFF; paddi=
+ng-left: 10px; padding-right: 10px;" bgcolor=3D"#900135"></th>
+</tr>
+<tr>
+<td align=3D"center" class=3D"headingList" valign=3D"top" width=3D"25%" sty=
+le=3D'border-collapse: collapse; border-spacing: 0; font-family: "Arial", s=
+ans-serif; color: #555; line-height: 1.5; border-bottom-color: #CCCCCC; bor=
+der-bottom-width: 1px; border-bottom-style: solid; font-size: 11px; margin:=
+ 0; padding: 5px 10px;' bgcolor=3D"#F0F0F0">
+<strong style=3D"color: #555; font-size: 14px;">Nama Barang</strong>
+</td>
+<td align=3D"center" class=3D"headingList" valign=3D"top" width=3D"10%" sty=
+le=3D'border-collapse: collapse; border-spacing: 0; font-family: "Arial", s=
+ans-serif; color: #555; line-height: 1.5; border-bottom-color: #CCCCCC; bor=
+der-bottom-width: 1px; border-bottom-style: solid; font-size: 11px; margin:=
+ 0; padding: 5px 10px;' bgcolor=3D"#F0F0F0">
+<strong style=3D"color: #555; font-size: 14px;">Jumlah</strong>
+</td>
+<td align=3D"center" class=3D"headingList" valign=3D"top" width=3D"25%" sty=
+le=3D'border-collapse: collapse; border-spacing: 0; font-family: "Arial", s=
+ans-serif; color: #555; line-height: 1.5; border-bottom-color: #CCCCCC; bor=
+der-bottom-width: 1px; border-bottom-style: solid; font-size: 11px; margin:=
+ 0; padding: 5px 10px;' bgcolor=3D"#F0F0F0">
+<strong style=3D"color: #555; font-size: 14px;">Varian Barang</strong>
+</td>
+<td align=3D"right" class=3D"headingList" valign=3D"top" width=3D"25%" styl=
+e=3D'border-collapse: collapse; border-spacing: 0; font-family: "Arial", sa=
+ns-serif; color: #555; line-height: 1.5; border-bottom-color: #CCCCCC; bord=
+er-bottom-width: 1px; border-bottom-style: solid; font-size: 11px; margin: =
+0; padding: 5px 10px;' bgcolor=3D"#F0F0F0">
+<strong style=3D"color: #555; font-size: 14px;">Harga</strong>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"middle" width=3D"25%" style=3D'border-collapse=
+: collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #55=
+5; line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1px=
+; border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#FF=
+FFFF">
+<a class=3D"product-name-link" href=3D"http://glimpsetrack.net/redirect?lin=
+k=3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fproduct_detail_history%3Fproduct_id%3=
+D480003656%26transaction_id%3D456732422&amp;llsttu=3D99b89b548805ccf1da6fe5=
+244f6e321fa9abb9bb6435ef752f3b75ad82b54f53&amp;subject=3DPesanan+Sudah+Samp=
+ai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+=
+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcou=
+rier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail=
+.com" style=3D'font-weight: bold; text-decoration: none; font-family: "Aria=
+l", sans-serif; color: #a30046 !important; line-height: 1.5; font-size: 14p=
+x; margin: 0; padding: 0;' title=3D"Relay 4 kaki 40A transparan untuk klaks=
+on  alarm remote llampu">
+Relay 4 kaki 40A transparan untuk klakson  alar...
+</a>
+</td>
+<td align=3D"center" valign=3D"middle" width=3D"10%" style=3D'border-collap=
+se: collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #=
+555; line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1=
+px; border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#=
+FFFFFF">
+1
+</td>
+<td align=3D"center" valign=3D"middle" width=3D"25%" style=3D'border-collap=
+se: collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #=
+555; line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1=
+px; border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#=
+FFFFFF">
+
+</td>
+<td align=3D"right" valign=3D"middle" width=3D"25%" style=3D'border-collaps=
+e: collapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #5=
+55; line-height: 1.5; border-bottom-color: #CCCCCC; border-bottom-width: 1p=
+x; border-bottom-style: solid; margin: 0; padding: 5px 10px;' bgcolor=3D"#F=
+FFFFF">
+<span class=3D"currency positive" style=3D'font-family: "Arial", sans-serif=
+; color: #555; line-height: 1.5; font-size: 14px; margin: 0; padding: 0;'>R=
+p</span><span class=3D"amount positive" style=3D'font-family: "Arial", sans=
+-serif; color: #555; line-height: 1.5; font-size: 14px; margin: 0; padding:=
+ 0;'>9.900</span>
+</td>
+</tr>
+</table>
+
+<br>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Segera lakukan konfirmasi terima=
+ barang, berikan feedback pelapak, dan ulas barang untuk memberitahu bahwa =
+kamu puas terhadap barang dan pelayanan pelapak. Jika ternyata kamu belum m=
+enerima barang tersebut, silakan hubungi kami melalui halaman <a target=3D"=
+_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%3A%2F%2Fwww.b=
+ukalapak.com%2Fsupports%2Fcontact_us&amp;llsttu=3D8125ce3c41ea9ab671d6ff813=
+c067ad5482c41782aa3bf4094ee1505f67f7945&amp;subject=3DPesanan+Sudah+Sampai+=
+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pel=
+apak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourie=
+r_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.co=
+m" style=3D'font-family: "Arial", sans-serif; color: #a30046 !important; li=
+ne-height: 1.5; text-decoration: none; font-size: 14px; margin: 0; padding:=
+ 0;'>Hubungi Bukalapak</a>.</p>
+
+<br>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Bukalapak memberikan waktu penga=
+juan komplain barang untukmu hingga Sabtu, 15 Juli 2017 pukul 14:04 WIB (2x=
+24 jam). Jika tidak ada pengajuan komplain hingga batas waktu tersebut, mak=
+a kamu tidak akan bisa mengajukan komplain lagi.</p>
+
+<br>
+<div class=3D"grey-box" style=3D"background-color: #F4F4F4; padding-top: 20=
+px; padding-bottom: 20px;">
+<a class=3D"button" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%3=
+A%2F%2Fwww.bukalapak.com%2Fpayment%2Ftransactions%2F456732422%2Farrival_con=
+firmation&amp;llsttu=3Dbbdbb138777085a9f1a8320b88f40567e48ec73e6e3ef65c8aae=
+d002dd92046d&amp;subject=3DPesanan+Sudah+Sampai+Menurut+Tracking+Jasa+Pengi=
+riman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelapak%21+-+Relay+4+kaki+40A+=
+transparan...+-+%23170456732422&amp;tag=3Dcourier_delivered&amp;type=3DClic=
+kEmail&amp;user_email=3Dnikosatrianto%40gmail.com" target=3D"_blank" style=
+=3D'font-family: "Arial", sans-serif; color: #FFFFFF !important; line-heigh=
+t: 1.5; text-decoration: none !important; display: block; clear: both; widt=
+h: 50%; text-align: center; background-color: #A30046; font-size: 14px; mar=
+gin: 0 auto; padding: 10px 0;'>
+<center style=3D"color: #ffffff;">
+Konfirmasi Terima Barang
+</center>
+</a>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<table width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0=
+; margin: 0; padding: 0;">
+<tr>
+<td id=3D"thanksContainer" style=3D'border-collapse: collapse; border-spaci=
+ng: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; mar=
+gin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>
+
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>
+Seberapa ingin kamu merekomendasikan Bukalapak ke teman-temanmu?
+</p>
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fwww.bukalapak.com%2Fsurvey%2F456732422&amp;llsttu=3Dced6f24258680d9=
+d470878ae228f4d17eccca503ff2c6763307f4df2f73f8a0a&amp;subject=3DPesanan+Sud=
+ah+Sampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Fe=
+edback+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;ta=
+g=3Dcourier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%=
+40gmail.com" style=3D'font-family: "Arial", sans-serif; color: #a30046 !imp=
+ortant; line-height: 1.5; text-decoration: none; font-size: 14px; margin: 0=
+; padding: 0;'>Beritahu kami di sini</a>
+</td>
+</tr>
+</table>
+
+
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"30" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"30" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"30" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" id=3D"securityAnnouncementWrapper" width=3D"100%" sty=
+le=3D"border-collapse: collapse; border-spacing: 0; font-size: 12px; margin=
+: 0; padding: 0;" bgcolor=3D"#f0f0f0">
+<tr>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"24" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"10" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"516" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td height=3D"26" width=3D"24" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'>
+<img alt=3D"Hati-hati" src=3D"https://www.bukalapak.com/images/icon_warning=
+.png" style=3D"height: auto; line-height: 100%; outline: none; text-decorat=
+ion: none; border: 0 none;">
+</td>
+<td width=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td align=3D"left" width=3D"516" style=3D'border-collapse: collapse; border=
+-spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.=
+5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Segala bentuk informasi seperti
+<b>
+nomor kontak, alamat e-mail, atau password kamu bersifat rahasia.
+</b>
+Jangan menginformasikan data-data tersebut kepada siapa pun, termasuk kepad=
+a pihak yang mengatasnamakan Bukalapak.
+</p>
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"24" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"10" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"516" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0=
+; margin: 0; padding: 0;">
+<tr>
+<td height=3D"30" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" class=3D"footerWrapper" style=3D"text-align: left; bo=
+rder-collapse: collapse; border-spacing: 0; font-size: 11px; line-height: 1=
+.7; margin: 0; padding: 0;" width=3D"300">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Copyright =C2=A9 2017 PT Bukalapak.com. All Rights Reserved
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Plaza City View Lt. 1 Jl. Kemang Timur No. 22
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Jakarta Selatan Indonesia 12510
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+<table align=3D"right" class=3D"footerWrapper text-right" width=3D"250" sty=
+le=3D"border-collapse: collapse; border-spacing: 0; text-align: right; font=
+-size: 11px; line-height: 1.7; margin: 0; padding: 0;">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<ul class=3D"inline-list non-list-style" style=3D"list-style-type: none; ma=
+rgin: 0; padding: 0;">
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Fbukl.pk%2FAnDrOiDaPp&amp;llsttu=3Df100501b4e198a9349cf1844f1bdaa0595=
+25fdf671384e9f78982c00958ff691&amp;subject=3DPesanan+Sudah+Sampai+Menurut+T=
+racking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelapak%21+-=
++Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourier_deliver=
+ed&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.com" style=
+=3D'font-family: "Arial", sans-serif; color: #a30046 !important; line-heigh=
+t: 1.5; text-decoration: none; margin: 0; padding: 0;'><img alt=3D"Download=
+ Aplikasi Android Bukalapak" style=3D"width: 100px; height: 33px; line-heig=
+ht: 100%; outline: none; text-decoration: none; border: 0 none;" src=3D"htt=
+ps://www.bukalapak.com/images/mailer/simplify_template/downloadAndroid.png"=
+>
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fitunes.apple.com%2Fid%2Fapp%2Fbukalapak-jual-beli-online%2Fid100316=
+9137%3Fmt%3D8&amp;llsttu=3Df4fd0d7e112b9f3cb08ae48ad893f7ce1325821a3522eeda=
+cecdea93bdbf6e14&amp;subject=3DPesanan+Sudah+Sampai+Menurut+Tracking+Jasa+P=
+engiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelapak%21+-+Relay+4+kaki+=
+40A+transparan...+-+%23170456732422&amp;tag=3Dcourier_delivered&amp;type=3D=
+ClickEmail&amp;user_email=3Dnikosatrianto%40gmail.com" style=3D'font-family=
+: "Arial", sans-serif; color: #a30046 !important; line-height: 1.5; text-de=
+coration: none; margin: 0; padding: 0;'><img alt=3D"Download Aplikasi iOS B=
+ukalapak" style=3D"width: 100px; height: 33px; line-height: 100%; outline: =
+none; text-decoration: none; border: 0 none;" src=3D"https://www.bukalapak.=
+com/images/mailer/simplify_template/downloadIos.png">
+</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td height=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<ul class=3D"inline-list non-list-style" style=3D"list-style-type: none; ma=
+rgin: 0; padding: 0;">
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Ffacebook.com%2Fbukalapak&amp;llsttu=3Dfea8b6042c9078ae2891956817d8a1=
+dd332b835eadfe6e80bf871b52b9e741b2&amp;subject=3DPesanan+Sudah+Sampai+Menur=
+ut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelapak%=
+21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourier_del=
+ivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.com" st=
+yle=3D'font-family: "Arial", sans-serif; color: #a30046 !important; line-he=
+ight: 1.5; text-decoration: none; margin: 0; padding: 0;'><img alt=3D"Faceb=
+ook Bukalapak" style=3D"width: 24px; height: 24px; line-height: 100%; outli=
+ne: none; text-decoration: none; border: 0 none;" src=3D"https://www.bukala=
+pak.com/images/mailer/simplify_template/facebook.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Ftwitter.com%2Fbukalapak&amp;llsttu=3Df93975ea9eb31d7898286035acbc5b1=
+438dcf5c84a7ca37319785a2195b66a0d&amp;subject=3DPesanan+Sudah+Sampai+Menuru=
+t+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelapak%2=
+1+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourier_deli=
+vered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.com" sty=
+le=3D'font-family: "Arial", sans-serif; color: #a30046 !important; line-hei=
+ght: 1.5; text-decoration: none; margin: 0; padding: 0;'><img alt=3D"Twitte=
+r Bukalapak" style=3D"width: 24px; height: 24px; line-height: 100%; outline=
+: none; text-decoration: none; border: 0 none;" src=3D"https://www.bukalapa=
+k.com/images/mailer/simplify_template/twitter.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fplus.google.com%2F%2Bbukalapakdotcom&amp;llsttu=3Deed225acfcddda50e=
+16fa1ab76489ad6394a436d0d0a950f9c319b8ada08d81e&amp;subject=3DPesanan+Sudah=
++Sampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feed=
+back+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=
+=3Dcourier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%4=
+0gmail.com" style=3D'font-family: "Arial", sans-serif; color: #a30046 !impo=
+rtant; line-height: 1.5; text-decoration: none; margin: 0; padding: 0;'><im=
+g alt=3D"Google+ Bukalapak" style=3D"width: 24px; height: 24px; line-height=
+: 100%; outline: none; text-decoration: none; border: 0 none;" src=3D"https=
+://www.bukalapak.com/images/mailer/simplify_template/googlePlus.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fwww.youtube.com%2Fuser%2Fbukalapak&amp;llsttu=3De40829e4b20871d6902=
+a613d4cefbbc331442e51ac3746c9f0d84a044113f4a1&amp;subject=3DPesanan+Sudah+S=
+ampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedba=
+ck+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3D=
+courier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gm=
+ail.com" style=3D'font-family: "Arial", sans-serif; color: #a30046 !importa=
+nt; line-height: 1.5; text-decoration: none; margin: 0; padding: 0;'><img a=
+lt=3D"Youtube Bukalapak" style=3D"width: 24px; height: 24px; line-height: 1=
+00%; outline: none; text-decoration: none; border: 0 none;" src=3D"https://=
+www.bukalapak.com/images/mailer/simplify_template/youtube.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Finstagram.com%2Fbukalapak%2F&amp;llsttu=3D9ace63a6b4252e7195d3239cd=
+8814ce8df8a633d92dc7ea6e0431f67ecad845f&amp;subject=3DPesanan+Sudah+Sampai+=
+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pel=
+apak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourie=
+r_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.co=
+m" style=3D'font-family: "Arial", sans-serif; color: #a30046 !important; li=
+ne-height: 1.5; text-decoration: none; margin: 0; padding: 0;'><img alt=3D"=
+Instagram Bukalapak" style=3D"width: 24px; height: 24px; line-height: 100%;=
+ outline: none; text-decoration: none; border: 0 none;" src=3D"https://www.=
+bukalapak.com/images/mailer/simplify_template/instagram.png">
+</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table id=3D"footerSeparator" width=3D"100%" style=3D"border-collapse: coll=
+apse; border-spacing: 0; table-layout: fixed; border-top-width: 2px; border=
+-top-style: solid; border-top-color: #ccc; margin: 0; padding: 0;">
+<tr>
+<td height=3D"2" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table id=3D"additionalFooterWrapper" width=3D"100%" style=3D"border-collap=
+se: collapse; border-spacing: 0; font-size: 10px; text-align: center; margi=
+n: 0; padding: 0;">
+<tr>
+<td height=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Anda memperoleh e-mail ini karena keanggotaan Anda pada Bukalapak.com. Anda=
+ bisa mengubah
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fwww.bukalapak.com%2Fnotification_settings&amp;llsttu=3D2ff903067986=
+d0e47beb32ab5301d6958932d9858443343c8bab2ead09ae5855&amp;subject=3DPesanan+=
+Sudah+Sampai+Menurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri=
++Feedback+Pelapak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp=
+;tag=3Dcourier_delivered&amp;type=3DClickEmail&amp;user_email=3Dnikosatrian=
+to%40gmail.com" style=3D'font-family: "Arial", sans-serif; color: #a30046 !=
+important; line-height: 1.5; text-decoration: none; margin: 0; padding: 0;'=
+>pengaturan notifikasi</a>
+kapanpun.
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"5" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Harap jangan membalas e-mail ini, karena e-mail ini dikirimkan secara otoma=
+tis oleh sistem.
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<img src=3D"http://glimpsetrack.net/img?ssttu=3D80380595bdecf2c719075b75bf9=
+b1ac9c6ffd04e05d66b799888d22abe226ca5&amp;subject=3DPesanan+Sudah+Sampai+Me=
+nurut+Tracking+Jasa+Pengiriman%2C+Segera+Konfirmasi+dan+Beri+Feedback+Pelap=
+ak%21+-+Relay+4+kaki+40A+transparan...+-+%23170456732422&amp;tag=3Dcourier_=
+delivered&amp;type=3DOpenEmail&amp;user_email=3Dnikosatrianto%40gmail.com" =
+style=3D"height: auto; line-height: 100%; outline: none; text-decoration: n=
+one; border: 0 none;">
+</body>
+</html>

@@ -1,0 +1,71 @@
+Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.178.140 with SMTP id b134csp5989029vkf;
+        Thu, 29 Jun 2017 08:56:42 -0700 (PDT)
+X-Received: by 10.84.232.200 with SMTP id x8mr18984001plm.252.1498751802015;
+        Thu, 29 Jun 2017 08:56:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498751801; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qCcBeFuC810sgio1glsmj4vjjCkv5EdZEUY7O6WD4TKqBEWmjnTO4SYsO49JLO0rxC
+         zfgPAy9jeUPkhP9aHFSIS0NgAkdYlnR63JyIQZwOeO6Xm8ezRbNs+fFVBLS0KTRR/JJj
+         v8i0zbFn2r6mCLsj2sBEGhgmcWQkickIB4utTwciAiJxB4QDx7NIObhVeSIblAbp27SS
+         AscvP9jl94fgTPrINSKptiHPGRcEuPraF5eP4/G1sUgYx3YPY2mt1YSXLHfGPv1C69O0
+         k3TYLCCHnMKUxs778r/mtSAuB9fBHHk94fHqrMXK4mItpYFLxveDCkmC8zSJGPaiGM4e
+         uh5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-id:content-transfer-encoding:mime-version:subject
+         :message-id:to:from:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=AVc3XOZxk0oii9YMU6ELXei5hhmxJvd6FsVyI3NE+/Q=;
+        b=weojUv9p5VsTL4DK05XWV4Uk4apbfL3MHMtLo/ngu9LjQirY315Tr+KrAlHXYbuq7K
+         Jc5IPALWtsOD5M4XDy/9+piThni8Mre/40Qg/9EUEyXP3YM2/AYQDj3EcI2o+09+nRi1
+         w+YmoiCEhf0zwCZlUygTSS0Ku0sNqJ3ZdxHWXWu4cfx03+b4V7VpQOqlsqQaamy/ERDj
+         AZ+0tTd1gOTmP8AxELmu/D0B79wps+bFAdz9M6tO2R+krmGu1RUNJaayezkbqsy4Rk+h
+         DKaoesPyLp6winoKkEjele9vg8A7fRTcFtBV0cuZP0jS3LfFzwoZBbouU75nNWDgEUAM
+         ccAw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@miliaoapp.com header.b=kkIlDged;
+       dkim=pass header.i=@sendgrid.info header.b=P1QktG/D;
+       spf=pass (google.com: domain of bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com designates 50.31.39.80 as permitted sender) smtp.mailfrom=bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com
+Return-Path: <bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com>
+Received: from o503139x80.outbound-mail.sendgrid.net ([50.31.39.80])
+        by mx.google.com with ESMTPS id q196si3901189pfq.484.2017.06.29.08.56.41
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 29 Jun 2017 08:56:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com designates 50.31.39.80 as permitted sender) client-ip=50.31.39.80;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@miliaoapp.com header.b=kkIlDged;
+       dkim=pass header.i=@sendgrid.info header.b=P1QktG/D;
+       spf=pass (google.com: domain of bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com designates 50.31.39.80 as permitted sender) smtp.mailfrom=bounces+44667-6d0b-nikosatrianto=gmail.com@email.miliaoapp.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=miliaoapp.com; h=from:to:subject:mime-version:content-type:content-transfer-encoding:content-id; s=s1; bh=gKAvADYr3aL5ZVN7xwPqrAwYjnk=; b=kkIlDged35aZQCEQZz9Dhz9 /nWKrRH9IMQRMC4xFAIKYcFAegBp65i59ktreBfezhw1lgVtfP9P/2Mj7SFJ9wji 0z/j5La2myCiAnqpzHeckxEH+UcnSa1Pl+vBsfQ1IlRCTUKWgbdxiIFC+9r749gD Jy+DifseZgUQTMuaBoaM=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=from:to:subject:mime-version:content-type:content-transfer-encoding:content-id:x-feedback-id; s=smtpapi; bh=gKAvADYr3aL5ZVN7xwPqrAwYjnk=; b=P1QktG/DdfuVP4q3FE rudR4ND+1UkrFTJENUxtNdS0/zV1y4IdSpGUdnuVy9+cIstq146JFpgBSffLPGE8 4sC0MzZ/YxgQQy7DMXcSy86OQVDn39M8hGeVqczNKB5IXTkWovXyEjk0rEiGIrPj gBvXt/9QHLfbeoJxRnOWmy6ts=
+Received: by filter0139p1las1.sendgrid.net with SMTP id filter0139p1las1-2301-59552338-C
+        2017-06-29 15:56:40.359586067 +0000 UTC
+Received: from s.mi.cn (ec2-52-74-203-247.ap-southeast-1.compute.amazonaws.com [52.74.203.247]) by ismtpd0017p1sin1.sendgrid.net (SG) with ESMTP id gNNuHF3uQ0SAyi1SONIISQ for <nikosatrianto@gmail.com>; Thu, 29 Jun 2017 15:56:40.094 +0000 (UTC)
+Date: Thu, 29 Jun 2017 15:56:40 +0000 (UTC)
+From: Xiaomi Corporation <noreply-account@xiaomi.com>
+To: nikosatrianto@gmail.com
+Message-ID: <432056648.176583.1498751800088.JavaMail.root@s.mi.cn>
+Subject: Aktivasi Akun Mi Anda hari ini
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-ID: 111819124
+X-SG-EID: GbYE61SK2PEdylP2w09ulVPjTT4YJIqnDT57qSe44iS+mw4Gy7fwa5R3YQg/KBGJHz0Y/UulR2odNK nyy5OolErU7MJx4/KILF45ySF7mydRXq+GXeYjaJsI3Q+3PmExEDo2qbIlTHepPHHrP89URjPyE9uv iDTDvfRk1x5DRiGdCl2hTFpI/1JuWGKXDuU9oyZMm8YKG8ogPhR2gO4qFBeEQ2UA9yC5J6Xgdp/vq2 I=
+X-Feedback-ID: 44667:UmjqYuvG271GDD7Uzpsx4pVtxPYw3IkmF3i8vuqbuLo=:UmjqYuvG271GDD7Uzpsx4pVtxPYw3IkmF3i8vuqbuLo=:SG
+
+<div style=3D"padding:0 10px; line-height:20px; font-family:arial,SimSun;fo=
+nt-size:14px; color: #666;"><p style=3D"padding:10px 0;">Hai,</p>  <p>Terim=
+a kasih Anda telah membuat Akun Mi. Harap klik link di bawah ini untuk akti=
+vasi akun Anda. Link ini akan kedaluwarsa dalam waktu 24 jam.</p><p><a styl=
+e=3D"background:#ff6f3d; height:46px; margin:10px 0; padding:0 40px; line-h=
+eight:46px; border-radius:4px; font-size:18px; color:#fff; display:inline-b=
+lock;" href=3D"http://mi0.cc/qBjin705" title=3D"Activate account">Aktivasi =
+akun</a></p><p>Jika tombol di atas tidak bekerja, harap salin URL di bawah =
+ini ke browser Anda: <a style=3D"color:#4a90e5;" href=3D"http://mi0.cc/qBji=
+n705">http://mi0.cc/qBjin705</a><br>Setelah Akun Mi Anda teraktivasi, Anda =
+dapat menggunakan email Anda <span style=3D"color:#4a90e5;">nikosatrianto@g=
+mail.com</span> untuk masuk ke MIUI, Mi.com, dan layanan Mi lainnya.</p><p =
+style=3D" padding-top: 30px;">Hormat kami,</p><p>Tim Akun Mi</p><p style=3D=
+" padding-top:30px;">Pesan ini dibuat secara otomatis. Mohon jangan balas p=
+esan ini.</p></div>

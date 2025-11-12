@@ -1,0 +1,555 @@
+X-Apparently-To: jramantha@ymail.com; Fri, 24 Feb 2017 14:36:52 +0000
+Return-Path: <bounce-40308_HTML-99114984-2230624-7207535-577@bounce.mail03.travian.com>
+Received-SPF: pass (domain of bounce.mail03.travian.com designates 136.147.136.120 as permitted sender)
+X-YMailISG: lwy2eEYWLDsxASKY107aPKQBiRhPyE.O_JxNfsgMGb0t2NWw
+ XQG0a1IUTskr45JgnRmfpjrTcOWobEymJ9uRj8jyVk1.irLxIkgDzMIZ7xx7
+ IQJrkgq0SV0rNKTl.2qS7S28eBFEk5RBmG7k_5wZPx736JOxsi115aBMkvaY
+ SN5dvfvNkdKmBTCDxADDOOVEQwMW.sZZC9CIq0S0CDfyyxNLYyRtl0RdP_k7
+ 2LdHu7CidhYBKCIiEEMQeOsFrA7Zke2DQeqD2yBONdBRooUP8qdl0iFNZh7d
+ u59gTbN3gOYI.wiExdKmkJwGwGjQczOHPhlrvYwISI_XWo3bP9LYov7f735N
+ k2AN39HtA_nIZvxOfWcGT_sXwkAJXCmHo4IHCJP6StL1RxwJJKfQ9EK9Vzvp
+ O1cXgx3tPTPGVd89ilBg6ezxYpIDHRwCLwLH9KomEs8Ngtng1e2FRRgp2MAg
+ gnDZ9FDEZBJiYxuYYncevUJgeSfc9S3zAncix9o1SwK3H0EfkwVv6ehhbphb
+ yO9jKk.YeZRBxUF5lgvbS9gVj6Yc93OfMYqK3FYRcNKCNj9ZvywkG56xunuo
+ 3Uc.9KwvZdTFezNoLBvy3ZdcY8RFmZk.SYz0VU0wRLmGozyiProiwx2QVk65
+ PaIhvExd_Db2wGIO28uMIQvUy6wLlxKoa6XAc.ZZIP1xCtFFpO4pT4dktJBr
+ A3Cq1C.0hrhbbDDC.Us6ML79Ju03gddfagD6DvqFzlZ1.pd46Dxtcw1ZwZEw
+ Yjx4FfxZzQQZ1qQVuwBVYz.jvuOGccZj2OneBHyhnAzze2DS4yOj5rehB3OQ
+ Ff9C2j.vRKyI6ORW6fO5ITeJ3iuXRDPcbSGCZVZd53Evub5L8SJ5mn0.x_a4
+ Q3bcN8GaBqwLfK2Rc8HEVwRkIMxC61K0AHHvGr.3qMfk.H05W67SET6bZB2A
+ 0ug_mDNJd25CJlnSMxrQazeIFXM.MnpnZranNODYxPRtx.UyjQ8pVA.bz3Sx
+ 8JVKCcpbSVnSOeDsCaacg4jObzcaImBSwZvAYIS7hCiZxWD8a65EVM6QUtsS
+ 3VIEAbPvnkFRf9fCv9WczOA5pj32LcT5DaR1mcM8yxs9Fp9ayzFBtLjdeoG.
+ XVS5ayP7vpCfagqz4Zc93arsZlSEnJdroG1dqg3FyDW9VJWw9MHu0rRKPATN
+ Oqy3Yyb2DKzmCzjD2iYPnUJki6wHDoUQtOFOKf6f9wMuL8dwez5etacnhwzE
+ MMnrnkJCvEmmYXAog128FfwZp_Qt4SEb2csfUCVCCgcVMG6JWI9XSNMZhiQS
+ khb3Y8Lq4XUJc.8yQTI0bl4jECC7pKQODDw9lz6EFMLD_7ybqumLVJlAM.ez
+ gM1OxXcosk5RhrWRDru17pCNKpjUtlrRylCi4P.dltPf94U7o_8spCzm3Cvq
+ 7XSKcrNJXuFbed8mmCoZ5xw_e3XGa.QSnnvT4kQ.39jaakdXy4nginLU0tmM
+ HAWQLkfKh656CBRkaq.zrNULo7QUDIHHkUBli20SAQCTKrHDp3_3zcT6mUAK
+ qBP7pQ.WKJO426Z3092rkmM9w2C0_lYN_Po2dIZFSRPGhNfiWgDReUOZaD9h
+ AW8d9dFC6K8AlaHsL.29VdG.eRMn5JoWWwA7AtLhkQIWlLbJnLmGw6s.A1y4
+ cBuOXMnerSOQpX.6yVLs57rY2_g6EdDmwaJ1HsQovP6o9.FEzW3X8E.gBIxQ
+ 26RhwWZWv_f5wCGbkOvtVk77KeYyVKRvVBYr.9HCuVpoAJAffbLbwzjdTLv.
+ kpRlbuu35.53MYiISpewWLl3
+X-Originating-IP: [136.147.136.120]
+Authentication-Results: mta1593.mail.ne1.yahoo.com  from=mail03.travian.com; domainkeys=neutral (no sig);  from=mail03.travian.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mta.mail03.travian.com) (136.147.136.120)
+  by mta1593.mail.ne1.yahoo.com with SMTPS; Fri, 24 Feb 2017 14:36:52 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=mail03.travian.com;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:Message-ID:Content-Type; i=info@mail03.travian.com;
+ bh=mk/6zD4OQZRGhRbWvDs+OsjzHY4=;
+ b=mf6+lEUHSgAsAtw555jzIGiYHpSaybsKEu8Mxy3B1ZSOznhPYtQI0ZijxR7Ih1eSCFEPM6hP8cns
+   ZzwXKzD4bq08kqFCSUUrAtnKOM7jezhjByOr3tvlOU1XeP4To4rdfevvJRHZ2AxdoPACkzX7JJR4
+   Ms546CR9mkNaSecBsBo=
+Received: by mta.mail03.travian.com id hm12g8163hsl for <jramantha@ymail.com>; Fri, 24 Feb 2017 14:36:39 +0000 (envelope-from <bounce-40308_HTML-99114984-2230624-7207535-577@bounce.mail03.travian.com>)
+From: "Travian Team" <info@mail03.travian.com>
+To: <jramantha@ymail.com>
+Subject: Peluang terakhir untuk meninggalkan semua musuhmu di belakang!
+Date: Fri, 24 Feb 2017 08:36:39 -0600
+List-Unsubscribe: <mailto:leave-fcec107076640c122d502d29-fe521d79746500747d10-fe9c16727664027f71-fe9213727563017e70-ff5c117772@leave.mail03.travian.com>
+MIME-Version: 1.0
+Reply-To: "Travian 4" <reply-fe9c16727664027f71-40308_HTML-99114984-7207535-577@mail03.travian.com>
+List-ID: <7207535_2230624.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7207535_2230624
+Message-ID: <d0af4253-c5b1-44a5-9ca5-276ccd1ffdd7@xtgap4s7mta1229.xt.local>
+Content-Type: multipart/alternative;
+	boundary="EhnN66aOXbHL=_?:"
+Content-Length: 32832
+
+This is a multi-part message in MIME format.
+
+--EhnN66aOXbHL=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+To view this email as a web page, go to the link below, or copy and paste it into your browser's address window.
+http://view.mail03.travian.com/?qs=4e849b8a500b0b01443ea2c318debf18554f0b85d9686af5f6d3eb6fe0e3d633b6d5c703d64574578d7b1bbd06745aec02b72f8c99538cc01c1cc58896a40d05a70e205e3635c973
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+
+Tabik blacklightkz!
+
+ Babak kedua Travian: Rise of Alliances sudah berlangsung dan inilah kesempatan terakhirmu untuk menyusul teman dan lawanmu. Jangan biarkan pahlawanmu surut; bergabunglah dengan pertarungan merebut Eropa pertengahan!
+
+ Jangan menunggu lebih lama dan mendaftarlah sekarang!
+
+ 
+
+ 
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+Mainkan sekarang!
+ 
+
+ 
+
+ 
+ Sambutlah:
+
+ 
+
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+Kembali beraksi
+
+
+Kirim pahlawanmu bertualang, kustomisasikan dia dengan item, jual atau belilah barang pakai untuk mendapatkan perak dan lesatkan statistik pribadimu!
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+Bonus aliansi
+
+
+ Sumbangkan sumber daya ke aliansimu dan manfaatkan bonus unik 
+
+
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+Awal cepat
+
+
+Langsung beraksi dengan ladang sumber daya level 10 dan dua desa untuk menetap langsung
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+
+
+
+Pilih strategimu dengan bijak
+
+
+Di awal, hanya wilayah pusat yang bisa ditempati dan kamu harus bertahan selagi berjuang demi pimpinan populasi.
+
+Satukan kekuatan dan bekerja sama dalam aliansi untuk menaklukkan wilayah berisi artefak kuat. Wilayah juga menghasilkan poin kemenangan yang akan menentukan aliansi pemnang.
+
+
+
+ 
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+Mainkan sekarang!
+ 
+
+
+
+
+Sampai jumpa di medan tempur! 
+
+
+ 
+Tim Travian
+
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd7844fb8d19a6010c214e309275b903e86990c09ee9b0868c25e0b922d1523c5188afd0efe3cda38e5e210872159a343e 
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd48095e9b693bd1947b566e4fcf38e6b0501d29e197098403d02b8c48eda933671b428cf393567dfd05042e20f88717ce 
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cde1f4d07954b0813cb085dac654a03f9c9d0f6e69b0cf0d271e7171e61a7ac40f100c02a9e71de81741f2f815cc86a38a 
+
+
+
+http://click.mail03.travian.com/?qs=424141b8cbed32cd6448dea57765f591bad5b0d5ea32b6ebf56f867d6cd81be35b79c05975188842a1a999f91333f8870e9d66fc62595d3f3b9b8130d92611e3 
+
+http://view.mail03.travian.com/?qs=4e849b8a500b0b01443ea2c318debf18554f0b85d9686af5f6d3eb6fe0e3d633b6d5c703d64574578d7b1bbd06745aec02b72f8c99538cc01c1cc58896a40d05a70e205e3635c973 
+Web version 
+
+
+
+http://click.mail03.travian.com/?qs=03198d9d52a1d2e5a28eccfd77a46e0852b22035ce8370175164ae831eb8d4d58fe9824bfbf4cf92d415a683bb71939f53056170e70caa3f 
+Apakah anda memiliki pertanyaan? Klik di sini. 
+
+Imprint:
+
+Travian Games GmbH, Wilhelm-Wagenfeld-Str. 22, 80807 Munich, Germany
+
+Fon: +49 (0)89 3249150, Fax: +49 (0)89 324915970, www.traviangames.com; 
+Managing Director: Lars Janssen
+
+
+Registration court: local court Munich, HRB 173511, VAT-No.: DE 246258085
+
+
+
+Harap untuk tidak membalas pesan ini secara langsung,pertanyaan yang dikirim ke alamat email ini tidak dapat di jawab.
+
+
+Anda menerima email ini karena terdaftar di Travian Games dengan alamat email jramantha@ymail.com.
+
+
+http://click.mail03.travian.com/unsub_center.aspx?qs=8d0dc8847c0da924dc7bb4d15d5cb355cba5a7f4292914df89d42ec3b3c9d2f11f119e2856564d5a01d986e2a6f10df9dde8470517cf63a4f7ba457b63bdc6bb 
+Klik disini jika tidak ingin menerima berita kami. 
+
+
+
+
+----------------------------------------
+	
+	This email was sent by:
+	Travian Games GmbH
+	Wilhelm-Wagenfeld-Straße 22
+	München, ., 80807, Germany
+	
+	We respect your right to privacy - visit the following URL to view our policy.
+	( http://click.mail03.travian.com/?qs=424141b8cbed32cd62590f85bb81076769e62dbb389aeb9b6d009ea3fdabca991ca2cbcd226226352ecaa9a493c9772a87a3e2299e1ad926 )
+	
+	----------------------------------------
+	
+	Visit the following URL to manage your subscriptions.
+	( http://click.mail03.travian.com/subscription_center.aspx?qs=8d0dc8847c0da924dc7bb4d15d5cb355cba5a7f4292914df89d42ec3b3c9d2f1eaf60152d64edfc8b3e659f26f14461fea552193aee2fdac1c5ddc61d61ecb05 )
+	
+	Visit the following URL to update your profile.
+	( http://click.mail03.travian.com/profile_center.aspx?qs=8d0dc8847c0da92420fa448182f08029029d64d9911f88c5480503a00f843afc394615f8d752e74af28779a336ec37fd4ab72b785acd4ac4d80a86d200c156ab )
+	
+	Visit the following URL to unsubscribe.
+	( http://click.mail03.travian.com/unsub_center.aspx?qs=8d0dc8847c0da924dc7bb4d15d5cb355cba5a7f4292914df89d42ec3b3c9d2f11f119e2856564d5a01d986e2a6f10df9dde8470517cf63a4f7ba457b63bdc6bb )
+	
+
+--EhnN66aOXbHL=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+    ReadMsgBody{ width: 100%;}
+    .ExternalClass {width: 100%;}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+    body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important; padding:0 !important;}
+    p { margin: 1em 0;}
+    table td { border-collapse: collapse;}
+    img {outline:0;}
+    a img {border:none;}
+    p {margin: 1em 0;}
+    @-ms-viewport{ width: device-width;}
+    @media only screen and (max-width: 480px) {
+   body[yahoo] .container { width:340px !important; }
+    body[yahoo] .containerbody { width:340px !important; }
+    body[yahoo] .footer { width:auto !important; margin-left:0; }
+    body[yahoo] .content-padding{ padding:4px !important; }
+    body[yahoo] .mobile-hidden { display:none !important; }
+    body[yahoo] .logo { display:block !important; padding:0 !important; }
+    body[yahoo] .logosocial { height:28px !important;  }
+    body[yahoo] img { width:auto !important; max-width:308px !important; height:auto !important; max-height:auto !important;}
+    body[yahoo] .header img { width:auto !important; max-width:420px !important; height:auto !important; max-height:auto !important;}
+    body[yahoo] .headline img { width:auto !important; max-width:360px !important; height:auto !important; max-height:auto !important;}
+    body[yahoo] .photo img { width:90% !important; max-width:90% !important; height:auto !important;}
+    body[yahoo] .photobody img { width:auto !important; height:auto !important;max-height:180px !important;}
+    body[yahoo] .textbody p { font-size:16px; !important;padding-right: 5px;!important;}
+    body[yahoo] .photonews img { width:auto !important; max-width:220px !important; height:auto !important;}
+    body[yahoo] .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+    body[yahoo] .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+    body[yahoo] .nav4, body[yahoo] .nav5, body[yahoo] .nav6 { display: none !important; }
+  	.head {display:table-header-group!important; width:100%!important;}
+    .foot {display:table-footer-group!important; width:100%!important;}
+ 	.playNowButton { font-size: 18px !important; max-width:300px !important; }
+    }
+    @media only screen and (max-width: 600px) {
+    body[yahoo] .logo {
+        display: block !important;
+        padding: 0 !important;
+    }
+    body[yahoo] .photo img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    body[yahoo] .nav5, body[yahoo] .nav6 {
+        display: none !important;
+                }
+    }
+    </style>
+</head><body bgcolor="#dddac8" text="#000000" style="background-color: #dddac8; color: #000000; margin: 0px; padding:0px; -webkit-text-size-adjust:none;" yahoo="fix">
+
+<style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Komunitas menunggu tindakanmu yang menentukan!</div>
+<table width="100%" bgcolor="#dddac8" border="0" cellpadding="0" cellspacing="0" align="center" style="background-image: url(http://content.traviangames.com/pics/travian/RoA/background_bright.png);">
+   
+      <tr>
+        <td align="center" valign="top" class="header" style="line-height:0px;font-size:0px;padding:0px;">
+           <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cda4297fe6ab5381ec8603ea6f92d1a3827b08eaddf6024833a262269c9e5717f8f4a6518fbbf70db8e39f8799b6579cc89150b857a915e5c0" style="color:#e1ddcd;" title="TL_RoA Header" target="_blank" ><img src="http://content.traviangames.com/pics/travian/RoA/e-mail_header.gif" alt="Header Image Travian: RoA" width=""></a>
+        </td>
+    </tr>
+     <tr>
+        <td align="center" valign="top" class="headline" style="line-height:0px;font-size:0px;padding:0px;">
+           <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cda4297fe6ab5381ec8603ea6f92d1a3827b08eaddf6024833a262269c9e5717f8f4a6518fbbf70db8e39f8799b6579cc89150b857a915e5c0" class="headline"  style="color:#e1ddcd;" title="TL_RoA Header" target="_blank" ><img src="http://content.traviangames.com/pics/travian/RoA/Header_button.png" alt="Header Image Travian: RoA"></a>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" >
+            <!-- container -->
+         <table cellspacing="0" cellpadding="0" width="600" align="center" bgcolor="#e1ddcd" class="container" style="background-image: url(http://content.traviangames.com/pics/travian/RoA/background_dark.png);border-right: 1px #ffffff solid; -ms-interpolation-mode: bicubic; border-left: 1px #ffffff solid; -ms-interpolation-mode: bicubic; display:block;">
+                            <tr>
+                                <td>
+                                     <table cellspacing="0" cellpadding="0" border="0" class="containerbody" style="table-layout: fixed;">
+                                    <tr>
+                                  	<td>
+                                  		<table>
+                                              <tr><td style="padding-left:30px; padding-right:30px">
+                                  <table cellspacing="0" cellpadding="0" border="0" align="center">
+                                      <tr>
+                                      	      <td valign="top"  style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:center;line-height:20px;padding-left: 50px;padding-right: 50px" class="textbody">
+                                                       <div style="text-align:center">
+                                                           <br>
+                                                         <span style="font-size:16px; color:#336699"><strong>Tabik blacklightkz!</strong></span></div><br>
+                                                        <div style="text-align:left">
+                                                        <p> Babak <b>kedua Travian: Rise of Alliances sudah berlangsung</b> dan inilah kesempatan terakhirmu untuk menyusul teman dan lawanmu. Jangan biarkan pahlawanmu surut; <b>bergabunglah dengan pertarungan merebut Eropa pertengahan</b>!  <br>
+
+<br> Jangan menunggu lebih lama dan <b>mendaftarlah sekarang</b>!  <br><br></div>
+
+
+
+                                                    </td> 
+                                      </tr>
+                                      
+                                                  </table>
+                                                  </td>
+                                                </tr>
+                                             <tr>
+                                         <td align="center"> 
+                                      <table style="background-image: url(http://content.traviangames.com/pics/travian/RoA/button.png); background-repeat: no-repeat; background-position:center; background-size: 100%" align="center" border="0">
+                                             <tr>
+                                                 <td height="80" width="334px" align="center" valign="middle" class="playNowButton" ><br>
+                               <div align="center" bgcolor="#C2D587">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://tracking.traviangames.com/116651234546123/IDN/1" style="font-family:Arial; height:50px;v-text-anchor:middle; width:250px;" arcsize="20%" strokecolor="#ffffff" fillcolor="#C2D587" alias="cta">
+<w:anchorlock/>
+<center>
+<![endif]--><a href="http://click.mail03.travian.com/?qs=424141b8cbed32cdf5db1283f570ccb802afb1c3f3f9317d7ddb6648bec7742aee3b642ec52d18deafe1635b8b89180360c1f1e3fcfd06a85d37d1f51d20cf5a" style="color: #3c3732; display: inline-block; font-family: Arial; font-size: 22px; font-weight: bold; line-height: 25px; text-align: center; text-decoration: none; width: 250px;"  class="playNowButton" >
+Mainkan sekarang!
+</a> <!--[if mso]>
+</center>
+</v:roundrect>
+<![endif]-->
+</div><br>
+                                                 </td>
+                                        
+                                             </tr></table>   <br></td></tr>
+                                    <tr>
+                                  
+                                               
+                                 <td valign="top"  style="color:#336699;font-size:18px;font-family:arial,sans-serif;vertical-align:top;text-align:center;line-height:20px;padding-left: 20px;padding-right: 20px" class="textbody"><strong>Sambutlah:</strong></td>
+
+                                           
+                                                </tr>
+                                     <tr>
+                                        <td align="center" style="padding-top:5px;line-height:0px;font-size:0px;">
+                                    <img src="http://content.traviangames.com/pics/travian/RoA/line_small.png">
+                                        </td>
+                                    </tr>
+                                        </table>
+                                  	</td>
+                                  </tr>
+                                        <tr>
+                                        	<td style="padding-left:50px; padding-right:50px">
+                                        		<table cellspacing="0" cellpadding="0" border="0" align="center">
+                                                     <tr>
+                                  
+                                                  <td  valign="top" align="center" style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:justify;line-height:20px;padding-left:10px; padding-right:20px" class="head"><br><p>
+                                                       <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd38e51187a4f38694f7ba2d6724ae2e1d42b452b5ec2f1abd5e7f5736e92fd81c4d5e4ae26859875ae7c1ae904c2e88c14aff0e3ea3482c4b"  style="text-decoration: none"> <span style="font-size:16px; color:#336699"><strong>Kembali beraksi</strong></span></a><br><br>
+                                                        Kirim pahlawanmu bertualang, kustomisasikan dia dengan item, jual atau belilah barang pakai untuk mendapatkan perak dan lesatkan statistik pribadimu!  </p> 
+                                                    </td>
+                                             <td align="center" valign="bottom" class="foot" style="padding-left:10px; padding-right:10px; padding-top:10px; line-height:0px; font-size:0px;">
+                                   <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd455a1b3cea95c1c5176b0db38c40b54ea38879283f83632547361f0e0053aab804f30a75051c83e319a02041a8a3353c7dfd6a7f2b846de1" > <img src="http://content.traviangames.com/pics/travian/RoA/Hero_icon.png" border="0">
+                                       </a> </td>
+                                    </tr>
+                                         
+                                        </table>
+                                        	</td>
+                                        </tr>
+                                     <tr>
+                                        <td align="center" style="line-height:0px;font-size:0px;padding:0px;" valign="top">
+                                    <img src="http://content.traviangames.com/pics/travian/RoA/line_long.png">
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                            <td style="padding-left:50px; padding-right:50px">
+                                                <table align="center" cellspacing="0" cellpadding="0" border="0">
+                                                     <tr>
+                                  <td align="center" class="foot" style="padding-left:0px; padding-right:10px; padding-top:20px; line-height:0px;font-size:0px;" valign="bottom">
+                                <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd455a1b3cea95c1c5176b0db38c40b54ea38879283f83632547361f0e0053aab804f30a75051c83e319a02041a8a3353c7dfd6a7f2b846de1" > <img src="http://content.traviangames.com/pics/travian/RoA/bonus_icon.png" border="0" ></a>
+                                        </td>
+                                                  <td  valign="top" align="center" style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:justify;line-height:20px;padding-left:30px; padding-right:20px" class="head"><p><br>
+                                                       <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd38e51187a4f38694f7ba2d6724ae2e1d42b452b5ec2f1abd5e7f5736e92fd81c4d5e4ae26859875ae7c1ae904c2e88c14aff0e3ea3482c4b"  style="text-decoration: none"><span style="font-size:16px; color:#336699"><strong>Bonus aliansi</strong></span></a><br><br>
+                                                       Sumbangkan sumber daya ke aliansimu dan manfaatkan bonus unik </p> 
+                                                    </td>
+                                    </tr>
+                                         
+                                        </table>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" style="line-height:0px;font-size:0px;padding:0px;" valign="top">
+                                    <img src="http://content.traviangames.com/pics/travian/RoA/line_long.png">
+                                        </td></tr>
+                                     <tr>
+                                            <td style="padding-left:50px; padding-right:50px">
+                                                <table align="center"  cellspacing="0" cellpadding="0" border="0">
+                                                     <tr>
+                                  
+                                                  <td  valign="top" align="left" style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:justify;line-height:20px;padding-left: 10px; padding-right:20px" class="head"><br><p>
+                                                         <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd7ea54da471ee1fe02b04955cfd4b646058f7bd7d7cad6644527de89cbd57c5bf08edda5c2a90de0911c4e3c770bba2dd85f68bfcf6b94132"  style="text-decoration: none"><span style="font-size:16px; color:#336699"><strong>Awal cepat</strong></span></a><br><br>
+                                                      Langsung beraksi dengan ladang sumber daya level 10 dan dua desa untuk menetap langsung</p> 
+                                                    </td>
+                                             <td align="center" class="foot" valign="bottom" style="padding-left:10px; padding-right:10px; padding-top:10px; line-height:0px;font-size:0px;">
+                                 <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd7ea54da471ee1fe02b04955cfd4b646058f7bd7d7cad6644527de89cbd57c5bf08edda5c2a90de0911c4e3c770bba2dd85f68bfcf6b94132" ><img src="http://content.traviangames.com/pics/travian/RoA/boosted_start_icon.png" border="0" height="150"></a>
+                                        </td>
+                                    </tr>
+                                         
+                                        </table>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                      <td align="center" style="line-height:0px;font-size:0px;padding:0px;" valign="top">
+                                    <img src="http://content.traviangames.com/pics/travian/RoA/line_long.png">
+                                        </td></tr>
+                                    <tr>
+                                        <td style="padding-left:30px; padding-right:30px">
+                                        	<table align="center" cellspacing="0" cellpadding="0" border="0">
+                                                <tr>
+                                          <td valign="top" align="left" style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:justify;line-height:20px;padding-left: 10px;padding-right: 10px" class="textbody">
+                                            <p><br>
+                                                 <span style="font-size:16px; color:#336699"><strong>Pilih strategimu dengan bijak</strong></span><br><br>
+                                                Di awal, hanya wilayah pusat yang bisa ditempati dan kamu harus bertahan selagi <b>berjuang demi pimpinan populasi.</b> <br><br> <b>Satukan kekuatan dan bekerja sama dalam aliansi</b> untuk menaklukkan wilayah berisi artefak kuat. Wilayah juga menghasilkan poin kemenangan yang akan menentukan aliansi pemnang.
+                                            </p>
+                                        </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        
+                                    </tr>
+                                <tr>
+                                        <td > <table style="background-image: url(http://content.traviangames.com/pics/travian/RoA/button.png); background-repeat: no-repeat; background-position:center; background-size: 100%" align="center" border="0">
+                                             <tr>
+                                                 <td height="80" width="334px" align="center" valign="middle" class="playNowButton" ><br>
+                               <div align="center" bgcolor="#C2D587">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://tracking.traviangames.com/116651234546123/IDN/1" style="font-family:Arial; height:50px;v-text-anchor:middle; width:250px;" arcsize="20%" strokecolor="#ffffff" fillcolor="#C2D587" alias="cta">
+<w:anchorlock/>
+<center>
+<![endif]--><a href="http://click.mail03.travian.com/?qs=424141b8cbed32cdf5db1283f570ccb802afb1c3f3f9317d7ddb6648bec7742aee3b642ec52d18deafe1635b8b89180360c1f1e3fcfd06a85d37d1f51d20cf5a" style="color: #3c3732; display: inline-block; font-family: Arial; font-size: 22px; font-weight: bold; line-height: 25px; text-align: center; text-decoration: none; width: 250px;"  class="playNowButton" >
+Mainkan sekarang!
+</a> <!--[if mso]>
+</center>
+</v:roundrect>
+<![endif]-->
+</div><br>
+                                                 </td>
+                                        
+                                             </tr></table>
+                                  </td></tr>
+                                    <tr>
+                                        <td>
+                                        	<table align="center">
+                                                <tr>
+                                                	<td style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:justify;line-height:20px;padding-left: 10px;padding-right: 10px" class="textbody">
+                                            <p style="color:#000000;font-size:14px;font-family:arial,sans-serif;vertical-align:top;text-align:center;line-height:20px;" class="textbody">
+                                   
+                                                
+<b>Sampai jumpa di medan tempur!&nbsp;
+<br>
+                                             
+                                              Tim Travian</b>
+                                            </p>
+                                        </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                      <tr>
+                                        <td align="center">
+                                    <img src="http://content.traviangames.com/pics/travian/RoA/line_small.png">
+                                        </td>
+                                    </tr>
+                                      <tr>
+          <td valign="top" style="padding-left:20px;" align="center" ><br>
+          <table style="width:200px" align="center" border="0" cellpadding="0" cellspacing="5">
+                    <tbody>
+                        <tr>
+                            <td class="logosocial">
+                                <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd7844fb8d19a6010c214e309275b903e86990c09ee9b0868c25e0b922d1523c5188afd0efe3cda38e5e210872159a343e" style="border:0px" title="Facebook" target="_blank"><img class="logosocial" alt="Facebook" src="http://content.traviangames.com/pics/travian/TK/fb.png" style="border-width:0px;border-style:solid" title="Facebook" width="25"></a></td>
+                            <td width="25">
+                            </td>
+                            <td class="logosocial">
+                                <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd48095e9b693bd1947b566e4fcf38e6b0501d29e197098403d02b8c48eda933671b428cf393567dfd05042e20f88717ce" style="border:0px" title="YouTube" target="_blank"><img class="logosocial" alt="YouTube" src="http://content.traviangames.com/pics/travian/TK/YT.png" style="border-width:0px;border-style:solid" title="YouTube"  width="25"></a></td>
+                            <td width="25"> 
+
+                            </td>
+                            <td class="logosocial">
+                                <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cde1f4d07954b0813cb085dac654a03f9c9d0f6e69b0cf0d271e7171e61a7ac40f100c02a9e71de81741f2f815cc86a38a" style="border:0px" title="Travian Blog" target="_blank"><img class="logosocial" alt="Travian Blog" src="http://content.traviangames.com/pics/travian/T4_Blog-Logo.png" style="border-width:0px;border-style:solid" title="Travian Blog" width="50"></a></td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table><br></td>
+    </tr></table></td>
+            </table></td></tr>
+     <tr>
+                                     <td valign="top" align="center" class="headline">
+           
+            <a href="http://click.mail03.travian.com/?qs=424141b8cbed32cd54f2889cdccaa921dcbedd40a1be286789419d7a2c6f67cf6664e533413cbea82f63b02ea066ee3b6595607d6db8aa686712ee1cb6bf32f9" title="Travian: RoA footer" target="_blank" ><img class="footer" alt="Travian: RoA" src="http://content.traviangames.com/pics/travian/RoA/footer.png" style="padding:0px;border-width:0px;border-style:solid" title="Travian:RoAFooter" width="650"></a></td>
+                                </tr>
+          <tr>
+       
+        <td  valign="top" width="88%" align="center">
+ <p style="padding-top:5px ; text-align:center;font-size:11px;font-family:arial,sans-serif;color:#000000;vertical-align:middle"><a href="http://view.mail03.travian.com/?qs=4e849b8a500b0b01443ea2c318debf18554f0b85d9686af5f6d3eb6fe0e3d633b6d5c703d64574578d7b1bbd06745aec02b72f8c99538cc01c1cc58896a40d05a70e205e3635c973" style="color:#000000">Web version</a></p>
+              <p style="padding-top:10px; text-align:center; font-size:11px;font-family:arial,sans-serif;color:#555555;vertical-align:middle"><b><u><a href="http://click.mail03.travian.com/?qs=03198d9d52a1d2e5a28eccfd77a46e0852b22035ce8370175164ae831eb8d4d58fe9824bfbf4cf92d415a683bb71939f53056170e70caa3f" style="font-size: 11px; color: #555555;" target="_blank" title="support">Apakah anda memiliki pertanyaan? Klik di sini.</a></u></b>
+<br /><br />
+<b>Imprint:</b><br />
+Travian Games GmbH, Wilhelm-Wagenfeld-Str. 22, 80807 Munich, Germany<br />
+Fon: +49 (0)89 3249150, Fax: +49 (0)89 324915970, www.traviangames.com; <br />Managing Director: Lars Janssen
+<br />
+Registration court: local court Munich, HRB 173511, VAT-No.: DE 246258085
+<br /><br />
+Harap untuk tidak membalas pesan ini secara langsung,  pertanyaan yang dikirim ke alamat email ini tidak dapat di jawab.
+<br />
+Anda menerima email ini karena terdaftar di Travian Games dengan alamat email jramantha@ymail.com.
+<br /><br />
+<a href="http://click.mail03.travian.com/unsub_center.aspx?qs=8d0dc8847c0da924dc7bb4d15d5cb355cba5a7f4292914df89d42ec3b3c9d2f11f119e2856564d5a01d986e2a6f10df9dde8470517cf63a4f7ba457b63bdc6bb" style="color: #555555;" target="_blank" title="Unsubscribe">Klik disini jika tidak ingin menerima berita kami.</a></p><br>
+        </td>
+    </tr>  
+                                
+                                      <tr>
+                                          
+    </tr>
+                                    <tr>
+      
+    </tr>
+                           
+                    </table>
+            
+        </td>
+        
+    </tr>
+  
+</table>
+<img src="http://click.mail03.travian.com/open.aspx?ffcb10-fe9c16727664027f71-fe1a1374756203747c1077-fe9213727563017e70-ff00107076640c-fe521d79746500747d10-ff5c117772" width="1" height="1">
+<style data-ignore-inlining>@media print{ #_t { background-image: url('https://lwe027g9.emltrk.com/lwe027g9?p&d=jramantha@ymail.com');}} div.OutlookMessageHeader {background-image:url('https://lwe027g9.emltrk.com/lwe027g9?f&d=jramantha@ymail.com')} table.moz-email-headers-table {background-image:url('https://lwe027g9.emltrk.com/lwe027g9?f&d=jramantha@ymail.com')} blockquote #_t {background-image:url('https://lwe027g9.emltrk.com/lwe027g9?f&d=jramantha@ymail.com')} #MailContainerBody #_t {background-image:url('https://lwe027g9.emltrk.com/lwe027g9?f&d=jramantha@ymail.com')}</style><div id="_t"></div>
+<img src="https://lwe027g9.emltrk.com/lwe027g9?d=jramantha@ymail.com" width="1" height="1" border="0" />
+
+</body></html></body></html>
+
+--EhnN66aOXbHL=_?:--

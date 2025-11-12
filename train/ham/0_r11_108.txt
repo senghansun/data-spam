@@ -1,0 +1,480 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.36.254.70 with SMTP id w67csp686956ith;
+        Sun, 6 Nov 2016 21:24:12 -0800 (PST)
+X-Received: by 10.200.55.213 with SMTP id e21mr4924511qtc.106.1478496252317;
+        Sun, 06 Nov 2016 21:24:12 -0800 (PST)
+Return-Path: <cahaya@headfoniastore.com>
+Received: from mail-qk0-f169.google.com (mail-qk0-f169.google.com. [209.85.220.169])
+        by mx.google.com with ESMTPS id y126si8701186qke.66.2016.11.06.21.24.12
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 06 Nov 2016 21:24:12 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.169 is neither permitted nor denied by domain of cahaya@headfoniastore.com) client-ip=209.85.220.169;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@headfoniastore-com.20150623.gappssmtp.com;
+       spf=neutral (google.com: 209.85.220.169 is neither permitted nor denied by domain of cahaya@headfoniastore.com) smtp.mailfrom=cahaya@headfoniastore.com
+Received: by mail-qk0-f169.google.com with SMTP id n21so383qka.3
+        for <hutamatr@gmail.com>; Sun, 06 Nov 2016 21:24:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=headfoniastore-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=aSNiNd1XGRfNPp5/hUuCqo5SAgkr6l6wWVPXgG1F7/M=;
+        b=pDRNmRzfc/3QnzO1zDmCrXe6OhWmIQNjfuO4bQUDlWhQRYSdDm5nDO5qz18HYY14C/
+         w5kYzFXjUQ36q20MnXBFAyw28fLo4wpAJTAIj2S37BVuUCk6nBX5mK9vUucMfPeKYupf
+         cV0EAMSZBhEsP2GqofVjjxD2qSeBzAdYs8RUKyNO4dnlbUOlAREAY85NRaQT9KKLDROF
+         DVuE371RlKfSO1rG2ie1BxBAqPLJK11JVWTYDVQICaayqGdw20kiIJNEdjdAiVK6Ldkn
+         vU0ALHg+hsk/tF1lT7w5n/E+Y27Os8539RiPs6Mv2zbMNvMFEmb14f/2MEbfURao9TNT
+         Nawg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=aSNiNd1XGRfNPp5/hUuCqo5SAgkr6l6wWVPXgG1F7/M=;
+        b=WHktRcwmGxjqsnEnPZxzgTClfssio0SU4Q+bBC1mCkYkAQDIvtvNDT3Oga1RmZlSqj
+         8b4lKwAMKcdxT+z4WFgaLjhPzu1BmxPzAQKs9eWi58RFZ7MmappDZDs8G65Ceyb4pf01
+         ns0gwJpYE+FpvHG54oT46lf9f6k0rBtv5HhQPLFJLB8TcTCOeqNCdxKOZIJ6JQH+0upS
+         JXYyxL+74fkXDgoGKZtC/qSCnJWdLCwUxZ1Mtvu3yF00SL8i40CpzvoeF27PTmM83WxN
+         wCF65H5Y3yXBf4YIlNiYtbBJCK1w2D3WbGqwft7sSHRDqmLaAoEUFGIo9JP0OsPLR5aB
+         9XGQ==
+X-Gm-Message-State: ABUngvd7Qp9uqfwcsLiqHN89qG3SkVj+uGWrXxVFdEuzy17IM7pj0NFoOL8a5K1h2oVAL3Ns+YSz6XC5u3b6gg==
+X-Received: by 10.55.64.82 with SMTP id n79mr4468163qka.137.1478496251810; Sun, 06 Nov 2016 21:24:11 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.12.170.211 with HTTP; Sun, 6 Nov 2016 21:24:11 -0800 (PST)
+In-Reply-To: <CAJvsG=mNxLV27B1ty_sAq4b8ZXj00NHU_NgRjaTTQ-nv6O+z1A@mail.gmail.com>
+References: <20161105133416.15079.74386@app8-dub> <CAObA0mQqYkgrgmb8j3RerVsYtTMCKs3adSR8wVamb9ab4GCpGg@mail.gmail.com> <CAJvsG=mNxLV27B1ty_sAq4b8ZXj00NHU_NgRjaTTQ-nv6O+z1A@mail.gmail.com>
+From: Cahaya Wardaya <cahaya@headfoniastore.com>
+Date: Mon, 7 Nov 2016 12:24:11 +0700
+Message-ID: <CAObA0mSLx9zvkJhygL7iBgf1_-AVeXZsFTmyNDS_QYJ=0gBe-Q@mail.gmail.com>
+Subject: Re: Offline Message from hutamatr: mas mau nanya saya kan udah pesen iem lewat he...
+To: Hutama Trirahmanto <hutamatr@gmail.com>
+Content-Type: multipart/alternative; boundary=001a1148adf0e426500540af3bdf
+
+--001a1148adf0e426500540af3bdf
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Hutama,
+
+Iya bener pesanan sudah di proses ya. Thanks
+
+2016-11-07 12:22 GMT+07:00 Hutama Trirahmanto <hutamatr@gmail.com>:
+
+> No pesanan saya 20544 mas, udah saya verifikasi pembayaran kok, udah dape=
+t
+> email juga klo pesanan saya udah di proses, makasih mas,, jadi pesanan sa=
+ya
+> dikirim hari ini?
+>
+>
+> On Mon, Nov 7, 2016, 12:15 PM Cahaya Wardaya <cahaya@headfoniastore.com>
+> wrote:
+>
+>> boleh tau no pesanannya bro? apakah sudah melakukan verifikasi ? kalau
+>> sudah transfer mohon melakukan verifikasi pembayaran dan saat melakukan
+>> verifikasi by link yang di infokan tolong isi no pesanan dan nama pemesa=
+n
+>> bro. jadi kita tau pembayaran tersebut untuk no pesanan berapanya. Thank=
+s
+>>
+>> 2016-11-05 20:34 GMT+07:00 Zendesk Chat <noreply@zopim.com>:
+>>
+>> Offline Message from hutamatr
+>>
+>> Offline Message left on 05 Nov 2016, 01:34 PM (GMT+0)
+>>
+>> mas mau nanya saya kan udah pesen iem lewat headfoniastore.com trus pas
+>> melakukan pesanan itu maksud dari "Tolong cantumkan =E2=80=9CNomor Pesan=
+an=E2=80=9D saat
+>> melakukan transfer" apa yah? thankss.
+>>
+>> *NAME* hutamatr
+>> *EMAIL* hutamatr@gmail.com
+>> *PHONE* 087786483679
+>> *LOCATION* Jakarta, Indonesia
+>> *URL* https://www.headfoniastore.com/checkout/
+>> *DEPARTMENT* =E2=80=94
+>>
+>> Are you using Zendesk Chat yet? Sign up free today
+>> <https://www.zopim.com>
+>>
+>>
+>>
+>>
+>> --
+>>
+>> Best Regards,
+>>
+>>
+>>
+>> Cahaya ( Chacha )
+>> *Headfonia Store *
+>> *Toko Headphone Earphone Terlengkap*
+>>
+>> Online Store
+>> www.headfoniastore.com
+>>
+>> Offline Store
+>> Headfonia Store STC Senayan
+>> <http://www.headfoniastore.com/headfonia-store-stc-senayan/>
+>> Headfonia Store Mal Ambassador
+>> <http://www.headfoniastore.com/headfonia-store-mal-ambassador/>
+>>
+>> Headfonia Store TV
+>> www.youtube.com/headfoniastore
+>>
+>> Social Media
+>> www.facebook.com/headfoniastore
+>> www.twitter.com/headfoniastore
+>> www.instagram.com/headfoniastore
+>>
+>
+
+
+--=20
+
+Best Regards,
+
+
+
+Cahaya ( Chacha )
+*Headfonia Store *
+*Toko Headphone Earphone Terlengkap*
+
+Online Store
+www.headfoniastore.com
+
+Offline Store
+Headfonia Store STC Senayan
+<http://www.headfoniastore.com/headfonia-store-stc-senayan/>
+Headfonia Store Mal Ambassador
+<http://www.headfoniastore.com/headfonia-store-mal-ambassador/>
+
+Headfonia Store TV
+www.youtube.com/headfoniastore
+
+Social Media
+www.facebook.com/headfoniastore
+www.twitter.com/headfoniastore
+www.instagram.com/headfoniastore
+
+--001a1148adf0e426500540af3bdf
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Hutama,=C2=A0<div><br></div><div>Iya bener pesanan su=
+dah di proses ya. Thanks</div></div><div class=3D"gmail_extra"><br><div cla=
+ss=3D"gmail_quote">2016-11-07 12:22 GMT+07:00 Hutama Trirahmanto <span dir=
+=3D"ltr">&lt;<a href=3D"mailto:hutamatr@gmail.com" target=3D"_blank">hutama=
+tr@gmail.com</a>&gt;</span>:<br><blockquote class=3D"gmail_quote" style=3D"=
+margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><span>No pes=
+anan saya 20544 mas, udah saya verifikasi pembayaran kok, udah dapet email =
+juga klo pesanan saya udah di proses, makasih mas,, jadi pesanan saya dikir=
+im hari ini?</span><div class=3D"HOEnZb"><div class=3D"h5"><br><br><div cla=
+ss=3D"gmail_quote"><div dir=3D"ltr">On Mon, Nov 7, 2016, 12:15 PM Cahaya Wa=
+rdaya &lt;<a href=3D"mailto:cahaya@headfoniastore.com" target=3D"_blank">ca=
+haya@headfoniastore.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_=
+quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1=
+ex" id=3D"m_-7700367834554335381gmail_block_quote0"><div dir=3D"ltr" class=
+=3D"m_-7700367834554335381gmail_msg">boleh tau no pesanannya bro? apakah su=
+dah melakukan verifikasi ? kalau sudah transfer mohon melakukan verifikasi =
+pembayaran dan saat melakukan verifikasi by link yang di infokan tolong isi=
+ no pesanan dan nama pemesan bro. jadi kita tau pembayaran tersebut untuk n=
+o pesanan berapanya. Thanks</div><div class=3D"gmail_extra m_-7700367834554=
+335381gmail_msg"><br class=3D"m_-7700367834554335381gmail_msg"><div class=
+=3D"gmail_quote m_-7700367834554335381gmail_msg">2016-11-05 20:34 GMT+07:00=
+ Zendesk Chat <span dir=3D"ltr" class=3D"m_-7700367834554335381gmail_msg">&=
+lt;<a href=3D"mailto:noreply@zopim.com" class=3D"m_-7700367834554335381gmai=
+l_msg" target=3D"_blank">noreply@zopim.com</a>&gt;</span>:<br class=3D"m_-7=
+700367834554335381gmail_msg"><blockquote class=3D"gmail_quote m_-7700367834=
+554335381gmail_msg" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;p=
+adding-left:1ex">
+<u class=3D"m_-7700367834554335381gmail_msg"></u>
+
+
+
+
+
+
+
+<div marginwidth=3D"0" marginheight=3D"0" style=3D"width:100%;margin:0;padd=
+ing:0;background-color:#f5f5f5;font-family:Helvetica,Arial,sans-serif" clas=
+s=3D"m_-7700367834554335381gmail_msg">
+<div id=3D"m_-7700367834554335381m_-4937365044285386345m_196862193091432854=
+5top-orange-bar" style=3D"display:block;height:5px;background-color:rgb(243=
+,146,0)" class=3D"m_-7700367834554335381gmail_msg"></div>
+<center class=3D"m_-7700367834554335381gmail_msg">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"m_-7700367834554335381m_-4937365044285386345m_1968621930914328545backg=
+round-table m_-7700367834554335381gmail_msg">
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td align=3D"center" valign=3D"top" style=3D"border-collapse:collapse;color=
+:#525252" class=3D"m_-7700367834554335381gmail_msg">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"85%" id=3D=
+"m_-7700367834554335381m_-4937365044285386345m_1968621930914328545main-tabl=
+e" class=3D"m_-7700367834554335381gmail_msg">
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td align=3D"center" valign=3D"top" height=3D"20" style=3D"border-collapse:=
+collapse;color:#525252" class=3D"m_-7700367834554335381gmail_msg"></td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" valign=3D"top" style=3D"border-collapse:collapse;color=
+:#525252" class=3D"m_-7700367834554335381gmail_msg">
+<table width=3D"100%" border=3D"0" class=3D"m_-7700367834554335381gmail_msg=
+">
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td height=3D"34" style=3D"border-collapse:collapse;color:#525252" class=3D=
+"m_-7700367834554335381gmail_msg"></td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" colspan=3D"3" class=3D"m_-7700367834554335381m_-493736=
+5044285386345m_1968621930914328545email-title m_-7700367834554335381gmail_m=
+sg" style=3D"border-collapse:collapse;color:rgb(82,82,82);font-family:Helve=
+tica,Arial,sans-serif;font-size:30px;font-weight:bold;line-height:120%;text=
+-align:center">Offline Message from hutamatr</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" colspan=3D"3" class=3D"m_-7700367834554335381m_-493736=
+5044285386345m_1968621930914328545email-subtitle m_-7700367834554335381gmai=
+l_msg" style=3D"border-collapse:collapse;color:#525252;font-size:15px"></td=
+>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" height=3D"38" style=3D"border-collapse:collapse;color:=
+#525252" class=3D"m_-7700367834554335381gmail_msg"></td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td width=3D"100%" class=3D"m_-7700367834554335381m_-4937365044285386345m_1=
+968621930914328545white-space-top m_-7700367834554335381m_-4937365044285386=
+345m_1968621930914328545content m_-7700367834554335381gmail_msg" style=3D"b=
+order-collapse:collapse;color:#525252;padding:10px;background-color:rgb(255=
+,255,255);border-color:rgb(221,221,221);border-width:1px;border-bottom:0;bo=
+rder-top-left-radius:5px;border-top-right-radius:5px;border-style:solid;fon=
+t-size:13px;padding:40px!important" align=3D"left" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-7700367=
+834554335381gmail_msg">
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td colspan=3D"2" style=3D"border-collapse:collapse;color:#525252;padding:0=
+px!important" align=3D"left" valign=3D"top" class=3D"m_-7700367834554335381=
+gmail_msg">
+<div class=3D"m_-7700367834554335381m_-4937365044285386345m_196862193091432=
+8545section-headers m_-7700367834554335381gmail_msg" style=3D"font-size:17p=
+x;color:rgb(83,83,83);text-align:left;font-weight:bold">Offline Message lef=
+t on 05 Nov 2016, 01:34 PM (GMT+0)</div><br class=3D"m_-7700367834554335381=
+gmail_msg">
+=09=09=09=09=09mas mau nanya saya kan udah pesen iem lewat <a href=3D"http:=
+//headfoniastore.com" class=3D"m_-7700367834554335381gmail_msg" target=3D"_=
+blank">headfoniastore.com</a> trus pas melakukan pesanan itu maksud dari &q=
+uot;Tolong cantumkan =E2=80=9CNomor Pesanan=E2=80=9D saat melakukan transfe=
+r&quot; apa yah? thankss.
+=09=09=09=09</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign=3D"middle" class=3D"m_-7700367834554335381gmail_msg">
+<td id=3D"m_-7700367834554335381m_-4937365044285386345m_1968621930914328545=
+visitor_info" width=3D"100%" class=3D"m_-7700367834554335381m_-493736504428=
+5386345m_1968621930914328545white-space-bottom m_-7700367834554335381m_-493=
+7365044285386345m_1968621930914328545content m_-7700367834554335381gmail_ms=
+g" align=3D"left" valign=3D"middle" style=3D"border-collapse:collapse;color=
+:#525252;padding:10px;background-color:rgb(255,255,255);border-color:rgb(22=
+1,221,221);border-width:1px;border-bottom-left-radius:5px;border-bottom-rig=
+ht-radius:5px;border-style:solid;font-size:12px;padding:40px!important;vert=
+ical-align:middle">
+<p style=3D"line-height:20px;margin:0" class=3D"m_-7700367834554335381gmail=
+_msg">
+</p><table border=3D"0" cellpadding=3D"5px" cellspacing=3D"0" class=3D"m_-7=
+700367834554335381gmail_msg">
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">NAME<=
+/b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">hutamatr</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">EMAIL=
+</b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg"><a href=3D"mailto:hutamatr@gmail.com" class=3D"m_-77003=
+67834554335381gmail_msg" target=3D"_blank">hutamatr@gmail.com</a></td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">PHONE=
+</b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">087786483679</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">LOCAT=
+ION</b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">Jakarta, Indonesia</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">URL</=
+b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">
+<a href=3D"https://www.headfoniastore.com/checkout/" style=3D"text-decorati=
+on:none;color:#d86c00" class=3D"m_-7700367834554335381gmail_msg" target=3D"=
+_blank">https://www.headfoniastore.<wbr>com/checkout/</a>
+</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252;padding-right:15px" cla=
+ss=3D"m_-7700367834554335381gmail_msg"><b style=3D"color:#888;font-size:10p=
+x;text-transform:uppercase" class=3D"m_-7700367834554335381gmail_msg">DEPAR=
+TMENT</b></td>
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">=E2=80=94</td>
+</tr>
+</tbody></table>
+<p class=3D"m_-7700367834554335381gmail_msg"></p>
+</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" valign=3D"top" height=3D"33" style=3D"border-collapse:=
+collapse;color:#525252" class=3D"m_-7700367834554335381gmail_msg"></td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td style=3D"border-collapse:collapse;color:#525252" class=3D"m_-7700367834=
+554335381gmail_msg">
+<table width=3D"100%" border=3D"0" class=3D"m_-7700367834554335381m_-493736=
+5044285386345m_1968621930914328545bottom-notes m_-7700367834554335381gmail_=
+msg" style=3D"font-size:10px;line-height:120%;color:#999;text-align:center"=
+>
+<tbody class=3D"m_-7700367834554335381gmail_msg"><tr class=3D"m_-7700367834=
+554335381gmail_msg">
+<td class=3D"m_-7700367834554335381m_-4937365044285386345m_1968621930914328=
+545non_branding_footer m_-7700367834554335381gmail_msg" align=3D"center" va=
+lign=3D"middle" height=3D"50" style=3D"border-collapse:collapse;color:#999;=
+font-size:13px">Are you using Zendesk Chat yet? <a href=3D"https://www.zopi=
+m.com" style=3D"color:#999;text-decoration:none;font-weight:bold" class=3D"=
+m_-7700367834554335381gmail_msg" target=3D"_blank">Sign up free today</a></=
+td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr class=3D"m_-7700367834554335381gmail_msg">
+<td align=3D"center" valign=3D"top" height=3D"30" style=3D"border-collapse:=
+collapse;color:#525252" class=3D"m_-7700367834554335381gmail_msg"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+</div>
+</blockquote></div><br class=3D"m_-7700367834554335381gmail_msg"><br clear=
+=3D"all" class=3D"m_-7700367834554335381gmail_msg"><div class=3D"m_-7700367=
+834554335381gmail_msg"><br class=3D"m_-7700367834554335381gmail_msg"></div>=
+-- <br class=3D"m_-7700367834554335381gmail_msg"><div class=3D"m_-770036783=
+4554335381m_-4937365044285386345gmail_signature m_-7700367834554335381gmail=
+_msg" data-smartmail=3D"gmail_signature"><div dir=3D"ltr" class=3D"m_-77003=
+67834554335381gmail_msg"><div class=3D"m_-7700367834554335381gmail_msg"><di=
+v dir=3D"ltr" class=3D"m_-7700367834554335381gmail_msg"><div class=3D"m_-77=
+00367834554335381gmail_msg"><div dir=3D"ltr" class=3D"m_-770036783455433538=
+1gmail_msg"><div dir=3D"ltr" class=3D"m_-7700367834554335381gmail_msg"><div=
+ dir=3D"ltr" class=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-7700=
+367834554335381gmail_msg"></div><div dir=3D"ltr" class=3D"m_-77003678345543=
+35381gmail_msg"><span style=3D"font-size:12.8000001907349px" class=3D"m_-77=
+00367834554335381gmail_msg">Best Regards,=C2=A0</span><br class=3D"m_-77003=
+67834554335381gmail_msg"></div><div dir=3D"ltr" class=3D"m_-770036783455433=
+5381gmail_msg"><div style=3D"font-size:12.8000001907349px" class=3D"m_-7700=
+367834554335381gmail_msg"><div class=3D"m_-7700367834554335381gmail_msg"><b=
+ class=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-7700367834554335=
+381gmail_msg"></b></div><div class=3D"m_-7700367834554335381gmail_msg"><b c=
+lass=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-770036783455433538=
+1gmail_msg"></b></div><div class=3D"m_-7700367834554335381gmail_msg"><b cla=
+ss=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-7700367834554335381g=
+mail_msg"></b></div><div class=3D"m_-7700367834554335381gmail_msg"><font fa=
+ce=3D"comic sans ms, sans-serif" class=3D"m_-7700367834554335381gmail_msg">=
+Cahaya ( Chacha )</font></div><div class=3D"m_-7700367834554335381gmail_msg=
+"><b style=3D"font-size:12.8000001907349px" class=3D"m_-7700367834554335381=
+gmail_msg">Headfonia Store=C2=A0</b><br class=3D"m_-7700367834554335381gmai=
+l_msg"></div><div class=3D"m_-7700367834554335381gmail_msg"><i class=3D"m_-=
+7700367834554335381gmail_msg">Toko Headphone Earphone Terlengkap</i></div><=
+div class=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-7700367834554=
+335381gmail_msg"></div><div class=3D"m_-7700367834554335381gmail_msg">Onlin=
+e Store</div><div class=3D"m_-7700367834554335381gmail_msg"><a href=3D"http=
+://www.headfoniastore.com/" style=3D"color:rgb(17,85,204)" class=3D"m_-7700=
+367834554335381gmail_msg" target=3D"_blank">www.headfoniastore.com</a></div=
+><div class=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-77003678345=
+54335381gmail_msg"></div><div class=3D"m_-7700367834554335381gmail_msg">Off=
+line Store</div><div class=3D"m_-7700367834554335381gmail_msg"><a href=3D"h=
+ttp://www.headfoniastore.com/headfonia-store-stc-senayan/" style=3D"color:r=
+gb(17,85,204)" class=3D"m_-7700367834554335381gmail_msg" target=3D"_blank">=
+Headfonia Store STC Senayan</a></div><div class=3D"m_-7700367834554335381gm=
+ail_msg"><a href=3D"http://www.headfoniastore.com/headfonia-store-mal-ambas=
+sador/" style=3D"color:rgb(17,85,204)" class=3D"m_-7700367834554335381gmail=
+_msg" target=3D"_blank">Headfonia Store Mal Ambassador</a></div><div class=
+=3D"m_-7700367834554335381gmail_msg"><br class=3D"m_-7700367834554335381gma=
+il_msg"></div><div class=3D"m_-7700367834554335381gmail_msg">Headfonia Stor=
+e TV</div><div class=3D"m_-7700367834554335381gmail_msg"><div class=3D"m_-7=
+700367834554335381gmail_msg"><a href=3D"http://www.youtube.com/headfoniasto=
+re" style=3D"color:rgb(17,85,204)" class=3D"m_-7700367834554335381gmail_msg=
+" target=3D"_blank">www.youtube.com/headfoniastore</a></div><div class=3D"m=
+_-7700367834554335381gmail_msg"><br class=3D"m_-7700367834554335381gmail_ms=
+g"></div></div><div class=3D"m_-7700367834554335381gmail_msg">Social Media<=
+/div><div class=3D"m_-7700367834554335381gmail_msg"><a href=3D"http://www.f=
+acebook.com/headfoniastore" style=3D"color:rgb(17,85,204)" class=3D"m_-7700=
+367834554335381gmail_msg" target=3D"_blank">www.facebook.com/<wbr>headfonia=
+store</a><br class=3D"m_-7700367834554335381gmail_msg"></div><div class=3D"=
+m_-7700367834554335381gmail_msg"><a href=3D"http://www.twitter.com/headfoni=
+astore" style=3D"color:rgb(17,85,204)" class=3D"m_-7700367834554335381gmail=
+_msg" target=3D"_blank">www.twitter.com/headfoniastore</a></div><div class=
+=3D"m_-7700367834554335381gmail_msg"><a href=3D"http://www.instagram.com/he=
+adfoniastore" style=3D"color:rgb(17,85,204)" class=3D"m_-770036783455433538=
+1gmail_msg" target=3D"_blank">www.instagram.com/<wbr>headfoniastore</a></di=
+v></div></div></div></div></div></div></div></div></div>
+</div>
+</blockquote></div>
+</div></div></blockquote></div><br><br clear=3D"all"><div><br></div>-- <br>=
+<div class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=
+=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><div =
+dir=3D"ltr"><br></div><div dir=3D"ltr"><span style=3D"font-size:12.80000019=
+07349px">Best Regards,=C2=A0</span><br></div><div dir=3D"ltr"><div style=3D=
+"font-size:12.8000001907349px"><div><b><br></b></div><div><b><br></b></div>=
+<div><b><br></b></div><div><font face=3D"comic sans ms, sans-serif">Cahaya =
+( Chacha )</font></div><div><b style=3D"font-size:12.8000001907349px">Headf=
+onia Store=C2=A0</b><br></div><div><i>Toko Headphone Earphone Terlengkap</i=
+></div><div><br></div><div>Online Store</div><div><a href=3D"http://www.hea=
+dfoniastore.com/" style=3D"color:rgb(17,85,204)" target=3D"_blank">www.head=
+foniastore.com</a></div><div><br></div><div>Offline Store</div><div><a href=
+=3D"http://www.headfoniastore.com/headfonia-store-stc-senayan/" style=3D"co=
+lor:rgb(17,85,204)" target=3D"_blank">Headfonia Store STC Senayan</a></div>=
+<div><a href=3D"http://www.headfoniastore.com/headfonia-store-mal-ambassado=
+r/" style=3D"color:rgb(17,85,204)" target=3D"_blank">Headfonia Store Mal Am=
+bassador</a></div><div><br></div><div>Headfonia Store TV</div><div><div><a =
+href=3D"http://www.youtube.com/headfoniastore" style=3D"color:rgb(17,85,204=
+)" target=3D"_blank">www.youtube.com/headfoniastore</a></div><div><br></div=
+></div><div>Social Media</div><div><a href=3D"http://www.facebook.com/headf=
+oniastore" style=3D"color:rgb(17,85,204)" target=3D"_blank">www.facebook.co=
+m/headfoniastore</a><br></div><div><a href=3D"http://www.twitter.com/headfo=
+niastore" style=3D"color:rgb(17,85,204)" target=3D"_blank">www.twitter.com/=
+headfoniastore</a></div><div><a href=3D"http://www.instagram.com/headfonias=
+tore" style=3D"color:rgb(17,85,204)" target=3D"_blank">www.instagram.com/he=
+adfoniastore</a></div></div></div></div></div></div></div></div></div></div=
+>
+</div>
+
+--001a1148adf0e426500540af3bdf--

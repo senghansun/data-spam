@@ -1,0 +1,199 @@
+Delivered-To: jurgen.raven@student.umn.ac.id
+Received: by 10.25.204.76 with SMTP id c73csp714009lfg;
+        Fri, 18 Aug 2017 03:07:37 -0700 (PDT)
+X-Received: by 10.129.38.86 with SMTP id m83mr6474673ywm.131.1503050857418;
+        Fri, 18 Aug 2017 03:07:37 -0700 (PDT)
+ARC-Seal: i=3; a=rsa-sha256; t=1503050857; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=D7Uts/uiFFqVN0G/D2StzPevgXM2p2/wfdWobF96Bp3zn3pFKy64eUN0BQ9GqFI6V9
+         5Q9wyi2IWGHJMoeYsIz+4EKes6/sa/VcSch0bVZtMoxhEMdLKafrlGmFhTS4oTvfFkCf
+         clsqYowRhQ4oUJol+JOsJqg6i5pM8Ni3otjz3TSgW2wH+Lykc3GFs+Sy1X+U/J8DLfvo
+         iR9OEU/UCbaorKaOzYPIp3CuKd+LCiuvP+UfNeRks5XqLNXS2JGvxCNK0jcG6Pzgxozz
+         dYzn69+eSYi6vXhLO3TqdhW8WpszHeS/KAjrWCMgK0mjKoUMlNP1JgpYHu4isuYnLedp
+         /jhg==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:content-transfer-encoding:importance
+         :priority:mime-version:subject:message-id:to:from:date
+         :arc-authentication-results:arc-message-signature:dkim-signature
+         :arc-authentication-results:arc-message-signature
+         :arc-authentication-results;
+        bh=/p3ScypvqQ7y9NmmzFaZh+H2aMdEmzWJiLn2Jdu18vw=;
+        b=No8ahq3j5FLHzV2i092l2oc0W3Kb89K4/I8xwslVHbwyr+GVtliXzdMayKKT5VKau/
+         em3f0tlvxk0sfTb3p+rzhtSEm8PNL4OYkH9pDgNbYNoxBTHFdBXABoCgcc1+fFn+QLu1
+         GeMVyezKENNDHhdlOMtGUBPsPufkgOR8EoT7QWGdb+Q4Gj2vNOuDISUsXCYmmpe2eHjw
+         Eu1nDJNuC4C2249BzMsymL004WHvCzrlT1ze0hOlEsHpFT0+DixzB72LVJj/eVJyRgNw
+         +B+ylTpDY5W7pSJB+ijVq7/KjYJBpiaFeemGJ1AFBo/v5mw77l3OAACLnANtSXA8i0Aa
+         3k3Q==
+ARC-Authentication-Results: i=3; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.s=20150623 header.b=EX6L0B0p;
+       arc=pass (i=2 dkim=pass dkdomain=umn-ac-id.20150623.gappssmtp.com);
+       spf=neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbwxy3lgakgqezahvcvi@umn.ac.id) smtp.mailfrom=student+bncBCSZN6W2VELBBWXY3LGAKGQEZAHVCVI@umn.ac.id
+Return-Path: <student+bncBCSZN6W2VELBBWXY3LGAKGQEZAHVCVI@umn.ac.id>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id w74sor224152ywa.21.2017.08.18.03.07.36
+        for <jurgen.raven@student.umn.ac.id>
+        (Google Transport Security);
+        Fri, 18 Aug 2017 03:07:37 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbwxy3lgakgqezahvcvi@umn.ac.id) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.s=20150623 header.b=EX6L0B0p;
+       arc=pass (i=2 dkim=pass dkdomain=umn-ac-id.20150623.gappssmtp.com);
+       spf=neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbwxy3lgakgqezahvcvi@umn.ac.id) smtp.mailfrom=student+bncBCSZN6W2VELBBWXY3LGAKGQEZAHVCVI@umn.ac.id
+ARC-Seal: i=2; a=rsa-sha256; t=1503050856; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=J12NTa7IlWTtum/aYAyBVHXXmdQyPvyRaqia47V3sA5IcBHufTmeV+63JztkU9dIV4
+         xP6dfbF96RzzDKcISL5dNNKfWxQoZMGKQtQ3WUabSjESq/F8BhFEKjJfa24m31r8NxS4
+         y97RLrCRI+pk51liluSqEySaAZB7bJGSXoEOx3+fTQ4JzhOqkoXIGuft7j4VVkSgdG/z
+         7rDmana42ev7AmSL5glpGf8IHutKJitXfvAFc7jHDnW+s7+NJV4OcMG4oyyqpYIWXN3A
+         inwkx599JcDuRKVbU93n1LOdQrf4zNyhJ4J3+D19RXngIGQOtPEdpJdwxzr1BS3oGS1A
+         ad6A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:content-transfer-encoding:importance
+         :priority:mime-version:subject:message-id:to:from:date
+         :arc-authentication-results:arc-message-signature:dkim-signature
+         :arc-authentication-results;
+        bh=/p3ScypvqQ7y9NmmzFaZh+H2aMdEmzWJiLn2Jdu18vw=;
+        b=xKRvkFnk6oDQLsk1ftYJf+tYJjGdgOVGREViTd74wO/upnm9GKjXx1stOogpgxDMzN
+         Xa/19nFeJPNqr1asCJ7S2gFPwL08bvolSTHMhYUEH2fAkuEbSy3qJPB1YviD9msvmtCt
+         hwsGE3NuvUwlQDNpT9T74YmdEUaLMXdcXJzD9Ah310SnOd0Oin1iYkoeNYwmEX6KSMYa
+         NGZJ6R1XQ2c3/YH9XRwdi0QFotV1IQZaI8SrtN5PNWwGqn56WYBVXn/SZKBGSVC3jpab
+         3uVxrdfH02NSb55pT+dCRslGTqoZEF5REg8eTIM/l1yTXF8BATwm7nFVp6G9n6SI9OF7
+         anzw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.s=20150623 header.b=X8ps5RIx;
+       spf=neutral (google.com: 2607:f8b0:400e:c05::22a is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=date:from:to:message-id:subject:mime-version:priority:importance
+         :content-transfer-encoding:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :list-post:list-help:list-archive:list-unsubscribe;
+        bh=/p3ScypvqQ7y9NmmzFaZh+H2aMdEmzWJiLn2Jdu18vw=;
+        b=EX6L0B0p1llDF8iqB1j0/tCMJyPmpPWwR1oDZzohm6E8NC2WTI5xj+uIhkkUESu4i6
+         1RKpSmK8hWKAYBeeQTJpnLutl5+wT8iQ5RZuKtH9mnjx8/FKEXGN92ONhWvNoQJOcHL6
+         d70LkacSm/E0YSTGRQpXYyW+wIDCklnUt0DWDtLolNrVlylDf8udBcEWtKruRIioj8C0
+         GlS9asbfuypERq4KXInSCRbSc0EhkaeaUosH2ZeU59ypaxAcUem7UFM5GwMOVYlCYChQ
+         XSeBPfh4JJ2RGxMpK6dlfSZrjh6c4I8AForxZrfGNT8gTZ/6gbCHWHEKGUu5BtTBf1WP
+         lAqw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:to:message-id:subject:mime-version
+         :priority:importance:content-transfer-encoding:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-spam-checked-in-group:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=/p3ScypvqQ7y9NmmzFaZh+H2aMdEmzWJiLn2Jdu18vw=;
+        b=jF5xfpfOb5jdi1L0vrZtBCcZfX7fkJtar7cq2drpEStWJcxTgLjvjT+nXCTcPfssSW
+         7hrpg/N/1aBEWrAbM/wloQL2Csn9WytbJW6jkPUG+1z4rimhk4qcWYphsNlrIPpG0L90
+         Jd32bAelpQcfgn0a5VHl2PG42bmsN0OKuu7WQ0mP6mA0NFwUpZJAmS4MlgRlOhmCwKKW
+         CqBdnESKVsoXal7vs1nBwmHOAgE04T/vHOZCBa2Mtvka41iwGeYsQtbPOSgI102yt/X6
+         Q/a1dnBEaHBXoqvJOgorIHzdxSCJ2GrvcPJPEI4rKr6Qf3+fVtJJXZfO1IP1LouqEYHB
+         IGBg==
+X-Gm-Message-State: AHYfb5jhkTub/dd8VZL6o4HfTbiLctE9MTzds9yr64BdiP3vrvGTtCNi 9ynq4aRLPPY6eNMM
+X-Received: by 10.129.128.4 with SMTP id q4mr5890527ywf.7.1503050855102;
+        Fri, 18 Aug 2017 03:07:35 -0700 (PDT)
+X-BeenThere: student@umn.ac.id
+Received: by 10.107.144.137 with SMTP id s131ls4568250iod.49.gmail; Fri, 18 Aug 2017 03:07:22 -0700 (PDT)
+X-Received: by 10.101.76.5 with SMTP id u5mr7840031pgq.119.1503050842760;
+        Fri, 18 Aug 2017 03:07:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503050842; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PDf7InamN/+DUn7Jhx87xvlsLTPQE0/pI4VnafJh/Eo+ce9iK1h1JPnXFQejZdONje
+         n7kVP/e4kIaAryH2T4pOX0Hki6nMLhtehBcCT1m/duaT36J7MFAet16r6grKWmVdjaFA
+         egOOtOTz+rJlbGWCt8ao1m8WCeW5Ljl9hf9T6Ke33vdK9NeeVAVG7Wzj1GMTQA0Hc/Zq
+         31dP5pF3mmFbsUQlT1UO3I5bUOpzggHo63hjRyR5ip++VOYZGA/6okhFDtuxM27rXCq9
+         osYjSmnf9YGmVe7t71oA1/O5w4BNZTTC9rA5DIZ/87bE8c+Y030VxpcZUOvdfzQCviqC
+         jWuA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:importance:priority:mime-version:subject
+         :message-id:to:from:date:dkim-signature:arc-authentication-results;
+        bh=/p3ScypvqQ7y9NmmzFaZh+H2aMdEmzWJiLn2Jdu18vw=;
+        b=GJMBkJYafrAs+smhoE1RKzjUxuDvdFGaF/9pBB9xCoWv1lj1P7iO3YS2MM/JqFLmFF
+         pn5YpT9FzTAKCuey5+zPM15tbhIRoKk/gc56iGPyNHh7AvlmaPnvM7rMwYzuDOJ7Deed
+         nL/Ceh2P6kEg16F8kEZHim8M6eoekYLrQ4MdQQp49zeoNOMOkWveOQgd8CgOjPxelRUz
+         QTHNfPqQUkpawAyRNt7vAS4h5C3poiiZUlR1ECmztq8nioEmpXSqWpjEibgWawLlvkcv
+         BUuCzGuTzD1U9R3BfiS22xRW8P4b/NOQpjwBlyv2g7ociNJVZepYfby9MzsB8d47z6N0
+         83dw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.s=20150623 header.b=X8ps5RIx;
+       spf=neutral (google.com: 2607:f8b0:400e:c05::22a is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+Received: from mail-pg0-x22a.google.com (mail-pg0-x22a.google.com. [2607:f8b0:400e:c05::22a])
+        by mx.google.com with ESMTPS id y15si3623119pli.453.2017.08.18.03.07.22
+        for <student@umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 18 Aug 2017 03:07:22 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400e:c05::22a is neither permitted nor denied by best guess record for domain of info@umn.ac.id) client-ip=2607:f8b0:400e:c05::22a;
+Received: by mail-pg0-x22a.google.com with SMTP id t80so33918991pgb.5
+        for <student@umn.ac.id>; Fri, 18 Aug 2017 03:07:22 -0700 (PDT)
+X-Received: by 10.99.66.130 with SMTP id p124mr8080754pga.53.1503050842366;
+        Fri, 18 Aug 2017 03:07:22 -0700 (PDT)
+Received: from prodapp ([123.231.236.254])
+        by smtp.gmail.com with ESMTPSA id h29sm10809214pfd.145.2017.08.18.03.07.18
+        for <student@umn.ac.id>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 18 Aug 2017 03:07:19 -0700 (PDT)
+Date: Fri, 18 Aug 2017 03:07:19 -0700 (PDT)
+From: info@umn.ac.id
+To: student@umn.ac.id
+Message-ID: <882005584.1.1503050858700.JavaMail.peoplesoft@prodapp>
+Subject: KRS Mata Kuliah Peminatan Jurnalistik Semester Ganjil 2017-2018
+MIME-Version: 1.0
+Priority: urgent
+X-Priority: 1
+X-MSMail-Priority: high
+Importance: high
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Original-Sender: info@umn.ac.id
+X-Original-Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.s=20150623 header.b=X8ps5RIx;
+       spf=neutral (google.com: 2607:f8b0:400e:c05::22a is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+Precedence: list
+Mailing-list: list student@umn.ac.id; contact student+owners@umn.ac.id
+List-ID: <student.umn.ac.id>
+X-Spam-Checked-In-Group: student@umn.ac.id
+X-Google-Group-Id: 838748173165
+List-Post: <https://groups.google.com/a/umn.ac.id/group/student/post>, <mailto:student@umn.ac.id>
+List-Help: <https://support.google.com/a/umn.ac.id/bin/topic.py?topic=25838>, <mailto:student+help@umn.ac.id>
+List-Archive: <https://groups.google.com/a/umn.ac.id/group/student/>
+List-Unsubscribe: <mailto:googlegroups-manage+838748173165+unsubscribe@googlegroups.com>, <https://groups.google.com/a/umn.ac.id/group/student/subscribe>
+
+<p>Dear Mahasiswa/i Ilmu Komunikasi,</p><p>Bagi mahasiswa yang belum bisa m=
+engambil mata kuliah peminatan Jurnalistik, mohon untuk dicoba kembali hari=
+ Sabtu, 19 Agustus 2017 pukul 09.00.</p><p>Terima kasih.</p>
+Do not reply this email. For more questions, please contact us at (021)5422=
+0808 or 082323900900 [IT Helpdesk] through Whatsapp or Line.
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font>

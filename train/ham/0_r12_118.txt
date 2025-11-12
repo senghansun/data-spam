@@ -1,0 +1,93 @@
+Delivered-To: minsanangrh@gmail.com
+Received: by 10.237.63.5 with SMTP id p5csp3391567qtf;
+        Mon, 10 Jul 2017 06:25:27 -0700 (PDT)
+X-Received: by 10.36.25.8 with SMTP id b8mr11217185itb.29.1499693126908;
+        Mon, 10 Jul 2017 06:25:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499693126; cv=none;
+        d=google.com; s=arc-20160816;
+        b=c//UORKOV6RB6S/BPIgEOFsiE3bGwiE0zlSngRvKV0wk8McgM6E7n2TkG5IMPeLaqj
+         CkTNLrqLTwDqlQWjqxKy4lw9bvKoKLNV+o1YsJZMtGGeujv0oRn7lDHR/vZLhs2I9rwK
+         MSd4eToS/xwCXZi3BsLJNlCilY6V0LAjRtMyXr2keg3pCDWwVvXH6pcWgbLMREEP4RPG
+         Hb37thjDrGnbWALG7EdjEbfEbOAgqjqdx5d3DzrKrbYfwW9JolsJcLKZt0wBlbmwa3jD
+         DsnEwXmk7ITopLTcdeQ4RXD5OKiFjuuEDlWvOaudTvM3gLxwoNmAviZEHxs2L2QpU0Nf
+         6fCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=+Rd1YeQZ2Yte7XcN1hHz6vgQWF2NNHQHovrcpimfvqM=;
+        b=vBMANrJgdYLnnovHJ4p6sPD5fONFuUID930EUsoVJQtO0g+Xepac2mP3vMvR96GF+c
+         4W21vyjb7pZRzMQjboMIPdMlkWxFZMMC0OOeqR10JfKmFffIo1K7Usneu8oUdBLFkDIh
+         JiIXNpjeht28RMDvFk3EtfYh8ZxG3rqN/rpGKPW4uZS7zlBhdbEeTmTYJsO4NPjQfxJT
+         2uECKtz0K5TX8lXNWq9V0iZMc3uqKJQOZ9N3uZGWv/xStFu9bHtlUp0eJkAAG8E4J+Va
+         aAJAAQRL4m6FZvcSgPKLThMXe4C0ocM5acQtl+wzyzeqNP04DaIYxyGBhYNw3LdYzvry
+         Bo8A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=efA5Lbad;
+       spf=pass (google.com: domain of riandebialfian@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=riandebialfian@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <riandebialfian@gmail.com>
+Received: from mail-it0-x22a.google.com (mail-it0-x22a.google.com. [2607:f8b0:4001:c0b::22a])
+        by mx.google.com with ESMTPS id n71si5007430ioe.38.2017.07.10.06.25.26
+        for <minsanangrh@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 10 Jul 2017 06:25:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of riandebialfian@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) client-ip=2607:f8b0:4001:c0b::22a;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.b=efA5Lbad;
+       spf=pass (google.com: domain of riandebialfian@gmail.com designates 2607:f8b0:4001:c0b::22a as permitted sender) smtp.mailfrom=riandebialfian@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-it0-x22a.google.com with SMTP id m68so5680482ith.1
+        for <minsanangrh@gmail.com>; Mon, 10 Jul 2017 06:25:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=+Rd1YeQZ2Yte7XcN1hHz6vgQWF2NNHQHovrcpimfvqM=;
+        b=efA5LbadMcSBQjhx8h8qsbwFo/ORE94/btexkIbtZtU03HivxlF1XjEHtgEQaKJ3sA
+         FnyFOoZJzKHanqmed2uzOlGos614znoD6qcTwX3ekMdbWzmZqHeeX1/s3XclZLxS0zlE
+         2kSt7RMpS1gz/iqrDgJuH3YwcnaGKHCSuW6WGzEPXJGQre3ph65hbRCZFSRvR9uNTrAp
+         9EGj0xPeKVreDSmtqnEaI37x4JlNwzZVcACUnXPBHpzgQhdVyV+N5hYdBrHyz28y3eXl
+         u40hsNcGcRaL9MLsVWwNkKkqyg3eoeID/HZTyZ45EdEJpDzceVWttqz+ZoxTHJChDKEa
+         XMQA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=+Rd1YeQZ2Yte7XcN1hHz6vgQWF2NNHQHovrcpimfvqM=;
+        b=mekFzvL5oSKwiOWKfTudVF9pZRCUlzDDQNQILGA1zQU7y37Yp8G9NaHhjvrap9LAiI
+         30O61QgtrxpKik9SAEQybGfrlLxQls/ffo9Wo4kZcXcNHC83Aasj2MRTojxX+o/P0S/j
+         rPQW8yaGtul2DuynX0ArEL2pxRe1BtpxCN69Eo5d7bfkoXc8qE3TrlE9eiH1rHqXHCjy
+         yvMATkpnZdxQgoQeoTAloVUFur+lU1ZpNAizDXr/3nIF628MLbw9KtgRmIXiFOvsgXZr
+         HNpy3A6MP3fTcFSnfAI5TzgOPZ/yEy5wdicK3PXMs5zmFv9z059Gny9Y6bAqb5ynFrXC
+         SR4A==
+X-Gm-Message-State: AIVw113lMymai/uQNV2PBieATkhmX/uuQpMXmTvFbGpu1Pg2MeAD1UEE dciXzfPqo3l9IHFOoGwwuYH1crGXZQ==
+X-Received: by 10.36.104.198 with SMTP id v189mr10942690itb.11.1499693125837; Mon, 10 Jul 2017 06:25:25 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.9.90 with HTTP; Mon, 10 Jul 2017 06:25:23 -0700 (PDT)
+From: Rian Debi Alfian <riandebialfian@gmail.com>
+Date: Mon, 10 Jul 2017 20:25:23 +0700
+Message-ID: <CAKKcBs8Po_BcziMAV+5n+oYjZkLHzH=57vYyT5v4QrXwCL1Zow@mail.gmail.com>
+Subject: PI
+To: insan anugrah <minsanangrh@gmail.com>
+Content-Type: multipart/mixed; boundary="001a11449d560ac8ba0553f6848e"
+
+--001a11449d560ac8ba0553f6848e
+Content-Type: multipart/alternative; boundary="001a11449d560ac8b50553f6848c"
+
+--001a11449d560ac8b50553f6848c
+Content-Type: text/plain; charset="UTF-8"
+
+gak tau ini yg udah di revisi apa belom gw lupa soalnya
+
+--001a11449d560ac8b50553f6848c
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">gak tau ini yg udah di revisi apa belom gw lupa soalnya</div>
+
+--001a11449d560ac8b50553f6848c--
+--001a11449d560ac8ba0553f6848e
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="(PI) Sistem keamanan pada pintu rumah.docx"
+Content-Disposition: attachment; filename="(PI) Sistem keamanan pada pintu rumah.docx"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_j4y6f95r0
+
+
+--001a11449d560ac8ba0553f6848e--

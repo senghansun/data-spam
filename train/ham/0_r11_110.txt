@@ -1,0 +1,89 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.107.162.13 with SMTP id l13csp1742859ioe;
+        Tue, 22 Mar 2016 21:54:36 -0700 (PDT)
+X-Received: by 10.157.7.15 with SMTP id 15mr320141ote.187.1458708876702;
+        Tue, 22 Mar 2016 21:54:36 -0700 (PDT)
+Return-Path: <info@indonesiaandroidkejar.id>
+Received: from mail-oi0-x24d.google.com (mail-oi0-x24d.google.com. [2607:f8b0:4003:c06::24d])
+        by mx.google.com with ESMTPS id x38si344198otd.147.2016.03.22.21.54.36
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 22 Mar 2016 21:54:36 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:4003:c06::24d is neither permitted nor denied by best guess record for domain of info@indonesiaandroidkejar.id) client-ip=2607:f8b0:4003:c06::24d;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indonesiaandroidkejar-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:4003:c06::24d is neither permitted nor denied by best guess record for domain of info@indonesiaandroidkejar.id) smtp.mailfrom=info@indonesiaandroidkejar.id
+Received: by mail-oi0-x24d.google.com with SMTP id r187so6600oih.3
+        for <hutamatr@gmail.com>; Tue, 22 Mar 2016 21:54:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=indonesiaandroidkejar-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:message-id:date:subject:from:to;
+        bh=/jiVWOY5/4r928jZZzOz/2GlcquJfZ7vhUw1cXM61wo=;
+        b=HYKzytfunDcARxlWA9wZvSE/EC94JE1PtUJN2zmTsSmjnYttzwQf8MPRbajNw7eTYK
+         +sBIQi9Sgg6PFuvjzYCVCpxj+l8DobMhrPjNgUyUAbxMItvCs6KMO7WtANnyjkRdeNQQ
+         qlAfMEKOkEVX5B/CjkziA4AoMQbMsXNrtLoZEWdZMFo62++D94cYOUO9WIz8RQbpM5r+
+         MZBSLZqa46VL4XmxPumgIhPdNPsD9mQRgsTMOYergu8XmqtXDjm+sMsLykUyiK/0eT04
+         y5W/oQU+sUSOUeZu3T4HWMS+UfR3wmyMN4SVzIYrrtjkrRGr8r7nscQhO9uNKi79Gioj
+         ONEw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:message-id:date:subject:from:to;
+        bh=/jiVWOY5/4r928jZZzOz/2GlcquJfZ7vhUw1cXM61wo=;
+        b=jUWI8eo3peQJY9VXqFcqJwfoBgHXRCFdBIocIHCruRWnmhiW9Z4QVBoUPi/B68XCP/
+         f1h9L79zM4d6nXLg2bKJg+skTbjP3VYeCE2aP0VppAkRTj8vXsscTdzqhzTbVLaEd1hb
+         dn137jrtdamRxv+Zspf28CO4CwRcWV4NcOdHBzynsTk4P16edNoPvZ8+RDJKb+Ndkc6m
+         rtsYGCTwa1igGjLD2N7VegsR8JsC4snAc5iUcGusvVX4SsZwWqXRfUv9mV9P0OGQkUF4
+         OI9hnBP2Y0mN2Z8RfmFzsQUGnoQh12UG1a8H6mO8YadrMevfRa79bAYim+bfTwZfu3af
+         y6gw==
+X-Gm-Message-State: AD7BkJIG+VJL8cbJB1iwGph++Zv8iNWSO6SLhL71qINBCtMDYArSk5mpw/F0xiGl+KrlmREeRNpxKtiIzKr7Hg==
+MIME-Version: 1.0
+X-Received: by 10.107.157.10 with SMTP id g10mr877276ioe.28.1458708876418; Tue, 22 Mar 2016 21:54:36 -0700 (PDT)
+Message-ID: <001a11494e8869080f052eb020ca@google.com>
+Date: Wed, 23 Mar 2016 04:54:36 +0000
+Subject: Terimakasih Telah Mendaftar Sebagai Peserta
+From: Indonesia Android Kejar <info@indonesiaandroidkejar.id>
+To: hutamatr@gmail.com
+Content-Type: multipart/alternative; boundary=001a11494e886907fa052eb020c7
+
+--001a11494e886907fa052eb020c7
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+SGkgSHV0YW1hIFRyaXJhaG1hbnRvPGRpdj48YnI+PC9kaXY+PGRpdj5U
+ZXJpbWFrYXNpaCB0ZWxhaCAgDQptZW5kYWZ0YXIgc2ViYWdhaSBwZXNlcnRhIGRpIHByb2dyYW0g
+SW5kb25lc2lhIEFuZHJvaWQgS2VqYXIsIGtpdGEgc2FuZ2F0ICANCnNlbmFuZyBiYW55YWsgc2Vr
+YWxpIHRlbWFuLXRlbWFuIHlhbmcgbWVtcHVueWFpIHNlbWFuZ2F0IHVudHVrICANCmJlcmtvbnRy
+aWJ1c2kgdGVyaGFkYXAgYmVya2VtYmFuZ255YSBla29zaXN0ZW0gZGV2ZWxvcGVyIGRpICANCklu
+ZG9uZXNpYS6gPC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj5TYWF0IGluaSBraXRhIHNlZGFuZyBt
+ZWxha3VrYW4gcmV2aWV3ICANCnBhZGEgcGVuZGFmdGFyIHlhbmcgbWFzdWsgZGFuIGFrYW4gbWVu
+eWVsZWtzaSBwZXNlcnRhIHNlc3VhaSBkZW5nYW4gIA0KcmVxdWlyZW1lbnQgZGFyaSBzZXRpYXAg
+bGV2ZWwgbWF0ZXJpIHlhbmcgIA0KZGlhamFya2FuLqA8L2Rpdj48ZGl2Pjxicj48L2Rpdj48ZGl2
+PlBlbmd1bXVtYW4gcGVzZXJ0YSB5YW5nIHRlcnBpbGloIHVudHVrICANCmJpc2EgbWVuZ2lrdXRp
+IHByb2dyYW0gSW5kb25lc2lhIEFuZHJvaWQgS2VqYXIgaW5pIGFrYW4gZGl1bXVta2FuIHBhbGlu
+ZyAgDQpsYW1iYXQgcGFkYSB0YW5nZ2FsIDI4IE1hcmV0IDIwMTYuIEtpdGEgYWthbiBtZW5naW5m
+b3JtYXNpa2FuIHBlbmd1bXVtYW4gIA0KdGVyc2VidXQgbGV3YXQgZW1haWwuPC9kaXY+PGRpdj48
+YnI+PC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj5KaWthIGthbXUgYWRhICANCnBlcnRhbnlhYW4g
+dGVya2FpdCBwcm9ncmFtIGluaSwgYmlzYSBtZW5naHVidW5naSBsZXdhdCBlbWFpbKA8YSAgDQpo
+cmVmPSJtYWlsdG86aW5mb0BpbmRvbmVzaWFhbmRyb2lka2VqYXIuaWQiICANCnRhcmdldD0iX2Js
+YW5rIj5pbmZvQDx3YnI+aW5kb25lc2lhYW5kcm9pZGtlamFyLmlkPC9hPjwvZGl2PjxkaXY+PGJy
+PjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+VGVyaW1ha2FzaWg8L2Rpdj48L2Rpdj4NCg==
+--001a11494e886907fa052eb020c7
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Hutama Trirahmanto<div><br></div><div>Terimakasih telah=
+ mendaftar sebagai peserta di program Indonesia Android Kejar, kita sangat =
+senang banyak sekali teman-teman yang mempunyai semangat untuk berkontribus=
+i terhadap berkembangnya ekosistem developer di Indonesia.=A0</div><div><br=
+></div><div>Saat ini kita sedang melakukan review pada pendaftar yang masuk=
+ dan akan menyeleksi peserta sesuai dengan requirement dari setiap level ma=
+teri yang diajarkan.=A0</div><div><br></div><div>Pengumuman peserta yang te=
+rpilih untuk bisa mengikuti program Indonesia Android Kejar ini akan diumum=
+kan paling lambat pada tanggal 28 Maret 2016. Kita akan menginformasikan pe=
+ngumuman tersebut lewat email.</div><div><br></div><div><br></div><div>Jika=
+ kamu ada pertanyaan terkait program ini, bisa menghubungi lewat email=A0<a=
+ href=3D"mailto:info@indonesiaandroidkejar.id" target=3D"_blank">info@<wbr>=
+indonesiaandroidkejar.id</a></div><div><br></div><div><br></div><div>Terima=
+kasih</div></div>
+
+--001a11494e886907fa052eb020c7--

@@ -1,0 +1,111 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.173.6 with SMTP id r6csp1935025oon;
+        Thu, 21 Sep 2017 05:07:45 -0700 (PDT)
+X-Received: by 10.55.19.81 with SMTP id d78mr2761753qkh.356.1505995664930;
+        Thu, 21 Sep 2017 05:07:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505995664; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xcUVnEDaqB5wl/A2AL8GkbUXtBNRwor8zDB0azx3G3q/zPf0d20x5fFMpBdhwkt/uG
+         cOdnpoHpXsCoK931e2OBvj+K6m8Q2jAZAWg1LpEH4+IMQdk3LvyaSj32MpCrbu3Zh3yb
+         iX6i5yaGe/4zik5Om5FwYfq5/UiB1+UpKjSz9AbuL+L703Kz1bBuN33fBvTKejtC0szB
+         do0LYgIPCNrv1Otp9gxqmKxIQ2iwwSlOuFPDTsdajFaKrq0edFG19Cj4h0Ah1Pl4vbts
+         vTkBiZrTCYCPW9jrRsx65nBhUGdEVYIBQ9PrEhQW6oxc0hYgYOIkNGOXuyDKFMBU5Cnu
+         KqmQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=P5hK64Kx8Nznuiew7cVwuOVzWEAQ0mLgflPfM5FZSXg=;
+        b=OIzITFatYCkO2Yrb3UqVNr5Dtomxp3iFwURdNTxtOD2Dl3Iz9w1DPQHaaxg752rGNU
+         +MSSyp9wt74YRvsmTUmybNdrlG9Hc1Iu/PKXAaXq21TdJf8SXPX4AjR9CvrvWoVac302
+         PyscHBNf7kLV1OgkBtr1qiyUCIsS/CrMzhWKpDSkSe8IcOl4vWAKfphdf/TOj+2EA50a
+         pcolZg7iwMXH69MPZvPSwgaD4vh0ZmY7RlGlQgd4Jzr0Gkbenz1x05NSymm2wLmO/d1K
+         N0RS4U0d0Nm3X5GiUkgRJfDWpYpOfXnW7zzrBz2yEWJ21LYbGx/Ai8IhTXTeau80m7KA
+         NpPQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=V4SI2YlJ;
+       spf=pass (google.com: domain of fei.laimena@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fei.laimena@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <fei.laimena@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 198sor584062qkl.81.2017.09.21.05.07.44
+        for <lukaspatty@gmail.com>
+        (Google Transport Security);
+        Thu, 21 Sep 2017 05:07:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of fei.laimena@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=V4SI2YlJ;
+       spf=pass (google.com: domain of fei.laimena@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fei.laimena@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=P5hK64Kx8Nznuiew7cVwuOVzWEAQ0mLgflPfM5FZSXg=;
+        b=V4SI2YlJh2mMchdtM9Afu6FHNnLXXWh1kD5X44VdwbP2Tr0o6NC+1830LfH25iDq04
+         uDNFFhFh9nfjV2n74XHau6Ge3p5diqRqAd2OOwTk5zvGvekX1uTpkQzOvNX9LJkqJlGG
+         XYJzl+LlvTCtTEXmDOyOw4NjtjPb5XU4sbjMx0BcRLpKk+eJUhU7SR7JiWl1choo+wyR
+         RoW54izW0QkZfFTwOWkreCtahtZ0Lt+hjrNYajI0XxOsp9Ze2IClCKVoDBQatkEDxk7C
+         buJYvB8W46MKI0JuTrpo5Xcah8+7iugTi75meVA2iqHfoWI80OZJacV8zjt+rWACW5vj
+         8dlw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=P5hK64Kx8Nznuiew7cVwuOVzWEAQ0mLgflPfM5FZSXg=;
+        b=WkYe6iLC9fjmn4hZ+J+D0kTYKZHrY9y9Np4ziugvb6NprmEJBD2o3XNXq27189l8wX
+         3ynCrZLXXEdCtKs6kh0gD+6gNZb2WT1hwjT8RXpT6d6ZYDfBiUU+RtWM4F+NAC5/97JF
+         pTXuhXVQ8MzSW+h1Id5bP7P+OieCTaSKZhM+lGmyjk9g+pPwrKCq0Ate3f65gxD5UNX2
+         w7o1KFmil1h14fJcypP8BdHNtFmTK7GsGafCH2+y+1uTQyd1U9S+NiOilmKXgeS3DwIl
+         EM1n03DpWA0h+9Nv9f0Ab7/70SETdroZeeq7tC0cMsM73FXys9Rgqw1S1tMrkYd9NuyN
+         5GFQ==
+X-Gm-Message-State: AHPjjUgDKrZOK9ENNsdEUlEJODIS0AofWjg5JN46X3aENUklwxYmQMFr 77uyEk1zgwnnotgJqY3lCBcAWEUC/gIkzsUUualfwA==
+X-Google-Smtp-Source: AOwi7QAWhSq/loJB8UislWkkUqY88BRXPcwN0Cc0pzq0X84PnDsiDJDnk+NFiRxy2gmpdgT0C9byHBzTvYbF2QgXI0k=
+X-Received: by 10.55.25.29 with SMTP id k29mr2694061qkh.229.1505995663032; Thu, 21 Sep 2017 05:07:43 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.55.39.70 with HTTP; Thu, 21 Sep 2017 05:07:38 -0700 (PDT)
+From: Fei Laimena <fei.laimena@gmail.com>
+Date: Thu, 21 Sep 2017 19:07:38 +0700
+Message-ID: <CAFM4+ZbNaawGK=N6-cpJCSCHUt_u0cLGfkNp+qNeeaEw2TCa8A@mail.gmail.com>
+Subject: kas printtt urgent
+To: Lukas Patty <lukaspatty@gmail.com>
+Content-Type: multipart/mixed; boundary="001a1147f47e89ccab0559b1f0e7"
+
+--001a1147f47e89ccab0559b1f0e7
+Content-Type: multipart/alternative; boundary="001a1147f47e89cca70559b1f0e5"
+
+--001a1147f47e89cca70559b1f0e5
+Content-Type: text/plain; charset="UTF-8"
+
+print semua ya kas, kecuali yg "skripsi ryan" halaman ini aja kas:
+
+57,60-62,84-85,87-88,90-112,118-132.
+
+--001a1147f47e89cca70559b1f0e5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">print semua ya kas, kecuali yg &quot;skripsi ryan&quot; ha=
+laman ini aja kas:=C2=A0<div><br></div><div>57,60-62,84-85,87-88,90-112,118=
+-132.<br><br><br></div></div>
+
+--001a1147f47e89cca70559b1f0e5--
+--001a1147f47e89ccab0559b1f0e7
+Content-Type: application/pdf; name="skripsi ryan.pdf"
+Content-Disposition: attachment; filename="skripsi ryan.pdf"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_j7udjc5q0
+
+
+--001a1147f47e89ccab0559b1f0e7
+Content-Type: application/pdf; name="cover RYAN.pdf"
+Content-Disposition: attachment; filename="cover RYAN.pdf"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_j7udjl1v1
+
+
+--001a1147f47e89ccab0559b1f0e7
+Content-Type: application/pdf; name="riwayat hidup ryan.pdf"
+Content-Disposition: attachment; filename="riwayat hidup ryan.pdf"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_j7uewbqq2
+
+
+--001a1147f47e89ccab0559b1f0e7--

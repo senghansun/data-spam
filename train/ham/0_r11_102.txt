@@ -1,0 +1,95 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.107.29.75 with SMTP id d72csp632178iod;
+        Mon, 12 Jun 2017 00:30:34 -0700 (PDT)
+X-Received: by 10.176.23.201 with SMTP id p9mr25906640uaf.24.1497252634648;
+        Mon, 12 Jun 2017 00:30:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1497252634; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sTmEICt/yw7wHYP9C9IJAmLKuamWNw27k6bom/1T4qTMy2m9Yjdq/zLii2/74qvZi+
+         ikCTMxBJnz0xd4W4x2B7tTrDZDnUe3EunFpkQeEumRCd1dbSGfd3W8QAbVzfEL6IA5Cc
+         Ga4hqVzuyFvlvVIQymzvQmKM67c+EeGl9lU3Vf4EMGlt25lm/UaiKDbfCPmie2uG0npA
+         +xnbRVDIGusREucMwZr6+ui8jks/9US1cIJRSDRGJ4vuVBlvUEWGE7mynDBdiYNY6hL1
+         3ghg9VraGWhTojeypgZk11UZs9STojPM09jG5wE3gZWkuBieAB//v1rv7qf3+q9K2DBG
+         diHw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=zX2MrH5am/SpYB7suR9gJ7xK/RH2GFpklBWHqTUY2NE=;
+        b=kgpN35tNYIy7y+bjggf6eTq4fmgGwhpIukQKlVKrA0ijnN5T2+P28JmRnElmu+i5HX
+         lU9bZ0rj7MnPvt9fJ/3/Zkzp6gFqQYAKQbgwlsCeTcilCcR2g4dVJzHwSucrZQDfixeb
+         R/dD4FrBA5E8yavPtBAdvxsdoGVmsCxCJg82LX2xFIoIPBrBhxxV0/+RiYkgo0Ly6Pu3
+         /F+KUDONKkqScCfMgltESDv9tZk/crLtcYeSHeT/y3h2azTiJ5Xt9L7ViDSLA2sFjpb+
+         Md4nbvyoA6V6htd8nMErdblsjXHAzVbbjig+yETEns+YNXQDyOIDXRdQbuTcG0xFOg9Q
+         wTaA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of restiagustin96@gmail.com designates 2607:f8b0:400c:c05::231 as permitted sender) smtp.mailfrom=restiagustin96@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <restiagustin96@gmail.com>
+Received: from mail-vk0-x231.google.com (mail-vk0-x231.google.com. [2607:f8b0:400c:c05::231])
+        by mx.google.com with ESMTPS id q139si2360775vkf.15.2017.06.12.00.30.34
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 12 Jun 2017 00:30:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of restiagustin96@gmail.com designates 2607:f8b0:400c:c05::231 as permitted sender) client-ip=2607:f8b0:400c:c05::231;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of restiagustin96@gmail.com designates 2607:f8b0:400c:c05::231 as permitted sender) smtp.mailfrom=restiagustin96@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vk0-x231.google.com with SMTP id y70so692564vky.3
+        for <hutamatr@gmail.com>; Mon, 12 Jun 2017 00:30:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=zX2MrH5am/SpYB7suR9gJ7xK/RH2GFpklBWHqTUY2NE=;
+        b=XLhLRqZ/fYs96U3FSMAvNwCYh6RgY8p4AJ+l4tZ6TcYsOwL2W/6RxN7ABCWJymrmyS
+         8kjD2HjYpC75fEp5prWEzMQqCgsJ6TeiygnztLZX+j4AIeV5y0NUSqqqBk4qI9mfxiXI
+         +XUqpeQw1LMgWo5YUNwzwrjI3H7jvvAxb3SqqtxlnUzp9N7xCD8PZeCIuDN1XDPSUee1
+         RAstscEkcWB2eUWSdsSlz8SwtPIkQWZhf9kjLe9qZntjgz+3UFag79X4+0xYTVDAMQKj
+         fZGLCVF0OBMSGduwe8yfIdFiGwURVEZgcLXt7PcuQko0BZkDww7UpgoJqT0aKPug72Zj
+         CqDg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=zX2MrH5am/SpYB7suR9gJ7xK/RH2GFpklBWHqTUY2NE=;
+        b=UTOMdqIswixaOkGx2QjeYD9oUqjobBx2ATL3gsmyKzNVcc9G9L/c85qX+dFcUUEBPy
+         XV4YKhCTftJB4GP6YqHAB8+XYGodNVr8vQtYhuTctqrWVdusEFkzpMIn7muNlo5a5mNN
+         cuylPOujuIGe8FVXD+Wq7rP+aosAiwY9+8apfGzKWspV5kBTplmtihQxjERTE/pnHkIt
+         FSJWUKU6rM0EmM+ryWq66DogxzgE11vM5ahRya69zYCS+iBlUDmX6kYt4ocLaGlckj/V
+         5HtJH/bX/ALj0OHZFHJQGdEMNuKwuafWa9YvXzUaPMS86VtlF7oJED1xTHDgTFsPmY3c
+         6JzQ==
+X-Gm-Message-State: AODbwcAR1wqBB0/IsZWy+JdxPREv3LZXSYSJdncNIzRU5Exdl2OMdAau jLrgaj/SnWaoDMEQaWt8NSY804uusw==
+X-Received: by 10.31.162.199 with SMTP id l190mr28159232vke.110.1497252633824; Mon, 12 Jun 2017 00:30:33 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.159.53.105 with HTTP; Mon, 12 Jun 2017 00:30:33 -0700 (PDT)
+From: Resti Agustin <restiagustin96@gmail.com>
+Date: Mon, 12 Jun 2017 14:30:33 +0700
+Message-ID: <CAMPdrMYeZwtWf6MLsMeUOog+HbXQUun2vEpM=pzsw9Nf_D_hGw@mail.gmail.com>
+Subject: tugas MPSI Kelompok
+To: hutamatr@gmail.com
+Content-Type: multipart/mixed; boundary="001a1143a4f26193c60551be4bda"
+
+--001a1143a4f26193c60551be4bda
+Content-Type: multipart/alternative; boundary="001a1143a4f26193c10551be4bd8"
+
+--001a1143a4f26193c10551be4bd8
+Content-Type: text/plain; charset="UTF-8"
+
+Tolong Dicek ke bu sandfreni , gua kayanya gua ga masuk
+
+--001a1143a4f26193c10551be4bd8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Tolong Dicek ke bu sandfreni , gua kayanya gua ga masuk=C2=
+=A0</div>
+
+--001a1143a4f26193c10551be4bd8--
+--001a1143a4f26193c60551be4bda
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="Tugas MPSI Kelompok.docx"
+Content-Disposition: attachment; filename="Tugas MPSI Kelompok.docx"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_j3ttizt20
+
+
+--001a1143a4f26193c60551be4bda--

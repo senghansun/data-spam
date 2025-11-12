@@ -1,0 +1,441 @@
+Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.178.140 with SMTP id b134csp5612607vkf;
+        Tue, 11 Jul 2017 07:29:46 -0700 (PDT)
+X-Received: by 10.99.97.12 with SMTP id v12mr170443pgb.117.1499783386491;
+        Tue, 11 Jul 2017 07:29:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499783386; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uzGZG0e1V1A7MO7oIxGw5YQpnCj0/o8ZYgWn3wwqarLUwAzleRb3+3u6BE0kybTNoX
+         C2qD2Mk/Lv4/qhiIFWfZxrIty69oWP/cIM1trSs83x1xZAaO+bLuW7XUq+PZ4DcK1Hj8
+         C1eO6TX+nUuGte6oY3fvVmrOHQ/iO2FBgTcYDR3LoezjmUaG5Ft47mtFleAxGDpHjUyK
+         oFzIPjhUvIgsSVdQWK7ViUTEm/xOgpuwtEWfpC+bnDEhvVTGqsZSpBR76QeFtMR+07U3
+         ZcF71TF8hugQ/32yfg2wHYvgOESTrGmTNiYoAGYQh+8fAQMzMJHy5qWpG1P8xvfMkYox
+         Kb4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:content-transfer-encoding:subject:to:from:date
+         :mime-version:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=lqcA1fySyS47ymdb+33BxBYU0sxVXRbky1Cml0NbQ2c=;
+        b=O0gy/XWNA9FwEauzCY6ZpuGEkYiQfljh0oMXdVAnfOXj/S484xV1VvNEhtw2cdqFPS
+         h1g/3Iv7Pi4LSKj/prfQrUXuV94O7lebUmB7rt8YjMMMjTSa1/0Gqd37uZlqdZv+gnOz
+         U+Qc31l769QxPceGi5v0F++RQVejN6Rfoix2YvYIyhTbdLb6Dl5t+r9l4r2DxCwnTzi4
+         iYidwIdWS9Mzxop8cxa4KFwF28UTBARPTjCXVgeN9k5XVEAEd2kYsyJtVMtZVRViG5Vp
+         FGul3z2auEHqNxhclS3HkMd6HPcS96R32lv7Q6zbLvofRBnCdZMH4t7urlVGLRwnVVRn
+         Qfeg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tokopedia.com header.b=xCPkokhc;
+       dkim=pass header.i=@sendgrid.info header.b=kzZ1O44w;
+       spf=pass (google.com: domain of bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com designates 167.89.102.200 as permitted sender) smtp.mailfrom=bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com
+Return-Path: <bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com>
+Received: from o1.em.tokopedia.com (o1.em.tokopedia.com. [167.89.102.200])
+        by mx.google.com with ESMTPS id h9si76279pgc.48.2017.07.11.07.29.46
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 11 Jul 2017 07:29:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com designates 167.89.102.200 as permitted sender) client-ip=167.89.102.200;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tokopedia.com header.b=xCPkokhc;
+       dkim=pass header.i=@sendgrid.info header.b=kzZ1O44w;
+       spf=pass (google.com: domain of bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com designates 167.89.102.200 as permitted sender) smtp.mailfrom=bounces+678460-ede4-nikosatrianto=gmail.com@em.tokopedia.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=tokopedia.com; h=mime-version:from:to:subject:content-type:content-transfer-encoding; s=s1; bh=aZBPo/BI7l+zxacxVe2Oow9pHho=; b=xCPkokhc8BfTKAFoeMOh1qH tF7iiBo/cDk9N37Py5qnaXBTIMJpYUddBopZyaVAq3BV1ZuF+pqgbc/kNFrmIscj zYQ0GvjfSkfe9W1Hndm9+rWaGRw7Acfv+ImOFx3r9FLqkAg5M/mc22t4DCiTnFa9 rK51tbdumbvd+RgiwzYc=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=mime-version:from:to:subject:content-type:content-transfer-encoding:x-feedback-id; s=smtpapi; bh=aZBPo/BI7l+zxacxVe2Oow9pHho=; b=kzZ1O44w9mg9tVTez2 s81i77flfwk9Q33CMl1mdT26WtNaKyEBimhzx7anY+5qz+6AFgzg0mBZAEemgXqA dN9Smm7wiE64+Kb3W3W3lpDAZqhPIaMKUMxHkAo5CXTwZ5rnio+mNy8wtqz+7Do1 l3x1IQSwwmHXM4PVJ0JkGfGy8=
+Received: by filter0449p1las1.sendgrid.net with SMTP id filter0449p1las1-29254-5964E0D9-13
+        2017-07-11 14:29:45.659593357 +0000 UTC
+Received: from ec2-postfix.tokopedia.com (unknown [182.253.224.178]) by ismtpd0017p1sin1.sendgrid.net (SG) with ESMTP id LKGn3UUeSr6Rh9Dd6veZ-Q for <nikosatrianto@gmail.com>; Tue, 11 Jul 2017 14:29:45.349 +0000 (UTC)
+Received: from localhost (unknown [192.168.17.55]) by ec2-postfix.tokopedia.com (Postfix) with ESMTPS id 40862E005F for <nikosatrianto@gmail.com>; Tue, 11 Jul 2017 21:29:47 +0700 (WIB)
+Mime-Version: 1.0
+Date: Tue, 11 Jul 2017 14:29:45 +0000 (UTC)
+From: Tokopedia <noreply@tokopedia.com>
+To: - <nikosatrianto@gmail.com>
+Subject: Pengisian TokoCash Berhasil
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <LKGn3UUeSr6Rh9Dd6veZ-Q@ismtpd0017p1sin1.sendgrid.net>
+X-SG-EID: GbYE61SK2PEdylP2w09ulVPjTT4YJIqnDT57qSe44iSkAEJPuJnEjDbFFUCoh31FVnq2W2etDU/Amy DnzA5ksB8zk6msSZCZ2eEv+Faluhf2FuthS6yhvQWa5DQ6g+eIePhPCTYzDrQjlmNBd1gEkE/cQeD5 +n+OHOJqob1VpvOLsqyH71LBkeXoPazgWqBZQP+MTYChueR4o5Xf9X849ksXRgOOxNlsYuhxe3kPOf 0=
+X-Feedback-ID: 678460:kJSVKcUd3Lx0qCj16QnYHNAsoU4Z9VDZQxn/2jgjWSM=:kJSVKcUd3Lx0qCj16QnYHNAsoU4Z9VDZQxn/2jgjWSM=:SG
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0" />
+</head>
+
+<body style=3D"margin: 0; padding: 0; font-family: sans-serif;" bgcolor=3D"=
+#F7F7F7">
+   =20
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">
+        <tr>
+            <td>
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" style=3D"margin:20px 0;">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               =20
+                <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" wid=
+th=3D"600" align=3D"center" style=3D"border-collapse: collapse; background-=
+color: #FFFFFF;">
+
+                   =20
+                    <tr>
+                        <td style=3D"padding: 15px 20px 10px;" bgcolor=3D"#=
+42B549">
+                            <table cellspacing=3D"0" cellpadding=3D"0" widt=
+h=3D"100%" style=3D"border-collapse: collapse; color: #FFFFFF;">
+                                <tr>
+                                    <td>
+                                      <a href=3D"http://links.tokopedia.com=
+/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmqt-a5h_3Nog/h0/mM4uxBzNioGp-2FZqj6wf3Id=
+hIsahLFi5n6Jd3qCFGaRs-3D"><img src=3D"https://s3.amazonaws.com/www.betaoutc=
+dn.com/300452016/11/1480044625.png" alt=3D"" height=3D"40" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td style=3D"font-size: 20px; padding: 30px 20px 0;=
+ font-weight: bold; color: #4E4E4E">Pengisian TokoCash Berhasil</td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td style=3D"padding: 30px 20px 10px;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"border-collapse:collapse; font-size: 15px;=
+">
+                                <tr>
+                                    <td style=3D"line-height: 25px; color: =
+#4F4F4F;">
+                                        <span style=3D"font-size: 1.4em;">H=
+ai Niko satrianto,</span>
+                                        <br />
+                                        <br />
+                                        Anda berhasil melakukan pengisian T=
+okoCash ke nomor <b>089611714127</b>.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                    <tr>
+                        <td style=3D"padding: 10px 20px;">
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"border-collapse: collapse; color: #4F4F4F;=
+ font-size: 15px;">
+                                <tbody>
+                                    <tr>
+                                        <td width=3D"180" style=3D"padding:=
+ 10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height=
+: 1.6em;">Nominal Top Up</td>
+                                        <td width=3D"40" style=3D"padding: =
+10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height:=
+ 1.6em;">:</td>
+                                        <td width=3D"340" style=3D"font-wei=
+ght: bold; padding: 10px 0; border-bottom: 1px solid #D9D9D9; vertical-alig=
+n: top; line-height: 1.6em;">Rp 118.759</td>
+                                    </tr>
+                                    <tr>
+                                        <td width=3D"180" style=3D"padding:=
+ 10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height=
+: 1.6em;">Metode Pembayaran</td>
+                                        <td width=3D"40" style=3D"padding: =
+10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height:=
+ 1.6em;">:</td>
+                                        <td width=3D"340" style=3D"font-wei=
+ght: bold; padding: 10px 0; border-bottom: 1px solid #D9D9D9; vertical-alig=
+n: top; line-height: 1.6em;">Virtual Account BCA</td>
+                                    </tr>
+                                    <tr>
+                                        <td width=3D"180" style=3D"padding:=
+ 10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height=
+: 1.6em;">Tanggal</td>
+                                        <td width=3D"40" style=3D"padding: =
+10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height:=
+ 1.6em;">:</td>
+                                        <td width=3D"340" style=3D"font-wei=
+ght: bold; padding: 10px 0; border-bottom: 1px solid #D9D9D9; vertical-alig=
+n: top; line-height: 1.6em;">11 Juli 2017 21:29 WIB</td>
+                                    </tr>
+                                    <tr>
+                                        <td width=3D"180" style=3D"padding:=
+ 10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height=
+: 1.6em;">ID Transaksi</td>
+                                        <td width=3D"40" style=3D"padding: =
+10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height:=
+ 1.6em;">:</td>
+                                        <td width=3D"340" style=3D"font-wei=
+ght: bold; padding: 10px 0; border-bottom: 1px solid #D9D9D9; vertical-alig=
+n: top; line-height: 1.6em;"> <a href=3D"http://links.tokopedia.com/mpss/c/=
+-QA/PFoKAA/t.28x/6uLfww-qTQmqt-a5h_3Nog/h1/tWWLQW6-2BhMNBHt-2FZLs1Go3a9XVqs=
+NKgSLEBLZ9qjDUzw89sGPxM8pQOXburqThTeOHzh8NdDCkav9ciTFs-2F1Mg-3D-3D">  #8481=
+667  </a> </td>
+                                    </tr>
+                                   =20
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style=3D"padding: 0 20px; text-align: center;">
+                            <a href=3D"http://links.tokopedia.com/mpss/c/-Q=
+A/PFoKAA/t.28x/6uLfww-qTQmqt-a5h_3Nog/h2/tWWLQW6-2BhMNBHt-2FZLs1Gow7RTeG3QG=
+d7sbE3P0WSkZ4-3D" style=3D"display: inline-block; padding: 20px 30px; backg=
+round-color: #42B549; color: #FFFFFF; text-decoration: none; font-size: 15p=
+x; font-weight: bold; border-radius: 3px; width: 210px;">Lihat History</a>
+                        </td>
+                    </tr>
+
+                   =20
+                    <tr>
+                        <td style=3D"padding: 10px 20px;">
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"border-collapse: collapse; font-size: 13px=
+; color: #999999;">
+                                <tr>
+                                    <td style=3D"padding: 10px 0;">Email in=
+i dibuat secara otomatis. Mohon tidak mengirimkan balasan ke email ini.</td=
+>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                    <tr>
+                        <td style=3D"padding: 10px 20px;">
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"border-collapse: collapse; background-color: #FBE3E4; fon=
+t-size: 13px; color: #404040; line-height: 16px; letter-spacing: 0.1px; bor=
+der-top: 2px solid #FBB3B4; border-bottom: 2px solid #FBB3B4;">
+                                <tbody>
+                                    <tr>
+                                        <td style=3D"padding: 20px 20px 0;"=
+>
+                                            Hati-hati terhadap pihak yang m=
+engaku dari Tokopedia, membagikan voucher belanja, atau meminta data pribad=
+i. Tokopedia tidak pernah meminta password dan data pribadi melalui email, =
+pesan pribadi, maupun channel lainnya. Untuk semua email dengan link dari T=
+okopedia, pastikan alamat URL di browser sudah di alamat <a href=3D"http://=
+links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmqt-a5h_3Nog/h3/mM4ux=
+BzNioGp-2FZqj6wf3IdhIsahLFi5n6Jd3qCFGaRs-3D" style=3D"color: #42B549;text-d=
+ecoration: none;">tokopedia.com</a> bukan alamat lainnya.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"padding: 10px 20px 20p=
+x;">
+                                            Anda juga bisa meningkatkan kea=
+manan akun anda dengan menggunakan <a href=3D"#" style=3D"color: #42B549;te=
+xt-decoration: none;">Login Seal</a>. Untuk lebih lanjut, <a href=3D"#" sty=
+le=3D"color: #42B549;text-decoration: none;">Baca Panduan Keamanan Tokopedi=
+a =C2=BB</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                 =20
+                    <tr>
+                        <td style=3D"padding: 0 20px 10px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"border-collapse:collapse; font-size:13px;c=
+olor:#999999;">
+                                <tr>
+                                    <td>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%" style=3D"border-collapse:collapse; ">
+                                            <tr>
+                                                <td width=3D"280" align=3D"=
+left">
+                                                    <table border=3D"0" sty=
+le=3D"border-collapse:collapse; margin-top:10px">
+                                                        <tr>
+                                                            <td style=3D"fo=
+nt-size:13px;color:#999999;margin-bottom:10px;" >Download Aplikasi Tokopedi=
+a <br></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=3D"pa=
+dding:2px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border=
+-collapse:collapse;">
+                                                                    <tr>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h4/LO3b20GuNmy4LCnVtq84VuEJWSBnGf4UcfNMm8G2XEwUmdisa9ozRly4T9cvd=
+tBLwcp-2FN6QUyKGPiOotoW9g0A-3D-3D" style=3D"padding: 0 5px 0 0;"><img src=
+=3D"https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233846.png=
+" alt=3D"Appstore" height=3D"44"></a>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h5/nlQbTENdQZslPMRJdVWnRnj-2FnNXGSj-2BXg1BkTbLhkx-2F-2Bigq8ecAM5=
+hPiHjca2iCwCnTLGJ2ZZNFlHQqzCl-2FnRg-3D-3D" style=3D"padding: 0 5px;"><img s=
+rc=3D"https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233889.p=
+ng" alt=3D"Playstore" height=3D"44"></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width=3D"280" align=3D"=
+right">
+                                                    <table border=3D"0" sty=
+le=3D"border-collapse:collapse; margin-top:10px">
+                                                        <tr>
+                                                            <td style=3D"fo=
+nt-size:13px;color:#999999;margin-bottom:10px;" align=3D"right">Ikuti Kami<=
+/td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=3D"pa=
+dding:2px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"border=
+-collapse:collapse;">
+                                                                    <tr>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h6/HpF-2FgN2L-2BTd3XbGhi4PFtUn-2BvxRFTgeW4WE1Xah2BEfonThCmNmlqQe=
+yqlyt8w9f" style=3D"padding: 0 5px;"><img src=3D"https://s3.amazonaws.com/w=
+ww.betaoutcdn.com/300452016/11/1480307802.png" alt=3D"Google plus" height=
+=3D"44"></a>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h7/HE2UYZIDTZxfLuJ8qHDFiOifK7NUoJS8sgm0osb41avEraCCL1OXNiTR60OMO=
+GYr" style=3D"padding: 0 5px;"><img src=3D"https://s3.amazonaws.com/www.bet=
+aoutcdn.com/300452016/11/1480307762.png" alt=3D"Facebook" height=3D"44"></a=
+>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h8/VE2atosPJwyp5yA4oN-2FSal95fgWum4JHzlUhDOapKk0-3D" style=3D"pa=
+dding: 0 5px;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/3004=
+52016/11/1480307869.png" alt=3D"Twitter" height=3D"44"></a>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+ <a href=3D"http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/h9/pChxqobq0pnBFwsO0bJlfkpS7v1unepF0pkc65GX1Q0-3D" style=3D"padd=
+ing: 0 0 0 5px;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/30=
+0452016/11/1480307832.png" alt=3D"Instagram" height=3D"44"></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td>
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"border-collapse:collapse;">
+                                <tr>
+                                    <td width=3D"300" height=3D"10"><img sr=
+c=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1478745419.jp=
+g" alt=3D"pusher" /></td>
+                                    <td width=3D"300" height=3D"10"><img sr=
+c=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1478745419.jp=
+g" alt=3D"pusher" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td>
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"border-collapse:collapse; background-color=
+: #F7F7F7; font-size:13px; color: #999999; border-top: 1px solid #DDDDDD;">
+                                <tr>
+                                    <td width=3D"560" align=3D"center" styl=
+e=3D"padding: 20px 20px 0;">Jika butuh bantuan, gunakan halaman <a href=3D"=
+http://links.tokopedia.com/mpss/c/-QA/PFoKAA/t.28x/6uLfww-qTQmqt-a5h_3Nog/h=
+10/tWWLQW6-2BhMNBHt-2FZLs1Go7CJZzSxYXFMtrxvISFKjza6DW5QumCxzCwcUkAjR1Lz" ta=
+rget=3D"_blank" style=3D"color: #42B549;">Kontak Kami</a></td>
+                                </tr>
+                                <tr>
+                                    <td width=3D"560" align=3D"center" styl=
+e=3D"padding: 10px 20px 30px;">
+                                        &copy; 2009-2017, PT Tokopedia
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+
+                </table>
+               =20
+            </td>
+        </tr>
+    </table>
+
+<img src=3D"http://links.tokopedia.com/mpss/o/-QA/PFoKAA/t.28x/6uLfww-qTQmq=
+t-a5h_3Nog/o.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"h=
+eight:1px !important;width:1px !important;border-width:0 !important;margin-=
+top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margi=
+n-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;pa=
+dding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+

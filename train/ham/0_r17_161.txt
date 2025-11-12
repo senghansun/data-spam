@@ -1,0 +1,237 @@
+Delivered-To: kalindraad@gmail.com
+Received: by 10.182.106.12 with SMTP id gq12csp2019675obb;
+        Mon, 26 Jun 2017 19:02:42 -0700 (PDT)
+X-Received: by 10.98.194.145 with SMTP id w17mr2905472pfk.69.1498528961959;
+        Mon, 26 Jun 2017 19:02:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498528961; cv=none;
+        d=google.com; s=arc-20160816;
+        b=U/7z6C/ANlJpfk9sL0XoRYKC7eVgLBmCOqA4o3Cq4BysQGCZ2MY5dYzKHj/JFqFC7V
+         kcN/TSVPyhimJDUiO29IAvtjs9TT34A/D765eydJk9Kkg7ZjUGqbhK90ETNg93I2LoLO
+         FZMdXCpcawnLM0uwIIad+9wLX5psqZqbeMsWzcIXXs5EarG+smHiCADWWLInHxOPZLO0
+         qs9BMPKLBIaJQFtn1HhqVQICUAJ830NMTNqLObQPUJqfLJOUA8hXSmo3HhrpWwT5OG60
+         UWgSnKCVvo1BxBLYhkqWipWhqx9XR3q/cgAzoJJxAqTtmiozA/cGN2cZY47jhHRAtMDJ
+         7SHQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :from:to:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=2AN5l4mPv7igqijNw+cvTMLRa1w3gmoabJOHPN+mg1s=;
+        b=OC6LQxr3PtyCadJaqTvCJ8nnZBLtAksnMhLyIi3Q1jKs4cqYv7i9qSzmkK6kWgCcUJ
+         xOSuJOtO+TEtWLNIHl/7gME5Q+5IRd3wznzMWEWcBfub58Df1mwcPSiL8YlusDZkvzBz
+         rOsoEc4MH8VBtlwcziDXLg6UCs4p/OIJMEKXwnEphBiaZt3mGEA2+VSxZrSEG/0vYsLq
+         /+Ab+6QFtXpopPOj5eTcMQpd/LyRTojeac9uOaiVndw0VonNhuhL3BdiqaUVrYFQwVpB
+         46a7LTRNyqAukh07x3eckcS9IuowgG1qIchqmC+LWml/29K9UobWtHi9pAJQ+4e+RQ+E
+         5p+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@zomatomail.com header.b=bc0G31yt;
+       dkim=pass header.i=@sendgrid.info header.b=Frp1dqUK;
+       spf=pass (google.com: domain of bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com designates 198.21.4.191 as permitted sender) smtp.mailfrom=bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=zomatomail.com
+Return-Path: <bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com>
+Received: from o2.email2.zomatomail.com (o2.email2.zomatomail.com. [198.21.4.191])
+        by mx.google.com with ESMTPS id g10si1122945plk.578.2017.06.26.19.02.41
+        for <kalindraad@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 26 Jun 2017 19:02:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com designates 198.21.4.191 as permitted sender) client-ip=198.21.4.191;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@zomatomail.com header.b=bc0G31yt;
+       dkim=pass header.i=@sendgrid.info header.b=Frp1dqUK;
+       spf=pass (google.com: domain of bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com designates 198.21.4.191 as permitted sender) smtp.mailfrom=bounces+1111624-7f24-kalindraad=gmail.com@mail.zomatomail.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=zomatomail.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=zomatomail.com; h=to:from:reply-to:subject:mime-version:content-type:content-transfer-encoding; s=s1; bh=pgkp+ZuaO+aTV1URNjhfoK/g/Ak=; b=bc0G31ytiKcBCRyS4Acsseu PYIeF8AfwBfJSSxAaTZXwamUZsy6OULedJFt+haN03nPd6REA1kkScQJQqDE8TD5 CSYw7+qXoLo8efuCeYOQBfl2N9ks7pwBmoEf9oXyKtRFqrScZhijxO/WILc42+ht Fl4+vDpsBpvVU1m2q3b8=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=to:from:reply-to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; s=smtpapi; bh=pgkp+ZuaO+aTV1URNjhfoK/g/Ak=; b=Frp1dqUKhY6PBn6JM2 wEggnpj8Xdqpq6yvqZnbWcWV3Js1TtL5k9DdDV/6b4v9u8EE2rv/0Q40PRkSWZ2e XYzvMHqpGuSsMosfL038G1273hyih1GsYzKtiVhjY5/cIQBaXQD4QuZpH5HJ2jZL dVr496Z9JvxkGpwTKs90UJUGs=
+Received: by filter0026p1las1.sendgrid.net with SMTP id filter0026p1las1-3962-5951BCC0-62
+        2017-06-27 02:02:41.176519496 +0000 UTC
+Received: from sng-worker.zomato.com (ec2-52-77-110-73.ap-southeast-1.compute.amazonaws.com [52.77.110.73]) by ismtpd0019p1sin1.sendgrid.net (SG) with ESMTP id sVCbUXr1S9KMqNJVbmyBDA Tue, 27 Jun 2017 02:02:40.945 +0000 (UTC)
+Date: Tue, 27 Jun 2017 07:32:40 +0530
+To: kalindraad@gmail.com
+From: Djunadi Satrio <djunadi.satrio@zomatomail.com>
+Reply-To: Djunadi Satrio <djunadi.satrio@zomato.com>
+Subject: Re: Selamat Datang di Zomato!
+Message-ID: <b8fa572a2a91a2e207704d7ea4cf77c4@sng-worker.zomato.com>
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+content-transfer-encoding: quoted-printable
+X-SG-EID: b0c/iCNHoRUZm7E9Be1FrbAkhLk3euimlBihWVhly9imwBp6IfQrSd4dmzn+dB/NlEVyrNwcAx5H+R T6N9rJMDdaztvig3rA1c5l9rc2BLIAxxLlPcCew0bCKjiMHz/95xNvt6antxaL2HWXpZf0d9z/EWt3 e8B9GqzPFnXd/L0l3I3+9vC4ozBDk6PMJPf8VPDYqSuwQcEDtuVsLLOf9fq+6SBEkOw/35dY+AI3aP g=
+X-Feedback-ID: 1111624:Vb3fKVCedocFyMM26IJIt1lYJ3oinLEurumFiqYYsLo=:Vb3fKVCedocFyMM26IJIt1lYJ3oinLEurumFiqYYsLo=:SG
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns=3D"http://www.w3.org/199=
+9/xhtml">
+
+  <head>
+
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+
+    <title>Welcome to Zomato</title>
+
+  </head>
+
+  <body style=3D"width: 100% !important; min-width: 100%; -webkit-text-size=
+-adjust: 100%; -ms-text-size-adjust: 100%; color: #222222; font-family: 'He=
+lvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-=
+height: 19px; font-size: 14px; margin: 0; padding: 0;">
+
+    <table class=3D"body" style=3D"border-spacing: 0; border-collapse: coll=
+apse; vertical-align: top; text-align: left; height: 100%; width: 100%; col=
+or: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: no=
+rmal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><tr style=
+=3D"vertical-align: top; text-align: left; padding: 0;" align=3D"left"><td =
+class=3D"center" align=3D"center" valign=3D"top" style=3D"word-break: break=
+-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-col=
+lapse: collapse !important; vertical-align: top; text-align: center; color:=
+ #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: norma=
+l; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+
+          <center style=3D"width: 100%; min-width: 580px;">
+
+
+
+          <table class=3D"container" style=3D"border-spacing: 0; border-col=
+lapse: collapse; vertical-align: top; text-align: inherit; width: 580px; ma=
+rgin: 0 auto; padding: 0;"><tr style=3D"vertical-align: top; text-align: le=
+ft; padding: 0;" align=3D"left"><td style=3D"word-break: break-word; -webki=
+t-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collap=
+se !important; vertical-align: top; text-align: left; color: #222222; font-=
+family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height:=
+ 19px; font-size: 14px; margin: 0; padding: 0;" align=3D"left" valign=3D"to=
+p">
+
+
+
+                <table class=3D"row" style=3D"border-spacing: 0; border-col=
+lapse: collapse; vertical-align: top; text-align: left; width: 100%; positi=
+on: relative; display: block; padding: 0px;"><tr style=3D"vertical-align: t=
+op; text-align: left; padding: 0;" align=3D"left"><td class=3D"wrapper last=
+" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: aut=
+o; hyphens: auto; border-collapse: collapse !important; vertical-align: top=
+; text-align: left; position: relative; color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-si=
+ze: 14px; margin: 0; padding: 10px 0px 0px;" align=3D"left" valign=3D"top">
+
+
+
+                      <table class=3D"twelve columns" style=3D"border-spaci=
+ng: 0; border-collapse: collapse; vertical-align: top; text-align: left; wi=
+dth: 580px; margin: 0 auto; padding: 0;"><tr style=3D"vertical-align: top; =
+text-align: left; padding: 0;" align=3D"left"><td style=3D"word-break: brea=
+k-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-co=
+llapse: collapse !important; vertical-align: top; text-align: left; color: =
+#222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal=
+; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" al=
+ign=3D"left" valign=3D"top">
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">H=
+alo!</p>
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">
+
+                             Salam kenal! Saya ingin memastikan kamu mendap=
+atkan pengalaman yang terbaik di Zomato.=20
+
+                            </p>
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">
+
+                            Untuk mendapatkan pengalaman yang lebih seru, k=
+amu bisa mencari teman baru dan mengikuti akun teman kamu di Zomato untuk m=
+elihat kegiatan kuliner mereka (<a href=3D"https://u1111624.ct.sendgrid.net=
+/wf/click?upn=3DIg2w5jgU56yMk9fjcJw8dfaB5FV1P3DrwWZFt74NeUD4Mx3nDop-2BsDLgW=
+6YkVLYR_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2BfUkHSeEDierBiszdne7Re=
+-2BGfeCDUdrgh7NmXD2i9qEJ63CcldIBKvi3C8P2wMQ0bGekoudGcczjz7bcVwS5tmWjLAdkCO1=
+rjZiKouziJLtRENiSMLOAuzXyeqw6nL2kIU57mjgxZGVGVxKmUHIVWt-2BBHS-2FAD-2FNRe7DV=
+1EVzDBm3x-2BKTpOMlfk9VIdwUlPtVPk-3D">zomato.com/invite</a>). Kamu juga bisa=
+ melihat restoran dan makanan apa saja yang menjadi favorit mereka.
+
+                            </p>
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">
+
+                              Apabila ada pertanyaan/saran/hanya ingin meny=
+apa, jangan ragu untuk menghubungi saya di djunadi.satrio@zomato.com=20
+
+                                                          </p>
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">
+
+                            Saya tunggu review seru kamu di Zomato! Siapa t=
+ahu kamu bisa dapat voucher makan dari kita. Setiap minggu kami membagikan =
+voucher loh.=20
+
+                            </p>
+
+                            <p style=3D"color: #222222; font-family: 'Helve=
+tica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-hei=
+ght: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align=3D"left">
+
+                            Oh ya, saya juga sudah mengikuti akun Zomato ka=
+mu lho :)
+
+                            </p>
+
+
+
+                            <p class=3D"signoff" style=3D"color: #222222; f=
+ont-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-ali=
+gn: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align=
+=3D"left">Cheers!<br/>
+
+                               Djunadi
+
+                                                          </p>
+
+                          </td>
+
+                          <td class=3D"expander" style=3D"word-break: break=
+-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-col=
+lapse: collapse !important; vertical-align: top; text-align: left; visibili=
+ty: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', =
+sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin=
+: 0; padding: 0;" align=3D"left" valign=3D"top"></td>
+
+                        </tr></table></td>
+
+                  </tr></table><!-- container end below --></td>
+
+            </tr></table></center>
+
+        </td>
+
+      </tr></table>
+<img src=3D"https://u1111624.ct.sendgrid.net/wf/open?upn=3D0OYJJotz75mS8A0t=
+Z8-2FeycxvxM3BybMd0BpMVJZCP-2BfUkHSeEDierBiszdne7Re-2B60qezGrYfSe-2BG9TWPQC=
+6uqHRRbIWHZf0tY0m5j4rPD3GmDBFTCdD3X1mUzqcWHSPyT83hrBmJdOi9T0-2FuTJeAc-2Fh20=
+epYcjQ1X6tYcEY66KPBrumAEeptV0DpS9J06HhQk0C2ERKZ5SHkHFfY2wzJPI6b5K8wp94hA48J=
+zSPq-2FM-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height=
+:1px !important;width:1px !important;border-width:0 !important;margin-top:0=
+ !important;margin-bottom:0 !important;margin-right:0 !important;margin-lef=
+t:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding=
+-right:0 !important;padding-left:0 !important;"/>
+</body>
+
+</html>
+
+<img src=3D'https://www.zomato.com/jumbo_call_handler.php?payload=3DeyJrZXk=
+iOiJqZXZlbnQiLCJ2YWx1ZSI6eyJlbmFtZSI6ImVtYWlsIiwidmFyMSI6ImRqdW5hZGkuc2F0cm=
+lvQHpvbWF0b21haWwuY29tIiwidmFyMiI6ImthbGluZHJhYWRAZ21haWwuY29tIiwidmFyMyI6I=
+lJlJTNBK1NlbGFtYXQrRGF0YW5nK2RpK1pvbWF0byUyMSIsInZhcjQiOiJvcGVuIn0sInVybCI6=
+Ind3dy56b21hdG8uY29tIn0=3D&img=3D1&u=3D1498528960'/>
+
+

@@ -1,0 +1,215 @@
+Delivered-To: jordy.jonathan@student.umn.ac.id
+Received: by 10.202.236.198 with SMTP id k189csp2899555oih;
+        Sun, 9 Jul 2017 22:00:09 -0700 (PDT)
+X-Received: by 10.31.114.75 with SMTP id n72mr6512846vkc.24.1499662808967;
+        Sun, 09 Jul 2017 22:00:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499662808; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JAlrfyi+7MwCwe7vAZyjriyPpctTcQip6nr6GS/eDTXuvl01msyHRJiLUDfULzCiUt
+         0eMRk3+7WR2MvuPldM9GgZpiA87deN4zuCgnVYOzNk5R0gEI4u3+MUVT4BEwq/duVWdz
+         nv7IN1b62g6mZQTrg+GOZ3caoWPK5TPUEJDieDr6lu81uVNxlGme19tW7Sii/t0sx3uI
+         o5shpQK5GHJsn07rGIKohh1aU1HprrF3HZyMSXU0UQXJO33Pl1T4n7MHeiTXMa1ly5VX
+         SZg8HfvKJvAnXWrK5O5OyJ+vSymK9bjfpAmzI4r+O1qOOH/TMRIdp80JXiNVgzM5BW+N
+         EjNg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=0eRxHO+Kav3ctrHCuS3WqlRiLq194XXv0Ii2Pros82g=;
+        b=Bg8INDcm95quMN1uaImqCEHNEbNhB/puxlJ8QT/emHkuA0TuOoDZqe1Sv3c8ueWYkO
+         lSTwB5NfAwgZ0k/s5tAv6LLljxaKTHHtblSgGna/JCT5yhZklWRte12bBQBnyne0u4oq
+         QSMudgKrXZKiQG3kIrLScspoy1YO6TEv0ZcnRaDu9z7EEE4vKcgsOsaZgpB13OYklqkA
+         ruBIOa0yDEd/QP6GvagpRKQlClVDDlNTCmk8xC1lUQEcoyDDSu8o9KEfD//HQDmYuCiq
+         pbqVphjifSuLOoux6kqLZH+vL0XIcTDKDLHDspDwCTEjOZOjQnIkr9MceCPqvEZpWUgL
+         +AQQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.b=0nQVODAU;
+       spf=neutral (google.com: 2607:f8b0:400c:c08::234 is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) smtp.mailfrom=hansun@umn.ac.id
+Return-Path: <hansun@umn.ac.id>
+Received: from mail-ua0-x234.google.com (mail-ua0-x234.google.com. [2607:f8b0:400c:c08::234])
+        by mx.google.com with ESMTPS id q126si969712vkb.32.2017.07.09.22.00.08
+        for <jordy.jonathan@student.umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 09 Jul 2017 22:00:08 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400c:c08::234 is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) client-ip=2607:f8b0:400c:c08::234;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.b=0nQVODAU;
+       spf=neutral (google.com: 2607:f8b0:400c:c08::234 is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) smtp.mailfrom=hansun@umn.ac.id
+Received: by mail-ua0-x234.google.com with SMTP id z22so47220758uah.1
+        for <jordy.jonathan@student.umn.ac.id>; Sun, 09 Jul 2017 22:00:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=0eRxHO+Kav3ctrHCuS3WqlRiLq194XXv0Ii2Pros82g=;
+        b=0nQVODAUlyKymhZQAk7ak5P/qCJco+rJSKPgRf+tSou1EAzQXrhE6QumJ6mH4kTFf7
+         lSIQ7Rj/b/ArzfUXRiJFubZwpRDrhBHVpKA5Z/LOzcUbHCOvrGMqPtnOdiVdZEUgIJ+H
+         61H4exE90uvXjhXQ4qTP0RIZrN9VH4icuyD256yF4H3na4355RmPK94RsR7joqFMgUnt
+         gezDfiUFcPgJ2jA7xsSAZjdNqFsyMKVQltJHASt7H2pEI8ovBasMhEQ7FevT4D3PSqny
+         Hixw5n2ghV/KRVPWeVDppifNFy0K0pB75XNWuyPF2Ors6z8JOmQGcPToRv/tBG9+Ju9O
+         wkkw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=0eRxHO+Kav3ctrHCuS3WqlRiLq194XXv0Ii2Pros82g=;
+        b=p41Occje03qWaj3Wl4ezmRXGemxOegwFWMFY4LYfubinonzsTO5TCDhBBdnBrbzyMB
+         A9B+hoMB9RFDMLtD2Y8lRsKl8ecuX8tnLn/HIO2WbKnGQXAaJYUp4hHjGvf801R4OePw
+         KUbRgV2bmoWvLnNyQ7bHBYxdcctDfx1tB7Le4SvqpZ4ffjG+Xdy1zEZzh8rkutFckTZP
+         VB7M416GI8omEngPdCHmpiSP7t/YjvffYr08LHc/NQwatB6KyPe6oJ76RoXoLi8/U5WZ
+         WErWu5qyYEHbpB2POXQYupWZGwd4gLWZ7ekheueQZacCYIzeftMsb/+o0DIUDY5q07Fj
+         hcng==
+X-Gm-Message-State: AIVw1108OI7+K5hv1/DCURlumb3z5PSdwQvOT+TnVEstf96oOSn285U6 WvyQVnbN22djJ4jAEe4Ket4Oa16H9cLoZhPRNcXL2Z+WZfaLSiKvgdJbKbUy4mDmVXiMrOAVmf7 baOkeFbVaEtqc3I47rDaYEb0WcBrttWhW
+X-Received: by 10.176.80.71 with SMTP id z7mr7585807uaz.126.1499662808265; Sun, 09 Jul 2017 22:00:08 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.114.71 with HTTP; Sun, 9 Jul 2017 22:00:07 -0700 (PDT)
+In-Reply-To: <CAN3MOfZp=hz6g-9Osi9QHXuY8yO7bFNOSxeHX=4wpChi_ihpPA@mail.gmail.com>
+References: <CAN3MOfZp=hz6g-9Osi9QHXuY8yO7bFNOSxeHX=4wpChi_ihpPA@mail.gmail.com>
+From: "SENG HANSUN (023967)" <hansun@umn.ac.id>
+Date: Mon, 10 Jul 2017 12:00:07 +0700
+Message-ID: <CA+qO0EHU_VKkOB66AwaKMbn6b0LQq+oo1KtEajvgw3Bh+3cz-Q@mail.gmail.com>
+Subject: Re: pertanyaan mengenai MAPE
+To: "JORDY JONATHAN (13110110109)" <jordy.jonathan@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary="94eb2c1922ecf847eb0553ef7415"
+
+--94eb2c1922ecf847eb0553ef7415
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Jordy,
+
+Benar Jordy, untuk range nilai MAPE sendiri sebenarnya tidak hanya 0 -
+100%, tapi bisa mencapai tak hingga.
+Hal ini sangat dipengaruhi oleh selisih error antara actual data dan
+forecasted data.
+Umumnya, jika selisih error tidak melebihi nilai actual data, maka nilai
+MAPE maksimal 100%, namun untuk contoh yang diberikan Jordy, maka bisa
+lebih besar dari itu.
+Semoga memberikan penjelasan ya Jordy.
+
+Regards,
+Seng Hansun
+
+2017-07-10 10:24 GMT+07:00 JORDY JONATHAN (13110110109) <
+jordy.jonathan@student.umn.ac.id>:
+
+> sepertinya saya sudah menemukan masalahnya pak. initial data / periode
+> WMA yang saya pakai terlalu sedikit, yaitu 3.
+>
+> --
+>
+> *Universitas   Multimedia   Nusantara*
+> *"Excellent Career Begins With Excellent Education"*
+> Jl. Scientia Boulevard, Gading Serpong,
+> Tangerang, Banten - 15811 Indonesia
+> (t) +62-21.5422.0808; (f) +62-21.5422.0800;
+> Facebook: Universitas Multimedia Nusantara
+> Twitter: @umn_serpong
+> Web: www.umn.ac.id
+>
+
+
+
+-- 
+Best regards,
+Seng Hansun
+Deputy Head of Computer Science Department
+Universitas Multimedia Nusantara
+
+*2017 International Conference on Smart Cities, Automation & Intelligent
+Computing Systems (ICON-SONICS 2017)*
+*November 08-10 2017 | Yogyakarta, Indonesia*
+http://iconsonics.umn.ac.id/
+
+*The 4th International Conference on New Media 2017 (CONMEDIA 2017)*
+*November 08-10 2017 | Yogyakarta, Indonesia*
+http://conmedia.umn.ac.id/
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21.5422.0808; (f) +62-21.5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id
+
+--94eb2c1922ecf847eb0553ef7415
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Jordy,<div><br></div><div>Benar Jordy, untuk range ni=
+lai MAPE sendiri sebenarnya tidak hanya 0 - 100%, tapi bisa mencapai tak hi=
+ngga.</div><div>Hal ini sangat dipengaruhi oleh selisih error antara actual=
+ data dan forecasted data.</div><div>Umumnya, jika selisih error tidak mele=
+bihi nilai actual data, maka nilai MAPE maksimal 100%, namun untuk contoh y=
+ang diberikan Jordy, maka bisa lebih besar dari itu.</div><div>Semoga membe=
+rikan penjelasan ya Jordy.</div><div><br>Regards,</div><div>Seng Hansun</di=
+v></div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">2017-07-1=
+0 10:24 GMT+07:00 JORDY JONATHAN (13110110109) <span dir=3D"ltr">&lt;<a hre=
+f=3D"mailto:jordy.jonathan@student.umn.ac.id" target=3D"_blank">jordy.jonat=
+han@student.umn.ac.id</a>&gt;</span>:<br><blockquote class=3D"gmail_quote" =
+style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">sep=
+ertinya saya sudah menemukan masalahnya pak. initial data / periode<br>
+WMA yang saya pakai terlalu sedikit, yaitu 3.<br>
+<div class=3D"HOEnZb"><div class=3D"h5"><br>
+--<br>
+<br>
+*Universitas=C2=A0 =C2=A0Multimedia=C2=A0 =C2=A0Nusantara*<br>
+*&quot;Excellent Career Begins With Excellent Education&quot;*<br>
+Jl. Scientia Boulevard, Gading Serpong,<br>
+Tangerang, Banten - 15811 Indonesia<br>
+(t) <a href=3D"tel:%2B62-21.5422.0808" value=3D"+622154220808">+62-21.5422.=
+0808</a>; (f) <a href=3D"tel:%2B62-21.5422.0800" value=3D"+622154220800">+6=
+2-21.5422.0800</a>;<br>
+Facebook: Universitas Multimedia Nusantara<br>
+Twitter: @umn_serpong<br>
+Web: <a href=3D"http://www.umn.ac.id" rel=3D"noreferrer" target=3D"_blank">=
+www.umn.ac.id</a><br>
+</div></div></blockquote></div><br><br clear=3D"all"><div><br></div>-- <br>=
+<div class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=
+=3D"ltr"><div><div dir=3D"ltr">Best regards,<div>Seng Hansun</div><div>Depu=
+ty Head of Computer Science Department</div><div>Universitas Multimedia Nus=
+antara</div><div><br></div><div><div><i>2017 International Conference on Sm=
+art Cities, Automation &amp; Intelligent Computing Systems (ICON-SONICS 201=
+7)</i></div><div><i>November 08-10 2017 | Yogyakarta, Indonesia</i></div><d=
+iv><a href=3D"http://iconsonics.umn.ac.id/" target=3D"_blank">http://iconso=
+nics.umn.ac.id/</a></div><div><br></div><div><i>The 4th International Confe=
+rence on New Media 2017 (CONMEDIA 2017)</i></div><div><i>November 08-10 201=
+7 | Yogyakarta, Indonesia</i></div><div><a href=3D"http://conmedia.umn.ac.i=
+d/" target=3D"_blank">http://conmedia.umn.ac.id/</a></div></div></div></div=
+></div></div>
+</div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font>
+--94eb2c1922ecf847eb0553ef7415--

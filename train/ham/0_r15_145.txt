@@ -1,0 +1,186 @@
+Delivered-To: jordy.jonathan@student.umn.ac.id
+Received: by 10.202.195.17 with SMTP id t17csp135673oif;
+        Tue, 4 Apr 2017 04:08:28 -0700 (PDT)
+X-Received: by 10.31.13.200 with SMTP id 191mr8833787vkn.28.1491304108132;
+        Tue, 04 Apr 2017 04:08:28 -0700 (PDT)
+Return-Path: <hansun@umn.ac.id>
+Received: from mail-vk0-x22f.google.com (mail-vk0-x22f.google.com. [2607:f8b0:400c:c05::22f])
+        by mx.google.com with ESMTPS id x191si7244552vkd.28.2017.04.04.04.08.27
+        for <jordy.jonathan@student.umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 04 Apr 2017 04:08:28 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400c:c05::22f is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) client-ip=2607:f8b0:400c:c05::22f;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:400c:c05::22f is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) smtp.mailfrom=hansun@umn.ac.id
+Received: by mail-vk0-x22f.google.com with SMTP id s68so170451598vke.3
+        for <jordy.jonathan@student.umn.ac.id>; Tue, 04 Apr 2017 04:08:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=yochDOQqnoIV3xxbrDc01+PpXmfcLyLyAAYvSaTA+Vo=;
+        b=AlauTw9rHBO0JluZb3cvztqeVp6FCKgXUn4ovwIVKjCcPFJzkIVSzF7DqC/1A7XEkr
+         8QYQgORFVgcou5gPi47sFp2+1gDMQ5DMlqw1U7TdOAvRMuF1/WZulKbw/UGwCnqaueHR
+         6ujSUKa2OQ08bC7tQyPyyidxTcwjRRx/jO5Q0epgS3Qn5JvzkaipDqeAXycoDDeTjmdR
+         P3vwTojRV6vCa9WCwLJICqW+TsOqx2Kj7E0rJgPVIJK5Zir9m9dg2ZvH4wRO71qY8VJt
+         GB1Z71cufT9yTXSyj8ZsM/96bsis+uZfh7JwraQ6D3vd3tJaPeQ/biaOICvCsF7a3sBt
+         B1bQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=yochDOQqnoIV3xxbrDc01+PpXmfcLyLyAAYvSaTA+Vo=;
+        b=ipnLW4dv9UNqztjuydMfZk9Gj0nYI5Mrn2Yenpwar5JEZhUgEHxW5hrDDab9ru8sca
+         98QMjdSqVdXDlHldZc+GjjI5WBf7ko+2nJ/Mj/tFg7YICbgDFQQyvwq2uZvmTIOoGXl7
+         EFfFa3e1o2PAnUKJ7WXe96B8mtGsC8DzjS9NqHqrkMIbZVM0U0gBef4WxY2Kf3BvFL+G
+         O/UJzyWGyTQVYEfJJ8l7IXkFeux6lNYt0Xuv2+6YXSZf8QxKqgVJ+tZqNfX/Dph5/Er6
+         6STwScTnGOLhmr5a4mtdsom04oQ9QPp3I1FOoUqb9MX3tb8I5bJI/2u0FuWT9KpaFQgk
+         zpeQ==
+X-Gm-Message-State: AFeK/H1cqwiowOq+j4tFkZJq3IwceGfl45TC9kxvpGy5Tpxz/8ryctahhkYlbr/1LzNcwUUco2Res0QsfMFrTq506OkmZJWVWhdxjtAV0kF8BB0Lj3pUFGM1Jp8TJVPlHzZ5OUXK9LwXC8WOrW2ADNlXuLMpXofQOM/e
+X-Received: by 10.31.139.79 with SMTP id n76mr10507874vkd.57.1491304107461; Tue, 04 Apr 2017 04:08:27 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.24.198 with HTTP; Tue, 4 Apr 2017 04:08:26 -0700 (PDT)
+Received: by 10.103.24.198 with HTTP; Tue, 4 Apr 2017 04:08:26 -0700 (PDT)
+In-Reply-To: <CAN3MOfZ-uMVMPuRXpOhR=KKJhLC3P5i=1EwhKhCQC64uDbuv1w@mail.gmail.com>
+References: <CAN3MOfZ-uMVMPuRXpOhR=KKJhLC3P5i=1EwhKhCQC64uDbuv1w@mail.gmail.com>
+From: "SENG HANSUN (023967)" <hansun@umn.ac.id>
+Date: Tue, 4 Apr 2017 18:08:26 +0700
+Message-ID: <CA+qO0EFEUTQM04umZy532n2YCPAcNKRzY6Okm8HsHN7XUzqREw@mail.gmail.com>
+Subject: Re: Revisi proposal skripsi
+To: "JORDY JONATHAN (13110110109)" <jordy.jonathan@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary=001a11458ee693e0f0054c554b4b
+
+--001a11458ee693e0f0054c554b4b
+Content-Type: text/plain; charset=UTF-8
+
+Dear Jordy,
+
+Sebaiknya memang dihapus utk batasan tersebut.
+Yang perlu dicatat adalah resources apa saja yang akan diprediksi?
+Dalam bentuk apa?
+Ada baiknya didiskusikan dengan calon pembimbing untuk perbaikan proposal
+tersebut ya Jordy..
+Terima kasih.
+
+Regards,
+Seng Hansun
+
+On Apr 4, 2017 4:05 PM, "JORDY JONATHAN (13110110109)" <
+jordy.jonathan@student.umn.ac.id> wrote:
+
+> Dear pak hansun,
+> saya mohon maaf karena saya belum dapat hadir di kampus. Waktu sidang
+> ke-2, bapak sempat menulis di lembar revisi bahwa saya harus merevisi
+> batasan masalah saya yang tertulis "tidak terdapat rumus khusus yang
+> berfungsi untuk mendapatkan best alpha dan best beta". Mengenai
+> masalah tersebut, apakah saya harus menghapus poin batasan masalah
+> tersebut? Jika saya menghapus batasan masalah tersebut, batasan
+> masalah saya hanya tinggal 1 sekarang, yaitu "Resource yang dipakai
+> hanya sebatas moodle resource saja". Lalu jika boleh saya minta saran
+> mengenai batasan masalah ini pak.
+> Berikut saya lampirkan potongan screenshot batasan masalah proposal
+> skripsi saya.
+>
+> --
+>
+> *Universitas   Multimedia   Nusantara*
+> *"Excellent Career Begins With Excellent Education"*
+> Jl. Scientia Boulevard, Gading Serpong,
+> Tangerang, Banten - 15811 Indonesia
+> (t) +62-21.5422.0808; (f) +62-21.5422.0800;
+> Facebook: Universitas Multimedia Nusantara
+> Twitter: @umn_serpong
+> Web: www.umn.ac.id
+>
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21.5422.0808; (f) +62-21.5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id
+
+--001a11458ee693e0f0054c554b4b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Dear Jordy,=C2=A0<div dir=3D"auto"><br></div><div dir=3D"=
+auto">Sebaiknya memang dihapus utk batasan tersebut.=C2=A0</div><div dir=3D=
+"auto">Yang perlu dicatat adalah resources apa saja yang akan diprediksi?=
+=C2=A0</div><div dir=3D"auto">Dalam bentuk apa?=C2=A0</div><div dir=3D"auto=
+">Ada baiknya didiskusikan dengan calon pembimbing untuk perbaikan proposal=
+ tersebut ya Jordy..=C2=A0</div><div dir=3D"auto">Terima kasih.=C2=A0</div>=
+<div dir=3D"auto"><br></div><div dir=3D"auto">Regards,</div><div dir=3D"aut=
+o">Seng Hansun</div></div><div class=3D"gmail_extra"><br><div class=3D"gmai=
+l_quote">On Apr 4, 2017 4:05 PM, &quot;JORDY JONATHAN (13110110109)&quot; &=
+lt;<a href=3D"mailto:jordy.jonathan@student.umn.ac.id">jordy.jonathan@stude=
+nt.umn.ac.id</a>&gt; wrote:<br type=3D"attribution"><blockquote class=3D"gm=
+ail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-le=
+ft:1ex">Dear pak hansun,<br>
+saya mohon maaf karena saya belum dapat hadir di kampus. Waktu sidang<br>
+ke-2, bapak sempat menulis di lembar revisi bahwa saya harus merevisi<br>
+batasan masalah saya yang tertulis &quot;tidak terdapat rumus khusus yang<b=
+r>
+berfungsi untuk mendapatkan best alpha dan best beta&quot;. Mengenai<br>
+masalah tersebut, apakah saya harus menghapus poin batasan masalah<br>
+tersebut? Jika saya menghapus batasan masalah tersebut, batasan<br>
+masalah saya hanya tinggal 1 sekarang, yaitu &quot;Resource yang dipakai<br=
+>
+hanya sebatas moodle resource saja&quot;. Lalu jika boleh saya minta saran<=
+br>
+mengenai batasan masalah ini pak.<br>
+Berikut saya lampirkan potongan screenshot batasan masalah proposal<br>
+skripsi saya.<br>
+<br>
+--<br>
+<br>
+*Universitas=C2=A0 =C2=A0Multimedia=C2=A0 =C2=A0Nusantara*<br>
+*&quot;Excellent Career Begins With Excellent Education&quot;*<br>
+Jl. Scientia Boulevard, Gading Serpong,<br>
+Tangerang, Banten - 15811 Indonesia<br>
+(t) <a href=3D"tel:%2B62-21.5422.0808" value=3D"+622154220808">+62-21.5422.=
+0808</a>; (f) <a href=3D"tel:%2B62-21.5422.0800" value=3D"+622154220800">+6=
+2-21.5422.0800</a>;<br>
+Facebook: Universitas Multimedia Nusantara<br>
+Twitter: @umn_serpong<br>
+Web: <a href=3D"http://www.umn.ac.id" rel=3D"noreferrer" target=3D"_blank">=
+www.umn.ac.id</a><br>
+</blockquote></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font>
+--001a11458ee693e0f0054c554b4b--

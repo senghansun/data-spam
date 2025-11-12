@@ -1,0 +1,181 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.107.29.75 with SMTP id d72csp8201338iod;
+        Sat, 1 Jul 2017 03:38:16 -0700 (PDT)
+X-Received: by 10.28.148.67 with SMTP id w64mr16753686wmd.55.1498905496615;
+        Sat, 01 Jul 2017 03:38:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498905496; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mu/aaXb937HoH4d6eCX88oRPYguJvgMaGUauSRziHsuYtFQXb//leC4ezQyxiPuNRA
+         DiwGn01Q763uZplDCX2OAkaAMUoyd3OggI8pMRGUoHK738Gs0ESvboFPooCi0VyAfg5A
+         7851F63/Ca6Hewf47yOcsVdVGgURtqRpji50QOBXkJ5MqYE4VFZjRI1/Kr55xElRrGT3
+         Lkbjn8glJN160C+2G2PAG6bb95iUeivI+1kiHovykgzGuTDKnf3Xkiti6gWCw1cATe2H
+         Clt+nhdvgafbvd5iYeYCy7iJS1cOTc93tXeJaGSSu4QimeM2cBiFd20Zi+lyLNPlsIam
+         NVZw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:sender:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=6wruw9WAzbIWwzpsiw6ZcZkM1aKNRlHpOLdNtEyzFOc=;
+        b=S35da6DC7/Jls0FIfmmxBxIu0EGKkt1RyceJtsuMUmSDkuYMc5dICr9cEWPMRkSjod
+         HhYYTQdAcdDBmMRbe2bDk8GEpRFesgNh+IbvE2FmE9pib0+5hm1YWKiBKNmW/wX1tD4V
+         2yA/FRYk70ocsuIrFhCfaXpEqJxmN9QiZULJexwEn99BD0BjavKCdNQtt+anop6Beqyz
+         ptNuh7NMQs2Muo34dxbjsJOUh7coXOJIKF/KsOHgaRKJPQeeP7EEEhjMw2kkKvAvuGeJ
+         XCx7OqBA2qN7+q80HdHDi4pHPDOs7vayR9/m0T4Tz05wDK1UFQKhfA6GOSAqnVRJwNUm
+         v0hQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@indonesiaandroidkejar-id.20150623.gappssmtp.com header.b=gHZWUG98;
+       spf=neutral (google.com: 74.125.82.52 is neither permitted nor denied by best guess record for domain of bandung@indonesiaandroidkejar.id) smtp.mailfrom=bandung@indonesiaandroidkejar.id
+Return-Path: <bandung@indonesiaandroidkejar.id>
+Received: from mail-wm0-f52.google.com (mail-wm0-f52.google.com. [74.125.82.52])
+        by mx.google.com with ESMTPS id b82si4301465wmh.82.2017.07.01.03.38.15
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 01 Jul 2017 03:38:16 -0700 (PDT)
+Received-SPF: neutral (google.com: 74.125.82.52 is neither permitted nor denied by best guess record for domain of bandung@indonesiaandroidkejar.id) client-ip=74.125.82.52;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indonesiaandroidkejar-id.20150623.gappssmtp.com header.b=gHZWUG98;
+       spf=neutral (google.com: 74.125.82.52 is neither permitted nor denied by best guess record for domain of bandung@indonesiaandroidkejar.id) smtp.mailfrom=bandung@indonesiaandroidkejar.id
+Received: by mail-wm0-f52.google.com with SMTP id f67so408wmh.1
+        for <hutamatr@gmail.com>; Sat, 01 Jul 2017 03:38:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=indonesiaandroidkejar-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=6wruw9WAzbIWwzpsiw6ZcZkM1aKNRlHpOLdNtEyzFOc=;
+        b=gHZWUG98/SNdYdYkcCG6+kgHCgJQw12YGkKy06cY+CBrUtzJFDF5JZmp/nGCYCohSh
+         tVcyb+y9Bd66TNnuVQmMnLPzo8KJRAnp6GCSlJFv0CJuUFbhIxW8FBhWe4ICTbSsHc2o
+         BOXQ033IpVlX5MzMHotLxhGbXJXG6am5/d+kXR4XeYgzo4T1hDnlI5PKdY08itucjWwo
+         Dy8PXosOYfEWu5yehLXXlJ26g8M3k27vnLVw2B7TRp4zPXz/2UwbmQ+N2lWhUbaeKElZ
+         zVrW24vu6v8heReCaIHu7zC0yxQ8OJ/dvVccPmMgP1zb7cdVr7U3+YtIGGRsWP164P/f
+         Po1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=6wruw9WAzbIWwzpsiw6ZcZkM1aKNRlHpOLdNtEyzFOc=;
+        b=HPjJjGxoKv1sOs1GB8psHSrGB44HNUz+nVljlJNoKeQWmsy+84nRfjhDPcroEAtRiY
+         3mB+fyRQkqO8QbsYVcSBUG375xdGorGZuzbtbXlgHzAPvTE2Q5IqkhQWvKvqYiiL0HQk
+         F3sjJq1ow71J0L0s8t/bdDSqWmWy+TX/5wz3UDNJ9SJjmFSbJOhkZS0cZz7xDYNwQBax
+         IqrbegisKUGMI62SOkkV9/fW7mHhK89zX4prhOTs4Jplsv26d58Hy4LNZIcbj/XP6B/x
+         xCdd16De9Jhf7XOgz/dPcI9me/CRNDA8plZfZAjYlVKaXmfTv0SEnR6JMI9Ebn2q5yHv
+         F9ew==
+X-Gm-Message-State: AIVw110mQvMPCEP+Iu5JqKAH1CDYyO7C7b773Mv0V6mrKXP71jWlx1s+ iKkywDhMSaoJlIlcQugdsz8GURh0nuLYxgQ=
+X-Received: by 10.28.178.203 with SMTP id b194mr5177346wmf.36.1498905495584; Sat, 01 Jul 2017 03:38:15 -0700 (PDT)
+Received: from 886438479158 named unknown by gmailapi.google.com with HTTPREST; Sat, 1 Jul 2017 06:38:15 -0400
+MIME-Version: 1.0
+Sender: Indonesia Android Kejar <bandung@indonesiaandroidkejar.id>
+From: Indonesia Android Kejar <bandung@indonesiaandroidkejar.id>
+Date: Sat, 1 Jul 2017 06:38:15 -0400
+X-Google-Sender-Auth: m7DJju3MqSTwy62RFTXbxSxhjjI
+Message-ID: <CAKvnFpqTsCM1R3CSeVE9dEqBEvcxtO-WSuh1N=3T5_dfnkRArg@mail.gmail.com>
+Subject: Indonesia Android Kejar Batch 3 - Periode 2 Kembali Dibuka!
+To: hutamatr@gmail.com
+Content-Type: multipart/alternative; boundary="001a11444ad89dc38905533f219c"
+
+--001a11444ad89dc38905533f219c
+Content-Type: text/plain; charset="UTF-8"
+
+Hai Hutama Trirahmanto,
+
+Pendaftaran untuk Indonesia Android Kejar Batch 3 - Periode 2 kembali
+dibuka untuk kamu!
+
+Jadi untuk kamu yang masih belum bisa ikut atau belum bisa selesai di
+periode 1 masih mempunyai kesempatan untuk mengikuti Indonesia Android
+Kejar di periode 2 yang nanti akan dilaksanakan pada bulan Juli - Agustus
+2017.
+
+Jangan lewatkan kesempatan untuk mewujudkan potensi developer kamu disini,
+karena selain ilmu kamu juga akan mendapatkan network komunitas developer
+yang luas yang ada di 10 Kota (Jakarta, Bandung, Yogyakarta, Semarang,
+Surabaya, Malang, Denpasar, Makassar, Pontianak, dan Medan).
+
+Jadi tunggu apa lagi, segera daftarkan diri kamu disini: LINK
+<https://docs.google.com/a/indonesiaandroidkejar.id/forms/d/e/1FAIpQLSemKvPdFCtNYAxTTvv2kQiN7lNKN00__KSQY_luMGZ-As-8BA/viewform>
+
+
+Daftarkan diri kamu sebelum 3 Juli 2017
+
+Sebarkan informasi ini ke teman kamu yang juga mempunyai potensi untuk
+menjadi developer yang bisa berkontribusi untuk ekosistem developer di
+Indonesia.
+
+Untuk informasi lengkap silahkan kunjungi websitenya disini:
+http://g.co/dev/androidkejar
+
+Tetap semangat dan terus belajar!
+
+
+
+Salam,
+
+Indonesia Android Kejar
+
+--001a11444ad89dc38905533f219c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p dir=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;=
+margin-top:0pt;margin-bottom:0pt;text-align:justify"><span style=3D"font-si=
+ze:12pt;font-family:Roboto;color:rgb(0,0,0);background-color:transparent;ve=
+rtical-align:baseline;white-space:pre-wrap">Hai Hutama Trirahmanto,</span><=
+/p><br style=3D"font-size:12.8px"><p dir=3D"ltr" style=3D"font-size:12.8px;=
+line-height:1.38;margin-top:0pt;margin-bottom:0pt;text-align:justify"><span=
+ style=3D"font-size:12pt;font-family:Roboto;color:rgb(0,0,0);background-col=
+or:transparent;vertical-align:baseline;white-space:pre-wrap">Pendaftaran un=
+tuk Indonesia Android Kejar Batch 3 - Periode 2 kembali dibuka untuk kamu!<=
+/span></p><br style=3D"font-size:12.8px"><p dir=3D"ltr" style=3D"font-size:=
+12.8px;line-height:1.38;margin-top:0pt;margin-bottom:0pt;text-align:justify=
+"><span style=3D"font-size:12pt;font-family:Roboto;color:rgb(0,0,0);backgro=
+und-color:transparent;vertical-align:baseline;white-space:pre-wrap">Jadi un=
+tuk kamu yang masih belum bisa ikut atau belum bisa selesai di periode 1 ma=
+sih mempunyai kesempatan untuk mengikuti Indonesia Android Kejar di periode=
+ 2 yang nanti akan dilaksanakan pada bulan Juli - Agustus 2017.</span></p><=
+br style=3D"font-size:12.8px"><p dir=3D"ltr" style=3D"font-size:12.8px;line=
+-height:1.38;margin-top:0pt;margin-bottom:0pt;text-align:justify"><span sty=
+le=3D"font-size:12pt;font-family:Roboto;color:rgb(0,0,0);background-color:t=
+ransparent;vertical-align:baseline;white-space:pre-wrap">Jangan lewatkan ke=
+sempatan untuk mewujudkan potensi developer kamu disini, karena selain ilmu=
+ kamu juga akan mendapatkan network komunitas developer yang luas yang ada =
+di 10 Kota (Jakarta, Bandung, Yogyakarta, Semarang, Surabaya, Malang, Denpa=
+sar, Makassar, Pontianak, dan Medan).</span></p><br style=3D"font-size:12.8=
+px"><p dir=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-top:0p=
+t;margin-bottom:0pt;text-align:justify"><span style=3D"font-size:12pt;font-=
+family:Roboto;color:rgb(0,0,0);background-color:transparent;vertical-align:=
+baseline;white-space:pre-wrap">Jadi tunggu apa lagi, segera daftarkan diri =
+kamu disini: <a href=3D"https://docs.google.com/a/indonesiaandroidkejar.id/=
+forms/d/e/1FAIpQLSemKvPdFCtNYAxTTvv2kQiN7lNKN00__KSQY_luMGZ-As-8BA/viewform=
+" target=3D"_blank">LINK</a></span></p><p dir=3D"ltr" style=3D"font-size:12=
+.8px;line-height:1.38;margin-top:0pt;margin-bottom:0pt;text-align:justify">=
+<br></p><p dir=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-to=
+p:0pt;margin-bottom:0pt;text-align:justify"><span style=3D"color:rgb(0,0,0)=
+;font-family:Roboto;font-size:16px;white-space:pre-wrap">Daftarkan diri kam=
+u sebelum 3 Juli 2017</span><br></p><br style=3D"font-size:12.8px"><p dir=
+=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-top:0pt;margin-b=
+ottom:0pt;text-align:justify"><span style=3D"font-size:12pt;font-family:Rob=
+oto;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline;w=
+hite-space:pre-wrap">Sebarkan informasi ini ke teman kamu yang juga mempuny=
+ai potensi untuk menjadi developer yang bisa berkontribusi untuk ekosistem =
+developer di Indonesia. </span></p><br style=3D"font-size:12.8px"><p dir=3D=
+"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-top:0pt;margin-bott=
+om:0pt;text-align:justify"><span style=3D"font-size:12pt;font-family:Roboto=
+;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline;whit=
+e-space:pre-wrap">Untuk informasi lengkap silahkan kunjungi websitenya disi=
+ni: </span><a href=3D"http://g.co/dev/androidkejar" style=3D"text-decoratio=
+n-line:none" target=3D"_blank"><span style=3D"font-size:12pt;font-family:Ro=
+boto;background-color:transparent;text-decoration-line:underline;vertical-a=
+lign:baseline;white-space:pre-wrap">http://g.co/dev/androidkejar</span></a>=
+</p><br style=3D"font-size:12.8px"><p dir=3D"ltr" style=3D"font-size:12.8px=
+;line-height:1.38;margin-top:0pt;margin-bottom:0pt;text-align:justify"><spa=
+n style=3D"font-size:12pt;font-family:Roboto;color:rgb(0,0,0);background-co=
+lor:transparent;vertical-align:baseline;white-space:pre-wrap">Tetap semanga=
+t dan terus belajar!</span></p><div style=3D"font-size:12.8px"><br></div><d=
+iv style=3D"font-size:12.8px"><br></div><br style=3D"font-size:12.8px"><p d=
+ir=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-top:0pt;margin=
+-bottom:0pt;text-align:justify"><span style=3D"font-size:12pt;font-family:R=
+oboto;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline=
+;white-space:pre-wrap">Salam,</span></p><br style=3D"font-size:12.8px"><p d=
+ir=3D"ltr" style=3D"font-size:12.8px;line-height:1.38;margin-top:0pt;margin=
+-bottom:0pt;text-align:justify"><span style=3D"font-size:12pt;font-family:R=
+oboto;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline=
+;white-space:pre-wrap">Indonesia Android Kejar</span></p></div>
+
+--001a11444ad89dc38905533f219c--

@@ -1,0 +1,392 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.107.47.30 with SMTP id j30csp2184876ioo;
+        Tue, 30 May 2017 10:18:48 -0700 (PDT)
+X-Received: by 10.159.60.156 with SMTP id s28mr11083210uai.94.1496164728463;
+        Tue, 30 May 2017 10:18:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496164728; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qQ2PfKfKxE5AgeYhkB50piRK33E01d/5U7zS/XzGXXCMHBbyksv0qfL0BbasV1KXOA
+         nPDaGy/UlxlagvlcMEBc4EJd52vS1ws50JSJ5ToSGIX0389uxbn5M/q1q48vd2Ef4yLK
+         i7ETpJD7l2hpZhI6nshI+82Ps2MtcRvO4uY1EY37n+B75wSNQ1i1Nv0aWx91idre9we8
+         JKvk9ebZjbz3H0o+UwgxNA4boB6W6YH6x3ujBF+6LgvO9YhL+mUAI88ci2d1iIyEBwtQ
+         j+IhFtLPH+EGZoRs5HAeF3rDXmDXtPPZcm+ha4V/5ymoPK2p84J4vFM67jQpvCKVkOrv
+         t5fw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:sender:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=3SvRu9MDTJSf/EoEBGwbQRU8GTls/3NSgpwVUmO75XY=;
+        b=yJDMOXXj3p+tJk3pJfzchthSH7cdZd5QEPg4G3zGXO5OD+wuUc84pq5pJU2qV9ro4d
+         e/rNolz4YOhoQEFqRix3M3fQ+XKimU33DTCoQXTrDdqPs+3tKrFzzIp02MNTNkIa3umx
+         7HlJrltdykt4L+pqxHrQShp1cHt+yyM0bNSXGWu4zTyJ8bipIi0Qqea9Q+lmnYN4ybJX
+         yHQSu08pNTB+IEtHvWkAEYBfSc7cf2aCGvYXJnoeGknTNINUkNTggl0qqu0mn0KTluqe
+         /KPLGz5of4N7lsv/6Dt1lBiolIFsmkOHZilWUdkIy2wQOwfoBBTRoJ2sWmfg+wh2sL0C
+         PzIA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@trailblazers-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:400c:c08::231 is neither permitted nor denied by best guess record for domain of info@trailblazers.id) smtp.mailfrom=info@trailblazers.id
+Return-Path: <info@trailblazers.id>
+Received: from mail-ua0-x231.google.com (mail-ua0-x231.google.com. [2607:f8b0:400c:c08::231])
+        by mx.google.com with ESMTPS id 18si6368132vkk.136.2017.05.30.10.18.48
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 30 May 2017 10:18:48 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400c:c08::231 is neither permitted nor denied by best guess record for domain of info@trailblazers.id) client-ip=2607:f8b0:400c:c08::231;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@trailblazers-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:400c:c08::231 is neither permitted nor denied by best guess record for domain of info@trailblazers.id) smtp.mailfrom=info@trailblazers.id
+Received: by mail-ua0-x231.google.com with SMTP id j17so50669135uag.3
+        for <hutamatr@gmail.com>; Tue, 30 May 2017 10:18:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=trailblazers-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=3SvRu9MDTJSf/EoEBGwbQRU8GTls/3NSgpwVUmO75XY=;
+        b=yzVKIjVS0xnWHmZFoep3m/tRyIuXej0PykheTtAz+1lMMy6pcgi+Ug//L0YpQ6/Db8
+         /DQSn2rS95ugCuIbrNT8YpYjlSSl0gG2SFNa/Y+ZI6DQnTVB5wj814RnHeJAAaw16cVW
+         VsK7E+kBrY/ZyUgImGXDgmA8H9OIKyjB2KgTMDhlNxs+B3Lvc1QUcM8Pd9TfnDQhFe0x
+         uipKvcf7K0Mgf7UlfXpCeaZC3z87QHesWzVmmvf9BQ6Ah96TSF0lNgAYOxfkcstosMIR
+         EwUs3MIlvDfNQTjlEZBBo/8w4d36kRaefXmAfDk3yQoyQSlwcqoa14oOoSEYIMu9UUjy
+         m7gw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=3SvRu9MDTJSf/EoEBGwbQRU8GTls/3NSgpwVUmO75XY=;
+        b=Txeip4rmvYnzTFaZD64c0PuTW9+/NykZlpCXRoJALARSZ4quv9YqtrAYon0A7Ukktz
+         D5WSbf3DiHHK8Pn8wImGZ1tIY2Uh2ZimBDdT3Dd3NQxw92HcMJ8hIZ4EcdX8JJ7M7GO6
+         2zPHe3mt5afDEXSs8KU9m0WpoS5d7bskVcK2kWPC+VJsMBJAFk7zRSP/rcaBxyoiboFW
+         pc4dUIqlkXyA7nA/fs5HomxDViv/6IScaIWMUTAckpBjzZfY3LO+0Z0xXt9dWs6tWWfE
+         j84w3lXdy758XEPG/WLMpU6mH/eWxVpLet5r8xGNQfvz9JGc6tQpZ4SiRQhCOhQX18Vb
+         sPRg==
+X-Gm-Message-State: AODbwcAsUbVkcNIKKJ6/pxUFFUmYSUjP9lQFr5IwM+tNsoxWAr/CAVdP 83aoocioAFNwxc4blh9tl+rnhyErvmYA3v8=
+X-Received: by 10.176.16.79 with SMTP id g15mr9179005uab.133.1496164727727; Tue, 30 May 2017 10:18:47 -0700 (PDT)
+Received: from 895854600653 named unknown by gmailapi.google.com with HTTPREST; Tue, 30 May 2017 13:18:47 -0400
+MIME-Version: 1.0
+Sender: Trailblazers <info@trailblazers.id>
+From: Trailblazers <info@trailblazers.id>
+Date: Tue, 30 May 2017 13:18:47 -0400
+X-Google-Sender-Auth: A41-y9gRludNf5JQINnS8u5oyg4
+Message-ID: <CAFPG-F=wwR6_wK2Fkwv=gd4be3k3UahCmsQ=ucNx_Hiq8Z5jTw@mail.gmail.com>
+Subject: Raih Kesempatanmu Menjadi Cofounder!
+To: hutamatr@gmail.com
+Content-Type: multipart/mixed; boundary="f403045e23a81f4bda0550c0ffd2"
+
+--f403045e23a81f4bda0550c0ffd2
+Content-Type: multipart/alternative; boundary="f403045e23a81f4bd70550c0ffd0"
+
+--f403045e23a81f4bd70550c0ffd0
+Content-Type: text/plain; charset="UTF-8"
+
+Halo Hutama Trirahmanto!
+
+
+
+Mempunyai skill programming yang mumpuni itu tidak cukup untuk menciptakan
+dampak positif yang dapat dirasakan banyak orang. Tanpa komunikasi yang
+baik, segala hal yang kita buat tidak dapat bermanfaat secara maksimal.
+
+
+
+Maka dari itu, kami ingin memberikanmu kesempatan untuk bertemu dan
+berkolaborasi dengan mahasiswa/i dari sekolah tinggi ilmu komunikasi
+terbaik di Indonesia menciptakan solusi berbasis teknologi dari
+permasalahan yang ada di sekitar kita. Dengan menghadiri tahap networking
+Trailblazers pada hari Jumat, 2 Juni 2017, kamu dapat bertemu dan bergabung
+menjadi cofounder dari startup mahasiswa/i LSPR Jakarta.
+
+
+
+Trailblazers merupakan startup incubator yang diinisiasi KIBAR bersama LSPR
+Creativepreneur Academy dengan tujuan mendorong masyarakat untuk
+menciptakan startup yang dapat menjadi solusi dari permasalahan yang ada.
+
+
+
+Hadiri tahap networking Trailblazers dan temukan cofoundermu disini!
+
+Link registrasi: bit.ly/trailblazersnetworking
+
+
+Sampai jumpa!
+
+
+Salam,
+
+#Trailblazers
+
+
+<http://trailblazers.id/>
+<http://instagram.com/trailblazers.id>
+<http://www.facebook.com/trailblazers.id>
+
+--f403045e23a81f4bd70550c0ffd0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmai=
+l-m_-475936459252321921gmail-m_4208033330198960010gmail-m_-2874318479633939=
+281gmail-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_-13153221=
+00175376719m_-144280634686667347gmail-m_-1594154409715526845gmail-m_4225188=
+428665000452templateContainer" style=3D"border-collapse:collapse;border:0px=
+;color:rgb(80,0,80);font-size:12.8px;background-color:rgb(250,250,250);max-=
+width:600px;width:600px"><tbody><tr><td valign=3D"top" id=3D"m_-66760916142=
+09005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_42080=
+33330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324gmail=
+-m_4221662279102017268gmail-m_-1315322100175376719m_-144280634686667347gmai=
+l-m_-1594154409715526845gmail-m_4225188428665000452templateHeader" style=3D=
+"background-image:none;background-position:50% 50%;background-size:cover;ba=
+ckground-repeat:no-repeat;background-origin:initial;background-clip:initial=
+;background-color:rgb(255,255,255);border-top:0px;border-bottom:0px;padding=
+-top:9px;padding-bottom:0px"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" class=3D"m_-6676091614209005849gmail-m_78421131652=
+12817985gmail-m_-475936459252321921gmail-m_4208033330198960010gmail-m_-2874=
+318479633939281gmail-m_-3692733530560849324gmail-m_4221662279102017268gmail=
+-m_-1315322100175376719m_-144280634686667347gmail-m_-1594154409715526845gma=
+il-m_4225188428665000452mcnImageBlock" style=3D"border-collapse:collapse;mi=
+n-width:100%"><tbody class=3D"m_-6676091614209005849gmail-m_784211316521281=
+7985gmail-m_-475936459252321921gmail-m_4208033330198960010gmail-m_-28743184=
+79633939281gmail-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_-=
+1315322100175376719m_-144280634686667347gmail-m_-1594154409715526845gmail-m=
+_4225188428665000452mcnImageBlockOuter"><tr><td valign=3D"top" class=3D"m_-=
+6676091614209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gm=
+ail-m_4208033330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560=
+849324gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-14428063468=
+6667347gmail-m_-1594154409715526845gmail-m_4225188428665000452mcnImageBlock=
+Inner" style=3D"padding:0px"><table align=3D"left" width=3D"100%" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-6676091614209005849gmai=
+l-m_7842113165212817985gmail-m_-475936459252321921gmail-m_42080333301989600=
+10gmail-m_-2874318479633939281gmail-m_-3692733530560849324gmail-m_422166227=
+9102017268gmail-m_-1315322100175376719m_-144280634686667347gmail-m_-1594154=
+409715526845gmail-m_4225188428665000452mcnImageContentContainer" style=3D"b=
+order-collapse:collapse;min-width:100%"><tbody><tr><td class=3D"m_-66760916=
+14209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_42=
+08033330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324gm=
+ail-m_4221662279102017268gmail-m_-1315322100175376719m_-144280634686667347g=
+mail-m_-1594154409715526845gmail-m_4225188428665000452mcnImageContent" vali=
+gn=3D"top" style=3D"padding:0px;text-align:center"><img align=3D"center" al=
+t=3D"" src=3D"https://gallery.mailchimp.com/cda5607b9bef396f1a5a48043/image=
+s/ffd27f5d-b36d-4d97-9ae0-0b36aa01c5fa.jpg" width=3D"600" class=3D"m_-66760=
+91614209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m=
+_4208033330198960010gmail-m_-2874318479633939281gmail-m_-369273353056084932=
+4gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-1442806346866673=
+47gmail-m_-1594154409715526845gmail-m_4225188428665000452mcnImage m_-667609=
+1614209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_=
+4208033330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324=
+gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-14428063468666734=
+7gmail-m_-1594154409715526845gmail-CToWUd m_-6676091614209005849gmail-m_784=
+2113165212817985gmail-m_-475936459252321921gmail-m_4208033330198960010gmail=
+-m_-2874318479633939281gmail-m_-3692733530560849324gmail-m_4221662279102017=
+268gmail-m_-1315322100175376719m_-144280634686667347gmail-m_-15941544097155=
+26845gmail-a6T" style=3D"outline-style:none;outline-width:initial;border:0p=
+x;height:auto;vertical-align:bottom;max-width:3307px;padding-bottom:0px;dis=
+play:inline"></td></tr></tbody></table></td></tr></tbody></table><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_-66=
+76091614209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmai=
+l-m_4208033330198960010gmail-m_-2874318479633939281gmail-m_-369273353056084=
+9324gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-1442806346866=
+67347gmail-m_-1594154409715526845gmail-m_4225188428665000452mcnTextBlock" s=
+tyle=3D"border-collapse:collapse;min-width:100%"><tbody class=3D"m_-6676091=
+614209005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_4=
+208033330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324g=
+mail-m_4221662279102017268gmail-m_-1315322100175376719m_-144280634686667347=
+gmail-m_-1594154409715526845gmail-m_4225188428665000452mcnTextBlockOuter"><=
+tr><td valign=3D"top" class=3D"m_-6676091614209005849gmail-m_78421131652128=
+17985gmail-m_-475936459252321921gmail-m_4208033330198960010gmail-m_-2874318=
+479633939281gmail-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_=
+-1315322100175376719m_-144280634686667347gmail-m_-1594154409715526845gmail-=
+m_4225188428665000452mcnTextBlockInner" style=3D"padding-top:9px"><br></td>=
+</tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m_-667609161420=
+9005849gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_420803=
+3330198960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324gmail-=
+m_4221662279102017268gmail-m_-1315322100175376719m_-144280634686667347gmail=
+-m_-1594154409715526845gmail-m_4225188428665000452templateBody" style=3D"ba=
+ckground-image:none;background-position:50% 50%;background-size:cover;backg=
+round-repeat:no-repeat;background-origin:initial;background-clip:initial;ba=
+ckground-color:rgb(255,255,255);border-top:0px;border-bottom:2px solid rgb(=
+234,234,234);padding-top:0px;padding-bottom:9px"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_-667609161420900584=
+9gmail-m_7842113165212817985gmail-m_-475936459252321921gmail-m_420803333019=
+8960010gmail-m_-2874318479633939281gmail-m_-3692733530560849324gmail-m_4221=
+662279102017268gmail-m_-1315322100175376719m_-144280634686667347gmail-m_-15=
+94154409715526845gmail-m_4225188428665000452mcnTextBlock" style=3D"border-c=
+ollapse:collapse;min-width:100%"><tbody class=3D"m_-6676091614209005849gmai=
+l-m_7842113165212817985gmail-m_-475936459252321921gmail-m_42080333301989600=
+10gmail-m_-2874318479633939281gmail-m_-3692733530560849324gmail-m_422166227=
+9102017268gmail-m_-1315322100175376719m_-144280634686667347gmail-m_-1594154=
+409715526845gmail-m_4225188428665000452mcnTextBlockOuter"><tr><td valign=3D=
+"top" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_-47=
+5936459252321921gmail-m_4208033330198960010gmail-m_-2874318479633939281gmai=
+l-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_-131532210017537=
+6719m_-144280634686667347gmail-m_-1594154409715526845gmail-m_42251884286650=
+00452mcnTextBlockInner" style=3D"padding-top:9px"><span id=3D"m_-6676091614=
+209005849gmail-m_7842113165212817985gmail-docs-internal-guid-ddcb95f9-54c0-=
+1230-d392-b80dc648a6cd"><p dir=3D"ltr" style=3D"line-height:1.38;margin-top=
+:0pt;margin-bottom:0pt"><span style=3D"color:rgb(0,0,0);font-family:Karla;f=
+ont-weight:700;text-align:justify;white-space:pre-wrap"><font size=3D"6">Ha=
+lo Hutama Trirahmanto!</font></span></p><p dir=3D"ltr" style=3D"line-height=
+:1.38;margin-top:0pt;margin-bottom:0pt">=C2=A0</p><p dir=3D"ltr" style=3D"l=
+ine-height:1.9872;margin-top:0pt;margin-bottom:0pt;text-align:justify;backg=
+round-color:rgb(255,255,255)"><span style=3D"font-size:11pt;font-family:Kar=
+la;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:400;font-=
+style:normal;font-variant-ligatures:normal;font-variant-caps:normal;text-de=
+coration:none;vertical-align:baseline;white-space:pre-wrap">Mempunyai skill=
+ programming yang mumpuni itu tidak cukup untuk menciptakan dampak positif =
+yang dapat dirasakan banyak orang. Tanpa komunikasi yang baik, segala hal y=
+ang kita buat tidak dapat bermanfaat secara maksimal.</span></p><p dir=3D"l=
+tr" style=3D"line-height:1.9872;margin-top:0pt;margin-bottom:0pt;text-align=
+:justify;background-color:rgb(255,255,255)">=C2=A0</p><p dir=3D"ltr" style=
+=3D"line-height:1.9872;margin-top:0pt;margin-bottom:0pt;text-align:justify;=
+background-color:rgb(255,255,255)"><span style=3D"font-size:11pt;font-famil=
+y:Karla;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:400;=
+font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;te=
+xt-decoration:none;vertical-align:baseline;white-space:pre-wrap">Maka dari =
+itu, kami ingin memberikanmu kesempatan untuk bertemu dan berkolaborasi den=
+gan mahasiswa/i dari sekolah tinggi ilmu komunikasi terbaik di Indonesia me=
+nciptakan solusi berbasis teknologi dari permasalahan yang ada di sekitar k=
+ita. Dengan menghadiri tahap networking Trailblazers pada hari Jumat, 2 Jun=
+i 2017, kamu dapat bertemu dan bergabung menjadi cofounder dari startup mah=
+asiswa/i LSPR Jakarta.</span></p><p dir=3D"ltr" style=3D"line-height:1.9872=
+;margin-top:0pt;margin-bottom:0pt;text-align:justify;background-color:rgb(2=
+55,255,255)">=C2=A0</p><p dir=3D"ltr" style=3D"line-height:1.9872;margin-to=
+p:0pt;margin-bottom:0pt;text-align:justify;background-color:rgb(255,255,255=
+)"><span style=3D"font-size:11pt;font-family:Karla;color:rgb(0,0,0);backgro=
+und-color:rgb(255,255,255);font-weight:400;font-style:normal;font-variant-l=
+igatures:normal;font-variant-caps:normal;text-decoration:none;vertical-alig=
+n:baseline;white-space:pre-wrap">Trailblazers merupakan </span><span style=
+=3D"font-size:11pt;font-family:Karla;color:rgb(0,0,0);background-color:rgb(=
+255,255,255);font-weight:400;font-style:italic;font-variant-ligatures:norma=
+l;font-variant-caps:normal;text-decoration:none;vertical-align:baseline;whi=
+te-space:pre-wrap">startup incubator</span><span style=3D"font-size:11pt;fo=
+nt-family:Karla;color:rgb(0,0,0);background-color:rgb(255,255,255);font-wei=
+ght:400;font-style:normal;font-variant-ligatures:normal;font-variant-caps:n=
+ormal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> y=
+ang diinisiasi KIBAR bersama LSPR Creativepreneur Academy dengan tujuan men=
+dorong masyarakat untuk menciptakan startup yang dapat menjadi solusi dari =
+permasalahan yang ada.</span></p><p dir=3D"ltr" style=3D"line-height:1.9872=
+;margin-top:0pt;margin-bottom:0pt;text-align:justify;background-color:rgb(2=
+55,255,255)">=C2=A0</p><p dir=3D"ltr" style=3D"line-height:1.9872;margin-to=
+p:0pt;margin-bottom:0pt;text-align:justify;background-color:rgb(255,255,255=
+)"><span style=3D"font-size:11pt;font-family:Karla;color:rgb(0,0,0);backgro=
+und-color:rgb(255,255,255);font-weight:400;font-style:normal;font-variant-l=
+igatures:normal;font-variant-caps:normal;text-decoration:none;vertical-alig=
+n:baseline;white-space:pre-wrap">Hadiri tahap networking Trailblazers dan t=
+emukan cofoundermu disini!</span></p><p dir=3D"ltr" style=3D"line-height:1.=
+8;margin-top:8pt;margin-bottom:8pt;text-align:justify"><span style=3D"font-=
+size:11pt;font-family:Karla;color:rgb(0,0,0);background-color:rgb(255,255,2=
+55);font-weight:400;font-style:normal;font-variant-ligatures:normal;font-va=
+riant-caps:normal;text-decoration:none;vertical-align:baseline;white-space:=
+pre-wrap">Link registrasi: <a href=3D"http://bit.ly/trailblazersnetworking"=
+ target=3D"_blank">bit.ly/trailblazersnetworking</a></span></p><p dir=3D"lt=
+r" style=3D"line-height:1.8;margin-top:8pt;margin-bottom:8pt;text-align:jus=
+tify"><br></p><p dir=3D"ltr" style=3D"line-height:1.8;margin-top:8pt;margin=
+-bottom:8pt;text-align:justify"><span style=3D"font-size:11pt;font-family:K=
+arla;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:400;fon=
+t-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;text-=
+decoration:none;vertical-align:baseline;white-space:pre-wrap">Sampai jumpa!=
+</span></p><p dir=3D"ltr" style=3D"line-height:1.8;margin-top:8pt;margin-bo=
+ttom:8pt;text-align:justify"><br></p><p dir=3D"ltr" style=3D"line-height:1.=
+656;margin-top:0pt;margin-bottom:0pt;text-align:justify;background-color:rg=
+b(255,255,255)"><span style=3D"font-size:11pt;font-family:Karla;color:rgb(0=
+,0,0);background-color:rgb(255,255,255);font-weight:400;font-style:normal;f=
+ont-variant-ligatures:normal;font-variant-caps:normal;text-decoration:none;=
+vertical-align:baseline;white-space:pre-wrap">Salam,</span></p><p dir=3D"lt=
+r" style=3D"line-height:1.656;margin-top:0pt;margin-bottom:0pt;text-align:j=
+ustify"><span id=3D"m_-6676091614209005849gmail-docs-internal-guid-d9231434=
+-5a36-0fed-42d0-901128ec2ae3"></span></p><p dir=3D"ltr" style=3D"line-heigh=
+t:1.656;margin-top:0pt;margin-bottom:0pt;text-align:justify;background-colo=
+r:rgb(255,255,255)"><span style=3D"font-size:11pt;font-family:Karla;color:r=
+gb(0,0,0);background-color:rgb(255,255,255);font-weight:400;font-style:norm=
+al;font-variant-ligatures:normal;font-variant-caps:normal;text-decoration:n=
+one;vertical-align:baseline;white-space:pre-wrap">#Trailblazers</span></p><=
+p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt">=
+=C2=A0</p></span></td></tr></tbody></table></td></tr><tr><td valign=3D"top"=
+ id=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_-4759364592=
+52321921gmail-m_4208033330198960010gmail-m_-2874318479633939281gmail-m_-369=
+2733530560849324gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-1=
+44280634686667347gmail-m_-1594154409715526845gmail-m_4225188428665000452tem=
+plateFooter" style=3D"background-image:none;background-position:50% 50%;bac=
+kground-size:cover;background-repeat:no-repeat;background-origin:initial;ba=
+ckground-clip:initial;border-top:0px;border-bottom:0px;padding-top:9px;padd=
+ing-bottom:9px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail=
+-m_-475936459252321921gmail-m_4208033330198960010gmail-m_-28743184796339392=
+81gmail-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_-131532210=
+0175376719m_-144280634686667347gmail-m_-1594154409715526845gmail-m_42251884=
+28665000452mcnFollowBlock" style=3D"border-collapse:collapse;min-width:100%=
+"><tbody class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_=
+-475936459252321921gmail-m_4208033330198960010gmail-m_-2874318479633939281g=
+mail-m_-3692733530560849324gmail-m_4221662279102017268gmail-m_-131532210017=
+5376719m_-144280634686667347gmail-m_-1594154409715526845gmail-m_42251884286=
+65000452mcnFollowBlockOuter"><tr><td align=3D"center" valign=3D"top" class=
+=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_-4759364592523=
+21921gmail-m_4208033330198960010gmail-m_-2874318479633939281gmail-m_-369273=
+3530560849324gmail-m_4221662279102017268gmail-m_-1315322100175376719m_-1442=
+80634686667347gmail-m_-1594154409715526845gmail-m_4225188428665000452mcnFol=
+lowBlockInner" style=3D"padding:9px"><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;color:=
+rgb(34,34,34);font-size:12.8px"><tbody><tr><td align=3D"center" valign=3D"t=
+op"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"border-collapse:collapse;display:inline"><tbody><tr><td valign=3D"=
+top" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_7742=
+346273326158071mcnFollowContentItemContainer" style=3D"padding-right:10px;p=
+adding-bottom:9px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gm=
+ail-m_7742346273326158071mcnFollowContentItem" style=3D"border-collapse:col=
+lapse"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"padding:5px=
+ 10px 5px 9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"" style=3D"border-collapse:collapse"><tbody><tr><td ali=
+gn=3D"center" valign=3D"middle" width=3D"24" class=3D"m_-667609161420900584=
+9gmail-m_7842113165212817985gmail-m_7742346273326158071mcnFollowIconContent=
+"><a href=3D"http://trailblazers.id/" target=3D"_blank"><img src=3D"https:/=
+/cdn-images.mailchimp.com/icons/social-block-v2/outline-color-link-48.png" =
+height=3D"24" width=3D"24" class=3D"m_-6676091614209005849gmail-m_784211316=
+5212817985gmail-CToWUd" style=3D"border:0px;height:auto;outline:none;text-d=
+ecoration-line:none;display:block"></a></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table><table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;dis=
+play:inline"><tbody><tr><td valign=3D"top" class=3D"m_-6676091614209005849g=
+mail-m_7842113165212817985gmail-m_7742346273326158071mcnFollowContentItemCo=
+ntainer" style=3D"padding-right:10px;padding-bottom:9px"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_-6676091614=
+209005849gmail-m_7842113165212817985gmail-m_7742346273326158071mcnFollowCon=
+tentItem" style=3D"border-collapse:collapse"><tbody><tr><td align=3D"left" =
+valign=3D"middle" style=3D"padding:5px 10px 5px 9px"><table align=3D"left" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border=
+-collapse:collapse"><tbody><tr><td align=3D"center" valign=3D"middle" width=
+=3D"24" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-m_7=
+742346273326158071mcnFollowIconContent"><a href=3D"http://instagram.com/tra=
+ilblazers.id" target=3D"_blank"><img src=3D"https://cdn-images.mailchimp.co=
+m/icons/social-block-v2/outline-color-instagram-48.png" height=3D"24" width=
+=3D"24" class=3D"m_-6676091614209005849gmail-m_7842113165212817985gmail-CTo=
+WUd" style=3D"border:0px;height:auto;outline:none;text-decoration-line:none=
+;display:block"></a></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table><table align=3D"left" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"border-collapse:collapse;display:inline"><tbody=
+><tr><td valign=3D"top" class=3D"m_-6676091614209005849gmail-m_784211316521=
+2817985gmail-m_7742346273326158071mcnFollowContentItemContainer" style=3D"p=
+adding-right:0px;padding-bottom:9px"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"100%" class=3D"m_-6676091614209005849gmail-m_784=
+2113165212817985gmail-m_7742346273326158071mcnFollowContentItem" style=3D"b=
+order-collapse:collapse"><tbody><tr><td align=3D"left" valign=3D"middle" st=
+yle=3D"padding:5px 10px 5px 9px"><table align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"" style=3D"border-collapse:collapse">=
+<tbody><tr><td align=3D"center" valign=3D"middle" width=3D"24" class=3D"m_-=
+6676091614209005849gmail-m_7842113165212817985gmail-m_7742346273326158071mc=
+nFollowIconContent"><a href=3D"http://www.facebook.com/trailblazers.id" tar=
+get=3D"_blank"><img src=3D"https://cdn-images.mailchimp.com/icons/social-bl=
+ock-v2/outline-color-facebook-48.png" height=3D"24" width=3D"24" class=3D"m=
+_-6676091614209005849gmail-m_7842113165212817985gmail-CToWUd" style=3D"bord=
+er:0px;height:auto;outline:none;text-decoration-line:none;display:block"></=
+a><br><br></td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table></div>
+
+--f403045e23a81f4bd70550c0ffd0--
+--f403045e23a81f4bda0550c0ffd2
+Content-Type: image/jpeg; name="trailblazernetworking.jpeg"
+Content-Disposition: attachment; filename="trailblazernetworking.jpeg"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 1d8f8430370b6b9f_0.1
+
+
+--f403045e23a81f4bda0550c0ffd2--

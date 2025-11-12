@@ -1,0 +1,189 @@
+Delivered-To: jordy.jonathan@student.umn.ac.id
+Received: by 10.202.236.198 with SMTP id k189csp9520956oih;
+        Mon, 3 Jul 2017 07:58:09 -0700 (PDT)
+X-Received: by 10.176.25.26 with SMTP id v26mr22006629uag.22.1499093889536;
+        Mon, 03 Jul 2017 07:58:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1499093889; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IhseUUGCn1yb7VjGCZsbie21KeDNLgbkeiV7DRc9BOIcU/39H6AuO+7R79fQgLNx8k
+         N3broCpmbbDpdEhmapXol+eEVLI0/MFXqErS+7hkSNuu9NEWe37Rjnnp2H5DSXax19z1
+         gaMf6Uguypg86guirs/KS81uyofmggbwDWSzy0XS4ovA1H/QoEt0BJTlEG5SpCSlQdTw
+         k1/CKbhNpts9E9dsnbBZtEEatfnVWVCF/X8ba5T1VtvIUSt4yRxD1LcCzA0S48IhdE7b
+         VEu46Ah0JGgNoKYG4zDbyZ47QGuKoKBuHD10wSnHOb3wC7ovT/j8PHCr/QPrNONHXqsE
+         xEMQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=sVtmbouJyvLZBN+ehWiGgZ0aCZby3jZ3BEPj5umWoN4=;
+        b=vJcY+B/nrsMV37e1wWyBTDoEXSFqAKa5kLETtRP9WD9TDPj+K+6CJ0T1jSvGJlfD+g
+         mV2Ths5/gweNOJkzuxhnqHil/bGS+d+AP5UKKfRe6/FQeNuS6OeMcMGYeI9YqZRvCKb+
+         xP3g90aWLe3fanU2KYfIEGRsGmf13nl44m5w8V215rKWDUE8BHxclnKvTSqdVcE1q5ha
+         I21XqUIeVgl5nZVuAN/oIUHcPIv8faD+kf8aSmaEBpfLkYx13DF/2K1TBW4PX7HkKu2R
+         qbb620/kbMF0rxLAvyrX1Km9AKkDHZtsVWhwR1s4pNQe2tgHuxxq2EhQZog5KACM97Gs
+         3Z0A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.b=ZPjCH8g5;
+       spf=neutral (google.com: 2607:f8b0:400c:c05::22c is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) smtp.mailfrom=hansun@umn.ac.id
+Return-Path: <hansun@umn.ac.id>
+Received: from mail-vk0-x22c.google.com (mail-vk0-x22c.google.com. [2607:f8b0:400c:c05::22c])
+        by mx.google.com with ESMTPS id 79si6921043vkn.246.2017.07.03.07.58.09
+        for <jordy.jonathan@student.umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 03 Jul 2017 07:58:09 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:400c:c05::22c is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) client-ip=2607:f8b0:400c:c05::22c;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com header.b=ZPjCH8g5;
+       spf=neutral (google.com: 2607:f8b0:400c:c05::22c is neither permitted nor denied by best guess record for domain of hansun@umn.ac.id) smtp.mailfrom=hansun@umn.ac.id
+Received: by mail-vk0-x22c.google.com with SMTP id r125so97452020vkf.1
+        for <jordy.jonathan@student.umn.ac.id>; Mon, 03 Jul 2017 07:58:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=sVtmbouJyvLZBN+ehWiGgZ0aCZby3jZ3BEPj5umWoN4=;
+        b=ZPjCH8g5edfjarFB+hK+YSvO7pry9dF7K+gBDaowgP4vxLHuUTF30aDIYslkqToN90
+         TQzgmI3Ukb73g/693VeIwAB8YUENEvQO1rnoJG82Nhe0BrqeE4DSvEvY5ju2UGgj1ZE+
+         x89fyQeZOU5jCVppUxVydd0sV6cCD0o3FMZzF0UeiyboBJcOnUB4Bfcr4GH7GRyTTlua
+         h3ghPHK0Mv8bT8DkTLCtiC9Js8RMXsRqfWHmRzCTWtsf84vGs1mmmmh7iaWRxQI7/18s
+         AtWqiYjMDwNO2xpzigS+00NCFP/yZUjYcRO3zkCDz623vPRoOsdykPgMcccglw/Kj786
+         dQaA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=sVtmbouJyvLZBN+ehWiGgZ0aCZby3jZ3BEPj5umWoN4=;
+        b=rhys/o1nmFFWFoZYFdzdFjp8duLpnkaztLiFSWtHxtB/UWlsbXQKBrlt5qO799Ovl0
+         vCY4kgCgRxIAJ3q4w+JWQygxN5ReJRw9igrcCd77TXEXvYvpDf7g7KN1tkdAcVATxmsl
+         dB5Mhn8Iq9fQrxM2S/WZelnDs859j5R24+i6rjQo0esB9pb6gwNyWEMUySfWSo5ftiEb
+         Nu6jAXun0F2Fq5xY1nq3XrEZSqbWQrJRK1HM7c48Ug+PNgyt8ZulN6ZPuUh2WCeYYBzo
+         xUX4cnkMnHDoLo3bYkF3vutQQaHvWYbjRhEMsixydu4LACtj0bt/IKklapvkU7UOzgrY
+         Mbyw==
+X-Gm-Message-State: AKS2vOyqob09LglNG7+oHFhKTs2fVa+jw25zifeY67/xMc4dk1lHkzYC ZdzmAW+NiEmATYN3HMAYzMKkRL6WcAqzpnfn6Le2qO9GPQGkn6izaRwzN3HyTesY5jgodSQu6nW IBFJ5mRHQmVAO4d6wwLC+bOyqS0v9GIEi
+X-Received: by 10.31.124.66 with SMTP id x63mr19707856vkc.126.1499093888651; Mon, 03 Jul 2017 07:58:08 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.114.71 with HTTP; Mon, 3 Jul 2017 07:58:07 -0700 (PDT)
+Received: by 10.103.114.71 with HTTP; Mon, 3 Jul 2017 07:58:07 -0700 (PDT)
+In-Reply-To: <CAN3MOfajAQb=+VjXXKSeMouZ1xj-ZN32Tfv1krX4H+L8UOqJ0A@mail.gmail.com>
+References: <CAN3MOfajAQb=+VjXXKSeMouZ1xj-ZN32Tfv1krX4H+L8UOqJ0A@mail.gmail.com>
+From: "SENG HANSUN (023967)" <hansun@umn.ac.id>
+Date: Mon, 3 Jul 2017 21:58:07 +0700
+Message-ID: <CA+qO0EHYG=i3+29YfscjaNHc8avhwGdWUqq98H+5EnvFOMERJA@mail.gmail.com>
+Subject: Re: Bimbingan
+To: "JORDY JONATHAN (13110110109)" <jordy.jonathan@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary="94eb2c14c0ecb7e60105536afe9c"
+
+--94eb2c14c0ecb7e60105536afe9c
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Jordy,
+
+Besok saya agak sibuk Jordy, di hari Rabu pagi jam 10 saja ya Jordy..
+
+On Jul 3, 2017 21:44, "JORDY JONATHAN (13110110109)" <
+jordy.jonathan@student.umn.ac.id> wrote:
+
+> Malam pak hansun, saya jordy dari TI 2013. Saya mau nanya2 sedikit
+> mengenai bab 4 saya boleh ga pak? Karna yang saya tanya mengenai metode
+> HWEMA. Apakah besok pak hansun ada di kampus?
+>
+>
+> *Universitas   Multimedia   Nusantara*
+> *"Excellent Career Begins With Excellent Education"*
+> Jl. Scientia Boulevard, Gading Serpong,
+> Tangerang, Banten - 15811 Indonesia
+> (t) +62-21.5422.0808; (f) +62-21.5422.0800;
+> Facebook: Universitas Multimedia Nusantara
+> Twitter: @umn_serpong
+> Web: www.umn.ac.id
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21.5422.0808; (f) +62-21.5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id
+
+--94eb2c14c0ecb7e60105536afe9c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Dear Jordy,=C2=A0<div dir=3D"auto"><br></div><div dir=3D"=
+auto">Besok saya agak sibuk Jordy, di hari Rabu pagi jam 10 saja ya Jordy..=
+=C2=A0</div></div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote"=
+>On Jul 3, 2017 21:44, &quot;JORDY JONATHAN (13110110109)&quot; &lt;<a href=
+=3D"mailto:jordy.jonathan@student.umn.ac.id">jordy.jonathan@student.umn.ac.=
+id</a>&gt; wrote:<br type=3D"attribution"><blockquote class=3D"gmail_quote"=
+ style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><d=
+iv dir=3D"auto">Malam pak hansun, saya jordy dari TI 2013. Saya mau nanya2 =
+sedikit mengenai bab 4 saya boleh ga pak? Karna yang saya tanya mengenai me=
+tode HWEMA. Apakah besok pak hansun ada di kampus?</div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font></blockquote></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font>
+--94eb2c14c0ecb7e60105536afe9c--

@@ -1,0 +1,72 @@
+Delivered-To: 1kb09.sk@gmail.com
+Received: by 10.157.40.27 with SMTP id m27csp34598otb;
+        Fri, 16 Dec 2016 09:13:50 -0800 (PST)
+X-Received: by 10.31.231.194 with SMTP id e185mr1361545vkh.145.1481908430031;
+        Fri, 16 Dec 2016 09:13:50 -0800 (PST)
+Return-Path: <trianswidyastana@gmail.com>
+Received: from mail-ua0-x22c.google.com (mail-ua0-x22c.google.com. [2607:f8b0:400c:c08::22c])
+        by mx.google.com with ESMTPS id 64si1897969vki.253.2016.12.16.09.13.49
+        for <1kb09.sk@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 16 Dec 2016 09:13:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of trianswidyastana@gmail.com designates 2607:f8b0:400c:c08::22c as permitted sender) client-ip=2607:f8b0:400c:c08::22c;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of trianswidyastana@gmail.com designates 2607:f8b0:400c:c08::22c as permitted sender) smtp.mailfrom=trianswidyastana@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ua0-x22c.google.com with SMTP id 51so28749974uai.1
+        for <1kb09.sk@gmail.com>; Fri, 16 Dec 2016 09:13:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=VijiYK0SInKBN4O4cCs9+AR4kAAV+KHWBEsXnsFIVoA=;
+        b=cm4Vzmx/aTeMOLTccCmx++KURr/MlzOWyWTaidziRukd6Or2GetwcZEZ2lsNOyEVZu
+         HPRtJPe0UwuJXb5gipD4PLmeUEfqz9dMVrdKek3dtEXjuDeTlRDsg7x9vIbdxFqpQrRF
+         mytTfEGYPdGl2ErSE6Zay1DND9414l4l54SQ1N40WZd7EypK8+nwiscecph13O1KWGCe
+         Qn7n39/cdPOimY/W53zBfuhXbTBB7THgwEWW6YWVvQoMbGIZRxcKrryBRn/6hIpztW3t
+         72cyHQQ0dA834CzPmZsrrl/DsbV7eEB9Ny6Qs0nlD4kJo4TZtMnXRD0QgvtsqU0H1wgf
+         /V3A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=VijiYK0SInKBN4O4cCs9+AR4kAAV+KHWBEsXnsFIVoA=;
+        b=iL2CmWBWGvS2FPJ87iawotQ8n+VY/Bzy1mJoQkCmAq18sJ1Py/0rY6q68Z9IwKuCJb
+         cTWn8ZHfBss7x3FEfYGc6TAk1KGYSAyIIMKTPPD1GWfL8lD5B+MQhizvN3+gwGpEMZhY
+         U6AhT9m1049uOq4qPhrOKtYP0BVzIbt963LVwFwz8rZ4J+5+25+KBhhr9YzceVdkwJb5
+         J/oaZTJDnsZhgehGIb2dWKNnO12sfHkIr93omaCfZ1lAFAjBeH+BCdlbQ874y0QUsLpl
+         7YSeZJWQpbjF2RBogGyPoQL0RpgODcf+k3a0bb0AeQA5jF8MHn6DiRGg4kYaZTzz7R27
+         UU/Q==
+X-Gm-Message-State: AIkVDXLKrRalv3xt/zhU79vhZExSDLHsgdFzVf4OWR+0pykrr4KcFons37hQiDGWGqtvc5kXFu1nk7Y6S+pr0g==
+X-Received: by 10.176.0.87 with SMTP id 81mr2843227uai.73.1481908429504; Fri, 16 Dec 2016 09:13:49 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.31.181.84 with HTTP; Fri, 16 Dec 2016 09:13:48 -0800 (PST)
+From: Trian Swidyastana <trianswidyastana@gmail.com>
+Date: Sat, 17 Dec 2016 00:13:48 +0700
+Message-ID: <CAFOz381MvBm9Fy7cB09u+E1h9hOCqTQKuAiUNYiiNnEYgahm7g@mail.gmail.com>
+Subject: Keamanan Komputer
+To: Computer System <1kb09.sk@gmail.com>
+Content-Type: multipart/mixed; boundary=001a113d0ad487ef2d0543c9b1c4
+
+--001a113d0ad487ef2d0543c9b1c4
+Content-Type: multipart/alternative; boundary=001a113d0ad487ef270543c9b1c2
+
+--001a113d0ad487ef270543c9b1c2
+Content-Type: text/plain; charset=UTF-8
+
+Kelompok 3
+Pengamanan Web Browser
+
+--001a113d0ad487ef270543c9b1c2
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr">Kelompok 3<div>Pengamanan Web Browser</div></div>
+
+--001a113d0ad487ef270543c9b1c2--
+--001a113d0ad487ef2d0543c9b1c4
+Content-Type: application/rar; name="Kelompok 3 - Pengamanan Web Browser.rar"
+Content-Disposition: attachment; filename="Kelompok 3 - Pengamanan Web Browser.rar"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_iws20hkd0
+
+
+--001a113d0ad487ef2d0543c9b1c4--
