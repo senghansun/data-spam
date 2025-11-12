@@ -1,0 +1,146 @@
+Delivered-To: jordyjonathan6@gmail.com
+Received: by 10.36.160.195 with SMTP id o186csp1066382ite;
+        Mon, 7 Aug 2017 02:32:27 -0700 (PDT)
+X-Received: by 10.84.233.203 with SMTP id m11mr13299136pln.67.1502098347659;
+        Mon, 07 Aug 2017 02:32:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502098347; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rYzQ7Gb9vS8QXK7TOXh7hK4sgG9KPf85poqQCNS7D8ZkWu0RDCNJFKXlDqV0Ds+0ld
+         d4krAOcGGtPBXkGzP4aKjgDvvKPleQCjpH1kBqzXpD3AmTBbIrrc6FcP1HXwTVXUBZfx
+         jPTWm3iiCe/vaL+bid0luyGqeCwNdGVRGwRdztE+Z3U6ybXBOVsL7F92SiafgyFhpCCH
+         MutHPYqnDqKo/M2hfZuyNBUX/s8iWTiT93dFQ7TBI5snzxodlIl9a/6TZxW3yozugwjc
+         ZRXS3Tc4WNNoupdic9/Tf6gzIkdCV9QQi0+Mg3pBuSeQyVxQzpehiSFv0Xz9oh8lMvrz
+         ntFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:subject:message-id:to:reply-to:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=3kwV4KoFtXLfEzb+yQYz5CKcGJcnkg4KOhrmPR26s2M=;
+        b=dfFXNd/lrb8KPxESVPVppj8XOmVoUsxAeBg1R7QHMxrrlT/OGWyv/a/bYUE7u5RAv3
+         Q1sMTRPzg1iahw0qdz0olheNwsshi3hz0xzOVM2WkwHGer7kohGUv+peEdPd6df2fhQ8
+         VwuvCHoRgBQGbDkFEKi2dGC3CP/dit95QFE7pSelqg1yX7xAN6Avxa1XNz/MptqqOMtk
+         6Qn/NwKKPmo84Yhm34bMrRMtDTMpJf17A1F/MhdlBGHlfsK+siaE4tC8IeV8pZPaLlT+
+         mzvevcLXl5Rw/Zj5wonOW0NglR/QKsja4kf+JL8iVzz5goenc4cnmHhEMu9pX5TKJBZR
+         cZ+A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dominos.co.id header.b=JJTN0+yX;
+       dkim=pass header.i=@mktomail.com header.b=cWNyBKLb;
+       spf=pass (google.com: domain of 615-xsg-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com designates 103.237.104.13 as permitted sender) smtp.mailfrom=615-XSG-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com
+Return-Path: <615-XSG-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com>
+Received: from em-sn-13.mktomail.com (em-sn-13.mktomail.com. [103.237.104.13])
+        by mx.google.com with ESMTPS id y2si4450813pfk.373.2017.08.07.02.32.26
+        for <jordyjonathan6@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 07 Aug 2017 02:32:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 615-xsg-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com designates 103.237.104.13 as permitted sender) client-ip=103.237.104.13;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dominos.co.id header.b=JJTN0+yX;
+       dkim=pass header.i=@mktomail.com header.b=cWNyBKLb;
+       spf=pass (google.com: domain of 615-xsg-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com designates 103.237.104.13 as permitted sender) smtp.mailfrom=615-XSG-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com
+X-MSFBL: am9yZHlqb25hdGhhbjZAZ21haWwuY29tQGR2cC0xMDMtMjM3LTEwNC0xM0BiZy1z bi0wMUA2MTUtWFNHLTE3ODo2NTM6MTczMToxMjk2OjA6MjEwOTo5OjY2Njo2MDE5 MDg=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1502097913; s=m1; d=dominos.co.id; i=@dominos.co.id; h=Date:From:To:Subject:MIME-Version:Content-Type; bh=3kwV4KoFtXLfEzb+yQYz5CKcGJcnkg4KOhrmPR26s2M=; b=JJTN0+yX8l5EfHHk+cd4rf900A8ZqJwgErRBcoHiZiJjeF6x4AEkuswc5B6okg4a R6OFzinMYsMF6O3C9biZlUCXymkPb6YfnvYAnBFgEF6DwZ9+fkxy8pjlsjMyhGJrhK5 miZGnFoJzVXdYh1b8jUf/8KJkOWU8A3VYecx2aKE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1502097913; s=m1; d=mktomail.com; i=@mktomail.com; h=Date:From:To:Subject:MIME-Version:Content-Type; bh=3kwV4KoFtXLfEzb+yQYz5CKcGJcnkg4KOhrmPR26s2M=; b=cWNyBKLb0yppr69PF33GogJG35Dx+LGCp41uzktIEJmvJoyq7+gBSwXJwBHc97iQ ltXHktKfReslgvBLHYfmOfraxM/cX+/0Qey+BNGIqBBQx8jSbdAQ9xVWzaFYHdWvvNZ Ba3qdiOeZAf+Os6cAVAlKcOmLxdx2ca49dqW2yro=
+Date: Mon, 7 Aug 2017 04:25:13 -0500 (CDT)
+From: "Domino's Pizza Indonesia" <promos@dominos.co.id>
+Reply-To: promos@dominos.co.id
+To: jordyjonathan6@gmail.com
+Message-ID: <801120933.503356778.1502097913561.JavaMail.root@snmas01.marketo.org>
+Subject: Best Value 4 pizza deal in Indonesia
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_503356777_117625646.1502097913561"
+X-Binding: bg-sn-01
+X-MarketoID: 615-XSG-178:653:1731:1296:0:2109:9:666:601908
+X-MktArchive: false
+List-Unsubscribe: <mailto:ONCDSZ2ZGJNHSVKMME3TIOKJMNVUU6TNMVAT2PI.666.2109.9@unsub-sn.mktomail.com>
+X-Mailfrom: 615-XSG-178.0.666.0.0.2109.9.601908@snsmtp.mktomail.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_503356777_117625646.1502097913561
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To view this email as a web page, go to the following address: http://pizza.dominos.co.id/index.php/email/emailWebview?mkt_tok=eyJpIjoiTlRnME5tVmxOMkk1WmpVMSIsInQiOiJ6N05JVUNYdktUUjQ5K1FiMGNIdU1BcnpCMjRMTGNRdlU3MHphUE5iV2wrUWI1UTFLRUgvODRzZ2pFbEZQUkpXQ2hmQmlicDF1V3lJcUhTKytrcVRDUWJ3clZMN0swczc3enhsTURodzl6dHBjTHVEcHBCTTRYMmJrdERqM0JnYiJ9
+
+Syarat & Ketentuan:
+1) 4 small pizza seharga Rp. 60,000 belum termasuk tax dan tersedia pada ukuran small pizza extra value range. 2) Complete your meal, setiap pembelian a la carte pizza hanya tambah Rp 12,000 sudah dapat crispy chicken bites/small Domino's rice/crispy chicken strips atau pilih tambah Rp. 15,000 sudah dapat creamy tuna penne/black pepper beef penne - tidak berlaku pemesanan secara online, hubungi 1500366 atau datangi Domino's Pizza terdekat. 3) Varian dessert dari Domino's Pizza harga mulai dari Rp. 28,000,-.Semua diskon atau promo tidak dapat digabung dengan promo lainnya. Minimum delivery order Rp. 50,000. Biaya layanan pengiriman hanya dikenakan Rp. 15,000.
+
+This email was sent to jordyjonathan6@gmail.com. If you no longer wish to receive these emails you may unsubscribe here: http://pizza.dominos.co.id/UnsubscribePage.html?mkt_unsubscribe=1&mkt_tok=eyJpIjoiTlRnME5tVmxOMkk1WmpVMSIsInQiOiJ6N05JVUNYdktUUjQ5K1FiMGNIdU1BcnpCMjRMTGNRdlU3MHphUE5iV2wrUWI1UTFLRUgvODRzZ2pFbEZQUkpXQ2hmQmlicDF1V3lJcUhTKytrcVRDUWJ3clZMN0swczc3enhsTURodzl6dHBjTHVEcHBCTTRYMmJrdERqM0JnYiJ9.
+<br>Email ini dikirim ke jordyjonathan6@gmail.com. Jika kamu tidak lagi mau menerima email ini, silahkan klik: http://pizza.dominos.co.id/UnsubscribePage.html?mkt_unsubscribe=1&mkt_tok=eyJpIjoiTlRnME5tVmxOMkk1WmpVMSIsInQiOiJ6N05JVUNYdktUUjQ5K1FiMGNIdU1BcnpCMjRMTGNRdlU3MHphUE5iV2wrUWI1UTFLRUgvODRzZ2pFbEZQUkpXQ2hmQmlicDF1V3lJcUhTKytrcVRDUWJ3clZMN0swczc3enhsTURodzl6dHBjTHVEcHBCTTRYMmJrdERqM0JnYiJ9.
+
+------=_Part_503356777_117625646.1502097913561
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Untitled Document</title>              
+<style> @media only screen and (min-width: 640px) {table.mainTable { max-width: 600px !important } } </style> 
+</head> 
+<body>
+<div style="text-align: center"><font face="Verdana" size="1">To view this email as a web page, <a href=
+"http://info.dominos.co.id/v/I000PXA0e2cg2A2w0K0SG00"
+>click here</a><br /><br /></font></div>
+ 
+<center> 
+<table class="mainTable" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td colspan="3"> 
+<div style="display:inline-block" class="mktoImg" id="Banner1" mktolockimgsize="true">
+<a href=
+"http://info.dominos.co.id/Lw22GS0000LK0XcAc0e0A02" target="_blank"
+><img src="http://pizza.dominos.co.id/rs/615-XSG-178/images/FANTASTIC-4-MARKETO-640x700px.jpg" alt="4 small pizza hanya 60ribu*" width="100%" style=""></a>
+</div> </td> 
+</tr> 
+<tr> 
+<td colspan="3"> 
+<div style="display:inline-block" class="mktoImg" id="Banner2" mktolockimgsize="true"> 
+<a href=
+"http://info.dominos.co.id/tAGc2w0KXA0ed002S20000M" target="_blank"
+><img src="http://pizza.dominos.co.id/rs/615-XSG-178/images/MARKETO-COMPLATE-YOUR-MEAL-640240px.jpg" alt="Lengkapi makan siang/malam dengan tambah 12/15ribu" width="100%" style=""></a> 
+</div></td> 
+</tr> 
+<tr> 
+<td colspan="3"> 
+<div style="display:inline-block" class="mktoImg" id="Banner4" mktolockimgsize="true">
+<a href=
+"http://info.dominos.co.id/hec0N2S00X000wAK2020GeA" target="_blank"
+><img src="http://pizza.dominos.co.id/rs/615-XSG-178/images/Dessert Marketo New - 640x240.jpg" alt="Variasi pilihan dessert Domino's mulai dr 28ribu" width="100%" style=""></a>
+</div></td> 
+</tr> 
+<tr> 
+<td colspan="3"> 
+<div style="display:inline-block" class="mktoImg" id="Banner5" mktolockimgsize="true">
+<a href=
+"http://info.dominos.co.id/tAGc2w0KXA0ed002S20000M" target="_blank"
+><img src="http://pizza.dominos.co.id/rs/615-XSG-178/images/Footer-640x240px.jpg" alt="Domino's Pizza Website" width="100%" style=""></a>
+</div></td> 
+</tr> 
+<tr> 
+<td colspan="3" align="center"> 
+<div class="mktoText" id="Text2">
+<div style="margin-bottom: 0.0001pt; line-height: normal; background: white; text-align: left;">
+<span style="background: white;">Syarat &amp; Ketentuan:</span>
+</div> 
+<div style="margin-bottom: 0.0001pt; line-height: normal; background: white; text-align: left;">
+1) 4 small pizza seharga Rp. 60,000 belum termasuk tax dan tersedia pada ukuran small pizza extra value range. 2) Complete your meal, setiap pembelian a la carte pizza hanya tambah Rp 12,000 sudah dapat crispy chicken bites/small Domino's rice/crispy chicken strips atau pilih tambah Rp. 15,000 sudah dapat creamy tuna penne/black pepper beef penne - tidak berlaku pemesanan secara online, hubungi 1500366 atau datangi Domino's Pizza terdekat. 3) Varian dessert dari Domino's Pizza harga mulai dari Rp. 28,000,-.
+<span style="background: white;">Semua diskon atau promo tidak dapat digabung dengan promo lainnya. Minimum delivery order Rp. 50,000. Biaya layanan pengiriman hanya dikenakan Rp. 15,000.</span>&nbsp;
+</div>
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+</center>  
+<a href=
+"http://info.dominos.co.id/Tf2XK0c00000ASO20e2wAG0"
+></a>
+<img src="http://info.dominos.co.id/trk?t=1&mid=NjE1LVhTRy0xNzg6NjUzOjE3MzE6MTI5NjowOjIxMDk6OTo2NjY6NjAxOTA4OmpvcmR5am9uYXRoYW42QGdtYWlsLmNvbQ%3D%3D" width="1" height="1" style="display:none !important;" alt="" />
+
+<p><font face="Verdana" size="1"> We have contacted you because you provided us with your email address jordyjonathan6@gmail.com. Your address is listed. This email is sent from an account we use for sending messages only. So if you want to contact us, please do not reply to this email, as we will not receive your response. Instead, please send your comments to reply.email@dominos.co.id or visit our website in https://www.dominos.co.id. If you no longer wish to receive these emails you may <a href=
+"http://info.dominos.co.id/u/jwhS002eX002A0c2GAQ0K00"
+>unsubscribe</a> at any time. Thank you.</font> </p>
+</body>
+</html>
+------=_Part_503356777_117625646.1502097913561--

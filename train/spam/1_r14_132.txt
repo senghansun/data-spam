@@ -1,0 +1,505 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 24 Aug 2017 09:12:39 +0000 
+Return-Path: <imamdwiputrar@gmail.com>
+Received-SPF: pass (domain of gmail.com designates 74.125.82.43 as permitted sender)
+X-YMailISG: xsXWWGcWLDuGlMprrd5OSAUx62wCXz9fZ272VC7zwaLqYvY1
+ d4Y4agIV32kxUWneswp3U.W0rVzoU3bXTRPHKt10qE8hSkmEwD3mm616df6b
+ G7qNZ3bfuOkR5rKbNMPjla3T7orLaC3qzBJWQxmzgbYW4JLH.eOAEL1G7RXp
+ oW0VTGNmox.FH2Lp491osMYTJaIw0olZqyJzvcO78QnJvEzZQYhLiBVbKa4K
+ fqUfNncNShP1YGqQVFVHynXobD0jZBUj63A1knuJP7zEn2OcYqDZYMHJf0KV
+ drv3XrJOjI5_3UDSsNDywCY38rS07BuHp17GJbiI4ojO1r39EZ_2_3Xm3eeL
+ R_sYI1iadn7F9m4pcowmvWEZfK2SiUNVWihOWhmtl_LwcPDMYfWbDTUc5kt2
+ 7XBo7ZAVND2p5XF_bL.NCy0OMNVXfGn57vNZW8SljVpIs36HBhj4iTCexDCh
+ 1fjb2IJ_CNQJ7wfAoi3Xp1.crg.O.6iFLClv.Dq3JYYaYYtnDi3gMhie0cfE
+ P.w6iauyFSGvIfdosHcYbtt9GN7Muqd2l91A1TIIAKlLnN_MlIk8q9P5u3p4
+ n23bqvdJDFmus7iHiLoyGX9_64Gq5ThZ3xg2XTi_rcVCaEkmPQWQO257j5fw
+ rWCOx3sFJ5A2U.dKz3OnkwG0GW_5vDlxwVSTAzcU_BFZ28RkZRCw4vSn0IVG
+ uGCew7YRsze_rNA908Xs7vy9aITCkO3GgwsPe6B.HdDJGsaMjHOjdJAeS7y.
+ Y.Bhzgd_R.PONIUrY7KZfCK0svrbm2RJEqNib2lVFOf_cUm_OwFL159Xhijo
+ 1VDp4mc5xyCYciV9dpjyyxsooLQ4E2eG9TTJO0IBZwE9ImYTgg87x9isvPhO
+ nPr2GKpicaSDtVzgPNEdqcCBOShh26tCtYD7JmwvqVMzI6k0su.qpHkSihOi
+ YqOCWRcST_JlbZHZIEBcQED0z9k1uz76jYtdT.ft7Lst3mJAfvtq3yS9UJMf
+ WvSvXjjXvvyrSaF.ZOTaOad_ZQk7pqKxlVcXrxTZN3_BmBf9ovvmswj_JenF
+ ZkSL.nHsSyI3CYHca4CWT4xTsHrGNZLCXgyHv0ofZsLx5uCpoQWbH69HzhMV
+ zPduDFYIlocmAnZVgmqpyP10aH8Lg7ttlJ2E8rN4aN5T_Qk2xMoHFDgOsXC3
+ L5YBBSi5yQNFZtWmg11ZUJv.JflLIrXCRrpfPWbGpiT.m9yeIZw7JxdIwzZ5
+ 05sy2Z.sFNZOS68xdY3JwGAOXmU3J8SCgHVg8VCGGhF4M7QM68I4cBti_Zq6
+ eWnFUnf_bqVwj0GLReum6lHwfQR1fF38CoqktKWnghWLzPUd113t0wqdYpEg
+ QzTjYv6VE6blaMDgdoTh_eyz340WHtFWIB.K9BQp0S26D510TgZE.HD.LvcJ
+ Pc1MIvds_fInqVrs7KPHKFasv.Txj6V3wxttxGPg1_s0.OUW.qmqFJP_atzu
+ hwi4l9cAhAtQ0LSAsf7W6xSUDuMAVrc70A--
+X-Originating-IP: [74.125.82.43]
+Authentication-Results: mta1131.mail.bf1.yahoo.com  from=gmail.com; domainkeys=neutral (no sig);  from=gmail.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail-wm0-f43.google.com) (74.125.82.43)
+  by mta1131.mail.bf1.yahoo.com with SMTPS; Thu, 24 Aug 2017 09:12:39 +0000
+Received: by mail-wm0-f43.google.com with SMTP id m207so328389wma.1
+        for <Yustinus_vernanda@yahoo.com>; Thu, 24 Aug 2017 02:12:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=iBTcZrrEo0IZm63e+/E1v0lhA13D9vgB3v0qiIqrryU=;
+        b=Hq3s7wDZvkNyXIz/Xt9EBCtZONY80A63v4beo+ZvlT63Z1qqkMgqAbaRG1nCavW8JR
+         np3o1qV5ht646n+zwat2R57tFT2/YgCiSaM26HEQDS5Rd6ljOFWryESTMOKKIUbT2Hgd
+         ic8ZjcPSiYBrMPHgCOq2mY+GjWgDDg3d72CHqhys4sgYohVRaOYXPFkQMHiRqAovHYhR
+         FZIXfsIoCy9oBcLI7fbnail337RN8/fR4DkmXWR8xcSKODk2Hj7dyBZ8T7Qf4DdAv6nl
+         Cm1oC8Jscsd7OnDF8t5laPKBG3RHbLXeZE9sJY3x7GBT0qJwpBJJY+z4xxpmwKw0ZOmP
+         Pi9w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=iBTcZrrEo0IZm63e+/E1v0lhA13D9vgB3v0qiIqrryU=;
+        b=DAPwUMRIcYSxy4f6dEk9YrDJQnqQmkIniig9W02pe34pfAZz0SOSTtSyH8l4PrNl7Q
+         D90FC0Ncimh/Jd5c+11dcIgt6kg6fL99OzTuVT/oSjfPhj0VNuxp+O4sdvoz8PCyKFMq
+         P7+AGBGF4I7oVVoZhSe/xfldrDCjgY56wgivzkgk6a2G4yTQIjcp2kmZq+bYGThjm0uN
+         vGeELb8sebGbanDmrqXbkFDLYveS64AfCa9EGdJf6yoP1RzQnEUrbTALZ4PCKH/Hfw7b
+         DQHFXcql5ndb0jmWb8e+YNOqsiEE8+aXPvxJ2MAlEDNOA0AySsnuqD7xi0whnrcveZPv
+         bgvg==
+X-Gm-Message-State: AHYfb5gE4IZlYaCe788cWOQQdo1/a3Vmmh54vamknTUIYV42CsXC/1Mm
+	+6orS5CZPMkJHWDbJClXtnjXRE0xvQ==
+X-Received: by 10.28.157.81 with SMTP id g78mr2970643wme.85.1503565958972;
+ Thu, 24 Aug 2017 02:12:38 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:12:38 -0700 (PDT)
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:12:38 -0700 (PDT)
+In-Reply-To: <a4b282e66ea8e93693bc73c17.de15bcf0bb.20170821072929.b4012fbe00.ca5902d4@mail66.wdc01.mcdlv.net>
+References: <a4b282e66ea8e93693bc73c17.de15bcf0bb.20170821072929.b4012fbe00.ca5902d4@mail66.wdc01.mcdlv.net>
+From: Imamdwiputra Risanti <imamdwiputrar@gmail.com>
+Date: Thu, 24 Aug 2017 16:12:38 +0700
+Message-ID: <CAAUY28-hdY8pC3yGjraRb4TS5nSVTXUfixU2UGncjrw=iFWaNw@mail.gmail.com>
+Subject: Fwd: JENIUS naik Grab! Mau tahu kenapa?
+To: Yustinus_vernanda@yahoo.com
+Content-Type: multipart/alternative; boundary="001a114ba16ae18a3505577c3a1f"
+Content-Length: 19447
+
+--001a114ba16ae18a3505577c3a1f
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ----------
+From: "Grab Indonesia" <no-reply@grab.com>
+Date: Aug 21, 2017 2:37 PM
+Subject: JENIUS naik Grab! Mau tahu kenapa?
+To: <imamdwiputrar@gmail.com>
+Cc:
+
+[image: myteksi logo]
+<http://grab.us14.list-manage1.com/track/click?u=a4b282e66ea8e93693bc73c17&id=486610946f&e=de15bcf0bb>
+
+Hai Grabbers,
+
+Ayo unduh Jenius dan daftarkan kartu debit Jenius jadi GrabPay. Gunakan
+Jenius buat pembayaran Grab dan dapatkan DISKON 75% untuk setiap perjalanan
+dengan Grab! Jenius kan?
+
+Nikmati diskon 75% (hingga Rp25.000) naik GrabBike, GrabCar dan
+GrabShare sampai sepuasnya dengan kode promo *JENIUSGRAB75*.
+
+*Mau pesan Grab dengan Jenius?*
+1. Buka aplikasi Grab.
+2. Pilih layanan GrabBike atau GrabCar atau GrabShare.
+3. Masukkan lokasi penjemputan dan tujuan.
+4. Pilih cara pembayaran GrabPay dengan Jenius.
+5. Masukkan kode promo *JENIUSGRAB75*.
+
+Syarat & Ketentuan berlaku.
+Info lanjut
+<http://grab.us14.list-manage.com/track/click?u=a4b282e66ea8e93693bc73c17&id=703a304b6b&e=de15bcf0bb>
+support.id@grab.com   |  +6221 8064 8777 <#m_-3637885197518021153_>
+
+Grab Indonesia
+<#m_-3637885197518021153_>I do not want to receive emails like this
+<http://grab.us14.list-manage1.com/unsubscribe?u=a4b282e66ea8e93693bc73c17&id=98be1d0075&e=de15bcf0bb&c=b4012fbe00>
+.
+Stay connected with us.
+
+<http://grab.us14.list-manage.com/track/click?u=a4b282e66ea8e93693bc73c17&id=1758f6195b&e=de15bcf0bb>
+<http://grab.us14.list-manage.com/track/click?u=a4b282e66ea8e93693bc73c17&id=78af744bbb&e=de15bcf0bb>
+<http://grab.us14.list-manage.com/track/click?u=a4b282e66ea8e93693bc73c17&id=adf4493af6&e=de15bcf0bb>
+<http://grab.us14.list-manage2.com/track/click?u=a4b282e66ea8e93693bc73c17&id=885548c9cf&e=de15bcf0bb>
+
+--001a114ba16ae18a3505577c3a1f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><div class=3D"gmail_quote">---------- Forwarded mes=
+sage ----------<br>From: &quot;Grab Indonesia&quot; &lt;<a href=3D"mailto:n=
+o-reply@grab.com">no-reply@grab.com</a>&gt;<br>Date: Aug 21, 2017 2:37 PM<b=
+r>Subject: JENIUS naik Grab! Mau tahu kenapa?<br>To:  &lt;<a href=3D"mailto=
+:imamdwiputrar@gmail.com">imamdwiputrar@gmail.com</a>&gt;<br>Cc: <br><br ty=
+pe=3D"attribution"><u></u>
+
+=09
+	=09
+	=09
+       =20
+       =20
+	=09
+
+   =20
+    <div style=3D"height:100%;margin:0;padding:0;width:100%;background-colo=
+r:#fafafa">
+	=09
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"m_-3637885197518021153bodyTa=
+ble" style=3D"border-collapse:collapse;height:100%;margin:0;padding:0;width=
+:100%;background-color:#fafafa">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"m_-3637885197=
+518021153bodyCell" style=3D"height:100%;margin:0;padding:10px;width:100%;bo=
+rder-top:0">
+					=09
+					=09
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" class=3D"m_-3637885197518021153templateContainer" style=3D"border-collaps=
+e:collapse;border:0;max-width:600px!important">
+							<tr>
+								<td valign=3D"top" id=3D"m_-3637885197518021153templatePreheader" s=
+tyle=3D"background:#fafafa none no-repeat center/cover;background-color:#fa=
+fafa;background-image:none;background-repeat:no-repeat;background-position:=
+center;background-size:cover;border-top:0;border-bottom:0;padding-top:9px;p=
+adding-bottom:9px"></td>
+							</tr>
+							<tr>
+								<td valign=3D"top" id=3D"m_-3637885197518021153templateHeader" styl=
+e=3D"background:#ffffff none no-repeat center/cover;background-color:#fffff=
+f;background-image:none;background-repeat:no-repeat;background-position:cen=
+ter;background-size:cover;border-top:0;border-bottom:0;padding-top:0px;padd=
+ing-bottom:0"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"m_-3637885197518021153mcnCodeBlock" style=3D"border-coll=
+apse:collapse">
+    <tbody class=3D"m_-3637885197518021153mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"m_-3637885197518021153mcnTextBlockI=
+nner">
+                <table width=3D"100%" align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" bgcolor=3D"#009E49" style=3D"border-collapse:c=
+ollapse">
+    <tbody><tr>
+      <td height=3D"15" align=3D"left"></td>
+    </tr>
+    <tr>
+      <td align=3D"left" style=3D"text-align:center">
+
+          <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+                          <tbody><tr>
+                            <td width=3D"45px" align=3D"left" class=3D"m_-3=
+637885197518021153vspacer15"></td>
+                            <td align=3D"left" valign=3D"top" class=3D"m_-3=
+637885197518021153produceTdLast">
+                            <table width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse">
+                                <tbody><tr>
+                                  <td align=3D"left" valign=3D"middle">
+                   <img src=3D"https://myteksi.s3.amazonaws.com/email_image=
+s/marketing_images/_logo.png" alt=3D"myteksi logo" width=3D"78" height=3D"3=
+0" border=3D"0" style=3D"display:inline-block;border:0;height:auto;outline:=
+none;text-decoration:none">
+                                  </td>
+
+                                  <td width=3D"200" align=3D"right" valign=
+=3D"top" style=3D"font-family:Arial,&#39;Helvetica&#39;,sans-serif;font-wei=
+ght:normal;font-size:14px;line-height:16px;color:#ffffff;padding-top:10px">
+                                  <span style=3D"font-weight:bolder"></span=
+></td>
+                                  <td width=3D"45px" align=3D"left" class=
+=3D"m_-3637885197518021153vspacer15"></td>
+                                </tr>
+                              </tbody></table></td>
+                          </tr>
+                        </tbody></table>
+      </td>
+    </tr>
+</tbody></table>
+<table width=3D"100%" align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" bgcolor=3D"#009E49" style=3D"border-collapse:collapse">
+    <tbody><tr>
+      <td height=3D"15"><img style=3D"display:block;border:0;height:auto;ou=
+tline:none;text-decoration:none" src=3D"https://grabtaxi-marketing.s3.amazo=
+naws.com/emails/my/img/_blank.gif" alt=3D"" width=3D"10" height=3D"15" bord=
+er=3D"0"></td>
+    </tr>
+</tbody></table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"m_-3637885197518021153mcnImageBlock" style=3D"min-width:100%;b=
+order-collapse:collapse">
+    <tbody class=3D"m_-3637885197518021153mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding:0px" class=3D"m_-363788=
+5197518021153mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"m_-3637885197518021153mcnImageConte=
+ntContainer" style=3D"min-width:100%;border-collapse:collapse">
+                        <tbody><tr>
+                            <td class=3D"m_-3637885197518021153mcnImageCont=
+ent" valign=3D"top" style=3D"padding-right:0px;padding-left:0px;padding-top=
+:0;padding-bottom:0;text-align:center">
+
+                                    <a href=3D"http://grab.us14.list-manage=
+1.com/track/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D486610946f&amp;e=
+=3Dde15bcf0bb" title=3D"" target=3D"_blank">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/a4b282e66ea8e93693bc73c17/images/039b9036=
+-5ac8-442d-af27-28dac08ce5ca.jpg" width=3D"600.0000152587891" style=3D"max-=
+width:1200px;padding-bottom:0;display:inline!important;vertical-align:botto=
+m;border:0;height:auto;outline:none;text-decoration:none" class=3D"m_-36378=
+85197518021153mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+							</tr>
+							<tr>
+								<td valign=3D"top" id=3D"m_-3637885197518021153templateBody" style=
+=3D"background:#ffffff none no-repeat center/cover;background-color:#ffffff=
+;background-image:none;background-repeat:no-repeat;background-position:cent=
+er;background-size:cover;border-top:0;border-bottom:0;padding-top:0px;paddi=
+ng-bottom:0"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"m_-3637885197518021153mcnBoxedTextBlock" style=3D"min-wi=
+dth:100%;border-collapse:collapse">
+   =20
+	<tbody class=3D"m_-3637885197518021153mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"m_-3637885197518021153mcnBoxedTextB=
+lockInner">
+
+			=09
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse=
+" class=3D"m_-3637885197518021153mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style=3D"padding-top:9px;padding-left:18px;padd=
+ing-bottom:9px;padding-right:18px">
+
+                            <table border=3D"0" cellpadding=3D"18" cellspac=
+ing=3D"0" class=3D"m_-3637885197518021153mcnTextContentContainer" width=3D"=
+100%" style=3D"min-width:100%!important;border-collapse:collapse">
+                                <tbody><tr>
+                                    <td valign=3D"top" class=3D"m_-36378851=
+97518021153mcnTextContent" style=3D"font-family:Arial,&quot;Helvetica Neue&=
+quot;,Helvetica,sans-serif;font-size:14px;font-style:normal;font-weight:nor=
+mal;line-height:200%;text-align:left;word-break:break-word;color:#202020">
+                                        <p dir=3D"ltr" style=3D"font-family=
+:Arial,&quot;Helvetica Neue&quot;,Helvetica,sans-serif;font-size:14px;font-=
+style:normal;font-weight:normal;line-height:200%;text-align:left;margin:10p=
+x 0;padding:0;color:#202020"><span style=3D"color:#696969"><span style=3D"f=
+ont-size:15px">Hai Grabbers,<br>
+<br>
+Ayo unduh Jenius dan daftarkan kartu debit Jenius jadi GrabPay. Gunakan Jen=
+ius buat pembayaran Grab dan dapatkan DISKON 75% untuk setiap perjalanan de=
+ngan Grab! Jenius kan?<br>
+<br>
+Nikmati diskon 75% (hingga Rp25.000) naik GrabBike, GrabCar=C2=A0dan GrabSh=
+are=C2=A0sampai sepuasnya dengan kode promo <strong>JENIUSGRAB75</strong>.<=
+/span></span><br>
+=C2=A0</p>
+<span style=3D"font-size:15px"><span style=3D"color:#696969"><strong>Mau pe=
+san Grab dengan Jenius?</strong></span></span>
+
+<div style=3D"text-align:justify"><span style=3D"font-size:15px"><span styl=
+e=3D"color:#696969">1. Buka aplikasi Grab.<br>
+2. Pilih layanan GrabBike atau GrabCar atau GrabShare.<br>
+3. Masukkan lokasi penjemputan dan tujuan.<br>
+4. Pilih cara pembayaran GrabPay dengan Jenius.<br>
+5. Masukkan kode promo <strong>JENIUSGRAB75</strong>.</span></span></div>
+<br>
+<span style=3D"font-size:10px"><span style=3D"color:#696969">Syarat &amp; K=
+etentuan berlaku.</span></span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+			=09
+
+			=09
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"m_-3637885197518021153mcnButtonBlock" style=3D"min-width:100%;=
+border-collapse:collapse">
+    <tbody class=3D"m_-3637885197518021153mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top:0;padding-right:18px;padding-bottom:18=
+px;padding-left:18px" valign=3D"top" align=3D"center" class=3D"m_-363788519=
+7518021153mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"m_-3637885197518021153mcnButtonContentContainer" style=3D"border-coll=
+apse:separate!important;border-radius:0px;background-color:#009e49">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"m_-3637885197518021153mcnButtonContent" style=3D"font-family:Arial;font-si=
+ze:18px;padding:15px">
+                                <a class=3D"m_-3637885197518021153mcnButton=
+" title=3D"Info lanjut" href=3D"http://grab.us14.list-manage.com/track/clic=
+k?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D703a304b6b&amp;e=3Dde15bcf0bb" sty=
+le=3D"font-weight:bold;letter-spacing:normal;line-height:100%;text-align:ce=
+nter;text-decoration:none;color:#ffffff;display:block" target=3D"_blank">In=
+fo lanjut</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+							</tr>
+							<tr>
+								<td valign=3D"top" id=3D"m_-3637885197518021153templateColumns" sty=
+le=3D"background:#ffffff none no-repeat center/cover;background-color:#ffff=
+ff;background-image:none;background-repeat:no-repeat;background-position:ce=
+nter;background-size:cover;border-top:0;border-bottom:2px solid #eaeaea;pad=
+ding-top:0;padding-bottom:9px">
+								=09
+									<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"300" class=3D"m_-3637885197518021153columnWrapper" style=3D=
+"border-collapse:collapse">
+										<tr>
+											<td valign=3D"top" class=3D"m_-3637885197518021153columnContaine=
+r"></td>
+										</tr>
+									</table>
+								=09
+									<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"300" class=3D"m_-3637885197518021153columnWrapper" style=3D=
+"border-collapse:collapse">
+										<tr>
+											<td valign=3D"top" class=3D"m_-3637885197518021153columnContaine=
+r"></td>
+										</tr>
+									</table>
+								=09
+								</td>
+							</tr>
+							<tr>
+								<td valign=3D"top" id=3D"m_-3637885197518021153templateFooter" styl=
+e=3D"background:#fafafa none no-repeat center/cover;background-color:#fafaf=
+a;background-image:none;background-repeat:no-repeat;background-position:cen=
+ter;background-size:cover;border-top:0;border-bottom:0;padding-top:9px;padd=
+ing-bottom:9px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"m_-3637885197518021153mcnCodeBlock" style=3D"border-co=
+llapse:collapse">
+    <tbody class=3D"m_-3637885197518021153mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"m_-3637885197518021153mcnTextBlockI=
+nner">
+                <table width=3D"100%" align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" style=3D"border-collapse:c=
+ollapse">
+    <tbody>
+    <tr>
+    <td height=3D"40"><img style=3D"display:block;border:0;height:auto;outl=
+ine:none;text-decoration:none" src=3D"https://myteksi.s3.amazonaws.com/emai=
+l_images/marketing_images/_blank.gif" alt=3D"" width=3D"10" height=3D"40" b=
+order=3D"0"></td>
+  </tr><tr>
+      <td valign=3D"top" class=3D"m_-3637885197518021153vspacer15" width=3D=
+"45"></td>
+      <td valign=3D"top" style=3D"font-family:&#39;Helvetica&#39;,Arial,san=
+s-serif;color:#000000;font-size:11px">
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"border-collapse:collapse">
+          <tbody><tr>
+            <td align=3D"left" style=3D"font-family:&#39;Helvetica&#39;,Ari=
+al,sans-serif;text-align:center">
+
+            </td>
+           </tr>
+
+           <tr>
+            <td align=3D"left" style=3D"font-family:&#39;Helvetica&#39;,Ari=
+al,sans-serif;text-align:center">
+            	<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"border-collapse:collapse">
+                    <tbody><tr>
+                      <td width=3D"55%" align=3D"left" valign=3D"top" class=
+=3D"m_-3637885197518021153produceTdLast" style=3D"font-family:&#39;Helvetic=
+a&#39;,Arial,sans-serif;color:#666666;padding-right:10%">
+                      <span style=3D"color:#666666"> <a href=3D"mailto:supp=
+ort.id@grab.com" style=3D"font-size:10px;line-height:12px;font-weight:bold;=
+color:#666666" target=3D"_blank">support.id@grab.com</a> =C2=A0=C2=A0|=C2=
+=A0=C2=A0<a href=3D"#m_-3637885197518021153_" style=3D"font-size:10px;font-=
+weight:bold;color:#666666">+6221 8064 8777</a></span><br><br>
+            <span style=3D"font-size:10px;font-weight:normal">Grab Indonesi=
+a<br>
+             <a href=3D"#m_-3637885197518021153_" style=3D"color:#666666;te=
+xt-decoration:underline;font-style:italic;line-height:21px"></a><a href=3D"=
+http://grab.us14.list-manage1.com/unsubscribe?u=3Da4b282e66ea8e93693bc73c17=
+&amp;id=3D98be1d0075&amp;e=3Dde15bcf0bb&amp;c=3Db4012fbe00" style=3D"color:=
+#666666;text-decoration:underline" target=3D"_blank">I do not want to recei=
+ve emails like this</a>.<br>
+            </span>
+                     </td>
+
+                      <td width=3D"35%" align=3D"left" valign=3D"top" class=
+=3D"m_-3637885197518021153produceTdLast" style=3D"font-family:&#39;Helvetic=
+a&#39;,Arial,sans-serif;color:#666666">
+                         <span style=3D"font-size:10px;line-height:12px;fon=
+t-weight:bold">Stay connected with us.</span><br><br>
+                          <a href=3D"http://grab.us14.list-manage.com/track=
+/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D1758f6195b&amp;e=3Dde15bcf0bb=
+" target=3D"_blank"><img width=3D"30px" src=3D"https://grabtaxi-marketing.s=
+3.amazonaws.com/emails/my/img/icon-fb.png" style=3D"border:0;height:auto;ou=
+tline:none;text-decoration:none"></a>=C2=A0=C2=A0
+                          <a href=3D"http://grab.us14.list-manage.com/track=
+/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D78af744bbb&amp;e=3Dde15bcf0bb=
+" target=3D"_blank"><img width=3D"30px" src=3D"https://grabtaxi-marketing.s=
+3.amazonaws.com/emails/my/img/icon-twitter.png" style=3D"border:0;height:au=
+to;outline:none;text-decoration:none"></a>=C2=A0=C2=A0
+                          <a href=3D"http://grab.us14.list-manage.com/track=
+/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3Dadf4493af6&amp;e=3Dde15bcf0bb=
+" target=3D"_blank"><img width=3D"30px" src=3D"https://grabtaxi-marketing.s=
+3.amazonaws.com/emails/my/img/icon-instagram.png" style=3D"border:0;height:=
+auto;outline:none;text-decoration:none"></a>=C2=A0=C2=A0
+                          <a href=3D"http://grab.us14.list-manage2.com/trac=
+k/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D885548c9cf&amp;e=3Dde15bcf0b=
+b" target=3D"_blank"><img width=3D"30px" src=3D"https://grabtaxi-marketing.=
+s3.amazonaws.com/emails/my/img/icon-linkedin.png" style=3D"border:0;height:=
+auto;outline:none;text-decoration:none"></a>
+                          <br><br>
+                      </td>
+                    </tr>
+                  </tbody></table>
+            </td>
+           </tr>
+           <tr>
+            <td height=3D"30"></td>
+           </tr>
+
+
+ </tbody></table></td>
+           <td valign=3D"top" class=3D"m_-3637885197518021153vspacer15" wid=
+th=3D"45"></td>
+     </tr>
+</tbody></table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+							</tr>
+						</table>
+					=09
+					=09
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"http://grab.us14.list-manage.com/track/open.php?u=3Da4b282e=
+66ea8e93693bc73c17&amp;id=3Db4012fbe00&amp;e=3Dde15bcf0bb" height=3D"1" wid=
+th=3D"1"></div>
+</div>
+
+--001a114ba16ae18a3505577c3a1f--

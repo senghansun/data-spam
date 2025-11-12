@@ -1,0 +1,972 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.67.207 with SMTP id h76csp3310301ooe;
+        Sun, 10 Sep 2017 07:11:28 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb52ic5dk2FJcc6erLxz9QAp1UdWVTBrpI46qnPxYaNsfdTKm+i1SiJ4MNDghDhw9LFlsy6g
+X-Received: by 10.36.149.196 with SMTP id m187mr8607037itd.75.1505052688647;
+        Sun, 10 Sep 2017 07:11:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505052688; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HAQAQqL6HCY/crn7HIKzbYSY4kO7dPUHXMoSQrFETvXP5XO7bGsox/aWvI5aq59D2r
+         MnY6ako7UZVhyOSEs9E6HOqFPRuExMSQECceFtCgDYwrDuYn2xdedq2AEkw+MRVd6fIr
+         TE5mH2+bKfxgDl372Zc6hcb0jiKHtknFuu6Gp2uIY8pa9QofdDiEe1Z966GlkCTQg8L8
+         YU+QhAtbUUrPPOoJZxxya9qLcaTudowdpoIuFF5kNXL5uIzY1mJJLiVjGny4eBiVpB9I
+         hbFLB3+3VmkoK5jtZhsnMi7vhBabt0FYEjpl53Ge+TLj0K8mQ1C85Tpn3xY8UFE/Kpx+
+         V7Bg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:list-id:reply-to:mime-version
+         :list-unsubscribe:date:subject:to:from:dkim-signature
+         :arc-authentication-results;
+        bh=HIcsJmDpn5iUUzM3A8bewK17LTZ8RYKiZ9lThqopm0k=;
+        b=oLiXyLzZzMVu10u9dsMAaRYn16X2Pudk30ON9v0IGGCgPZIqkxNr73ZEcgQHCEigJ5
+         iKuP6Urxqp9qWSkxz1oe+U26UuxTVtpXgTbgnCtptAhgwO7QMfXOoQV9WJT5pHqdyA/z
+         ISjvRAFLkAzeacYLNt7GmkDQIpXEnrqBKvmXSKupNF2/BICJvmESR9AhfW0g4WaviefJ
+         acKtORFmpftvk5scQno3K0U7o2LyZ0b1SRXAKboXthTWkBPHzVQPUXzfedOHNV8qFzH8
+         6uJnscguIjyzA8RLxPvZPsJn2NRhr17ysfmOwmTktqzcbhCWQspz7njyYc20Vb56b3LQ
+         ufuA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@artists-hub.com header.s=200608 header.b=fbnONoM3;
+       spf=pass (google.com: domain of bounce-112325_html-254124513-968171-1302102-433@bounce.artists-hub.com designates 68.232.193.202 as permitted sender) smtp.mailfrom=bounce-112325_HTML-254124513-968171-1302102-433@bounce.artists-hub.com
+Return-Path: <bounce-112325_HTML-254124513-968171-1302102-433@bounce.artists-hub.com>
+Received: from mta.artists-hub.com (mta.artists-hub.com. [68.232.193.202])
+        by mx.google.com with ESMTPS id p10si7212787ioo.179.2017.09.10.07.11.28
+        for <Lukaspatty@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 10 Sep 2017 07:11:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-112325_html-254124513-968171-1302102-433@bounce.artists-hub.com designates 68.232.193.202 as permitted sender) client-ip=68.232.193.202;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@artists-hub.com header.s=200608 header.b=fbnONoM3;
+       spf=pass (google.com: domain of bounce-112325_html-254124513-968171-1302102-433@bounce.artists-hub.com designates 68.232.193.202 as permitted sender) smtp.mailfrom=bounce-112325_HTML-254124513-968171-1302102-433@bounce.artists-hub.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=artists-hub.com; h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:Message-ID:Content-Type; i=artistsnetworktv@artists-hub.com; bh=ZTpdhQzC0jgAj306w19gdwSzx9o=; b=fbnONoM3t1TpQPCtja69QZKZ2eqNtTAUtnXwbmWWHxj90Vfa84KHaGE26pedzrhMzmwi6/XvgjSY
+   /6nye5oAXQvTTEGVvPwgkQAXGPzDdjISAxQf3oMmfd7AKSwYC6y9142jEAGe91zpMjj9TRON3pDs
+   yq4mFGp1aJgMy53hP3E=
+Received: by mta.artists-hub.com id hml416163hso for <Lukaspatty@gmail.com>; Sun, 10 Sep 2017 08:04:38 -0600 (envelope-from <bounce-112325_HTML-254124513-968171-1302102-433@bounce.artists-hub.com>)
+From: "Artists Network.tv Instruction" <artistsnetworktv@artists-hub.com>
+To: <Lukaspatty@gmail.com>
+Subject: Figure Drawing Essentials: Anatomy & Form
+Date: Sun, 10 Sep 2017 08:04:34 -0600
+List-Unsubscribe: <mailto:leave-fcbd1571776706781a4c342838-fe34167571650679701573-febf1d767d65037c-fea615737566057d77-ff65107376@leave.artists-hub.com>
+MIME-Version: 1.0
+Reply-To: "Artists Network.tv Instruction" <reply-febf1d767d65037c-112325_HTML-254124513-1302102-433@artists-hub.com>
+List-ID: <1302102_968171.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 1302102_968171
+Message-ID: <22acba4f-a123-4211-bb2e-3b1b97b982e2@xtnvmta137.xt.local>
+Feedback-ID: 1302102:968171:68.232.193.202:sfmktgcld
+Content-Type: multipart/alternative; boundary="nUM254eloIST=_?:"
+
+--nUM254eloIST=_?:
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Watch over 600 Art Instructional Videos on ArtistsNetwork.tv!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f86ec50c9342d0cb7e9a7e141add51bfa8ace7d658eaa3048f83d4912e06427d174f1db8edcefd1d3d0d6dd4dc7933bd4 
+Web Version >> 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26ff1227c646da1c65cedd43d0efd37190fcacd12392eb0e88c18dded2aa069c0066a92e760cf7ba8bc7269324d12645a13 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f9ced442c98544afbf39d3818841a44cfc1c3167e78d97b21399e1a15716eef93671f18a3b0e8ff377ec8349722f49ba2 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f9ced442c98544afbf39d3818841a44cfc1c3167e78d97b21399e1a15716eef93671f18a3b0e8ff377ec8349722f49ba2 
+Figure Out Anatomy & Form with Brent Eviston! 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f9ced442c98544afbf39d3818841a44cfc1c3167e78d97b21399e1a15716eef93671f18a3b0e8ff377ec8349722f49ba2 
+
+
+Turn simple shapes and volumes into the more complex forms of the human figure with these detailed drawing lessons from our newest art instructor, Brent Eviston. In Brent's Figure Drawing Essentials: Anatomy & Form video, you'll gain a firm understanding of how the body is constructed as you follow along with his collection of drawing exercises, each focused on a different part of the human anatomy. From hands and feet to contours of the body, by the end of this video you'll be able to draw a basic figure with expression and accuracy.
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f9ced442c98544afbf39d3818841a44cfc1c3167e78d97b21399e1a15716eef93671f18a3b0e8ff377ec8349722f49ba2 
+Preview  Figure Drawing Essentials: Anatomy & Form now to draw basic shapes and then transform them into volumes using pencil lines to create the illusion that they are bending and turning in space.
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f4c6431e0ce32bd9a9f1f30891962ad22f01596fb1e84d5d5e1f1aff0c2e6b004d39ee0414dcfcefd6b55c7bdddd77107 
+Seascape Painting Secrets for Shoreline Waves! 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f36875892e5a1be33e8ff74c334bf435487f4e38c8cc02fd01c8ba51690197b6bca19c842c985288b673a67d4bc4e930d 
+
+
+Follow along with seascape painter Jeanne Rosier Smith in her newest ArtistsNetwork.tv art instruction video on Painting the Shoreline Waves. In this video she shares her secrets for creating realistic seascapes in pastel. You'll learn composition techniques for strong paintings that lead the eye, color lessons that make water look deep or shallow, and value and edge control lessons that give the sense of waves moving in and out on the sandy shoreline. With Jeanne as your guide you'll be painting realistic seascapes in no time! 
+
+ 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f2c06af9e4d7c37524e219ffad4990abee5742953f1d75197b0b6b40401440444e7e6c05d7d32215ab7323c14697c845d 
+Preview  Painting the Shoreline Waves here now to learn important value and color techniques that will make your waves and shoreline more realistic!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26ffdc824d1fc6e37c06442814638ff8a1a7efc31ed3914e751fa595ba028214957c4517e81abcc3acde381f761f6b08620 
+LIVE Paint Along: Create Clutter-Free Paintings
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26ffdc824d1fc6e37c06442814638ff8a1a7efc31ed3914e751fa595ba028214957c4517e81abcc3acde381f761f6b08620 
+WHEN: September 9, 16, and 23
+TIME: 1:00 to 5:00 PM ET (Everything gets recorded so don't worry if you miss a class.)
+WHERE: Your Computer
+It is very tempting for artists to want to say too much in one painting. Do you find yourself guessing what to leave in or take out? It's time to eliminate the guesswork and create delightful, clutter-free paintings! In this workshop, you will receive top instruction that will show you how to crop your reference photos, edit out unnecessary visual clutter, and more as you paint along with Johannes Vloothuis. You'll receive verbal techniques, color combinations, professional secrets, and instructions to guide you along the way!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26ffdc824d1fc6e37c06442814638ff8a1a7efc31ed3914e751fa595ba028214957c4517e81abcc3acde381f761f6b08620 
+Sign up now for this LIVE online painting workshop-- 
+http://click.artists-hub.com/?qs=ff83bd6e4790f26ffdc824d1fc6e37c06442814638ff8a1a7efc31ed3914e751fa595ba028214957c4517e81abcc3acde381f761f6b08620 
+two live paint along classes left!PLUS: Students will receive a bonus recording on how to paint landscape elements!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f694b72d0e4acff82dd417ea7c4ddd5dcab1b6349476bf61f14a1a8492bac10a50e7f18e755988222965bc6f79a89112c 
+You'll Love Watercolor Painting on Location! 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f694b72d0e4acff82dd417ea7c4ddd5dcab1b6349476bf61f14a1a8492bac10a50e7f18e755988222965bc6f79a89112c 
+
+Fall in love with painting the great outdoors in this watercolor video demonstration! You'll learn the materials you need for portability and ease when away from the studio, as well as tips for creating a strong composition, such as what elements to include in your painting. Then, learn how to have fun with color mixing both on the paletteand on your surface as you capture the beauty of the landscapes around you!
+
+"One of the best watercolor landscape tutorials. Informative, motivating, and resulting in an achievable painting." --IJ, ArtistsNetwork.tv
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f694b72d0e4acff82dd417ea7c4ddd5dcab1b6349476bf61f14a1a8492bac10a50e7f18e755988222965bc6f79a89112c 
+Preview  Watercolor on Location here now!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26fafb0d6c58d857d9ae35fc3b1af23b1df953e96569272074f7767b42a613bb264eee93405f60befa9dad84870ed0ff6f7 
+Affordable, Portable Art Instruction 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26fffd50af657ee249b6267e82d25668706401829892dd17750c1e9fbb72e54ae9689e25e96d3efc43203cba798cbe2c631 
+
+ArtistsNetwork.tv videos are also available on DVD and to download. Create beautiful art whenever, wherever, and in whatever format you want!
+
+
+This week's featured download: Creative Art Class: Mark Making and Drawing with Dawn Emerson
+
+
+"This was not what I expected--it was so much better! Thank you for getting the gears unstuck again!" --CH, ArtistsNetwork.tv
+
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26fafb0d6c58d857d9ae35fc3b1af23b1df953e96569272074f7767b42a613bb264eee93405f60befa9dad84870ed0ff6f7 
+Visit NorthLightShop.com to browse the full selection today! 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6dc5c0d66a47cc9cd8d59124c7fdde6f3b8887fae2eff7c0c4639865896b5f3012de20d71eefbaa1d3091d05cac3d522 
+100s of Ways to Improve Your Art 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f2adb7cbfc5d002641f08281520594d29547ec4fe1ea8532df51a6fc589d0334eb0cf1aee708b87b72074625825c56fd8 
+
+With over 600 video workshops available at ArtistsNetwork.tv, and new videos added every week, we know you'll find something to help improve your art! 
+
+
+Featured video: Beautiful Botanicals with Bente Starcke King
+
+"Very informative. Loved all approaches to botanical painting." --DH, ArtistsNetwork.tv 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6dc5c0d66a47cc9cd8d59124c7fdde6f3b8887fae2eff7c0c4639865896b5f3012de20d71eefbaa1d3091d05cac3d522 
+Click here to check out our vast assortment of instructional videos to begin enhancing your art today!  
+
+Enjoy Art Demos From Life!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6396a47d6f8703b2c4ed79d01edeb477550df884f5cd688dedff9b8f6b8d70c66d57d5e3fad1ab379186eee2d8744542 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6396a47d6f8703b2c4ed79d01edeb477550df884f5cd688dedff9b8f6b8d70c66d57d5e3fad1ab379186eee2d8744542 
+Acrylic Landscapes: Light and Shadow 
+
+FREE Preview
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6396a47d6f8703b2c4ed79d01edeb477550df884f5cd688dedff9b8f6b8d70c66d57d5e3fad1ab379186eee2d8744542 
+SUBSCRIBE 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6db2e0ff74b642836c9a3e77f087be498fe39863a85ed1dfb12187198fc6ebfa20001e9c0f2644780c72758e117aae5e 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6db2e0ff74b642836c9a3e77f087be498fe39863a85ed1dfb12187198fc6ebfa20001e9c0f2644780c72758e117aae5e 
+Abstract Art: Explorations from Life 
+
+FREE Preview
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f6db2e0ff74b642836c9a3e77f087be498fe39863a85ed1dfb12187198fc6ebfa20001e9c0f2644780c72758e117aae5e 
+SUBSCRIBE 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f882f982cd2592a42e531cd51aae3edb9b80560c970f8021c69ca04390bdd26b824b5ba130ec36f740e512c6bfb6311f0 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f882f982cd2592a42e531cd51aae3edb9b80560c970f8021c69ca04390bdd26b824b5ba130ec36f740e512c6bfb6311f0 
+Drawing & Painting People in Places 
+
+FREE Preview
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f882f982cd2592a42e531cd51aae3edb9b80560c970f8021c69ca04390bdd26b824b5ba130ec36f740e512c6bfb6311f0 
+SUBSCRIBE 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f8ba62bd9cc4784d87f963bd32050b0a4dbf5e79a6e99b6e40596f6ec5cb6c94f9b9d5e16647bc209066d3b169a727862 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f8ba62bd9cc4784d87f963bd32050b0a4dbf5e79a6e99b6e40596f6ec5cb6c94f9b9d5e16647bc209066d3b169a727862 
+Plein Air Pastel: Winding River 
+
+FREE Preview
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f8ba62bd9cc4784d87f963bd32050b0a4dbf5e79a6e99b6e40596f6ec5cb6c94f9b9d5e16647bc209066d3b169a727862 
+SUBSCRIBE 
+
+ArtistsNetwork.tv Videos Available On Demand!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+
+Learn from top artists as they share their techniques with you from the comfort of your own home! Watch anytime, anywhere, from any computer!
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26fccd5aed9a6a0458120bb6d7fa7965f121ccb4dc4cd41c61c76cf48d79ead934bdbf66b4923caaab28e47ade6aaa17d45 
+MEMBERSHIP OPTIONS 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+Individual Workshop Subscriptions 
+Subscribe to any individual art workshop for just $16.99 and receive a lifetime subscription to that video. Over 600 workshops to choose from, with a new video added every week! 
+http://click.artists-hub.com/?qs=ff83bd6e4790f26fccd5aed9a6a0458120bb6d7fa7965f121ccb4dc4cd41c61c76cf48d79ead934bdbf66b4923caaab28e47ade6aaa17d45 
+Subscribe now .
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+1-Month Full-Library Subscription 
+Get access to ALL of the art workshops for $19.99 per month--over 600 workshops in a wide range of subjects and mediums! Watch every workshop whenever you like, as often as you like. A new video is added every week! 
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+Subscribe now .
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+12-Month Full-Library Subscription  - Best Value!
+Get access to ALL of the art workshops for $199 for 12 months--over 600 workshops in a wide range of subjects and mediums! Watch everyworkshop whenever you like, as often as you like. A new video is added every week! 
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f77a5fbbf998b37fb4c6917b9ab9e7d01cfbf9ed9a05cb28b74cfec8838616c6d94f9b61f06c498fc5e2f2bcac5a6814f 
+Subscribe now .
+
+See Art | Love Art | Share Art
+
+#myartistsnetwork
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f95ccf5adbdaf9c32b34c392e66d0922d5e7a8033874b709321393007adca72564b415cabddf5caf140ecb97f506dbaf7 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f4d88f888d4741f3aa9747e4131e3793659d518ef085444e9af145fac6a872aee7d474cf1fa01bc52368975a01acabc5c 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f54273b225d24cbfe36963c16b7116247ced29b7534da9d3f942cecda140e8f738309b5f6ccd19cc903c2dec1176020d5 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f53016dc6efe371543fbc9b62f977be3d59696cd22834f90e10939cfb840093aca62f56a3e0229c4430201d6f14d066ec 
+
+http://click.artists-hub.com/?qs=ff83bd6e4790f26f0ad5168cf439cd8ddd9816c083df848913bdb3d3b3166dabaf2b20ffd2feddbeaea7bcb75016cb445079811512fa7da1 
+
+
+
+----------------------------------------
+	
+	This email was sent by:
+	F+W
+	10151 Carver Road, Suite 200
+	Blue Ash, OH, 45242, USA
+	
+	We respect your right to privacy - visit the following URL to view our policy.
+	( http://click.artists-hub.com/?qs=ff83bd6e4790f26fff87922d78ea79b05cce5466508ce006977f3f1cf17fd5af8acbd705e8a015f44e2c1b4f84a4d940445e22a247edfdf7 )
+	
+	----------------------------------------
+	
+	Visit the following URL to manage your subscriptions.
+	( http://click.artists-hub.com/?qs=ff83bd6e4790f26f286867825e9e97685bd0111f2e628eb265db53140a308f00528ee2a0a9fe3062af83842abf334c467d4622bd0368103a )
+	
+	Visit the following URL to update your profile.
+	( http://click.artists-hub.com/?qs=ff83bd6e4790f26f77c88bfadf5a1046945007ec06018b3c366157c06f18f0e40288e789281afb6327359fc073b0c92c33c3a9badbeff795 )
+	
+	Visit the following URL to unsubscribe.
+	( http://click.artists-hub.com/?qs=ff83bd6e4790f26fb77935b4181154649768f57081c1ee7db134a0031fadd20e750109f1cd33638259c03815cf14355c5c86f2ba28a2b245 )
+
+--nUM254eloIST=_?:
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+ <html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Ubuntu:100,300,400,700);
+			/* TEXT RESIZING - IPHONE */
+			body {
+				margin:0;
+				padding:0;
+				min-width:100%;
+				width:100% !important;
+				-webkit-text-size-adjust:none !important;
+				-ms-text-resize:none !important;
+			}
+			img {
+				border:0;
+				height:auto;
+				line-height:100%;
+				outline:none;
+				text-decoration:none;
+			}
+			/*<!-- RESOLVES A SPACING ISSUE WITH OUTLOOK 2007 & 2010 -->*/
+			table {
+				border-collapse:collapse !important;
+				mso-table-lspace:0pt !important;
+				mso-table-rspace:0pt !important;
+			}
+			/* REMOVES BLUE DECORATION ON APPLE DEVICES */
+			.appleLinks a {
+				color:#000000;
+				text-decoration:none;
+			}
+			.appleLinksFooter a {
+				color:#a1a1a1;
+				text-decoration:none;
+			}
+
+			@media only screen and (max-width: 600px) {
+				table[class="responsive-table"] {
+					width:100% !important;
+					height:auto !important;
+				}
+				table[class="mobile"], td[class="mobile"], img[class="mobile"] {
+					width:98% !important;
+					height:auto !important;
+					/*min-width: 100% !important;
+					margin: 0px 4px;*/
+				}
+				/*img[class="img-full"] {
+					max-width: 100% !important;
+					width: 100% !important;
+					height: auto !important;
+				}*/
+				/*img[class="mobile-logo-image-resize"] {
+					width:280px !important;
+					height:auto !important;
+					padding-top: 20px !important;
+				}*/
+				/*img[class="mobile-body-image-resize"] {
+					width:320px !important;
+					height:auto !important;
+					padding-top: 20px !important;
+				}*/
+				img[class="mobile-image"] {
+					display:inline-block !important;
+					height:auto !important;
+					max-height:inherit !important;
+					overflow:visible !important;
+					visibility:visible !important;
+					width:100% !important;
+				}
+				td[class="full-width"], table[class="full-width"] {
+					width: 100% !important;
+					float: inherit;
+					font-size:100% !important;
+					line-height:120% !important;
+				}
+				table[class="content-width"], td[class="content-width"] {
+					display:block !important;
+					width:100% !important;
+				}
+			}
+		</style>
+	</head><body bgcolor="#FFFFFF" leftmargin="0" marginheight="0" marginwidth="0" style="text-size-adjust: none;" topmargin="0"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Watch over 600 Art Instruction Videos at ArtistsNetwork.tv!</div>
+	
+		<table width="600" align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="table-layout: fixed;">
+			<tbody>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td width="70%" align="left" style="padding: 0px 15px 0px 15px !important">
+										<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="container" width="100%" cellspacing="0" cellpadding="0" align="left">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px; color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 12px;" valign="top" align="left">Watch over 600 Art Instructional Videos on ArtistsNetwork.tv!</td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom>
+									</td>
+									<td width="30%" align="right">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+												<tr>
+													<td style="text-align: right; padding: 0px 15px 0px 0px;">
+														<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26ffac2d99c3b0cbaf3df24aeb6af8da3f8ff6f1bf1e658b25a4705678a548874da30317f891dbe88764ecea5348d9eabe8" style="font-family: Ubuntu, arial, helvetica, sans-serif; font-size: 13px;">Web&nbsp;Version&nbsp;&raquo;</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table  width="600" class="mobile" align="center" border="0" cellspacing="0" cellpadding="0" style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;" bgcolor="#ffffff">
+			<tbody>
+				<tr>
+					<td align="center" valign="top">
+						<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" align="center" cellspacing="0" cellpadding="0" width="600">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" align="center" valign="top">
+			<a title="Artist Network TV" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fc79c12aa63b09b8eee837a2876c54d7c6eda51d6bc0b7f66b9642bc69f2904c0529946399751b6b0e97bc6ebfbe13bde"><img style="padding: 10px 0px;" src="http://image.artists-hub.com/lib/fea615737566057d77/m/3/ATVnewlogo.png" border="0" width="206" height="68" /></a>
+			</td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top">
+						<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><!-----Hero image---------->
+<table class="mobile" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 20px 0px;" align="center">
+			<a title="MainEvistonAnatomyandForm" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f1066ffc374a581fd20bcead54436e9860d8f243f8d04b604a65f7ab6ecfc94099ce1b2d7fd81cb4d73717f3cdaf7609c"  ><img class="mobile-image" alt="Main" src="http://image.artists-hub.com/lib/fea615737566057d77/m/17/EvistonAnatomyandForm_CoverArt.png" alias="Name" title="Main" thid="0d76d976-9615-452e-a163-6253ece51271" style="border-color: #000000; margin: 0px;" width="600" border="0" height="623" /></a></td>
+		</tr>
+	</tbody>
+</table>
+<!----end hero image----></td></tr></table></td></tr></table></custom>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top">
+						<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="Main" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fa8b61f43804fc069ff556f6b87b10ca62f6525e2b9ccc059cee00dd77ad99ed00b891f02f2d07242695702e83c9fb118" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;"  >Figure Out Anatomy & Form with Brent Eviston!<br />
+			</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			 			 			
+			<table valign="top" width="209" align="left" height="162">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fd3bab4aec4a2bdfddb1abd2f0601d27b951fe4ab1d748b771ff214e30daf84390e3b26a37a5cb2ae2f789d4312ad3ec9" title="EvistonAnatomyandForm"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/17/EvistonAnatomyandForm_still.png" alt="Main" alias="Name" title="Main" style="border-color: #000000; margin: 0px;" thid="ca9f6e5b-8e82-4052-a57b-22afbb411e7a" width="228" border="0" height="153" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;"> 			 			
+			<div style="text-align: left;">
+			Turn simple shapes and volumes into the more complex forms of the human figure with these detailed drawing lessons from our newest art instructor, Brent Eviston. In Brent's <i>Figure Drawing Essentials: Anatomy & Form</i> video, you'll gain a firm understanding of how the body is constructed as you follow along with his collection of drawing exercises, each focused on a different part of the human anatomy. From hands and feet to contours of the body, by the end of this video you'll be able to draw a basic figure with expression and accuracy.<br />
+			<br />
+			<b><a title="Name" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f2608285ab428463669a7aa9754793c57dca88541ab4b2d90d3c3fc51dbf6f369fc848709dea4ffdf9a93a1235faa6955" style="color: #1b8ebe; font-family: Times,serif; font-size: 15px;">Preview <i>Figure Drawing Essentials: Anatomy & Form </i>now to draw basic shapes and then transform them into volumes using pencil lines to create the illusion that they are bending and turning in space.</a></b> 			 			
+			</div>
+			</span></td>
+		</tr>
+	</tbody>
+</table>
+<br /></td></tr></table></td></tr></table></custom>  </td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="Main" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f8fd61c1faf98168c1efd631617233f2679674d3e3875961035e1153f75dad48b00b9364efd3040f2902de227ec6ee60e" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;"  >Seascape Painting Secrets for Shoreline Waves!<br />
+			</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			 			 			
+			<table valign="top" align="left">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f4006580e9009252b66a48893d550c33ae437f06f0e34b79f467583943a954e7764d090db102d485a37a4998a8cb993dc" title="FeaturedSmithShoreline"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/17/SmithJeanneRossier_Shoreline_Ptg.jpg" alt="Featured" alias="Name" title="Featured" style="border-color: #000000; margin: 0px; width: 180px; height: 127px;" mdid="cce1658b-813f-49d5-9bc3-ec7030775fd0" width="180" border="0" height="127" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;"> 			 			
+			<div style="text-align: left;">
+			Follow along with seascape painter Jeanne Rosier Smith in her newest ArtistsNetwork.tv art instruction video on <i>Painting the Shoreline Waves</i>. In this video she shares her secrets for creating realistic seascapes in pastel. You'll learn composition techniques for strong paintings that lead the eye, color lessons that make water look deep or shallow, and value and edge control lessons that give the sense of waves moving in and out on the sandy shoreline. With Jeanne as your guide you'll be painting realistic seascapes in no time! 
+			</div>
+			<div style="text-align: left;">
+			&nbsp;
+			</div>
+			<b><a title="Name" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26ff8b1e019df1a5b5189beb960d5caf9021a472a60c4114d426f4ebfbf388ca0cbb2470460ed0b6f3caac029351bef1c48" style="color: #1b8ebe; font-family: Times,serif; font-size: 15px;">Preview <i>Painting the Shoreline Waves </i>here now to learn important value and color techniques that will make your waves and shoreline more realistic!</a></b> 			 	<br />
+			</span></td>
+		</tr>
+	</tbody>
+</table>
+<br /></td></tr></table></td></tr></table></custom>  </td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="JP" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fd33c3c3af32a7327f3afec2a1a4aebf587d3c0996ec6c51680ebbf8f0153217f27101e932e5dd48914b22d0d7f2e0bc6" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;"><i>LIVE Paint Along:</i> Create Clutter-Free Paintings<br />
+			</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			 			
+			<table valign="top" width="194" align="left" height="173">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f87bd62f80b41d006c4fa4e2896058b4ee3ff6190d3a2db692d82eea073ea900d312962758ae18ec18cbc73628df00582" title="JohannesPA38"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/VloothuisPA38.png" alt="Johannes" alias="Name" title="Johannes" style="border-color: #000000; margin: 0px; width: 180px; height: 118px;" thid="21807057-623d-4dc9-8937-75b51a764cad" width="180" border="0" height="118" /></a> <font size="1"><b>WHEN:</b> September 9, 16, and 23<br />
+						<b>TIME:</b> 1:00 to 5:00 PM ET (Everything gets recorded so don't worry if you miss a class.)<br />
+						<b>WHERE:</b> Your Computer</font></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;">It is very tempting for artists to want to say too much in one painting. Do you find yourself guessing what to leave in or take out? It's time to eliminate the guesswork and create delightful, clutter-free paintings! In this workshop, you will receive top instruction that will show you how to crop your reference photos, edit out unnecessary visual clutter, and more as you paint along with Johannes Vloothuis. You'll receive verbal techniques, color combinations, professional secrets, and instructions to guide you along the way!<br />
+			<p>
+			<a title="Name" style="color: #1b8ebe; font-family: Times,serif; font-weight: bold; text-decoration: none; font-size: 15px;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fd33c3c3af32a7327f3afec2a1a4aebf587d3c0996ec6c51680ebbf8f0153217f27101e932e5dd48914b22d0d7f2e0bc6">Sign up now for this LIVE online painting workshop--<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;"></span></a><a title="Name" style="color: #1b8ebe; font-family: Times,serif; font-weight: bold; text-decoration: none; font-size: 15px;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fd33c3c3af32a7327f3afec2a1a4aebf587d3c0996ec6c51680ebbf8f0153217f27101e932e5dd48914b22d0d7f2e0bc6"><i>two live paint along classes left!</i></a> <i>PLUS: Students will receive a bonus recording on how to paint landscape elements!</i>
+			</p>
+			</span></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="JP" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26ffc55e45b7e2daed8bdf1c44e9dbc9778dc394f1142502d59564f28990f20500ec182b91299e9714c31dc748c5c0e4704" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;">You'll Love Watercolor Painting on Location!<br />
+			</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center" height="218">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			 			
+			<table valign="top" width="194" align="left" height="142">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fde20467b18123673d4cbb2e29b0ecd83de4d1acb440464901300d9d4defd96ceb761eacef21956102e084f181b8968d3" title="WilliamsWCLocationJP"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/17/WilliamsWCLocationPtg.png" alt="JP" alias="Name" title="JP" style="border-color: #000000; margin: 0px; width: 221px; height: 162px;" thid="c05263f5-135c-4175-9059-fb431d376406" width="221" border="0" height="162" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;">Fall in love with painting the great outdoors in this watercolor video demonstration! You'll learn the materials you need for portability and ease when away from the studio, as well as tips for creating a strong composition, such as what elements to include in your painting. Then, learn how to have fun with color mixing both on the palette  and on your surface as you capture the beauty of the landscapes around you!<br />
+			<br />
+			<i>&quot;One of the best watercolor landscape tutorials. Informative, motivating, and resulting in an achievable painting.&quot; </i>--IJ, ArtistsNetwork.tv<br />
+			<br />
+			<a title="JP" style="color: #1b8ebe; font-family: Times,serif; font-weight: bold; text-decoration: none; font-size: 15px;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26ffc55e45b7e2daed8bdf1c44e9dbc9778dc394f1142502d59564f28990f20500ec182b91299e9714c31dc748c5c0e4704">Preview <i>Watercolor on Location </i>here now!</a></span></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="DL" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f4b2be65f5806cc23791a2741f141e07c11f1fa6729d47ddb9242ca738188b8cbc70b940c86d1a0014fa2c933647d0474" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;">Affordable, Portable Art Instruction</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			 			
+			<table valign="top" width="252" align="left" height="181">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fca4f43eb6fd4e518fbca58b2ba196bb8cb11016981b175f320c38e7797c88bfc39f11f9664a18e1120d28ef2976362c8" title="DL"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/EmersonCreativeDetail.png" alt="DL" alias="Name" title="DL" style="border-color: #000000; margin: 0px;" mdid="2be9c3e8-3a5e-4a75-b229-7fe14e014ac6" width="231" border="0" height="151" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;">ArtistsNetwork.tv videos are also available on DVD and to download. Create beautiful art whenever, wherever, and in whatever format you want! 			 			
+			<p>
+			This week's featured download: <i>Creative Art Class: Mark Making and Drawing </i>with Dawn Emerson
+			</p>
+			<p>
+			<i>&quot;This was not what I expected--it was so much better! Thank you for getting the gears unstuck again!&quot;</i> --CH, ArtistsNetwork.tv
+			</p>
+			<p>
+			<a title="JP" style="color: #1b8ebe; font-family: Times,serif; font-weight: bold; text-decoration: none; font-size: 15px;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f4b2be65f5806cc23791a2741f141e07c11f1fa6729d47ddb9242ca738188b8cbc70b940c86d1a0014fa2c933647d0474">Visit NorthLightShop.com to browse the full selection today!</a>		 			
+			</p>
+			</span></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 15px 0px 0px;" valign="top" align="left"><a title="ATV" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f21090dfcf9a007fc07291b5fc2bbc5ae06dd710b12c828bf723f54634c67d5be48539921dcbeaa6a0a0496ee5718b7c3" style="text-decoration: none; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 30px; color: #4b4b4b;">100s of Ways to Improve Your Art</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="mobile" style="border-bottom: 1px solid #cccccc; padding: 15px 0px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" valign="top" align="left">			
+			<table valign="top" width="202" align="left" height="119">
+				<tbody>
+					<tr>
+						<td style="padding: 0px 10px 10px 0px;" valign="top" align="left">						<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f7da3d673e6f18e81f8256472dfe1b5e670e2df85a9302cae2e866f6d9f535b9611eb8deec4d645695cefcbcc82c09580" title="Stream"  ><img src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/KingBotanicalsPreview.png" alt="Stream" alias="Name" title="Stream" style="border-color: #000000; margin: 0px;" mdid="77faafcb-d8d7-4346-aec7-b0bbe911e088" width="249" border="0" height="193" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: #4b4b4b; font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 16px;">With over 600 video workshops available at ArtistsNetwork.tv, and new videos added every week, we know you'll find something to help improve your art! 			
+			<p>
+			Featured video: <i>Beautiful Botanicals</i> with Bente Starcke King<br />
+			</p>
+			<p>
+			<i>&quot;Very informative. Loved all approaches to botanical painting.&quot;</i> --DH, ArtistsNetwork.tv <br />
+			</p>
+			<a title="JP" style="color: #1b8ebe; font-family: Times,serif; font-weight: bold; text-decoration: none; font-size: 15px;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f21090dfcf9a007fc07291b5fc2bbc5ae06dd710b12c828bf723f54634c67d5be48539921dcbeaa6a0a0496ee5718b7c3">Click here to check out our vast assortment of instructional videos to begin enhancing your art today!&nbsp;</a>
+			<p>
+			</p>
+			</span></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"></custom></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><!----New Release----->
+<table class="mobile" style="font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 14px;" valign="middle" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 35px; font-weight: 500; text-decoration: none; padding: 15px 0px 10px;" align="center">Enjoy Art Demos From Life!<br /></td>
+		</tr>
+	</tbody>
+</table>
+<!----end new realease--------></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><!----Start products-->
+<table class="mobile" style="font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 14px;" valign="top" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px; text-align: center; vertical-align: top;" align="center">
+			<!---_start Product Left---->			
+			<table class="full-width" valign="top" width="47%" cellspacing="0" cellpadding="0" align="left">
+				<tbody>
+					<tr>
+						<td align="left">
+						<table class="full-width" align="left">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px;" valign="top" align="center"><a title="ProductMehaffeyLight" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f6ee1a32dd6cd650183ebbc963a9ec9a48c9bcfae38593d2c2a46b9e3ee60de3267c5cc7c5b213fbd63ce7d2ba9599c49"  ><img class="mobile-image" alt="ProductMehaffeyLight" src="http://image.artists-hub.com/lib/fea615737566057d77/m/4/BridgeAcrylic.jpg" title="ProductMehaffeyLight" style="border-color: #000000; margin: 0px; width: 275px; height: 174px;" mdid="d83ed023-f3a2-443f-a75c-c71522fdc75d" width="275" border="0" height="174" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px 0px;" valign="top" align="center"><a title="Name" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 300; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fa3d1caf1364b82b10980e9e9f2cb8190f86446db04aa8d82f332a960a4771ef9ec8712b9b61ae376fc48f75444fa11b1">Acrylic Landscapes: Light and Shadow<br />
+									</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="color: #156c91; font-family: Times,serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 18px; padding: 15px 0px;" href="http://www.artistsnetwork.tv/courses/paint-acrylic-landscapes-light-and-shadow-in-plein-air-with-mark-mehaffey?utm_term=ProductMehaffeyLight" valign="top" align="center">FREE&nbsp;Preview</td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td style="padding: 10px 0px;" width="100%" valign="middle" align="center">
+									<table width="200" align="center">
+										<tbody>
+											<tr>
+												<td class="content-width" style="padding: 12px; border-radius: 5px; text-transform: uppercase; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 400;" width="100%" valign="middle" bgcolor="#1b8ebe" align="center"><a title="SUBSCRIBE" style="color: #ffffff; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fa3d1caf1364b82b10980e9e9f2cb8190f86446db04aa8d82f332a960a4771ef9ec8712b9b61ae376fc48f75444fa11b1">SUBSCRIBE</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!----end product Left---->
+			<!----start product Right---->
+			<table class="full-width" valign="top" width="47%" cellspacing="0" cellpadding="0" align="right">
+				<tbody>
+					<tr>
+						<td align="center">
+						<table class="full-width" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px;" valign="top" align="center"><a title="ProductNimmerFromLife" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fc5af9e0574ddf87f86fcb656b20eca27cc9c571afba92326d8355b31a43d265f084b7e50f7c4a7504afe6c79e5ed1f50"  ><img class="mobile-image" alt="ProductNimmerFromLife" src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/NimmerLifeMain2.png" alias="Name" title="ProductNimmerFromLife" style="border-color: #000000; margin: 0px;" dontmaintainaspect="true" mdid="99821f04-3c40-4188-89f6-0c67b8ba1cea" width="275" border="0" height="179" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px 0px;" valign="top" align="center"><a title="Name" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 300; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f7439ca7a4825d16c0db2a28aa9e4ad1222995807af412e4298bc5e2e1754899287937ebd083b5411e971943f23651d95">Abstract Art: Explorations from Life<br />
+									</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="color: #156c91; font-family: Times,serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 18px; padding: 15px 0px;" href="http://www.artistsnetwork.tv/courses/creating-abstract-art-explorations-from-life?utm_term=ProductNimmerFromLife" valign="top" align="center">FREE&nbsp;Preview</td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td style="padding: 10px 0px;" width="100%" valign="middle" align="center">
+									<table width="200" align="center">
+										<tbody>
+											<tr>
+												<td class="content-width" style="padding: 12px; border-radius: 5px; text-transform: uppercase; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 400;" width="100%" valign="middle" bgcolor="#1b8ebe" align="center"><a title="SUBSCRIBE" style="color: #ffffff; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f7439ca7a4825d16c0db2a28aa9e4ad1222995807af412e4298bc5e2e1754899287937ebd083b5411e971943f23651d95">SUBSCRIBE</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-----end product right--------->
+			<!---end products-----></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><!----Start products-->
+<table class="mobile" style="font-family: Calibri,Arial,Helvetica,sans-serif; font-size: 14px;" valign="top" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px; text-align: center; vertical-align: top;" align="center">
+			<!---_start Product Left---->			
+			<table class="full-width" valign="top" width="47%" cellspacing="0" cellpadding="0" align="left">
+				<tbody>
+					<tr>
+						<td align="center">
+						<table class="full-width" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px;" valign="top" align="center"><a title="ProductHolmesDrawingPeople" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f274cdfd9484ed630d561ae1266ac8d729088d2d6418e830fb413b37dd55b74d662f93ebb85b33b11a5de022be1e89212"  ><img class="mobile-image" alt="ProductHolmesDrawingPeople" src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/HolmesPeoplePlacesPreview.png" title="ProductHolmesDrawingPeople" style="border-color: #000000; margin: 0px; width: 275px; height: 174px;" mdid="2c1ee637-8d1f-4652-8665-682b34f2cb6c" width="275" border="0" height="174" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px 0px;" valign="top" align="center"><a title="Name" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 300; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f274cdfd9484ed630d561ae1266ac8d729088d2d6418e830fb413b37dd55b74d662f93ebb85b33b11a5de022be1e89212" >Drawing & Painting People in Places<br />
+									</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="color: #156c91; font-family: Times,serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 18px; padding: 15px 0px;" href="http://www.artistsnetwork.tv/courses/urban-sketching-drawing-people-in-places?utm_term=HolmesDrawingPeople" alias="ProductHolmesDrawingPeople" valign="top" align="center">FREE&nbsp;Preview</td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td style="padding: 10px 0px;" width="100%" valign="middle" align="center">
+									<table width="200" align="center">
+										<tbody>
+											<tr>
+												<td class="content-width" style="padding: 12px; border-radius: 5px; text-transform: uppercase; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 400;" width="100%" valign="middle" bgcolor="#1b8ebe" align="center"><a title="SUBSCRIBE" style="color: #ffffff; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f3060a9ce72dc626ee1dbca7ca3f33aeb5ed95b05cee3bc560db6ff512359c2b236a1b9203eb283f8f53a324e633b8a74" >SUBSCRIBE</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!----end product Left---->
+			<!----start product Right---->
+			<table class="full-width" valign="top" width="47%" cellspacing="0" cellpadding="0" align="right">
+				<tbody>
+					<tr>
+						<td align="center">
+						<table class="full-width" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px;" valign="top" align="center"><a title="ProductSchuerrRiver" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f96d04648322dfd45546dc8234da3c2556305d70915e85dd6da27ef617cc15da2a47a5510440d5ff3ffe4c226d2d06ac9"  ><img class="mobile-image" alt="ProductSchuerrRiver" src="http://image.artists-hub.com/lib/fea615737566057d77/m/16/SchuerrRiverPreview.png" title="ProductSchuerrRiver" style="border-color: #000000; margin: 0px; width: 275px; height: 174px;" mdid="3d9432b2-02f1-4449-bd28-ef25bc5047e7" width="275" border="0" height="174" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="padding: 10px 0px 0px;" valign="top" align="center"><a title="Name" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 300; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f6742656d71877d353683033011e63e4d751c82b63fa5a5e689e1addd5f013d6a7f619d79ab85a69a37768a33c3de5d3f">Plein Air Pastel: Winding River<br />
+									</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td class="content-width" style="color: #156c91; font-family: Times,serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 18px; padding: 15px 0px;" href="http://www.artistsnetwork.tv/courses/plein-air-painting-workshop-in-pastel-winding-river?utm_term=SchuerrRiver" valign="top" align="center">FREE&nbsp;Preview</td>
+								</tr>
+							</tbody>
+						</table>
+						<table width="100%" align="center">
+							<tbody>
+								<tr>
+									<td style="padding: 10px 0px;" width="100%" valign="middle" align="center">
+									<table width="200" align="center">
+										<tbody>
+											<tr>
+												<td class="content-width" style="padding: 12px; border-radius: 5px; text-transform: uppercase; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 400;" width="100%" valign="middle" bgcolor="#1b8ebe" align="center"><a title="SUBSCRIBE" style="color: #ffffff; text-decoration: none;" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f6742656d71877d353683033011e63e4d751c82b63fa5a5e689e1addd5f013d6a7f619d79ab85a69a37768a33c3de5d3f">SUBSCRIBE</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-----end product right--------->
+			<!---end products-----></td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"></custom></td>
+						</tr>
+						<tr>
+
+							<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;" width="600" cellspacing="0" cellpadding="0" align="center">
+	<tbody>
+		<tr>
+			<td style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 25px; font-weight: 200; padding: 15px 0px 10px;" align="center">ArtistsNetwork.tv Videos Available On Demand!</td>
+		</tr>
+		<tr>
+			<td align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f50e78598f0c5983b1d321998acbac173be7980f7fea98c8ea6741d53bae27292aa60a2f1f1122c0fc77a92984fe79f51" title="ArtistsNetworkTV Membership Options"><img alt="ArtistsNetworkTV Membership Options" title="ArtistsNetworkTV Membership Options" style="border-color: #000000; width: 300px; height: 331px; margin: 0px;" src="http://image.artists-hub.com/lib/fea615737566057d77/m/2/sapercomputere.jpg" width="300" border="0" align="middle" height="331" /></a></td>
+		</tr>
+		<tr>
+			<td align="left">
+			<br />
+			<span style="padding: 10px 0px; color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 100;" align="center" valign="top">Learn from top artists as they share their techniques with you from the comfort of your own home! Watch anytime, anywhere, from any computer!</span>
+			<br />
+			<br />
+			<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f8b4ec38dbfb42895841e0ffd02e3d753c6e32967f10e1a1ed74f25b4e2d576567b2f7fb0ac7a13d15f3fb34f101f5088" title="Artist Network.tv Bundles"  style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 24px; font-weight: 300; text-decoration: none;">MEMBERSHIP OPTIONS</a><br />
+			<br />
+			<a title="Individual Workshop Subscriptions" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f8dd2c20b38730b5330b9815559142c36cc50c454aecc11232aea70312e5d9bed4745a73e3a1b7ab71b7b764564a4f1be"  style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: 300;">Individual Workshop Subscriptions</a><br />
+			<span style="padding: 5px 0px 10px; color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 100;">Subscribe to any individual art workshop for just $16.99 and receive a lifetime subscription to that video. Over 600 workshops to choose from, with a new video added every week! <a title="Individual Workshop Subscriptions-Subscribe" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fa0b1e47414979b04bd83fe0878173e481f3c93b4a1496ec3c9219362cd8ce6a3a7061cd50a0aaf5fdd96b3870cec1690" >Subscribe now</a>.</span><br />
+			<br />
+			<a   title="1-Month Full-Library Subscription" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26ffbf2a59e813e3121dd2b40e51ec75dea76db9cf4f0bda9ba015ce962e0ef643e353d86b3cdaf3524b348e320c23528c4" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: 300;">1-Month Full-Library Subscription</a><br />
+			<span style="padding: 5px 0px 10px; color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 100;">Get access to ALL of the art workshops for $19.99 per month--over 600 workshops in a wide range of subjects and mediums! Watch every workshop whenever you like, as often as you like. A new video is added every week!&nbsp;<a   title="" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f088029f4e633c44affa677fd6df5347d052b1d120819c28921616378cf55519348ce2c8c568b3fb2d30bfc64e7e016b7">Subscribe now</a>.</span><br />
+			<br />
+			<a  title="12-Month Full-Library Subscription" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f5f35de02d5ff833f32224ad702ecd45965c7ea53699c0cdee5cfcdf0accba5eb1941018282bfae6b6928e1dd5218bf1d" style="color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: 300;">12-Month Full-Library Subscription<i> - Best Value!</i></a><br />
+			<span style="padding: 5px 0px 10px; color: #4b4b4b; font-family: Ubuntu,Calibri,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 100;">Get access to ALL of the art workshops for $199 for 12 months--over 600 workshops in a wide range of subjects and mediums! Watch every  workshop whenever you like, as often as you like. A new video is added every week! <a  title="12-Month Full-Library Subscription-Subscribe" href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fc48aa51d41b8b497058754afe77c0137d4a578bfd9e4eef7a9be3996344c6b8552ee2a171ba94e40c7f0cbe53d5802d0">Subscribe now</a>.</span><br />
+			<br />
+			</td>
+		</tr>
+	</tbody>
+</table></td></tr></table></td></tr></table></custom></td>
+						</tr>
+						<tr>
+
+					<td align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"><table class="mobile" style="color: #000000; font-family: Ubuntu, Calibri, Arial, Helvetica, sans-serif; font-size: 12px;" align="center" cellspacing="0" cellpadding="0" width="600">
+	<tbody>
+		<tr>
+			<td class="full-width" style="padding: 10px 0px 0px; color: #565d70; font-family: Ubuntu, Calibri, Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 200; border-top: 1px dashed #cccccc;" align="center"><strong>See Art | Love Art | Share Art</strong><br />
+			#myartistsnetwork</td>
+		</tr>
+	</tbody>
+</table>
+<!----Start footer---->
+<table class="mobile" align="center" cellspacing="0" cellpadding="0" border="0" width="600">
+	<tbody>
+		<tr>
+			<td style="padding: 10px 0px;" align="center" valign="middle">
+			<table align="center" width="75%">
+				<tbody>
+					<tr>
+						<td align="center" bgcolor="#ffffff" valign="top">
+						<table>
+							<tbody>
+								<tr>
+									<td style="padding: 8px;" align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fabb758c82df02828d7320942fc3ea620c7cfee5ee72baa2a6a518f5d60277a3393ebc494ecf2ac6c255d9fe3e8fc2a26" title="Artists Network on Facebook"  ><img alt="Artists Network on Facebook" src="http://image.artists-hub.com/lib/fea615737566057d77/m/13/gray-facebook-25.jpg" style="width: 25px; height: 25px; border-color: #000000; margin: 0px;" height="25" border="0" width="25" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td align="center">
+						<table>
+							<tbody>
+								<tr>
+									<td style="padding: 8px;" align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f3755c1c3988fff0803965e2336d49b6fd69e51f3d1915da253e97399ff965afd1e8974bea0dcea0cde7e30f17f9f80a4" title="Artists Network on Pinterest"  "="" ><img alt="Artists Network on Pinterest" src="http://image.artists-hub.com/lib/fea615737566057d77/m/13/gray-pinterest-25.jpg" style="width: 25px; height: 25px; border-color: #000000; margin: 0px;" height="25" border="0" width="25" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td align="center">
+						<table>
+							<tbody>
+								<tr>
+									<td style="padding: 8px;" align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fe7e06d120280b8655cd7d07e6888770d118e3c524c92fae7334dd03e772cc6fccf88f4f635977e722f395a9d90584e01" title=""  ><img alt="Artists Network on Twitter" src="http://image.artists-hub.com/lib/fea615737566057d77/m/13/gray-twitter-25.jpg" style="width: 25px; height: 25px; border-color: #000000; margin: 0px;" height="25" border="0" width="25" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td align="center">
+						<table>
+							<tbody>
+								<tr>
+									<td style="padding: 8px;" align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f06c35a535ad71232ece50f43b6c7d1c9743c7116b9e32f3933965617c5d95f0b72fe21def41acf117955882475fc5509" title=""  ><img alt="=\" artists"="" network="" on="" youtube"="" src="http://image.artists-hub.com/lib/fea615737566057d77/m/13/gray-youtube-25.jpg" style="width: 25px; height: 25px; border-color: #000000; margin: 0px;" height="25" border="0" width="25" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td align="center">
+						<table>
+							<tbody>
+								<tr>
+									<td style="padding: 8px;" align="center"><a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f5bf786887f9eab38c30cdcdb2bb66ffd346f7d6798d35e9627802ae73e6d3d591dd33f075162ea8429bbbdc14e1aaaa0" title=""  ><img src="http://image.artists-hub.com/lib/fe8a157370600c7a7c/m/4/gray-instagram-25.png" style="width: 25px; height: 25px; border-color: #000000; margin: 0px;" height="25" border="0" width="25" /></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!----end footer---->
+<img src="https://pixel.app.returnpath.net/pixel.gif?r=ffc5171714a040da1724188860ba085d51442d62&c=antv-video" height="1" width="1" />
+<img src="https://pixel.inbox.exacttarget.com/pixel.gif?r=ffc5171714a040da1724188860ba085d51442d62&c=antv-video" height="1" width="1" /></td></tr></table></td></tr></table></custom></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table align="center"><tr><td width="10"><img src="http://click.artists-hub.com/open.aspx?ffcb10-febf1d767d65037c-fe0915747365067c70167075-fea615737566057d77-fed1157177670678-fe34167571650679701573-ff65107376&d=40047" width="1" height="1"></custom></td></tr></table>
+
+	
+</body>
+<table align="center" cellpadding="0" cellspacing="0" style="table-layout: fixed;text-align:center;max-width:600px;"><tr>
+  <td align="center" valign="middle" style="padding: 10px 0px; font-family: Calibri, Arial, Verdana, sans serif; font-size: 13px; color:#777777;text-align:center;">This email was sent to:  <b>Lukaspatty@gmail.com</b><br>by: <b>F+W, </b>10151 Carver Road, Suite 200 Blue Ash, 
+OH, 45242  USA</font></td></tr><tr><td  style="padding-bottom: 10px; font-family: Calibri, Arial, Verdana, sans serif; font-size: 13px; color:#777777;" align="center">
+<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f41579720044ba42445a0045ad43e98e6e2fe536924d0fd2861296b05af97c7db65763613f91bdc04b0eb98b0b471812b" >Manage&nbsp;Subscriptions</a>&nbsp;| <a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f699446afb0faa39b92bee9d06dfe1416d8eeb45f6508cde73b81033c87e661bf5d82c05fed818bcd24c40089cb8c2795" >Update&nbsp;Profile</a>&nbsp;| <a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f094707913bfbf4aff01a6772916d1cd8b77450f09beee6de4fa6b841ccb3f9f667b0631089c5393661eafd0927a73874" >One&#8209;Click&nbsp;Unsubscribe</a>&nbsp;| <a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26fb3403f1886edcf5a75e6ceec95371127753207891ec6f655cb3368d67e5c1bbd35e589d0b147a08cb3b635098a45f267" >Web&nbsp;Version&nbsp;&raquo;</a><br>
+<br>
+We respect your right to privacy.  
+<a href="http://click.artists-hub.com/?qs=ff83bd6e4790f26f2b38fab103c0a9849bca46454fb0f750b1e2a551c1cf070ea5d29dce1919b07dd7af546fd5d6764150067bd213db5902" >View our policy.</a></td></tr></table></td>
+  </tr>
+</table>
+</html>
+
+--nUM254eloIST=_?:--

@@ -1,0 +1,155 @@
+﻿Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.7.200 with SMTP id 191csp3172910vkh;
+        Sun, 13 Aug 2017 02:54:59 -0700 (PDT)
+X-Received: by 10.99.117.94 with SMTP id f30mr21278947pgn.366.1502618099755;
+        Sun, 13 Aug 2017 02:54:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502618099; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VT5W6prdhcvJ0aEXgFeW8epGWEi6jH9zNwH5mEn2g/ZGl1fQ+s/cW/cfVXUJO9pk+t
+         sybe7iH5Ib6WF/2F1gvPMsuKTAYxJh6IE+JHpeMA4fRojubbRM2oR78p3z5g3NmzB5oy
+         tW0hJnHuIrpTU/GawvkeVNV67IiUeFaYRInqJFR1kY7N0wYvzBXyO5ZirlebXGXPCbjd
+         gHY63nkwnqHHQj+UPak7B8xucFbo+x3fpGlvBDUZMt3lSSQ7hqJa9mBUaG/1seGquNlr
+         7YbCu3BUAHmVzpSEI1w4z2F7HR/H/EtdyXVt8r0IPmPmE/ern4gR1GwKPAcz51U6vmzR
+         c9zA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=campaign-guid:campaign-track:campaign-type:campaign-unsub
+         :feedback-id:list-unsubscribe:mime-version:to:reply-to:from:subject
+         :date:message-id:dkim-signature:dkim-filter
+         :arc-authentication-results;
+        bh=ODXr6Imgh96a77QAzgseqbWXemxVorTzRAmpkrB6hCU=;
+        b=K2gW89D5S8fBiiJ5wpNTiNXK22O6jWJ+CEgzvBg/ir9/z2HksY3lZkfKqquqMTExDJ
+         s1A7tqTV2N3bGkDcA6Mh//Pj+4gOCKhfR+iRBEQqBpSyYwe08TCI60AoqnhM/APQRVUb
+         qW7ulf+NVV3SiwIk8MII0/s4PgcFS1v6zqn2r9TF0U5k4FB2I1Xv286TDBBROT6tkt1D
+         lIYXWgJe1qXVohvxDvbcaVMUHFxOa54UYkkx3INyzdgPxNiEcJfaI9+CNy62QafgeNX4
+         q9FcEpY2oTKHvCKxZ+rHX2Pb/oHmAaTJg+pKtN9Vhyqpv3lNyQil4oP+IwVn6FChBJyc
+         /wJQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kirim.email header.s=senddefault header.b=FBjttIkT;
+       spf=pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.189 as permitted sender) smtp.mailfrom=bounceke3@kirim.email
+Return-Path: <bounceke3@kirim.email>
+Received: from vps15.kirim.email (vps15.kirim.email. [203.114.75.189])
+        by mx.google.com with ESMTPS id y73si2741229pgd.195.2017.08.13.02.54.59
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 13 Aug 2017 02:54:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.189 as permitted sender) client-ip=203.114.75.189;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kirim.email header.s=senddefault header.b=FBjttIkT;
+       spf=pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.189 as permitted sender) smtp.mailfrom=bounceke3@kirim.email
+Received: from [127.0.0.1] (main.kirim.email [103.200.4.90]) (using TLSv1 with cipher ECDHE-RSA-AES128-SHA (128/128 bits)) (Client did not present a certificate) by sending.localdomain (Postfix) with ESMTPSA id 233CC40D84 for <nikosatrianto@gmail.com>; Sun, 13 Aug 2017 16:54:40 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.11.0 sending.localdomain 233CC40D84
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/relaxed; d=kirim.email; s=senddefault; t=1502618080; bh=ODXr6Imgh96a77QAzgseqbWXemxVorTzRAmpkrB6hCU=; h=Date:Subject:From:Reply-To:To:List-Unsubscribe:From; b=FBjttIkTwlOABa6Nj4Np84RC5Ak+XC06VBjdhP7h+dqqZHaqR23ZN8SpMagWsPafU
+	 2HLU0n5BYVqlz5e/6i4Jih69tCk6NKjrMVgQfLn7flyBst/MRUIfg3vkmQjH10HOFi
+	 8gjttH0i4m76Na6jpmJvTgGf71xCnFMFVJXaBCm4=
+Message-ID: <5400e25e94862e1278a0f677c31beb29@swift.generated>
+Date: Sun, 13 Aug 2017 16:54:40 +0700
+Subject: Terapi Punggung Dan Perut
+From: "Pasarpas.com" <info@pasarpas.com>
+Reply-To: "Pasarpas.com" <info@pasarpas.com>
+To: nikosatrianto@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_=_swift_v4_1502618080_77318f325bd5e0e539c6bec8bce3d038_=_"
+X-MAILER: Kirim.Email
+List-Unsubscribe: <https://aplikasi.kirim.email//unsub/OISsAHu6q7eGzXi20170813040933SJu/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0>
+Feedback-ID: OISsAHu6q7eGzXi20170813040933SJu:4bc0f0d2-2607-4aec-abff-4966ce312260:BC:f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0
+Campaign-UNSUB: https://aplikasi.kirim.email//unsub/OISsAHu6q7eGzXi20170813040933SJu/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0
+Campaign-TYPE: bc_
+Campaign-TRACK: OISsAHu6q7eGzXi20170813040933SJu
+Campaign-GUID: 4bc0f0d2-2607-4aec-abff-4966ce312260
+
+--_=_swift_v4_1502618080_77318f325bd5e0e539c6bec8bce3d038_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Penyangga Punggung & Perut membantu meringankan rasa sakit dan membetulkan =
+sikap tubuh yang buruk menjadi benar. Dengan pelan menarik kembali bahu leh=
+er dan kepala menjadi tegak sambil menyelaraskan tulang belakang.
+
+**Kenapa Anda Harus Menggunakan Penyangga Punggung & Perut?**
+
+- Direkomendasikan oleh dokter
+- Penyangga punggung dan perut sehingga punggung lebih tegak dan perut tida=
+k buncit
+- Membenarkan postur tubuh anda jika dipakai secara berkala.
+- Menghilangkan rasa nyeri dan pegal karena pustur tubuh tidak sebagaimana =
+mestinya.
+- Bisa dipakai pria dan wanita (suami istri)
+
+AYO MILIKI SEKARANG!!
+
+**Klik Disini Untuk Pemesanan =E2=9E=A1 [https://pasarpas.com/products/powe=
+r-penyangga-punggung-perut](https://aplikasi.kirim.email/redir/tz1ZC2rNcgqH=
+efd20170813040934eTr/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf450499=
+9b54744be0) =20
+ Klik Disini Untuk Pemesanan =E2=9E=A1 [https://pasarpas.com/products/power=
+-penyangga-punggung-perut](https://aplikasi.kirim.email/redir/tz1ZC2rNcgqHe=
+fd20170813040934eTr/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999=
+b54744be0)**
+
+[![](http://i.imgur.com/mkGRdqk.jpg)](https://aplikasi.kirim.email/redir/tz=
+1ZC2rNcgqHefd20170813040934eTr/f5ba9a294951014646e5be189e6c6500674375b5f815=
+f4cf4504999b54744be0)
+
+<div id=3D"kirimemail-userinfo-footer" style=3D"font: Arial, Helvetica, san=
+s-serif!important; font-size: 10px!important;"><div class=3D"kirimemail-use=
+rinfo kirimemail-clearfix clearfix" id=3D"kirimemail-senderinfo">Team =20
+Pasarpas =20
+Global =20
+Indonesia
+
+</div>- - - - - -
+
+[Unsubscribe](https://aplikasi.kirim.email/unsub/OISsAHu6q7eGzXi20170813040=
+933SJu/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)<no=
+script>![](https://aplikasi.kirim.email//image/OISsAHu6q7eGzXi2017081304093=
+3SJu/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)</nos=
+cript></div>
+
+--_=_swift_v4_1502618080_77318f325bd5e0e539c6bec8bce3d038_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w=
+3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Penyangga Punggung &amp; Perut membantu meringankan rasa sak=
+it dan membetulkan sikap tubuh yang buruk menjadi benar. Dengan pelan menar=
+ik kembali bahu leher dan kepala menjadi tegak sambil menyelaraskan tulang =
+belakang.</p>
+
+<p><strong>Kenapa Anda Harus Menggunakan Penyangga Punggung &amp; Perut? </=
+strong></p>
+
+<ul><li>Direkomendasikan oleh dokter</li>
+=09<li>Penyangga punggung dan perut sehingga punggung lebih tegak dan perut=
+ tidak buncit</li>
+=09<li>Membenarkan postur tubuh anda jika dipakai secara berkala.</li>
+=09<li>Menghilangkan rasa nyeri dan pegal karena pustur tubuh tidak sebagai=
+mana mestinya.</li>
+=09<li>Bisa dipakai pria dan wanita (suami istri)</li>
+</ul><p>AYO MILIKI SEKARANG!!</p>
+
+<p><strong>Klik Disini Untuk Pemesanan&nbsp;&#10145;&nbsp;<a href=3D"https:=
+//aplikasi.kirim.email/redir/tz1ZC2rNcgqHefd20170813040934eTr/f5ba9a2949510=
+14646e5be189e6c6500674375b5f815f4cf4504999b54744be0">https://pasarpas.com/p=
+roducts/power-penyangga-punggung-perut </a><br>
+Klik Disini Untuk Pemesanan&nbsp;&#10145;&nbsp;<a href=3D"https://aplikasi.=
+kirim.email/redir/tz1ZC2rNcgqHefd20170813040934eTr/f5ba9a294951014646e5be18=
+9e6c6500674375b5f815f4cf4504999b54744be0">https://pasarpas.com/products/pow=
+er-penyangga-punggung-perut </a></strong></p>
+
+<p><a href=3D"https://aplikasi.kirim.email/redir/tz1ZC2rNcgqHefd20170813040=
+934eTr/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><i=
+mg src=3D"http://i.imgur.com/mkGRdqk.jpg" style=3D"height:279px; width:500p=
+x"></a></p><div id=3D"kirimemail-userinfo-footer" style=3D"font: Arial, Hel=
+vetica, sans-serif!important; font-size: 10px!important;"><div id=3D'kirime=
+mail-senderinfo' class=3D'kirimemail-userinfo kirimemail-clearfix clearfix'=
+><p>Team<br/>Pasarpas<br/>Global<br/>Indonesia<br/></p></div><hr><a href=3D=
+"https://aplikasi.kirim.email/unsub/OISsAHu6q7eGzXi20170813040933SJu/f5ba9a=
+294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"> Unsubscribe</a=
+><noscript><img alt=3D"" style=3D"display: none;" width=3D"1" height=3D"1" =
+src=3D"https://aplikasi.kirim.email//image/OISsAHu6q7eGzXi20170813040933SJu=
+/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0" border=
+=3D"0"></noscript></div></body></html>
+
+
+--_=_swift_v4_1502618080_77318f325bd5e0e539c6bec8bce3d038_=_--

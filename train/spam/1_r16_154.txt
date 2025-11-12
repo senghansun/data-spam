@@ -1,0 +1,1944 @@
+Delivered-To: vincentjraven@gmail.com
+Received: by 10.100.161.161 with SMTP id q30csp3592925pjc;
+        Mon, 21 Aug 2017 03:34:06 -0700 (PDT)
+X-Received: by 10.55.8.17 with SMTP id 17mr17707883qki.179.1503311646229;
+        Mon, 21 Aug 2017 03:34:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503311646; cv=none;
+        d=google.com; s=arc-20160816;
+        b=c0Y/c8IUqYBNP//PRmNmCMgIpKjf2yDUFrnZWvvtsrWVyVWBrlZztZ9Q1knCfAlRWG
+         Ojxjib/yYrRB0vGWNwE08EkqfnwDVEc1voLguIeQvxFdEq3OUvoa1AGJscdf3vQfg/rg
+         vKVJorJQmiiOdXQFSvNz4AS/ioXbdMmuvXzVqSsnXs4Z4egm1mTjz1Ep6Ps7LBuf6wye
+         n0956qrOHQeeCQTMYhkqAqEcynvHvVmhw6wVqPv+3iUbz9A2AuigS/wgnQghIjEW5/yN
+         TG1AlQijV6VUaxVM9e7/t9lwbt+lggJhobE9p0jHzeWk2yC8guqakzWCy2AqWkAbSEM7
+         wJRA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:to:reply-to:from:subject:date:message-id
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=Ta6uHB+cMIoyrq/752D0X5s+xAuKWl8gsM2xL1Hj31E=;
+        b=BPy5JOjAj14RJSNA6RV7PGy/arX6RIgJd1V3amgMlvwg74g+KW7DT3M69StIi6y74+
+         LpHPVOxpO6AtI9WxcxIV62Fa0cGUZ71LV0ni8HA0DwWcrpze1wJ3Jn2HwDi/J2C/XA6p
+         +w4LVRdAIn0pBFkpsNgBCbb5MslUL+LDKu7btohDo65f0RYAZps4rg733HpTu2UCLM6K
+         7M6bPv4gDD2U6TbWARNufZHGaHHxDtjidBb9r0sfOEK4Lm5Yq72F8+yXVtviXYSil/35
+         s4YJmrMmmFEYRyKNCz4o1J5bHo1utIw6cQpKdqKXoD87uXzfI3nXkbjrqvWHInsa4iIF
+         92qA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tiket.com header.s=rgfo2hpd5jx7pe6rz6ghp76op545puad header.b=P73jx3wy;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=j9oY0Dfo;
+       spf=pass (google.com: domain of 0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com designates 54.240.11.134 as permitted sender) smtp.mailfrom=0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com
+Return-Path: <0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com>
+Received: from a11-134.smtp-out.amazonses.com (a11-134.smtp-out.amazonses.com. [54.240.11.134])
+        by mx.google.com with ESMTPS id q92si2127893qtd.448.2017.08.21.03.34.05
+        for <vincentjraven@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 21 Aug 2017 03:34:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com designates 54.240.11.134 as permitted sender) client-ip=54.240.11.134;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tiket.com header.s=rgfo2hpd5jx7pe6rz6ghp76op545puad header.b=P73jx3wy;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=j9oY0Dfo;
+       spf=pass (google.com: domain of 0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com designates 54.240.11.134 as permitted sender) smtp.mailfrom=0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=rgfo2hpd5jx7pe6rz6ghp76op545puad; d=tiket.com; t=1503311645; h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type; bh=BI9p/vmVu4tX2IpMeURIFRLOMQkatTLwRm1xfW80rvs=; b=P73jx3wycHv7ruby+84WvWkY0HwoEFSRaW6FsHEJzYNt96VCdoDb6O5ujzcqNAH/ f5KzX94lwWO/dxAwn9A12ORZT+KXVYZLqLKjWrexFCvTfZHxQzcPwc+c1d6yZWNy1Uv RZxFQM/21yQgtlPcxcBHZcgJk4WhfIQG0g06P5Ao=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1503311645; h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:Feedback-ID; bh=BI9p/vmVu4tX2IpMeURIFRLOMQkatTLwRm1xfW80rvs=; b=j9oY0DfowARB6lj6u/p34shlkPiqT4XYnzhgMOP5zCFNJiPYHK/uEu9K4LNW4DRr qTMIzwo0kUF9Btmjxb8XdFVtGoo+0kkCAl0HVS7Gb09W1jCUuKqGUwG5NgNivwfo65N GbPNltfpxaQKZh0WyuGafz6op1jeEY5I2b2S71sk=
+Message-ID: <0100015e045b496b-167ec891-95e4-4fc5-a776-d7216f516829-000000@email.amazonses.com>
+Date: Mon, 21 Aug 2017 10:34:05 +0000
+Subject: Rindu Bali? Diskon Tiket Pesawat & Booking Hotel Menanti
+From: "Tiket.com" <noreply@tiket.com>
+Reply-To: noreply@tiket.com
+To: vincentjraven@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_=_swift_v4_1503308636599aab5c4e567_=_"
+X-SES-Outgoing: 2017.08.21-54.240.11.134
+Feedback-ID: 1.us-east-1.jHfF/ESX98jp05VpBn6X9bsjq0PVsf52o/UwW23NCJQ=:AmazonSES
+
+--_=_swift_v4_1503308636599aab5c4e567_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+Hotel 100K, BNI550K, Sewa Mobil 250K, Inventory Hotel Bali
+Jika anda tidak bisa membaca email ini, silakan melihat email dengan membuk=
+a tautan berikut: http://www.tiket.com/newsletter/d?sid=3D19636887&token=3D=
+00f6adddd053bd3d74ca2259351f68d7&part=3D201708
+
+
+
+--_=_swift_v4_1503308636599aab5c4e567_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+ />
+=09<meta  name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0, maximum-scale=3D1.0," />=20
+=09<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+=09<style type=3D"text/css">
+=09=09
+
+=09=09@media screen {
+=09=09=09@import url(//fonts.googleapis.com/css?family=3DDroid+Sans:400,700=
+);
+=09=09=09body {
+=09=09=09=09margin: 0 auto;
+=09=09=09}
+=09=09}
+
+=09=09@media only screen and (max-width: 480px) and (max-device-width: 480p=
+x) {
+=09=09=09.text-menu {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09p[class=3D"text-menu"] {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09h1 {
+=09=09=09=09font-size: 21px !important;
+=09=09=09}
+=09=09=09h2 {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09h2.border-text {
+=09=09=09=09height: 13px !important;
+=09=09=09}
+
+=09=09=09span.border-text {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09.wd-75 {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-75"] {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09.wd-25 {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-25"] {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09    color: #333 !important;
+=09=09=09    width: 95% !important;
+=09=09=09    padding: 15px 0px 15px 10px !important;
+=09=09=09    font-size: 12px !important;
+=09=09=09}
+
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09border: none !important;
+=09=09=09=09font-size: 9pt !important;
+=09=09=09}
+
+=09=09=09.icon-arrow {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09img[class=3D"icon-arrow"] {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"sm-text-center"],
+=09=09=09h2[class=3D"sm-text-center"],
+=09=09=09p[class=3D"sm-text-center"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.two-column,
+=09=09=09.img-responsive,
+=09=09=09.three-column,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.full {
+=09=09=09    display: block;
+=09=09=09    width: 100% !important;
+=09=09=09 }
+
+=09=09=09.text-responsive {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"text-responsive"],
+=09=09=09p[class=3D"text-responsive"],
+=09=09=09h2[class=3D"text-responsive"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09}
+
+=09=09@media only screen and (min-width: 481px) and (min-device-width: 481p=
+x) and (max-width: 640px) and (max-device-width: 640px) {
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09font-size: 10pt !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09=09padding: 15px 0px 15px 10px !important;
+=09=09=09=09width: 95% !important;
+=09=09=09=09font-size: 12pt !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.img-responsive,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.two-column {
+=09=09=09=09max-width: 50% !important;
+=09=09=09}
+
+=09=09=09.three-column {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+=09=09}
+=09</style>
+</head>
+
+<body>
+=09<div style=3D"font-size: 15px; margin: 0 !important; background: #ffffff=
+; font-family: Droid Sans, arial, helvetica, sans-serif !important; width: =
+100%; table-layout: fixed;">
+=09=09<div style=3D"width: 100%; margin: 0 auto;">
+=09=09=09<table width=3D"100%" align=3D"center" style=3D"Margin: 0 auto; ma=
+x-width: 700px; border-spacing: 0; color: #333333;" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0">
+=09=09=09=09<!-- START HEAD EMAIL -->
+=09=09=09=09<tr>
+=09<td style=3D"text-align: center; padding: 15px; background: rgb(230, 231=
+, 232);" align=3D"center">
+=09=09=09=09<p style=3D"margin: 0px;">
+=09=09=09<a href=3D"http://www.tiket.com/newsletter/d?sid=3D19636887&token=
+=3D00f6adddd053bd3d74ca2259351f68d7&part=3D201708" style=3D"text-decoration=
+: none; color: #333333;">Lihat tampilan di web browser anda</a>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/orange-dash-lin=
+e.jpg" style=3D"width: 100%; max-width: 700px; height: auto; " width=3D"700=
+">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/tiket-logo.j=
+pg" style=3D"max-width: 230px;" width=3D"230">
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154);">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/pesawat?utm_source=
+=3Dnewsletter&utm_medium=3Demail&utm_content=3Dflight-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">FLIGHT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/kereta-api?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dtrain-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">TRAIN</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/hotel?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Dhotel-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">HOTEL</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/event?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Devent-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">EVENT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/sewa-mobil?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dcar-search-top-header&utm_c=
+ampaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: =
+none;">CAR</a></p>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;" align=3D"center">
+=09=09<h2 style=3D"text-align: center; margin: 0px; font-size: 21px; color:=
+ #15629b; ">
+=09=09=09Hi Jurgen Raven=09=09</h2>
+=09</td>
+</tr>=09=09=09=09<!-- START HEAD EMAIL -->
+
+=09=09=09=09<!-- START CONTENT -->
+=09=09=09=09
+
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/Promo-BNI-N=
+LD" target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/1/7/newsletter-170613_bni_ilovemonday_070817_newsletter=
+-utama_700x700px.jpg" style=3D"max-width:700px; width: 100%; height: auto;"=
+ width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+<tr>
+=09<td style=3D"text-align: center; padding: 15px;" align=3D"center">
+=09=09=09=09=09<h1 style=3D"color: #f6921e;" align=3D"center">
+                Saatnya Liburan ke Pulau Dewata            </h1>
+=09=09
+=09=09
+        <div style=3D"margin-bottom: 20px;" align=3D"center">Rindu liburan =
+di Pulau Dewata bersama keluarga atau teman berlibur?<br>Pilihan diskon mas=
+kapai & hotel serta harga spesial sewa mobil menanti<br>Lihat juga harga sp=
+esial hotel di Pulau Dewata hanya untuk Anda<br><br><a href=3D"http://go.ti=
+ket.com/Promo-BNI-NLD" target=3D"_blank"><strong>Pesan Kebutuhan Liburan ke=
+ Bali Sekarang Juga!</strong></a></div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09=09=09=09<h2 class=3D"border-text" style=3D"width: 100%; height: 15px=
+; border-bottom: 1.5px solid #c0c0c0; text-align: center;">
+=09=09      <span class=3D"border-text" style=3D"font-size: 24px; backgroun=
+d-color: #fff; padding: 0 10px;">
+=09=09        Pilihan Hotel Liburan di Pulau Dewata=09=09      </span>
+=09=09    </h2>
+=09=09=09</td>
+</tr>
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px;">
+=09=09=09=09=09<table dir=3D"rtl" width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/1/s/newsletter-1square_-_hotel_neo_jelantik.new=
+s310x299.jpg" style=3D"max-width: 310px; width: 100%; height: auto;" width=
+=3D"310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>Hotel Neo Kuta Jelantik</strong><=
+/h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Patih Jelantik S=
+treet No 188 Badung Bali</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">356</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">000</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/legian-legian/legia=
+n/neo-legian-jelantik?utm_source=3Dnewsletter&utm_medium=3Demail&utm_conten=
+t=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Fneo-legian-jelantik&utm_ca=
+mpaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"background:#f=
+fca05; font-size:12pt; padding:15px; display:inline-block; text-decoration:=
+none; color:#231f20; font-weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Tusita Hotel Bali</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/u/newsletter-tusita_bali.news193x127.jpg" style=3D"margin: 10px 0;=
+ width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">318</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/kuta-city/kuta-city/the-tusita-bali-hotel?startdate=3D2017-08-22&=
+enddate=3D2017-08-23&uid=3Dbusiness:105060&utm_source=3Dnewsletter&utm_medi=
+um=3Demail&utm_content=3Dhotel%2Findonesia%2Fkuta-city%2Fkuta-city%2Fthe-tu=
+sita-bali-hotel&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" =
+style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-b=
+lock; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Oasis Kuta</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/h/newsletter-the_oasis_kuta.news193x127.jpg" style=3D"margin: 10px=
+ 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">279</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/kuta/the-oasis-kuta?startdate=3D2017-08-22&enddate=3D2017-08=
+-23&uid=3Dbusiness:113918&utm_source=3Dnewsletter&utm_medium=3Demail&utm_co=
+ntent=3Dhotel%2Findonesia%2Fbali%2Fkuta%2Fthe-oasis-kuta&utm_campaign=3DUpd=
+ate New Rate for 2017" target=3D"_blank" style=3D"background:#ffca05; font-=
+size:10pt; padding:10px; display:inline-block; text-decoration:none; color:=
+#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Duo Hotel Legian</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/d/u/newsletter-duo_hotel_legian1.news193x127.jpg" style=3D"margin: 1=
+0px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">187</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/duo-hotel-legian?startdate=3D2017-08-22&endd=
+ate=3D2017-08-23&uid=3Dbusiness:20727297&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Fduo-hot=
+el-legian&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=
+=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-block;=
+ text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Hardys Rofa Hotel and Spa</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/h/a/newsletter-hardys_rofa_hotel_and_spa_-_legian.news193x127.jpg" s=
+tyle=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">281</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/hardys-rofa-hotel-and-spa-legian-managed-by-=
+hardys-hotel-management?startdate=3D2017-08-22&enddate=3D2017-08-23&uid=3Db=
+usiness:20595490&utm_source=3Dnewsletter&utm_medium=3Demail&utm_content=3Dh=
+otel%2Findonesia%2Flegian-legian%2Flegian%2Fhardys-rofa-hotel-and-spa-legia=
+n-managed-by-hardys-hotel-management&utm_campaign=3DUpdate New Rate for 201=
+7" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:1=
+0px; display:inline-block; text-decoration:none; color:#231f20; max-width:1=
+40px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Tanaya Bed & Breakfast</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/a/newsletter-tanaya_bed_breakfast1.news193x127.jpg" style=3D"margi=
+n: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">207</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/tanaya-bed-breakfast-1?startdate=3D2017-08-2=
+2&enddate=3D2017-08-23&uid=3Dbusiness:23625862&utm_source=3Dnewsletter&utm_=
+medium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Ft=
+anaya-bed-breakfast-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_b=
+lank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:in=
+line-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Fame Hotel Sunset Road Kuta</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/f/a/newsletter-fame_hotel_sunset_road1.news193x127.jpg" style=3D"mar=
+gin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">325</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/fame-hotel-sunset-road-kuta-bali?startdate=
+=3D2017-08-22&enddate=3D2017-08-23&uid=3Dbusiness:22248227&utm_source=3Dnew=
+sletter&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%=
+2Flegian%2Ffame-hotel-sunset-road-kuta-bali&utm_campaign=3DUpdate New Rate =
+for 2017" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; pa=
+dding:10px; display:inline-block; text-decoration:none; color:#231f20; max-=
+width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Grand Livio Kuta Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/g/r/newsletter-grand_livio_kuta_hotel.news193x127.jpg" style=3D"marg=
+in: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">359</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/grand-livio-kuta-hotel?startdate=3D2017-08-2=
+2&enddate=3D2017-08-23&uid=3Dbusiness:23308630&utm_source=3Dnewsletter&utm_=
+medium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Fg=
+rand-livio-kuta-hotel&utm_campaign=3DUpdate New Rate for 2017" target=3D"_b=
+lank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:in=
+line-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Rivavi Kuta Beach Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/r/i/newsletter-rivavi_kuta_beach_hotel1.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">310</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/rivavi-kuta-beach-hotel?startdate=3D2017-08-=
+22&enddate=3D2017-08-23&uid=3Dbusiness:12133&utm_source=3Dnewsletter&utm_me=
+dium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Friv=
+avi-kuta-beach-hotel&utm_campaign=3DUpdate New Rate for 2017" target=3D"_bl=
+ank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inl=
+ine-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Eazy Suites Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/e/a/newsletter-eazy_suite_hotel.news193x127.jpg" style=3D"margin: 10=
+px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">211</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/eazy-suites-hotel?startdate=3D2017-08-22&end=
+date=3D2017-08-23&uid=3Dbusiness:3620&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Feazy-suite=
+s-hotel&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D=
+"background:#ffca05; font-size:10pt; padding:10px; display:inline-block; te=
+xt-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/HtlWkdy-NL"=
+ target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_top_hotel_weekday_extended_mobile_=
+banner_978x250.jpg" style=3D"max-width:700px; width: 100%; height: auto;" w=
+idth=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px; background: rgb(230, 231, 232)=
+;">
+=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" class=3D"full" style=3D"text-align: =
+center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/1/s/newsletter-1square_-_ramada_bali_sunset_roa=
+d_kuta.news310x299.jpg" style=3D"max-width: 310px; width: 100%; height: aut=
+o;" width=3D"310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" class=3D"full" style=3D"text-align: =
+center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>Ramada Bali Sunset Road Kuta</str=
+ong></h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Jl. Sunset Road =
+no. 9 Bali Bali</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">453</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">000</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/bali/kuta/ramada-ba=
+li-sunset-road-kuta?utm_source=3Dnewsletter&utm_medium=3Demail&utm_content=
+=3Dhotel%2Findonesia%2Fbali%2Fkuta%2Framada-bali-sunset-road-kuta&utm_campa=
+ign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"background:#ffca=
+05; font-size:12pt; padding:15px; display:inline-block; text-decoration:non=
+e; color:#231f20; font-weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Palloma Hotel Kuta</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/p/a/newsletter-palloma_hotel_kuta.news193x127.jpg" style=3D"margin: =
+10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">230</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/palloma-hotel-kuta?startdate=3D2017-08-22&en=
+ddate=3D2017-08-23&uid=3Dbusiness:194948&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Fpalloma=
+-hotel-kuta&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" styl=
+e=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-block=
+; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Lumbung Sari Beach Inn</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/l/u/newsletter-lumbung_sari_beach_inn1.news193x127.jpg" style=3D"mar=
+gin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">182</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/lumbung-sari-beach-inn-2?startdate=3D2017-08=
+-22&enddate=3D2017-08-23&uid=3Dbusiness:23545099&utm_source=3Dnewsletter&ut=
+m_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2=
+Flumbung-sari-beach-inn-2&utm_campaign=3DUpdate New Rate for 2017" target=
+=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px; disp=
+lay:inline-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Loft Legian Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/l/o/newsletter-loft_legian_hotel.news193x127.jpg" style=3D"margin: 1=
+0px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">297</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/legian/loft-legian-hotel?startdate=3D2017-08-22&enddate=3D20=
+17-08-23&uid=3Dbusiness:194728&utm_source=3Dnewsletter&utm_medium=3Demail&u=
+tm_content=3Dhotel%2Findonesia%2Fbali%2Flegian%2Floft-legian-hotel&utm_camp=
+aign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"background:#ffc=
+a05; font-size:10pt; padding:10px; display:inline-block; text-decoration:no=
+ne; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Amaris Hotel Legian</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/a/m/newsletter-amaris_hotel_legian.news193x127.jpg" style=3D"margin:=
+ 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">320</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/amaris-hotel-legian?startdate=3D2017-08-22&e=
+nddate=3D2017-08-23&uid=3Dbusiness:3102&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%2Famaris-=
+hotel-legian&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" sty=
+le=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-bloc=
+k; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>J Hotel Kuta</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/j/h/newsletter-jhotel_kuta1.news193x127.jpg" style=3D"margin: 10px 0=
+; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">282</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/kuta-city/kuta-city/j-hotel-kuta?startdate=3D2017-08-22&enddate=
+=3D2017-08-23&uid=3Dbusiness:22316064&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fkuta-city%2Fkuta-city%2Fj-hotel-kut=
+a&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"backg=
+round:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-dec=
+oration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Gong Corner Hostel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/g/o/newsletter-gong_corner_hostel.news193x127.jpg" style=3D"margin: =
+10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">65</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/kuta/gong-corner-hostel?startdate=3D2017-08-22&enddate=3D201=
+7-08-23&uid=3Dbusiness:22053022&utm_source=3Dnewsletter&utm_medium=3Demail&=
+utm_content=3Dhotel%2Findonesia%2Fbali%2Fkuta%2Fgong-corner-hostel&utm_camp=
+aign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"background:#ffc=
+a05; font-size:10pt; padding:10px; display:inline-block; text-decoration:no=
+ne; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Rabasta Resort Kuta</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/r/a/newsletter-rabasta_resort_kuta.news193x127.jpg" style=3D"margin:=
+ 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">145</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/kuta/rabasta-beach-resort-kuta?startdate=3D2017-08-22&enddat=
+e=3D2017-08-23&uid=3Dbusiness:20297597&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Fbali%2Fkuta%2Frabasta-beach-reso=
+rt-kuta&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D=
+"background:#ffca05; font-size:10pt; padding:10px; display:inline-block; te=
+xt-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Losari Sunset Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/l/o/newsletter-losari_sunset_hotel1.news193x127.jpg" style=3D"margin=
+: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">242</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/kuta/losari-hotel-sunset-bali?startdate=3D2017-08-22&enddate=
+=3D2017-08-23&uid=3Dbusiness:19427547&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fbali%2Fkuta%2Flosari-hotel-sunset-b=
+ali&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"bac=
+kground:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-d=
+ecoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Park Hotel Nusa Dua Suites and Villas</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/p/a/newsletter-park_hotel_nusa_dua_suites_and_villas.news193x127.jpg=
+" style=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">548</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/nusa-dua-nusa-dua/nusa-dua/park-hotel-nusadua-bali?startdate=3D20=
+17-08-22&enddate=3D2017-08-23&uid=3Dbusiness:19438727&utm_source=3Dnewslett=
+er&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fnusa-dua-nusa-dua%2=
+Fnusa-dua%2Fpark-hotel-nusadua-bali&utm_campaign=3DUpdate New Rate for 2017=
+" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10=
+px; display:inline-block; text-decoration:none; color:#231f20; max-width:14=
+0px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/RntCr-NL" t=
+arget=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/0/3/newsletter-03_aug_17_rentcar_250_all_channel_home_b=
+anner_978x250px.jpg" style=3D"max-width:700px; width: 100%; height: auto;" =
+width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px;">
+=09=09=09=09=09<table dir=3D"rtl" width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/1/s/newsletter-1square_-_everyday_smart_hotel_b=
+ali1.news310x299.jpg" style=3D"max-width: 310px; width: 100%; height: auto;=
+" width=3D"310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>Everyday Smart Hotel Bali</strong=
+></h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Central Kuta Squ=
+are, Patih Jelantik Street, Istana Kuta Galeria Blok Ethnic # 12/12A, Kuta,=
+ Bali 80361 Badung Bali</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">450</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">000</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/kuta-city/kuta-city=
+/everyday-smart-hotel-bali?utm_source=3Dnewsletter&utm_medium=3Demail&utm_c=
+ontent=3Dhotel%2Findonesia%2Fkuta-city%2Fkuta-city%2Feveryday-smart-hotel-b=
+ali&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"bac=
+kground:#ffca05; font-size:12pt; padding:15px; display:inline-block; text-d=
+ecoration:none; color:#231f20; font-weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Camakila Legian Bali</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/h/newsletter-the_camakila_legian_bali.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">2.236</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/legian-legian/legian/radisson-bali-legian-camakila?startdate=3D20=
+17-08-22&enddate=3D2017-08-23&uid=3Dbusiness:2542&utm_source=3Dnewsletter&u=
+tm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Flegian-legian%2Flegian%=
+2Fradisson-bali-legian-camakila&utm_campaign=3DUpdate New Rate for 2017" ta=
+rget=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px; =
+display:inline-block; text-decoration:none; color:#231f20; max-width:140px"=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Tanjung Benoa Beach Resort</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/h/newsletter-the_tanjung_benoa_beach_resort.news193x127.jpg" style=
+=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">808</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/nusa-dua-nusa-dua/nusa-dua/the-tanjung-benoa-beach-resort?startda=
+te=3D2017-08-22&enddate=3D2017-08-23&uid=3Dbusiness:12517&utm_source=3Dnews=
+letter&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fnusa-dua-nusa-d=
+ua%2Fnusa-dua%2Fthe-tanjung-benoa-beach-resort&utm_campaign=3DUpdate New Ra=
+te for 2017" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt;=
+ padding:10px; display:inline-block; text-decoration:none; color:#231f20; m=
+ax-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Papillon Echo Beach</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/p/a/newsletter-papillon_echo_beach.news193x127.jpg" style=3D"margin:=
+ 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">841</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/canggu-canggu/canggu/papillon-echo-beach-1?startdate=3D2017-08-22=
+&enddate=3D2017-08-23&uid=3Dbusiness:24677025&utm_source=3Dnewsletter&utm_m=
+edium=3Demail&utm_content=3Dhotel%2Findonesia%2Fcanggu-canggu%2Fcanggu%2Fpa=
+pillon-echo-beach-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_bla=
+nk" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inli=
+ne-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Dash Hotel Seminyak</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/d/a/newsletter-dash_hotel_seminyak1.news193x127.jpg" style=3D"margin=
+: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">894</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/seminyak/dash-hotel-seminyak?startdate=3D2017-08-22&enddate=
+=3D2017-08-23&uid=3Dbusiness:21259231&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fbali%2Fseminyak%2Fdash-hotel-seminy=
+ak&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"back=
+ground:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-de=
+coration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Kila Infinity8 Bali</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/k/i/newsletter-kila_infinity8_bali1.news193x127.jpg" style=3D"margin=
+: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">540</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/jimbaran/kila-infinity8-bali?startdate=3D2017-08-22&enddate=
+=3D2017-08-23&uid=3Dbusiness:22199798&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fbali%2Fjimbaran%2Fkila-infinity8-ba=
+li&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"back=
+ground:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-de=
+coration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Taum Resort Bali</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/a/newsletter-taum_resort_bali.news193x127.jpg" style=3D"margin: 10=
+px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">708</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/seminyak-seminyak/seminyak/taum-resort-bali-1?startdate=3D2017-08=
+-22&enddate=3D2017-08-23&uid=3Dbusiness:23622765&utm_source=3Dnewsletter&ut=
+m_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fseminyak-seminyak%2Fsemi=
+nyak%2Ftaum-resort-bali-1&utm_campaign=3DUpdate New Rate for 2017" target=
+=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px; disp=
+lay:inline-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Leaf Jimbaran</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/t/h/newsletter-the_leaf_jimbaran1.news193x127.jpg" style=3D"margin: =
+10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">1.049</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/jimbaran/the-leaf-jimbaran?startdate=3D2017-08-22&enddate=3D=
+2017-08-23&uid=3Dbusiness:21524112&utm_source=3Dnewsletter&utm_medium=3Dema=
+il&utm_content=3Dhotel%2Findonesia%2Fbali%2Fjimbaran%2Fthe-leaf-jimbaran&ut=
+m_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"backgroun=
+d:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-decorat=
+ion:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>VOUK Hotel & Suites</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/v/o/newsletter-vouk_hotel_and_suites.news193x127.jpg" style=3D"margi=
+n: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">1.034</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/nusa-dua/vouk-hotel-suites?startdate=3D2017-08-22&enddate=3D=
+2017-08-23&uid=3Dbusiness:20146647&utm_source=3Dnewsletter&utm_medium=3Dema=
+il&utm_content=3Dhotel%2Findonesia%2Fbali%2Fnusa-dua%2Fvouk-hotel-suites&ut=
+m_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"backgroun=
+d:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-decorat=
+ion:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Royal Tulip Visesa Ubud</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/r/o/newsletter-royal_tulip_visesa_ubud4.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">1.785</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/bali/ubud/royal-tulip-visesa-ubud?startdate=3D2017-08-22&enddate=
+=3D2017-08-23&uid=3Dbusiness:22608290&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fbali%2Fubud%2Froyal-tulip-visesa-ub=
+ud&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"back=
+ground:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-de=
+coration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/FNTSTX-NL" =
+target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/f/a/newsletter-fantastix_2017_home_banner_978x250_.jpg"=
+ style=3D"max-width:700px; width: 100%; height: auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+
+
+=09=09=09=09<!-- END CONTENT -->
+
+=09=09=09=09<!-- START FOOTER -->
+=09=09=09=09<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/mail-line.jpg" =
+style=3D"width: 100%; max-width: 700px; height: auto;" width=3D"700">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<strong>Share Our Newsletter to a Friend!</strong>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<form action=3D"https://www.tiket.com/newsletter_forward ?>" method=
+=3D"GET" enctype=3D"multipart/form-data">
+=09=09=09<input name=3D"newsletter_id" type=3D"hidden" value=3D"772">
+=09=09=09<input name=3D"newsletter_token" type=3D"hidden" value=3D"122b5996=
+d2b42376e898d26c56f55801">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"wd-75" style=3D"width: 75%">
+=09=09=09=09=09=09<input name=3D"email" type=3D"email" placeholder=3D"examp=
+le@example.com" class=3D"form-lg" style=3D"border: none; background-color: =
+#e6e7e8; color: #333; padding: 20px 0 20px 15px; font-size: 18px; width: 95=
+%;">
+=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"wd-25" style=3D"width: 25%">
+=09=09=09=09=09=09<button class=3D"btn-lg-send" type=3D"submit" style=3D"ba=
+ckground: #00a7e1; padding: 20px; border: none; width: 100%; font-size: 12p=
+t; color:#fff;">
+=09=09=09=09=09=09=09SEND NOW=20
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+white-raquo.png" class=3D"icon-arrow" style=3D"max-width: 14px;" width=3D"1=
+4">
+=09=09=09=09=09=09</button>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</form>
+=09</td>
+</tr>
+<tr><td style=3D"padding: 15px;"></td></tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154); padding: 0px; width:100%; ">
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td style=3D"padding: 15px; text-align: center; col=
+or: #fff;">
+=09=09=09=09=09=09=09=09=09<h2 style=3D"margin: 10px 0 5px 0; font-size: 21=
+px;"><strong>Butuh Bantuan?</strong></h2>
+=09=09=09=09=09=09=09=09=09<p  style=3D"font-size: 16px; margin: 0 0 5px 0;=
+">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"tel:+622129633600" style=3D"text-d=
+ecoration: none; color: #fff;">+62 21 2963 3600</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 16px; margin: 0 0 5px 0;"=
+>
+=09=09=09=09=09=09=09=09=09=09Email : <a href=3D"mailto:cs@tiket.com" style=
+=3D"text-decoration: none; color: #fff;">cs@tiket.com</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" align=3D"right">
+=09=09=09=09=09=09<p style=3D"margin: 0px; text-align: right;">
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+cs-2.jpg" style=3D"max-width: 250px; width: 100% height: auto;" width=3D"25=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/ee4c8d9c" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(160, 191, 94)=
+;">Available on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+android-2.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=
+=3D"210">
+=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09<p style=3D"font-size: 16px; margin-top: 10px; color: rgb=
+(160, 191, 94);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.co=
+m/images/newsletter/2/green-raquo.png" style=3D"max-width: 13px;" width=3D"=
+13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/6c61f6f2" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(7, 8, 8);">Av=
+ailable on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+ios.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=3D"21=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin-top: 10px; font-size: 16px; color: rgb=
+(7, 8, 8);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.com/ima=
+ges/newsletter/2/raquo.png" style=3D"max-width: 13px;" width=3D"13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 250px;" class=3D"left-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center">
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09Sent to <a href=3D"#" style=3D"color: rgb(166, 168, 17=
+1); text-decoration: none;">vincentjraven@gmail.com</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin: 10px 0;">
+=09=09=09=09=09=09=09Why did I get this? <a href=3D"http://www.tiket.com/ne=
+wsletter/manage_subscribe?email=3Dvincentjraven%40gmail.com&token=3Dce50c08=
+b0fdf9c4a40c94afeb3f1a1da" style=3D"text-decoration: none; color: #15629b;"=
+><strong>Unsubscribe</strong></a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09To ensure that our messages get to your inbox,<br/>
+=09=09=09=09=09=09=09please add <a href=3D"mailto:mailto:noreply@tiket.com"=
+ style=3D"color: rgb(166, 168, 171); text-decoration: none;">noreply@tiket.=
+com</a> to your address book.
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 450px;" class=3D"right-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center" align=
+=3D"center">
+=09=09=09=09=09=09<p style=3D"padding: 15px; text-align: center;">
+=09=09=09=09=09=09=09<a href=3D"http://facebook.com/tiket" target=3D"_blank=
+" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/facebook.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://twitter.com/tiket" target=3D"_blank"=
+ style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/twitter.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://plus.google.com/+tiket" target=3D"_b=
+lank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/g+.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://tiketdotcom.tumblr.com/" target=3D"_=
+blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/tumblr.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://www.youtube.com/user/tiketdotcom" ta=
+rget=3D"_blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/youtube.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>=09=09=09=09<!-- END FOOTER -->
+=09=09=09</table>
+=09=09</div>
+=09</div>
+</body>
+</html>
+
+
+
+--_=_swift_v4_1503308636599aab5c4e567_=_--

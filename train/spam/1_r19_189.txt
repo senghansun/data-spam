@@ -1,0 +1,486 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.176.25.11 with SMTP id v11csp936014uag;
+        Fri, 11 Aug 2017 09:06:42 -0700 (PDT)
+X-Received: by 10.36.208.139 with SMTP id m133mr15557131itg.48.1502467602297;
+        Fri, 11 Aug 2017 09:06:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502467602; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Ljk0SDbilhdSO16YMxPr5t9dJ3XhoyF5xQvvUdErHUPidj9ho5c8cXDphYuLRe13UB
+         2eRThHQv/BqdYiTzX9rpyUkUY0bBGwA+srjUbeNreByOv41MI0k+z7uzXqykrzWz1IEZ
+         7XNCutaJKJseUZ0P0i+OmbEewAZhmGDe50XKuUnTQHF0xp5RjxqXCu1vY0vp9MW01kyo
+         muJ9B2+N13C5FxUNnOBLRiz6KWGfhsIJvHCOI4I67uCOlXPjQloqVBznaU2NEqqmvd+Q
+         GWYgaH/MFWgWMFwgRqrxJrpzLaZuSn7jV1eiI31V9lWTCLDeF2Nancin+qq/oLwODGBe
+         83/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:reply-to:mime-version:list-unsubscribe:from
+         :feedback-id:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=/hPiy7UIsGqSU4i+eBNVYkdHkVNwpfyNhk73xhC1hV8=;
+        b=wYLqZ9Ka6WIuw3eMkqqr+G2qqJ6sOVeYSzjsZyOMp9rferwhLMAF/Kun5xEe5FgPom
+         vyCYCb2Oc4ATcdaeLuPsk8FUzAPVV/XtF59i3JNJoG+59t/yS7k0BcYKh53pzIRVSD+Y
+         GuotF3V6CQR/HSHkxtnt3xMWmItnxgEJaHmoQb7gSRSqR2hxD9r3dyeYg+78Nl9ffHqM
+         v+DJoEoxvSGv4KQ81dgnxoZIfrPch85AIQiJs8nrg6J112iMKTW809838+hC0RpiLITG
+         OeC9lq24XCdITHkHWnzaSjViTaYYGUcGs6k6RDiQQ7fM20+k+z6JsHtbuxmFSCkCR9HH
+         niCQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@spotify.com header.s=s1 header.b=kc4sYDup;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=Sz2MoeBC;
+       spf=pass (google.com: domain of bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com designates 167.89.23.30 as permitted sender) smtp.mailfrom=bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=spotify.com
+Return-Path: <bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com>
+Received: from o4.em.spotify.com (o4.em.spotify.com. [167.89.23.30])
+        by mx.google.com with ESMTPS id x68si1511346itg.61.2017.08.11.09.06.41
+        for <itsmetenki@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 11 Aug 2017 09:06:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com designates 167.89.23.30 as permitted sender) client-ip=167.89.23.30;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@spotify.com header.s=s1 header.b=kc4sYDup;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=Sz2MoeBC;
+       spf=pass (google.com: domain of bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com designates 167.89.23.30 as permitted sender) smtp.mailfrom=bounces+2437332-aab5-itsmetenki=gmail.com@em.spotify.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=spotify.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=spotify.com; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to; s=s1; bh=ZEuAHvMVHm/uKQYEiTLXBuSCXCY=; b=kc4sYDupjZVY96gjyhHoiGk 5QU2YZZgw53s0ZYj6Qrx6Zgnk3vxifzjypzkVD3qnxKGrTAQWz4GK2hkSDxzSWW8 QnqTpF920ObJhIhMw8mtqWfZQvTKBJwIEtvdJP+Qt9nqEzt7JKmJw9jd74FOYMHW FhNRll+1eKspfFY1zWoM=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to:x-feedback-id; s=smtpapi; bh=ZEuAHvMVHm/uKQYEiTLXBuSCXCY=; b=Sz2MoeBCJ5pDDvj4w/ VcGaZ7Xc532YihNy4/AGuUK0toJp+Bq9Akose0QasN6LPZ+kfPR2C13TLIlAJxRr 5wKlJDgoKDToxIHd+KAaZCqAP9wWWGYscZkFh5DEsXwz3xucbRUv8L6phnmKZ8B+ mzNN17ZUSZ81+Yfhc7je+wrfo=
+Received: by filter0474p1mdw1.sendgrid.net with SMTP id filter0474p1mdw1-11322-598DD611-6
+        2017-08-11 16:06:41.06378184 +0000 UTC
+Received: from MjQzNzMzMg (ec2-54-85-158-189.compute-1.amazonaws.com [54.85.158.189]) by ismtpd0037p1mdw1.sendgrid.net (SG) with HTTP id 6FTinPu8Rt-Np2xR_lW_oQ for <itsmetenki@gmail.com>; Fri, 11 Aug 2017 16:06:41.150 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=f0655e7604046bd766de57b4bd17d15048a38081bb912c007428056d9f2a
+Date: Fri, 11 Aug 2017 16:06:41 +0000 (UTC)
+Feedback-ID: 220216:152524:2074:iterable
+From: Spotify <hello@spotify.com>
+List-Unsubscribe: <http://links.spotify.com/e/eh?_t=1090098043a54e4ca3e92096868a66e3&_m=ee2647f122c84f2ab59915ed6d11570f&_e=9BPxYCKA2oSz3YgNTXlCZJDMWqYUy89XavCe-6HxuykpHgvJQCm2BZHOdvui_LB30On-fHSy7n012uPp6GpD9Wr1hVf5uDglSooVa6HohRSKVJMyNictKHVWuw4ShLzR1EnDVL_Km1Pq4jbmfTV_GhS-c1f-wOBC95wf6rMxzdQs6ubh-U_YbzGPR0AuvLsNYMMe2gAxDUPK98_eL3AJ0cD5WXkBQEg6qxOPoyPtS0Lj-BhbKHyhto2Obfvjwais0kS8n-9gIl4DQ81eoYx0fzhiWp5-eKtvzBisUzSyV3fBa8DRNjhBCkhhRhcjFLIAGg99-gpo_Jn3c1YG4kARSnxTCKSfnuZ5ZFsv68yNC49HGdYeD6F6vN_b4eMcS5EB>
+Mime-Version: 1.0
+Reply-To: hello@spotify.com
+Subject: AVICI dari Avicii dan banyak lagi sekarang tersedia di Spotify!
+To: itsmetenki@gmail.com
+X-Campaign-ID: 152524
+X-Message-ID: ee2647f122c84f2ab59915ed6d11570f
+Message-ID: <6FTinPu8Rt-Np2xR_lW_oQ@ismtpd0037p1mdw1.sendgrid.net>
+X-SG-EID: 2DKT2n3YKRuf3v7+h8CQqr/f8hhKlz4MBNP8u+Kb2ug11LTnV0mM4tHSccFMYK5cSjJ55zKT/z79Xf JoHuoFkWbtWtCiIt/51Ziy5onAmbq9p3VFIeVsNJNQW9aDCr+CR+d/QNkPkSi1RuNWCYFp1Ra88Vcw i0W54+nvnuyzoStcwj1QVgsL7GQaywPqjzeP+hN/I+qFrOw9IHLHDGOSgw==
+X-SG-ID: SmDFk6fVVFXrSNgMN4Q94XkuZPoq+rdbzsgbxJ+nxu9yix5jsgvuYF3EgemSopOlpytlhesp8mUC5M HYgb6kgcpWn53FXUX9pvL2V8ICCIgCJpyQCC03AhcjMoiLIg+5kWm0YiQNFQv7Zzk2ciYxGCakF0AR nEp0ew1ITHGXJjM=
+X-Feedback-ID: 2437332:JUVKxEFj5aWuloCc8WC8GFEJxjKBDCYkQ59yLXSmcf8=:JUVKxEFj5aWuloCc8WC8GFEJxjKBDCYkQ59yLXSmcf8=:SG
+
+--f0655e7604046bd766de57b4bd17d15048a38081bb912c007428056d9f2a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+AV=C4=AACI dari Avicii dan banyak lagi sekarang tersedia di Spotify! =20
+<http://www.spotify.com/>  Lagu baru dari artis favoritmu sekarang tersedia=
+ di=20
+Spotify. Kamu bisa mendengarnya di Release Radar: DENGARKAN SEKARANG =20
+<https://open.spotify.com/user/spotify/playlist/37i9dQZEVXbitD2UgW199b> AV=
+=C4=AACI=20
+<https://open.spotify.com/album/0XV4cXBFmXIhQnQMYUX9u6> dari  Avicii=20
+<https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6> =20
+<https://open.spotify.com/album/0XV4cXBFmXIhQnQMYUX9u6>  Dapatkan Spotify=
+=20
+untuk: =C2=A0iPhone <https://itunes.apple.com/app/spotify-music/id324684580=
+>iPad=20
+<https://itunes.apple.com/app/spotify-music/id324684580>Android=20
+<https://play.google.com/store/apps/details?id=3Dcom.spotify.music>Lainnya=
+=20
+<https://www.spotify.com/download/>  Pesan ini telah dikirimkan ke=20
+itsmetenki@gmail.com. Jika kamu tidak ingin menerima email ini lagi dari=20
+Spotify, kamu bisamengedit profilmu <https://www.spotify.com/accounts/profi=
+le>=20
+atauberhenti berlangganan=20
+<http://links.spotify.com/e/eh?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3De=
+e2647f122c84f2ab59915ed6d11570f&_e=3D9BPxYCKA2oSz3YgNTXlCZJDMWqYUy89XavCe-6=
+HxuykpHgvJQCm2BZHOdvui_LB30On-fHSy7n012uPp6GpD9Wr1hVf5uDglSooVa6HohRSKVJMyN=
+ictKHVWuw4ShLzR1EnDVL_Km1Pq4jbmfTV_GhS-c1f-wOBC95wf6rMxzdQs6ubh-U_YbzGPR0Au=
+vLsNYMMe2gAxDUPK98_eL3AJ0cD5WXkBQEg6qxOPoyPtS0Lj-BhbKHyhto2Obfvjwais0kS8n-9=
+gIl4DQ81eoYx0fzhiWp5-eKtvzBisUzSyV3fBa8DRNjhBCkhhRhcjFLIAGg99-gpo_Jn3c1YG4k=
+ARSnxTCKSfnuZ5ZFsv68yNC49HGdYeD6F6vN_b4eMcS5EB>
+. Syarat-syarat Penggunaan <https://www.spotify.com/legal/end-user-agreemen=
+t/>
+Kebijakan Privasi <https://www.spotify.com/legal/privacy-policy/>Hubungi Ka=
+mi=20
+<https://www.spotify.com/about-us/contact/> Spotify AB, Birger Jarlsgatan 6=
+1,=20
+4tr, 113 56 Stockholm, Sweden=20
+--f0655e7604046bd766de57b4bd17d15048a38081bb912c007428056d9f2a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html> <html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"margi=
+n: 0; padding: 0"> <head> <meta charset=3D"utf-8"> <meta name=3D"viewport" =
+content=3D"width=3Ddevice-width, initial-scale=3D1"> <title>AV=C4=AACI dari=
+ Avicii dan banyak lagi sekarang tersedia di Spotify!</title> <style type=
+=3D"text/css">@media only screen and (min-device-width:481px){div[id=3D"mai=
+n"]{width:480px!important}}</style> <!--[if mso]><style>body,table,tr,td,h1=
+,h2,h3,h4,h5,h6,center p,a,span,table.MsoNormalTable{font-family:"Helvetica=
+ Neue","Helvetica","Arial",sans-serif!important}</style><![endif]--> </head=
+> <body topmargin=3D"0" leftmargin=3D"0" rightmargin=3D"0" bottommargin=3D"=
+0" marginheight=3D"0" marginwidth=3D"0" style=3D"-webkit-font-smoothing: an=
+tialiased; width: 100% !important; -webkit-text-size-adjust: none; margin: =
+0; padding: 0"><span style=3D"color:transparent;visibility:hidden;display:n=
+one;opacity:0;height:0;width:0;font-size:0;"></span><img src=3D"http://link=
+s.spotify.com/e/eo?_t=3D1090098043a54e4ca3e92096868a66e3&amp;_m=3Dee2647f12=
+2c84f2ab59915ed6d11570f&amp;_e=3DQy7TNL4NbNsN6mbi1kldK0d5SiFMr8wXHUYv-KVefK=
+X6mfg52qFawt6XatvZA-1tLYVkSv5OF-4sr1b9nmQstF9cWm-CW0t-cAuYwe3AOuHc_wvnUotaF=
+KeETdATMuV0KcUfikJq9mUhGpn5JLe30TEdKXlW2snrUWLbmMm4iPc%3D" style=3D"border:=
+0;width:1px;height:1px;border-width:0px!important;display:none!important;li=
+ne-height:0!important;" width=3D"1" height=3D"1"/> <!--TEST-FORM--> <!--[if=
+ (mso) | (IE)]><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" vali=
+gn=3D"top" width=3D"480" align=3D"center"><tr><td valign=3D"top" align=3D"l=
+eft" style=3D" word-break:normal; border-collapse:collapse; font-family:'Ci=
+rcular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; li=
+ne-height:18px; color:#555555;"><![endif]--> <table cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0" valign=3D"top" width=3D"100%" align=3D"center" st=
+yle=3D" width:100%; max-width:480px;"> <tr> <td valign=3D"top" align=3D"lef=
+t" style=3D" word-break:normal; border-collapse:collapse; font-family:'Circ=
+ular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; line=
+-height:18px; color:#555555;"> <center> <div id=3D"main"> <table class=3D"h=
+eader-root" width=3D"100%" height=3D"50" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"border: none; margin: 0px; border-collapse: collapse; padding: 0=
+px; width: 100%; height: 50px;"> <tbody valign=3D"middle" style=3D"border: =
+none; margin: 0px; padding: 0px;"> <tr height=3D"20" valign=3D"middle" styl=
+e=3D"border: none; margin: 0px; padding: 0px; height: 20px;"> <td colspan=
+=3D"3" height=3D"20" valign=3D"middle" style=3D"border: none; margin: 0px; =
+padding: 0px; height: 20px;"></td> </tr> <tr valign=3D"middle" style=3D"bor=
+der: none; margin: 0px; padding: 0px;"> <td width=3D"6.25%" valign=3D"middl=
+e" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td> <=
+td valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <a=
+ href=3D"http://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e=
+3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_e=3DVgjYlZRyBd3_4aeEscTGupqfxRD0Mn=
+c8unEcDxViqSs10pEmYCc0oC7QicjgPjc4-GeNFhUb13wpdE7ieVySvDVdF9IlJYiYlSBMwZ4A0=
+EebaN7cELlZwqUEuY6Xb0jeeqLk3RCcz2x20XUb5iwd13XGRB2rCBwGtc7KYo70sSw%3D" styl=
+e=3D"border: none; margin: 0px; padding: 0px; text-decoration-line: none; t=
+ext-decoration-style: initial; text-decoration-color: initial;"><img class=
+=3D"logo" src=3D"http://aro.scdn.co/newsletters/b220713a2d4ac7a75ebe1f9ee0c=
+78549.png" width=3D"122" height=3D"37" alt=3D"" style=3D"border: none; marg=
+in: 0px; padding: 0px; display: block; max-width: 100%; width: 122px; heigh=
+t: 37px;"></a> </td> <td width=3D"6.25%" valign=3D"middle" style=3D"border:=
+ none; margin: 0px; padding: 0px; width: 6.25%;"></td> </tr> <tr height=3D"=
+20" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; hei=
+ght: 20px;"> <td colspan=3D"3" height=3D"20" valign=3D"middle" style=3D"bor=
+der: none; margin: 0px; padding: 0px; height: 20px;"></td> </tr> </tbody> <=
+/table> <table class=3D"text-root" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"border: none; margin: 0px; border-collapse: collapse; p=
+adding: 0px; width: 100%;"> <tbody valign=3D"middle" style=3D"border: none;=
+ margin: 0px; padding: 0px;"> <tr valign=3D"middle" style=3D"border: none; =
+margin: 0px; padding: 0px;"> <td class=3D"table-separator" width=3D"6.25%" =
+valign=3D"middle" style=3D"width: 6.25%; border: none; margin: 0px; padding=
+: 0px;"></td> <td valign=3D"middle" style=3D"border: none; margin: 0px; pad=
+ding: 0px;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=
+=3D"100%" style=3D"margin: 0px; padding: 0px"> <tbody> <tr> <td class=3D"fo=
+nt text-paragraph" align=3D"left" style=3D"border: none; margin: 0px; paddi=
+ng: 0px 0px 5px; font-family: Circular, &quot;Helvetica Neue&quot;, Helveti=
+ca, Arial, sans-serif; font-weight: 200; text-align: left; text-decoration-=
+line: none; text-decoration-style: initial; text-decoration-color: initial;=
+ color: rgb(97, 100, 103); font-size: 14px; line-height: 20px;"> Lagu baru =
+dari artis favoritmu sekarang tersedia di Spotify. Kamu bisa mendengarnya d=
+i Release Radar: </td> </tr> </tbody> </table> </td> <td class=3D"table-sep=
+arator" width=3D"6.25%" valign=3D"middle" style=3D"width: 6.25%; border: no=
+ne; margin: 0px; padding: 0px;"></td> </tr> <tr valign=3D"middle" style=3D"=
+border: none; margin: 0px; padding: 0px;"> <td colspan=3D"3" class=3D"text-=
+padding" height=3D"20" valign=3D"middle" style=3D"border: none; margin: 0px=
+; padding: 0px; height: 20px;"></td> </tr> </tbody> </table> <table class=
+=3D"call-to-action-root" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"border: none; margin: 0px; border-collapse: collapse; padding: 0p=
+x; width: 100%;"> <tbody valign=3D"middle" style=3D"border: none; margin: 0=
+px; padding: 0px;"> <tr valign=3D"middle" style=3D"border: none; margin: 0p=
+x; padding: 0px;"> <td class=3D"table-separator" width=3D"6.25%" valign=3D"=
+middle" style=3D"width: 6.25%; border: none; margin: 0px; padding: 0px;"></=
+td> <td class=3D"font" valign=3D"middle" align=3D"left" style=3D"border: no=
+ne; margin: 0px; padding: 0px; font-family: Circular, &quot;Helvetica Neue&=
+quot;, Helvetica, Arial, sans-serif; font-weight: 200; text-align: left; te=
+xt-decoration-line: none; text-decoration-style: initial; text-decoration-c=
+olor: initial; font-size: 14px; line-height: 1.1em;"> <center style=3D"bord=
+er: none; margin: 0px; padding: 0px;"> <!--[if mso]><v:roundrect xmlns:v=3D=
+"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office=
+:word" href=3D"http://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e920968=
+68a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_e=3DD7u7DSsIfJ9HvYIAquVWBPym=
+r_cSJyzPZSd4M6m5nGIs9o3ZhXNAX7SVl1po5pFl1E6gYC66QS5GBhaXujTzjbM7qgCe64rmVV5=
+Prmh_w6ZEGqOLG6pcf-zotruH96C6auvB2wffuMbl9NlWoroxFzVlfgz5kbYN8lw9IYm9KEc%3D=
+" style=3D"v-text-anchor: middle; width: 240px; height: 44px; text-decorati=
+on: none; color: #FFFFFF; font-family: 'Helvetica Neue', 'Helvetica', 'Aria=
+l', sans-serif; font-size: 13px; font-weight: bold; line-height: 44px" arcs=
+ize=3D"50%" fillcolor=3D"#1DB954" strokecolor=3D"#1DB954"><w:anchorlock/><c=
+enter style=3D"color: #FFFFFF; font-family: 'Helvetica Neue', 'Helvetica', =
+'Arial', sans-serif; font-size: 13px; font-weight: bold; line-height: 16px;=
+ text-transform:uppercase">DENGARKAN SEKARANG</center></v:roundrect><![endi=
+f]--> <!--[if mso]><div style=3D"mso-hide: all"><![endif]--> <a href=3D"htt=
+p://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee264=
+7f122c84f2ab59915ed6d11570f&_e=3DVUeteppthxfnLF0rd1IxcqEA3k3EnCZcUY2n_Eptzc=
+fUA8MDmXEJyvwqHM0Vg0rtHtf2pI7hAci3Sgde_pLophbl-_6KXOneYyo_FLT_-viaJn532mJSq=
+qsMo6NRp_znqMEpe_33IhYlGq-DzjV2TDcKzY2zqkCZVkRLNaSTqLA%3D" class=3D"call-to=
+-action-button" bgcolor=3D"#1ED760" style=3D"border: none; margin: 0px; pad=
+ding: 0px; text-decoration-line: none; text-decoration-style: initial; text=
+-decoration-color: initial; width: 240px; height: 44px; background-color: r=
+gb(30, 215, 96); border-radius: 22px; color: rgb(255, 255, 255); display: b=
+lock;"> <table class=3D"call-to-action-container" width=3D"240" height=3D"4=
+4" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; margin: 0px; =
+border-collapse: collapse; padding: 0px; width: 240px; height: 44px;"> <tbo=
+dy valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <t=
+r valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <td=
+ class=3D"call-to-action-inner-padding" width=3D"22" valign=3D"middle" styl=
+e=3D"border: none; margin: 0px; padding: 0px; width: 22px;"></td> <td class=
+=3D"font call-to-action-cell" height=3D"100%" valign=3D"middle" align=3D"ce=
+nter" style=3D"border: none; margin: 0px; padding: 0px; font-family: Circul=
+ar, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; text-decorati=
+on-line: none; text-decoration-style: initial; text-decoration-color: initi=
+al; border-radius: 22px; color: rgb(255, 255, 255); font-size: 13px; font-w=
+eight: bold; height: 100%; line-height: 16px; text-align: center; text-tran=
+sform: uppercase;">DENGARKAN SEKARANG</td> <td class=3D"call-to-action-inne=
+r-padding" width=3D"22" valign=3D"middle" style=3D"border: none; margin: 0p=
+x; padding: 0px; width: 22px;"></td> </tr> </tbody> </table> </a> <!--[if m=
+so]></div><![endif]--> </center> </td> <td class=3D"table-separator" width=
+=3D"6.25%" valign=3D"middle" style=3D"width: 6.25%; border: none; margin: 0=
+px; padding: 0px;"></td> </tr> <tr class=3D"call-to-action-padding" height=
+=3D"35" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+ height: 35px;"> <td colspan=3D"3" class=3D"call-to-action-padding" height=
+=3D"35" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+ height: 35px;"></td> </tr> </tbody> </table> <!----> <table class=3D"text-=
+root" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: n=
+one; margin: 0px; border-collapse: collapse; padding: 0px; width: 100%;"> <=
+tbody valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;">=
+ <tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> =
+<td class=3D"table-separator" width=3D"6.25%" valign=3D"middle" style=3D"wi=
+dth: 6.25%; border: none; margin: 0px; padding: 0px;"></td> <td valign=3D"m=
+iddle" style=3D"border: none; margin: 0px; padding: 0px;"> <table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"margin: 0px=
+; padding: 0px"> <tbody> <tr> <td class=3D"font text-paragraph" align=3D"le=
+ft" style=3D"border: none; margin: 0px; padding: 0px 0px 5px; font-family: =
+Circular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-we=
+ight: 200; text-align: left; text-decoration-line: none; text-decoration-st=
+yle: initial; text-decoration-color: initial; color: rgb(97, 100, 103); fon=
+t-size: 14px; line-height: 20px;"> <a href=3D"http://links.spotify.com/u/eu=
+?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570=
+f&_e=3DY-FdJgC6CCWUR7IvT9yGAufOWPasgKx0W92-_q0wopSVBsM5S73XilVhIABWgkRBnp-C=
+FX8I3tdl68lyMSUkEl_IlqDQhcLpDUkC5qE652KTIqLGf0_FHteODl9J0s04QcpKn4b--hlKnxZ=
+Zsxfl3DpVSp3N3XjRulz6fZ3wjJc%3D" align=3D"left" style=3D"border: none; marg=
+in: 0px; padding: 0px; font-family: Circular, &quot;Helvetica Neue&quot;, H=
+elvetica, Arial, sans-serif; font-weight: 200; text-align: left; text-decor=
+ation: none; color: rgb(30, 215, 96);">AV=C4=AACI</a> dari <a href=3D"http:=
+//links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f=
+122c84f2ab59915ed6d11570f&_e=3D3t_9Twq9au0csp5ugxui2IkqWIbtiy20qFVHYSyNvahn=
+L9bSbonnMYqEFPQ1hlGbKBeS7w4NG_oC7S6-NeY9dPrlJvBMqCBXzg70lKbnj2yzjuQgFnJObeY=
+Z9CLONC1SCGwGYQWjXZri2LppAAcxFUueVNmbWBg0NBz3M1JXQJI%3D" align=3D"left" sty=
+le=3D"border: none; margin: 0px; padding: 0px; font-family: Circular, &quot=
+;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 200; text=
+-align: left; text-decoration: none; color: rgb(30, 215, 96);"> Avicii</a> =
+</td> </tr> </tbody> </table> </td> <td class=3D"table-separator" width=3D"=
+6.25%" valign=3D"middle" style=3D"width: 6.25%; border: none; margin: 0px; =
+padding: 0px;"></td> </tr> <tr valign=3D"middle" style=3D"border: none; mar=
+gin: 0px; padding: 0px;"> <td colspan=3D"3" class=3D"text-padding" height=
+=3D"20" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+ height: 20px;"></td> </tr> </tbody> </table> <table class=3D"image-root" w=
+idth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; ma=
+rgin: 0px; border-collapse: collapse; padding: 0px; width: 100%;"> <tbody v=
+align=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <tr va=
+lign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <td cla=
+ss=3D"table-separator" width=3D"6.25%" valign=3D"middle" style=3D"width: 6.=
+25%; border: none; margin: 0px; padding: 0px;"></td> <td valign=3D"middle" =
+style=3D"border: none; margin: 0px; padding: 0px;"> <center style=3D"border=
+: none; margin: 0px; padding: 0px;"><a href=3D"http://links.spotify.com/u/e=
+u?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d1157=
+0f&_e=3DaffqEuYZCMkEK50eqePtG4AAVQKUukiqpgfUBDmKaedVSRtxRM70vmglrVvZCOI0T89=
+hrP9OSRHW0IQm45nvLsUAhrdKIynVyNSRbwQ1YwlGrXrCj4_BhuanX-Ug_iucDs_oaZIKzEZ0kO=
+ooXY-BSbGBeydL4c1T8Z45ZKzUbdY%3D" style=3D"border: none; margin: 0px; paddi=
+ng: 0px; text-decoration-line: none; text-decoration-style: initial; text-d=
+ecoration-color: initial;"><!--[if mso]><img style=3D"max-width: 100%; disp=
+lay: block" src=3D"https://i.scdn.co/image/ba2fd8823d42802c2f8738db0b33a459=
+7f2f39e7"/><![endif]--><!--[if mso]><div style=3D"mso-hide: all"><![endif]-=
+-><img class=3D"image-image" src=3D"https://i.scdn.co/image/ba2fd8823d42802=
+c2f8738db0b33a4597f2f39e7" align=3D"center" alt=3D"" style=3D"border: none;=
+ padding: 0px; display: block; margin: 0px auto; max-width: 100%; text-alig=
+n: center;"><!--[if mso]></div><![endif]--></a></center> </td> <td class=3D=
+"table-separator" width=3D"6.25%" valign=3D"middle" style=3D"width: 6.25%; =
+border: none; margin: 0px; padding: 0px;"></td> </tr> <tr class=3D"image-pa=
+dding" height=3D"30" valign=3D"middle" style=3D"border: none; margin: 0px; =
+padding: 0px; height: 30px;"> <td colspan=3D"3" class=3D"image-padding" hei=
+ght=3D"30" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0=
+px; height: 30px;"></td> </tr> </tbody> </table> <!----> <style style=3D"bo=
+rder: none; margin: 0px; padding: 0px;">.footer-root a.footer-link{color:#6=
+d6d6d;text-decoration:none;font-weight:bold}</style> <table class=3D"footer=
+-padding-root" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+border: none; margin: 0px; border-collapse: collapse; padding: 0px; width: =
+100%;"> <tbody valign=3D"middle" style=3D"border: none; margin: 0px; paddin=
+g: 0px;"> <tr class=3D"footer-padding" height=3D"22" valign=3D"middle" styl=
+e=3D"border: none; margin: 0px; padding: 0px; height: 22px;"> <td colspan=
+=3D"3" class=3D"footer-padding" height=3D"22" valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px; height: 22px;"></td> </tr> </tbody> =
+</table> <table class=3D"footer-root" width=3D"100%" cellpadding=3D"0" cell=
+spacing=3D"0" bgcolor=3D"#F7F7F7" style=3D"border: none; margin: 0px; borde=
+r-collapse: collapse; padding: 0px; background-color: rgb(247, 247, 247); w=
+idth: 100%;"> <tbody valign=3D"middle" style=3D"border: none; margin: 0px; =
+padding: 0px;"> <tr class=3D"footer-bottom-padding" height=3D"25" valign=3D=
+"middle" style=3D"border: none; margin: 0px; padding: 0px; height: 25px;"> =
+<td colspan=3D"3" class=3D"footer-bottom-padding" height=3D"25" valign=3D"m=
+iddle" style=3D"border: none; margin: 0px; padding: 0px; height: 25px;"></t=
+d> </tr> <tr valign=3D"middle" style=3D"border: none; margin: 0px; padding:=
+ 0px;"> <td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin=
+: 0px; padding: 0px; width: 6.25%;"></td> <td valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px;"><img class=3D"footer-logo" src=3D"h=
+ttp://aro.spotify.s3.amazonaws.com/newsletter/images/logo_footer.png" width=
+=3D"77" height=3D"23" alt=3D"" style=3D"border: none; margin: 0px; padding:=
+ 0px; display: block; max-width: 100%; width: 77px; height: 23px;"></td> <t=
+d width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; pad=
+ding: 0px; width: 6.25%;"></td> </tr> <tr class=3D"footer-bottom-padding" h=
+eight=3D"25" valign=3D"middle" style=3D"border: none; margin: 0px; padding:=
+ 0px; height: 25px;"> <td colspan=3D"3" class=3D"footer-bottom-padding" hei=
+ght=3D"25" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0=
+px; height: 25px;"></td> </tr> <tr valign=3D"middle" style=3D"border: none;=
+ margin: 0px; padding: 0px;"> <td width=3D"6.25%" valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td> <td valig=
+n=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> <hr bgcolo=
+r=3D"#D1D5D9" style=3D"border: none; margin: 0px; padding: 0px; background-=
+color: rgb(209, 213, 217); height: 1px;"> </td> <td width=3D"6.25%" valign=
+=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;=
+"></td> </tr> <tr class=3D"footer-top-padding" height=3D"12" valign=3D"midd=
+le" style=3D"border: none; margin: 0px; padding: 0px; height: 12px;"> <td c=
+olspan=3D"3" class=3D"footer-top-padding" height=3D"12" valign=3D"middle" s=
+tyle=3D"border: none; margin: 0px; padding: 0px; height: 12px;"></td> </tr>=
+ <tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> =
+<td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; p=
+adding: 0px; width: 6.25%;"></td> <td class=3D"font" valign=3D"middle" alig=
+n=3D"left" style=3D"border: none; margin: 0px; padding: 0px; font-family: C=
+ircular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-wei=
+ght: 200; text-align: left; text-decoration-line: none; text-decoration-sty=
+le: initial; text-decoration-color: initial; color: rgb(136, 137, 140); fon=
+t-size: 11px; line-height: 1.65em;"> Dapatkan Spotify untuk: &nbsp; <a clas=
+s=3D"footer-separated-text" href=3D"http://links.spotify.com/u/eu?_t=3D1090=
+098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_e=3D49F=
+Sd8qGjs1BQYbESriPzw78bO_35Es4VftElRnCjfO7QwtwJvyLaeRK_JFsN9FGVtBUGQKtF0pb5Y=
+A-XlorjNIqVu4vkbWJfCpZXtZOfyHOW35nm-hLjHYcH1lwCcjxKSlsddiSHPjFzB3FREyGXEhsg=
+TJlcjoWU2z0SiWthAI%3D" style=3D"border-top: none; border-bottom: none; bord=
+er-image: initial; margin: 0px; text-decoration-line: none; text-decoration=
+-style: initial; text-decoration-color: initial; border-right: 1px solid rg=
+b(195, 195, 195); display: inline-block; padding: 0px 7px 0px 0px; border-l=
+eft: none; color: rgb(109, 109, 109); font-weight: bold;">iPhone</a><a clas=
+s=3D"footer-separated-text" href=3D"http://links.spotify.com/u/eu?_t=3D1090=
+098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_e=3D-Zw=
+qEIkGXgM4oF9L0no0Xlrcdae-pjZrqZnI9LZgUFZNxUsG7JfhsOg5PwikJSxBIPeOJ2Pn0vWBf2=
+fU9Pm3PcKGocYXio8ChYoQN-sh__20DpqSpKAkIAWvv7D16hctBHanzjGaSaqg_lxd3GsHSPGED=
+-bbpGww-weOY0aldPc%3D" style=3D"border-top: none; border-bottom: none; bord=
+er-image: initial; margin: 0px; text-decoration-line: none; text-decoration=
+-style: initial; text-decoration-color: initial; border-right: 1px solid rg=
+b(195, 195, 195); border-left: 1px solid transparent; display: inline-block=
+; padding: 0px 7px; color: rgb(109, 109, 109); font-weight: bold;">iPad</a>=
+<a class=3D"footer-separated-text" href=3D"http://links.spotify.com/u/eu?_t=
+=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_=
+e=3Dg6mUJeGeMr17aEWxVBymT-vdUh6UsHG6EBbun20eTxuhqVwjiJwoRg12zjo6T9Kuk0hXKDm=
+hY7nbYqkTDpChGXdTSCfPFGrWZcsm06rY_qsAu1h2CY6q6A7-ybUcf0s0DFourDojEpyBzBLGSi=
+NIgMFJPA4r7-tezRKscyDb1fw%3D&id=3Dcom.spotify.music" style=3D"border-top: n=
+one; border-bottom: none; border-image: initial; margin: 0px; text-decorati=
+on-line: none; text-decoration-style: initial; text-decoration-color: initi=
+al; border-right: 1px solid rgb(195, 195, 195); border-left: 1px solid tran=
+sparent; display: inline-block; padding: 0px 7px; color: rgb(109, 109, 109)=
+; font-weight: bold;">Android</a><a class=3D"footer-separated-text" href=3D=
+"http://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3De=
+e2647f122c84f2ab59915ed6d11570f&_e=3DqwtT1qUffmg6wPHBtRFTBDgm2k99lS3JuoU51C=
+FGX0bAUtWwFl5juhibyWuY0g6fK4IsicLizv0Nua9FWap_OEKPZxodbnEoaijGdMWGIDyRP0sex=
+Uco8MXkeeuG3ZbP7rXTImCdmqYu9HjSesfSgrEMwNdnOO0QegxG1EzPCq4%3D" style=3D"bor=
+der-top: none; border-bottom: none; border-image: initial; margin: 0px; tex=
+t-decoration-line: none; text-decoration-style: initial; text-decoration-co=
+lor: initial; border-left: 1px solid transparent; display: inline-block; pa=
+dding: 0px 0px 0px 7px; border-right: none; color: rgb(109, 109, 109); font=
+-weight: bold;">Lainnya</a></td> <td width=3D"6.25%" valign=3D"middle" styl=
+e=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td> </tr> <t=
+r class=3D"footer-top-padding" height=3D"12" valign=3D"middle" style=3D"bor=
+der: none; margin: 0px; padding: 0px; height: 12px;"> <td colspan=3D"3" cla=
+ss=3D"footer-top-padding" height=3D"12" valign=3D"middle" style=3D"border: =
+none; margin: 0px; padding: 0px; height: 12px;"></td> </tr> <tr valign=3D"m=
+iddle" style=3D"border: none; margin: 0px; padding: 0px;"> <td width=3D"6.2=
+5%" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; wid=
+th: 6.25%;"></td> <td valign=3D"middle" style=3D"border: none; margin: 0px;=
+ padding: 0px;"> <hr bgcolor=3D"#D1D5D9" style=3D"border: none; margin: 0px=
+; padding: 0px; background-color: rgb(209, 213, 217); height: 1px;"> </td> =
+<td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; p=
+adding: 0px; width: 6.25%;"></td> </tr> <tr class=3D"footer-bottom-padding"=
+ height=3D"25" valign=3D"middle" style=3D"border: none; margin: 0px; paddin=
+g: 0px; height: 25px;"> <td colspan=3D"3" class=3D"footer-bottom-padding" h=
+eight=3D"25" valign=3D"middle" style=3D"border: none; margin: 0px; padding:=
+ 0px; height: 25px;"></td> </tr> <tr valign=3D"middle" style=3D"border: non=
+e; margin: 0px; padding: 0px;"> <td width=3D"6.25%" valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td> <td class=
+=3D"font" valign=3D"middle" align=3D"left" style=3D"border: none; margin: 0=
+px; padding: 0px; font-family: Circular, &quot;Helvetica Neue&quot;, Helvet=
+ica, Arial, sans-serif; font-weight: 200; text-align: left; text-decoration=
+-line: none; text-decoration-style: initial; text-decoration-color: initial=
+; color: rgb(136, 137, 140); font-size: 11px; line-height: 1.65em;"> Pesan =
+ini telah dikirimkan ke itsmetenki@gmail.com. Jika kamu tidak ingin menerim=
+a email ini lagi dari Spotify, kamu bisa <a class=3D"footer-link" href=3D"h=
+ttp://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2=
+647f122c84f2ab59915ed6d11570f&_e=3DszBuE88WMD_7LPzzXB9_epy-_G8iPPJNemwA9WnY=
+zvF0N9geUv-F2nFVio_Ykfddep-eTjtIVwsZEJhWjJaMDjIc8U8uT0PAs0hhOMb4iqw5aIaRJNk=
+ozYw8ikjwIWC_qFexxAT5hmmdrDtikbn5sc9e4s-3BDLQbfXOJPlUdLk%3D" style=3D"borde=
+r: none; margin: 0px; padding: 0px; font-family: Circular, &quot; Helvetica=
+Neue&quot;,Helvetica,Arial,sans-serif;text-align: left; color: rgb(109, 109=
+, 109); text-decoration: none; font-weight: bold;" align=3D"left">mengedit =
+profilmu</a> atau <a class=3D"footer-link" href=3D"http://links.spotify.com=
+/e/eh?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d=
+11570f&_e=3D9BPxYCKA2oSz3YgNTXlCZJDMWqYUy89XavCe-6HxuykpHgvJQCm2BZHOdvui_LB=
+30On-fHSy7n012uPp6GpD9Wr1hVf5uDglSooVa6HohRSKVJMyNictKHVWuw4ShLzR1EnDVL_Km1=
+Pq4jbmfTV_GhS-c1f-wOBC95wf6rMxzdQs6ubh-U_YbzGPR0AuvLsNYMMe2gAxDUPK98_eL3AJ0=
+cD5WXkBQEg6qxOPoyPtS0Lj-BhbKHyhto2Obfvjwais0kS8n-9gIl4DQ81eoYx0fzhiWp5-eKtv=
+zBisUzSyV3fBa8DRNjhBCkhhRhcjFLIAGg99-gpo_Jn3c1YG4kARSnxTCKSfnuZ5ZFsv68yNC49=
+HGdYeD6F6vN_b4eMcS5EB" style=3D"border: none; margin: 0px; padding: 0px; fo=
+nt-family: Circular, &quot; HelveticaNeue&quot;,Helvetica,Arial,sans-serif;=
+text-align: left; color: rgb(109, 109, 109); text-decoration: none; font-we=
+ight: bold;" align=3D"left">berhenti berlangganan</a>. </td> <td width=3D"6=
+.25%" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; w=
+idth: 6.25%;"></td> </tr> <tr class=3D"footer-middle-padding" height=3D"33"=
+ valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; height=
+: 33px;"> <td colspan=3D"3" class=3D"footer-middle-padding" height=3D"33" v=
+align=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; height: =
+33px;"></td> </tr> <tr valign=3D"middle" style=3D"border: none; margin: 0px=
+; padding: 0px;"> <td width=3D"6.25%" valign=3D"middle" style=3D"border: no=
+ne; margin: 0px; padding: 0px; width: 6.25%;"></td> <td class=3D"font font-=
+small" valign=3D"middle" align=3D"left" style=3D"border: none; margin: 0px;=
+ padding: 0px; font-family: Circular, &quot;Helvetica Neue&quot;, Helvetica=
+, Arial, sans-serif; font-weight: 200; text-align: left; text-decoration-li=
+ne: none; text-decoration-style: initial; text-decoration-color: initial; c=
+olor: rgb(136, 137, 140); line-height: 1.65em; font-size: 11px;"><a class=
+=3D"footer-separated-text" href=3D"http://links.spotify.com/u/eu?_t=3D10900=
+98043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed6d11570f&_e=3DzW4B=
+3XX4xmyE7--1_SEo0b76OsDz2RmmEsHW3XFJeEgXyVQ9HT5FX25XCxcPDke_z8N7A5vlvJNRMKP=
+m2-wgB9riOK6pybRIA4dJzc8Nq-hP6SnnhWwSw3dqQiA3HqxWhuBfNRO6wEYINwl8uecv16NY61=
+bA4Mfrs_S3zhqzqik%3D" style=3D"border-top: none; border-bottom: none; borde=
+r-image: initial; margin: 0px; text-decoration-line: none; text-decoration-=
+style: initial; text-decoration-color: initial; border-right: 1px solid rgb=
+(195, 195, 195); display: inline-block; padding: 0px 7px 0px 0px; border-le=
+ft: none; color: rgb(109, 109, 109); font-weight: bold;">Syarat-syarat Peng=
+gunaan</a><a class=3D"footer-separated-text" href=3D"http://links.spotify.c=
+om/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2647f122c84f2ab59915ed=
+6d11570f&_e=3DVDc8UT4_t-YX-udCv-Glze-6L3lC4oDX16soCKzM5RCI3-rVyuzVeO4MFOmxv=
+gRAGIALRmtPzO8VQl646jvwQBSDU9ogZXNrlzkp6Ct7bqoDk30V0iDhdcTbLho2rXDMzPn6Xp4G=
+Sgz27yU63Njdqdw39YF1b78dBTntPNWpkyg%3D" style=3D"border-top: none; border-b=
+ottom: none; border-image: initial; margin: 0px; text-decoration-line: none=
+; text-decoration-style: initial; text-decoration-color: initial; border-ri=
+ght: 1px solid rgb(195, 195, 195); border-left: 1px solid transparent; disp=
+lay: inline-block; padding: 0px 7px; color: rgb(109, 109, 109); font-weight=
+: bold;">Kebijakan Privasi </a><a class=3D"footer-separated-text" href=3D"h=
+ttp://links.spotify.com/u/eu?_t=3D1090098043a54e4ca3e92096868a66e3&_m=3Dee2=
+647f122c84f2ab59915ed6d11570f&_e=3D75agyuvGhWgUjYEQI3OpYEE2fwyCttYvQHM4s8pB=
+8tYek2wJhwLKBt-_oc1O1LcuaG-vcAkYb_N6KiIjP_ai5aesD4VRKZTuCwlUNYM3QQPXQM7AMOY=
+SsTXZgQ7QTixjey7VgVKKTUhxOEdE_L6QUsh0aE4Gw_uVsgt5fHDY4GA%3D" style=3D"borde=
+r-top: none; border-bottom: none; border-image: initial; margin: 0px; text-=
+decoration-line: none; text-decoration-style: initial; text-decoration-colo=
+r: initial; border-left: 1px solid transparent; display: inline-block; padd=
+ing: 0px 0px 0px 7px; border-right: none; color: rgb(109, 109, 109); font-w=
+eight: bold;">Hubungi Kami</a></td> <td width=3D"6.25%" valign=3D"middle" s=
+tyle=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td> </tr>=
+ <tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"> =
+<td colspan=3D"3" class=3D"footer-top-padding" height=3D"12" valign=3D"midd=
+le" style=3D"border: none; margin: 0px; padding: 0px; height: 12px;"></td> =
+</tr> <tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0p=
+x;"> <td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0=
+px; padding: 0px; width: 6.25%;"></td> <td class=3D"font font-small" valign=
+=3D"middle" align=3D"left" style=3D"border: none; margin: 0px; padding: 0px=
+; font-family: Circular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans=
+-serif; font-weight: 200; text-align: left; text-decoration-line: none; tex=
+t-decoration-style: initial; text-decoration-color: initial; color: rgb(136=
+, 137, 140); line-height: 1.65em; font-size: 11px;"> <!---->Spotify AB, Bir=
+ger Jarlsgatan 61, 4tr, 113 56 Stockholm, Sweden <!----> </td> <td width=3D=
+"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+ width: 6.25%;"></td> </tr> <tr height=3D"20" valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px; height: 20px;"> <td colspan=3D"3" cl=
+ass=3D"footer-bottom-padding" height=3D"25" valign=3D"middle" style=3D"bord=
+er: none; margin: 0px; padding: 0px; height: 25px;"></td> </tr> </tbody> </=
+table> </div> </center> </td> </tr> </table> <!--[if (mso) | (IE)]></td></t=
+r></table><![endif]--> </body> </html>
+--f0655e7604046bd766de57b4bd17d15048a38081bb912c007428056d9f2a--

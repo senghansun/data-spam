@@ -1,0 +1,1719 @@
+﻿Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.7.200 with SMTP id 191csp1845362vkh;
+        Wed, 16 Aug 2017 22:59:10 -0700 (PDT)
+X-Received: by 10.237.42.88 with SMTP id k24mr6103242qtf.58.1502949550202;
+        Wed, 16 Aug 2017 22:59:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502949550; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VzrFXRvH5zeh7/zaMENOYqG3Q8d91FFZX7nrb0VMKrhOVSSG2diMnaXGUMtXFnrXCu
+         wgEa9Wg7ET+LNRDJlAXRrq5MzaLV+CruGrEZm6zQC/pQy3wYRH7xa9Vz1Zm80+G2gPvX
+         qOCVHBXUsfZNWIc0IN1jJoFrycQrup0b6Gtlmm+GYDKbinZGVuFJHlKN6JKZJyhbWlPX
+         FrYJF9shv56Eh+TMwvfxNg2ye6EP/W8Mfe0qI2XEt8oz9kZFbOWhayeo8rwBpgvyNoyz
+         EUCQgN+Pgm+szlREF6QQCh9C8qO9GqC7uJBe93I0uUAKdlDvifbONxviNjjNfpIEPF35
+         +BlA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:content-transfer-encoding:list-unsubscribe:mime-version
+         :reply-to:from:date:message-id:subject:to:dkim-signature
+         :arc-authentication-results;
+        bh=EpaldmLJ56giplwBa2yLCDeQE+FWQ43h0+tBf8UnQAk=;
+        b=yibLGooZLdrd4EjcEYwI2b6XJOeOp1ZObl0utA8b8hz42dcQD5sICpMlPcMM6GmGrD
+         sEgnrRvVa90QGYhIR6quVu3tEfAYq0Pj/sF/0vd8WC15K38mVdI5mX/fzlhvVFUn1tpW
+         iCng2ln/LoHGccItXwT5y56qWz8l15rnsmWgte/rMiy/4G2xS/LBwk7/T0Gp/WUkAIz/
+         vqcxoYmW6ZfVer4FAKskWixflNnQueyLEKaGQAvdDT8XVookx9oBMhhHQRcDLWdzXExe
+         n6RGnL275FJDuEQySzHyHGdZTRMSsg3ctk1RuNUeCp04TJ1lzL9eXyUICpk0TnwClsIw
+         rnxw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=knJOYxUY;
+       spf=pass (google.com: domain of 0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com designates 54.240.11.63 as permitted sender) smtp.mailfrom=0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com
+Return-Path: <0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com>
+Received: from a11-63.smtp-out.amazonses.com (a11-63.smtp-out.amazonses.com. [54.240.11.63])
+        by mx.google.com with ESMTPS id n186si2319101qkd.76.2017.08.16.22.59.09
+        for <nikosatrianto@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Wed, 16 Aug 2017 22:59:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com designates 54.240.11.63 as permitted sender) client-ip=54.240.11.63;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=knJOYxUY;
+       spf=pass (google.com: domain of 0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com designates 54.240.11.63 as permitted sender) smtp.mailfrom=0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1502949549; h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding:Feedback-ID; bh=LvYdYqr2X6ZV23EgFLwxCx3Fpudq8PWl2H+56e6OcVY=; b=knJOYxUYKYJXFMnKP/VP482ZqbQ7E73Eu6hUstMMGFcKUuqPMS/irgR1clRoyIvj AS8WKZUG2PqCBG1MvyxutUtRxvFaOtTJRufv8qXneZW8VlRc8kOvaaSkq2NFJWPPrOj VhBkHin7s1T17VB/4Nn7bMh5XM3kBhU3JWhHx+4U=
+To: nikosatrianto@gmail.com
+Subject: Koleksi Busana Terbaru - Toko Baju Online Aurora - 16 Agustus 2017
+Message-ID: <0100015deec620d9-0d0fa795-3cc8-439b-9c9c-b00ec99ff88f-000000@email.amazonses.com>
+Date: Thu, 17 Aug 2017 05:59:08 +0000
+From: Linah Aurora <linah@info.auroraku.com>
+Reply-To: linah@info.auroraku.com
+MIME-Version: 1.0
+X-Mailer-LID: 1
+List-Unsubscribe: <http://crm.auroraku.com/unsubscribe.php?M=132641&C=62280a626cf149031f6446dd8894c60f&L=1&N=973>
+X-Mailer-RecptId: 132641
+X-Mailer-SID: 973
+X-Mailer-Sent-By: 1
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_91912e05a4cc8bec36f322cc066149b8"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2017.08.17-54.240.11.63
+Feedback-ID: 1.us-east-1.VO6io169GtfmmHd2a+0og1RrkjXBud5WaQR+jovnxJs=:AmazonSES
+
+--b1_91912e05a4cc8bec36f322cc066149b8
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Aplikasi email Anda tidak dapat menampilkan email ini,
+untuk menampilkan isi dari email ini secara online melalui web browser klik
+link ini:
+http://crm.auroraku.com/display.php?M=132641&C=62280a626cf149031f6446dd8894c60f&S=973&L=1&N=786.
+
+Untuk berhenti mendapatkan email ini klik disini:
+http://crm.auroraku.com/unsubscribe.php?M=132641&C=62280a626cf149031f6446dd8894c60f&L=1&N=973
+
+--b1_91912e05a4cc8bec36f322cc066149b8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html><head></head><body><meta http-equiv="X-UA-Compatible"
+content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,
+minimum-scale=1, maximum-scale=1" />
+<title></title>
+<style><!--
+ .ReadMsgBody { width: 100%; background-color: #FFFFFF; }
+ .ExternalClass { width: 100%; background-color: #FFFFFF; }
+ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCl ass
+font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+html { width: 100%; }
+body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin:
+0; padding: 0; }
+table { border-spacing: 0; border-collapse: collapse; }
+img { display: block !important; }
+table td { border-collapse: collapse; }
+ .yshortcuts a { border-bottom: none !important; }
+a { color: #2bacb5; text-decoration: none; }
+
+@media only screen and (max-width: 640px) {
+body { width: auto !important; }
+table[class="table-inner"] { width: 85% !important; }
+table[class="table-full"] { width: 100% !important; text-align: center
+!important; }
+td[class="column"] { display: block; width: 100% !important; }
+/* Image */
+img[class="img1"] { width: 100% !important; height: auto !important; }
+}
+
+@media only screen and (max-width: 479px) {
+body { width: auto !important; }
+table[class="table-inner"] { width: 85% !important; }
+table[class="table-full"] { width: 100% !important; text-align: center
+!important; }
+td[class="column"] { display: block; width: 100% !important; }
+/* image */
+img[class="img1"] { width: 100% !important; }
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:
+url('http://www.auroraku.com/fonts/varelaround-regular-webfont.eot');
+    src:
+url('http://www.auroraku.com/fonts/varelaround-regular-webfont.eot?#iefix')
+format('embedded-opentype'),
+
+url('http://www.auroraku.com/fonts/varelaround-regular-webfont.woff')
+format('woff'),
+
+url('http://www.auroraku.com/fonts/varelaround-regular-webfont.ttf')
+format('truetype'),
+
+url('http://www.auroraku.com/fonts/varelaround-regular-webfont.svg#VarelaRoundRegular')
+format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+--></style>
+<div class="preheader" style="color: #efefef; line-height: 0px; font-size:
+0px; height: 0px; display: none !important; visibility: hidden;
+text-indent: -9999px;">☑Kualitas Mall ☑Harga Wajar ☑Real Pic</div>
+<!-- header start -->
+<table data-module="header" data-bgcolor="Main BG" bgcolor="#ecf0f1"
+width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table-inner" width="600" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<!--
+<tr>
+<td height="30"></td>
+</tr>
+<tr>
+<td align="center" valign="bottom"><b class="" style="font-family: 'Open
+Sans', Arial, sans-serif;color:#7f8c8d;" mce_style="font-family: 'Open
+Sans', Arial, sans-serif; color: #7f8c8d;">{Koleksi Busana Terbaru - Toko
+Baju Online Aurora}</b><br>
+<hr>
+</td>
+</tr>
+-->
+<tr>
+<td align="center" valign="bottom" style="padding-left: 10px;
+padding-right: 10px;">
+<table class="table-full" border="0" align="left" cellpadding="0"
+cellspacing="0">
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px; padding-top: 10px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=10&F=H"><img
+data-crop="false" src="http://www.auroraku.com/email/email-logo.png"
+alt="img" style="display: block; line-height: 0px; font-size: 0px; border:
+0px;" /></a></td>
+</tr>
+</tbody>
+</table>
+<!-- end logo --> <!--Space-->
+<table width="1" border="0" cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td height="0" style="font-size: 0; line-height: 0; border-collapse:
+collapse;">
+<p style="padding-left: 24px;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--End Space--> <!-- menu -->
+<table border="0" align="right" cellpadding="0" cellspacing="0"
+class="table-full">
+<tbody>
+<tr>
+<td height="25" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; color: #2bacb5;"><strong>✉ 16 Agustus 2017 ✉</strong></td>
+</tr>
+<tr>
+<td align="center" valign="bottom">
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<table data-bgcolor="Button" border="0" align="right" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="30" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 13px; color: #ffffff; font-weight: bold;
+padding-left: 15px; padding-right: 15px; line-height: 22.1px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=10&F=H"
+style="text-decoration: none; color: #ffffff;">www.auroraku.com</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- end menu --></td>
+</tr>
+<tr>
+<td height="25"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- header end --> <!-- section title -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table data-bgcolor="Container" bgcolor="#FFFFFF" align="center"
+class="table-inner" width="600" border="0" cellspacing="0"
+cellpadding="0">
+<tbody>
+<tr>
+<td height="25"></td>
+</tr>
+<tr>
+<td align="center">
+<table align="center" class="table-inner" width="550" border="0"
+cellspacing="0" cellpadding="0">
+<!-- title -->
+<tbody>
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px;
+color: #2bacb5; font-weight: bold;">✨ Koleksi Busana Terbaru ✨</td>
+</tr>
+<!-- end title -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- section title end --> <!-- dashline -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table bgcolor="#FFFFFF" align="center" class="table-inner" width="600"
+border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table-inner" width="550" border="0" cellspacing="0"
+cellpadding="0">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- dashline end --> <!-- product list -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table data-bgcolor="Container" bgcolor="#FFFFFF" class="table-inner"
+align="center" width="600" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="25"></td>
+</tr>
+<tr>
+<td align="center">
+<table class="table-inner" align="center" width="550" border="0"
+cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<table class="table-full" width="262" border="0" align="left"
+cellpadding="0" cellspacing="0" style="display: inline-block;">
+<tbody>
+<tr>
+<td><!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7300&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/w/568/xxA4012__98772_std.jpg"
+alt="Chansila Flowers Bordir Blouse - A4012" title="Chansila Flowers Bordir
+Blouse - A4012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Chansila Flowers
+Bordir Blouse - A4012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Maroon, Black,
+Navy, Red</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp90,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7300&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --> <!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7294&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/n/670/C2014__51885_std.jpg"
+alt="Freya 2in1 Long Sleeves Ring Blouse - C2014" title="Freya 2in1 Long
+Sleeves Ring Blouse - C2014" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Freya 2in1 Long
+Sleeves Ring Blouse - C2014</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Milo, Navy,
+Choco, Maroon</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp80,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7294&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --> <!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7298&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/x/617/B4012__74160_std.jpg"
+alt="Zequila Houndstood Peplum Blouse - B4012" title="Zequila Houndstood
+Peplum Blouse - B4012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Zequila Houndstood
+Peplum Blouse - B4012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content --> <!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp68,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7298&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --> <!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7297&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/t/425/C1012__87796_std.jpg"
+alt="Moynia Peplum V-wrap Blouse - C1012" title="Moynia Peplum V-wrap
+Blouse - C1012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Moynia Peplum V-wrap
+Blouse - C1012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Red, Blue,
+Brown, Black</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp76,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7297&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --> <!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7296&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/e/753/C2012__83011_std.jpg"
+alt="Vesery Plain Long Sleeves Blouse - C2012" title="Vesery Plain Long
+Sleeves Blouse - C2012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Vesery Plain Long
+Sleeves Blouse - C2012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Navy, Black,
+Brick, Maroon</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp72,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7296&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --> <!-- left -->
+<table class="table-full" width="100%" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7293&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/a/350/C3012__43370_std.jpg"
+alt="Chaerina List Bell Long Outer - C3012" title="Chaerina List Bell Long
+Outer - C3012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Chaerina List Bell
+Long Outer - C3012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Red, Grey,
+Navy, Black</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp89,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7293&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- dashline end -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<!-- end left --></td>
+</tr>
+</tbody>
+</table>
+<!--Space
+<table width="1" border="0" cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td height="0" style="font-size: 0;line-height: 0;border-collapse:
+collapse;" mce_style="font-size: 0; line-height: 0; border-collapse:
+collapse;">
+<p style="padding-left: 24px;" mce_style="padding-left: 24px;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<! End Space--> <!-- right -->
+<table class="table-full" width="262" border="0" align="right"
+cellpadding="0" cellspacing="0" style="display: inline-block;">
+<tbody>
+<tr>
+<td>
+<table class="table-full" width="100%" align="left" border="0"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7299&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/r/844/B2012__33083_std.jpg"
+alt="Alnayla Plain Tanktop Blouse + Belt - B2012" title="Alnayla Plain
+Tanktop Blouse + Belt - B2012" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Alnayla Plain
+Tanktop Blouse + Belt - B2012</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Brick, Black,
+Brown, Blue</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp65,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7299&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end dashline -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<table class="table-full" width="100%" align="left" border="0"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7291&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/w/634/D3013__03388_std.jpg"
+alt="Demishia Plain Layer Blouse - D3013" title="Demishia Plain Layer
+Blouse - D3013" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Demishia Plain Layer
+Blouse - D3013</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Navy, Black,
+Choco, Maroon</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp83,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7291&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end dashline -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<table class="table-full" width="100%" align="left" border="0"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7292&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/v/909/D2013__46526_std.jpg"
+alt="Jessi Stripe Casual Shirt - D2013" title="Jessi Stripe Casual Shirt -
+D2013" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Jessi Stripe Casual
+Shirt - D2013</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Blue, Red,
+Black, Choco</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp65,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7292&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end dashline -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<table class="table-full" width="100%" align="left" border="0"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7295&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/n/789/C2013__39449_std.jpg"
+alt="Zaraa Plain V-Neck Blouse - C2013" title="Zaraa Plain V-Neck Blouse -
+C2013" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Zaraa Plain V-Neck
+Blouse - C2013</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Navy, Black,
+Choco, Maroon</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp85,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7295&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end dashline -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<table class="table-full" width="100%" align="left" border="0"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7301&F=H"
+style="text-decoration: none;"><img style="display: block; line-height:
+0px; font-size: 0px; border: 0px;" class="img1"
+src="http://www.auroraku.com/product_images/b/968/A2013__33750_std.jpg"
+alt="Darlene Plain Plisket On Neck Blouse - A2013" title="Darlene Plain
+Plisket On Neck Blouse - A2013" /></a></td>
+</tr>
+<!-- end img -->
+<tr>
+<td height="20"></td>
+</tr>
+<!-- title -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; line-height: 28px; font-weight: bold;">Darlene Plain
+Plisket On Neck Blouse - A2013</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- content -->
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;
+color: #7f8c8d; line-height: 28px;"><strong>Warna:</strong> Brown, Navy,
+Milo, Maroon</td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- button -->
+<tr>
+<td align="right">
+<table align="right" class="table-full" border="0" cellspacing="0"
+cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="right" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Rp73,000</td>
+<td align="center">
+<table data-bgcolor="Button" border="0" align="center" cellpadding="0"
+cellspacing="0" bgcolor="#2bacb5" style="border-radius: 30px;">
+<tbody>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 14px; color: #ffffff; padding-left: 15px;
+padding-right: 15px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7301&F=H"
+style="text-decoration: none; color: #ffffff;" data-color="Button
+Link">Pesan Sekarang</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end button --> <!-- dashline -->
+<tr>
+<td height="35">
+<table class="table-inner" width="100%" border="0" cellspacing="0"
+cellpadding="0" align="center">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end dashline -->
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- end product list --> <!-- section title -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table data-bgcolor="Container" bgcolor="#FFFFFF" align="center"
+class="table-inner" width="600" border="0" cellspacing="0"
+cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table align="center" class="table-inner" width="550" border="0"
+cellspacing="0" cellpadding="0">
+<!-- title -->
+<tbody>
+<tr>
+<td style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px;
+color: #2bacb5; font-weight: bold;">#OOTD | Outfit of The Day</td>
+</tr>
+<!-- end title -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- section title end --> <!-- dashline -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table bgcolor="#FFFFFF" align="center" class="table-inner" width="600"
+border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table-inner" width="550" border="0" cellspacing="0"
+cellpadding="0">
+<tbody>
+<tr>
+<td height="5" style="border-bottom: 1px dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- dashline end -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table-inner" bgcolor="#FFFFFF" align="center" width="600"
+border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="25"></td>
+</tr>
+<tr>
+<td align="center">
+<table align="center" class="table-inner" width="550" border="0"
+cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td><!-- left --> <a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=1079&F=H"
+style="text-decoration: none; font-family: 'Open Sans', Arial, sans-serif;
+font-size: 12px; color: #95a5a6; font-style: italic; border-bottom: 0px
+dotted #9aa4a5;">
+<table class="table-full" width="167" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px; font-size: 0px;"><img
+style="display: block; line-height: 0px; font-size: 0px; border: 0px;"
+class="img1" width="100%"
+src="http://www.auroraku.com/product_images/k/901/2143_Legging_pjg_(L)_spandek_tebal__45.000__71508_std.jpg"
+alt="img" /></td>
+</tr>
+<!-- end img --> <!-- detail -->
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 12px; color: #95a5a6; font-style: italic;
+border-bottom: 0px dotted #9aa4a5;">Legging Panjang (Size L) Spandek Tebal
+- 2143<br /><strong> Rp45,000 </strong></td>
+</tr>
+<!-- end detail -->
+</tbody>
+</table>
+<!-- end left --> </a> <!--Space-->
+<table width="1" border="0" cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td height="20" style="font-size: 0; line-height: 0; border-collapse:
+collapse;">
+<p style="padding-left: 20px;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--End Space--> <!-- left --> <a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7290&F=H"
+style="text-decoration: none; font-family: 'Open Sans', Arial, sans-serif;
+font-size: 12px; color: #95a5a6; font-style: italic; border-bottom: 0px
+dotted #9aa4a5;">
+<table class="table-full" width="167" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px; font-size: 0px;"><img
+style="display: block; line-height: 0px; font-size: 0px; border: 0px;"
+class="img1" width="100%"
+src="http://www.auroraku.com/product_images/l/236/S1049_25.000__49015_std.jpg"
+alt="img" /></td>
+</tr>
+<!-- end img --> <!-- detail -->
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 12px; color: #95a5a6; font-style: italic;
+border-bottom: 0px dotted #9aa4a5;">BEST SELLER O-Neck Serat (SIZE M) -
+S1049<br /><strong> Rp25,000 </strong></td>
+</tr>
+<!-- end detail -->
+</tbody>
+</table>
+<!-- end left --> </a> <!--Space-->
+<table width="1" border="0" cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td height="20" style="font-size: 0; line-height: 0; border-collapse:
+collapse;">
+<p style="padding-left: 20px;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--End Space--> <!-- left --> <a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=7289&F=H"
+style="text-decoration: none; font-family: 'Open Sans', Arial, sans-serif;
+font-size: 12px; color: #95a5a6; font-style: italic; border-bottom: 0px
+dotted #9aa4a5;">
+<table class="table-full" width="167" border="0" align="left"
+cellpadding="0" cellspacing="0">
+<!-- img -->
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px; font-size: 0px;"><img
+style="display: block; line-height: 0px; font-size: 0px; border: 0px;"
+class="img1" width="100%"
+src="http://www.auroraku.com/product_images/q/843/S1050_25.000__69414_std.jpg"
+alt="img" /></td>
+</tr>
+<!-- end img --> <!-- detail -->
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td height="35" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 12px; color: #95a5a6; font-style: italic;
+border-bottom: 0px dotted #9aa4a5;">BEST SELLER V-Neck Serat (SIZE M) -
+S1050<br /><strong> Rp25,000 </strong></td>
+</tr>
+<!-- end detail -->
+</tbody>
+</table>
+<!-- end left --> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height="25"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- footer -->
+<table bgcolor="#ecf0f1" width="100%" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table-inner" align="center" width="600" border="0"
+cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td data-bgcolor="Container" align="center" bgcolor="#FFFFFF">
+<table class="table-inner" width="550" border="0" align="center"
+cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td data-border-top-color="Dashline" height="15" style="border-top: 1px
+dotted #9aa4a5;"></td>
+</tr>
+<tr>
+<td><!-- contact -->
+<table align="left" class="table-full" width="360" border="0"
+cellspacing="0" cellpadding="0">
+<!-- title -->
+<tbody>
+<tr valign="top">
+<td data-link-style="text-decoration:none; color:#2bacb5;"
+data-link-color="Title" data-size="Title" data-color="Title"
+mc:edit="hora-109" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px; color: #2bacb5; font-weight: bold;">Butuh info lebih
+lanjut?</td>
+</tr>
+<!-- end title -->
+<tr>
+<td height="5"></td>
+</tr>
+<!-- content -->
+<tr valign="top">
+<td data-link-style="text-decoration:none; color:#2bacb5;"
+data-link-color="Content" data-size="Content" data-color="Content"
+mc:edit="hora-110" style="font-family: 'Open Sans', Arial, sans-serif;
+font-size: 13px; color: #7f8c8d; line-height: 22.1px;">Silakan menghubungi
+Customer Service/Admin kami melalui: <br /> <strong>CS 1 &gt;&gt;</strong>
+Phone/WA: 0822-7789-8383<br /> <strong>CS 2 &gt;&gt;</strong> Phone/WA:
+0857-2277-8383<br /> <strong>SMS:</strong> 0857-7722-8383<br />
+<strong>Line:</strong><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=6993&F=H">@auroraku.com</a><br
+/></td>
+</tr>
+<!-- end content -->
+<tr>
+<td height="10"></td>
+</tr>
+<!-- social -->
+<tr>
+<td>
+<table class="table-full" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=6034&F=H"> <img
+data-crop="false" mc:edit="hora-112" style="display: block; line-height:
+0px; font-size: 0px; border: 0px;"
+src="http://www.auroraku.com/email/facebook.png" alt="facebook" />
+</a></td>
+<td width="10"></td>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=6033&F=H"> <img
+data-crop="false" mc:edit="hora-112" style="display: block; line-height:
+0px; font-size: 0px; border: 0px;"
+src="http://www.auroraku.com/email/instagram.png" alt="facebook" />
+</a></td>
+<!--
+<td width="10"></td>
+<td align="center" style="line-height:0px;" mce_style="line-height:
+0px;"><a href="http://crm.auroraku.com/link.php?M=132641&N=973&L=30&F=H"
+mce_href="http://crm.auroraku.com/link.php?M=132641&N=973&L=30&F=H"> <img
+data-crop="false" mc:edit="hora-112" style="display:block; line-height:0px;
+font-size:0px; border:0px;" mce_style="display: block; line-height: 0px;
+font-size: 0px; border: 0px;"
+src="http://www.auroraku.com/email/twitter.png"
+mce_src="http://www.auroraku.com/email/twitter.png" alt="facebook"
+class=""> </a></td>
+-->
+<td width="10"></td>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=6032&F=H"> <img
+data-crop="false" mc:edit="hora-114" style="display: block; line-height:
+0px; font-size: 0px; border: 0px;"
+src="http://www.auroraku.com/email/tokopedia.png" alt="youtube" />
+</a></td>
+<td width="10"></td>
+<td align="center" style="line-height: 0px;"><a
+href="http://crm.auroraku.com/link.php?M=132641&N=973&L=6035&F=H"> <img
+data-crop="false" mc:edit="hora-115" style="display: block; line-height:
+0px; font-size: 0px; border: 0px;"
+src="http://www.auroraku.com/email/shopee.png" alt="linkedin" /> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- end social -->
+</tbody>
+</table>
+<!-- end contact --> <!--Space-->
+<table width="1" border="0" cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td height="25" style="font-size: 0; line-height: 0; border-collapse:
+collapse;">
+<p style="padding-left: 24px;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--End Space--> <!-- preference -->
+<table width="166" border="0" align="right" cellpadding="0" cellspacing="0"
+class="table-full">
+<!-- title -->
+<tbody>
+<!--
+<tr>
+<td data-link-style="text-decoration:none; color:#2bacb5;"
+data-link-color="Title" data-size="Title" data-color="Title"
+mc:edit="hora-116" valign="top" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size:16px; color:#2bacb5; font-weight: bold;"
+mce_style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px;
+color: #2bacb5; font-weight: bold;">Preference</td>
+</tr>
+-->                       <!-- end title -->
+<tr>
+<td height="5"></td>
+</tr>
+<!-- content -->
+<tr>
+<td data-link-style="text-decoration:none; color:#2bacb5;"
+data-link-color="Content" data-size="Content" data-color="Content"
+mc:edit="hora-117" valign="top" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 13px; color: #7f8c8d; line-height: 22.1px;"><a
+href="http://crm.auroraku.com/display.php?M=132641&C=62280a626cf149031f6446dd8894c60f&S=973&L=1&N=786">Lihat
+di Browser</a> <br /> <a
+href="http://crm.auroraku.com/sendfriend.php?M=132641&C=62280a626cf149031f6446dd8894c60f&L=1&N=973&F=1&i=786">Kirim
+ke Teman</a> <br /> <a
+href="http://crm.auroraku.com/unsubscribe.php?M=132641&C=62280a626cf149031f6446dd8894c60f&L=1&N=973">Berhenti
+Berlangganan</a></td>
+</tr>
+<!-- end content -->
+</tbody>
+</table>
+<!-- end preference --></td>
+</tr>
+<tr>
+<td height="30"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--copyright-->
+<tr>
+<td data-color="Copyright" data-size="Copyright" mc:edit="hora-118"
+height="55" align="center" style="font-family: 'Open Sans', Arial,
+sans-serif; font-size: 13px; color: #7f8c8d;">Copyright &copy;2016, All
+rights reserved.</td>
+</tr>
+<!--end copyright-->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- end footer --><br/>	<br>
+
+	<table bgcolor="" cellpadding="0" width="100%" border="0">
+		<tr align="center">
+			<td>
+				<table bgcolor="white" width="450" border="0" cellpadding="5">
+					<tr>
+						<td>
+							<a href="http://crm.auroraku.com/link.php?M=132641&N=973&L=1&F=H">
+								<img border="0" src="/admin/images/poweredby.gif" alt="Powered by
+Interspire" />
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+<img
+src="http://crm.auroraku.com/open.php?M=132641&L=1&N=973&F=H&image=.jpg"
+height="1" width="10"></body></html>
+
+--b1_91912e05a4cc8bec36f322cc066149b8--

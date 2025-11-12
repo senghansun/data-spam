@@ -1,0 +1,162 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.200.33.210 with SMTP id 18csp61596qtz;
+        Sat, 16 Sep 2017 20:43:56 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QDnAv/rvSr/APg9Yk2HiGY5JnvDy/7OLXsFTC+8CjNwB/B/TOO5vIiLfb4m0s1lMVrxYgig
+X-Received: by 10.202.117.9 with SMTP id q9mr589366oic.25.1505619836820;
+        Sat, 16 Sep 2017 20:43:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505619836; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oc1wdEhWmtaMi5RWQmlTFE9FcF1ymE5UdKC0liy1ycvyhnH3vMDSESAHVTQQF1kv4H
+         dDzcsT9dTNZei+muPPPJkkhvyTBcVutxRIbVWzbikrvJZi9DGl3hQUiqU0VIFWdesFpo
+         FHUbqPRAIhf1zftEeyphvYmB0IvrLXwJsVwaPmdvqFIC6pv2qT5SVBPf9WJYsMbU+7xY
+         VSzpSVVa7ns6J3Ea9BF6fb5VQjFMkSoo7T26k3A6Y/FWlK772ER3R/bEuYteSvLflFFB
+         tRz+mEme+1kTdWW2SCJuCbV6ckTxBF33M8ak6xWXlzqmbd6t/Amvxn0IVFY/XtIlHLh5
+         aU8w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=61ohbfG3nDyWL/StXfxZ6j/oveQvqamMx3UR6p3SUFM=;
+        b=eNtPkWyjJaA5W4lrLpo/J0RdGGFNOm2AOmvyQqb5p/4O0hJQIqVlH6+01HQIXRcDok
+         Cv5of59iBfNyfS1t8KZ6kJGW/YxVNasJzVf2LUtPE4UKH/C/DBjwxWO4TCWsuy6aO7r+
+         sxWAaKgia7eQgu8k7AU3EP78C1wOVPQ7P5AyK6bkSAPtMS6o5y3WDQRtMfMKg19hSRzA
+         3N+1YY5EDi8Wgu1S+V78AI6IabGJ4ubZ3klFMyB3y/m8alX+zBWDng7nd4PqbYuTubmP
+         TkJE/8MfUKFJ8x8xf94OyvldgFK8713jZmrUOrYDdum4qEFLt9RFXD471hAZKTC3pmbu
+         tfzg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mx2.4shared.com header.s=mail header.b=ilosUF5l;
+       spf=pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.28 as permitted sender) smtp.mailfrom=no-reply@mx2.4shared.com
+Return-Path: <no-reply@mx2.4shared.com>
+Received: from dc569.4shared.com (smtp569.4shared.com. [204.155.149.28])
+        by mx.google.com with ESMTPS id j26si2839322oiy.480.2017.09.16.20.43.56
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 16 Sep 2017 20:43:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.28 as permitted sender) client-ip=204.155.149.28;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mx2.4shared.com header.s=mail header.b=ilosUF5l;
+       spf=pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.28 as permitted sender) smtp.mailfrom=no-reply@mx2.4shared.com
+Received: from dc775.4shared.com (c-p170-u2616-06.webazilla.com [204.155.148.6]) by dc569.4shared.com (8.14.7/8.14.4) with ESMTP id v8H3huNN016376 for <hutamatr@gmail.com>; Sun, 17 Sep 2017 03:43:56 GMT
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1505619836; s=mail; d=mx2.4shared.com; h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding; bh=61ohbfG3nDyWL/StXfxZ6j/oveQvqamMx3UR6p3SUFM=; b=ilosUF5lT3tQx7sOFA+jQxx30YTzDN0OKkKRMpD6EZFIxl2VTxZjB4Emu4xyk3EJ y6MbJFDLTX65X6eWFibTg7Yk4s77Lx/PEfuulWzhNV3hzitdyuB0WEcMErdtCMmYviG LPPQjtb8VAbpKW+yQiWthgU8eAMaaMqr4T/Qz2ZuaE5eV8Ui27wfPitiuFmKoOm6M9j U+sPx75x9eI7+CtGhJFL7wAYR24H0CvnNPQVDvWfCYH//9nhKOm9BzI7iNyYBNE7hQq oeYcKd7Tj9bVqR7JeNsMwcFMlVPny9rnWDIoDPd3qCtksyQEJGWR9BtAgh1oEgszDeZ nKFXw17axA==
+Date: Sun, 17 Sep 2017 03:43:56 +0000 (UTC)
+From: 4shared <no-reply@mx2.4shared.com>
+To: hutamatr@gmail.com
+Message-ID: <1612701175.12694853.1505619836081.JavaMail.catalina@dc775.4shared.com>
+Subject: [FITUR] Memperkenalkan Pemutar Video Online baru di 4shared!
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+x-4shared: x-4shared
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"/><title>[FITUR] Memperkenalkan Pemutar Video Onlin=
+e baru di 4shared!</title></head><body style=3D"margin: 0; background:#fafa=
+fa; font-family: Arial, sans-serif;"><table cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%"><tbody><tr><td><!-- static header --><table style=3D"=
+max-width: 580px; margin: 0 auto;" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%"><tbody><tr><td style=3D"text-align: center; padding: 50px 0;" va=
+lign=3D"middle"><img src=3D"https://static.4shared.com/images/email/logo-21=
+5x46.png" alt=3D"Please, click 'Enable images'" style=3D"font-size: 13px; b=
+order: 0; max-width: 215px; max-height: 50px;"/></td></tr></tbody></table><=
+!-- email single block item --><table style=3D"max-width: 580px; margin: 0 =
+auto 40px;" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><!-- =
+top fullwidth image --><tr><td style=3D"padding: 0; text-align: center;" va=
+lign=3D"top"><img src=3D"https://static.4shared.com/images/letter/header_im=
+g.png" alt=3D"Please, click 'Enable images'" style=3D"display: block; font-=
+size: 11px; border: 0; width: 100%; max-height: 300px;"/></td></tr><tr><!--=
+main top white block--><td style=3D"padding: 20px 35px; background: #ffffff=
+; text-align: center; box-shadow: inset 0 0 1px #bbbbbb; font-size: 16px;" =
+valign=3D"top"><h1 style=3D"font-size: 28px; color: #2e95ff; font-weight: n=
+ormal;">Memperkenalkan pemutar video <br>online baru di 4shared!</h1><stron=
+g style=3D"color: #545454;"> Kini saatnya untuk mengatur ulang pengalaman m=
+enonton video <br> dengan pemutar video online baru di 4shared! </strong><p=
+ style=3D"color: #999999; margin: 20px 0 35px;"> Tidak hanya memiliki desai=
+n antarmuka pengguna yang baru <br> dan keren, tetapi juga memiliki seperan=
+gkat fitur mutakhir: </p></td></tr><tr><td style=3D"padding: 45px 30px; bac=
+kground: #2e95ff; text-align: center;"><p style=3D"color: #fff; font-size: =
+16px; margin: 0 0 30px;"><div style=3D"text-align: center; color: #ffffff; =
+font-size: 14px;"><div style=3D"display: inline-block; width: 170px; paddin=
+g-top: 135px; margin-bottom: 30px; vertical-align: top; font-weight: bold; =
+background: url(https://static.4shared.com/images/letter/ico01.png) no-repe=
+at center top;">Streaming video<br> online yang sempurna</div><div style=3D=
+"display: inline-block; width: 170px; padding-top: 135px; margin-bottom: 30=
+px; vertical-align: top; font-weight: bold; background: url(https://static.=
+4shared.com/images/letter/ico02.png) no-repeat center top;">Kontrol pemutar=
+ <br>ulang mutakhir</div><div style=3D"display: inline-block; width: 170px;=
+ padding-top: 135px; margin-bottom: 30px; vertical-align: top; font-weight:=
+ bold; background: url(https://static.4shared.com/images/letter/ico04.png) =
+no-repeat center top;">Kemampuan<br> berbagi instan</div></div></td></tr><!=
+--mail white block--><tr><td style=3D"padding: 45px 35px; background: #ffff=
+ff; text-align: center; box-shadow: inset 0 0 1px #bbbbbb;" valign=3D"top">=
+<p style=3D"color: #999999; font-size: 16px; margin: 0 0 30px;"> Baca lebih=
+ lanjut tentang<br> pemutar video online baru pada <strong><a href=3D"https=
+://blog.4shared.com/feature-introducing-online-video-player-4shared/?utm_so=
+urce=3Dlink&utm_medium=3Demail&utm_campaign=3DNewD1Video" style=3D"color: #=
+2e95ff; text-decoration: none;"> petunjuk fitur</a></strong><br> 4shared ka=
+mi atau ketik di bawah ini untuk mencari dan tonton sekarang. </p><a href=
+=3D"https://www.4shared.com/web/q?utm_source=3Dlink&utm_medium=3Demail&utm_=
+campaign=3DNewD1Video#category=3D2" style=3D"display: inline-block; padding=
+: 15px 20px; background: #2e95ff; border-radius: 4px; color: #ffffff; font-=
+size: 18px; font-weight: bold; text-decoration: none;">Tonton sekarang!</a>=
+</td></tr></tbody></table><!-- bottom apps and social links --><table style=
+=3D"max-width: 592px; margin: 0 auto 40px;" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%"><tbody><tr><td style=3D"text-align: center;"><a href=
+=3D"https://itunes.apple.com/us/app/4shared-sync/id444426162?mt=3D8&ls=3D1"=
+ style=3D" white-space: nowrap; display: inline-block; width: 150px; height=
+: 20px; line-height: 20px; background-color: #bfbfbf; color: #ffffff; paddi=
+ng: 15px 10px 15px 18px; text-decoration: none; text-align: left; font-size=
+: 14px; border-radius: 3px; margin: 0 7px 15px; "><img src=3D"https://stati=
+c.4shared.com/images/icons/logo-20-apple.png" style=3D"vertical-align: midd=
+le; border: 0;" /><span style=3D"display: inline-block; padding-left: 10px;=
+">4shared <b>iOS</b></span></a><a href=3D"https://market.android.com/detail=
+s?id=3Dcom.forshared" style=3D" white-space: nowrap; display: inline-block;=
+ width: 150px; height: 20px; line-height: 20px; background-color: #bfbfbf; =
+color: #ffffff; padding: 15px 10px 15px 18px; text-decoration: none; text-a=
+lign: left; font-size: 14px; border-radius: 3px; margin: 0 7px 15px; "><img=
+ src=3D"https://static.4shared.com/images/icons/logo-20-android.png" style=
+=3D"vertical-align: middle; border: 0;" /><span style=3D"display: inline-bl=
+ock; padding-left: 10px;">4shared <b>Android</b></span></a><a href=3D"https=
+://www.windowsphone.com/en-us/store/app/4shared/e9e2cae0-2732-4351-adb6-fa1=
+ab2cf36be" style=3D" white-space: nowrap; display: inline-block; width: 156=
+px; height: 20px; line-height: 20px; background-color: #bfbfbf; color: #fff=
+fff; padding: 15px 10px 15px 18px; text-decoration: none; text-align: left;=
+ font-size: 14px; border-radius: 3px; margin: 0 7px 15px; "><img src=3D"htt=
+ps://static.4shared.com/images/icons/logo-20-win.png" style=3D"vertical-ali=
+gn: middle; border: 0;" /><span style=3D"display: inline-block; padding-lef=
+t: 10px;">4shared <b>Windows</b></span></a></td></tr><tr><td style=3D"text-=
+align: center;"><p style=3D"font-size: 16px; color: #aaaaaa; font-weight: b=
+old; margin: 25px 0;">Ikuti kami</p><p style=3D"width: 240px; display: inli=
+ne-block; margin: 0;"><a href=3D"https://twitter.com/4shared" style=3D"disp=
+lay: inline-block; width: 48px; height: 48px; line-height: 48px; border: 1p=
+x solid #b5b5b5; border-radius: 4px; margin-right: 6px; vertical-align: mid=
+dle; text-align: center;"><img src=3D"https://static.4shared.com/images/ema=
+il/logo-color-tw.png" style=3D"vertical-align: middle; border: 0;" /></a><a=
+ href=3D"https://www.facebook.com/official.4shared/" style=3D"display: inli=
+ne-block; width: 48px; height: 48px; line-height: 48px; border: 1px solid #=
+b5b5b5; border-radius: 4px; margin-right: 6px; vertical-align: middle; text=
+-align: center;"><img src=3D"https://static.4shared.com/images/email/logo-c=
+olor-fb.png" style=3D"vertical-align: middle; border: 0;" /></a><a href=3D"=
+https://plus.google.com/114619261879843970270" style=3D"display: inline-blo=
+ck; width: 48px; height: 48px; line-height: 48px; border: 1px solid #b5b5b5=
+; border-radius: 4px; margin-right: 6px; vertical-align: middle; text-align=
+: center;"><img src=3D"https://static.4shared.com/images/email/logo-color-g=
+p.png" style=3D"vertical-align: middle; border: 0;" /></a><a href=3D"http:/=
+/blog.4shared.com/?utm_source=3Dfooter&utm_medium=3Demail&utm_campaign=3D20=
+16" style=3D"display: inline-block; width: 48px; height: 48px; line-height:=
+ 48px; border: 1px solid #b5b5b5; border-radius: 4px; vertical-align: middl=
+e; text-align: center;"><img src=3D"https://static.4shared.com/images/email=
+/logo-color-rss.png" style=3D"vertical-align: middle; border: 0;" /></a></p=
+></td></tr></tbody></table><!-- bottom meta text --><table style=3D"max-wid=
+th: 580px; margin: 0 auto 40px;" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr><td valign=3D"top"><p style=3D"color: #aaaaaa; font-si=
+ze: 13px; margin: 0 0 10px; text-align: center;"> 4shared akan memberi tahu=
+ Anda tentang berita baru yang terkait dengan Anda. Anda kapan saja dapat <=
+a href=3D"https://www.4shared.com/web/account/settings/emailSettings" style=
+=3D"color: #2e95ff; text-decoration: none;">menonaktifkan surel ini</a>. In=
+i merupakan pesan surel otomatis, mohon jangan membalasnya secara langsung.=
+ Jika Anda memiliki pertanyaan <a href=3D"https://www.4shared.com/web/helpC=
+enter" style=3D"color: #2e95ff; text-decoration: none;">hubungi </a>kami. <=
+/p><p style=3D"color: #aaaaaa; font-size: 13px; margin: 0; text-align: cent=
+er;">&copy;2017 4shared. SELURUH HAK CIPTA DILINDUNGI UNDANG-UNDANG. <img s=
+rc=3D"http://www.jscount.com/a/6780/98206db5/z" alt=3D"" style=3D"width: 1p=
+x; height: 1px; border: 0; opacity: 0.1;" /></p></td></tr></tbody></table><=
+/td></tr></tbody></table></body></html>

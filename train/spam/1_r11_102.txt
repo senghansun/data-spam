@@ -1,0 +1,215 @@
+Delivered-To: hutamatr@gmail.com
+Received: by 10.200.33.214 with SMTP id 22csp1950597qtz;
+        Fri, 8 Sep 2017 12:15:42 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb7UqCVSnWCGJFk6DK+D6m9iPjFGgDFSRQCGf+dGoCUxbHND35mOxDs2FSeB0e0wn103Gw9p
+X-Received: by 10.84.136.34 with SMTP id 31mr4688115plk.174.1504898141939;
+        Fri, 08 Sep 2017 12:15:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504898141; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uFCd5mKCu8z8wnKj0Vjh5PKEpBMXM02i/6bCzCrHRaK17/984G7d4xlMuGJSO+F0fi
+         GOpMmbpWZsrzw4tniQ1+GW3DJqb3LY4W824r3O3g3LwDUuKuz+AUH86ytLpG8HKZk7B/
+         lHR4VbaTWCncNRLmeFinLVDvZDsiQQ0J/Y4xVKKlDXAF8PX+ZhXXxul9fuloKNfnuzoU
+         GuOw1qk81veZDFy9c4DDOkEO8Ss4k0Mmyaid5sUeiT6ZZ8YsYBrQlr2cc4aEIcMx22Cd
+         Oym0nOZjh7Voamf/Mx1oAgbKvmYEavv+Lt6D26faQRly4jQJh9ffSRQuHC+gVZq29v/R
+         yQfQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:to:reply-to:from:subject:date:message-id
+         :dkim-signature:arc-authentication-results;
+        bh=adb3Nhu3+3IrlhYwj76rEoSIl0HGW+vKESe/S9VAALE=;
+        b=QcoiHHGdRlGyxqs2pmzHrkwY8m6Hd2wS0PMcRfTTcoA9f+j8OeD0JaSIos/0IG/+I/
+         wmfzWiWLcoVKAH6URJbs3Xy8CtUFLSNO+hvOhahWhfSAY4gLtwM2igapAwffvnNkklnQ
+         0mKGwjN7FTSJvOQX1CSDbmA5YbUckub1HFX+IHEoNcstpUgcxMf2dMFtuo0XowGdYrWO
+         XQtmfPkespMhujXXjcdmycvnZ0Hccup+Ibgx3VxUeahKhJ0CgK26SZi63gu/imi+XQNR
+         R/Aoz4WgV0cy7nF7Y/gKug9FXt1GhaqkHXYw6Un82hwgXGjYwQwDe6sQPdnILIxSkD7L
+         QGPw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=rWS2vMuX;
+       spf=pass (google.com: domain of bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net designates 168.245.115.182 as permitted sender) smtp.mailfrom=bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net
+Return-Path: <bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net>
+Received: from o168245115x182.outbound-mail.sendgrid.net (o168245115x182.outbound-mail.sendgrid.net. [168.245.115.182])
+        by mx.google.com with ESMTPS id 73si2016692pfu.501.2017.09.08.12.15.38
+        for <hutamatr@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 08 Sep 2017 12:15:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net designates 168.245.115.182 as permitted sender) client-ip=168.245.115.182;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=rWS2vMuX;
+       spf=pass (google.com: domain of bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net designates 168.245.115.182 as permitted sender) smtp.mailfrom=bounces+3081929-b8bd-hutamatr=gmail.com@sendgrid.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.net; h=subject:from:reply-to:to:mime-version:content-type:x-feedback-id; s=smtpapi; bh=aY3iZS75bGlp5y4DO4LkflTxpvI=; b=rWS2vMuX7i4MoPzu2T rjKIHldlaBAmcbCO4HAnyUnttVarWFR6kDwBQGhbrl2rFFzS0GIQn3o8CHt2PGno CZK07mHOkkSpwNdgdMhU5bnHBuNwf2Tpnr+18XM5Vw1QxQ84aFhUsRSga1z0d+l/ ucS/n6CLZEF623PIz4ED0QMeg=
+Received: by filter0359p1las1.sendgrid.net with SMTP id filter0359p1las1-15107-59B2EC58-3F
+        2017-09-08 19:15:37.564997281 +0000 UTC
+Received: from markplusconference.com (n15.c10.mtsvc.net [64.207.136.15]) by ismtpd0002p1sjc2.sendgrid.net (SG) with ESMTP id yl_W6mp0QyiWtDwIq6-LmQ for <hutamatr@gmail.com>; Fri, 08 Sep 2017 19:15:36.436 +0000 (UTC)
+Message-ID: <7771ed64e811a48c77438b041971a392@markplusconference.com>
+Date: Fri, 08 Sep 2017 19:15:37 +0000 (UTC)
+Subject: Calling for Rocket Pitching NextDev Competition 2017
+From: The NextDev <info@nextdev.com>
+Reply-To: info@nextdev.com
+To: hutamatr@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="_=_swift_v4_1504898136_ccc5e6c9e98496594d5b7d4897216f35_=_"
+X-SG-EID: e+4D6cjd2sEi2BQRVvw3aNrdhkxFrmTWJHEjb+eK/l6ryX8nIqtjWE0IHQI+2K2Y7pXjGAaZd9/wPV TSdjq3rDwxhbwZQgGQUA87VQbo5jWq0oxUvGPaL97hPlvAFpFcBieZew/b7FYNRa2tlXdAsfNr1sTF 4TCm2Be8pcVGurEFDell0SKQQu/UOP1dNy7hqt5AoRPr0UFE+lUhj/nGVA==
+X-Feedback-ID: 3081929:LTRcLanIpyy6+BAa5yE71pPVk0UCx8SV6QuBUgo+CHQ=:LTRcLanIpyy6+BAa5yE71pPVk0UCx8SV6QuBUgo+CHQ=:SG
+
+--_=_swift_v4_1504898136_ccc5e6c9e98496594d5b7d4897216f35_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<HTML xmlns=3D"http://www.w3.org/TR/REC-html40" xmlns:v =3D "urn:schemas-mi=
+crosoft-com:vml" xmlns:o =3D "urn:schemas-microsoft-com:office:office" xmln=
+s:w =3D "urn:schemas-microsoft-com:office:word" xmlns:m =3D "http://schemas=
+.microsoft.com/office/2004/12/omml"><HEAD>
+<META content=3D"text/html; charset=3Dus-ascii" http-equiv=3DContent-Type>
+<META name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)">
+<STYLE>@font-face {
+=09font-family: Cambria Math;
+}
+@font-face {
+=09font-family: Calibri;
+}
+@page WordSection1 {size: 8.5in 11.0in; margin: 1.0in 1.0in 1.0in 1.0in; }
+P.MsoNormal {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt
+}
+LI.MsoNormal {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt
+}
+DIV.MsoNormal {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt
+}
+A:link {
+=09TEXT-DECORATION: underline; COLOR: #0563c1; mso-style-priority: 99
+}
+SPAN.MsoHyperlink {
+=09TEXT-DECORATION: underline; COLOR: #0563c1; mso-style-priority: 99
+}
+A:visited {
+=09TEXT-DECORATION: underline; COLOR: #954f72; mso-style-priority: 99
+}
+SPAN.MsoHyperlinkFollowed {
+=09TEXT-DECORATION: underline; COLOR: #954f72; mso-style-priority: 99
+}
+P.MsoListParagraph {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt =
+0.5in; mso-style-priority: 34
+}
+LI.MsoListParagraph {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt =
+0.5in; mso-style-priority: 34
+}
+DIV.MsoListParagraph {
+=09FONT-SIZE: 11pt; FONT-FAMILY: "Calibri",sans-serif; MARGIN: 0in 0in 0pt =
+0.5in; mso-style-priority: 34
+}
+SPAN.EmailStyle18 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: windowtext; mso-style-type: pe=
+rsonal
+}
+SPAN.EmailStyle19 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: #1f497d; mso-style-type: perso=
+nal
+}
+SPAN.EmailStyle20 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: #1f497d; mso-style-type: perso=
+nal
+}
+SPAN.EmailStyle21 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: #1f497d; mso-style-type: perso=
+nal
+}
+SPAN.EmailStyle22 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: windowtext; mso-style-type: pe=
+rsonal
+}
+SPAN.EmailStyle23 {
+=09FONT-FAMILY: "Calibri",sans-serif; COLOR: #1f497d; mso-style-type: perso=
+nal-reply
+}
+.MsoChpDefault {
+=09FONT-SIZE: 10pt; mso-style-type: export-only
+}
+DIV.WordSection1 {
+=09page: WordSection1
+}
+OL {
+=09MARGIN-BOTTOM: 0in
+}
+UL {
+=09MARGIN-BOTTOM: 0in
+}
+</STYLE>
+</HEAD>
+<BODY lang=3DEN-US vLink=3D#954f72 link=3D#0563c1>
+<DIV class=3DWordSection1>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN>Dear Startup Enthusiats,&nbsp;<o:p></o:p></SPAN><=
+/P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto; background-size: initial; background-origin: initial; background-=
+clip: initial"><B><SPAN lang=3DIN>Mau jadi Finalis Top 20 NextDevCompetitio=
+n 2017? Bersiaplah untuk mengikuti Rocket Pitching di Yogyakarta!<o:p></o:p=
+></SPAN></B></P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN>Ide aplikasimu dapat dipresentasikan di Bandung, =
+Yogyakarta, Surabaya, dan Makassar. Raihlah kesempatan emas ini untuk menja=
+di Finalist Top 20 #NextDev2017 dan dapatkan hadiah 7M!<o:p></o:p></SPAN></=
+P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN>Tanggal 3 September kemarin, NextDev telah sukses=
+ menyelenggarakan kompetisi Rocket Pitching di Kota Medan di mana&nbsp;<A h=
+ref=3D"https://u3081929.ct.sendgrid.net/wf/click?upn=3DVWXHghW-2B4IaaYfZIer=
+DwEDr6Fq0k-2BP-2FcB9Cby-2FhIgfU39mGWPRvhXsvsaCgYPe1g_XcT-2BFLmXGUTYnXk-2BM4=
+qB4S51jqOlFkvXCtrVibgtAVtQ3Z-2FeBbdRepXAsBHRj807mJ6DXsmhgQf-2BSAXdXKvyItly1=
+u7AXrhRvFhl1mRF1S3TUI6axnATiM3gZZvg0zOFgE8lAO6EfKXsMFKmivLOTMi50pT-2Bc-2BSp=
+D7BIt9vkgeSe2mWm1AyHxuyHcu7nlMYym8e07WE-2FJZdivNk-2BpMc0IvhybMfqw7Eey8DnBrA=
+Y9GQ-3D">Medicaboo</A>, startup e-health asal Pekanbaru yang menghubungkan =
+dokter dan rumah sakit, terpilih sebagai Juara 1 Rocket Pitching dan otomat=
+is menjadi Finalist Top 20 NextDev Competition 2017.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto; background-size: initial; background-origin: initial; background-=
+clip: initial"><SPAN lang=3DIN>Mau mengikutin jejaknya <A href=3D"https://u=
+3081929.ct.sendgrid.net/wf/click?upn=3DVWXHghW-2B4IaaYfZIerDwEDr6Fq0k-2BP-2=
+FcB9Cby-2FhIgfU39mGWPRvhXsvsaCgYPe1g_XcT-2BFLmXGUTYnXk-2BM4qB4S51jqOlFkvXCt=
+rVibgtAVtQ3Z-2FeBbdRepXAsBHRj8070KptqIe7r3VmeGOMfuH1OO4M2G-2BhmmTsWIFDJ-2Fx=
+FsVcSuaCJdDWQU0wSiuj8KkSiFPr2ZC5xxpAfsguKibDT7IXWynv9Q5CVYLwPLwnj-2BDQZKo76=
+cshCzB6vksFhm7-2FeodkooLfXk0kyikIhQbjFpb3v5hlnOzYhstPE2cCP0AM-3D">Medicaboo=
+</A>? Bersiaplah untuk mengikuti Rocket Pitching di Yogyakarta! Terlampir c=
+ontoh-contoh pitchdeck juara dan finalist NextDev tahun lalu untuk memberik=
+an gambaran mengenai konten pitchdeck. <o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN>Deadline pengumpulan pitchdeck untuk Rocket Pitch=
+ing di Yogyakarta tanggal 15 September 2017 jam 23:59 WIB. Yuk segera dafta=
+rkan dirimu atau timmu di <A href=3D"https://u3081929.ct.sendgrid.net/wf/cl=
+ick?upn=3DUvSGip2pOM0rpqJUOQK680ucqJg8J-2FZqPbjxPt30wUNPzKzyobgcXP3L9KHlgMR=
+M_XcT-2BFLmXGUTYnXk-2BM4qB4S51jqOlFkvXCtrVibgtAVtQ3Z-2FeBbdRepXAsBHRj807Qfz=
+66oHnZURU3gI9ykElrUmi0WtOsPuurcnQRufuTNf9qYTcF4pu3RDVZAfjhZA-2F0IeVMfNHuNp6=
+nKzhYDsUg57YGb87RbGkrtwjDhPKqVbD-2BsFBhH4XJ2w3OcA0-2BGD1Lmi2io1Pxy6pKxAlazk=
+0kRXqpFmjnX0ub7sQXhqT4CA-3D" target=3D_blank>http://thenextdev.id/rocketpit=
+ching</A>&nbsp;dan raih kesempatan ini untuk pengembangan ide aplikasi/star=
+tup kamu.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN style=3D"COLOR: black">Sampai ketemu di NextDev R=
+ocket Pitching 2017</SPAN><SPAN lang=3DIN><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"mso-margin-top-alt: auto; mso-margin-bottom-a=
+lt: auto"><SPAN lang=3DIN style=3D"COLOR: black">Regards,</SPAN><SPAN lang=
+=3DIN><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DIN style=3D"COLOR: black">NextDev</SPAN><=
+SPAN lang=3DIN><o:p></o:p></SPAN></P></DIV>
+<img src=3D"https://u3081929.ct.sendgrid.net/wf/open?upn=3DXcT-2BFLmXGUTYnX=
+k-2BM4qB4S51jqOlFkvXCtrVibgtAVtQ3Z-2FeBbdRepXAsBHRj807lEiXUMrnsPOXzedxcypcK=
+gj3PHtZD0kO84pso3n7mEiXEpFxPPDB6cW3-2F5Ts0S84rvGVID2VMGqq87K-2F-2BJl4Wmkwk4=
+UEKkE-2Fvyf2spIdwNb9HrzS7XByVEj3h9JYFTnHKs93Rs-2B-2Be9s-2FmLGrny9UUWcfh8ggi=
+8iRKSF-2Fmh2TRJM-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=
+=3D"height:1px !important;width:1px !important;border-width:0 !important;ma=
+rgin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;=
+margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !importa=
+nt;padding-right:0 !important;padding-left:0 !important;"/>
+</BODY></HTML>
+
+
+--_=_swift_v4_1504898136_ccc5e6c9e98496594d5b7d4897216f35_=_
+Content-Type: application/pdf; name="Contoh Template PitchDeck NextDev Competition 2017.pdf.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Contoh Template PitchDeck NextDev Competition 2017.pdf.pdf"
+
+
+--_=_swift_v4_1504898136_ccc5e6c9e98496594d5b7d4897216f35_=_--

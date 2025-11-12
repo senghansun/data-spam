@@ -1,0 +1,737 @@
+﻿Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.7.200 with SMTP id 191csp1075620vkh;
+        Tue, 15 Aug 2017 04:18:08 -0700 (PDT)
+X-Received: by 10.107.35.65 with SMTP id j62mr21107002ioj.335.1502795888849;
+        Tue, 15 Aug 2017 04:18:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502795888; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aqB8mRuV8bGShAqi63hryFS5A5MIfxc7dhfjYWYLmhka1RYvW/KDTMGAcDlJq6hzQ0
+         w4hZ+FNT0Nd0rowrN/tS2QyQ2KemOtl1txIWyHde6l0GW0aDay6H8BYBKF0O+C6dS75j
+         vjqKjht7xJei7QaYUxCqxk/M4QxVvEEBdcQqAd6nL195CTjEqbEtctDEytYDgkl7L30b
+         eMGAjIs7mxgSGZwm5ZW5hSJSiortcriqzEo/7DDuDvIlcY7WMXjH28Dtj0bW6DUVTQ38
+         CmhH93l84Kr8NjgNQK6KuaIEgYIDdEhXFiXUe011UXxBUKAJBzqG2zF219fUPL4G0lHJ
+         ZpyA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:date:sender
+         :domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=QWzqds/0hY6MrNFqVziWo9Jau7lnHIP2cS81f0L7AHo=;
+        b=esMdb3oHPidUVl4kHP3MpCmz0D8npljcS1TPxCzH70TkHworQlHYwdIGpoQ4VQ7dF9
+         AjFWlHgcImuuWPhFnN3tla6nwzmFjwuSVg3tf/vyWOUS73aQcdhch/Vqx624FAzq00WJ
+         eKsZihU7c/wCFfm4H7TV2H12lWfl4GYTmsZBhOeCWKKPQTFB3VaI9Z/W9z2w1AFv3RGE
+         lmTMPqEWh+NqVaJ3YPJpyUSRpaIf3rD4o0KSVfvH6FAy02gn3tbyDnDdZPM00STyPHk3
+         Xl1gMrW0iqzC6LNDuOrMKRnicHSzbuUlRQRea43qroAHh/XbOk/noM5Ssuf2wuO5fw9K
+         kz/g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=fr7h2aGg;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=0/sUXBEl;
+       spf=pass (google.com: domain of bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com designates 23.253.182.108 as permitted sender) smtp.mailfrom=bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com>
+Received: from mail-182-108.mailgun.info (mail-182-108.mailgun.info. [23.253.182.108])
+        by mx.google.com with UTF8SMTPS id 140si1492008ite.3.2017.08.15.04.18.08
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 15 Aug 2017 04:18:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com designates 23.253.182.108 as permitted sender) client-ip=23.253.182.108;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=fr7h2aGg;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=0/sUXBEl;
+       spf=pass (google.com: domain of bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com designates 23.253.182.108 as permitted sender) smtp.mailfrom=bounce+bccbb7.fc5a0b-nikosatrianto=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=newsletter.bukalapak.com; q=dns/txt; s=smtp; t=1502795888; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=QWzqds/0hY6MrNFqVziWo9Jau7lnHIP2cS81f0L7AHo=; b=fr7h2aGgCpsMteEvON7qq8OMhR5PvOMYC4uJg8BkF4w1SrhIfNuaGFoM99JjOEee/vaCHA/G /M+LL9c8TSpfRx65ecNifgANCm+ljztjB0xsjcuynzPi3ch47KTyZB+PpUvs2qurc9bWhjF6 sRLPt4C8fel2VAww/dXNZoikX2M=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=newsletter.bukalapak.com; s=smtp; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=Ny2xaboCgkiTImxiulk8sNwYcT265f61w8/TMFDWwoCP4mpW7imRTnpQsvMlqc3pSUfy+8 nKwKQl7ykI295M81R8yJDSTRPP1MqgmxgkmfnCz50Qs6c7VX+GlkcgRANIaWV1o+niklvgrU VVRUcpNNzQ58pYPwmCkOXY2zJWnoo=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1502795888; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=QWzqds/0hY6MrNFqVziWo9Jau7lnHIP2cS81f0L7AHo=; b=0/sUXBElIIcUsL7N82ByWazkzK7m3j1oCPMjeTV6Bu0dENHdtCHKvyEXJB45jg7kMU+HGimb Zj2x8IZ8XDX8lLRc4KUqkudHWQJJAPNE2wWuVH86CFukbqV15odLdi/dqaB9CfFfbAoiUOVl 3d7Wq13ch5ClCaDQbf/n9iNhaB0=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=28IAzIq7m8jTBUkn+2qJX8nqOTPkE/m2If1hgfOYJZ6jqK3sqN86XEcMzWACVSBJFHxQdP UFDRCoR+5AA9lrJoY1MtYQn8aFSYEGx5o0slZLbDHwXTs0S/EeE/pPA8tn81o+R8IKAsyqol RJsreBb394KABQLsSQWbUVpLsvOE4=
+X-Feedback-Id: 57988b8e803267cd4092b267:mailgun
+Sender: achmad.zaky=bukalapak.com@newsletter.bukalapak.com
+Date: Tue, 15 Aug 2017 11:18:08 +0000
+X-Mailgun-Sending-Ip: 23.253.182.108
+X-Mailgun-Sid: WyI0NzIxYSIsICJuaWtvc2F0cmlhbnRvQGdtYWlsLmNvbSIsICJmYzVhMGIiXQ==
+Received: by luna.mailgun.net with HTTP; Tue, 15 Aug 2017 11:18:08 +0000
+Message-Id: <20170815111808.94493.58C2105C3AEA848B@newsletter.bukalapak.com>
+To: nikosatrianto@gmail.com
+From: Achmad Zaky <achmad.zaky@bukalapak.com>
+Subject: Kabar Terbaru dari CEO Bukalapak 🔥
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="e7a0ad185e6d47679eda86b877049d1b"
+
+--e7a0ad185e6d47679eda86b877049d1b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+Salam Bukalapak,
+
+Terima kasih sudah tidak pindah ke lain
+hati dan tetap setia belanja di Bukalapak. Berkat dukungan kalian
+semua, Bukalapak makin jos gandos dan punya banyak fitur-fitur
+baru. Semua ini demi kalian Om dan Tante! Asyik enggak, tuh?
+
+Emang Bukalapak udah bisa apa aja sih?
+Jangan-jangan Zaky cuma ngomong doang nih. Ok, saya kasih tahu
+apa saja yang Bukalapak udah lakukan untuk para pengguna
+Bukalapak:
+
+=E2=80=A2
+
+BukaEmas=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+bukaemas%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbu=
+kalapak%26utm_content%3Dbukaemas&lllsttu=3De9e450969b8325e6b49b232f6c5f054a=
+9867d05c4c135ed833fdfe2ad7218b08&subject=3DKabar+Terbaru+dari+CEO+Bukalapak=
++%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dnikosatrianto=
+%40gmail.com )
+: Mau jual beli logam mulia/emas serendah 5 miligram? Online
+pula, enggak pake repot. Bisa dong di BukaEmas.
+
+=E2=80=A2
+
+BukaReksa=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+bukareksa%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarb=
+ukalapak%26utm_content%3Dbukareksa&lllsttu=3D44e510fe7ed09127cd979a8b5c3597=
+0b395f5a4af25230a02557a042d9a6484c&subject=3DKabar+Terbaru+dari+CEO+Bukalap=
+ak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dnikosatrian=
+to%40gmail.com )
+: Sudah pada tahu kan investasi reksadana? Nah di Bukalapak
+sudah bisa investasi reksadana konvensional ataupun syariah,
+tinggal pilih yang sreg di hati! Tapi jangan lupa, transaksinya
+harus pake BukaDompet, Say!
+
+=E2=80=A2
+
+J&T Express dan GO-SEND Same Day
+Delivery=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F06%2Fgosend-same-day-delivery%2F%3Futm_source%3Demail%26utm_medium%=
+3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dgosendsameday&lllst=
+tu=3D58471a3b3c9df3d4ad378c47dc657434b54d26dadc24c245d174dd309b8fc484&subje=
+ct=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3D=
+ClickEmail&user_email=3Dnikosatrianto%40gmail.com )
+: Mau barang cepat sampai? Gampang. Ada pilihan kurir yang bisa
+disesuaikan dengan kebutuhan pengguna seperti J&T Express. Bagi
+yang ingin menerima barang pada hari yang sama (terutama buat
+yang di Jakarta, nih) tersedia juga GO-SEND Same Day Delivery.
+
+=E2=80=A2
+
+Pospay: Masih lebih nyaman bayar
+lewat kantor pos? Boleh, tinggal pakai Pospay saja.
+
+=E2=80=A2
+
+Akulaku: Enggak punya kartu kredit?
+Tapi mau nyicil? Bisa dong, pakai Akulaku saja buat belanja
+dengan metode cicilan.
+
+=E2=80=A2
+
+Bayar Tagihan Listrik=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+listrik-pln%2Ftagihan-listrik%3Futm_source%3Demail%26utm_medium%3Demail%26u=
+tm_campaign%3Dkabarbukalapak%26utm_content%3Dtagihanlistrik&lllsttu=3Dcbb72=
+011034d8f0c5c4b684bdd7700a5b3ef791805ed8bbba7ad86d0ae230c19&subject=3DKabar=
++Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail=
+&user_email=3Dnikosatrianto%40gmail.com )
+: Bayar tagihan listrik lebih gampang dan lebih cepat di
+Bukalapak. Enggak perlu nunggu dijewer pasangan buat ngingetin
+bayar.
+
+=E2=80=A2
+
+Beli Instan=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F07%2Ffitur-beli-instan%2F%3Futm_source%3Demail%26utm_medium%3Demail=
+%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dbeliinstan&lllsttu=3Db3227=
+56068401378c494f0c25b69ee6dc6fd9e02feeffc0b1c57526619feb0fc&subject=3DKabar=
++Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail=
+&user_email=3Dnikosatrianto%40gmail.com )
+: Beli Instan bisa dipakai untuk yang mau transaksi jual beli
+barang/jasa, tapi tidak ada di lapak, dengan harga dan ongkir
+sesuai kesepakatan kamu dengan penjual.
+
+=E2=80=A2
+
+Referral=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+referral%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbu=
+kalapak%26utm_content%3Dreferral&lllsttu=3Dbe608897b181f15da54cd7df5ede5dd1=
+e5aa835b4203e08bcfe950e9b1f2ee83&subject=3DKabar+Terbaru+dari+CEO+Bukalapak=
++%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dnikosatrianto=
+%40gmail.com )
+: Cuma ngajak teman belanja, bisa dapet rewards? Bisa dong, ajak
+aja teman kamu untuk belanja di Bukalapak dan dapatkan rewards
+yang dapat dipakai belanja mulai dari Rp10.000,-
+
+=E2=80=A2
+
+Promo Page=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbukal=
+apak%26utm_content%3Dpromo&lllsttu=3Da5f50a174747cb8ce083702c46bd57be2144e9=
+0ece3e7b79b09205541fec8f83&subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9=
+F%94%A5&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dnikosatrianto%40gma=
+il.com )
+: Mau tau ada promo apa saja yang ada di Bukalapak? Di halaman
+ini pengguna dapat mencari promo yang sesuai dengan kebutuhan,
+Asyik kan?
+
+Buat Om dan Tante Pelapak, juga enggak
+ketinggalan dong. Apalagi Bukalapak sekarang sudah punya lebih
+dari 1,7 juta Pelapak! Manteb kan. Nah, biar makin jos jualannya,
+Bukalapak juga menyediakan fitur-fitur ini nih:
+
+=E2=80=A2
+
+Push Otomatis=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F04%2Fpush-otomatis%2F%3Futm_source%3Demail%26utm_medium%3Demail%26u=
+tm_campaign%3Dkabarbukalapak%26utm_content%3Dpushotomatis&lllsttu=3D5833bc7=
+e4c60301ba4beb3c8c8f89e85ddc175e4594c79be7795f1fa531e3621&subject=3DKabar+T=
+erbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail&u=
+ser_email=3Dnikosatrianto%40gmail.com )
+: Om dan Tante tinggal atur aja jadwalnya. Kapan mau pakai Push
+di lapaknya.
+
+=E2=80=A2
+
+Pinjaman Saldo=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F03%2Ffasilitas-pinjaman-saldo%2F%3Futm_source%3Demail%26utm_medium%=
+3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dpinjamansaldo&lllst=
+tu=3D484659bab201f4ca7a3f63bc3afee9cb56bb87ca5ec087d7b6a4abb92d7f835d&subje=
+ct=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3D=
+ClickEmail&user_email=3Dnikosatrianto%40gmail.com )
+: Saldo BukaDompet tiris? Gampang, tinggal pinjam dana aja di
+Pinjaman Saldo buat beli paket Push, Promoted Push, atau Premium
+Account yang ada di Bukalapak.
+
+=E2=80=A2
+
+Product Variant=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F04%2Ffitur-baru-product-varian%2F%3Futm_source%3Demail%26utm_medium=
+%3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dproductvarian&llls=
+ttu=3D5c8bfb295a0a0905da2c681ca5ebc7ccc86e0f0a408095b68155fc9ba1d5f2ad&subj=
+ect=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=
+=3DClickEmail&user_email=3Dnikosatrianto%40gmail.com )
+: Untuk Om dan Tante yang memiliki produk dengan berbagai
+varian. Baik dari ukuran, warna dan rasa, sekarang enggak perlu
+repot upload berkali kali, cukup tambahkan produk variannya saja.
+Makin mudah kan jualannya?
+
+=E2=80=A2
+
+Fitur Identifier=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F05%2Ffitur-identifier%2F%3Futm_source%3Demail%26utm_medium%3Demail%=
+26utm_campaign%3Dkabarbukalapak%26utm_content%3Dfituridentifier&lllsttu=3D2=
+ae1ff9349f55c4068e292870eaf0519a1f11fd8050d8a74e656ca606fb46e2b&subject=3DK=
+abar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickE=
+mail&user_email=3Dnikosatrianto%40gmail.com )
+: Om dan Tante mau ngediskon barang jualannya? Bisa pakai fitur
+ini untuk kasih tanda kalau barang jualan Om dan Tante lagi
+diskon, atau bisa dibeli secara grosir.
+
+=E2=80=A2
+
+Homepage Promo=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2=
+F2017%2F02%2Fhomepage-promo%2F%3Futm_source%3Demail%26utm_medium%3Demail%26=
+utm_campaign%3Dkabarbukalapak%26utm_content%3Dhomepagepromo&lllsttu=3D2262d=
+e1d9feee30e403c75729db2ccb0db4bca16a508f5bd623bb62d01a490b7&subject=3DKabar=
++Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=3Dnewsletter&type=3DClickEmail=
+&user_email=3Dnikosatrianto%40gmail.com )
+: Biar makin laris dan banyak yang mampir di lapaknya. Om dan
+Tante bisa minta barang jualannya untuk dipromosikan di halaman
+depan Bukalapak pakai fitur ini.
+
+Nah, saking sayangnya Bukalapak sama
+semua penggunanya, kami tidak berhenti sampai di sini saja. Masih
+banyak yang akan kami kembangkan untuk mendukung kenyamanan
+menggunakan Bukalapak. Mudah-mudahan pengguna Bukalapak
+se-Indonesia puas, makin sayang, dan makin mesra sama Bukalapak.
+
+Terus berikan dukungan untuk Bukalapak
+yang lebih baik, dukungan Anda adalah semangat bagi kami.
+
+Jabat erat,
+
+Achmad Zaky
+
+Co-founder dan CEO Bukalapak
+
+Bukalapak=20
+( http://glimpsetrack.net/redirect?late_id=3D2230&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com&lllsttu=3D89f9c5608d7441820c5b106a8ecd8f5e51c9a7b5851b8b65901=
+6f72b100c5c2e&subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&tag=
+=3Dnewsletter&type=3DClickEmail&user_email=3Dnikosatrianto%40gmail.com )
+--e7a0ad185e6d47679eda86b877049d1b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <title>Salam Bukalapak, Terima kasih sudah tidak pindah ke lain hati da=
+n tetap setia belanja di Bukalapak.</title>
+    <style>
+    /* -------------------------------------
+        INLINED WITH htmlemail.io/inline
+    ------------------------------------- */
+    /* -------------------------------------
+        RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+    @media only screen and (max-width: 620px) {
+      table[class=3Dbody] h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+      }
+      table[class=3Dbody] p,
+            table[class=3Dbody] ul,
+            table[class=3Dbody] ol,
+            table[class=3Dbody] td,
+            table[class=3Dbody] span,
+            table[class=3Dbody] a {
+        font-size: 16px !important;
+      }
+      table[class=3Dbody] .wrapper,
+            table[class=3Dbody] .article {
+        padding: 10px !important;
+      }
+      table[class=3Dbody] .content {
+        padding: 0 !important;
+      }
+      table[class=3Dbody] .container {
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      table[class=3Dbody] .main {
+        border-left-width: 0 !important;
+        border-radius: 0 !important;
+        border-right-width: 0 !important;
+      }
+      table[class=3Dbody] .btn table {
+        width: 100% !important;
+      }
+      table[class=3Dbody] .btn a {
+        width: 100% !important;
+      }
+      table[class=3Dbody] .img-responsive {
+        height: auto !important;
+        max-width: 100% !important;
+        width: auto !important;
+      }
+    }
+    /* -------------------------------------
+        PRESERVE THESE STYLES IN THE HEAD
+    ------------------------------------- */
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+        line-height: 100%;
+      }
+      .apple-link a {
+        color: inherit !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+        text-decoration: none !important;
+      }
+      .btn-primary table td:hover {
+        background-color: #34495e !important;
+      }
+      .btn-primary a:hover {
+        background-color: #34495e !important;
+        border-color: #34495e !important;
+      }
+    }
+    p {
+      margin:0 0 1.35em;
+    }
+    </style>
+  </head>
+  <body class=3D"" style=3D"background-color: #f6f6f6; font-family: sans-se=
+rif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4=
+; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"body" =
+style=3D"border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; width: 100%; background-color: #f6f6f6;">
+      <tr>
+        <td style=3D"font-family: sans-serif; font-size: 14px; vertical-ali=
+gn: top;">=C2=A0</td>
+        <td class=3D"container" style=3D"font-family: sans-serif; font-size=
+: 14px; vertical-align: top; display: block; Margin: 0 auto; max-width: 580=
+px; padding: 10px; width: 580px;">
+          <div class=3D"content" style=3D"box-sizing: border-box; display: =
+block; Margin: 0 auto; max-width: 580px; padding: 10px;">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table class=3D"main" style=3D"border-collapse: separate; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; =
+border-radius: 3px;">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class=3D"wrapper" style=3D"font-family: sans-serif; fon=
+t-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;">
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; width: 100%;">
+                    <tr>
+                      <td style=3D"font-family: sans-serif; font-size: 14px=
+; vertical-align: top;">
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Salam Bukalapak,</p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Terima kasih sudah tidak pindah ke lain hati dan tetap setia belanja di Bu=
+kalapak. Berkat dukungan kalian semua, Bukalapak makin jos gandos dan punya=
+ banyak fitur-fitur baru. Semua ini demi kalian Om dan Tante! Asyik enggak,=
+ tuh?</p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Emang Bukalapak udah bisa apa aja sih? Jangan-jangan Zaky cuma ngomong doa=
+ng nih. Ok, saya kasih tahu apa saja yang Bukalapak udah lakukan untuk para=
+ pengguna Bukalapak:</p>
+                                                <table cellspacing=3D"0" ce=
+llpadding=3D"0">
+                          <tr>
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+">=E2=80=A2</td>
+                            <td align=3D"left" valign=3D"top">
+
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fbukaemas%3Futm_source%3D=
+email%26utm_medium%3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3D=
+bukaemas&amp;lllsttu=3De9e450969b8325e6b49b232f6c5f054a9867d05c4c135ed833fd=
+fe2ad7218b08&amp;subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&am=
+p;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40g=
+mail.com"><font color=3D"#D71149">BukaEmas</font></a>: Mau jual beli logam =
+mulia/emas serendah 5 miligram? Online pula, enggak pake repot. Bisa dong d=
+i BukaEmas.</p>
+
+</td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fbukareksa%3Futm_source%3=
+Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3=
+Dbukareksa&amp;lllsttu=3D44e510fe7ed09127cd979a8b5c35970b395f5a4af25230a025=
+57a042d9a6484c&amp;subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&=
+amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%4=
+0gmail.com"><font color=3D"#D71149">BukaReksa</font></a>: Sudah pada tahu k=
+an investasi reksadana? Nah di Bukalapak sudah bisa investasi reksadana kon=
+vensional ataupun syariah, tinggal pilih yang sreg di hati! Tapi jangan lup=
+a, transaksinya harus pake BukaDompet, Say! </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;">J&amp;T Express dan <a style=3D"text-decoration:none;" href=3D"http:/=
+/glimpsetrack.net/redirect?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapa=
+k.com%2Fcampaign%2FNIANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F201=
+7%2F06%2Fgosend-same-day-delivery%2F%3Futm_source%3Demail%26utm_medium%3Dem=
+ail%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dgosendsameday&amp;lllst=
+tu=3D58471a3b3c9df3d4ad378c47dc657434b54d26dadc24c245d174dd309b8fc484&amp;s=
+ubject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter=
+&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.com"><font co=
+lor=3D"#D71149">GO-SEND Same Day Delivery</font></a>: Mau barang cepat samp=
+ai? Gampang. Ada pilihan kurir yang bisa disesuaikan dengan kebutuhan pengg=
+una seperti J&amp;T Express. Bagi yang ingin menerima barang pada hari yang=
+ sama (terutama buat yang di Jakarta, nih) tersedia juga GO-SEND Same Day D=
+elivery.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;">Pospay: Masih lebih nyaman bayar lewat kantor pos? Boleh, tinggal pak=
+ai Pospay saja.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;">Akulaku: Enggak punya kartu kredit? Tapi mau nyicil? Bisa dong, pakai=
+ Akulaku saja buat belanja dengan metode cicilan.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Flistrik-pln%2Ftagihan-li=
+strik%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbukal=
+apak%26utm_content%3Dtagihanlistrik&amp;lllsttu=3Dcbb72011034d8f0c5c4b684bd=
+d7700a5b3ef791805ed8bbba7ad86d0ae230c19&amp;subject=3DKabar+Terbaru+dari+CE=
+O+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;use=
+r_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Bayar Tagihan =
+Listrik</font></a>: Bayar tagihan listrik lebih gampang dan lebih cepat di =
+Bukalapak. Enggak perlu nunggu dijewer pasangan buat ngingetin bayar.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F07%2Ffitur-beli-=
+instan%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarb=
+ukalapak%26utm_content%3Dbeliinstan&amp;lllsttu=3Db322756068401378c494f0c25=
+b69ee6dc6fd9e02feeffc0b1c57526619feb0fc&amp;subject=3DKabar+Terbaru+dari+CE=
+O+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;use=
+r_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Beli Instan</f=
+ont></a>: Beli Instan bisa dipakai untuk yang mau transaksi jual beli baran=
+g/jasa, tapi tidak ada di lapak, dengan harga dan ongkir sesuai kesepakatan=
+ kamu dengan penjual.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Freferral%3Futm_source%3D=
+email%26utm_medium%3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3D=
+referral&amp;lllsttu=3Dbe608897b181f15da54cd7df5ede5dd1e5aa835b4203e08bcfe9=
+50e9b1f2ee83&amp;subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&am=
+p;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40g=
+mail.com"><font color=3D"#D71149">Referral</font></a>: Cuma ngajak teman be=
+lanja, bisa dapet rewards? Bisa dong, ajak aja teman kamu untuk belanja di =
+Bukalapak dan dapatkan rewards yang dapat dipakai belanja mulai dari Rp10.0=
+00,-</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo%3Futm_source%3Dema=
+il%26utm_medium%3Demail%26utm_campaign%3Dkabarbukalapak%26utm_content%3Dpro=
+mo&amp;lllsttu=3Da5f50a174747cb8ce083702c46bd57be2144e90ece3e7b79b09205541f=
+ec8f83&amp;subject=3DKabar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Dnikosatrianto%40gmail.=
+com"><font color=3D"#D71149">Promo Page</font></a>: Mau tau ada promo apa s=
+aja yang ada di Bukalapak? Di halaman ini pengguna dapat mencari promo yang=
+ sesuai dengan kebutuhan, Asyik kan?</p>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Buat Om dan Tante Pelapak, juga enggak ketinggalan dong. Apalagi Bukalapak=
+ sekarang sudah punya lebih dari 1,7 juta Pelapak! Manteb kan. Nah, biar ma=
+kin jos jualannya, Bukalapak juga menyediakan fitur-fitur ini nih:</p>
+
+                        <table cellspacing=3D"0" cellpadding=3D"0">
+                          <tr>
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+">=E2=80=A2</td>
+                            <td align=3D"left" valign=3D"top">
+
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F04%2Fpush-otomat=
+is%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbukal=
+apak%26utm_content%3Dpushotomatis&amp;lllsttu=3D5833bc7e4c60301ba4beb3c8c8f=
+89e85ddc175e4594c79be7795f1fa531e3621&amp;subject=3DKabar+Terbaru+dari+CEO+=
+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_=
+email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Push Otomatis</f=
+ont></a>: Om dan Tante tinggal atur aja jadwalnya. Kapan mau pakai Push di =
+lapaknya. </p>
+
+</td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F03%2Ffasilitas-p=
+injaman-saldo%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3=
+Dkabarbukalapak%26utm_content%3Dpinjamansaldo&amp;lllsttu=3D484659bab201f4c=
+a7a3f63bc3afee9cb56bb87ca5ec087d7b6a4abb92d7f835d&amp;subject=3DKabar+Terba=
+ru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEma=
+il&amp;user_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Pinj=
+aman Saldo</font></a>: Saldo BukaDompet tiris? Gampang, tinggal pinjam dana=
+ aja di Pinjaman Saldo buat beli paket Push, Promoted Push, atau Premium Ac=
+count yang ada di Bukalapak.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F04%2Ffitur-baru-=
+product-varian%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%=
+3Dkabarbukalapak%26utm_content%3Dproductvarian&amp;lllsttu=3D5c8bfb295a0a09=
+05da2c681ca5ebc7ccc86e0f0a408095b68155fc9ba1d5f2ad&amp;subject=3DKabar+Terb=
+aru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEm=
+ail&amp;user_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Pro=
+duct Variant</font></a>: Untuk Om dan Tante yang memiliki produk dengan ber=
+bagai varian. Baik dari ukuran, warna dan rasa, sekarang enggak perlu repot=
+ upload berkali kali, cukup tambahkan produk variannya saja. Makin mudah ka=
+n jualannya?</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F05%2Ffitur-ident=
+ifier%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbu=
+kalapak%26utm_content%3Dfituridentifier&amp;lllsttu=3D2ae1ff9349f55c4068e29=
+2870eaf0519a1f11fd8050d8a74e656ca606fb46e2b&amp;subject=3DKabar+Terbaru+dar=
+i+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp=
+;user_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Fitur Iden=
+tifier</font></a>: Om dan Tante mau ngediskon barang jualannya? Bisa pakai =
+fitur ini untuk kasih tanda kalau barang jualan Om dan Tante lagi diskon, a=
+tau bisa dibeli secara grosir.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" valign=3D"top">=E2=80=A2</=
+td>
+                            <td align=3D"left" valign=3D"top">
+                              <p style=3D"font-family: sans-serif; font-siz=
+e: 14px; font-weight: normal; margin: 0; Margin-bottom: 8px; line-height: 1=
+70%;"><a style=3D"text-decoration:none;" href=3D"http://glimpsetrack.net/re=
+direct?late_id=3D2230&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FN=
+IANN-KTB01%3Fl%3Dhttps%3A%2F%2Fblog.bukalapak.com%2F2017%2F02%2Fhomepage-pr=
+omo%2F%3Futm_source%3Demail%26utm_medium%3Demail%26utm_campaign%3Dkabarbuka=
+lapak%26utm_content%3Dhomepagepromo&amp;lllsttu=3D2262de1d9feee30e403c75729=
+db2ccb0db4bca16a508f5bd623bb62d01a490b7&amp;subject=3DKabar+Terbaru+dari+CE=
+O+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;use=
+r_email=3Dnikosatrianto%40gmail.com"><font color=3D"#D71149">Homepage Promo=
+</font></a>: Biar makin laris dan banyak yang mampir di lapaknya. Om dan Ta=
+nte bisa minta barang jualannya untuk dipromosikan di halaman depan Bukalap=
+ak pakai fitur ini. </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Nah, saking sayangnya Bukalapak sama semua penggunanya, kami tidak berhent=
+i sampai di sini saja. Masih banyak yang akan kami kembangkan untuk menduku=
+ng kenyamanan menggunakan Bukalapak. Mudah-mudahan pengguna Bukalapak se-In=
+donesia puas, makin sayang, dan makin mesra sama Bukalapak. </p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 170%;"=
+>Terus berikan dukungan untuk Bukalapak yang lebih baik, dukungan Anda adal=
+ah semangat bagi kami.</p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 150%;"=
+>Jabat erat,</p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0;">Achmad Zaky</p>
+                        <p style=3D"font-family: sans-serif; font-size: 14p=
+x; font-weight: normal; margin: 0; Margin-bottom: 15px; ">Co-founder dan CE=
+O Bukalapak</p>
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2230&amp;link=3Dhttps%3A%2F%2Fwww.bukalapak.com&amp;lllsttu=3D89f9c5608d=
+7441820c5b106a8ecd8f5e51c9a7b5851b8b659016f72b100c5c2e&amp;subject=3DKabar+=
+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=3DCli=
+ckEmail&amp;user_email=3Dnikosatrianto%40gmail.com">
+                          <img src=3D"https://s1.bukalapak.com/images/logo/=
+single_174x28_0_red_03052016.png" alt=3D"Bukalapak" width=3D"130" hspace=3D=
+"0" vspace=3D"5">
+                        </a>
+                    </td>
+</tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+
+          <!-- END CENTERED WHITE CONTAINER -->
+          </div>
+        </td>
+        <td style=3D"font-family: sans-serif; font-size: 14px; vertical-ali=
+gn: top;">=C2=A0</td>
+      </tr>
+    </table>
+  <img src=3D"http://glimpsetrack.net/img?late_id=3D2230&amp;llsttu=3Ddd02e=
+d47cb2fc190c5ac1e872766f1b825ebe00fd2b655057453b6504ecaa2bc&amp;subject=3DK=
+abar+Terbaru+dari+CEO+Bukalapak+%F0%9F%94%A5&amp;tag=3Dnewsletter&amp;type=
+=3DOpenEmail&amp;user_email=3Dnikosatrianto%40gmail.com">
+</body>
+</html>
+
+--e7a0ad185e6d47679eda86b877049d1b--

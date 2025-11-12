@@ -1,0 +1,94 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.173.6 with SMTP id r6csp5034845oon;
+        Tue, 19 Sep 2017 05:54:34 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QCtgDn4pfP+374n3fU/JqjIcVLd4cOtncooBuZLeZlCL9is+wfU0p+CjovsjihYx1S0cUOD
+X-Received: by 10.25.147.207 with SMTP id w76mr614841lfk.169.1505825674800;
+        Tue, 19 Sep 2017 05:54:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505825674; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fJv3L9HscnC+FYoJIox6xSKtaliQuAaUqapknmwnw+himUJKm5ZH5T91y8nomxGvBf
+         Rry67Wo8Ox019vMDkUcSF8JwqcBJ8Y8VFfTgO9FxSWbxzFzaaBk6aFLTFk0O6PJRjTM2
+         YgY22uvegp1vL3sNctEJ8brWQXhNTVXFcu/t1GMEuHKA4dKEdfBgolmAI0jWIoMcCEl1
+         wusZvs2X/zfPnRxQOcKxwTz9Y9m+VCh4vOzMoR2H8vh2nbrEglQaWxh26qUUo813UHHy
+         joyuwaDrEdoVwjhujoVhcEqjaelAS6/MJHY868X2qU8gs9em8nld41SB7hHuJNemnSUl
+         aosg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:dkim-signature:list-unsubscribe:precedence:errors-to
+         :mime-version:list-unsubscribe:message-id:subject:reply-to:from:to
+         :date:arc-authentication-results;
+        bh=Bk0/3JervALiVf6uWEumeZOiUUyHqwpCAliP1PgarT4=;
+        b=SpngAnpcDgMfALOEfJtP/AGLIV88X8XLrf3Wh34JQCAiM5q94Oss0s134QdECf0d21
+         2IDNahFVQj4HRDMR1wSFFDkSVTk1BPz44pln3PFLYKdL3Y70gEiJxN5GsohDqX5cgtaB
+         0XRTGp2ewaj8grIl9m7Z66as0CFGxxgpDjUbPfEqTuoPGg/+sdYkn/wHtZsYjNPx7GCl
+         IB0HqjHUSDTpp8dL977jhZehxfp20TLpyXny6RSKFdfoN75nwMtKTlHFKJfqE+c471+z
+         hvGP8ej58Lv375l34mJr5u9d5BKEcXSrvstWduD28rT0biaL7jvnLJoPQIP10PORZaEz
+         R+tg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@smtp-pulse.com header.s=smtpsign header.b=jJ4f1rLK;
+       spf=pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) smtp.mailfrom=hello@filebebo.com
+Return-Path: <hello@filebebo.com>
+Received: from mx93.smtp-pulse.com (mx93.smtp-pulse.com. [78.41.200.150])
+        by mx.google.com with ESMTPS id o87si3452975lfc.3.2017.09.19.05.54.34
+        for <lukaspatty@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Sep 2017 05:54:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) client-ip=78.41.200.150;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@smtp-pulse.com header.s=smtpsign header.b=jJ4f1rLK;
+       spf=pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) smtp.mailfrom=hello@filebebo.com
+Received: from [127.0.0.1] (helo=server.smtp-pulse.com) by smtp-pulse.com with esmtp (Exim 4.88_29-9c63814-XX) (envelope-from <hello@filebebo.com>) id 1duI2s-000KNm-51 for lukaspatty@gmail.com; Tue, 19 Sep 2017 12:54:34 +0000
+Date: Tue, 19 Sep 2017 18:24:33 +0530
+To: Lukas Patty <lukaspatty@gmail.com>
+From: Filebebo <hello@filebebo.com>
+Reply-To: Filebebo <hello@filebebo.com>
+Subject: Introducing Protected Video Embed Code
+Message-ID: <d11c6a4fc31a9b46489deabbecc6390d@srv5.poptm.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <http://newsletter.poptm.com/unsubscribe/TJr892y1aF8ced6W6w7gO7Evof3UoI00WP8O0Zms281GE/LGsUe23epoi3x3dUOAS36Q/hUSFAl8HV7dQ48mu5hPywg>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Errors-To: postmaster@smtp-pulse.com
+X-Complaints-To: abuse@smtp-pulse.com
+Precedence: bulk
+Received: from username [78.46.17.215] (Authenticated sender: hello@filebebo.com) by smtp-pulse.com (Exim); Tue,19 Sep 2017 12:09:34
+List-Unsubscribe: <mailto:unsubscribe_bbaeb9abe90aee43b6013a2765bc2535@smtp-pulse.com>, <http://unsubscribe.smtp-pulse.com/bbaeb9abe90aee43b6013a2765bc2535>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=smtp-pulse.com;
+  i=@smtp-pulse.com; q=dns/txt; s=smtpsign; t=1505825674; h=Subject :
+  From : To; bh=QmSKRhaGcyv41fHRTFcl2jV5zgcEMTj686mNMVnEfs8=;
+  b=jJ4f1rLKFs/vroOJi3i7UghLMLiy5jTS3f0jHOChuYoT5ehUMsIwW5ga0skmPFOgSKToc3 ZlT+EdeaVYgl8J5CG3wEg+nTE2zIa8dSuCgjGLG0UnSvV1O/DrA8TvEF3qkpsFkjtnPeMYle VL61l6kyTyk+mzx5I3Gt0Y8QZ7Cy4=
+Message-Id: <1duI2s-000KNm-51@mx93.smtp-pulse.com>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p align="center"><a href="https://filebebo.com/"><img alt="" src="https://filebebo.com/images/logo.png" style="width: 252px; height: 45px;" /></a></p>
+
+<p><span style="font-size:14px;"><span style="font-family:helvetica neue;">Hello,</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:helvetica neue;">Introducing new&nbsp;<strong>Protected Video Embed Code,&nbsp;</strong>This reduces the the detection of the video hosted location from the copyright holders and help us to evade from DMCA complaints.</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:helvetica neue;">Benifits <strong>Protected Video Embed Code&nbsp;</strong>:</span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Unable to detect the server location</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Domain and ip will be masked</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Restriction to right-click and opening of developer tools</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">If developer tools from the browser is opened the video will not be fetched</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">The code will work only if it is embded, it cant be opended in direct browser</span></span></li>
+	<li><font face="helvetica neue"><span style="font-size: 14px;">and many other internal features....</span></font></li>
+</ul>
+
+<p style="text-align: center;"><font face="helvetica neue"><span style="font-size: 14px;"><strong>Example :</strong>&nbsp;<a href="https://filebebo.com/d/rjimqwgrrhl4" target="_blank">https://filebebo.com/d/rjimqwgrrhl4</a></span></font></p>
+
+<p>&nbsp;</p>
+
+<p align="center"><span style="font-family:helvetica neue;"><a href="https://filebebo.com/register" target="_blank"><img align="center" alt="" src="https://3ug95vn.filebebo.com/i/00000/r4tgyohcal11.png" style="width: 136px; height: 50px;" /></a></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:helvetica neue;"><span style="font-size:14px;">Kind Regards<br />
+Filebebo Team</span></span></p>
+</body>
+</html>

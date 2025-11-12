@@ -1,0 +1,458 @@
+﻿Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.7.200 with SMTP id 191csp426929vkh;
+        Wed, 9 Aug 2017 20:40:46 -0700 (PDT)
+X-Received: by 10.98.163.133 with SMTP id q5mr8048988pfl.246.1502336446120;
+        Wed, 09 Aug 2017 20:40:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502336446; cv=none;
+        d=google.com; s=arc-20160816;
+        b=b/viP/kz1ZP3GMe3krBi+XwcOjyflsxPtTPUGU8iPhldDkpz/c2wn1b0SesPVAfXEr
+         kFKSbtLWG8fYh6jGs3kOcjfkIjs+MQXLX+4cwWo8Xz8Wxgek15L2IWCBTZftwkNg5424
+         o7gp9vYp2U78tPtmeBS8BNzxqiauGg4vd4aS/WbOmTanJFcQrOMX5k/tyfO08u5RtmBD
+         HSiYoHvcyqWTas2NUlvbAPBW5tTHfc0R+nEt048AU4I/+S2/z6YiFwJbfZR+Z015nhUm
+         JoO3hXso76QjOS2eIgXA3WapmcZIvj+/VIcismRO7dgxN8+MFbsNoHbZl1jufhAJIc7z
+         f5jQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:mime-version:subject:reply-to:from:to:feedback-id
+         :list-unsubscribe:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=ON/95OWx/0R4lK/BwJdTXnu6U3JlWrtkRJNH1agJ//8=;
+        b=BFiyPb3IgtJHOQwL7Ub8NhNIbzofMI5vdytOXRbwNA2VJtYjmioBqGKVoPm2SFpmlI
+         b2tYfhfsoVjoc8cHENuvv2l3vKZp6tFzyZ7S683+6oYEDqpb4SGjoYNZflCdQ4EC+IMF
+         NPJEWhpxeuXjq3BDJB5ZBK3NPq9rjq5BBXLz9kPUJaqe8FVrZppwlOMSWnSCDyTKqO1U
+         a1gQxPSxQ2BbWCUyX7L55gIQC3Gl2k/lM8k90JS8f6jQmZXK4hc0t1OCghj+O0POgk9k
+         8S1uNv9b2cAbUk8nHdxfV9KznbMNTvlIEPlmMOZOnaqqerTeaWc+80sryU+hfysG30D/
+         uWcg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=qDZmzR1X;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=bsViQw42;
+       spf=pass (google.com: domain of 0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com designates 54.240.27.58 as permitted sender) smtp.mailfrom=0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com
+Return-Path: <0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com>
+Received: from a27-58.smtp-out.us-west-2.amazonses.com (a27-58.smtp-out.us-west-2.amazonses.com. [54.240.27.58])
+        by mx.google.com with ESMTPS id 33si3762305plq.897.2017.08.09.20.40.45
+        for <nikosatrianto@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Wed, 09 Aug 2017 20:40:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com designates 54.240.27.58 as permitted sender) client-ip=54.240.27.58;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=qDZmzR1X;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=bsViQw42;
+       spf=pass (google.com: domain of 0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com designates 54.240.27.58 as permitted sender) smtp.mailfrom=0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=ds5tftndiq5w7mx3dskalrbgwofcp2ym; d=newsletter.tokopedia.com; t=1502336445; h=List-Unsubscribe:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=vibUSgEwOk7/dONnU0IoX4/8CM6w2MaTeNart7S1zN4=; b=qDZmzR1Xm0WbeLXZArbL4fOhlI15j/A75Te6s8nxKMr1sGK8KMD6MUsIpLG67dlS KBVIGbrwF29w2kUDxgjm79PofY+UkxjsLwbNnc65OWmR8J7ShUYiartxOKoa5g/bdRS BTfAsyw2Ymjrzy1q9iPP2vBqNEI9/iFCa1c6i8b0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1502336445; h=List-Unsubscribe:Feedback-ID:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=vibUSgEwOk7/dONnU0IoX4/8CM6w2MaTeNart7S1zN4=; b=bsViQw42FOLjomqjZJDlpq7CzGZ+grVpawmKdJGWK/gW675HyLCOJ+TsTG5o1VBM zbMXYNAVWu1lPhFUeB19LREf7FIHXKrc3uKxdr0wLplP/ILk0WubxsGeQJ+KXbFeVye 2sTb2UbQH3F6AC1wDKVT7ocb66ghSGWchWNHeg3U=
+List-Unsubscribe: <http://trk.newsletter.tokopedia.com/unsubscribed/nv/c/3v62UT1B5JIjcRvlDTcE/p/30045/key/bmlrb3NhdHJpYW50b0BnbWFpbC5jb20=/>
+Feedback-ID: 1.us-west-2.ZtpRxW5g2DKpajREozyjJ7uRVLSvjr1Y1lKw+NeHo9g=:AmazonSES
+To: nikosatrianto@gmail.com
+From: Tokopedia <exclusive@newsletter.tokopedia.com>
+Reply-To: exclusive@newsletter.tokopedia.com
+Subject: ✌️ Bayar Berturut, Bonus Berlipat
+MIME-Version: 1.0
+Content-type: Multipart/Mixed; boundary="1460982230598bd5ba590500.74737056"
+Message-ID: <0101015dca3ae796-a4bbe5e3-8c22-4dee-9820-917d2116a1bc-000000@us-west-2.amazonses.com>
+Date: Thu, 10 Aug 2017 03:40:44 +0000
+X-SES-Outgoing: 2017.08.10-54.240.27.58
+
+--1460982230598bd5ba590500.74737056
+Content-type: Multipart/Alternative; boundary="alt-1460982230598bd5ba590500.74737056"
+
+--alt-1460982230598bd5ba590500.74737056
+Content-Type: text/plain; charset="UTF-8"
+
+ 
+Cashback Rp30.000 ke TokoCash.
+
+ Kesulitan melihat email? Lihat di browser
+[http://trk.newsletter.tokopedia.com/em_3v62UT1B5JIjcRvlDTcE/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Femail-html-permalink%2Fnv%2FpeId%2F66840%2Fc%2F3v62UT1B5JIjcRvlDTcE%2F]
+
+
+ [Logo] 
+
+ [Cashback Rp30.000 ke TokoCash]
+[http://trk.newsletter.tokopedia.com/ec?d7BfNI/3v62UT1B5JIjcRvlDTcE] 
+
+HAI, TOPPERS!
+Ayo lakukan transaksi pembayaran tagihan PDAM, Gas, Telkom, atau TV Kabel kamu
+di Tokopedia 2X BERTURUT-TURUT dan dapatkan _CASHBACK_ SEBESAR RP30.000 ke
+TokoCash untuk setiap produk. 
+
+Semakin banyak tagihan yang kamu bayar, semakin banyak _cashback_ yang kamu
+terima! Tunggu apa lagi? Bayar ini itu lebih hemat, dimulai dari Tokopedia.
+
+ Kode Promo:
+ LANGGANAN 
+Berlaku hingga 31 Agustus 2017 
+ CEK SEKARANG
+[http://trk.newsletter.tokopedia.com/ec?0psfrW/3v62UT1B5JIjcRvlDTcE] 
+
+Pelajari Syarat dan Ketentuan:
+
+	* Periode promo: 1 - 31 AGUSTUS 2017;
+ 	* _Cashback_ Rp30.000 akan diterima setelah transaksi kedua
+ 	* Pengguna dapat mengikuti promo ini berkali-kali selama masa promo;
+ 	* Untuk mendapatkan _cashback_, pengguna harus melakukan aktivasi TokoCash,
+atau _cashback_ akan hangus;
+ 	* Cek syarat dan ketentuan selengkapnya di sini
+[http://trk.newsletter.tokopedia.com/ec?rnbMqW/3v62UT1B5JIjcRvlDTcE].
+
+ Top Up & Bayar Tagihan Dimulai Dari Tokopedia 
+
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?DNql1i/3v62UT1B5JIjcRvlDTcE] 
+Pulsa 
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?lhGsHJ/3v62UT1B5JIjcRvlDTcE] 
+Paket Data 
+
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?AljVTZ/3v62UT1B5JIjcRvlDTcE] 
+PDAM 
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?IKnMVD/3v62UT1B5JIjcRvlDTcE] 
+Listrik PLN 
+
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?zkeAIo/3v62UT1B5JIjcRvlDTcE] 
+TV Kabel 
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?je0JpB/3v62UT1B5JIjcRvlDTcE] 
+Voucher Game 
+
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?9uGzo2/3v62UT1B5JIjcRvlDTcE] 
+BPJS 
+ [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?VVFl8k/3v62UT1B5JIjcRvlDTcE] 
+Angsuran 
+
+Download App Tokopedia
+[Appstore] [http://trk.newsletter.tokopedia.com/ec?yILzay/3v62UT1B5JIjcRvlDTcE]
+[Playstore] [http://trk.newsletter.tokopedia.com/ec?2RDRGX/3v62UT1B5JIjcRvlDTcE]
+
+
+Ikuti Kami
+[Line] [http://trk.newsletter.tokopedia.com/ec?TkxGj5/3v62UT1B5JIjcRvlDTcE]
+[Google plus]
+[http://trk.newsletter.tokopedia.com/ec?GiPAKy/3v62UT1B5JIjcRvlDTcE] [Facebook]
+[http://trk.newsletter.tokopedia.com/ec?lANuyp/3v62UT1B5JIjcRvlDTcE] [Twitter]
+[http://trk.newsletter.tokopedia.com/ec?01GaKo/3v62UT1B5JIjcRvlDTcE] [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?lVlYA4/3v62UT1B5JIjcRvlDTcE] 
+
+ Hubungi Kami
+[http://trk.newsletter.tokopedia.com/ec?ALbOVY/3v62UT1B5JIjcRvlDTcE] 
+
+ Syarat & Ketentuan
+[http://trk.newsletter.tokopedia.com/ec?XpQxQJ/3v62UT1B5JIjcRvlDTcE] 
+
+ Kebijakan Privasi
+[http://trk.newsletter.tokopedia.com/ec?gAKSwS/3v62UT1B5JIjcRvlDTcE] 
+
+ Unsubscribe
+[http://trk.newsletter.tokopedia.com/em_3v62UT1B5JIjcRvlDTcE/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Funsubscribe%2Fnv%2Fc%2F3v62UT1B5JIjcRvlDTcE%2Fp%2F30045%2Fkey%2Fbmlrb3NhdHJpYW50b0BnbWFpbC5jb20%3D%2F]
+
+ © 2009-2017, PT Tokopedia 
+
+--alt-1460982230598bd5ba590500.74737056
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title></title><style>
+        html, body { min-width:260px; min-height:100%; padding:0; Margin:0 auto; background:#fff; }
+        a img { border:none; }
+        .ReadMsgBody { width:100%; }
+        .ExternalClass { width:100%; }
+        .ExternalClass * { line-height:100%; }
+        table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    </style><style type="text/css">
+        @media only screen and (max-width:480px) {
+            @-ms-viewport { width:320px; }
+            @viewport { width:320px; }
+            .ticker { width:200px!important;
+        }
+    </style><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--></head><body style="background-color: #f8f8f8;">
+
+
+
+    <!--======================= SUB-SUBJECT =======================-->
+    <p style="font-size:0px">Cashback Rp30.000 ke TokoCash.</p>
+    <!--======================= SUB-SUBJECT =======================-->
+
+
+
+    <!--[if mso]>
+    <table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td>
+    <![endif]-->
+    <div style="Margin:0 auto; max-width:600px; min-width:260px; font:16px sans-serif;">
+        <div style="text-align:center; font-size:0;">
+
+            <!--======================= BROWSER VIEW =======================-->
+            <div>
+                <div align="center" style="font-size: 11px; color: #4F4F4F; padding: 10px 0 10px;">
+                    Kesulitan melihat email? <a href="http://trk.newsletter.tokopedia.com/em_3v62UT1B5JIjcRvlDTcE/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Femail-html-permalink%2Fnv%2FpeId%2F66840%2Fc%2F3v62UT1B5JIjcRvlDTcE%2F" style="text-decoration: none; color: #42B549">Lihat di browser</a>
+                </div>
+            </div>
+            <!--======================= END OF BROWSER VIEW =======================-->
+
+
+            <!--======================= LOGO =======================-->
+            <div>
+                <div style="padding-bottom: 15px;">
+                   <img src="https://ecs7.tokopedia.net/email/logo/logo-green-50.png" alt="Logo" height="40"></div>
+            </div>
+            <!--======================= END OF LOGO =======================-->
+        </div>
+
+        <!--======================= SEPERATOR =======================-->
+        <div style="height: 15px; background-color: #42B549;">  
+        </div>
+        <!--======================= END OF SEPERATOR =======================-->
+
+        <!--======================= HEADER BANNER =======================-->
+        <div>
+            <div>
+                <a href="http://trk.newsletter.tokopedia.com/ec?d7BfNI/3v62UT1B5JIjcRvlDTcE" target="_blank"><img style="display: block; width: 100%; height: auto; max-width: 600px;" src="https://d39sghb3udgxv0.cloudfront.net/30045/1502251814.jpg" alt="Cashback Rp30.000 ke TokoCash" width="600" border="0"></a>
+            </div>
+        </div>
+        <!--======================= HEADER BANNER END =======================-->
+
+
+        <!--======================= CONTENT 1 COLUMN =======================-->
+        <div style="background: #ffffff;">
+            <div style="color:#505050;border-radius:4px; background:#fff; padding:10px 5% 10px 5%;"><b style="font-size: 150%;">Hai, Toppers!</b>
+                                
+            <p style="line-height:1.8em;">
+           Ayo lakukan transaksi pembayaran tagihan PDAM, Gas, Telkom, atau TV Kabel kamu di Tokopedia <b>2x berturut-turut</b> dan dapatkan <b><i>cashback</i> sebesar Rp30.000</b> ke TokoCash untuk setiap produk.
+           <br><br>
+           Semakin banyak tagihan yang kamu bayar, semakin banyak <i>cashback</i> yang kamu terima! Tunggu apa lagi? Bayar ini itu lebih hemat, dimulai dari Tokopedia.
+            </p>
+
+            </div>
+        </div>
+        <!--======================= CONTENT 1 COLUMN END =======================-->
+        <!--======================= KODE PROMO =======================-->
+        <div>
+            <div style="border-radius:4px;"> 
+                <div style="color:#505050;border-radius:4px; background:#ffffff; padding:10px 3% 10px 3%"> 
+                    <div align="center"> 
+                        <div> 
+                            <div style="display:inline-block; font-weight:bold; padding:10px 30px;font-size:26px;color:#f26039;border:2px solid #e5e5e5;background-color:#ececec;"> 
+                                <span style="display:block; font-size:12px;color:#434343;">Kode Promo:<br></span>
+                            LANGGANAN
+                            </div> 
+                            <div style="font-size:12px;color:#999;padding-top:8px">Berlaku hingga 31 Agustus 2017
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <!--======================= KODE PROMO END =======================-->
+        <!--======================= LARGE BUTTON =======================-->
+        <div align="center" style="padding: 10px 20px 20px; background-color: #ffffff ;">
+            <a href="http://trk.newsletter.tokopedia.com/ec?0psfrW/3v62UT1B5JIjcRvlDTcE" target="_blank" style="display: inline-block; padding: 25px 28px; background: #f26039 ; color: #FFFFFF ; text-decoration: none; font-size: 24px; font-weight: bold; margin-bottom: 30px; border-radius: 10px;">
+            CEK SEKARANG
+            </a>
+        </div>
+        <!--======================= LARGE BUTTON END =======================-->
+
+
+        <!--======================= TNC =======================-->
+        <div align="center"> 
+            <div style="padding:10px 18px; border-width:2px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#ffffcc;font-size:70%;" id="m_-3399913640788259468">
+                <p class="header" align="center" style=" text-decoration: none; font-weight:700; color: #000;">Pelajari Syarat dan Ketentuan:</p> 
+
+                <ul style="text-align:left; list-style-type:disc;line-height:1.6em; padding:2% 7% 1%;"><li style="margin-bottom:10px;">Periode promo: <b>1 - 31 Agustus 2017</b>;</li>
+                    <li style="margin-bottom:10px;"><i>Cashback</i> Rp30.000 akan diterima setelah transaksi kedua</li>
+                    <li style="margin-bottom:10px;">Pengguna dapat mengikuti promo ini berkali-kali selama masa promo;</li>
+                    <li style="margin-bottom:10px;">Untuk mendapatkan <i>cashback</i>, pengguna harus melakukan aktivasi TokoCash, atau <i>cashback</i> akan hangus;</li>
+                    <li style="margin-bottom:10px;">Cek syarat dan ketentuan selengkapnya <a href="http://trk.newsletter.tokopedia.com/ec?rnbMqW/3v62UT1B5JIjcRvlDTcE" target="_blank" style="text-decoration: none; font-weight: bold; color: #42B549;">di sini</a>.</li>
+                    </ul><a rel="nofollow"></a> 
+            </div> 
+        </div>
+        <!--======================= TNC END =======================-->
+          <!--======================= WIDGET DIGITAL =======================-->
+        <div>
+            <div style="color:#505050;border-radius:4px; background:#ffffff; padding:20px 5% 10px 5%;">
+                                
+            <div style="line-height:1.8em; text-align: center; font-size: 14px; font-weight: bold;">
+             Top Up &amp; Bayar Tagihan Dimulai Dari Tokopedia
+            </div>
+
+            </div>
+        </div>
+        <div style="text-align:center; font-size:0; background:#ffffff; padding-top: 15px; padding-bottom: 5px;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:40%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:49%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(49%); width:calc(230400px - 48000%); min-width:calc(49%);">
+            
+                    <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center; padding-bottom: 15px;">
+                        <a href="http://trk.newsletter.tokopedia.com/ec?DNql1i/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398838.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                        <div style="font-size: 14px;">Pulsa</div>
+                    </div>
+                    <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center; padding-bottom: 15px;">
+                        <a href="http://trk.newsletter.tokopedia.com/ec?lhGsHJ/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398780.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                        <div style="font-size: 14px;">Paket Data</div>
+                    </div>
+                     
+
+            </div>
+            <!--[if mso]>
+            </td><td style="width:60%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:49%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(49%); width:calc(230400px - 48000%); min-width:calc(49%);">
+                
+                <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?AljVTZ/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398461.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                    <div style="font-size: 14px;">PDAM</div>
+                </div>
+                
+                <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?IKnMVD/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398806.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                    <div style="font-size: 14px;">Listrik PLN</div>
+                </div>
+                
+            </div>
+            <!--[if mso]>
+            </td></tr></table>
+            <![endif]-->
+        </div>
+        <div style="text-align:center; font-size:0; background:#ffffff; padding-top: 15px; padding-bottom: 20px;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:40%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:49%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(49%); width:calc(230400px - 48000%); min-width:calc(49%);">
+            
+                    <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center; padding-bottom: 15px;">
+                        <a href="http://trk.newsletter.tokopedia.com/ec?zkeAIo/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398866.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                        <div style="font-size: 14px;">TV Kabel</div>
+                    </div>
+                    <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center; padding-bottom: 15px;">
+                        <a href="http://trk.newsletter.tokopedia.com/ec?je0JpB/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398746.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                        <div style="font-size: 14px;">Voucher Game</div>
+                    </div>
+                     
+
+            </div>
+            <!--[if mso]>
+            </td><td style="width:60%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:49%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(49%); width:calc(230400px - 48000%); min-width:calc(49%);">
+                
+                <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?9uGzo2/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398724.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                    <div style="font-size: 14px;">BPJS</div>
+                </div>
+                
+                <div style="display: inline-block; width: 49%; background-color: #ffffff; text-align: center;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?VVFl8k/3v62UT1B5JIjcRvlDTcE" target="_blank"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491398484.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+                    <div style="font-size: 14px;">Angsuran</div>
+                </div>
+                
+            </div>
+            <!--[if mso]>
+            </td></tr></table>
+            <![endif]-->
+        </div>
+        <!--======================= WIDGET DIGITAL END =======================-->
+        <!--======================= GENERAL FOOTER =======================-->
+        <div style="text-align:center; font-size:0; background:#ffffff; padding-top: 15px; padding-bottom: 25px;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:40%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:50%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+                <p align="center" style="font-size:10px;color:#161919; font-weight: bold;">Download App Tokopedia</p>
+                <a href="http://trk.newsletter.tokopedia.com/ec?yILzay/3v62UT1B5JIjcRvlDTcE"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233846.png" alt="Appstore" height="40"></a>
+                <a href="http://trk.newsletter.tokopedia.com/ec?2RDRGX/3v62UT1B5JIjcRvlDTcE"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233889.png" alt="Playstore" height="40"></a>
+            </div>
+            <!--[if mso]>
+            </td><td style="width:60%; background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:50%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+                <p align="center" style="font-size:10px;color:#161919;font-weight: bold;">Ikuti Kami</p>
+                <a href="http://trk.newsletter.tokopedia.com/ec?TkxGj5/3v62UT1B5JIjcRvlDTcE" target="_blank" style="padding: 0 5px;"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1497495992.jpg" style="border-radius: 3px;" alt="Line" height="40"></a>
+                <a href="http://trk.newsletter.tokopedia.com/ec?GiPAKy/3v62UT1B5JIjcRvlDTcE" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt="Google plus" height="40" style="border-radius: 3px;"></a>
+                <a href="http://trk.newsletter.tokopedia.com/ec?lANuyp/3v62UT1B5JIjcRvlDTcE" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt="Facebook" height="40" style="border-radius: 3px;"></a>
+                <a href="http://trk.newsletter.tokopedia.com/ec?01GaKo/3v62UT1B5JIjcRvlDTcE" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt="Twitter" height="40" style="border-radius: 3px;"></a>
+                <a href="http://trk.newsletter.tokopedia.com/ec?lVlYA4/3v62UT1B5JIjcRvlDTcE" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+            </div>
+            <!--[if mso]>
+            </td></tr></table>
+            <![endif]-->
+        </div>
+        <div style="height: 15px; background-color: #42B549;">  
+        </div>
+        <!--======================= GENERAL FOOTER END =======================-->
+
+
+    <!--======================= ANTI SPAM =======================-->
+    <div style="text-align:center; font-size:0; background-color: #f8f8f8; margin-top: 20px;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:17.5%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(17.5%); width:calc(230400px - 48000%); min-width:calc(17.5%);">
+                <div style="padding: 5px 0;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?ALbOVY/3v62UT1B5JIjcRvlDTcE" target="_blank" style="text-decoration: none; color: #2fbe38;">Hubungi Kami</a>
+                </div>
+            </div>
+            <!--[if mso]>
+            </td><td style="background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:22%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(22%); width:calc(230400px - 48000%); min-width:calc(22%);">
+                <div style="padding: 5px 0;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?XpQxQJ/3v62UT1B5JIjcRvlDTcE" target="_blank" style="text-decoration: none; color: #2fbe38;">Syarat &amp; Ketentuan</a>
+                </div>
+            </div>
+            <!--[if mso]>
+            </td><td style="background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:22%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(22%); width:calc(230400px - 48000%); min-width:calc(22%);">
+                <div style="padding: 5px 0;">
+                    <a href="http://trk.newsletter.tokopedia.com/ec?gAKSwS/3v62UT1B5JIjcRvlDTcE" target="_blank" style="text-decoration: none; color: #2fbe38;">Kebijakan Privasi</a>
+                </div>
+            </div>
+            <!--[if mso]>
+            </td><td style="background:#ffffff;">
+            <![endif]-->
+            <div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:17.5%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(17.5%); width:calc(230400px - 48000%); min-width:calc(17.5%);">
+                <div style="padding: 5px 0;">
+                    <a href="http://trk.newsletter.tokopedia.com/em_3v62UT1B5JIjcRvlDTcE/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Funsubscribe%2Fnv%2Fc%2F3v62UT1B5JIjcRvlDTcE%2Fp%2F30045%2Fkey%2Fbmlrb3NhdHJpYW50b0BnbWFpbC5jb20%3D%2F" style="text-decoration: none; color: #2fbe38;">Unsubscribe</a>
+                </div>
+            </div>
+            <!--[if mso]>
+            </td></tr></table>
+            <![endif]-->
+        </div>
+        <div style="font-size:13px; color: #999999; padding: 20px;" align="center">
+            &copy; 2009-2017, PT Tokopedia
+        </div>
+    <!--======================= ANTI SPAM END =======================-->
+    </div>
+    <!--[if mso]>
+    </td></tr></table>
+    <![endif]-->
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<img alt="" src="http://trk.newsletter.tokopedia.com/o/nv/c/3v62UT1B5JIjcRvlDTcE.gif"></body></html>
+
+
+--alt-1460982230598bd5ba590500.74737056--
+--1460982230598bd5ba590500.74737056--

@@ -1,0 +1,288 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.125.66 with SMTP id q2csp450213ooe;
+        Wed, 30 Aug 2017 00:53:02 -0700 (PDT)
+X-Received: by 10.36.68.71 with SMTP id o68mr629952ita.115.1504079582609;
+        Wed, 30 Aug 2017 00:53:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504079582; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JgkMkw6vqHIWT4wBEEDQq1etDzf51P6Ir2lu6cPjxULZBD6kSjK4VT1SMVqP/yzGmO
+         wK+1/qMX/DoxcuXSCAwjQWW6c+1lePKZtdsP6b9yNBNXSwAsmuY92V3aqE3G0xTKKnXA
+         eH1baK3Fh46CFWyJWW/uRXzYM/DBn4OIA01qEydtv0FtjkmzTDYhAtjRCPx51+AS+QGd
+         PiM/768Abx+1C6RiHVjNataoysq3YZn0KACKbKzZvlsrGJLrzbQvH6AQEiSm0R5WVvOP
+         alz/YNFdvmpnItCcsrCvjXmVWh4QdI6pw+KsQpMoR45HTUEquLkRk0C06xM8KPezVe3O
+         DQGA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:dkim-signature:arc-authentication-results;
+        bh=/GJDFZvmzhxRlJlkMzC+QwZ9EkKOpmdxvJsv1dAm+iQ=;
+        b=igJofWHx/r6cN/e2OzxMnMyJao6iQMFBok5VeQElfFr+vSywVmYfepnx9WTU84cZdD
+         ASlCxzq33WWj0ANmjM4fMyxJkTF7VicyeU9uSYzVZr77KOqDe2K1vE7/4KDMbIaMRaAx
+         yEbAIM1jLeoco+pafNjOdD4JlHVznS/a9IFXszEBMqSC4dGhypD3ihwiMh02Mv1ALNOm
+         a4Pe1/OSyvn1xqnlulpxRtn3Eg2ApZDjURQUsFnnNxIXF9GbhDcfbblz3Gp20WCx7Oix
+         UdI50nphuqDp4svN5RKy+5nj9K/F+BkCbmcqngkoFWL1DG1MF3SMfL1uwbNVh2BmN+tf
+         HElg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@nc.erafone.com header.s=era header.b=x5oHJ2/L;
+       spf=pass (google.com: domain of campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com designates 202.162.250.136 as permitted sender) smtp.mailfrom=campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com
+Return-Path: <campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com>
+Received: from ip136.nc.erafone.com (ip136.nc.erafone.com. [202.162.250.136])
+        by mx.google.com with ESMTPS id v5si3559082ite.205.2017.08.30.00.53.02
+        for <lukaspatty@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Aug 2017 00:53:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com designates 202.162.250.136 as permitted sender) client-ip=202.162.250.136;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nc.erafone.com header.s=era header.b=x5oHJ2/L;
+       spf=pass (google.com: domain of campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com designates 202.162.250.136 as permitted sender) smtp.mailfrom=campaign-erafone-26007-107-12191-lukaspatty=gmail.com@nc.erafone.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=era; d=nc.erafone.com; h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date; bh=dRzlLxQGO421FjY3Caw5/LeWh2A=; b=x5oHJ2/L0Awwj8RF56WjqdnYA5ql6X14QtRxoZXZk+BF9iNAepEmnfyA+zA7QrWr9Crk4kiMzOMQ
+   IMd0H1ZyH4wtv2inwE4NPy1V0lRJHkIrNY1y4vCQXH9bYGSpwmp97RkVPPxQVYOD9S1jSXb5uHTF
+   3rJHKiiM5P2bszlX6DE=
+To: lukaspatty@gmail.com
+From: "Erafone.com" <noreply@erafone.com>
+Reply-To: "Erafone.com" <noreply@erafone.com>
+Subject: Samsung Galaxy Note 8 Segera Hadir #DoBiggerThings
+Message-ID: <131055960512191@nc.erafone.com>
+List-Unsubscribe: <mailto:erafone-26007-107-12191-ebe386a57957efa70d318f288a41645f@usub.erafone.com?subject=Unsubscribe>, <http://trk.nc.erafone.com/erafone/?p=unsubscribe&mid=107&uid=ebe386a57957efa70d318f288a41645f>
+Feedback-ID: 107:26007:20170830124135:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_5e48143c7d616b5e40b5531375b2a78b"
+Date: Wed, 30 Aug 2017 13:23:02 +0530
+
+--b1_5e48143c7d616b5e40b5531375b2a78b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglRUUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+Produk Samsung Terbaru
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglRUEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+ 
+ Samsung Galaxy J3 Pro 
+ Rp2.499.000 
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglRUEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVghWWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+ 
+ Samsung Galaxy J5 Pro 
+ Rp3.599.000
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVghWWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVghQVkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+ 
+ Samsung Galaxy J7 Pro 
+ Rp3.999.000 
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVghQVkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglQWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+ 
+ Samsung Galaxy S8+ Coral Blue 
+ Rp11.999.000 
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglQWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglXUUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+Harga dan promo yang tertera dalam newsletter ini tidak mengikat dan
+selalu mengacu pada syarat dan ketentuan yang ada di laman website
+Erafone.com <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVgBUVEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+Harga dan promo yang tertera dalam newsletter ini tidak mengikat dan
+selalu mengacu pada syarat dan ketentuan yang ada di laman website
+Erafone.com <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVgBUVEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVgRTWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVgRTWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+ <http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVgBUUkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+Hubungi kami di 0807 1111 888 atau cs@erafone.com
+
+Erafone.com adalah e-commerce dari Erafone by Erajaya Group yang
+menyediakan produk-produk gadget dengan garansi resmi. Belilah selalu
+produk-produk gadget dengan garansi resmi hanya di Erafone.com
+
+Perlindungan dan Privasi Data Informasi Anda aman bersama kami.
+Silakan lihat Kebijakan Privasi kami. Untuk berhenti berlangganan
+newsletter Erafone.com, klik disini <../Juli 17/http://trk.nc.erafone.com/ptrack?g=1&id=bE8GAwlUVglRU0oIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007>
+
+
+--b1_5e48143c7d616b5e40b5531375b2a78b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><title></title>
+<style type="text/css">
+body { font-size : 11px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+a { font-size: 11px; color: #ff6600; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+a:visited { color: #666666; }
+a:hover {  text-decoration: underline; }
+p { font-weight: normal; font-size: 11px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+h1 {font-weight: bold; font-size: 14px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none;}
+h2 {font-weight: bold; font-size: 13px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none;}
+h3 {font-weight: bold; font-size: 12px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; margin:0px; padding:0px;}
+h4 {font-weight: bold; font-size: 11px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; margin:0px; padding:0px;}
+hr {width : 100%; height : 1px; color: #ff9900; size:1px;}
+ .forwardform {margin: 0 0 0 0; padding: 0 0 0 0;}
+ .forwardinput {margin: 0 0 0 0; padding: 0 0 0 0;}
+ .forwardsubmit {margin: 0 0 0 0; padding: 0 0 0 0;}
+div.emailfooter { font-size : 11px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+div.emailfooter a { font-size: 11px; color: #ff6600; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+</style>
+</head>
+<body><div align="center"><table border="0" cellpadding="0" cellspacing="0">
+<tr align="center"><td>Jadilah yang pertama mengetahui dengan subscribe email Anda di website</td></tr>
+<tr align="center"><td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglQWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007'  >Click Here</a> to see the web version</td></tr></table></div>
+<div style="font-size: 12px; line-height: 14px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #000000;">
+<table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; max-width: 600px; min-width: 600px; margin: 0 auto; text-align: inherit;" border="0">
+<tbody>
+<tr>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglRUUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://erafone.com/media/wysiwyg/landing-page-banner/Slider_Banner_Teaser_Samsung_Galaxy_Note_8_935x696px__28_Agustus_2017_2.jpg" width="100%" /></a></td>
+</tr>
+</tbody>
+</table>
+<table style="border-spacing: 0px; font-size: 18px; border-collapse: collapse; vertical-align: top; max-width: 600px; margin: 0px auto; text-align: center; width: 597px; height: 563px;" border="0">
+<tbody>
+<tr>
+<td colspan="4">
+<h1 style="margin: 15px 0px; font-weight: bold; color: #00000; text-align: center;">Produk Samsung Terbaru</h1>
+</td>
+</tr>
+<tr>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglRUEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://erafone.com/media/catalog/product/cache/2/image/500x500/9df78eab33525d08d6e5fb8d27136e95/g/a/galaxy-j3-pro-blue-4g_1.jpg" height="200px" width="200px" /></a> <br /> <span style="font-size: small;"><strong>Samsung Galaxy J3 Pro</strong> </span><br /><span style="font-size: small;"> <strong>Rp2.499.000</strong> </span><br /> <a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglRUEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt=""
+src="https://admin.erafone.com/media/wysiwyg/.thumbs/wysiwyg/2017/Tombol-Beli-Sekarang1.png?rand=1501732100" height="25" width="99" /></a></td>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVghWWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://erafone.com/media/catalog/product/cache/2/image/500x500/9df78eab33525d08d6e5fb8d27136e95/g/a/galaxy-j5-pro-black-4g_1.jpg" height="200px" width="200px" /></a> <br /> <span style="font-size: small;"><strong>Samsung Galaxy J5 Pro</strong> </span><br /><span style="font-size: small;"> <strong><strong><strong>Rp3.599.000</strong></strong></strong></span><br /> <a
+href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVghWWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt=""
+src="https://admin.erafone.com/media/wysiwyg/.thumbs/wysiwyg/2017/Tombol-Beli-Sekarang1.png?rand=1501732100" height="25" width="99" /></a></td>
+</tr>
+<tr>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVghQVkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://erafone.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/g/a/galaxy-j7-pro-gold_1.jpg" height="200px" width="200px" /></a> <br /> <span style="font-size: small;"><strong>Samsung Galaxy J7 Pro</strong> </span><br /><span style="font-size: small;"> <strong>Rp3.999.000</strong></span> <br /> <a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVghQVkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt=""
+src="https://admin.erafone.com/media/wysiwyg/.thumbs/wysiwyg/2017/Tombol-Beli-Sekarang1.png?rand=1501732100" height="25" width="99" /></a></td>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglQWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://admin.erafone.com/media/catalog/product/g/a/galaxy-s8-blue-front-4g.jpg" height="200px" width="200px" /></a> <br /> <span style="font-size: small;"><strong>Samsung Galaxy S8+ Coral Blue</strong> </span><br /><span style="font-size: small;"> <strong>Rp11.999.000</strong> </span><br /> <a
+href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglQWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://admin.erafone.com/media/wysiwyg/.thumbs/wysiwyg/2017/Tombol-Beli-Sekarang1.png?rand=1501732100" height="25" width="99" /></a></td>
+</tr>
+</tbody>
+</table>
+<br /><br />
+<table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; max-width: 600px; min-width: 600px; margin: 0 auto; text-align: inherit;" border="0">
+<tbody>
+<tr>
+<td><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVglXUUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img alt="" src="https://erafone.com/media/catalog/category/Category_Banner_Samsung_Kado_Kemerdekaan_1140x560px__29_Agustus_2017_.jpg" width="100%" /></a></td>
+</tr>
+</tbody>
+</table>
+<table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; max-width: 640px; margin: 0 auto; text-align: inherit;" border="0">
+<tbody>
+<tr>
+<td colspan="4">&nbsp;
+<p style="margin: 0; font-size: 16px; line-height: 19px; text-align: center;">Harga dan promo yang tertera dalam newsletter ini tidak mengikat dan selalu mengacu pada syarat dan ketentuan yang ada di laman website <a style="color: red; text-decoration: none;" href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVgBUVEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007'  target="_blank">Erafone.com</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<div style="text-align: center;"><img alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/garansi.png" /></div>
+</td>
+<td>
+<div style="text-align: center;"><img alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/layanan.png" /></div>
+</td>
+<td>
+<div style="text-align: center;"><img alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/pengiriman.png" /></div>
+</td>
+<td>
+<div style="text-align: center;"><img alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/keuntungan.png" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; max-width: 640px; margin: 0 auto; text-align: inherit;" border="0">
+<tbody>
+<tr>
+<td colspan="4">&nbsp;
+<p style="margin: 0; font-size: 16px; line-height: 19px; text-align: center;">Harga dan promo yang tertera dalam newsletter ini tidak mengikat dan selalu mengacu pada syarat dan ketentuan yang ada di laman website <a style="color: red; text-decoration: none;" href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVgBUVEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007'  target="_blank">Erafone.com</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<div style="text-align: center;"><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVgRTWEoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img style="width: 31px; height: 31px;" alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/facebook.png" /></a></div>
+</td>
+<td>
+<div style="text-align: center;"><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVgRTWUoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img style="width: 31px; height: 31px;" alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/instagram.png" /></a></div>
+</td>
+<td>
+<div style="text-align: center;"><a href='http://trk.nc.erafone.com/ptrack?g=1&id=cE8GAwlUVgBUUkoIAQFSAQhUAEs=V1cCD1UYWUxaUkoUBEBMGHBXX1hZDRlWCVg=
+TV1MWgJLRVNDERwjBAhSUQ5NW1xb&client=26007' ><img style="width: 31px; height: 31px;" alt="" src="https://admin.erafone.com/media/wysiwyg/newsletter/twitter.png" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; max-width: 600px; margin: 0 auto; text-align: inherit;" border="0">
+<tbody>
+<tr>
+<td colspan="4"><hr /></td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="margin: 0; font-size: 16px; line-height: 19px; text-align: center;">Hubungi kami di <span style="color: red;">0807 1111 888</span> atau <span style="color: red;">cs@erafone.com</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="4"><hr /></td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="margin: 0; font-size: 12px; line-height: 19px; text-align: center;">Erafone.com adalah e-commerce dari Erafone by Erajaya Group yang menyediakan produk-produk gadget dengan garansi resmi. Belilah selalu produk-produk gadget dengan garansi resmi hanya di Erafone.com</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="margin: 0; font-size: 12px; line-height: 19px; text-align: center;">Perlindungan dan Privasi Data Informasi Anda aman bersama kami. Silakan lihat Kebijakan Privasi kami. Untuk berhenti berlangganan newsletter Erafone.com, <a href="../Juli 17/http://trk.nc.erafone.com/erafone/?p=unsubscribe&mid=107&uid=ebe386a57957efa70d318f288a41645f">klik disini</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br/><div></div><img border="0" src="http://trk.nc.erafone.com/ptrack?g=1&m=107&eu=CAMGAwlVVAFdUA==&u=ebe386a57957efa70d318f288a41645f&client=26007&c=0000" ></body>
+</html>
+
+
+
+--b1_5e48143c7d616b5e40b5531375b2a78b--

@@ -1,0 +1,737 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.173.6 with SMTP id r6csp390600oon;
+        Wed, 13 Sep 2017 20:32:54 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb60Yh+kbmOpskeC3xDv0l8PVh07EFeKG4iyiLeiBX9Zwa58toxqI636pxENxLgIY2HZ5ZXg
+X-Received: by 10.101.71.193 with SMTP id f1mr14476457pgs.251.1505359974390;
+        Wed, 13 Sep 2017 20:32:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505359974; cv=none;
+        d=google.com; s=arc-20160816;
+        b=G12gW05JJP30E7Fo9RxysV6y81uHgR2pmy/EwZiN59J0Kjzx7soyuobnAtS2ZSZrWf
+         VuJ4yh+igTsOyYeaBh7Z1lbvWsFIjZkI/VLL0NxFNor0ITq1MOJn8l9Rg5S/ABK2+Ze/
+         jihKE5+3o+wZNmunmsFHqVPt2NjAe+SXEjns0GX/ajmni4Fyug1UQ4/aSo2KxialP9xd
+         4L9KtrUbA6Fw7TbbIjhk+10D/W8EQlbcne1vaC8r1GETjLVtS8sOTpgowmCs2XdbT7yD
+         VPfBiUvwGp0Irb3uebaAEDF+DWg4B6xfVzWijJYSlfV5ZvafuYgm3vu1W4z1I86Y1unx
+         famQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:message-id:to:reply-to:mime-version:from:date
+         :content-transfer-encoding:dkim-signature:arc-authentication-results;
+        bh=bUEVMKytjx62JaAXWOudQzrDEr+Oj6nAMgaSq3ahAoU=;
+        b=xJCLWjpHcjrstJJybrppaX77KuTJmyeN9aLSpJwwK4R7e/iBrmptj3XgFmvd3wYPWI
+         dChuhdxEhuJKNrJHgu7eEi6WQQASmuN6g/oYpsqeGTAJYogLFo06CF7Px3XBnP9f4cTO
+         ONtYi1SULL/ai5fxCDXiUW5r3qQTfarROXya4mXaVwEJFt2PP98c1h4fVZqOclzv1VmG
+         h3WdKin6sEJ/v4d6rqmvtI2ndFaxiGat6h98vXe7ENECFj4/n0/mGfXA8SigNPP4W+Es
+         ptxSDtZmMTMGqOsZ+2PoFjp/WADLjZV7fEyUvL9alZOxSgGMQOZJJIODn6izhN6CNgvm
+         kB8Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=P4P/KagF;
+       spf=pass (google.com: domain of bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net designates 167.89.100.169 as permitted sender) smtp.mailfrom=bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=dicoding.com
+Return-Path: <bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net>
+Received: from o1.hv1nn.shared.sendgrid.net (o1.hv1nn.shared.sendgrid.net. [167.89.100.169])
+        by mx.google.com with ESMTPS id s17si982503pfi.321.2017.09.13.20.32.53
+        for <lukaspatty@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 13 Sep 2017 20:32:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net designates 167.89.100.169 as permitted sender) client-ip=167.89.100.169;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=P4P/KagF;
+       spf=pass (google.com: domain of bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net designates 167.89.100.169 as permitted sender) smtp.mailfrom=bounces+2313217-48a7-lukaspatty=gmail.com@sendgrid.net;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=dicoding.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.net; h=content-transfer-encoding:content-type:from:mime-version:reply-to:to:subject:x-feedback-id; s=smtpapi; bh=pf8qUY+K5Vs1KgtESR9dlIt2OiE=; b=P4P/KagFqSHOPKHn38 FhnOc6AiKtOtHYzqDaSvhLlEP9CA2WhqcVtD5vlKeWtQ/3lP+PG8n/4W+d2FB/nZ yqkWC4SfhpY5C/DBSe4SDQuZcjIhfldG2wgnx1HVRx6SF9htls5TWJ15hIVjld6w 1RunJ1FlVr8+n9EKMtVsFx5lY=
+Received: by filter0080p1las1.sendgrid.net with SMTP id filter0080p1las1-24621-59B9F84D-4
+        2017-09-14 03:32:32.651442978 +0000 UTC
+Received: from MjMxMzIxNw (unknown [13.76.82.246]) by ismtpd0019p1sin1.sendgrid.net (SG) with HTTP id pErDU4qPRoiXAMDYnlkDSA Thu, 14 Sep 2017 03:32:28.946 +0000 (UTC)
+content-transfer-encoding: quoted-printable
+content-type: text/html; charset="UTF-8"
+Date: Thu, 14 Sep 2017 03:32:49 +0000 (UTC)
+From: Kevin Kurniawan <kevin@dicoding.com>
+Mime-Version: 1.0
+Reply-to: Kevin Kurniawan <kevin@dicoding.com>
+To: Lukas Patty <lukaspatty@gmail.com>
+Message-ID: <pErDU4qPRoiXAMDYnlkDSA@ismtpd0019p1sin1.sendgrid.net>
+Subject: Kelas Baru: Belajar Membuat Aplikasi Android untuk Pemula
+X-SG-EID: RtOAmnnHJL6mnSJUgnpJ7QcmHjwxkD333SgT73ZUAcOxXlGVTwLkyeyc124o6Zx8yYjeEB2ITKcvxo cFDNGO3AK4PBpWNlRBN5cKwI3KrARYwoAdaFr4xXRyk3zThQKOecCqsJgkCBNetDohKTyVPfNDlvmu pXSFA91NLlNvn3ki3jX87I8pxo50L72v4luzX6XNAT04TVevZRRicWaHT+WLzLMO15pmc0CUs4Jj7Z k=
+X-SG-ID: E9H148/WkfCpKNthdLk2waCjesAcyVbJNlT22DtkKZzazCCFhlzom1l0UU4bMuz4
+X-Feedback-ID: 2313217:cCqN8JbDhgbiQEMHMswqOtKtONteTKeBWKH9ZghLBz4=:sTzCxnbVDj6F6J2BtHXeZLQdrSFDg9yU9dIrcaDU+Jub6yhOS9jCuXGIG/LVW9A3:SG
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns=3D"http://www.w3.org/199=
+9/xhtml" style=3D"font-family: Helvetica,Arial, sans-serif; margin: 0; padd=
+ing: 0;">
+    <head>
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DU=
+TF-8" />
+        <title>Dicoding Newsletter</title>
+    </head>
+    <body style=3D"font-family:Helvetica,Arial,sans-serif; color: #595959;m=
+argin: 0;padding: 0 20px;font-size: 16px;background-color: #F0F0F0">
+        <table cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;=
+ width:100%; color: #595959;background-color: #F0F0F0">
+            <tr>
+                 <td style=3D"padding-left: 20px;padding-right: 20px" align=
+=3D"center">
+                    <center>
+                        <table border=3D"0"  cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"margin: 0 auto; max-width:550px; width:100%;" width=3D"100%=
+">
+                            <tr>
+                                <td style=3D"width:100%;height: 30px;"></td=
+>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img height=3D"40" style=3D"height:40px=
+; max-height: 40px; padding: 20px 10px 0;" src=3D"https://www.dicoding.com/=
+images/original/commons/email_logo.png" alt=3D"Dicoding Indonesia" title=3D=
+"Dicoding Indonesia" border=3D"0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height=3D"20" style=3D"width:100%; heig=
+ht: 20px;"></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"5" style=3D"width:100%;height=
+: 5px; background-color: #2C3E50; -webkit-border-top-left-radius: 2px;-webk=
+it-border-top-right-radius: 2px;-moz-border-radius-topleft: 2px;-moz-border=
+-radius-topright:2px;border-top-left-radius: 2px;border-top-right-radius: 2=
+px;">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table border=3D"0"  style=3D"backgroun=
+d-color: white; width:100%;" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter">
+                                        <tr>
+                                            <td colspan=3D"2" style=3D"padd=
+ing: 40px 40px 50px; color: #656565;">
+                                                <p style=3D"text-align: cen=
+ter;">Apabila rekan developer tidak dapat membaca newsletter ini dengan bai=
+k, silakan mengakses tautan <a href=3D"https://u2313217.ct.sendgrid.net/wf/=
+click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBq7JLzNcv2SNAMAlKklKo-=
+2Bn7Tq-2BWJNonl4IcHHTBUyxCuo7vIXhX-2BnT-2Boqi-2FM0j8dVjn8chjw0q4FOFhfd2XiG2=
+5V5Wg2hoFP8moxxW9PzYKcCR-2BuChVsyYIxqwsm9-2F47M-3D_higGEegNbYTe7uowok-2FdW7=
+j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyPVmnNTYR9rr1wvcY6O3hrbjVgkkFrRo=
+KUNvEes7gfYZ8g39NZglSkav-2BByInq6O-2FltRwCi04Tx1d7NuSMXSFihaGh70Zjc8io3RZaD=
+cSOmN-2BikAubpO3gHyLIwnpZ6kdajvH883x1UeqaOy6C5izkxQ4KefIic1LuT7tcxR87rDvqJk=
+CuWnyZxNKpr-2FGz-2BHT32vq2VSU3ck0twOKk16A5gtgObhk7D9Vv-2Fcpp0iqXmI-3D" targ=
+et=3D"_blank">berikut</a> (<a href=3D"https://u2313217.ct.sendgrid.net/wf/c=
+lick?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBq7JLzNcv2SNAMAlKklKo-2=
+Bn7Tq-2BWJNonl4IcHHTBUyxCuo7vIXhX-2BnT-2Boqi-2FM0j8dVjn8chjw0q4FOFhfd2XiG25=
+V5Wg2hoFP8moxxW9PzYKcCR-2BuChVsyYIxqwsm9-2F47M-3D_higGEegNbYTe7uowok-2FdW7j=
+-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyc2QcJb1GqEUTB0dl-2FCZONKXLDxA-2B=
+ZyXw0EfJv18N5PHpsXcct2ldtru2wI6-2B7bzUGV2qKmz-2FOqqkWoXAzQ9jrTi-2FdxjIY6USF=
+dSq984fckK6hsMcc-2FG3oqNIIXttRK5gT8QZfmQYk4k1xKOjKf60Q9HdHouApmOwehbYf3mAWi=
+a68SqyHhcxaE7EF3hnqr3jgiGWQQFTxz4nH0y0edemq-2FNEGzpSIiehEZWfigunZKE-3D" tar=
+get=3D"_blank">https://www.dicoding.com/newsletters/15-september-2017</a>).=
+</p><p><strong>Dear Lukas Patty,</strong></p><p>Minggu ini cukup menantang =
+bagi kami karena harus menverifikasi lebih dari 1,200 aplikasi yang disubmi=
+t ke challenge. Sebelumnya kami mengucapkan terima kasih atas antuasismenya=
+ dalam mengikuti program-program kami.</p><hr><h2><strong>Academy Baru</str=
+ong></h2><p>Karena jumlah peserta yang sudah melebih kuota, kami menutup se=
+mentara kelas Menjadi Android Developer Expert. Namun kami baru saja melunc=
+urkan kelas <a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnU=
+dc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBqxp3loeengaVP5zGEoI1110Ne5Be4Kc8-2BoL=
+7VBqPIP-2BZqFGZ4-2Bl2qNm3VqGmnlUEB0KtGVDtONywbNzvtxwvThB6HYnPq2qQ-2FSoQV-2B=
+1ML-2ByQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk=
+6sHfkqdy1P10xMaLz42KavHm2QosdOYanYCiE56CVrXvcM-2BINxvpnsKY03reCUJfJRbfxW9I6=
+NHVhE-2FRUsZwfp0Iv-2B0wuN-2BLKT0XQjUIDue68HSiEe8ESQLcW2lhfkuxk1yIDvHRPnVtDC=
+Q-2F2kadBu-2Bop-2BC9vOXMdXedgcM5YI-2FUa4CVKnTA80LpObcR-2BbxJFETvAt4pHWB9cKt=
+dFC-2BUi1m8qae0oKiXINHQxyJjS5NP3uTFIag-3D">Belajar Membuat Aplikasi Android=
+ untuk Pemula&nbsp;</a>yang modulnya adalah 20% dari kelas Menjadi Android =
+Developer Expert. Silakan manfaatkan kelas ini untuk mempersiapkan diri saa=
+t batch baru kelas <a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=
+=3DxpnUdc4gY6uqtuMlw4bxFfGjjZTCE-2FZtZsSPJgJckCVvqPn0FmNENjfv5Abl3K56otU0wE=
+73ZsTgED0NGm7MPth0kyaj6slLH0k2w2SwInedBw2ON8wfa1CewnSed307_higGEegNbYTe7uow=
+ok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyDrMJYvqci-2BomKon2g-2Ft=
+8W1D2APfkA8mV8F2nunM9TeaofyuKvt78f7rooVbCZ6R5xVNpZcqRrorKcEmptCqdKBgNEPRT80=
+MTgTjxFI7LB2YApHy1FHUHOLgZrq7k0qKS4LQnxndIaK-2Bhvo6ot-2BdlY1GTd2TY78lyN5Zxc=
+xpKUsVgPwNgW75p99XFxv-2B61B-2FZDHHWY6wgmqAB2p-2FWU0RS9GvPDY4nHKSR-2BJ6K25FN=
+L8o-3D">Menjadi Android Developer Expert&nbsp;</a>dibuka.</p><p><a href=3D"=
+https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFXD5Xsc=
+qfj86s5S7N2dAmzhWV-2FbJjcwe767MCdusD3HUBGlGWQ8724CBRMvsfZ-2FGXYkcymrSAtdwGd=
+RQG6IFH6f0I-2BeSk3ch9putQletwPtXbvwis4IBanfzK-2F5G-2FXf4CfaX-2Fn-2B4YKe6h14=
+eIamyLodcl9m6BJ-2FZwT-2BgvHP4i0cark0s3UPXzS0fv2eOg2EV4-2Fv-2F6v-2FBOZ-2BV2S=
+uNL5tlpQdHksojllPkY8Wy6p1YeRNxV0jqc42b6BraDhMKR1HgLrzW-2F46Nl7NjphYNWMtVADz=
+1Ttgat-2Bky8nlbkkIB2aj4Ub96qGbo5TjKgBFCfVmzCIxu6yko5AhKPY7e6MhThulyPPr-2BKo=
+jT1cjXFqIYOIQsjPDb4A-2F8W5-2B5V56X2CjqzXVVdSWZuskCU6N1c1q5UCMeRlS1wJTGzUFIt=
+kKg2RoeeLzD8E6wLZLFCkHEyBhPACs0aXkQaxgIC5yHwt7us5LIgQT-2FYZSEiO7HMVb-2FaRhy=
+XbrHCmhC29-2BFw-2BB8uGafpHTqXKfyYIL5Lxnq80J2GRZKmVl26lVZ1SB69sPmZ5NaY84zLRU=
+6DwniniMZLAb-2Bmg-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76=
+E5C2aA2Pk6sHfkqdyaiM-2BNkP0RdM-2FerIDRFEnkx7trAOaY2n45yDZ2Alqfo-2BeM1AVjLK3=
+C3H1DqqCzj-2BBZWLEaf0C17PMvTg61bujoxkvJIjxxDcxwDFOAJpPWeSr8Bm6rfhRNpckksYWa=
+xr3D-2BXzatf8RUW4oGSynWoe-2Fo4p-2Bp0wHdFTTy8I1wWVnHS5xCkXy5p4-2FOFbpVdAdZ2o=
+IRqIbkCMukYKaD-2FOJ6xMokfXco-2B6otDIgquUFfCgm2U-3D"></a></p><hr><p><a href=
+=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFXD=
+5Xscqfj86s5S7N2dAmzhWV-2FbJjcwe767MCdusD3HUBGlGWQ8724CBRMvsfZ-2FGXYkcymrSAt=
+dwGdRQG6IFH6f0I-2BeSk3ch9putQletwPtXbvwis4IBanfzK-2F5G-2FXf4CfaX-2Fn-2B4YKe=
+6h14eIamyLodcl9m6BJ-2FZwT-2BgvHP4i0cark0s3UPXzS0fv2eOg2EV4-2Fv-2F6v-2FBOZ-2=
+BV2SuNL5tlpQdHksojllPkY8Wy6p1YeRNxV0jqc42b6BraDhMKR1HgLrzW-2F46Nl7NjphYNWMt=
+VADz1Ttgat-2Bky8nlbkkIB2aj4Ub96qGbo5TjKgBFCfVmzCIxu6yko5AhKPY7e6MhThulyPPr-=
+2BKojT1cjXFqIYOIQsjPDb4A-2F8W5-2B5V56X2CjqzXVVdSWZuskCU6N1c1q5UCMeRlS1wJTGz=
+UFItkKg2RoeeLzD8E6wLZLFCkHEyBhPACs0aXkQaxgIC5yHwt7us5LIgQT-2FYZSEiO7HMVb-2F=
+aRhyXbrHCmhC29-2BFw-2BB8uGafpHTqXKfyYIL5Lxnq80J2GRZKmVl26lVZ1SB69sPmZ5NaY84=
+zLRU6DwniniMZLAb-2Bmg-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3=
+JS76E5C2aA2Pk6sHfkqdyaUXgBIPmHJwNRf6U41Znp5LoCcNqjltNlGQEMJN0MKqEWTYR3R005A=
+iU5zIL9GMjsfMFUmxFTieU-2FpbS9IVJDSmQxdBqODP6HHnZ9UCSCuIZWEEwkOqTqFqtWzCYEI4=
+-2BiGfZ4qMrW2CxWucbhstoKlL-2BftiOlr9RSv67TH7ZxL3hKB-2F1uebEGSKZ4MYKiLltV3Qq=
+YP8HvGTOBhdPySWnJ1hjkyPRZNRowZXhDKF5WXg-3D"></a></p><h2><strong>Challenge B=
+aru</strong></h2><p>Berikut adalah beberapa challenge pilihan yang menantan=
+g kamu membuat produk terbaik</p><table align=3D"center" border=3D"0" style=
+=3D"border-collapse: collapse;" width=3D"600"><tbody><tr><td rowspan=3D"3" =
+width=3D"112"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3Dxp=
+nUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBppbOJz0r1LNqLZ26omXsoGnAIYA7ghMJPb8=
+SdRTzuDdZujhyf6GtRpVoTCj-2FWrXP7RLb6jzM0OBrH7-2FNXCHbMy9wK9WfR1K5Qh-2BrVNYP=
+ogfw-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHf=
+kqdyopspHW78ZBjEGnjbNQnW9TQjKDTAYANsu8D1wX-2BVEYU2SDpAxucGyZ7FJUORNeDGbBHz5=
+gHlfvJWfKRmuBfp2zmFYFje3YXArFEoPs1F1UTAMtKVirUSQtvbXgTzhP8iObFOjs4BFSfyLrMw=
+QjMB2WLJTGB2GtQ-2FlqkqvR69tiPgLIC6eTon2Pjx01NT7XguwUIPMhTiN4wbCktRb1on3gmv2=
+yZtqVzrwEue8nOcyqM-3D"><img alt=3D"line" class=3D"fr-fic fr-dii fr-draggabl=
+e" height=3D"100" src=3D"https://image.ibb.co/df0XRv/image1.png" style=3D"m=
+argin: 5px; width: 100px;"></a><br></td><td colspan=3D"4" style=3D"padding:=
+ 5px;" width=3D"410"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?u=
+pn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBppbOJz0r1LNqLZ26omXsoGnAIYA7=
+ghMJPb8SdRTzuDdZujhyf6GtRpVoTCj-2FWrXP7RLb6jzM0OBrH7-2FNXCHbMy9wK9WfR1K5Qh-=
+2BrVNYPogfw-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA=
+2Pk6sHfkqdypwnj-2B-2BP3OL6DnIAUv10ubm8fei8ToTBS7qG3MCRNSJy1i3d36m-2F38CDbLR=
+t3ju8QY82StS-2FfuR2WQRMNPh-2BTTTSwT65j2lIUdYKgilWbiHASnTlbLKtzVVif-2BWOCIHu=
+3KLabCy3uhkWbBne18dSM2afm0PzizeFUY28g89NwYhSXg9kXpPBpsP-2FGq6SKC7rWCK3jRdEO=
+On3aGlIJRRnMNz4HeuVnRXiYot9LvpJNwDM-3D"><strong>LINE Bot Developer Challeng=
+e</strong></a><br></td></tr><tr><td colspan=3D"4" style=3D"padding: 5px;" w=
+idth=3D"410">LINE menantang developer untuk membuat sebuah produk digital b=
+erbasis LINE ChatBot dalam kategori Utilitas atau Game dengan total hadiah =
+ratusan juta rupiah.<br></td></tr><tr align=3D"center" style=3D"text-align:=
+ center;"><td style=3D"padding: 5px; text-align: center;" width=3D"128"><di=
+v style=3D"text-align: left;"><strong>Chatbot</strong></div></td><td style=
+=3D"padding: 5px; text-align: center;" width=3D"104"><strong>50 pemenang</s=
+trong><br></td><td style=3D"padding: 5px; text-align: center;" width=3D"117=
+"><strong>2000 pts</strong><br></td><td style=3D"padding: 5px; text-align: =
+center;" width=3D"61"><strong>23 hari</strong><br></td></tr><tr><td colspan=
+=3D"5" width=3D"522"><br><br><br></td></tr><tr><td rowspan=3D"3" width=3D"1=
+12"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uq=
+tuMlw4bxFURo73qh8epJgWpVw4PGyBqZglkBuxyqMVrTdXSL6y70rcK28gF8YBXbyw5WEETGyc9=
+VGZ0lgHuXzHaMdJ8iFGqIwzFZ6ND2YzySmn4eOha9Zi9cXpSEOACuQBXbpUH-2Bt2Najr4sPhoO=
+lnP9iELx28JKUugHXfbD4h2mHm0JbNCJP5NA1mxDHxhjYTAvqsGfsw1YcutLaGT8QjGkTOfP8o0=
+Vj-2FKwt6eKKVFOiDeLXfGn_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76=
+E5C2aA2Pk6sHfkqdymaLuXOF31XHw1m54CwNbbinKElRW-2FctkFob04c6tZPv-2FCLVmDgI8XO=
+W88lttsPVxBhT4230m7MT4ahszVTb56mJvdvZpj-2Bp1bq5AGoZYdWXxmoyUtwgt8zZfTw-2BHC=
+MwoTNQ91OAYJWCiSkAPHVoJ8CVm7l00XDthxC9ZL7RTUTHqjbK1FCxdLZlt1ilSonkwqA7vnRSz=
+y2ii2qVvi-2FC0WlI8JqHT12gbOnBkKyyOoq0-3D"><img alt=3D"line" class=3D"fr-fic=
+ fr-dib fr-draggable" height=3D"100" src=3D"https://www.dicoding.com/images=
+/original/challenge/201707250044492f72085de0d05a7bc45fadd6eb0ccb36.png" sty=
+le=3D"margin: 5px; width: 100px;"></a><br></td><td colspan=3D"4" style=3D"p=
+adding: 5px;" width=3D"410"><a href=3D"https://u2313217.ct.sendgrid.net/wf/=
+click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBqZglkBuxyqMVrTdXSL6y7=
+0rcK28gF8YBXbyw5WEETGyc9VGZ0lgHuXzHaMdJ8iFGqIwzFZ6ND2YzySmn4eOha9Zi9cXpSEOA=
+CuQBXbpUH-2Bt2Najr4sPhoOlnP9iELx28JKUugHXfbD4h2mHm0JbNCJP5NA1mxDHxhjYTAvqsG=
+fsw1YcutLaGT8QjGkTOfP8o0Vj-2FKwt6eKKVFOiDeLXfGn_higGEegNbYTe7uowok-2FdW7j-2=
+FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyV9-2BEDX7qwzF-2FuHLWJ46CE-2FRlo0t-=
+2BEp74QfGsLFudYSYQ-2BSQYQkghsFmy2RcImQkVB-2BwArwBPtWOLHgstb1z3FRUIbKwJS-2Fu=
+ZL1lckKjW1t6jgbzdig6TrnexVyWlh5GnyVSppw6MjKbAFDlgT0f9EkyVmt5mzhXmzvJNI-2BvW=
+w4Q71lh-2B8Fy0vasXEsCO1mMYZozIJ1m7Y-2Bk-2FobgBqim-2FehV-2B3RoDL7uc37WfnKw5V=
+44-3D"><strong>Indonesia Next Apps 4.0</strong></a><br></td></tr><tr><td co=
+lspan=3D"4" style=3D"padding: 5px;" width=3D"410">Indonesia Next App (INA) =
+4.0 adalah kompetisi nasional tahunan yang diselenggarakan oleh Samsung Ind=
+onesia dengan total hadiah 600 juta rupiah.<br></td></tr><tr align=3D"cente=
+r"><td style=3D"padding: 5px; text-align: center;" width=3D"128"><div style=
+=3D"text-align: left;"><strong>Tizen/VR/Android</strong></div></td><td styl=
+e=3D"padding: 5px; text-align: center;" width=3D"104"><strong>600 pemenang<=
+/strong><br></td><td style=3D"padding: 5px; text-align: center;" width=3D"1=
+17"><strong>2000 =E2=80=93 4000 pts</strong><br></td><td style=3D"padding: =
+5px; text-align: center;" width=3D"61"><strong>4 hari</strong><br></td></tr=
+><tr><td colspan=3D"5" width=3D"522"><br><br><br></td></tr><tr><td rowspan=
+=3D"3" width=3D"112"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?u=
+pn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBokC8FhjC7YzJr7i0j6vMJMTSi3Kx=
+jt-2BqdJwoyjsPt3yvYDmAFXJZ-2F51NH0vjfN2ZQGGVX1Tnn0fdIq8l7JXNKR6HnPVlorjUO6w=
+YvajESGsw-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2P=
+k6sHfkqdy8g8DIcQU8YDNXsMOL2PfJpLfTTG10cUjY4hE-2Bger6SSJc5fUHdzU5oh7r-2Fc6zJ=
+d1rxojFhGuRNFe1HADHGpQQdi5NieDJIhlgpvXnFN5Wwk30qm1eBdZstiNFaoNeHXIZlM9Bxi9S=
+UCr5cUUz1-2F1NsyLOWitX4I2aq6yFWgsd8fH1irVXu1iitqK2RavO-2F6YCMIApG44IAV6Oqhf=
+vPp-2BptiGymzmQJmdfDgYkdc2HdY-3D"><img alt=3D"line" class=3D"fr-fic fr-dib =
+fr-draggable" height=3D"100" src=3D"https://www.dicoding.com/images/origina=
+l/challenge/20170711174236ff080e3991271c40a6bb8df887c74e3a.jpg" style=3D"ma=
+rgin: 5px; width: 100px;"></a><br></td><td colspan=3D"4" style=3D"padding: =
+5px;" width=3D"410"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?up=
+n=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBokC8FhjC7YzJr7i0j6vMJMTSi3Kxj=
+t-2BqdJwoyjsPt3yvYDmAFXJZ-2F51NH0vjfN2ZQGGVX1Tnn0fdIq8l7JXNKR6HnPVlorjUO6wY=
+vajESGsw-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk=
+6sHfkqdyZBM89lEQgVN0HrC7YNje3Cz-2BeW2QLNTQDYc5OOUQBGPWLqoWygCmoV7bPHpZfkMuv=
+X-2FM-2FXJWgB8xLG-2F-2FlJNnElOzG3p3T1VATqAQGaKGykUT6dow-2FRMgqJNS9gowcaWMrl=
+yviWCfqtI6-2BAVNpgqcypRVatADv9yNJFoNGqUlTHfyZvb6Wv0Ldu5-2BgtEBHFWykja-2FKRh=
+Gix4H7jlunmeiKGt8FZjcUzIcBdzwMUVmAkI-3D"><strong>DBS Live More Society: Dev=
+eloper Challenge</strong></a><br></td></tr><tr><td colspan=3D"4" style=3D"p=
+adding: 5px;" width=3D"410">DBS mengajak developer Indonesia untuk membuat =
+aplikasi atau game yang &nbsp;mengangkat salah satu (atau lebih) dari pilar=
+ Live Smart, Live Awesome, Live Kind, atau Live Well.<br></td></tr><tr alig=
+n=3D"center"><td style=3D"padding: 5px; text-align: center;" width=3D"128">=
+<div style=3D"text-align: left;"><strong>All Platform</strong></div></td><t=
+d style=3D"padding: 5px; text-align: center;" width=3D"104"><strong>100 pem=
+enang</strong><br></td><td style=3D"padding: 5px; text-align: center;" widt=
+h=3D"117"><strong>2,200 pts</strong><br></td><td style=3D"padding: 5px; tex=
+t-align: center;" width=3D"61"><strong>2 hari</strong><br></td></tr><tr><td=
+ colspan=3D"5" width=3D"522"><br><br><br></td></tr><tr><td rowspan=3D"3" st=
+yle=3D"text-align: center;" width=3D"112"><a href=3D"https://u2313217.ct.se=
+ndgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBqZglkBu=
+xyqMVrTdXSL6y70rcK28gF8YBXbyw5WEETGyc9VGZ0lgHuXzHaMdJ8iFGqIwzFZ6ND2YzySmn4e=
+Oha9e16wssxVtsn9-2BNbNMaiMzmvZMzwYF14sTKpTSBAYn9OZc8MbyPqKPRjoSznz-2FJ2-2BI=
+on6RqLcQ8O2K-2BpHWVDED0HOG4J6LaQjf7VklqDprJHebdMk9sAaQdzfy0Wjk-2FeR_higGEeg=
+NbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdySSurCXCLjOhgrB=
+LV16A1vmxSJ5cBh40sJjSsObQ6nC-2B3a8Dd0HDhJ16n8B70XvIm3HM1ZXTeSiFCbnFpszvGZss=
+-2Bn50WPm229IDgKf25FPkXZUD06asq-2Be8MyDUzbt0vldQVO7pQ-2F-2BfyPbW7y1g-2F5L-2=
+BctCpZJQdjmsoB1zHomrijWzYKsNEP7-2BM3fI7FQxZodi9WWL7jCsazUSddVtein6qKM-2Fcu2=
+lfLdghTkQZLtEc-3D"><img alt=3D"line" class=3D"fr-fic fr-dib fr-draggable" h=
+eight=3D"100" src=3D"https://www.dicoding.com/images/original/challenge/201=
+70819100554b9f4b200ce17cbbfb2c341bd62cdf483.png" style=3D"margin: 5px; widt=
+h: 100px;"></a><br></td><td colspan=3D"4" style=3D"padding: 5px;" width=3D"=
+410"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6u=
+qtuMlw4bxFURo73qh8epJgWpVw4PGyBqZglkBuxyqMVrTdXSL6y70rcK28gF8YBXbyw5WEETGyc=
+9VGZ0lgHuXzHaMdJ8iFGqIwzFZ6ND2YzySmn4eOha9e16wssxVtsn9-2BNbNMaiMzmvZMzwYF14=
+sTKpTSBAYn9OZc8MbyPqKPRjoSznz-2FJ2-2BIon6RqLcQ8O2K-2BpHWVDED0HOG4J6LaQjf7Vk=
+lqDprJHebdMk9sAaQdzfy0Wjk-2FeR_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaT=
+pd3JS76E5C2aA2Pk6sHfkqdykgAcI4-2FH5XGYW0UQW2mpR3-2Bd-2BxJX-2FhzKUR0Gij8aTeA=
+VuT1nQCTnkEql0Cfn85iQ9IfZCO2r45eOnqNf-2BJti1dpB3d-2FlNNiq7yiShc9zPGkQbksAnB=
+sGsMKB3-2BPAPWvgSAj5beShewpRIRbH6GPoDDUzg9CNkixTyzZpas1TCNQ1eM3EIq-2Bk-2F6H=
+QKVolFLB2oo4UYFvkWIuV2jzFW9FYQkY3EM8CnPTf-2Bic4R5DpctI-3D"><strong>Digital&=
+nbsp;</strong><strong>Challenge 2017</strong></a><br></td></tr><tr><td cols=
+pan=3D"4" style=3D"padding: 5px;" width=3D"410">Mensukseskan Asian Games ke=
+-18, Kemkominfo, didukung oleh Ericsson Indonesia mengadakan sebuah hackath=
+on online untuk melahirkan aplikasi Smart City dan Sport Digital.<br></td><=
+/tr><tr align=3D"center"><td style=3D"padding: 5px; text-align: center;" wi=
+dth=3D"128"><div style=3D"text-align: left;"><strong>All Platform</strong><=
+/div></td><td style=3D"padding: 5px; text-align: center;" width=3D"104"><st=
+rong>20 pemenang</strong><br></td><td style=3D"padding: 5px; text-align: ce=
+nter;" width=3D"117"><strong>10,000 pts</strong><br></td><td style=3D"paddi=
+ng: 5px; text-align: center;" width=3D"61"><strong>8 hari</strong><br></td>=
+</tr></tbody></table><hr><h2><strong>Pilihan Kelas Academy</strong></h2><p>=
+Berikut adalah kelas pilihan untuk membantu kamu menjadi developer yang and=
+al</p><table align=3D"center" border=3D"0" style=3D"border-collapse: collap=
+se;" width=3D"522"><tbody><tr align=3D"center"><td width=3D"114"><a href=3D=
+"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73=
+qh8epJgWpVw4PGyBqxp3loeengaVP5zGEoI1110Ne5Be4Kc8-2BoL7VBqPIP-2BZqFGZ4-2Bl2q=
+Nm3VqGmnlUEB0KtGVDtONywbNzvtxwvThB6HYnPq2qQ-2FSoQV-2B1ML-2ByQ-3D-3D_higGEeg=
+NbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyZLhjclKVZgGWJB=
+4bOtQinQHoIe4kpI0Kwz-2B-2BdjO1p3pv2dzErLsgaYWURTqQ0y0pchP9vO-2FXEQDV2GMrN9f=
+8zdVjkm0CZuyQZmZ6BkwND40jDOH0KrWbHDRsSQ5LNui8OEDyN6xAEj8aHq3vOPj9A7INWBuJ-2=
+Fa8Kwxw52eCLMQ7NtaBdT08ZWM2vpXRCYX731oREb4mQwg9gVemjc1eFHlZkhKU-2F7peG-2Fzh=
+QqASwsZ8-3D"><img alt=3D"line" class=3D"fr-fic fr-dib fr-draggable" height=
+=3D"100" src=3D"https://www.dicoding.com/images/small/academy/2016101119522=
+143064eda278b2726add71754076e0dcc.jpg" style=3D"margin: 5px; width: 100px;"=
+></a><br></td><td width=3D"110"><a href=3D"https://u2313217.ct.sendgrid.net=
+/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBq-2Bb9oLe2-2FSvfu=
+kv2HhrQHgi972C2JblsTbBAZa3mhMn-2BylL3rmTon1Qe-2Bn-2BZ6hIDhEEBiITPtTeVOYiFiE=
+RA5mOSHsWTSX6Dgjkmw7tEIH1g-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAu=
+aTpd3JS76E5C2aA2Pk6sHfkqdyxvu9ARmN1uWxtb3GwImjOZtfGv2MeGHXbwdXURYR2-2B6ranq=
+N9T8OGAMvFkiYdd6DPbcKP1t2FY3O-2BUVjKhX6MF9hlsY6TWRrP7DlJlllTQGh9hFM3QyYKu83=
+bKUmPbpAjb7WALLOvg2fCavDApRn-2FwLw-2B8Ugz7755m5ie6ltzuiSUtDSI46lS2I1PlktyMT=
+v2S-2BW6jmI4l0faNg-2BUQTI9ZiDrSdrn2xtj79jse-2B3jFY-3D"><img alt=3D"line" cl=
+ass=3D"fr-fic fr-dib fr-draggable" height=3D"100" src=3D"https://www.dicodi=
+ng.com/images/small/academy/20170201115003887f4a4004375e179fdb127865cac4ab.=
+png" style=3D"margin: 5px; width: 100px;"></a><br></td><td width=3D"110"><a=
+ href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4=
+bxFURo73qh8epJgWpVw4PGyBorG68TRQk56DGynZzYiCiNvkmzgMeDE47lV-2BnPBrHoFT447If=
+MFe0v5VQhskuk-2B33emEucHUaXGfiEUmKAQiMEToUt2fhvdqkNVYXMsWD46Q-3D-3D_higGEeg=
+NbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyi-2BOtU5uwX24a=
+eFWCH4eJUCVIh-2B85ljDp1jo3TTwinuVAFFPL0VWlygj0HSMXSvlVZP8cGEPhMdQZ4p2eMIDoQ=
+bxGGYONngdQM6WF76KKiKu2Y9ncVLM3yCT3ggXtCHpqXXfHktCxrr4-2FdQzc-2F1-2FvfE0Fhw=
+U3aT2VwYDi6n3oaN3prVhHBu6duOC1Ton6e8ZF0jo8niVMKAl9yAogaYM6qV-2Fn9o4FDpp6p-2=
+FyjoeHYV5k-3D"><img alt=3D"line" class=3D"fr-fic fr-dib fr-draggable" heigh=
+t=3D"100" src=3D"https://www.dicoding.com/images/small/academy/201611141612=
+213b754901b942fa5366287c3a9aba0e8b.jpg" style=3D"margin: 5px; width: 100px;=
+"></a><br></td></tr><tr><td width=3D"110"><div style=3D"text-align: center;=
+"><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtu=
+Mlw4bxFURo73qh8epJgWpVw4PGyBqxp3loeengaVP5zGEoI1110Ne5Be4Kc8-2BoL7VBqPIP-2B=
+ZqFGZ4-2Bl2qNm3VqGmnlUEB0KtGVDtONywbNzvtxwvThB6HYnPq2qQ-2FSoQV-2B1ML-2ByQ-3=
+D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyt1=
+A9oYMhYQEg4iuxrUYA20g1dWnLmZh5-2F3Zwhezs7ikyXIyeKYepUxsBZ7wTTvL72-2BzguYEFq=
+lTAx-2B6hI8hSSj-2BrsxUvYb-2F5WaaYC4deMyQmlHRyJE877G0t-2BClUYI3v0QXIYM1ZycdY=
+GK4lCEmN-2BGucRdL1BIjmlWKmxYm0zRrUyJL5bXBIN8sQHXHxtreLfpXPXKfR3ObinE1Z2c8CL=
+9L3aJJqVSrKvjuphujALBI-3D">Android</a></div></td><td width=3D"110"><div sty=
+le=3D"text-align: center;"><a href=3D"https://u2313217.ct.sendgrid.net/wf/c=
+lick?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBq-2Bb9oLe2-2FSvfukv2Hh=
+rQHgi972C2JblsTbBAZa3mhMn-2BylL3rmTon1Qe-2Bn-2BZ6hIDhEEBiITPtTeVOYiFiERA5mO=
+SHsWTSX6Dgjkmw7tEIH1g-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3=
+JS76E5C2aA2Pk6sHfkqdy36-2FIfDvg9-2FcvaKD-2FKRBqOvFr1rLAPYlOGRR-2F9Rt-2BWuYT=
+QM0uMtq72yXD3KQXzw-2BoNrnSKFo0pW5Mgw-2F-2BLHUssWhV6lN3gpMgyFZbgq6JdPgvTZc9j=
+pkGCeGksihAla9vxqUJ4ceKonoR-2Bjz4q8S7CEns50mB95NzekBOOKu0TVDR1HEaFmlWd1mbI-=
+2FfqdeDv5d-2FawpF54yS87IcaktSZuEhG-2B1GjoNJIKDJ14BV4loQ-3D">Chatbot</a></di=
+v></td><td width=3D"110"><div style=3D"text-align: center;"><a href=3D"http=
+s://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8ep=
+JgWpVw4PGyBorG68TRQk56DGynZzYiCiNvkmzgMeDE47lV-2BnPBrHoFT447IfMFe0v5VQhskuk=
+-2B33emEucHUaXGfiEUmKAQiMEToUt2fhvdqkNVYXMsWD46Q-3D-3D_higGEegNbYTe7uowok-2=
+FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdy-2Fi6N7FpDnv0wjIDmSGM29yVYO=
+JT8sTlg2B-2FPVR3vVsel7mKKyrZqpe-2BXENu3lyujsVINpvR6Pdpn2xHQaYjSznNB64PHHj11=
+i8BMnUdPOQXl20d4bDpo31b95TLpsScJ99xCIIMkvhzkmKR0W-2B8qrJa0EVhW9yNCxS8PPKbIp=
+xSTJLkRjquSCj1aLeTA0uvfyB8Ndb0JJztp-2BmF-2BBBYoJDr-2FDzw7u8Ye2LJanST9Tj8-3D=
+">Construct</a><a href=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3Dx=
+pnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBorG68TRQk56DGynZzYiCiNvkmzgMeDE47l=
+V-2BnPBrHoFT447IfMFe0v5VQhskuk-2B33emEucHUaXGfiEUmKAQiMEToUt2fhvdqkNVYXMsWD=
+46Q-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfk=
+qdyOo-2BRw6HrAa3O2w4lMZldCEiJK0CEzPaellSUV854C1y3P2SVUe6vzrhP9NDocG6lGnCq53=
+EL-2BQiMmvTRTlnIi5vyyqxIc9E4IcXnuEXi02W4ZLupboa8h8VxJbhEIg4BA1DmP-2BtU-2F6b=
+jNHxGlIc1vPw-2Fvq2Fue0V0YRPlduIfaI1aD68O7viGRIKfOt-2FVE0A06ih7qh1yP1vcD-2BM=
+LAbp5wq39DIOxLbPs47rm3bIjWw-3D"></a></div></td></tr></tbody></table><p><br>=
+</p><table align=3D"center" border=3D"0" style=3D"border-collapse: collapse=
+;" width=3D"522"><tbody><tr align=3D"center"><td width=3D"114"><a href=3D"h=
+ttps://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh=
+8epJgWpVw4PGyBpEw2yZd9QkRCv9aPFisCaZuPdSJkFjXEV6vhyy72OG5ktYbVo-2Fr3t09hXNr=
+vNAiWdQQO75mz-2Fqj-2BBFVpn-2BnUl40uy-2Fb8UbwdRnsrtisx4mhQ-3D-3D_higGEegNbYT=
+e7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyZpgtSpLQomdA9uI0XR=
+pAQDRKlXbj-2FKygcemlFcEvo6VvcysF9tJM2hZpMEYBS2DxcRsHfcRIXlkUrAt157-2Fkz6bgS=
+9DRoid3gn9i2b-2FrYskNoDgZVk56FNJDJrZEWpv-2FxH6hu7UVMhqa-2FKJtDtZWSozm7BHIDK=
+PkWUoGjNOaQRCojY2fCqb1klcVsje8uaBK613UmntcjEF-2FFyniVf6vkCJjARo3oCXHD0nNlWF=
+6lCw-3D"><img alt=3D"line" class=3D"fr-fic fr-dib fr-draggable" height=3D"1=
+00" src=3D"https://www.dicoding.com/images/small/academy/20170330001843de2a=
+bcfc33a6a8d35991a2a3f85b1c09.png" style=3D"margin: 5px; width: 100px;"></a>=
+<br></td><td width=3D"110"><a href=3D"https://u2313217.ct.sendgrid.net/wf/c=
+lick?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBoCM21KryIsfgtjBAJd1T17=
+GO6JIzCcHTK4SNq5YzQXgYhfCd1c0IHuw7fs-2Fuy-2FxwBb3Vl0PQCyw0yGm4JgACJj7KxJZS4=
+VTYdDyFBHsVgEuQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5=
+C2aA2Pk6sHfkqdydNNFWRwImOJz2yhYw45WBUbrh3gGK-2BihyEd4QVa4LAWY5PEb5B8UyX92Rz=
+Fw3FJKg7-2BsqOdNPkF0M-2BWSDOMbcPS7J0CRQhj-2FfSuo2IShRaZuAtw5DsX7Z3AQYShO1-2=
+F5X1gfN2-2BhkWJdrZLOipd-2FfXIDxnefJGygfploJk9h-2FvgLHKsGv41heXrzvExIarFEgA3=
+yA5eAqLiICgmnbfjpcp1VydCX-2BkL5kOsGXvTw372E-3D"><img alt=3D"line" class=3D"=
+fr-fic fr-dib fr-draggable" height=3D"100" src=3D"https://www.dicoding.com/=
+images/small/academy/2017032315485918b5f104ed5df1fdd0dba12657fd7e75.jpg" st=
+yle=3D"margin: 5px; width: 100px;"></a><br></td><td width=3D"110"><a href=
+=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFUR=
+o73qh8epJgWpVw4PGyBoJcBJ8fHNIxZROAl1zkGj4Bcy-2ByMXsg94S5qp5Ugd-2Fl7-2FE4mSF=
+MiyCisGcnpuEnqU7MFEdXWHeiC9pK3qVYXEJVVM5nIuN1KI6AKEC-2FnxNgA-3D-3D_higGEegN=
+bYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyvYzpqIgG04BRMU-=
+2FSKlMKJgPS7pF0pha3U2UPAE70kszs9zv6vtJXpNgqIr3hiQmxszTv2aFZH5-2F9AXl8Vd1Pt0=
+dYkAhWw5yzjnxHsEedIsEEWdeBYFEUD4IdkntBZdh6UC0uMYNmzqnY7RCdBuQltiNtBnaFbaKxQ=
+FuSh6jpN4jdEQ6pQCh82DgucA9tc9H8xsLoHEXBGTwFIeM9wvmZgnX0xZ6YVjJuoAHFsAhCC9Q-=
+3D"><img alt=3D"line" class=3D"fr-fic fr-dib fr-draggable" height=3D"100" s=
+rc=3D"https://www.dicoding.com/images/small/academy/201612081822468d4147f90=
+a4535c7e3cd1a26e9b62f08.jpg" style=3D"margin: 5px; width: 100px;"></a><br><=
+/td></tr><tr><td width=3D"114"><div style=3D"text-align: center;"><a href=
+=3D"https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFUR=
+o73qh8epJgWpVw4PGyBpEw2yZd9QkRCv9aPFisCaZuPdSJkFjXEV6vhyy72OG5ktYbVo-2Fr3t0=
+9hXNrvNAiWdQQO75mz-2Fqj-2BBFVpn-2BnUl40uy-2Fb8UbwdRnsrtisx4mhQ-3D-3D_higGEe=
+gNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyz-2FDcJt9UMyg=
+lAt6LwPjqHKvrfqLIwFQyas5-2BbZSRX5FQGJyacdf6iABLUH34dSVmZ-2BM8KGSwjGUtpjIEiS=
+wUTwBIdKKrLvh18OEQ6A6GnbR7CQe6OVc-2FGrENbihFSGyM9g-2BnHhZpBgRTBksQHOPLiHa22=
+ZqtGAy3ql7VKoXYlyBXe3uvZJgMn3VKGGTDhxBe48J-2FV-2Ffp2PfpUvy11U9wiMyWAagcrDKp=
+XT3k9Lg-2FL3A-3D">Unity</a><a href=3D"https://u2313217.ct.sendgrid.net/wf/c=
+lick?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBpEw2yZd9QkRCv9aPFisCaZ=
+uPdSJkFjXEV6vhyy72OG5ktYbVo-2Fr3t09hXNrvNAiWdQQO75mz-2Fqj-2BBFVpn-2BnUl40uy=
+-2Fb8UbwdRnsrtisx4mhQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3=
+JS76E5C2aA2Pk6sHfkqdy4TSimYKGeyqqNo-2FPmctF1-2BwtrpKUkxZXY7AaxLMJ-2FI2Rt88c=
+ThNgqLuJJM-2BxDyZPcdxsfzxk96EGzZ6Y3nKPQTZizvyVsdUl3V2pHkQYKCZaRpiDgZ4gPsOV0=
+j4cbWggf51pSpjERBJtaEn1uLZKc6jUfJWHLWDPfYFpiSn51vrQfQUH-2BoMCsagAEQvfe8oUMr=
+B8EUICNQPNnJfOAiz1DZvJi2N6ppj5W6DkKlKg0EE-3D"></a></div></td><td width=3D"1=
+10"><div style=3D"text-align: center;"><a href=3D"https://u2313217.ct.sendg=
+rid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBoCM21KryIs=
+fgtjBAJd1T17GO6JIzCcHTK4SNq5YzQXgYhfCd1c0IHuw7fs-2Fuy-2FxwBb3Vl0PQCyw0yGm4J=
+gACJj7KxJZS4VTYdDyFBHsVgEuQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXA=
+uaTpd3JS76E5C2aA2Pk6sHfkqdyTta7CzqJ-2BmycplcNOiu-2BFCALdiU45ELWPUQ0x7cXoiMz=
+t6PkZQpedpWp-2Fi9jRnOUcYBEHYi0cBdwkLh2WeoBpKSv692ULXFLADswwwgxRSqm5KTP-2FZy=
+at4jYcSrYRpXck-2BIx5FYpIKEHoglNvZx5sfQHfbUBSjcpgaCoRfAQiDDPAfsQdISK08NOfO5Z=
+yDibdzy1z1vXwYj1RoDx67FA0YPEOC7V0aqvaXPvj5V5MaY-3D">Kognitif</a></div></td>=
+<td width=3D"110"><div style=3D"text-align: center;"><a href=3D"https://u23=
+13217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4=
+PGyBoJcBJ8fHNIxZROAl1zkGj4Bcy-2ByMXsg94S5qp5Ugd-2Fl7-2FE4mSFMiyCisGcnpuEnqU=
+7MFEdXWHeiC9pK3qVYXEJVVM5nIuN1KI6AKEC-2FnxNgA-3D-3D_higGEegNbYTe7uowok-2FdW=
+7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyePwKfLBJeVEstX3GaFfDBpREYULqv8=
+uPETbd2mDq2yOhzSKuybVkFKBV6wEEdgoNODXIPorpDBY5Pyt-2FHoVJsPatii-2BD7G3k9EU-2=
+B8O-2FWvi7qmsy-2Fuc-2FY0i-2BDLEYy4GuhsFvALPThBUvnBS9ttjUxXYm2IkP-2FFDZMou-2=
+BGNxgvB-2BUeoEgFqCi-2F2CForwqYH7Mlh-2BVWbPHarFkc1DDdnriaBtHzRflQcOrqbxwQN36=
+zKiA-3D">Multiplatform</a></div></td></tr></tbody></table><p><br></p><p>Seb=
+agai informasi tambahan kami juga baru mengupdate kelas <a href=3D"https://=
+u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWp=
+Vw4PGyBoCM21KryIsfgtjBAJd1T17GO6JIzCcHTK4SNq5YzQXgYhfCd1c0IHuw7fs-2Fuy-2Fxw=
+Bb3Vl0PQCyw0yGm4JgACJj7KxJZS4VTYdDyFBHsVgEuQ-3D-3D_higGEegNbYTe7uowok-2FdW7=
+j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyfKFUzFV0wOqeaui4USBFEmJjNBzos3l=
+qPetadTn8cW-2BHVwdA5u1rdnzCfiAQQaX963GeNcWbvEYM4xMU-2FteyxWnUkGnyNFYlnEmG88=
+RZH5LdoHQskaQatczuUGj1KMMCbvztWExNYoHPFDzshlLysGjVWYbmOg-2Fe-2BFdw-2B9ojwqv=
+IELhMw-2FJYbMfUr6Aj6dqDetSDhR9tldAIq7WVbM9ugl0uvR0xQGa27Ck-2FiavvLQc-3D">Be=
+lajar Membuat Aplikasi Kognitif dengan IBM Watson&nbsp;</a>dengan tambahan =
+modul baru. Semoga informasi ini dapat bermanfaat dan selamat berkarya!</p>=
+<img src=3D'https://www.dicoding.com/emailopen?w=3DZXlKcGRpSTZJbFJvV21aUGFY=
+UnhkbUpZWjBwNk0zTkNSRkYxZDJjOVBTSXNJblpoYkhWbElqb2llRTF5YTJKd1YxbHBWbkpsWWt=
+4T2RYSnRRVlJNY0d3d2MweGphek5IVGxOaWRsaGNMMjUxUkV4UFFtdHRORkJpVDI1aWNrTXdXaX=
+R1WmtsM00wZGpVR0Z1VEROTGRUZHhVbHBrY1dodVpXOTRVR1I0WEM5eWR6MDlJaXdpYldGaklqb=
+2lNREF6WmpSbE9XUXdZakEwWlRFNU1qQmlNR0pqTWpOaU9UYzVNamhqTmpnd016WmlaR1JoWkRB=
+d056QTFNalZpT0RreE9XSmtNREZpWTJSbU5XTTBPQ0o5' alt=3D'' width=3D'1' height=
+=3D'1' border=3D'0' style=3D'height:1px !important;width:1px !important;bor=
+der-width:0 !important;margin: 0 !important;padding: 0 !important;' />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan=3D"2">
+                                                <center>
+                                                    <p class=3D"lead" style=
+=3D"font-weight: normal; font-size: 18px; line-height: 1.6; margin: 0 0 10p=
+x; padding: 0;">
+                                                        Memiliki Pertanyaan=
+?
+                                                    </p>
+                                                </center>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <a style=3D"height: 60p=
+x; width: 60px; text-decoration:none;color:#D9534F;" href=3D"https://u23132=
+17.ct.sendgrid.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGy=
+BrbEUcMEE2eGHBMoiGyoOw15K0prQ-2Ft7ldGyghgyNAZ3DhkF1moV5P77aBOqZDHVd-2FAStkr=
+-2FSmANKO5tkk8Zz8QTMs1MnbzvYZkXcyJqmynBA-3D-3D_higGEegNbYTe7uowok-2FdW7j-2F=
+Z6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdym2Rh3LJ7IQKNajCQiCbMMWmh2iWpsbhLLz6=
+NauD4Ny0z4kmhs6aj-2Fig-2BGdUIdoHakO13YRKUvb55xpUqlI3dVe0Ob0Uumhcv-2Fb9FmI9a=
+xNaVxxUP1muAWz9lufqCS8-2FkQq1ZdDzokwsCSmUWlh0uC4pWnV6PDIJe5YR-2B0hPEKByHXxe=
+Xav0i-2BB9wWew4Nq26lX-2FaEJ3rvVwmbybTwNW47jO2RzT2d5TASfU-2FbWh1xig-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_pesan.png" width=3D"60" hei=
+ght=3D"60" alt=3D"Pesan" title=3D"Pesan" border=3D"0">
+                                                    </a>
+                                                </center>
+                                            </td>
+
+                                            <td>
+                                                <center>
+                                                    <a style=3D"height: 60p=
+x; width: 60px;text-decoration:none;color:#D9534F;" href=3D"mailto:info@dic=
+oding.com">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_email.png" width=3D"60" hei=
+ght=3D"60" alt=3D"Email" title=3D"Email" border=3D"0">
+                                                    </a>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=3D"width: 50%">
+                                                <center>
+                                                    <p style=3D"font-weight=
+: normal; font-size: 12px; line-height: 1.6; margin: 5px 0 10px; padding: 0=
+;">
+                                                        <a style=3D"text-de=
+coration:none;color:#D9534F;" href=3D"https://u2313217.ct.sendgrid.net/wf/c=
+lick?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBrbEUcMEE2eGHBMoiGyoOw1=
+5K0prQ-2Ft7ldGyghgyNAZ3DhkF1moV5P77aBOqZDHVd-2FAStkr-2FSmANKO5tkk8Zz8QTMs1M=
+nbzvYZkXcyJqmynBA-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76=
+E5C2aA2Pk6sHfkqdyDZIQW1EEozPu3plLIhQc8XwyWoDaKbA6-2FN1jUrt7KACWG904ZVsdUXXY=
+fzdwFeLhigp-2BZRyGPUl64GzfiwZ9ESozMKPLrwZzEG9Nbg0syXd5OeiyYmHrRvza-2BHnn2ed=
+JTUcgWHF7T02-2BesIaNXSJGkUbwWhdoaYB42Y-2B8xqVGE6R4JYIbvzCF-2B-2F34cqU-2F2LV=
+MXdJnMA1Mg0Fyf0CAnPihVUOkY-2FpNTMCVOTJzdkEKpg-3D">
+                                                            Tinggalkan pesa=
+n
+                                                        </a>
+                                                    </p>
+                                                </center>
+                                            </td>
+
+                                            <td style=3D"width: 50%">
+                                                <center>
+                                                    <p style=3D"font-weight=
+: normal; font-size: 12px; line-height: 1.6; margin: 5px 0 10px; padding: 0=
+;">
+                                                        <a style=3D"text-de=
+coration:none;color:#D9534F;" href=3D"mailto:info@dicoding.com">
+                                                            Email kami
+                                                        </a>
+
+                                                    </p>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan=3D"2" style=3D"widt=
+h:100%;height: 20px;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td height=3D"3" style=3D"width:100%;height=
+: 3px; background-color: #2C3E50; -webkit-border-bottom-right-radius: 1px;-=
+webkit-border-bottom-left-radius: 1px;-moz-border-radius-bottomright: 1px;-=
+moz-border-radius-bottomleft: 1px;border-bottom-right-radius: 1px;border-bo=
+ttom-left-radius: 1px;"></td>
+                            </tr>
+                            <tr>
+                                <td style=3D"width:100%;height: 20px;"></td=
+>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class=3D"lead" style=3D"font-weight:=
+ normal; font-size: 14px; line-height: 1.6; padding: 0;">
+                                        <center><strong>Temukan kami</stron=
+g></center>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=3D"width:550px;height: 5px;"></td=
+>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style=3D"width: 550px; padding: =
+0 0 20px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+" >
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <a style=3D"text-decora=
+tion:none;color:#D9534F;margin: 0 4px 0" href=3D"https://u2313217.ct.sendgr=
+id.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFQpCK-2Biom90Dk3x-2BVaqyP8gbdLfaw=
+FUGfCYSI8sipJtobyCO9HpGtfUu-2FAADQlnZ-2BFUc-2BSPdF1hFr1uMBQPpd2LHn8K1slJZyS=
+2GaNeGKJQCkREAWIi7tB4sgpAt-2F5aGyg-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQN=
+Lv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyEEP4A8st0Hta8-2BuVmgrgM7GqvXuCH4H6SN5a0s4=
+RhGkOk-2F0gYikV-2BYHx8oTSs188LPcX0K05QZB-2FnO1EOF9-2BXJC4RVm-2BT7XithId89OL=
+VXpwh-2F-2FHkK1UUkgT7YJ00qIpMd2-2B2iArBiuHu1vXyyISBaPn9Dy8kp1FfNeGrOz7KFdkH=
+yxN-2BaXBft20YHNsX9SiVyvtrjUf4wHVL1RlKhH9dXnZ-2BqbZf5yNQJgLsnNTcbE-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_facebook.png" width=3D"32" =
+height=3D"32" alt=3D"Facebook Dicoding" title=3D"Facebook Dicoding" border=
+=3D"0">
+                                                    </a>
+                                                    &nbsp;
+                                                    <a style=3D"text-decora=
+tion:none;color:#D9534F;margin: 0 4px 0" href=3D"https://u2313217.ct.sendgr=
+id.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFSpFps10rk9SeJqR4L9eJfubhiuODxTc0=
+nbpHTJTQRqCJetezX5-2FDICXjQ8-2BPEYsvMHOZf6VgUIzNuVA-2FuNuZM-2BwtQGZNR7AftQT=
+xtYAg-2FYj_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHf=
+kqdyYqhAN7p7iTJxx5AJUAadDZQkx3-2BE28XircDyA4gEBE0Qo4URs6KCjF-2Fm9eKIeVpNL9w=
+LzfKSjNLp2GDZ-2FZmEVnxgIC8Sujd89IZQlyW03PS2pgdR-2F9jjL-2FA-2FpoVcUE4x0oQOYW=
+SWYs-2FmiVYl0l3q-2B7QmJWmz4Etas0nP4R1dmHRB3uVi63Swj4FHB8FAaq62GovgYoVJCaHXW=
+PDYzTFy3o9BwFM6ANy1zSPm35c2Ed4-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_twitter.png" width=3D"32" h=
+eight=3D"32" alt=3D"Twitter Dicoding" title=3D"Twitter Dicoding" border=3D"=
+0">
+                                                    </a>
+                                                    &nbsp;
+                                                    <a style=3D"text-decora=
+tion:none;color:#D9534F;margin: 0 4px 0" href=3D"https://u2313217.ct.sendgr=
+id.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFXRRPpyvJMYrT8HwLvpB9Qih0XlxiD17G=
+UCOUqmZVybY4CGGnR2XsiI2wDz7dElsc9-2FWRfrD514cgfUc5M6U5pe3qklEtYQpM-2BRAy2jX=
+cBjT-2FNx4oV8aVUijYG8BibYFRw-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVX=
+AuaTpd3JS76E5C2aA2Pk6sHfkqdyymqZycq8HY4zRGW-2Fx7paAvkhevqGiIF8GJKHf-2BaQM9x=
+NL28CBykxlFk4bWXOFAKhSGeDj-2FzUYPB-2BqiW05xlfoHDXeVsfJGUMK0dxppqaZCJ0l8oo7k=
+2xfZKcYw7WpTwnYkcLCpswlSe7QK5TBOD4wX9q8pKntXypExiBd0RO9uf6-2Fan-2FaJufYca80=
+plBvWR4INKmWXX-2F70lS1eI6NrCkbuw9ElfAbfQeKgIS1LcJpRE-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_ig.png" width=3D"32" height=
+=3D"32" alt=3D"Instagram Dicoding" title=3D"Instagram Dicoding" border=3D"0=
+">
+                                                    </a>
+                                                    &nbsp;
+                                                    <a style=3D"text-decora=
+tion:none;color:#D9534F;margin: 0 4px 0" href=3D"https://u2313217.ct.sendgr=
+id.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFfS7Q0sVk6Ok6T-2FLX2eeoIBgEiIBlRO=
+2jXPCD5b6jwjaOf86g8OM3sCIYxT2J3P-2FLAlMi2pRPQ1qMvdZjw38cAIw-2F9goDM7RBCVgKk=
+QICXNLFzh1Qq5BCl3Ym-2FNvw2IKkQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9F=
+VXAuaTpd3JS76E5C2aA2Pk6sHfkqdyjrLApaZILM9VXXQ8hDTXKO4V7J1TJ-2BfYjY1E6A-2BR-=
+2BdagO-2FAXnXXH-2FQrhAmuSy-2FhwzV-2BNF2JJfOGRHyKuvWPgBZpZSYAmxN-2F-2BDFiquN=
+FtFGXFdVmuJrMA8WojOQBTm-2BXck1G6wVJ0bRIRqHipbJckiHxONd89SwfkLSfIiCz6aNehTRR=
+uv7MtDCInrxLWu5E7pNhf3AOMlUmcDoWmiZz-2FDuAOEIZ-2FRKvR30U-2F2mdagso-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_googleplus.png" width=3D"32=
+" height=3D"32" alt=3D"Google+ Dicoding" title=3D"Google+ Dicoding" border=
+=3D"0">
+                                                    </a>
+                                                    &nbsp;
+                                                    <a style=3D"text-decora=
+tion:none;color:#D9534F;margin: 0 4px 0" href=3D"https://u2313217.ct.sendgr=
+id.net/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFW2I-2B9D1OLthXsBlKzREccIFxqZ-2Fn=
+N-2FkxBLZ5zS-2F3gwUE62b3H4-2BSbr2rTYI03PAnolpoOkhrYhEm3H-2BpXSDxMi4Ks-2BtmT=
+8zY9tymob8p8LkUdmyy7B77-2FZMCkWGHc4kaQ-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6=
+dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdykjUDOKgUSFaJhu-2FkoBbHDm4loKFQcAXItgz=
+agbDYKjgHmSKcSTPv7KDGM039IflcUFFA2g3OgreZ9KndjvDe-2BhuGAYBf2xc2RZzuGqKcnjje=
+xbvmaOPvEEhWd0K9weLFSvTUXAl4woDkG2J1Esfm3Cr32w89mJkbLgBREVkRDYMwkId2Jo-2B6G=
+JXIyADspZ5VSgOR1wDubqRN2Kz5Ck6-2FuOjoUg6IuDz6jCKTMeaCGUw-3D">
+                                                        <img src=3D"https:/=
+/www.dicoding.com/images/original/commons/email_youtube.png" width=3D"32" h=
+eight=3D"32" alt=3D"Youtube Dicoding" title=3D"Youtube Dicoding" border=3D"=
+0">
+                                                    </a>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style=3D"font-weight: normal; font-s=
+ize: 12px; line-height: 1.6; margin: 0; padding: 0;">
+                                    <center> Jl. Batik Kumeli No.50, Kota B=
+andung, Jawa Barat 40123 </center>
+                                    <center><strong>=C2=A9 2017 Dicoding In=
+donesia</strong></center>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td style=3D"padding: 40px 40px 50px; color: =
+#656565;">
+                                <center>
+                                  <p style=3D"font-family:Helvetica,Arial,s=
+ans-serif; font-weight: normal; font-size: 16px; line-height: 1.6; margin: =
+0 0 10px; padding: 0;text-align: center;">
+    <strong>Keanggotaan & Berlangganan</strong>
+</p>
+<p style=3D"font-family:Helvetica,Arial,sans-serif; font-weight: normal; fo=
+nt-size: 16px; line-height: 1.6; margin: 0 0 10px; padding: 0;text-align: c=
+enter;">
+    Pesan ini dikirim untuk lukaspatty@gmail.com karena Anda terdaftar dala=
+m keanggotaan Dicoding Indonesia. <a href=3D'https://u2313217.ct.sendgrid.n=
+et/wf/click?upn=3DxpnUdc4gY6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBqHeBXHCZxHxkfV4=
+TMJ-2BfJBOpkU04Af5QEA8iyDipKfPq-2F-2Blpv3hlh1VshbUfgQp7mGXHvzNr8zFnZ0iJR95j=
+RTAPU4XpVVf1Vv9fvlzDF1Ew-3D-3D_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv9FVXAuaT=
+pd3JS76E5C2aA2Pk6sHfkqdyNKseNXgiGUso4sy2nINr5oy0K6KXtHVe3LcK5zzBpJa65tk-2BG=
+479taTAPoPwvQOdM2mamI6Qd97IUkkOT2E0RVg1tokhyAL5pAm-2FOW4yakFxzJn3huImf-2BxM=
+pSmUx1EQtwU5yTwa1ef9wftAJvEh-2F6UdRaqg63zAWE-2FeEOBMieSWcDY9q0TmIoTbOfeszwX=
+rMNcrwdB8HQhglcpY1AHNUysUe6yh82EKVZ-2FLeXYsZek-3D'>Lengkapi profil saya.</a=
+>
+</p>
+<p style=3D"font-family:Helvetica,Arial,sans-serif; font-weight: normal; fo=
+nt-size: 16px; line-height: 1.6; margin: 0 0 10px; padding: 0;text-align: c=
+enter;">
+    Apabila anda tidak menginginkan pesan seperti ini pada masa mendatang, =
+silakan <a href=3D'https://u2313217.ct.sendgrid.net/wf/click?upn=3DxpnUdc4g=
+Y6uqtuMlw4bxFURo73qh8epJgWpVw4PGyBpZaSMeuJY7hSmZXCnzYqbLG8f3pkZw1uWMNY-2BjE=
+P4j2roCFgMyoBQpfgGkSKTJ0YVigShm3AkMp4LDTFoa54DLBKZxOSLSbfuHSVHEMA-2BSNEm5Zz=
+MU1XJxVnQnFhZWCxlpCdLfzBSO9KVr32NSfQNJ_higGEegNbYTe7uowok-2FdW7j-2FZ6dwQNLv=
+9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdy1KIHDc2UiXkdX4wB-2Fu9iSLjMTJ3d-2BirN3jllPIF=
+l509aC1suJBSU6ANmqrjWD5wMHJUFvLsLqFYSiwM9guCLKoS9fN5LU-2FWn0KqPCcEJSwM72qos=
+ny5yTk6CbAo1Cdi-2BVZxnLP1NlyHER9e9sCsxt5iaf7hpDBGcg3-2Fq2zvt3cc06QDkQX5B71U=
+xkyps-2B31XKVTBQ7nF-2Fglbi0oOgpT1bmPHKL5QH3iQdJTZ-2F5mBC54-3D'>klik untuk b=
+erhenti berlangganan.</a>
+</p>
+                                </center>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td style=3D"width:550px;height: 30px;"></t=
+d>
+                            </tr>
+
+                        </table>
+                    </center>
+                </td>
+            </tr>
+        </table>
+   =20
+<img src=3D"https://u2313217.ct.sendgrid.net/wf/open?upn=3DhigGEegNbYTe7uow=
+ok-2FdW7j-2FZ6dwQNLv9FVXAuaTpd3JS76E5C2aA2Pk6sHfkqdyH77G1RB0glSTBSsnMIQBPcl=
+i5-2F8FvRKX2HVep1nmDyb32ZPn5Yio0NSaHNvG0laWvkUS6ngvvdC2H0kMcehDTF6elfLwyLMC=
+R-2B-2Fg21doMX16PPj-2FImtv4XhoNvmEcDGZdX185JqXJqRLqXfaVjI2-2FHNOgp714afOavn=
+0p3Yf9x5kVjcUKvSqWNorO8ecq1O8zaZ3Dr0LMer9x-2BrLDjgmzT7Cx0KxcxICKK-2FfLqL-2F=
+jFs-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px =
+!important;width:1px !important;border-width:0 !important;margin-top:0 !imp=
+ortant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !=
+important;padding-top:0 !important;padding-bottom:0 !important;padding-righ=
+t:0 !important;padding-left:0 !important;"/>
+</body>
+</html>

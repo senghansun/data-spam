@@ -1,0 +1,439 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 24 Aug 2017 09:12:09 +0000 
+Return-Path: <imamdwiputrar@gmail.com>
+Received-SPF: pass (domain of gmail.com designates 209.85.128.172 as permitted sender)
+X-YMailISG: 74zJUioWLDuz7kZKWwvLDXVFHUyDgMHC.7_.omg5XxR4Z_05
+ VfjPck7wUkSeIfrpC5_.YhQLgkDWXkK10mu1dm2OIkDxcF9hlpM.gm3z3nv.
+ xJwZz1s0R5O4c4vOwWpuvwdSnIMQg7My4s8DhHvGKftDMvi_42l0gkmk1K8q
+ ysNZhCfa4vdB6BDNUWKuINDrjxl4WontkuNV3k_KYL0p1bxai84iqwD2NfDr
+ jSgMW9Tm5lG3f2rmt5iXiUGfjL3RFnoI9eVeFYJb1rjwESgAIx_n41kr2L55
+ 0_7DOQzPJWbMa0AG6oC5G231mOY.G52CYNADEBfj9Kgx2YbK6xTxRoxN95dg
+ aAn.OoE7ux1MMr3R25E1ZSGBpyAhwcQGkL_A4INfVqR7uResOC08jnwiZ9eq
+ li5Nw8_0B4OxBdjwYru028PVyFSiOn2Qwcpw3iQ2Xhd6dphZy9HCdRDbWAyi
+ U7YkcJRPTWVfsZmibxW6ys9B0KqFMMivGJyyKgGZwIITOfuXEi4TJeuiZom4
+ iOS1TnElq5LgA_1uaF5W.yrJVMAO6eREQ.OU0gFu06UhcFhAPpsOgeAzN..y
+ w.Qxzr8ENHXidnSzsPFH34vlpQpZ23zzcP858XDvIulBFLs1nRHX4sNKTmiJ
+ y7e3CdRXMpqOOktb56qY1mCA8TxQVn.vvnyDAsG.9ekIVfYsm3Ms.fmog_AL
+ SnQ.KwYQejkUmlJIAtOIMMZvA2OF0pkqQOj7Z8j_lKHseGVaKRYm_yq8hvXl
+ u8HGzlrHJtXvE5rtT1O8jiuhfzxQDnLZoTi4eRVeK4SPJjGi7vlusiY6WUsx
+ QK2c6IzrM.JLcG8UtsyTLBNKCE4Ogwz9wPSITfMv.3Bty4ciY1LzUTIkjpKX
+ F2iDyayj4_2SAYSaAMWq5KfxnbWN8T6W3iNMXCKJ84BTQUHN6vjctvBQepTB
+ pnYbpFySj3YneSq0vlPeZkyP3x2Ijt2ESAzu_nM4hPDhUwsg7tInTXt4pIrn
+ ti8GLDqPOKgppzq1Lgr3429EF4l9hLi82dbmCVl70fTYXqXUn_WaOOBa3wTy
+ Js7vHg.e6_08MKEhTQC._LZ095TriQlAuRYbkt0jBoHAB4thfTHbaFjDyDqO
+ xQEL6jDdTBA9iVZpY.RNIa6PFNsJp_8NfqGpfhSxVFtIOyKDYXQetGy_GDTL
+ FyiagG9UMh.frTJWYed9s1oVFg0g_Ma6wnjbDBSZlkxVtuZUcsRfqEwsC_x.
+ MNzxEaMXZ1dAon9b4eIsSbyJdYUJW6N_iszMFK2zx1i_UhVTAp1_kppIeF._
+ eP6UpcWNu9jACIK8c4B_BmwFI_gTlCWxOm9yufOYJ8E1eBpGEzH_DvyYZMaL
+ LppV
+X-Originating-IP: [209.85.128.172]
+Authentication-Results: mta1473.mail.ne1.yahoo.com  from=gmail.com; domainkeys=neutral (no sig);  from=gmail.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail-wr0-f172.google.com) (209.85.128.172)
+  by mta1473.mail.ne1.yahoo.com with SMTPS; Thu, 24 Aug 2017 09:12:09 +0000
+Received: by mail-wr0-f172.google.com with SMTP id r6so221838wrg.0
+        for <Yustinus_vernanda@yahoo.com>; Thu, 24 Aug 2017 02:12:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=5ctitsT5hmwADy4DF670Zh81wg3hzIaFhe6rAH/sc+Y=;
+        b=LJKSy60HsQGs8eh/I2ucVwSBY+8kIPXUSkN9g4V46rcV38F2ni1f9Ko9LHwvBx0dQw
+         zs6aA5dnItncPlwaz8fhEzk2Q0nIXNYPNZaO2KWyByNU5Jv5oKlVDc+Z7B77uZbj81/R
+         6P1mq2/dkQKYI1IZ7LKF9AJsCkPjcoMMxfeITjyvxJgGpLSSuIwwRIWHy+sL3mxwGG+Y
+         MTTfGXBDaJf9oJipfLmV35lJbyDKFGB6NEvldjkpOTFYiVtSN0u/I/ejojfG/KQrCcCo
+         XG9j1rco/CPXv0JPL1DgNiRksNfOvmSrXuWCN0wWgIKL/J6WQ2sEO+JpUB0Zm+OyMNGL
+         ydqQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=5ctitsT5hmwADy4DF670Zh81wg3hzIaFhe6rAH/sc+Y=;
+        b=io3ezXkimsRSrd8LE4sp9VyezqeRuWT37u8hbiujRJU06A7XViu2Wp8ZVMosslj/8L
+         4sMMkNXVnnAnobZty6SEFEVE1t4fhIBQ70zcL+0/1Ut/ZFLzjAF6oByCRTcVjYS96hbV
+         otmSA9yscTLu1ZbhNpVaJ8+SY8JJ54PM+CyXi3EYkW3Af5ZrqDGS06sDoVsi7uMzNvdy
+         ImN4xfR0/+Mxr9EX71WkzXQFze7xWGssOZ+5PZgVE6IfHlvUfobAQJhP1k5kAn7pwhbs
+         3u+BkhG6vfthcbr6FAED+kPx/F3rXXN3SKU4pHiGp0ReDUqs45vh2Rtys+geP92rNrM2
+         o0TQ==
+X-Gm-Message-State: AHYfb5g5i1fE2vlX6YdYJpFbRV2c4RBktHAeeOssGtVt+wrhcq/KqbjN
+	dqcNDRurnQujVOw0BWVp3g4yV98d+Q==
+X-Received: by 10.223.172.50 with SMTP id v47mr2995403wrc.153.1503565929018;
+ Thu, 24 Aug 2017 02:12:09 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:12:08 -0700 (PDT)
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:12:08 -0700 (PDT)
+In-Reply-To: <0101015e0d28cf51-4002089f-00a4-4a65-a105-878e6c7c4ba4-000000@us-west-2.amazonses.com>
+References: <0101015e0d28cf51-4002089f-00a4-4a65-a105-878e6c7c4ba4-000000@us-west-2.amazonses.com>
+From: Imamdwiputra Risanti <imamdwiputrar@gmail.com>
+Date: Thu, 24 Aug 2017 16:12:08 +0700
+Message-ID: <CAAUY28_ot7RFeFPh4Xg7qVkS=+mZECEA=RAdstG5b=tJHMh7uw@mail.gmail.com>
+Subject: Fwd: Transaksi Pertamamu, Bonus TokoCash Rp50.000
+To: Yustinus_vernanda@yahoo.com
+Content-Type: multipart/alternative; boundary="f403045cf7c01879f305577c39f5"
+Content-Length: 13893
+
+--f403045cf7c01879f305577c39f5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ----------
+From: "Tokopedia" <exclusive@newsletter.tokopedia.com>
+Date: Aug 23, 2017 10:35 AM
+Subject: Transaksi Pertamamu, Bonus TokoCash Rp50.000
+To: <imamdwiputrar@gmail.com>
+Cc:
+
+Nikmati Hematnya Belanja di Tokopedia
+<http://trk.newsletter.tokopedia.com/ec?1Rvvx7/HBe6RnqqyzOmx9NtR7Qz>
+*Hai Toppers,*
+
+Ayo beli ini itu di aplikasi Tokopedia dan dapatkan cashback TokoCash
+hingga Rp50.000 dengan minimum transaksi Rp100.000!
+
+Serunya lagi, promo ini berlaku untuk semua metode pembayaran yang tersedia
+di Tokopedia, lho. Yuk, tunggu apa lagi? Belanja sekarang dan raih
+cashback-nya!
+Kode Promo:
+TOPED50
+Berlaku Hingga 25 Agustus 2017
+CEK SEKARANG
+<http://trk.newsletter.tokopedia.com/ec?n2Qmce/HBe6RnqqyzOmx9NtR7Qz>
+
+Pelajari Syarat dan Ketentuan:
+
+   - Berlaku 1x untuk akun *pengguna baru* dan/atau 1 nomor HP
+   terverifikasi.
+   - Periode: 23 (00.00 WIB) - 25 Agustus 2017 (23.59 WIB).
+   - Berlaku untuk transaksi lewat aplikasi Tokopedia di platform *Marketpl=
+ace
+   & Official Store Tokopedia*, dengan min. transaksi Rp100.000.
+   - Untuk mendapatkan cashback, pengguna harus melakukan aktivasi TokoCash
+   dan pastikan nomor telfon dalam keadaan aktif dan bisa digunakan saat
+   proses aktivasi.
+   - Tidak dapat digabung dengan penggunaan *voucher* atau promo lain.
+   - Tokopedia berhak menindak dugaan kecurangan oleh pengguna.
+   - Syarat dan Ketentuan promo ini tidak terpisah dari Syarat dan
+   Ketentuan Tokopedia
+   <http://trk.newsletter.tokopedia.com/ec?gJpZa2/HBe6RnqqyzOmx9NtR7Qz> &
+   dapat berubah sewaktu-waktu.
+
+Download App Tokopedia
+[image: Appstore]
+<http://trk.newsletter.tokopedia.com/ec?yILzay/HBe6RnqqyzOmx9NtR7Qz> [image=
+:
+Playstore]
+<http://trk.newsletter.tokopedia.com/ec?2RDRGX/HBe6RnqqyzOmx9NtR7Qz>
+
+Ikuti Kami
+[image: Line]
+<http://trk.newsletter.tokopedia.com/ec?TkxGj5/HBe6RnqqyzOmx9NtR7Qz> [image=
+:
+Google plus]
+<http://trk.newsletter.tokopedia.com/ec?GiPAKy/HBe6RnqqyzOmx9NtR7Qz> [image=
+:
+Facebook]
+<http://trk.newsletter.tokopedia.com/ec?lANuyp/HBe6RnqqyzOmx9NtR7Qz> [image=
+:
+Twitter]
+<http://trk.newsletter.tokopedia.com/ec?01GaKo/HBe6RnqqyzOmx9NtR7Qz> [image=
+:
+Instagram]
+<http://trk.newsletter.tokopedia.com/ec?lVlYA4/HBe6RnqqyzOmx9NtR7Qz>
+Hubungi Kami
+<http://trk.newsletter.tokopedia.com/ec?ALbOVY/HBe6RnqqyzOmx9NtR7Qz>
+Syarat & Ketentuan
+<http://trk.newsletter.tokopedia.com/ec?XpQxQJ/HBe6RnqqyzOmx9NtR7Qz>
+Kebijakan Privasi
+<http://trk.newsletter.tokopedia.com/ec?gAKSwS/HBe6RnqqyzOmx9NtR7Qz>
+Unsubscribe
+<http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/HBe6RnqqyzOmx9NtR7Qz/=
+p/30045/key/aW1hbWR3aXB1dHJhckBnbWFpbC5jb20=3D/>
+=C2=A9 2009-2017, PT Tokopedia
+
+--f403045cf7c01879f305577c39f5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><div class=3D"gmail_quote">---------- Forwarded mes=
+sage ----------<br>From: &quot;Tokopedia&quot; &lt;<a href=3D"mailto:exclus=
+ive@newsletter.tokopedia.com">exclusive@newsletter.tokopedia.com</a>&gt;<br=
+>Date: Aug 23, 2017 10:35 AM<br>Subject: Transaksi Pertamamu, Bonus TokoCas=
+h Rp50.000<br>To:  &lt;<a href=3D"mailto:imamdwiputrar@gmail.com">imamdwipu=
+trar@gmail.com</a>&gt;<br>Cc: <br><br type=3D"attribution"><u></u>
+<div style=3D"background-color:#f8f8f8">
+
+
+
+   =20
+    <p style=3D"font-size:0px"> Nikmati Hematnya Belanja di Tokopedia
+</p>
+   =20
+
+
+
+   =20
+    <div style=3D"Margin:0 auto;max-width:600px;min-width:260px;font:16px s=
+ans-serif">
+        <div style=3D"text-align:center;font-size:0">
+        </div>
+
+       =20
+        <div style=3D"height:5px;background-color:#42b549"> =20
+        </div>
+       =20
+
+       =20
+       =20
+        <div>
+            <div>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?1Rvvx7/HB=
+e6RnqqyzOmx9NtR7Qz" target=3D"_blank"><img style=3D"display:block;width:100=
+%;height:auto;max-width:600px" src=3D"https://d39sghb3udgxv0.cloudfront.net=
+/30045/1503454090.jpg" alt=3D"" width=3D"600" border=3D"0"></a>
+            </div>
+        </div>
+       =20
+
+
+       =20
+        <div style=3D"background:#ffffff">
+            <div style=3D"color:#505050;border-radius:4px;background:#fff;p=
+adding:10px 5% 10px 5%"><b style=3D"font-size:150%">Hai Toppers,</b>
+                               =20
+            <p style=3D"line-height:1.8em">
+      Ayo beli ini itu di aplikasi Tokopedia dan dapatkan cashback TokoCash=
+ hingga Rp50.000 dengan minimum transaksi Rp100.000!
+<br><br>
+Serunya lagi, promo ini berlaku untuk semua metode pembayaran yang tersedia=
+ di Tokopedia, lho. Yuk, tunggu apa lagi? Belanja sekarang dan raih cashbac=
+k-nya!
+
+
+            </p>
+
+            </div>
+        </div>
+       =20
+               =20
+        <div>
+            <div style=3D"border-radius:4px">=20
+                <div style=3D"color:#505050;border-radius:4px;background:#f=
+fffff;padding:10px 3% 10px 3%">=20
+                    <div align=3D"center">=20
+                        <div>=20
+                            <div style=3D"display:inline-block;font-weight:=
+bold;padding:10px 30px;font-size:26px;color:#f26039;border:2px solid #e5e5e=
+5;background-color:#ececec">=20
+                                <span style=3D"display:block;font-size:12px=
+;color:#434343">Kode Promo:<br></span>
+                       TOPED50
+                            </div>=20
+                            <div style=3D"font-size:12px;color:#999;padding=
+-top:8px">Berlaku Hingga 25 Agustus 2017
+                            </div>
+                        </div>=20
+                    </div>=20
+                </div>=20
+            </div>
+        </div>
+       =20
+       =20
+        <div align=3D"center" style=3D"padding:0px 20px 0px;background-colo=
+r:#ffffff">
+            <a href=3D"http://trk.newsletter.tokopedia.com/ec?n2Qmce/HBe6Rn=
+qqyzOmx9NtR7Qz" style=3D"display:inline-block;padding:25px 28px;background:=
+#f26f46;color:#ffffff;text-decoration:none;font-size:20px;font-weight:bold;=
+margin-bottom:30px;border-radius:4px" target=3D"_blank">
+        CEK SEKARANG
+            </a>
+        </div>
+       =20
+     =20
+       =20
+		<div align=3D"center">=20
+            <div style=3D"padding:10px 18px;border-width:2px;border-top:1px=
+ solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#ffffcc;fon=
+t-size:10px" id=3D"m_-8506168987525150487m_-3399913640788259468">
+                <p class=3D"m_-8506168987525150487header" align=3D"center" =
+style=3D"text-decoration:none;font-weight:700;color:#000">Pelajari Syarat d=
+an Ketentuan:</p>=20
+
+                <ul style=3D"text-align:left;list-style-type:disc;line-heig=
+ht:1.6em;padding:2% 7% 1%"><li style=3D"margin-bottom:10px">Berlaku 1x untu=
+k akun <b>pengguna baru</b> dan/atau 1 nomor HP terverifikasi. </li>
+<li style=3D"margin-bottom:10px">Periode: 23 (00.00 WIB) - 25 Agustus 2017 =
+(23.59 WIB).</li>
+<li style=3D"margin-bottom:10px">Berlaku untuk transaksi lewat aplikasi Tok=
+opedia di platform <b>Marketplace &amp; Official Store Tokopedia</b>, denga=
+n min. transaksi Rp100.000.</li>
+<li style=3D"margin-bottom:10px">Untuk mendapatkan cashback, pengguna harus=
+ melakukan aktivasi TokoCash dan pastikan nomor telfon dalam keadaan aktif =
+dan bisa digunakan saat proses aktivasi.</li>
+<li style=3D"margin-bottom:10px">Tidak dapat digabung dengan penggunaan <i>=
+voucher</i> atau promo lain.</li>
+<li style=3D"margin-bottom:10px">Tokopedia berhak menindak dugaan kecuranga=
+n oleh pengguna.</li>
+<li style=3D"margin-bottom:10px">Syarat dan Ketentuan promo ini tidak terpi=
+sah dari <a href=3D"http://trk.newsletter.tokopedia.com/ec?gJpZa2/HBe6Rnqqy=
+zOmx9NtR7Qz" style=3D"text-decoration:none;font-weight:700;color:#42b549" t=
+arget=3D"_blank">Syarat dan Ketentuan Tokopedia</a> &amp; dapat berubah sew=
+aktu-waktu.</li>
+
+
+            </ul></div>=20
+        </div>
+	=09
+   =20
+   =20
+       =20
+        <div style=3D"text-align:center;font-size:0;background:#ffffff;padd=
+ing-top:15px;padding-bottom:25px">
+           =20
+            <div style=3D"display:inline-block;font-size:16px;text-align:ce=
+nter;color:#231f20;background:#ffffff;vertical-align:top;width:50%;min-widt=
+h:120px;max-width:100%;width:-webkit-calc(230400px - 48000%);min-width:-web=
+kit-calc(50%);width:calc(230400px - 48000%);min-width:calc(50%)">
+                <p align=3D"center" style=3D"font-size:10px;color:#161919;f=
+ont-weight:bold">Download App Tokopedia</p>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?yILzay/HB=
+e6RnqqyzOmx9NtR7Qz" target=3D"_blank"><img src=3D"https://s3.amazonaws.com/=
+www.betaoutcdn.com/205872016/07/1468233846.png" alt=3D"Appstore" height=3D"=
+40"></a>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?2RDRGX/HB=
+e6RnqqyzOmx9NtR7Qz" target=3D"_blank"><img src=3D"https://s3.amazonaws.com/=
+www.betaoutcdn.com/205872016/07/1468233889.png" alt=3D"Playstore" height=3D=
+"40"></a>
+            </div>
+           =20
+            <div style=3D"display:inline-block;font-size:16px;text-align:ce=
+nter;color:#231f20;background:#ffffff;vertical-align:top;width:50%;min-widt=
+h:120px;max-width:100%;width:-webkit-calc(230400px - 48000%);min-width:-web=
+kit-calc(50%);width:calc(230400px - 48000%);min-width:calc(50%)">
+                <p align=3D"center" style=3D"font-size:10px;color:#161919;f=
+ont-weight:bold">Ikuti Kami</p>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?TkxGj5/HB=
+e6RnqqyzOmx9NtR7Qz" style=3D"padding:0 5px" target=3D"_blank"><img src=3D"h=
+ttps://d39sghb3udgxv0.cloudfront.net/30045/1497495992.jpg" style=3D"border-=
+radius:3px" alt=3D"Line" height=3D"40"></a>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?GiPAKy/HB=
+e6RnqqyzOmx9NtR7Qz" style=3D"padding:0 5px" target=3D"_blank"><img src=3D"h=
+ttps://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt=
+=3D"Google plus" height=3D"40" style=3D"border-radius:3px"></a>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?lANuyp/HB=
+e6RnqqyzOmx9NtR7Qz" style=3D"padding:0 5px" target=3D"_blank"><img src=3D"h=
+ttps://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt=
+=3D"Facebook" height=3D"40" style=3D"border-radius:3px"></a>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?01GaKo/HB=
+e6RnqqyzOmx9NtR7Qz" style=3D"padding:0 5px" target=3D"_blank"><img src=3D"h=
+ttps://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt=
+=3D"Twitter" height=3D"40" style=3D"border-radius:3px"></a>
+                <a href=3D"http://trk.newsletter.tokopedia.com/ec?lVlYA4/HB=
+e6RnqqyzOmx9NtR7Qz" style=3D"padding:0 5px" target=3D"_blank"><img src=3D"h=
+ttps://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt=
+=3D"Instagram" height=3D"40" style=3D"border-radius:3px"></a>
+            </div>
+           =20
+        </div>
+        <div style=3D"height:15px;background-color:#42b549"> =20
+        </div>
+       =20
+
+
+   =20
+    <div style=3D"text-align:center;font-size:0;background-color:#f8f8f8;ma=
+rgin-top:20px">
+           =20
+            <div style=3D"display:inline-block;font-size:14px;text-align:ce=
+nter;background:#f8f8f8;vertical-align:top;width:17.5%;min-width:120px;max-=
+width:100%;width:-webkit-calc(230400px - 48000%);min-width:-webkit-calc(17.=
+5%);width:calc(230400px - 48000%);min-width:calc(17.5%)">
+                <div style=3D"padding:5px 0">
+                    <a href=3D"http://trk.newsletter.tokopedia.com/ec?ALbOV=
+Y/HBe6RnqqyzOmx9NtR7Qz" style=3D"text-decoration:none;color:#2fbe38" target=
+=3D"_blank">Hubungi Kami</a>
+                </div>
+            </div>
+           =20
+            <div style=3D"display:inline-block;font-size:14px;text-align:ce=
+nter;background:#f8f8f8;vertical-align:top;width:22%;min-width:120px;max-wi=
+dth:100%;width:-webkit-calc(230400px - 48000%);min-width:-webkit-calc(22%);=
+width:calc(230400px - 48000%);min-width:calc(22%)">
+                <div style=3D"padding:5px 0">
+                    <a href=3D"http://trk.newsletter.tokopedia.com/ec?XpQxQ=
+J/HBe6RnqqyzOmx9NtR7Qz" style=3D"text-decoration:none;color:#2fbe38" target=
+=3D"_blank">Syarat &amp; Ketentuan</a>
+                </div>
+            </div>
+           =20
+            <div style=3D"display:inline-block;font-size:14px;text-align:ce=
+nter;background:#f8f8f8;vertical-align:top;width:22%;min-width:120px;max-wi=
+dth:100%;width:-webkit-calc(230400px - 48000%);min-width:-webkit-calc(22%);=
+width:calc(230400px - 48000%);min-width:calc(22%)">
+                <div style=3D"padding:5px 0">
+                    <a href=3D"http://trk.newsletter.tokopedia.com/ec?gAKSw=
+S/HBe6RnqqyzOmx9NtR7Qz" style=3D"text-decoration:none;color:#2fbe38" target=
+=3D"_blank">Kebijakan Privasi</a>
+                </div>
+            </div>
+           =20
+            <div style=3D"display:inline-block;font-size:14px;text-align:ce=
+nter;background:#f8f8f8;vertical-align:top;width:17.5%;min-width:120px;max-=
+width:100%;width:-webkit-calc(230400px - 48000%);min-width:-webkit-calc(17.=
+5%);width:calc(230400px - 48000%);min-width:calc(17.5%)">
+                <div style=3D"padding:5px 0">
+                    <a href=3D"http://trk.newsletter.tokopedia.com/unsubscr=
+ibe/nv/c/HBe6RnqqyzOmx9NtR7Qz/p/30045/key/aW1hbWR3aXB1dHJhckBnbWFpbC5jb20=
+=3D/" style=3D"text-decoration:none;color:#2fbe38" target=3D"_blank">Unsubs=
+cribe</a>
+                </div>
+            </div>
+           =20
+        </div>
+        <div style=3D"font-size:13px;color:#999999;padding:20px" align=3D"c=
+enter">
+            =C2=A9 2009-2017, PT Tokopedia
+        </div>
+   =20
+    </div>
+   =20
+
+
+       =20
+       =20
+       =20
+       =20
+       =20
+       =20
+       =20
+       =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img alt=3D"" src=3D"http://trk.newsletter.tokopedia.com/o/nv/c/HBe6RnqqyzO=
+mx9NtR7Qz.gif"></div>
+
+</div>
+
+--f403045cf7c01879f305577c39f5--

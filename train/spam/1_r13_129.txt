@@ -1,0 +1,992 @@
+X-Apparently-To: ishaq.siddiq1903@yahoo.com; Mon, 22 May 2017 04:10:26 +0000
+Return-Path: <style@e.zalora.co.id>
+Received-SPF: pass (domain of e.zalora.co.id designates 199.7.204.243 as permitted sender)
+X-YMailISG: P8uQS_0WLDtqT4PC.oAZJAjVZ4ZuZNFV_e9QLNENGpP0xABt
+ sftliGlop7Jw.nBUlFFaUKITkVbbLlI7q6jTsgVDE6Bu8V5jmIeUMuHeYlzb
+ TLEKMcZ_tlXD8JHxxFj_R195wA4UaHKelEUijr4M2f_Xc43dN6eI5l8piLZe
+ wfNZQH3INaexVWFvL8wLxNpUsK03NHOouu3GBwMU3F1rGjnt7sCp52zpDCbm
+ fUn3AJY19nnS9kKMs5NBTdikNWif53d82Mcb3.Ce974RrghEQMWsvyp6q3iA
+ EHWmNlhKLbcbEYy4zixheFxIuBjB4avRgLfBLZcd2wNRJhAe.28kqOd4WVnH
+ sHjonwfDWMoZ_5BxHCvTpzfUaaEDPQCEAcxco_TUURxUqLwtG2DK6nFE.N6s
+ 3r.1ZMRyWtB6QOBzYX4hMyzzCjf9uwq81FRjm5eMgnI5_Qrma7ppAbNL2gyA
+ bGGP3612jCdYqh8uPKk7h_p7k8ESKHR0SQS8igQMIeWojsGmwnZaUkP49_ST
+ puVnVlhWmLYEUwpZ6i4SO2am9OrBVMWGHBNIwjTPgYetKcIsH9IsRxWE8InM
+ wyBgfqU4R.zgc4mzhBozqgi6uyjVkXo7pvhqqxpIxgwd5tTphKBE_v2eiQ3A
+ SoNbF.eL5tWXaczoPgSGer3HcqcMOj92n2fmMNNvYX2W2IxisMxbHEUGJ0YV
+ LZ5NwNGwXLQBcx1O_NCvzeUH6cCi0sRnDe1dpvY9eU8BG8QCaRbnmwZ5bhLC
+ 4PUJ7DD.B12xnGl89aZ.EIX.SMibjYk6L4YtlOnFZaNPa7jp3S6WyWXi1Hf7
+ WVf4eN.lF5BGVbQNGd9x0iXMReAUSTnD2QyGRwacohfaq9oFFCg1JrfWsh5K
+ zjHvcqk7Vt2N6BuucpZtSjeol2laUbd7w404tTV.YNbaSABWAhM61Wr08o_J
+ xp3yCCiuv4MeB8BNqdt2wYzRg4S.Wozo_ShGGaahbrFu94XRcLdQEepRs7Qd
+ K4zS45yuKjvDzONxXNX3SI5cHSNkS96nZOufyOTl_FhOqhuiqiryI74Ew_Jx
+ O7Q1SIAqH3XdV0NxbMfpvQHG9v0atTvEidZdTVscfy.ptC2MUslFYiJu4idF
+ A9prN5FaQnHjRL.CQSYkmxG.SucqeGuqmhMWHNlbEHpz.mL_c7xzivA9xhRT
+ zxzh0czjdq_7HMf86BoqCmf_uOU4Uxx0ufpzlDNcDiJhMvtDA5CJGJ7YBVCp
+ PqducRM4JddHscX.36_viD7Mfjh5nh5RtQmiqu1YsOxMpx2SmYWx8adH1giw
+ 8zJEjVhLXW0kFxaTdCjSnX42OInZ1JuK7r57EDvai_0clAxKz8zyX0SrGYPJ
+ 9NWW9mKmbATerdn_E2gQnX7QS3WCEOju59AfLjTPZoyKYyf.s13KddNTMRk2
+ p6Ur15Q2PiEI_dkynGcOFwm8eOMUmsI01WA0Bv7xEbynW5NQeIW9xTONl44G
+ tvE3iUfAs5OdDlSGTS5aH5jsiUTSROb8iaC.8OUP4U7KE0qpXq25lAhl71nN
+ A4GW0uZB9APSf6wSJ0IdmNYaAA41SFK5PFO1Y.6Um0F938KdCczxH1YYUFlL
+ j5_E2OYf.JsT.CZv6Ddkq.NCNg_qD5RQE_F6KKUbUbX8yRLEdC2cn7STDHDk
+ P8jANhyfZCfsduauci6ufwpjm8ifilndoyDk39V_cItTVIegX5NQdF_1uJQz
+ RIloN3HpcBzICg--
+X-Originating-IP: [199.7.204.243]
+Authentication-Results: mta1061.mail.ne1.yahoo.com  from=e.zalora.co.id; domainkeys=pass (ok);  from=e.zalora.co.id; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO omp.email.zalora.com) (199.7.204.243)
+  by mta1061.mail.ne1.yahoo.com with SMTP; Mon, 22 May 2017 04:10:25 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=zalora4; d=e.zalora.co.id;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:Subject:List-Unsubscribe:Message-ID; i=style@e.zalora.co.id;
+ bh=TgNBHenNRewRSRIdQS5s112QV7o=;
+ b=u5vzEO6F0K15+YxNyfCIcHa/GCD6E/St8CAGTtH2UqpU6JQVGxtcOlJWIXGI2oPXB9vnaQTJdix/
+   Eui8a6e8kJhJ+n9PRISqysloxC0jxC2JYkNKlTkJhA8YCyCFRY1z78DWKJiRKh1hZWwQMUtQF7sK
+   baMgKuRPSa0UWRwE9hA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=zalora4; d=e.zalora.co.id;
+ b=AlvA+23qMSoYU+5O8NiwWcgZ95sSKAHcFfXxNz44wBWx+S5BLuYFREwXlOTIlO5mdvGPTuvvD26m
+   75wgyD2brgcYP44i/5nd8cAWQ6+MNcLYX8ivrzyVMmqD8Kbyi7AUOvmZwfqXcA/LBsbdlk2l152k
+   C1JKHsrEBBcONGT2Yi0=;
+Received: by omp.email.zalora.com id h49ib2162boh for <ishaq.siddiq1903@yahoo.com>; Sun, 21 May 2017 21:01:43 -0700 (envelope-from <style@e.zalora.co.id>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Sun, 21 May 2017 21:01:43 -0700
+To: ishaq.siddiq1903@yahoo.com
+From: "ZALORA" <style@e.zalora.co.id>
+Reply-To: "ZALORA" <customer-reply@e.zalora.co.id>
+Subject: =?UTF-8?B?8J+MtCBZYW5nIEJBUlUgZGkgTXVzaW0gSW5pIFRpYmEgLi4u?=
+Feedback-ID: 53418:13435235:oraclersys
+List-Unsubscribe: <https://email.zalora.com/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOW&_ei_=EolaGGF4SNMvxFF7KucKuWOoyH9LwolKUDhqM7oPXNRuZgE83BAi_Avw1Ybmj7mArAZRfFHGv2j-ydvEU8W8LN3JEYTCy-D2c2M>, <mailto:unsubscribe-YQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOW@imh.rsys5.com?subject=List-Unsubscribe>
+X-sgxh1: pkoHzbQkpKKpzbSDRUT
+X-rext: 5.interact5.Eti1JXD5fLiOO6FdSISG7m4VlOj_87gxFLMlrf6W7Q_Xqbs2-oo6rw4
+X-cid: zalora.18819705
+Message-ID: <0.0.89.85E.1D2D2B01FAC7BAC.0@omp.email.zalora.com>
+Content-Length: 53077
+
+<=21DOCTYPE html PUBLIC =22-//W3C//DTD XHTML 1=2E0 Transitional//EN=22 =22h=
+ttp://www=2Ew3=2Eorg/TR/xhtml1/DTD/xhtml1-transitional=2Edtd=22>
+<html xmlns=3D=22http://www=2Ew3=2Eorg/1999/xhtml=22>
+
+<head>
+    <title></title>
+</head>
+
+<body><table cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border:=
+ 0px; padding: 0px; margin: 0px; position: absolute; display: none; float: =
+left=22>
+<tr>
+<td height=3D=221=22 style=3D=22font-size: 1px; line-height: 1px; padding: =
+0px;=22>
+<img height=3D=221=22 width=3D=221=22 style=3D =22padding: 0px 0px; =21impo=
+rtant; margin: 0px 0px; font-size: 1px; line-height: 1px;=22 src=3D=22https=
+://email=2Ezalora=2Ecom/pub/as?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwA=
+zgK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXHkMX%3Dw&_ei_=3DEolaGGF4S=
+NMvxFF7KucKuWOoyH9LwolKUDhqM7oPXNRuZgE83BAi_Avw1Ybmj7mArAZRfFHGv2j-ydvEU8W8=
+LN3JEYTCy-D2c2M=2E=22></img>
+<img border=3D=220=22 width=3D=221=22 height=3D=221=22 src=3D=22https://ib=
+=2Eadnxs=2Ecom/getuid?https://a=2Eadrsp=2Enet/dsp/ci/2/E4N6J5chhcqvWewQqQD7=
+agB8N-CG5oouwlMgCBaTt4HckRvw2ogfLfuvu_dwU0dM1_q3D1T1KCbOvVtT0l3O8GMs8MuN3rP=
+RwdV4RlVA4l5k4IIv5w4/%24UID=22></img>
+</td>
+</tr>
+</table>
+
+
+    =20
+    <table width=3D=22600=22 align=3D=22center=22 cellpadding=3D=220=22 cel=
+lspacing=3D=220=22 style=3D=22min-width:600px=22>
+        <tr>
+            <td bgcolor=3D=22=23FFFFFF=22>
+                <=21-- PREHEADER & HEADER -->
+                <=21-- preheader-->
+    <style type=3D=22text/css=22>
+    a:hover =7B
+        color: =23000 =21important;
+    =7D
+    a:active =7B
+        color: =23000 =21important;
+    =7D
+    a:visited =7B
+        text-decoration: none;
+        color: =2300c8b4 =21important;
+    =7D
+    =40media only screen and (max-width: 600px) =7B
+        table=5Bclass=3D=22body=22=5D img =7B
+            height: auto =21important;
+            width: auto =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D center =7B
+            min-width: 0 =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Econtainer =7B
+            width: 100% =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Erow =7B
+            min-width: 100% =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ewrapper =7B
+            display: block =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ecolumns =7B
+            table-layout: fixed =21important;
+            float: none =21important;
+            width: 100% =21important;
+            padding-right: 0px =21important;
+            padding-left: 0px =21important;
+            display: block =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Eheadercolumns =7B
+            float: none =21important;
+            width: 100% =21important;
+            padding-right: 0px =21important;
+            padding-left: 0px =21important;
+            display: inline-table =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D td=2Eexpander =7B
+            width: 1px =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ehide-for-small =7B
+            display: none =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Eheadercolumns td=2Epreheader =7B
+            width: 40% =21important;
+            padding: 0px 25px =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ehide-for-desktop =7B
+            display: inherit =21important;
+        =7D
+    =7D
+    </style>
+    <table class=3D=22body=22 style=3D=22border-spacing: 0; border-collapse=
+: collapse; height: 100%; width: 100%; padding: 0;=22>
+        <tr style=3D=22padding: 0;=22>
+            <td align=3D=22center=22 valign=3D=22top=22 style=3D=22border-c=
+ollapse: collapse =21important; padding: 0;=22>
+                <center>
+                    <=21--Header Content -->
+                    <table class=3D=22container=22 style=3D=22border-spacin=
+g: 0; border-collapse: collapse; width: 600px; background: =23FFFFFF; margi=
+n: 0 auto; padding: 0;=22 bgcolor=3D=22=23FFFFFF=22>
+                        <tr style=3D=22padding: 0;=22>
+                            <td style=3D=22border-collapse: collapse =21imp=
+ortant; padding: 0;=22>
+                                <=21-- APP badges -->
+                                <table class=3D=22row=22 style=3D=22border-=
+spacing: 0; border-collapse: collapse; width: 100% =21important; padding: 0=
+;=22>
+                                    <tr style=3D=22padding: 0;=22>
+                                        <td class=3D=22wrapper=22 style=3D=
+=22border-collapse: collapse =21important; padding: 0;=22>
+                                            <table class=3D=22twelve header=
+columns=22 style=3D=22border-spacing: 0; border-collapse: collapse; width: =
+600px; padding: 0;=22>
+                                                <tr style=3D=22padding: 0;=
+=22>
+                                                    <td width=3D=22365=22 c=
+lass=3D=22preheader textcontent=22 style=3D=22border-collapse: collapse =21=
+important; word-break: break-word; -moz-hyphens: auto; -webkit-hyphens: aut=
+o; hyphens: auto; color: =23222222; font-family: 'Helvetica', 'Arial', sans=
+-serif; font-weight: normal; font-size: 12px; margin: 0; padding: 0;=22>
+
+
+                                                        <=21-- Insert Pre-h=
+eader -->
+                                                        <span class=3D=22hi=
+de-for-small=22>Hari terakhir semua 249 ribu, beli 2 hanya 400 ribu<br /></=
+span> Untuk tampilan web <a href=3D=22https://email=2Ezalora=2Ecom/pub/cc?_=
+ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgeftjMA4Bz=
+aXzczbIkTqhhAjOWVXtpKX%3DYARWWSRY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkhDZEwotx=
+vsz92XI-lZGH3Bu1389if6QKshXdgLOrzFsNoi5RO0xJGJVjvLp2yD_vbSrFfivlUgclsm9XJK6=
+l_qVnT64gOyHuakQ71pIYVG08L8KLjJ88GT7QzHRVDMZ5DShmHQrL1Ggno5towUL5foO3FgjYpB=
+tGYZeY5psRaky9zccbZkLMuaraTY59dCuOGGUiPowsUDz0xb2EerY0NXBNzOU1uIGa3xEEyF2r1=
+9QyK60es2ksVG5V_AoP_x4fH_ZAmNbTqPqHR44yw3e5961vppTi743oCsStIhSPoYZ7_aOIdYpw=
+uMlQ2PsFZ1d0=2E=22 title=3D=22=22 target=3D=22_blank=22 style=3D=22text-dec=
+oration: none; color: =2300c8b4; -webkit-transition: all =2E2s ease-out; -m=
+oz-transition: all =2E2s ease-out; -o-transition: all =2E2s ease-out; trans=
+ition: all =2E2s ease-out;=22>Klik disini</a> </td>
+                                                    <td class=3D=22badge=22=
+ style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWSTY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTuY1Isu6dwPiPEGKa5OnVmRnZvnZGJf0O5zYGrptp24p2gD6yPaHp_gG3T2S4DuADaWtZ=
+0mKxzsVghAX0b-LK2MIn2NlFIsc8JRhdtSeIK9c3rOb6hh8R_ptXU8fomK-i4dfokWefyVH0U56=
+z3nsNjyqnztXA2STMK7f5qrdwotuCMN2v0cteWiMWmFzfTfFH_ySlgmMaGtX-0p8M0I8Gr42Tzj=
+KTJDxo_xf8l8QNHXxTM=2E=22 title=3D=22Appstore=22 target=3D=22_blank=22 styl=
+e=3D=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =2E=
+2s ease-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E2s =
+ease-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22117=22 height=3D=2235=22 style=3D=22width: 117px; height: 35px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: right; clear: both; display: block; margin: 0 auto; border: non=
+e;=22 alt=3D=22Appstore=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/cr=
+m/id/header/2015_06/Badge_AppStore=2Egif=22 class=3D=22right=22 border=3D=
+=220=22 align=3D=22right=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22badge=22=
+ style=3D=22border-collapse: collapse =21important; padding: 0px 0px 0px 15=
+px;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWSWY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTuZs6LKqCGQvxVjJz-FaCeuxsO36IEH-4fhPceje0nUvDcpBlaYwHmdlpxbjmqALA3UHm=
+QaIq6bl1U9_i5HQzKgc5JJkT9clVQkdUg-ymGbN39XUL0dFVNdyMKb-cH_-zmFQl9poCLsE__Aj=
+5huRik3d28tMIQMtZsTXo2m6e9IIAJaSvgoJOlKj_hxc6tLlF3xWpA0HgxoW9Bs9AgZ6r6WBCsD=
+DQHGMiAuM58e1bIqElxM=2E=22 title=3D=22Playstore=22 target=3D=22_blank=22 st=
+yle=3D=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =
+=2E2s ease-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E=
+2s ease-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22104=22 height=3D=2236=22 style=3D=22width: 115px; height: 36px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: left; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22Playstore=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/cr=
+m/rg/AppBadge/gplay-115x36en=2Epng=22 class=3D=22left=22 border=3D=220=22 a=
+lign=3D=22left=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22expander=
+=22 style=3D=22border-collapse: collapse =21important; visibility: hidden; =
+width: 0px; padding: 0;=22></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <=21-- end of preheader/badge contents -->
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+        </tr>
+    </table>
+                <=21-- header-->
+    <style type=3D=22text/css=22>
+    a:hover =7B
+        color: =23000 =21important;
+    =7D
+    a:active =7B
+        color: =23000 =21important;
+    =7D
+    a:visited =7B
+        text-decoration: none;
+        color: =2300c8b4 =21important;
+    =7D
+    =40media only screen and (max-width: 600px) =7B
+        table=5Bclass=3D=22body=22=5D img =7B
+            height: auto =21important;
+            width: auto =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D center =7B
+            min-width: 0 =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Econtainer =7B
+            width: 100% =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Erow =7B
+            min-width: 100% =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ewrapper =7B
+            display: block =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ecolumns =7B
+            table-layout: fixed =21important;
+            float: none =21important;
+            width: 100% =21important;
+            padding-right: 0px =21important;
+            padding-left: 0px =21important;
+            display: block =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Eheadercolumns =7B
+            float: none =21important;
+            width: 100% =21important;
+            padding-right: 0px =21important;
+            padding-left: 0px =21important;
+            display: inline-table =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D td=2Eexpander =7B
+            width: 1px =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ehide-for-small =7B
+            display: none =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Eheadercolumns td=2Epreheader =7B
+            width: 40% =21important;
+            padding: 0px 25px =21important;
+        =7D
+        table=5Bclass=3D=22body=22=5D =2Ehide-for-desktop =7B
+            display: inherit =21important;
+        =7D
+    =7D
+    </style>
+    <table width=3D=2278%=22 class=3D=22body=22 style=3D=22border-spacing: =
+0; border-collapse: collapse; height: 100%; width: 100%; padding: 0;=22>
+        <tr style=3D=22padding: 0;=22>
+            <td align=3D=22center=22 valign=3D=22top=22 style=3D=22border-c=
+ollapse: collapse =21important; padding: 0;=22>
+                <center>
+                    <=21--Header Content -->
+                    <table class=3D=22container=22 style=3D=22border-spacin=
+g: 0; border-collapse: collapse; width: 600px; background: =23FFFFFF; margi=
+n: 0 auto; padding: 0;=22 bgcolor=3D=22=23FFFFFF=22>
+                        <tr style=3D=22padding: 0;=22>
+                            <td style=3D=22border-collapse: collapse =21imp=
+ortant; padding: 0;=22>
+
+                                <=21-- Top USP -->
+                                <table class=3D=22row hide-for-small=22 sty=
+le=3D=22border-spacing: 0; border-collapse: collapse; width: 100% =21import=
+ant; padding: 0;=22>
+                                    <tr style=3D=22padding: 0;=22>
+                                        <td class=3D=22wrapper=22 style=3D=
+=22border-collapse: collapse =21important; padding: 0;=22>
+                                            <table class=3D=22twelve column=
+s=22 style=3D=22border-spacing: 0; border-collapse: collapse; width: 600px;=
+ margin: 0 auto; padding: 0;=22>
+                                                <tr style=3D=22padding: 0;=
+=22>
+                                                    <td class=3D=22twelve=
+=22 style=3D=22border-collapse: collapse =21important; width: 100% =21impor=
+tant; padding: 10px 0px;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWSAY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTu-VYfiv5yxKxa0Kw3AN9RJMP0DSvBlXe_O2WRH5FJrokDd0UNkJpjwWCrraQDhjg3tVK=
+0YamLg5N0AApBoHxXLrHIIbao8TSCX1LrYafIu6wgQHwqxLxtW1_cRQ_nmH9GX7dY8gclfHharv=
+2L1GaE9o3J5QBGGZUOlzoG0Xgd3IN8f7Rt-Xyd4he0gGiTCeknh0BASIAVCpxa5R15PVd4UwFJQ=
+HVy7j191O1g8-=2E=22 title=3D=22=22 target=3D=22_blank=22 style=3D=22text-de=
+coration: none; color: =2300c8b4; -webkit-transition: all =2E2s ease-out; -=
+moz-transition: all =2E2s ease-out; -o-transition: all =2E2s ease-out; tran=
+sition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22600=22 height=3D=2239=22 style=3D=22width: 600px; height: 39px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/head=
+er/2015_06/ID_USP=2Ejpg=22 class=3D=22center=22 border=3D=220=22 align=3D=
+=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22expander=
+=22 style=3D=22border-collapse: collapse =21important; visibility: hidden; =
+width: 0px; padding: 0;=22></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <=21-- Mid Banner -->
+                                <table class=3D=22row=22 style=3D=22border-=
+spacing: 0; border-collapse: collapse; width: 100% =21important; padding: 0=
+;=22>
+                                    <tr style=3D=22padding: 0;=22>
+                                        <td class=3D=22wrapper=22 style=3D=
+=22border-collapse: collapse =21important; padding: 0;=22>
+                                            <table class=3D=22twelve column=
+s=22 style=3D=22border-spacing: 0; border-collapse: collapse; width: 600px;=
+ margin: 0 auto; padding: 0;=22>
+                                                <tr style=3D=22padding: 0;=
+=22>
+                                                    <td class=3D=22twelve=
+=22 bgcolor=3D=22=23FFFFFF=22 style=3D=22border-collapse: collapse =21impor=
+tant; width: 100% =21important; padding: 10px 20px;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWTRY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTu_GKcstTkK8_xSrKN9bngUr98xTvI0g4nxz4uuIENmWZTlH86Nkn05xXn6ZNBqIdjMyb=
+aPxndeIyDh-VaUdIDtVBpMYU98DMuKD2WZZ-39pq_ukuaiVcOv4be7CXltu9y8i3-mvwWmQBsRD=
+oHWdyEuwurDrLbEcHufpgkxiPdtlpMZ_q9fXSNZQSmedJ32D1DklyWvbsdSiDntf3jkj07WJyY5=
+LrZdma_5M4UDjJkUN=2E=22 title=3D=22ZALORA=22 target=3D=22_blank=22 style=3D=
+=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =2E2s e=
+ase-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E2s ease=
+-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22221=22 height=3D=2231=22 style=3D=22width: 221px; height: 31px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22ZALORA=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/s=
+g/header/2015_06/ZALORA_Logo=2Egif=22 class=3D=22center=22 border=3D=220=22=
+ align=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22expander=
+=22 style=3D=22border-collapse: collapse =21important; visibility: hidden; =
+width: 0px; padding: 0;=22></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <=21-- Bottom Options -->
+                                <table class=3D=22row=22 style=3D=22border-=
+spacing: 0; border-collapse: collapse; width: 100% =21important; padding: 0=
+;=22>
+                                    <tr style=3D=22padding: 0;=22>
+                                        <td class=3D=22wrapper=22 style=3D=
+=22border-collapse: collapse =21important; padding: 0;=22>
+                                            <table class=3D=22twelve header=
+columns=22 style=3D=22border-spacing: 0; border-collapse: collapse; width: =
+600px; padding: 0;=22>
+                                                <tr style=3D=22padding: 0;=
+=22>
+                                                    <td class=3D=22hide-for=
+-small=22 style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWTWY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTu_0lvfpG6291l0cGwDKVf7SbxI-CdDeZbk5ilWMNJJmCTUCKdZMlHmw5A7wQ-tRD1Zh5=
+u7shdyyCRxZYA2K5V0luI2x7cBMNhMh3H9MtexjbUeg3hywxBEzT3aR1vqXBFO8d_K2fa0SXuqF=
+vZzvcbeHTPVcY-Orgry-yp9WDDa7Pxi9UlBmDGJ33c5vPDpnAeaqAq7H1BQo6ua6CyEafGXMtYu=
+XUZ2pLq91bcyxDg=2E=22 title=3D=22New In=22 target=3D=22_blank=22 style=3D=
+=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =2E2s e=
+ase-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E2s ease=
+-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22155=22 height=3D=2265=22 style=3D=22width: 155px; height: 65px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22Produk Baru=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/=
+crm/id/header/2015_06/id_newin=2Ejpg=22 class=3D=22center=22 border=3D=220=
+=22 align=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22headerbo=
+ttom=22 style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWTCY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTu_zJLiQqCK3MT7nFVVb9rzYzR1yLKdfVDI0uL3mY9danZCrn0yCZZqW9gIN_wHYRRhUE=
+3xHRdZyUDjO4EzUPW5vpYgBAt8_LLVh-2AXJYzYy0hSyVewd7UJAUDWmnQA4YIe4uf0FstJJFXT=
+1-S74UqJJcQpeiU_FnThGQZIqFWEP6H39gF4o42jlX1TeJNlYRAO6-CPz7FnOriZ8wCITdJg-ap=
+UlnQFoqwCvpdihXL8Gpyj-zbF=2E=22 title=3D=22Clothing=22 target=3D=22_blank=
+=22 style=3D=22text-decoration: none; color: =2300c8b4; -webkit-transition:=
+ all =2E2s ease-out; -moz-transition: all =2E2s ease-out; -o-transition: al=
+l =2E2s ease-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22121=22 height=3D=2265=22 style=3D=22width: 121px; height: 65px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22Pakaian=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/=
+id/header/2015_06/id_clothing=2Ejpg=22 class=3D=22center=22 border=3D=220=
+=22 align=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22headerbo=
+ttom=22 style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWUTY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTu-OHQ_A3jgEkDkr6dyApUbYN628Tk7YjarnLXwD9FnGgmIP7djV3nj7fpuUNYlxB5_VL=
+w4Tpr01gEVdqY1CBCAJOmSfmcFxzLgCUNDqOAEKlgljFJKaUOCfnpr0pD8xHYACUEe2AvaSUeAg=
+mYViremIP81IpvBwqJ1XBIPKII8RYwkDJXbFnoIOWPIuh4CYFU6zmkWV8GaKlT0k0_9wjktT3Fr=
+n4zqN8aQyfJoODiXqhNXSYOg=2E=22 title=3D=22Shoes=22 target=3D=22_blank=22 st=
+yle=3D=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =
+=2E2s ease-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E=
+2s ease-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22114=22 height=3D=2265=22 style=3D=22width: 114px; height: 65px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22Sepatu=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/i=
+d/header/2015_06/id_shoes=2Ejpg=22 class=3D=22center=22 border=3D=220=22 al=
+ign=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22hide-for=
+-small=22 style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWUAY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTuZN0BnQt7ABCnIBwHxJ6AH84t3sNlG9TuMZGVYP0S35J-zD1RJoRy75ob04NjFak__CM=
+3UWovOyTRfKAGPp-mLFtIw3KS8Xw31g5knD9R_cKuKHH0-TAejvSBFC55u57I189rtf8WqwEIi2=
+dh4gjzk7N41I_3Z32lDo7h5aB3x9ba0gJ3okXw69EvNVMzaYVJBPug2gg8eBxJvv-7hr6jD7n6y=
+Mj4hNyOZvXv2fPPrpqVlx8ZQzQT4=2E=22 title=3D=22Accessories=22 target=3D=22_b=
+lank=22 style=3D=22text-decoration: none; color: =2300c8b4; -webkit-transit=
+ion: all =2E2s ease-out; -moz-transition: all =2E2s ease-out; -o-transition=
+: all =2E2s ease-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=22132=22 height=3D=2265=22 style=3D=22width: 132px; height: 65px; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 1=
+00%; float: none; clear: both; display: block; margin: 0 auto; border: none=
+;=22 alt=3D=22Aksesoris=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/cr=
+m/id/header/2015_06/id_acc=2Ejpg=22 class=3D=22center=22 border=3D=220=22 a=
+lign=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22headerbo=
+ttom=22 style=3D=22border-collapse: collapse =21important; padding: 0;=22>
+                                                        <a href=3D=22https:=
+//email=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAz=
+gK1b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWWRY&_ei_=3DEiu=
+XFdUqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHwe=
+S1OOxCTuY5b-Rdk-tgyolI5OOPgjR4Db0pOPjyw0Uc-lTJsSVdkUdLR3bhuLSrE6x6nfgF4wgk4=
+nXsOO1011apd0V1_UcloopnBrvqd4KcU9yXpb33xn6N0WJAIQtKmGNUOxBwhk4kfCReGuCAN4TY=
+0w1m9MmIS2h5gFFWzezs0LF5jxz81Uxhse45MyaRXNCqWXla8OeIrT_LeB5tjXKXj7dE9jj_U3Q=
+ukclu5oENboYoziuYZz84=2E=22 title=3D=22Sale=22 target=3D=22_blank=22 style=
+=3D=22text-decoration: none; color: =2300c8b4; -webkit-transition: all =2E2=
+s ease-out; -moz-transition: all =2E2s ease-out; -o-transition: all =2E2s e=
+ase-out; transition: all =2E2s ease-out;=22>
+                                                            <img width=3D=
+=2278=22 height=3D=2265=22 style=3D=22width: 78px; height: 65px; outline: n=
+one; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100=
+%; float: none; clear: both; display: block; margin: 0 auto; border: none;=
+=22 alt=3D=22Sale=22 src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/h=
+eader/2015_06/id_sale=2Ejpg=22 class=3D=22center=22 border=3D=220=22 align=
+=3D=22none=22 />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D=22expander=
+=22 style=3D=22border-collapse: collapse =21important; visibility: hidden; =
+width: 0px; padding: 0;=22></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <=21-- end of footer contents -->
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+        </tr>
+    </table>
+                <=21-- body-->
+
+                <body style=3D=22padding:0;margin:0;=22>
+                    <=21-- Body Starts Here -->
+                    <table width=3D=22600=22 align=3D=22center=22 cellpaddi=
+ng=3D=220=22 cellspacing=3D=220=22 border=3D=220=22>
+                     <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWWWY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEAC56m1wZi3KYSZKC=
+NydrJ8ZRk2R5SPv3wVZzAONP2cS8p49RB7uIrnJe9ozckn1oyn0ffdoiGFg4dDqKjhX0t3mqYHb=
+i-lQqii5j5Ipj9E6dULwp2LFuIiTl7-EBn4gg56jbc7lVdG41cJsHv8SnjSGY2ex7l3k0cHVKq9=
+GCFfjiu7cRIMc1ssux84Dfe2zrj1fVBdyZJ6a3_SxViEWrmlqCC3Km31riml68s9RiGCnHrEa85=
+O_77V=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/f_h-1zrmdnskin=2Ejpg=22 width=3D=
+=22600=22 height=3D=22142=22 alt=3D=221 HARI LAGI=21=22 title=3D=221 HARI L=
+AGI=21=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWWWY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEAC56m1wZi3KYSZKC=
+NydrJ8ZRk2R5SPv3wVZzAONP2cS8p49RB7uIrnJe9ozckn1oyn0ffdoiGFg4dDqKjhX0t3mqYHb=
+i-lQqii5j5Ipj9E6dULwp2LFuIiTl7-EBn4gg56jbc7lVdG41cJsHv8SnjSGY2ex7l3k0cHVKq9=
+GCFfjiu7cRIMc1ssux84Dfe2zrj1fVBdyZJ6a3_SxViEWrmlqCC3Km31riml68s9RiGCnHrEa85=
+O_77V=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_1=2Ejpg=22 width=3D=22600=22=
+ height=3D=22750=22 alt=3D=22SUMMER SENSATION=22 title=3D=22SUMMER SENSATIO=
+N=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWWAY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEAJgprvXnr-W_ET_k=
+lE33wB7gTxvp18peXLRfYef7l3ex_cbq5AvlfxbgRWpBgS8u_XOWI1fmThuWS-H2KNUq-cg1eCo=
+TFkExS5Ox1mlGG3Oeoa2Gb3kCBC1xVURIRRZybCZ8HnHy9m9BW7Aw5lPLuUn8UegwZiPq3_TQDO=
+TtMHM4QV4bBGEwZ07WJ7mhiYi6f8_i3u_NKADnCOx-SltQGBakXCRwb2a70bs5F_=2E=22 targ=
+et=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_2=2Ejpg=22 width=3D=22300=22=
+ height=3D=22714=22 alt=3D=22SUMMER DRESS=22 title=3D=22SUMMER DRESS=22>
+                                </a>
+                            </td>
+                            <td>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWWCY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEDrfblgMojQjhRgHS=
+_BUC0QiSGiZ5Kw6KaZNB_y7bpLGUYJp4TvnKa7hQFyxUGZsbsgzyYHIhGRvJfF6AponghveIINO=
+2eOmD2wazao681PhefzgK2Wrz3GbZsdPm_sNrTIAj6ZRCw6hVmeN60n1KH0X5dEgjMoqlNDK5zp=
+hMV7jcLwIxjn1l4vdcOkbJ-IjHDI_UjvaWGqFVfbBkPGVDoMDKFAV_QtZDzzNO3Cfw=2E=22 ta=
+rget=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_3=2Ejpg=22 width=3D=22300=22=
+ height=3D=22714=22 alt=3D=22ATASAN=22 title=3D=22ATASAN=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYRY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebECN_32TEbZtFSPX1P=
+CJuY9w5fEPWjTCw4Zoz2GbTrGAY_nJPsOTvP5dBMN4oPfL_Vu6Ex7TcmGh9gTHZiTQOlrhbvo0X=
+EKDCvlpOQ8JdOrLeGsIDUSu14jrYqhQZqcOaSaCB7Qz1jwy0-04p4dNJopm4tvWtXl1KXkhLgxB=
+60ioNlWXJcka-auUJM6V3kCJUQaMsjRNhPu4TQzvb58ole3wT2UlGjihZ-FJyWt_rM=2E=22 ta=
+rget=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_4=2Ejpg=22 width=3D=22600=22=
+ height=3D=22377=22 alt=3D=22SEPATU=22 title=3D=22SEPATU=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYTY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebECWKPW_jLoKadk8gg=
+UVSGPGUZ6g_YMuKngnVJKuRf3MAm6j9_2Fd3DJ3S1L8Q4Q1IBGIUS7wwQnP7r2GDRdZ9JjVUQj_=
+BWUKDdNxITEcpAdgZzGswkEY5o30pTsoek5fP-nErP-i6gQce6Zi9bjzBhfpxK2D-tRxR7oLgov=
+xnpKg53eZ_69NYdFQiHJ2RRp5-xoX0qbvvaP78GCtVuc4nkGnVNVPXuQ4qunmM=2E=22 target=
+=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_5=2Ejpg=22 width=3D=22600=22=
+ height=3D=22475=22 alt=3D=22TAS=22 title=3D=22TAS=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYWY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEDJNSCba_ZrqKJPiq=
+xkTRaImxo903jAFyEkCtQVnbI9SXxrrfRQ-je_N67izhDOXm4u8qw7q-h9hHPcRud3bYq1scGTC=
+uXIR5EhkHkKK8wE8FwSTn_0FVuTFd5IUGK1aNbXFCVHq6HKQPilkAmdO48GwEw59Wo95Szmx1Pj=
+NESAVpfm3EZrKnUjsBaul0WTldKjxoBKTqBUlibUxqEsCUNHNIrouQaoe2qwuaweYhymDHSoXdH=
+vtwR7zUr-gdM=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_6=2Ejpg=22 width=3D=22600=22=
+ height=3D=22148=22 alt=3D=22HARI TERAKHIR=22 title=3D=22HARI TERAKHIR=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYWY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEDJNSCba_ZrqKJPiq=
+xkTRaImxo903jAFyEkCtQVnbI9SXxrrfRQ-je_N67izhDOXm4u8qw7q-h9hHPcRud3bYq1scGTC=
+uXIR5EhkHkKK8wE8FwSTn_0FVuTFd5IUGK1aNbXFCVHq6HKQPilkAmdO48GwEw59Wo95Szmx1Pj=
+NESAVpfm3EZrKnUjsBaul0WTldKjxoBKTqBUlibUxqEsCUNHNIrouQaoe2qwuaweYhymDHSoXdH=
+vtwR7zUr-gdM=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_7=2Ejpg=22 width=3D=22600=22=
+ height=3D=22251=22 alt=3D=22SEMUA 249RIBU BELI 2 400 RIBU=22 title=3D=22SE=
+MUA 249RIBU BELI 2 400 RIBU=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYAY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEDQjyJv4DvXDWWvqM=
+S7LnGkNftk_U-KIHSKCqhwq2mO--zY-VTkU74-D_Qm8LkkmfD9CJHwGowufjnF-f9QeL23gi-cw=
+Cq5kBYRwJh8dclwbxmpBldCUi9sGsoSuN82W2-PUpOqze3zQGhyepZi48z_ZNZuwchwHJmp1x42=
+dO-c8hIbM35ske-WydXPc_maRumVyTeU3mv9QywVjkPfgCCFSq6vcG9Yqu9cn3w-t9w7oNeSHR8=
+peN5HX_cSueqt=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_9=2Ejpg=22 width=3D=22600=22=
+ height=3D=22148=22 alt=3D=22LIHAT JUGA=22 title=3D=22LIHAT JUGA=22>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3D=222=22>
+                                <a href=3D=22https://email=2Ezalora=2Ecom/p=
+ub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXCBnzfzgef=
+tjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYAY&_ei_=3DEiuXFdUqaOZJueg7aTwP32QZIkh=
+DZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOgFZ5XQIB_3x-O7B8ZXebEDQjyJv4DvXDWWvqM=
+S7LnGkNftk_U-KIHSKCqhwq2mO--zY-VTkU74-D_Qm8LkkmfD9CJHwGowufjnF-f9QeL23gi-cw=
+Cq5kBYRwJh8dclwbxmpBldCUi9sGsoSuN82W2-PUpOqze3zQGhyepZi48z_ZNZuwchwHJmp1x42=
+dO-c8hIbM35ske-WydXPc_maRumVyTeU3mv9QywVjkPfgCCFSq6vcG9Yqu9cn3w-t9w7oNeSHR8=
+peN5HX_cSueqt=2E=22 target=3D=22_blank=22>
+                                    <img style=3D=22display:block;font-size=
+:20;font-weight:bold;=22 border=3D=220=22 src=3D=22http://zcrmstatic-a=2Eak=
+amaihd=2Enet/crm/id/Newsletter/2017/may/22/F_O_10=2Ejpg=22 width=3D=22600=
+=22 height=3D=22250=22 alt=3D=22OLIVIA BURTON=22 title=3D=22OLIVIA BURTON=
+=22>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <=21-- End Save for Web Slices -->
+                   =20
+                    <=21-- footer-->
+                   =20
+
+ =20
+
+<table width=3D=22600=22 cellpadding=3D=220=22 cellspacing=220=22 align=3D=
+=22center=22>
+<tr>
+<td>
+
+<=21-- body -->
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+  <tr>
+	<td width=3D=22300=22 height=3D=22100=22><a href=3D=22https://email=2Ezalo=
+ra=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwr=
+XCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWTAY&_ei_=3DEiuXFdUqaOZJueg7a=
+TwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1cjN2mP=
+TD6OlNULPD3jXx_YQC56wf7FV20ATFzLP5cmzoR7z7caRKKx3wN7xQ-ZiMNsh0e1Lmaz0DycS_B=
+v_qsh5CQBa0sshiL3Yc5cyt5ggieWCCy8JUyCG_n8HvGkpbicn3_WoS8vmsR9PPx-CTx4zp4X3R=
+fURB005gRXnHJp3W2HW9xFMnUYB0b_RKUBfeq5Ec1jKhZwHzK05Hs9uYlDPDHax0owXvSB0nWg1=
+Lk=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><img src=
+=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Categor=
+y/cat_produkbaru=2Ejpg=22 alt=3D=22Produk Baru=22 width=3D=22300=22 height=
+=3D=22120=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22300=22 height=3D=22100=22><a href=3D=22https://email=2Ez=
+alora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWze=
+twrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWYCY&_ei_=3DEiuXFdUqaOZJue=
+g7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1eD1=
+GD9cyy94WlWNfLL6ACtnNOYJxCGszKz6Jp_N4f0mncoqDDVrhQI3cbW3naYOgM03NBXseK3Nqcy=
+ER5Jl2X3NTcg28b-Z0VGAwprKVscrfXfD1it8WquDgETTxLJndp7ZpUpHtqFYHSUAc-9l4SYKvM=
+eDcp9SmGbyOXeBAyG2duLVr1bg9W7NleylNw0q6gSzlF7Exnjw0wWWPUwb-js7XAgfDfhnNRAzy=
+5AZheEWM=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><i=
+mg src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/C=
+ategory/cat_pakaian=2Ejpg=22 alt=3D=22Pakaian=22 width=3D=22300=22 height=
+=3D=22120=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+  </tr>
+</table>
+
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+  <tr>
+	<td width=3D=22300=22 height=3D=22100=22><a href=3D=22https://email=2Ezalo=
+ra=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwr=
+XCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWARY&_ei_=3DEiuXFdUqaOZJueg7a=
+TwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1dEQsjg=
+YsiipZ0L_85w2lAi2Q8Y3Eq83vQDAnHvB6J5HqKXtu-6hbvHqjzNS1ZATujki8FYOIPufcFieuI=
+TlyrDNVSf6i7iO7mbEYNO3XEfpc3siqx9-w74E-s6vfHe4FHLDxUMnmRVsJymaOLBrPzgXF7DJg=
+GJom4QvmzHnFzuUTOVN_-rcrh2vnkgyuQhssEAhE1x71Ci0hKw0e8ih3ORUwzA9JmjgDQAJX21x=
+0g=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><img src=
+=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Categor=
+y/cat_sepatu=2Ejpg=22 alt=3D=22Sepatu=22 width=3D=22300=22 height=3D=22120=
+=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22300=22 height=3D=22100=22><a href=3D=22https://email=2Ez=
+alora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWze=
+twrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWATY&_ei_=3DEiuXFdUqaOZJue=
+g7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1fqX=
+NJOhvpMCvQWJ1mhMrcdYMx4xSe03eN_MS0kaTM_vi-ALJvhauN4pHUETTOznt5kiC1YR0JSs2kH=
+_4_sKncUyEBkJo8XenRWXHpaAWLymmsMCyTvDFm-tvTjTWPejpTMjaOKqz4ThngnYrmTGX-QRZT=
+b-0LqqpuZRe7EMSX0MMpk_TXN2YZZC2_CGfM6YyFApdexB_b5IhclmVghe588VBi-WK3FyVNN87=
+oSFp4evjwP=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22>=
+<img src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep=
+/Category/cat_aksesoris=2Ejpg=22 alt=3D=22Aksesoris=22 width=3D=22300=22 he=
+ight=3D=22120=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+  </tr>
+</table>
+
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+  <tr>
+	<td width=3D=22600=22 height=3D=22100=22><a href=3D=22https://email=2Ezalo=
+ra=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwr=
+XCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWAWY&_ei_=3DEiuXFdUqaOZJueg7a=
+TwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1eSA3T_=
+qtYFgr3TyRwDlWQfJAlKwvT1xB6A0DIWYSX3vHVKOE-eG0p-jpVlrEu81BwQgT4vh0rKAFKJeoI=
+R4xs0Eb-7OkaDkSuMJxKVqMJtXiCRk0WDogADZlxxohtwSrzpex2a04WeQB4RcebQCeSO6dPRJQ=
+S89ZOrGjxNMWve2JWTMHSCXBvu3Cwkl_kGkQj5vOuOtr-dYRU7ZLb9lst10iTBGpwQO35ZvoG2A=
+8Vj_aQ=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><img=
+ src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Cat=
+egory/cat_mag=2Ejpg=22 alt=3D=22ZALORA Magazine=22 width=3D=22600=22 height=
+=3D=22120=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+  </tr>
+</table>
+
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+  <tr>
+	<td width=3D=22600=22 height=3D=2250=22><img src=3D=22http://zcrmstatic-a=
+=2Eakamaihd=2Enet/crm/rg/NL_Footer_2016Sep/Category/sns_00=2Ejpg=22 alt=3D=
+=22Blank=22 width=3D=22150=22 height=3D=2250=22 border=3D=220=22 style=3D=
+=22display:block;=22 /></td>
+    <td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Eza=
+lora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzet=
+wrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWACY&_ei_=3DEiuXFdUqaOZJueg=
+7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1dbTo=
+27uSdQdq_sWK2frVXfmVZHbx1oquJA08uFiela7cCt4tvBmQbLwKhO4djtKCtg74gBsjVWWM5_M=
+p9aYTYj29H_x4ua6Qjx21C3erAYKwgSVGt7YQuovPHiLFmyjeyDxAImmZXAXiwHAGVwt5KtSe3k=
+FhP8AEbN3RSyL7yR7UWl2l5HHyGZsF-JDg52Y0qviTIu_8pnmkCmTGHGfNpJ-rWXpaByq5vd_B-=
+0LynYI_E=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><i=
+mg src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/C=
+ategory/sns_facebook=2Ejpg=22 alt=3D=22Facebook=22 width=3D=2275=22 height=
+=3D=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Eza=
+lora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzet=
+wrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWBTY&_ei_=3DEiuXFdUqaOZJueg=
+7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1fb0t=
+GitiZEGgMoFHsXQei-Jcv2Y4yZ8p9LfxYS7VrbMPYp0-j_RAvgFx7AayyDvyCoDwm04McLESX3U=
+ekMhM1vugU4oTwC9B74RO27rfJ-O3D_-vfaeFKEij0tzqDrH25i1t7XRk542joCTsP7D0wnft09=
+4msvy9htTucmuuDCYL9Dmrr27WIGcKzBuvuJswNlnvzfyWGqE6PLCctFH7MCluXvUfJWCEwWoJh=
+q1DW0yM=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><im=
+g src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Ca=
+tegory/sns_youtube=2Ejpg=22 alt=3D=22You Tube=22 width=3D=2275=22 height=3D=
+=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Eza=
+lora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzet=
+wrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWBAY&_ei_=3DEiuXFdUqaOZJueg=
+7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1ftuv=
+fVdoTQ1dlKGYJ2A0ZCFospUVH5ih72SZEGlKJ_MsZoYff_iZlawtEsWLmVqD4QJr8aY8kh7ftsv=
+_oIsuuvGCmfZhdfxnqwoo0Euf6gyjBzaXsix8nYEqXPFUPyMsV_OC8vIXU8x4R_fbWZ5zGv2SGe=
+ehRrmXDcWxNI-HVWb24JR23_wx7ceHODPICGQBmT9-AN5zUmFlRv-ygeQ6Jrcnf2kLPDKbGoh7M=
+HGRXyYiI=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><i=
+mg src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/C=
+ategory/sns_instagram=2Ejpg=22 alt=3D=22Instagram=22 width=3D=2275=22 heigh=
+t=3D=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Eza=
+lora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzet=
+wrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWCRY&_ei_=3DEiuXFdUqaOZJueg=
+7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1d3k7=
+RqngspX6xTQuxKNjVb2RehmBal6xeLdwZlA4_zGIJFjq2MRoflWkWwkQx_oj__O4ssOzI2C8ns5=
+BcvBLbLnlHxslyZ2osCa812WI_xD4YrJHYoVN4zoWg05zo3v50pZ17IqD3SIJpcY5MapIeMVwRC=
+gUyQYKkC1gSRo-o0jR4-i2_wLvPywKesuUYNQJf5_j22LOLPAmUgWp--sAgffvSLeGWSMEL98zG=
+eISndAg=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><im=
+g src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Ca=
+tegory/sns_twitter=2Ejpg=22 alt=3D=22Twitter=22 width=3D=2275=22 height=3D=
+=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+    <td width=3D=22600=22 height=3D=2250=22><img src=3D=22http://zcrmstatic=
+-a=2Eakamaihd=2Enet/crm/rg/NL_Footer_2016Sep/Category/sns_05=2Ejpg=22 alt=
+=3D=22Blank=22 width=3D=22150=22 height=3D=2250=22 border=3D=220=22 style=
+=3D=22display:block;=22 /></td>
+  </tr>
+</table>
+
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+  <tr>
+	<td width=3D=22600=22 height=3D=2250=22><img src=3D=22http://zcrmstatic-a=
+=2Eakamaihd=2Enet/crm/rg/NL_Footer_2016Sep/Category/app_00=2Ejpg
+=22 alt=3D=22=22 width=3D=22150=22 height=3D=2250=22 border=3D=220=22 style=
+=3D=22display:block;=22 /></td>
+	<td width=3D=22600=22 height=3D=2250=22><img src=3D=22http://zcrmstatic-a=
+=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Category/app=2Ejpg
+=22 alt=3D=22Download ZALORA App kami=22 width=3D=22150=22 height=3D=2250=
+=22 border=3D=220=22 style=3D=22display:block;=22 /></td>
+	<td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Ezalor=
+a=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrX=
+CBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWCWY&_ei_=3DEiuXFdUqaOZJueg7aT=
+wP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNrdmV1eBEv0oW=
+cN4imqHaqmHdukW4Rx8zqryucXsypH4mJtbXST9CW_oKfj-tHZyqhKkv8fe0SDKIMjdEh7QdcHD=
+pDQaTyLp5yHb3iCYYEswcsxduU-Is8MUCDonpWRPcafXf9j3hev5cTT51NtZlovsJEWFz9_IcZg=
+UJtR-34f3iSrkKIzCHRcMPE_mMd0oCnylgGPZlJPiD-TG_9vSIkcLSAcJTlIqv54rfa81voUVsk=
+KThg=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><img s=
+rc=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Categ=
+ory/app2_ios=2Ejpg
+=22 alt=3D=22Download ZALORA App di App Store=22 width=3D=2275=22 height=3D=
+=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+	<td width=3D=22600=22 height=3D=2250=22><a href=3D=22https://email=2Ezalor=
+a=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrX=
+CBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWCAY&_ei_=3DEiuXFdUqaOZJueg7aT=
+wP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOj2wGXwhmfuHweS1OOxCTuYDn9tKt=
+02uYtuKl6qh7RPC7QtyNkV_JGeFhw3vsJ8NfvREmBm_bNFgK57CiO1uvgQOdZ1SmB-zaPxgjVcI=
+x5BpNmwazNuJtQXYLghi7uXEGLsgQqckqLXGIdWrDCdyoT912zNc0Dino9NSZWgEDVRYUqrEHuQ=
+HmJVT-VXbbc2x5yGHj6ZkmbQczTJJYvryAvvj0Ucq6YjrsY3Z63g_F8WNuM1DxPxq-IqI3A0JWA=
+0jc1A=2E=22 style=3D=22text-decoration:none;=22 target=3D=22_blank=22><img =
+src=3D=22http://zcrmstatic-a=2Eakamaihd=2Enet/crm/id/NL_Footer_2016Sep/Cate=
+gory/app2_android=2Ejpg
+=22 alt=3D=22Download ZALORA App di Play Store=22 width=3D=2275=22 height=
+=3D=2250=22 border=3D=220=22 style=3D=22display:block;=22 /></a></td>
+	<td width=3D=22600=22 height=3D=2250=22><img src=3D=22http://zcrmstatic-a=
+=2Eakamaihd=2Enet/crm/rg/NL_Footer_2016Sep/Category/app_00=2Ejpg
+=22 alt=3D=22=22 width=3D=22150=22 height=3D=2250=22 border=3D=220=22 style=
+=3D=22display:block;=22 /></td>
+  </tr>
+</table>
+
+<table align=3D=22center=22 width=3D=22600=22 border=3D=220=22 cellspacing=
+=3D=220=22 cellpadding=3D=220=22>
+	<tr><td height=3D=2214=22 width=3D=22600=22><=21-- space --></td></tr>
+    <tr>
+  	<td style=3D=22color: =23999; font-size: 10px; font-family: 'Helvetica',=
+ 'Arial', sans-serif; font-weight: normal;=22 align=3D=22center=22 border=
+=3D=220=22 width=3D=22600=22>Email kami di <a href=3D=22mailto:help=40id=2E=
+zalora=2Ecom=22 style=3D=22font-weight: bold; color: =23777; text-decoratio=
+n: none;=22 target=3D=22_blank=22>help=40id=2Ezalora=2Ecom</a> jika kamu bu=
+tuh bantuan=2E<br />Agar tak terlewat berita & penawaran terbaru, tambahkan=
+ <span style=3D=22font-weight: bold; color: =23777; text-decoration: none;=
+=22 target=3D=22_blank=22>style=40e=2Ezalora=2Eco=2Eid</span> di kontakmu=
+=2E <br /><br />
+Jika ingin berhenti berlangganan, klik <a href=3D=22https://email=2Ezalora=
+=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b1EBuWzetwrXC=
+BnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWCCY&_ei_=3DEiuXFdUqaOZJueg7aTw=
+P32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOvtChlgPk1V8OfnAngAxU5aq4fEhdC=
+QHRKQ7ITn6acFi6IQ3Me9BsR05WlLG1nC2lb83Z9IMJaVyFvWtfGiZnBEqKjscD4SU0nhMQXcRc=
+L9KK7L8miyLdeVqPWPRd4_aOWDr0lmO1PwmgWMhY_IVx4y6YAfTVlcAMv06ZYDRdekQI0APsBNS=
+2fa5aaV5pBsT6nSQgP2GkNCZu_pWPILvpHqiU90qKxlXTHiJRZgBuJkIynBHJ1nf3Zx0ObnU9-2=
+9UIQY3sTytKS_fqia0oggjx61-R3V0TlubMcGLR7JYOM_=2E=22 style=3D=22color: =2377=
+7; font-weight: bold; text-decoration: none;=22 target=3D=22_blank=22>di si=
+ni</a>=2E (tapi kamu akan ketinggalan informasi menarik)<br />
+Untuk menyesuaikan frekuensi pengiriman email, klik <a href=3D=22https://em=
+ail=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1b=
+1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWDRY&_ei_=3DEiuXFdU=
+qaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLNr=
+dmV1dAjLZAbE1F7IGcetYY-DnN1qm3YVKNnyyM8gEl3ayxw91xI13rEs20yrOdpQt9IVlKdrdrF=
+NF6Anng0aYs_r0vK3rYec9AIn1WRiWf4aibaTrSj2DUxv6j83283qFDjpfVFuSd99JK4dVN-TUj=
+OtyXCjU0MNTGhVEd3vewgNlz3ru_gyWpzRn3wLgqCsRqWBqskE1a6_LUGpFhqcXtvBqEsAQon4e=
+AQJR4wnq8AvGKZrB8yMsrPinPfv0=2E=22 style=3D=22color: =23777; font-weight: b=
+old; text-decoration: none;=22 target=3D=22_blank=22>di sini</a>=2E <br /><=
+br />
+Kami menjaga informasi pribadimu, klik untuk melihat <a href=3D=22https://e=
+mail=2Ezalora=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGlpSczc9YMepwwAzgK1=
+b1EBuWzetwrXCBnzfzgeftjMA4BzaXzczbIkTqhhAjOWVXtpKX%3DYARWWDWY&_ei_=3DEiuXFd=
+UqaOZJueg7aTwP32QZIkhDZEwotxvsz92XI-lZGH3Bu1389if6QKshXdgLOuu2RK61phg4tNiLN=
+rdmV1fdkRa6XeeSNCeyngs0Hes1jMnT_HzJaiPdna1_7SmRgJQfnI5VeZJzB3iy7lh0uA0bDyaq=
+MJa-MEQNPLJSGYK3UwPAlZWANvOl8RljKufxGRXGy-ryHbhtNpTa6NO8xPiB10XHGbztGbo3nLN=
+6B6tUg1SZwZ0riuINwOQD94haYZIhrZVwgldNg4NLjEVxC5udKJ4h_nPEPE7M7wvGxzIiEMAmzL=
+rwPUPsMN65SHFXfOjWu2k4=2E=22 style=3D=22color: =23777; font-weight: bold; t=
+ext-decoration: none;=22 target=3D=22_blank=22>Kebijakan Privasi</a> kami=
+=2E<br /><br />
+=C2=A9 2017 ZALORA =7C PT=2E Fashion Eservices Indonesia=2E <br />
+Menara Bidakara I Lt=2E17, Jl=2E Jendral Gatot Subroto Kav=2E 71-73 <br />
+Menteng Dalam - Tebet, Jakarta Selatan, DKI Jakarta 12870 </span><br /><br =
+/></small></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table><br>
+                </body>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+

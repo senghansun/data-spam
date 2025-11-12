@@ -1,0 +1,354 @@
+Delivered-To: minsanangrh@gmail.com
+Received: by 10.237.63.34 with SMTP id p31csp3772414qtf;
+        Mon, 14 Aug 2017 01:15:21 -0700 (PDT)
+X-Received: by 10.200.42.35 with SMTP id k32mr35543370qtk.136.1502698521025;
+        Mon, 14 Aug 2017 01:15:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502698521; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OoYDaiENgd8dELkjXzvWxk8OrRSCe8uJK+WsvEEdw5lzFSQp9Pr1/62rh5MN53oD2U
+         6/+zGdPJAigHKEH8PhkRuKYtNi/gKlsVUFtJFFqPS9wRNqi9LmN5Ms+oa+BYFfwWCy9O
+         V+Z42H4b2yUuXH3haJ0TCAQpSiCAwaqmPSbZQ0TQqY4NmESjNCOvSOvOgFW4kZknvhNp
+         qAUdMkRPYIRocLtu9eCllWnkKsCGesS7FuLQUI8sHb+JS4Y5d3y7pt/bwUPAM3IwCzh5
+         KyicWyfdS12iKLVQZGD22V+rKuWaEpX34uyQYWsEr3i91EqbsxE0+HLoVGNvawUy0JJ4
+         CtiQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:mime-version:subject:from:to:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=DTnGaN7olMy5Kui3eT/Ef2rX4ow8pK6DvnI6ZAQqg6k=;
+        b=h1LuXbTwoIgDHlzqAWz8hkbnOhXd6jB1BWKZaM/eQNZCapY/ocBr1MXm0iqiv8UtK5
+         wk6wQXGWadllRPrUFSVk9Q2VgW1LiBVBA9Q6woD4vfeo4DuJsxc4p2koUB42xGCMJf7n
+         UEESHbNwZuX0f3TUPm/08rtLifGPyB9axg2fLrBdoD8zFMqbEb5P8fQGmRHv+x3l8Eau
+         5wtKalkgv4WiiMEB3t896h73k0obIeb5vk6l4NQ8FnEk+uxr6VlAgo6HOlXaogE3Nc+s
+         qW4rjyjrPu0rsP4yBqMpssGviEc8Fg5DZyRhnAhQy3zHWI+tsr1pwM4MfWEc7JHcqSKr
+         UiHg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tokopedia.com header.s=fnc header.b=XtEuwNSs;
+       spf=pass (google.com: domain of 15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com designates 175.158.64.2 as permitted sender) smtp.mailfrom=15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com
+Return-Path: <15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com>
+Received: from trans2.ftrans02.com (trans2.ftrans02.com. [175.158.64.2])
+        by mx.google.com with ESMTPS id 145si5964760qkl.378.2017.08.14.01.15.20
+        for <minsanangrh@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Aug 2017 01:15:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com designates 175.158.64.2 as permitted sender) client-ip=175.158.64.2;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tokopedia.com header.s=fnc header.b=XtEuwNSs;
+       spf=pass (google.com: domain of 15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com designates 175.158.64.2 as permitted sender) smtp.mailfrom=15026490034081549-16114-0-gmail.com@subscribe.tokopedia.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=fnc; d=tokopedia.com; h=To:From:Subject:MIME-Version:Content-Type:Message-Id:Date; bh=n/C5QFkuySkhT4D0ht6jCGZMc9c=; b=XtEuwNSsUTZTmOzHI2uhVkuOSMjPZu8ko8A9XvFs3a1fB3/ug4Qfp0NMqYqrcnZSdQGrv5BikU9n
+   X0f2nIqXDgrvoWFG89p0LnlkzBltT30/jqCbggBQNXOCLGWJGye6RgboUEKATRINptWaZRJVD/OP
+   +757ouygjv2TkYkAw/8=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=fnc; d=tokopedia.com; b=O8oXhukm6C6kUJkB+Ui8wTiC5lTJHKq6LOho5YldDT583tlSszSSM/jv3D8H+qU0QNhWXO2yWdNv
+   y5XUBNFNi1h3HWofoqUVH0FYglx0cJm+nU1V3QOKmpJQBk62On4/7kaeZLXLnPBHDSbf2KFS+/vn
+   iGi7bxWYaeHfceK5X30=;
+To: minsanangrh@gmail.com
+From: Tokopedia <noreply+97942061@tokopedia.com>
+Subject: Pesanan Tiba: "Relay Module 1 Channel 10A..."
+MIME-Version: 1.0
+X-MC-Tags: TX-BUY-STI-DLVD
+X-SMTPAPI: {"category": "TX-BUY-STI-DLVD"}
+Content-Type: multipart/alternative; boundary="----mailer-boundary-15026985181"
+Message-Id: <20170814081518.9448E214@smtps9-2nd.falconide.com>
+X-InjTime: 1502698521
+X-FNCID: 16114-15026490034081549-0
+X-TransMail: 1
+Date: Mon, 14 Aug 2017 13:45:20 +0530
+
+------mailer-boundary-15026985181
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Email client anda tidak ter support
+------mailer-boundary-15026985181
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head><meta http-equiv=3D"Content-Type" content=3D"text/htm=
+l; charset=3DUTF-8" /><meta name=3D"viewport" content=3D"width=3Ddevice-wid=
+th, initial-scale=3D1.0" /><title></title></head><body style=3D"margin: 0; =
+padding: 0; font-family: sans-serif;" bgcolor=3D"#F7F7F7"><!-- table backgr=
+ound --><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"10=
+0%"><tr><td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"margin:20px 0;"><tr><td></td></tr></table></td></tr><tr>=
+<td><!-- email container --><table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"600" align=3D"center" style=3D"border-collapse: collapse;=
+ background-color: #FFFFFF;"><!-- header --><tr><td style=3D"padding: 15px =
+20px 10px;" bgcolor=3D"#42B549"><table cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"border-collapse: collapse; color: #FFFFFF;"><tr><td=
+ width=3D"280"><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D1=
+6114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQ=
+oJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAFtVS1UJWkw=3D&ext=3DdXRtX3NvdX=
+JjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVRLUEQtSA=3D=3D"><img src=3D"h=
+ttps://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480044625.png" hei=
+ght=3D"40" /></a></td><td width=3D"280" align=3D"right" style=3D"font-size:=
+ 20px;">Pesanan Tiba</td></tr></table></td></tr><!-- end of header --><!-- =
+heading --><tr><td style=3D"padding: 30px 20px 20px; color: #4E4E4E"><font =
+style=3D"font-size: 18px; font-weight:bold; ">Halo Insan Anugrah,</font><br=
+><br><font style=3D"font-size: 15px; ">Pesanan <a href=3D"http://fapp1.toko=
+pedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFV=
+YNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkN=
+cAFtVS1UJWkxETTlcVw8LEwEUTjtRVw0EWEEJFkkN&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ=
+1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVBSRA=3D=3D" style=3D"color: #=
+42B549;text-decoration: none;">"Relay Module 1 Channel 10A..." </a> telah t=
+iba di tujuan.</font></td></tr><!-- end of heading --><!-- order descriptio=
+n --><tr><td style=3D"padding: 10px 20px;"><table cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; =
+color: #4F4F4F; font-size: 15px;"><tr><td width=3D"220" style=3D"padding: 1=
+0px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-height: =
+1.6em;">Nomor Faktur:</td><td width=3D"340" style=3D"font-weight: bold; pad=
+ding: 10px 0; border-bottom: 1px solid #D9D9D9; vertical-align: top; line-h=
+eight: 1.6em;"><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D1=
+6114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQ=
+oJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAFtVS1UJWkxZWxBXWwAHSxQK&ext=3D=
+aWQ9OTc5NDIwNjEmcGRmPUludm9pY2UtOTAzNTM1OC02NjUxMDctMjAxNzA4MTQxNDMyNDEtUkV=
+0
+S1FVWk1UMHMmdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1=
+w
+YWlnbj1DT19UWC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUlOVg=3D=3D" style=
+=3D"color: #42B549;text-decoration: none;">INV/20170814/XVII/VIII/97963399<=
+/a></td></tr><tr><td width=3D"220" style=3D"padding: 10px 0; border-bottom:=
+ 1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Penjual:</td>=
+<td width=3D"340" style=3D"font-weight: bold; padding: 10px 0; border-botto=
+m: 1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Prima Teran=
+g</td></tr><tr><td width=3D"220" style=3D"padding: 10px 0; border-bottom: 1=
+px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Jasa Pengiriman=
+:</td><td width=3D"340" style=3D"font-weight: bold; padding: 10px 0; border=
+-bottom: 1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Go-Se=
+nd</td></tr><tr><td width=3D"220" style=3D"padding: 10px 0; border-bottom: =
+1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Nomor Resi:</t=
+d><td width=3D"340" style=3D"font-weight: bold; padding: 10px 0; border-bot=
+tom: 1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">GK-332494=
+27</td></tr><tr><td width=3D"220" style=3D"padding: 10px 0; border-bottom: =
+1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Nama Penerima:=
+</td><td width=3D"340" style=3D"font-weight: bold; padding: 10px 0; border-=
+bottom: 1px solid #D9D9D9; vertical-align: top; line-height: 1.6em;">Insan =
+Anugrah</td></tr><tr><td width=3D"220" style=3D"padding: 10px 0;  vertical-=
+align: top; line-height: 1.6em;">Tanggal Terima:</td><td width=3D"340" styl=
+e=3D"font-weight: bold; padding: 10px 0; vertical-align: top; line-height: =
+1.6em;">14 Agustus 2017</td></tr></table></td></tr><!-- end of order descri=
+ption --><!-- dual button --><tr><td style=3D"padding: 20px;"><table cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-collapse: collap=
+se;"><tr><td width=3D"270" align=3D"center"><a href=3D"http://fapp1.tokoped=
+ia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNU=
+VsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAF=
+tVS1UJWkxCUBVXXhYWDAsIGgdXVhcHQx0UVA=3D=3D&ext=3DYWN0aW9uPWNyZWF0ZSZpZD05Nz=
+k0MjA2MSZuPTEmdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVk
+aXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19UWC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9=
+j
+b250ZW50PUNNUExO" style=3D"display: inline-block; padding: 20px 30px; backg=
+round-color: transparent; color: #42B549; text-decoration: none; font-size:=
+ 15px; font-weight: bold; border: 1px solid #42B549; border-radius: 3px; wi=
+dth: 210px;">Komplain Pesanan</a></td><td width=3D"20"></td><td width=3D"27=
+0" align=3D"center"><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?i=
+d=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGV=
+AoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAFtVS1UJWkxETTlcVw8LEwEUTj=
+tRVw0EWEEJFkkN&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJn=
+V0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUNPTi1BQ0NQVA=3D=3D" style=3D"=
+display: inline-block; padding: 20px 30px; background-color: #42B549; color=
+: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: bold; borde=
+r-radius: 3px; width: 210px;">Konfirmasi Terima Barang</a></td></tr></table=
+></td></tr><!-- end of button --><!-- important box --><tr><td style=3D"pad=
+ding: 10px 20px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" w=
+idth=3D"100%" style=3D"border-collapse:collapse; background-color: #F9EDBE;=
+ font-size: 15px;"><tr><td style=3D"padding: 20px; line-height: 25px; color=
+: #4F4F4F;">Jika dalam waktu <span style=3D"font-weight: bold;">2 hari</spa=
+n> Anda tidak melakukan konfirmasi, pesanan akan otomatis kami anggap seles=
+ai dan uang pembayaran akan kami teruskan kepada penjual.<br><br>Jika ingin=
+ melakukan komplain terhadap pesanan ini, mohon tidak membuang kemasan prod=
+uk tersebut, karena dapat digunakan sebagai bukti dari komplain Anda.</td><=
+/tr></table></td></tr><!-- end of important box --><!-- order summary --><t=
+r><td style=3D"padding: 10px 20px;"><!-- order summary --><tr><td style=3D"=
+padding: 15px 20px;"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" width=3D"100%" style=3D"border-collapse: collapse; color: #4F4F4F; border=
+-top: 3px solid #C9C9C9; border-bottom: 3px solid #C9C9C9; font-size: 15px;=
+"><tr><td style=3D"padding: 20px 0; font-weight: bold; color: #4F4F4F;">Rin=
+cian Pesanan</td></tr><!-- order table --><tr><td style=3D"padding: 5px 0;"=
+><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-co=
+llapse: collapse;"><!-- table head --><tr><th align=3D"left" style=3D"paddi=
+ng: 10px 0; border-bottom: 1px solid #DDDDDD;" width=3D"280">Nama Barang</t=
+h><th align=3D"right" style=3D"padding: 10px 0; border-bottom: 1px solid #D=
+DDDDD;" width=3D"112">Jumlah</th><th align=3D"right" style=3D"padding: 10px=
+ 0; border-bottom: 1px solid #DDDDDD;" width=3D"168">Harga</th></tr><tbody =
+style=3D"vertical-align: top; line-height: 1.6em;"><!-- order item --><tr><=
+td align=3D"left" style=3D"padding: 10px 0; border-bottom: 1px solid #DDDDD=
+D;" width=3D"280">Relay Module 1 Channel 10A 250VAC 30VDC Modul DC-AC</td><=
+td align=3D"right" style=3D"padding: 10px 0; border-bottom: 1px solid #DDDD=
+DD;" width=3D"112">1</td><td align=3D"right" style=3D"padding: 10px 0; bord=
+er-bottom: 1px solid #DDDDDD;" width=3D"168">Rp 13.500</td></tr></tbody></t=
+able></td></tr><!-- total --><tr><td style=3D"padding: 0 0 15px;"><table ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-collapse: co=
+llapse;"><!-- total list item --><tr><td align=3D"right" width=3D"392" styl=
+e=3D"padding: 5px 0;">Total Harga Produk: </td><td align=3D"right" width=3D=
+"168" style=3D"padding: 5px 0;">Rp 13.500</td></tr><!-- total list item -->=
+<tr><td align=3D"right" width=3D"392" style=3D"padding: 5px 0;">Ongkos Kiri=
+m: </td><td align=3D"right" width=3D"168" style=3D"padding: 5px 0;">Rp 20.0=
+00</td></tr><!-- total list item --><tr><td align=3D"right" width=3D"392" s=
+tyle=3D"padding: 5px 0;">Asuransi: </td><td align=3D"right" width=3D"168" s=
+tyle=3D"padding: 5px 0;">Rp 0</td></tr><!-- total list item --><!-- total l=
+ist item bold --><tr><td align=3D"right" width=3D"392" style=3D"font-weight=
+: bold; padding: 5px 0;">Total Pembayaran: </td><td align=3D"right" width=
+=3D"168" style=3D"font-weight: bold; padding: 5px 0;">Rp 33.500</td></tr></=
+table></td></tr><!-- address --><tr><td style=3D"padding: 10px; background-=
+color: #F1F1F1;"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" wi=
+dth=3D"100%" style=3D"border-collapse: collapse;"><tr><td align=3D"left"><s=
+pan style=3D"display: block; margin-bottom: 5px; font-weight: bold;">Tujuan=
+ Pengiriman:</span><span style=3D"display: block; line-height: 1.6em;">Insa=
+n Anugrah<br />Jl. Aria santika no.101, RT/RW 01/04, kelurahan: margasari, =
+kecamatan: karawaci, kota: tangerang, kode pos: 15113<br />Karawaci, Kota T=
+angerang, 15113<br />Banten<br />Telp: 085780452217</span></td></tr></table=
+></td></tr></table></td></tr><!-- end of order summary --></td></tr><!-- en=
+d of order summary --><!-- additional info --><tr><td style=3D"padding: 0px=
+ 20px;"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"10=
+0%" style=3D"border-collapse: collapse; font-size: 13px; color: #999999;"><=
+tr><td style=3D"padding: 10px 0;">Email ini dibuat secara otomatis. Mohon t=
+idak mengirimkan balasan ke email ini.</td></tr></table></td></tr><!-- end =
+of additional info --><tr><td style=3D"padding: 0px 20px;"><table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"border-coll=
+apse: collapse; font-size: 13px; color: #999999;"><tbody><tr><td ><div styl=
+e=3D"max-width: 600px; display: block; border-collapse: collapse; margin: 0=
+ auto; padding: 20px 0px; border-color: #e7e7e7; ; border-width: 0 1px 1px;=
+"><table width=3D"100%" style=3D"max-width: 100%; border-collapse: collapse=
+; border-spacing: 0; width: 100%; background-color: transparent; margin: 0;=
+ padding: 0;" bgcolor=3D"transparent"><tbody style=3D"margin: 0; padding: 0=
+;"><tr style=3D"margin: 0; padding: 0;"><td width=3D"260"><a href=3D"http:/=
+/fapp1.tokopedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJV=
+E4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcX=
+C1pWEBZNDlhWFFdQDFdIVAxdGg1dQAYWBEkHRw0d&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1=
+dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUtBSQ=3D=3D"><img src=3D"https=
+://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1478745051.jpg" alt=3D"=
+Tiket Kereta Api" width=3D"100%" /></a></td><td width=3D"40"></td><td width=
+=3D"260"><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D16114=
+=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVA=
+EAVQ5XAlcJ&fl=3DChEQFkReHRcTF11ABRZNDlhWFFdQDFdIVAxdGg=3D=3D&ext=3DdXRtX3Nv=
+dXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVBVTA=3D=3D"><img src=3D"https=
+://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1478745076.jpg" alt=3D"=
+Pulsa" width=3D"100%" /></a></td></tr><tr style=3D"margin: 0; padding: 0;">=
+<td></td></tr></tbody></table></div></td></tr></tbody></table><table style=
+=3D"border-collapse: collapse; background-color: #FBE3E4; font-size: 13px; =
+color: #404040; line-height: 16px; letter-spacing: 0.1px; border-top: 2px s=
+olid #FBB3B4; border-bottom: 2px solid #FBB3B4;"><tbody><tr style=3D"margin=
+: 0; padding: 0;"><td style=3D"margin: 0; padding: 0;"></td><td style=3D"di=
+splay: block !important; max-width: 600px !important; clear: both !importan=
+t; margin: 0 auto; padding: 0;"><div style=3D"padding:15px 12px; border-wid=
+th:2px;border-style:solid;border-color:#F5DADC;background-color: #FBE3E4;">=
+<p style=3D"font-size: 12px; line-height: 18px; font-weight: 400; padding: =
+0px; margin:0px;">Hati-hati terhadap pihak yang mengaku dari Tokopedia, mem=
+bagikan voucher belanja, atau meminta data pribadi. Tokopedia tidak pernah =
+meminta password dan data pribadi melalui email, pesan pribadi, maupun chan=
+nel lainnya. Untuk semua email dengan link dari Tokopedia, pastikan alamat =
+URL di browser sudah di alamat <a href=3D"http://fapp1.tokopedia.com/linktr=
+ack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1=
+tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAFtVS1UJWkw=3D&=
+ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnb=
+j1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVRLUEQtRg=3D=3D" target=3D"_bl=
+ank" style=3D"color: #008000;text-decoration: none;">tokopedia.com</a> buka=
+n alamat lainnya.</p><p style=3D"font-size:12px; line-height:18px; font-wei=
+ght:400; padding:0px; margin:0px; margin-top: 5px;">Anda juga bisa meningka=
+tkan keamanan akun anda dengan menggunakan <a href=3D"http://fapp1.tokopedi=
+a.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUV=
+sBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcUFUYdEFdSDkNcAFt=
+VS1UJWkxDUAdUHBMO&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXd=
+PJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVNFQUw=3D" target=3D"_blank" s=
+tyle=3D"color:#008000;text-decoration: none;">Login Seal</a>.<br />Untuk le=
+bih lanjut, <a href=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D1611=
+4=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJV=
+AEAVQ5XAlcJ&fl=3DChEQFkReHRcBDl5USkxWClxJAVZdBBgFWA4fB1YJB0xSXUsWVgpWTQIMHF=
+gBWVQAXVgKH0AKXQlHBlRcBxc=3D&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVt=
+PWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVNFQy1H" target=3D"_blank" sty=
+le=3D"color: #008000;text-decoration: none;">Baca Panduan Keamanan Tokopedi=
+a &raquo;</a></p></div></td><td style=3D"margin: 0; padding: 0;"></td></tr>=
+</tbody></table></td></tr><tr><td><table style=3D"max-width: 100%; border-c=
+ollapse: collapse; border-spacing: 0; width: 100%; clear: both !important; =
+background-color: transparent; margin: 0 0 10px; padding: 0;" bgcolor=3D"tr=
+ansparent"><tbody><tr style=3D"margin: 0; padding: 0;"><td style=3D"margin:=
+ 0; padding: 0;"></td><td style=3D"display: block !important; max-width: 60=
+0px !important; clear: both !important; margin: 0 auto; padding: 0px;"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"border-collapse:collapse;"><tr><td width=3D"252" style=3D"padding:0px 20px=
+;"><table border=3D"0" style=3D"border-collapse:collapse; margin-top:0px"><=
+tr><td style=3D"font-size:13px;color:#999999;margin-bottom:10px;" colspan=
+=3D"2">Download Aplikasi Tokopedia <br></td></tr><tr><td style=3D"padding:2=
+px;"></td></tr><tr><td><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.p=
+l?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHg=
+AGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcKFkRdAUsXAENJCFcaBlkLGBZDGgdIQkwWCg8=
+JRwFWUQJNWFdVCAlQAABQAARU&ext=3DbHM9MSZtdD04Lz91dG1fc291cmNlPWxQVmFRaTZOJnV=
+0bV9tZWRpdW09ak5heXJRd08mdXRtX2Nh
+bXBhaWduPUNPX1RYLUJVWS1TVEktRExWRF8wX0JPXzAmdXRtX2NvbnRlbnQ9QVNUUg=3D=3D" s=
+tyle=3D"padding: 0 5px 0 0;"><img src=3D"https://s3.amazonaws.com/www.betao=
+utcdn.com/205872016/07/1468233846.png" alt=3D"Appstore" height=3D"44"></a><=
+/td><td align=3D"left"><a href=3D"http://fapp1.tokopedia.com/linktrack/lt.p=
+l?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHg=
+AGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcTDlBKSl9WDlRVARxXCltJRBdfRwMXUxMSFks=
+CUhBTUQ8R&ext=3DaWQ9Y29tLnRva29wZWRpYS50a3BkJmhsPWVuLz91dG1fc291cmNlPWxQVmF=
+RaTZOJnV0bV9tZWRp
+dW09ak5heXJRd08mdXRtX2NhbXBhaWduPUNPX1RYLUJVWS1TVEktRExWRF8wX0JPXzAmdXRtX2N=
+v
+bnRlbnQ9R1BMWQ=3D=3D" style=3D"padding: 0 5px;"><img src=3D"https://s3.amaz=
+onaws.com/www.betaoutcdn.com/205872016/07/1468233889.png" alt=3D"Playstore"=
+ height=3D"44"></a></td></tr></table></td><td width=3D"280" align=3D"right"=
+ style=3D"padding:0px 20px;"><table border=3D"0" style=3D"border-collapse:c=
+ollapse; margin-top:0px"><tr><td style=3D"font-size:13px;color:#999999;marg=
+in-bottom:10px;" align=3D"right">Ikuti Kami</td></tr><tr><td style=3D"paddi=
+ng:2px;"></td></tr><tr><td><table cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" width=3D"100%" style=3D"border-collapse:collapse;"><tr><td><a href=
+=3D"http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgE=
+DVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DCh=
+EQFkReHRcTDkRASl9WDlRVARxXCltJHBdfXglIVwcLBEs=3D&ext=3DdXRtX3NvdXJjZT1sUFZh=
+UWk2TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUdQTFM=3D" style=3D"padding: 0=
+ 5px;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11=
+/1480307802.png" alt=3D"Google plus" height=3D"44"></a></td><td><a href=3D"=
+http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAg=
+JUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFk=
+ReHRcUFUYdAllaBFFWC1kaBlkLGBdfXglIVwcLBEs=3D&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2=
+TiZ1dG1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUZC" style=3D"padding: 0 5px;"=
+><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/14803=
+07762.png" alt=3D"Facebook" height=3D"44"></a></td><td><a href=3D"http://fa=
+pp1.tokopedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=
+=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcXFV=
+hHEF1LT1BWCR1ACl0JRwZUXAcX&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPW=
+pOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PVRXSVQ=3D" style=3D"padding: 0=
+ 5px;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11=
+/1480307869.png" alt=3D"Twitter" height=3D"44"></a></td><td><a href=3D"http=
+://fapp1.tokopedia.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQM=
+JVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHR=
+cUFUYdDVZKFVJeFlNZS1UJWkxEWg1XQgYGDAVJ&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG=
+1fbWVkaXVtPWpOYXlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUlOU1RB" style=3D"padding: 0 0=
+ 0 5px;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/=
+11/1480307832.png" alt=3D"Instagram" height=3D"44"></a></td></tr></table></=
+td></tr></table></td></tr></table></td></tr></tbody></table><table align=3D=
+"center"><!-- anti-spam --><tr style=3D"margin: 0; padding: 0 0 0 0;"><td s=
+tyle=3D"display: block !important; width: 600px !important; clear: both !im=
+portant; margin: 0 auto; padding: 0;"><table cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"border-collapse:collapse; backg=
+round-color: #F7F7F7; font-size:13px; color: #999999; border-top: 1px solid=
+ #DDDDDD;"><tr><td width=3D"600" align=3D"center" style=3D"padding: 30px 20=
+px 0;">Jika butuh bantuan, gunakan halaman <a href=3D"http://fapp1.tokopedi=
+a.com/linktrack/lt.pl?id=3D16114=3DIRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUV=
+sBSlojBQgFD1tKUVcOHgAGVAoPVQoJVAEAVQ5XAlcJ&fl=3DChEQFkReHRcLB11DSkxWClxJAVZ=
+dBBgFWA4fXQUXVw1PEBc=3D&ext=3DdXRtX3NvdXJjZT1sUFZhUWk2TiZ1dG1fbWVkaXVtPWpOY=
+XlyUXdPJnV0bV9jYW1wYWlnbj1DT19U
+WC1CVVktU1RJLURMVkRfMF9CT18wJnV0bV9jb250ZW50PUNOVENU" style=3D"color: #42B5=
+49;text-decoration: none;">Kontak Kami</a></td></tr><tr><td width=3D"600" a=
+lign=3D"center" style=3D"padding: 10px 20px 30px;">&copy; 2009-2017, PT Tok=
+opedia</td></tr></table></td></tr><!-- end of anti-spam --></table></td></t=
+r></table><!-- end of email container --></td></tr></table><p>&nbsp;<br></p=
+>
+<img id=3D'SBBBB' src=3D'http://fapp1.tokopedia.com/linktrack/lt.pl?id=3D16=
+114=3DLRlUVgZSAwlXHgEDVAgJUQMJVE4=3DWQxYFVYNUVsBSlojBQgFD1tKUVcOHgAGVAoPVQo=
+JVAEAVQ5XAlcJ' /></body></html>
+
+
+------mailer-boundary-15026985181--

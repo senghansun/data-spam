@@ -1,0 +1,188 @@
+Delivered-To: 1kb09.sk@gmail.com
+Received: by 10.157.35.25 with SMTP id j25csp1052149otb;
+        Sun, 20 Nov 2016 19:31:35 -0800 (PST)
+X-Received: by 10.157.49.110 with SMTP id v43mr6871738otd.38.1479699095219;
+        Sun, 20 Nov 2016 19:31:35 -0800 (PST)
+Return-Path: <3l2oyWAgTCPwrs-vitp2eggsyrxw.ksskpi.gsq5of4D.wokqemp.gsq@scoutcamp.bounces.google.com>
+Received: from mail-oi0-x246.google.com (mail-oi0-x246.google.com. [2607:f8b0:4003:c06::246])
+        by mx.google.com with ESMTPS id z28si3292089otz.199.2016.11.20.19.31.35
+        for <1kb09.sk@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 20 Nov 2016 19:31:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3l2oywagtcpwrs-vitp2eggsyrxw.ksskpi.gsq5of4d.wokqemp.gsq@scoutcamp.bounces.google.com designates 2607:f8b0:4003:c06::246 as permitted sender) client-ip=2607:f8b0:4003:c06::246;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com;
+       spf=pass (google.com: domain of 3l2oywagtcpwrs-vitp2eggsyrxw.ksskpi.gsq5of4d.wokqemp.gsq@scoutcamp.bounces.google.com designates 2607:f8b0:4003:c06::246 as permitted sender) smtp.mailfrom=3l2oyWAgTCPwrs-vitp2eggsyrxw.ksskpi.gsq5of4D.wokqemp.gsq@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT dis=NONE) header.from=accounts.google.com
+Received: by mail-oi0-x246.google.com with SMTP id j198so225660629oih.5
+        for <1kb09.sk@gmail.com>; Sun, 20 Nov 2016 19:31:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:reply-to:feedback-id:date:message-id:subject:from:to;
+        bh=KWD78h/D5+qjUtZSZdk/2WTLFFRWqNn7tsPwgrL7o7U=;
+        b=kB/RhI3PhVTSHPSvxH+HlY8BSr/BiqmFlQ++GJeYVLn7DNoximW6G/lJPfyiRlPqRg
+         3dwGkxl8TtSRujRITb3d2qOdjJC8liv5ffaEIKPHq77BBlHpWZa9ViNtMQn+X/b7RQcy
+         f5tWNntdPbT3LHwsq4vDRqUoRLK0jQ+WHLaMJRrLr0UNGJmrMqMbFnnyyuD0pjxlV01K
+         LdNX3TPONcJxAioydMctU3s8+KfwwVOfbY9phI/ts/ZAaTtksjM9IW+XEO+zP1YlM3OC
+         Xz1FeU7ARkODx4K66fRVUgC9+q12bqLztWVXrqWixp5ePR6gvI0thG7KRTMr/xna2Vd4
+         e+Rg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:reply-to:feedback-id:date
+         :message-id:subject:from:to;
+        bh=KWD78h/D5+qjUtZSZdk/2WTLFFRWqNn7tsPwgrL7o7U=;
+        b=fxejQ27aTgS2ZGejfviVuOQjFRypOr1pglUD03IZIiFB3V1yXHg+K9H7vtASj/nw/8
+         qkpS2g7m+zi+UaAACakGn5L8AD79VEf7jAwga7xta5DSA8G6dcVJYY5Okl7tZmIyrOwq
+         1AY0TbsDZj+T+wlEUmRms+/lICs+3Y19vI43mw3f3cYtnWx6HFo1T9IcsDiN9cqaWbLw
+         LdLz/HGyOVUHE1VnIGVsGrSItcbK8b8cINmCKIlz0aILdBq67j4eEf96sOu73K50io0F
+         RxNb2mtjFEaJ0zxjc5gC5swgEnIFlFd/sJ+gEUCDEtHbX0FG6+yxnGaki2DKQCcVugFY
+         aSEA==
+X-Gm-Message-State: AKaTC02H7vtlxOPklx9A4txQYFET9ww/8kKgnuLHqJKLjlW027aacK3hMUtidGE2ZmyfV2I=
+MIME-Version: 1.0
+X-Received: by 10.157.29.213 with SMTP id w21mr8241189otw.62.1479699095083; Sun, 20 Nov 2016 19:31:35 -0800 (PST)
+Reply-To: Google <no-reply@accounts.google.com>
+X-Google-Id: SP#5018150466748416
+Feedback-ID: 100:account-notifier
+Date: Mon, 21 Nov 2016 03:31:30 +0000 (UTC)
+X-Account-Notification-Type: 100
+Message-ID: <e85f9c2aff98496f.1479699094057.100107727.10011258.id.90ac5bedf8da61bc@google.com>
+Subject: Upaya masuk yang baru dari Xiaomi Redmi 3
+From: Google <no-reply@accounts.google.com>
+To: 1kb09.sk@gmail.com
+Content-Type: multipart/alternative; boundary=001a11413526efdc530541c74a0c
+
+--001a11413526efdc530541c74a0c
+Content-Type: text/plain; charset=UTF-8; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+VXBheWEgbWFzdWsgeWFuZyBiYXJ1IGRhcmkgWGlhb21pIFJlZG1pIDMNCg0KDQoNCllhbmcgdGVy
+aG9ybWF0IENvbXB1dGVyLA0KQWt1biBHb29nbGUgMWtiMDkuc2tAZ21haWwuY29tIGJhcnUgc2Fq
+YSBkaWd1bmFrYW4gdW50dWsgbWFzdWsgZGkgWGlhb21pDQpSZWRtaSAzLg0KDQpDb21wdXRlciBT
+eXN0ZW0NCjFrYjA5LnNrQGdtYWlsLmNvbQ0KDQpYaWFvbWkgUmVkbWkgMw0KU2VuaW4sIDIxIE5v
+dmVtYmVyIDIwMTYgMTAuMzEgKFdha3R1IEluZG9uZXNpYSBCYXJhdCkNCkluZG9uZXNpYSoqVGlk
+YWsgbWVuZ2VuYWxpIGFrdGl2aXRhcyBpbmk/Kg0KVGluamF1IHBlcmFuZ2thdCB5YW5nIGJhcnUt
+YmFydSBpbmkgZGlndW5ha2FuDQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0FjY291bnRD
+aG9vc2VyP0VtYWlsPTFrYjA5LnNrQGdtYWlsLmNvbSZjb250aW51ZT1odHRwczovL3NlY3VyaXR5
+Lmdvb2dsZS5jb20vc2V0dGluZ3Mvc2VjdXJpdHkvYWN0aXZpdHkvbnQvMTQ3OTY5OTA5MDAwMD9y
+Zm4lM0QxMDAlMjZyZm5jJTNEMSUyNmV0JTNEMCUyNmFzYWUlM0QyPg0Kc2VrYXJhbmcuDQoNCk1l
+bmdhcGEga2FtaSBtZW5naXJpbW55YT8gS2FtaSBtZW1wZXJoYXRpa2FuIGtlYW1hbmFuIGRlbmdh
+biBzYW5nYXQgc2VyaXVzDQpkYW4gaW5naW4gbWVtYmVyaSB0YWh1IEFuZGEgdGVudGFuZyB0aW5k
+YWthbiBwZW50aW5nIHBhZGEgYWt1biBBbmRhLg0KS2FtaSB0aWRhayBkYXBhdCBtZW5lbnR1a2Fu
+IGFwYWthaCBBbmRhIHNlYmVsdW1ueWEgcGVybmFoIG1lbmdndW5ha2FuDQpicm93c2VyIGF0YXUg
+cGVyYW5na2F0IGluaSBkZW5nYW4gYWt1biBBbmRhLiBJbmkgZGFwYXQgdGVyamFkaSBqaWthIEFu
+ZGENCm1hc3VrIHBlcnRhbWEga2FsaSBkaSBrb21wdXRlciwgcG9uc2VsLCBhdGF1IGJyb3dzZXIg
+YmFydSwgamlrYSBBbmRhDQptZW5nZ3VuYWthbiBtb2RlIHBlbnlhbWFyYW4gYXRhdSBwZW5qZWxh
+amFoYW4gcHJpYmFkaSBhdGF1IG1lbmdoYXB1cw0KY29va2llLCBhdGF1IGppa2Egb3JhbmcgbGFp
+biBtZW5nYWtzZXMgYWt1biBBbmRhLg0KDQpIb3JtYXQga2FtaSwNClRpbSBBa3VuIEdvb2dsZQ0K
+DQoNCg0KKkxva2FzaSBhZGFsYWggaGFzaWwgcGVya2lyYWFuIGRhbiBkaXRlbnR1a2FuIG9sZWgg
+YWxhbWF0IElQIGFzYWxueWEuDQoNCkVtYWlsIGluaSB0aWRhayBkYXBhdCBtZW5lcmltYSBiYWxh
+c2FuLiBVbnR1ayBtZW1iZXJpa2FuIG1hc3VrYW4gdGVudGFuZw0KbGFuc2lyYW4gaW5pLCBrbGlr
+IGRpIHNpbmkNCjxodHRwczovL3N1cHBvcnQuZ29vZ2xlLmNvbS9hY2NvdW50cy9jb250YWN0L2Rl
+dmljZV9hbGVydF9mZWVkYmFjaz9obD1pZD4uDQpVbnR1ayBpbmZvcm1hc2kgc2VsZW5na2Fwbnlh
+LCBrdW5qdW5naSBQdXNhdCBCYW50dWFuIEFrdW4gR29vZ2xlDQo8aHR0cHM6Ly9zdXBwb3J0Lmdv
+b2dsZS5jb20vYWNjb3VudHMvYW5zd2VyLzI3MzMyMDM+Lg0KDQoNCg0KQW5kYSBtZW5lcmltYSBw
+ZW5ndW11bWFuIGxheWFuYW4gZW1haWwgd2FqaWIgaW5pIGFnYXIgbWVtcGVyb2xlaCBpbmZvcm1h
+c2kNCnRlcmJhcnUgdGVudGFuZyBwZXJ1YmFoYW4gcGVudGluZyBwYWRhIHByb2R1ayBhdGF1IGFr
+dW4gR29vZ2xlIEFuZGEuDQrCqSAyMDE2IEdvb2dsZSBJbmMuLCAxNjAwIEFtcGhpdGhlYXRyZSBQ
+YXJrd2F5LCBNb3VudGFpbiBWaWV3LCBDQSA5NDA0MywgVVNBDQo=
+--001a11413526efdc530541c74a0c
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"id"><head><meta name=3D"format-detection" content=3D"date=3Dn=
+o"><meta name=3D"format-detection" content=3D"email=3Dno"></head><body styl=
+e=3D"margin: 0; padding: 0;" bgcolor=3D"#FFFFFF"><table width=3D"100%" heig=
+ht=3D"100%" style=3D"min-width: 348px;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0"><tr height=3D"32px"></tr><tr align=3D"center"><td width=3D"32=
+px"></td><td><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"max-width: 600px;"><tr><td><table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tr><td align=3D"left"><img width=3D"92" height=
+=3D"32" src=3D"https://www.gstatic.com/accountalerts/email/googlelogo_color=
+_188x64dp.png" style=3D"display: block; width: 92px; height: 32px;"></td><t=
+d align=3D"right"><img width=3D"32" height=3D"32" style=3D"display: block; =
+width: 32px; height: 32px;" src=3D"https://www.gstatic.com/accountalerts/em=
+ail/keyhole.png"></td></tr></table></td></tr><tr height=3D"16"></tr><tr><td=
+><table bgcolor=3D"#4184F3" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px s=
+olid #E0E0E0; border-bottom: 0; border-top-left-radius: 3px; border-top-rig=
+ht-radius: 3px;"><tr><td height=3D"72px" colspan=3D"3"></td></tr><tr><td wi=
+dth=3D"32px"></td><td style=3D"font-family: Roboto-Regular,Helvetica,Arial,=
+sans-serif; font-size: 24px; color: #FFFFFF; line-height: 1.25;">Upaya masu=
+k yang baru dari Xiaomi Redmi 3</td><td width=3D"32px"></td></tr><tr><td he=
+ight=3D"18px" colspan=3D"3"></td></tr></table></td></tr><tr><td><table bgco=
+lor=3D"#FAFAFA" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px solid #F0F0=
+F0; border-bottom: 1px solid #C0C0C0; border-top: 0; border-bottom-left-rad=
+ius: 3px; border-bottom-right-radius: 3px;"><tr height=3D"16px"><td width=
+=3D"32px" rowspan=3D"3"></td><td></td><td width=3D"32px" rowspan=3D"3"></td=
+></tr><tr><td><table style=3D"min-width: 300px;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tr><td style=3D"font-family: Roboto-Regular,Helve=
+tica,Arial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5;">=
+Yang terhormat Computer,</td></tr><tr><td style=3D"font-family: Roboto-Regu=
+lar,Helvetica,Arial,sans-serif; font-size: 13px; color: #202020; line-heigh=
+t: 1.5;">Akun Google 1kb09.sk@gmail.com baru saja digunakan untuk masuk di =
+<span style=3D"white-space:nowrap;">Xiaomi Redmi 3</span>.<table border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-top: 48px; margin-bo=
+ttom: 48px;"><tr valign=3D"middle"><td width=3D"32px"></td><td align=3D"cen=
+ter"><img src=3D"https://www.gstatic.com/accountalerts/email/anonymous_prof=
+ile_photo.png" width=3D"48px" height=3D"48px" style=3D"width: 48px; height:=
+ 48px; display: block; border-radius: 50%;"></td><td width=3D"16px"></td><t=
+d style=3D"line-height: 1.2;"><span style=3D"font-family: Roboto-Regular,He=
+lvetica,Arial,sans-serif;font-size: 20px; color: #202020;">Computer System<=
+/span><br><span style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-s=
+erif;font-size: 13px; color: #727272;">1kb09.sk@gmail.com</span></td></tr><=
+tr valign=3D"middle"><td width=3D"32px" height=3D"24px"></td><td align=3D"c=
+enter" height=3D"24px"><img src=3D"https://www.gstatic.com/accountalerts/em=
+ail/down_arrow.png" width=3D"4px" height=3D"10px" style=3D"width: 4px; heig=
+ht: 10px; display: block; "></td></tr><tr valign=3D"top"><td width=3D"32px"=
+></td><td align=3D"center"><img src=3D"https://www.gstatic.com/accountalert=
+s/devices/android_phone_wallpaper_big.png" width=3D"48px" height=3D"48px" s=
+tyle=3D"width: 48px; height: 48px; display: block; "></td><td width=3D"16px=
+"></td><td style=3D"line-height: 1.2;"><span style=3D"font-family: Roboto-R=
+egular,Helvetica,Arial,sans-serif; font-size: 16px; color: #202020;">Xiaomi=
+ Redmi 3</span><br><span style=3D"font-family: Roboto-Regular,Helvetica,Ari=
+al,sans-serif; font-size: 13px; color: #727272;">Senin, 21 November 2016 10=
+.31 (Waktu Indonesia Barat)<br>Indonesia*</span></td></tr></table><b>Tidak =
+mengenali aktivitas ini?</b><br>Tinjau <a href=3D"https://www.google.com/ap=
+pserve/mkt/p/kUFon7qquz7R0AG6Rec023QOJtW_Cnpbi5Hc4fjjcjGIvxfAKtC6Ep0rMgiJuR=
+WCAik4yiKEu5oK6pqrquPqWQuv5BrTSjlKS32LBJCegi5z8WcIWHhXZsXBeEGlIdRWUqWUyghKL=
+edoBY0tQhPIDBp8XNp7R-YS-xpSnToNi479F_u0hMMt1xyK_kUQeCaHhmKJMK_Jod4y5w7OBlDD=
+hyo96Exh44Q7NWp9-q39vcBhE1GyJyzkc8y3olW-yUgYbpIkA10Vx8UcHKX9lS91eEceiJVV94b=
+8-PoP44zebuqH421pQO0pv9U=3D" style=3D"text-decoration: none; color: #4285F4=
+;" target=3D"_blank">perangkat yang baru-baru ini digunakan</a> sekarang.<b=
+r><br>Mengapa kami mengirimnya? Kami memperhatikan keamanan dengan sangat s=
+erius dan ingin memberi tahu Anda tentang tindakan penting pada akun Anda.<=
+br>Kami tidak dapat menentukan apakah Anda sebelumnya pernah menggunakan br=
+owser atau perangkat ini dengan akun Anda. Ini dapat terjadi jika Anda masu=
+k pertama kali di komputer, ponsel, atau browser baru, jika Anda menggunaka=
+n mode penyamaran atau penjelajahan pribadi atau menghapus cookie, atau jik=
+a orang lain mengakses akun Anda.</td></tr><tr height=3D"32px"></tr><tr><td=
+ style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size=
+: 13px; color: #202020; line-height: 1.5;">Hormat kami,<br>Tim Akun Google<=
+/td></tr><tr height=3D"16px"></tr><tr><td><table style=3D"font-family: Robo=
+to-Regular,Helvetica,Arial,sans-serif; font-size: 12px; color: #B9B9B9; lin=
+e-height: 1.5;"><tr><td>*Lokasi adalah hasil perkiraan dan ditentukan oleh =
+alamat IP asalnya.<br></td></tr><tr><td>Email ini tidak dapat menerima bala=
+san. Untuk memberikan masukan tentang lansiran ini, <a href=3D"https://www.=
+google.com/appserve/mkt/p/OmOGUF-fAcMS1RSWYbO-KW0AQTRgZS4-3Rn1VPKihsfO4PpOi=
+44m3mJk3VHAFpM5_ODXcJRz3mRCm_ihjeiEieZPbabmawolNN-GEzsJxJ1PZNVjW7wnu_YZ0i4T=
+4Vtnxn3k5Xj71o_0G_Db" style=3D"text-decoration: none; color: #4285F4;" targ=
+et=3D"_blank">klik di sini</a>.<br>Untuk informasi selengkapnya, kunjungi <=
+a href=3D"https://www.google.com/appserve/mkt/p/TNftNTpByb_PO7ffSam6yhyvdxa=
+jaZvufqh9TntVmU0a_b_cDAVGsFPgiOpnTMmhmxLIVhaJraBrz5D0kil3zb-d7WTil_pWR62w-B=
+HEbyT4I3k=3D" style=3D"text-decoration: none; color: #4285F4;" target=3D"_b=
+lank">Pusat Bantuan Akun Google</a>.</td></tr></table></td></tr></table></t=
+d></tr><tr height=3D"32px"></tr></table></td></tr><tr height=3D"16"></tr><t=
+r><td style=3D"max-width: 600px; font-family: Roboto-Regular,Helvetica,Aria=
+l,sans-serif; font-size: 10px; color: #BCBCBC; line-height: 1.5;"><tr><td><=
+table style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font=
+-size: 10px; color: #666666; line-height: 18px; padding-bottom: 10px"><tr><=
+td>Anda menerima pengumuman layanan email wajib ini agar memperoleh informa=
+si terbaru tentang perubahan penting pada produk atau akun Google Anda.</td=
+></tr><tr><td><div style=3D"direction: ltr; text-align: left">=C2=A9 2016 G=
+oogle Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</div></=
+td></tr></table></td></tr></td></tr></table></td><td width=3D"32px"></td></=
+tr><tr height=3D"32px"></tr></table><img height=3D"1" width=3D"3" src=3D"ht=
+tps://www.google.com/appserve/mkt/img/NwGitbiTr6HAdCcfmIpb380op-edDQPeY_XOE=
+cT_kg=3D=3D.gif"></body></html>
+--001a11413526efdc530541c74a0c--

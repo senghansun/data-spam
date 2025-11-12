@@ -1,0 +1,90 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.157.75 with SMTP id f11csp1245286ook;
+        Fri, 22 Sep 2017 09:04:24 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QCk7TmluqkWvYqm4VmatjF9C57alz4eNzRcQSqCXo+z+MqWYtNVwkMV4kTn8N3aHqT4BBDY
+X-Received: by 10.46.86.146 with SMTP id k18mr2903255lje.81.1506096263963;
+        Fri, 22 Sep 2017 09:04:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1506096263; cv=none;
+        d=google.com; s=arc-20160816;
+        b=InanCqKstnyb7UtIQ1YnCvdorTYS61csG1c1rQDd9kY76h1Of8zZckr7wDMYTqWjWD
+         PfhIOQl/3jN+u/zg369THsHmn/gZUA/dhYOFlFDEZFbG/ElaBL8J8c8vOi1q2nC3afBA
+         nJrWweRzvakbTYllvZRsAKNMA8oemHKzCmIFrZujdm+sPVZA9vpTOReBGSZGpqLkUjWs
+         C0hYU6ajpEhQETXukC/JLII6qAn5DHeVeDlOcO9+5+KztC+nPgP5nJYkRDXR37wzBF0L
+         9BnEbSIL43ha76aWr7ADNUJjwxS/as4/RAfYfm842BaJFTjmrOMds1Mm5KI43WQnEaJC
+         M5oQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:dkim-signature:list-unsubscribe:precedence:errors-to
+         :mime-version:list-unsubscribe:message-id:subject:reply-to:from:to
+         :date:arc-authentication-results;
+        bh=7ey4RDDRMhQywGaHIRxr9DDInyWpqERf/9O2dzCn23I=;
+        b=tm8rlGBm7/QS+gu9lpYpXO30xpHon2HEyDp92Wkm1xEe/k6ncaZF2eGEZGVWBMK+my
+         QI7JTeuHtP730jQC18u+TFxKGOaQlR1JX37ycoiRw29y95k6QFDHsNBEpZ0zGROmdXtz
+         insAjdMv8cuAEWAmyfR9oCstShIzCaaqSrxk9y2ZepzigmGLA4ZGn6cGo4j9pMt5wFYD
+         cblAcXnjFaueOm/Q5y/HB5gkxBlXyloBc2j/aobZ6sSwCfIa0MuP+fvkhoMIZ2wB8x/Y
+         cXn/h9sGiZzmHsf4MbgbbNMNyvCBlHz7G4DVFsu4yOPKoQZcXbi/460VJnGZLHalFxiK
+         bwdg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@smtp-pulse.com header.s=smtpsign header.b=up8a0ld/;
+       spf=pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) smtp.mailfrom=hello@filebebo.com
+Return-Path: <hello@filebebo.com>
+Received: from mx93.smtp-pulse.com (mx93.smtp-pulse.com. [78.41.200.150])
+        by mx.google.com with ESMTPS id d82si35287lfd.368.2017.09.22.09.04.23
+        for <lukaspatty@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 22 Sep 2017 09:04:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) client-ip=78.41.200.150;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@smtp-pulse.com header.s=smtpsign header.b=up8a0ld/;
+       spf=pass (google.com: domain of hello@filebebo.com designates 78.41.200.150 as permitted sender) smtp.mailfrom=hello@filebebo.com
+Received: from [127.0.0.1] (helo=server.smtp-pulse.com) by smtp-pulse.com with esmtp (Exim 4.88_29-9c63814-XX) (envelope-from <hello@filebebo.com>) id 1dvQRD-000fPi-5P for lukaspatty@gmail.com; Fri, 22 Sep 2017 16:04:23 +0000
+Date: Fri, 22 Sep 2017 21:34:22 +0530
+To: Lukas Patty <lukaspatty@gmail.com>
+From: Filebebo <hello@filebebo.com>
+Reply-To: Filebebo <hello@filebebo.com>
+Subject: Introducing FTP Upload
+Message-ID: <c8ab8051c057fc21bb7f9dde47067462@srv5.poptm.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <http://newsletter.poptm.com/unsubscribe/TJr892y1aF8ced6W6w7gO7Evof3UoI00WP8O0Zms281GE/LGsUe23epoi3x3dUOAS36Q/q5wSpqnVBK0DgGRvwcjh763g>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Errors-To: postmaster@smtp-pulse.com
+X-Complaints-To: abuse@smtp-pulse.com
+Precedence: bulk
+Received: from username [78.46.17.215] (Authenticated sender: hello@filebebo.com) by smtp-pulse.com (Exim); Fri,22 Sep 2017 16:09:23
+List-Unsubscribe: <mailto:unsubscribe_d8b319e71c1915f96c33cbd952f7d54f@smtp-pulse.com>, <http://unsubscribe.smtp-pulse.com/d8b319e71c1915f96c33cbd952f7d54f>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=smtp-pulse.com;
+  i=@smtp-pulse.com; q=dns/txt; s=smtpsign; t=1506096263; h=Subject :
+  From : To; bh=+liXf0e1ND2J4n3yKbtfuHfWy0RmbmQIZKVFal4bVGY=;
+  b=up8a0ld/zuY21mO9AK0RJ61WxmGcZ/fV0In0xiYKkan/NuGxcq3Xmbf9a6JN+KBr8G0BmK Fcv7p2VJt/7nAvwnUmKAclvNXvzLcysKK93yDlm5znFFIrsJLXq3oO8yCUXEniWsj0Xky3j3 EW/5T7e7T+jfc8lzKdvYKpcBVgj0Y=
+Message-Id: <1dvQRD-000fPi-5P@mx93.smtp-pulse.com>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p align="center"><a href="https://filebebo.com/"><img alt="" src="https://filebebo.com/images/logo.png" style="width: 252px; height: 45px;" /></a></p>
+
+<p><span style="font-size:14px;"><span style="font-family:helvetica neue;">Hello,</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:helvetica neue;">We are happy to introduce&nbsp;<strong>FTP Upload,&nbsp;</strong>on Filebebo now you can upload files, folders directly using your FTP client like Filezilla, CuteFTP, Transmit etc...</span></span></p>
+
+<p><strong><span style="font-size:14px;"><span style="font-family:helvetica neue;">Benifits of Filebebo :</span></span></strong></p>
+
+<ol>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Clean and simple user interface</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Competitive payouts (upto $15 per 1000 videos views or downloads)</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">Daily Payments</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">50% pay per sales + 50% re-bills for lifetime</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">A min payout of just $10</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:helvetica neue;">No limits on download or upload speed</span></span></li>
+</ol>
+
+<p align="center"><span style="font-family:helvetica neue;"><a href="https://filebebo.com/register" target="_blank"><img align="center" alt="" src="https://3ug95vn.filebebo.com/i/00000/r4tgyohcal11.png" style="width: 136px; height: 50px;" /></a></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:helvetica neue;"><span style="font-size:14px;">Kind Regards<br />
+Filebebo Team</span></span></p>
+</body>
+</html>

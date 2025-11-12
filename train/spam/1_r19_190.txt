@@ -1,0 +1,2077 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.159.40.4 with SMTP id c4csp304583uac;
+        Tue, 15 Aug 2017 19:36:52 -0700 (PDT)
+X-Received: by 10.84.232.11 with SMTP id h11mr264060plk.126.1502851012362;
+        Tue, 15 Aug 2017 19:36:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502851012; cv=none;
+        d=google.com; s=arc-20160816;
+        b=b7tvhpBnxvRX2C9kx6MhOzKB5rjCm5tY5QELchyKWaplqEZPkaoj6GZTsM3H5WHjNR
+         hfbmeg02JoFCkuITZDRKw7WEz7/YTfkji8NOmNKXWKxsyZRpnPUmYndwopGRRuXVMjXJ
+         fOwDoFlKe2mrhT5jkRRhWbuyBPCglXnRWDto8xC43XYFfhOgaXtoiOeYXsSiAh5h+TK8
+         eRe4FTU3NyhiHBDnK6IsbTNKLpo55MFF0IGHdiNRqfhbng79WsLcPP0VOw9x75lXmD+1
+         SXziPlW5xJN3siO8w1f3iTTNOVYRn/zvSBuAVZYxMpQnXHKWfIV9MrzmwPys9G/nbyU5
+         +y4g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-unsubscribe:feedback-id:subject:reply-to:from:to
+         :date:content-transfer-encoding:mime-version:domainkey-signature
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=hag8ncT2hS2O2CFbtI+E6aEcikGjOBVISiQsLcESrqc=;
+        b=jy0tOzZXeJTOyXrUX1F2xPA6OsWeA+uYu/eRswOkdm2GwTvclv8yX7PJAwTdFoSDDI
+         OeRlcs/T0h9oNWeMm8SdRYcPSX3GZQ26CiE9FS4X6SrhMQT9DnfMy4GzaWk77I0PDx/g
+         M9EIMBdvwhQCPPuVGHi9zlzolc4k6hE4vU25TzViaMV2p9UhBRDXeFJnsjyxB/xUvW9H
+         o2nae+EcH+ceJ76HRTfZAa0Dhn2lGbH1jLFz6inG+gl60fcmtCZXtouiRFCLZyq024xa
+         06zQBZkVzaaUTgOSxKmVy8/bm7eqNWI80JxRUUQ2DnMCkJQTrEcob2nikfthQM74178l
+         NaNw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@e.zalora.co.id header.s=zalora4 header.b=e90LrFUw;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=eT3z6bEk;
+       spf=pass (google.com: domain of campaigns@e.zalora.co.id designates 199.7.204.243 as permitted sender) smtp.mailfrom=campaigns@e.zalora.co.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=e.zalora.co.id
+Return-Path: <campaigns@e.zalora.co.id>
+Received: from omp.email.zalora.com (omp.email.zalora.com. [199.7.204.243])
+        by mx.google.com with ESMTPS id s9si6184413pge.268.2017.08.15.19.36.51
+        for <itsmetenki@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 15 Aug 2017 19:36:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaigns@e.zalora.co.id designates 199.7.204.243 as permitted sender) client-ip=199.7.204.243;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@e.zalora.co.id header.s=zalora4 header.b=e90LrFUw;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=eT3z6bEk;
+       spf=pass (google.com: domain of campaigns@e.zalora.co.id designates 199.7.204.243 as permitted sender) smtp.mailfrom=campaigns@e.zalora.co.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=e.zalora.co.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=zalora4; d=e.zalora.co.id; h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:Subject:Feedback-ID:List-Unsubscribe:Message-ID; i=campaigns@e.zalora.co.id; bh=8tiaFy0K0AUrfKTnj8vldJFtz6U=; b=e90LrFUw9GIX3SyYgqrXeELt24EBnmfESaKzUt5cihcjpW8OAT0xlsLtaMQ1sgX36jhQnm46t3sr
+   aEBo1Yxe4/dcHW1ivl/dN1GpdM/QKfpvWwOxFcPEYv4jcLmhc9dLu5/W2verEAq+L2PK3zKsN4n4
+   nCMnHJQSUI7WvEdOCCA=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=oraclersys; d=responsys.net; h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:Subject:Feedback-ID:List-Unsubscribe:Message-ID; bh=8tiaFy0K0AUrfKTnj8vldJFtz6U=; b=eT3z6bEkP/3QfplhRmbUVseckFOaoU574PFA99XuJ9SCLpLd4TGOa07mME5kFxhbwO39m3K2Q/ao
+   +Ad5ESjTpb9TA7l92ibKTwjEYdxmj99982jHFY5XDmUsHCEtlei09IKwkJsOrWjeYsDI4R9PData
+   S4yyJBsdE7t7ZrzBTzQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=zalora4; d=e.zalora.co.id; b=nZXdKNz9RrcVl5z9YWflQ3og5URp4i7A2ZWCvWSf121c5jashxczjRjIyAkrqdg+vPeTjNwfKAk8
+   05AqtK6uFRUZ6OnwxZpSlWLTzXBcpRiqrNgqM1haWvb4Yk56E2tO/T4AM6qO77IBudzdHf1FbFRz
+   iYmNetcNqckMvtXNEWo=;
+Received: by omp.email.zalora.com id hiens8162k4r for <itsmetenki@gmail.com>; Tue, 15 Aug 2017 19:36:11 -0700 (envelope-from <campaigns@e.zalora.co.id>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 15 Aug 2017 19:36:11 -0700
+To: itsmetenki@gmail.com
+From: ZALORA Indonesia <campaigns@e.zalora.co.id>
+Reply-To: ZALORA Indonesia <customer-reply@e.zalora.co.id>
+Subject: Hai kalindra? We miss you! Ini Kejutan untukmu
+Feedback-ID: 53418:15073015:oraclersys
+List-Unsubscribe: <https://email.zalora.com/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguR&_ei_=EolaGGF4SNMvxFF7KucKuWMhCK7HAHbkHTYWffRVRFyI9gcusV_kA7eDnK6eMRsnrp6JSwa8B8A48umsk1b_Af8pvfQ>, <mailto:unsubscribe-YQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguR@imh.rsys5.com?subject=List-Unsubscribe>
+X-sgxh1: plkuLlLgspxnuHptQJhu
+X-rext: 5.interact5.EoqIgocDt4_n9RqOAsFuPJfmd39uS5nZjne9q0iLzhqpmfn3HXuCMPhytuv1Rq2Fm0
+X-cid: zalora.9322365
+Message-ID: <0.0.82.FAF.1D316386C9313F6.0@omp.email.zalora.com>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<title>ZALORA - Eksklusif untukmu</title>
+</head>
+
+<body><table cellpadding=3D"0" cellspacing=3D"0" style=3D"border: 0px; padd=
+ing: 0px; margin: 0px; position: absolute; display: none; float: left">
+<tr>
+<td height=3D"1" style=3D"font-size: 1px; line-height: 1px; padding: 0px;">
+<img height=3D"1" width=3D"1" style=3D "padding: 0px 0px; !important; margi=
+n: 0px 0px; font-size: 1px; line-height: 1px;" src=3D"https://email.zalora.=
+com/pub/as?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1Ygz=
+drgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXHkMX%3Dw&_ei_=3DEolaGGF4SNMvxFF7K=
+ucKuWMhCK7HAHbkHTYWffRVRFyI9gcusV_kA7eDnK6eMRsnrp6JSwa8B8A48umsk1b_Af8pvfQ.=
+"></img>
+<img border=3D"0" width=3D"1" height=3D"1" src=3D"https://ib.adnxs.com/getu=
+id?https://a.adrsp.net/dsp/ci/2/E3NIuSlB1Pf9EgJV3fAM5zkWgsar7yQyJ6fAt5k85t4=
+tp9ek4JX7jFz6XRhjyOImNkWeGiqcxGvxPe47foV0_4n30C8n3oTomwP9yWYbs9w/%24UID"></=
+img>
+</td>
+</tr>
+</table>
+
+
+
+
+
+<!-- preheader -->
+<table width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">
+=09<tr>
+=09    <td width=3D"600" align=3D"center" style=3D"font-family:Arial, Helve=
+tica, sans-serif; color:#666666; font-size:11px;">Berakhir pukul 23:59 19-A=
+ug-2017
+        </td>
+    </tr>
+</table>
+<!-- end pre-header -->
+
+<!-- header -->
+<table width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">
+=09<tr>
+=09    <td width=3D"600" align=3D"center">
+    <style type=3D"text/css">
+    a:hover {
+        color: #000 !important;
+    }
+    a:active {
+        color: #000 !important;
+    }
+    a:visited {
+        text-decoration: none;
+        color: #00c8b4 !important;
+    }
+    @media only screen and (max-width: 600px) {
+        table[class=3D"body"] img {
+            height: auto !important;
+            width: auto !important;
+        }
+        table[class=3D"body"] center {
+            min-width: 0 !important;
+        }
+        table[class=3D"body"] .container {
+            width: 100% !important;
+        }
+        table[class=3D"body"] .row {
+            min-width: 100% !important;
+        }
+        table[class=3D"body"] .wrapper {
+            display: block !important;
+        }
+        table[class=3D"body"] .columns {
+            table-layout: fixed !important;
+            float: none !important;
+            width: 100% !important;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            display: block !important;
+        }
+        table[class=3D"body"] .headercolumns {
+            float: none !important;
+            width: 100% !important;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            display: inline-table !important;
+        }
+        table[class=3D"body"] td.expander {
+            width: 1px !important;
+        }
+        table[class=3D"body"] .hide-for-small {
+            display: none !important;
+        }
+        table[class=3D"body"] .headercolumns td.preheader {
+            width: 40% !important;
+            padding: 0px 25px !important;
+        }
+        table[class=3D"body"] .hide-for-desktop {
+            display: inherit !important;
+        }
+=09=09table[class=3D"body"] .headerbadge{
+=09=09=09table-layout:fixed!important;
+=09=09=09float:none!important;
+=09=09=09width:100%!important;
+=09=09=09padding-right:0!important;
+=09=09=09padding-left:0!important;
+=09=09=09display:inline-table!important;
+=09=09}
+    }
+    </style>
+
+=20
+   =20
+    <table class=3D"body" style=3D"border-spacing:0;border-collapse:collaps=
+e;height:100%;width:100%;padding:0"><tr style=3D"padding:0"><td align=3D"ce=
+nter" valign=3D"top" style=3D"border-collapse:collapse!important;padding:0"=
+>
+<center>
+<table class=3D"container" style=3D"border-spacing:0;border-collapse:collap=
+se;width:600px;background:#fff;margin:0 auto;padding:0; min-width:600px;" b=
+gcolor=3D"#FFFFFF"><tr style=3D"padding:0"><td style=3D"border-collapse:col=
+lapse!important;padding:0">
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;wid=
+th:100%!important;padding:0"><tr style=3D"padding:0"><td class=3D"wrapper" =
+style=3D"border-collapse:collapse!important;padding:0">
+<table class=3D"twelve headerbadge" style=3D"border-spacing:0;border-collap=
+se:collapse;width:600px;padding:0"><tr style=3D"padding:0"><td class=3D"hid=
+e-for-small textcontent" valign=3D"bottom" style=3D"width:61%;border-collap=
+se:collapse!important;word-break:break-word;-moz-hyphens:auto;-webkit-hyphe=
+ns:auto;hyphens:auto;color:#222;font-family:'Helvetica','Arial',sans-serif;=
+font-weight:normal;font-size:12px;margin:0;padding:0">
+Lihat tampilan di <a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X=
+%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8f=
+yoPlmNS0zbTzguRVXtpKX%3DUUSDTWCY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjD3RpjF7jf4nUN=
+kI6GI_1Rv6vjF4QcLlJAZhfsn2_RUxEE3gutlvD05Q01Y470dbVqw1ksxIo_cUovAvZoIDgIjEi=
+K7kqg9F5a-DblIZxmTSC7T3Dfzb5Q3-f05pHY9Z9TxbM6dg34zylyIU5J7kpZQZaNtcx2_kwEeC=
+yJgN8U4SG8oes7Vui_ZwZVY5r0Yg3gx7doUF9g4Wzr_uCNRJyggTS-eRgReYPMSQy0ZeN1yN6IU=
+o2L62Jdj-Jl_ZvMEOpw_JXKC3eM23NzQCaW6qlviuVDddAk4gG1HFlHjt37rcvcCSSZJANsh6zT=
+_tA96xCczJA4IXNl3fkX1TXlsa3rubZo0C3wIlgj-6UDMwWRBsHrXXe8wa6mD_ZdBmXSwmUTL9C=
+Ex9-N0_EpHHQ3-trEdKoC_bidHd4Gd4CnUAL90l3X3_gY_RSM3XtAisr1sK7ML0FvdhE2JFh0QY=
+WizW3a1ejdqYDDVvrgjo7puQkE7RhHFgOEs01Itv-JYRrMNY7q7gYWotAYGDANzSolQ8oFMwYbf=
+0U7XZCsN-o5CY2w_UXN_dM." title=3D"" target=3D"_blank" style=3D"text-decorat=
+ion: none; color: #00c8b4; -webkit-transition: all .2s ease-out; -moz-trans=
+ition: all .2s ease-out; -o-transition: all .2s ease-out; transition: all .=
+2s ease-out;">web browser Anda</a>=20
+</td>
+<td class=3D"badge" style=3D"border-collapse:collapse!important;padding:0">
+<a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhz=
+bbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXt=
+pKX%3DUBSSDBCY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4I=
+llK6IJYN8bUJ70_8qWpbplWEEVIsG359OngMCq1_sVFUgVM3AKX9C3eOHGV9GmEf7M6fRMcx8Bv=
+XuoG5v26UeR-fcs2QU9OovZpKUxy_3Wz5OyakhXz3XTFgqUPH6eFYiZtoLRXxt29J44dlHczlFh=
+bXNjm0-Nx4n3CX5XW1Rwn8lQbfcXP0YgpqvM8QT4h8Pr281EGKIs0o7rIRK3s-zhxEGK2Vg." t=
+itle=3D"App Store" target=3D"_blank" style=3D"text-decoration:none;color:#0=
+0c8b4;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;=
+-o-transition:all .2s ease-out;transition:all .2s ease-out">
+<img width=3D"117" height=3D"36" style=3D"width:117px;height:36px;outline:0=
+;text-decoration:none;-ms-interpolation-mode:bicubic;max-width:100%;float:r=
+ight;clear:both;display:block;margin:0 auto;border:0" alt=3D"App Store" src=
+=3D"http://zcrmstatic-a.akamaihd.net/crm/sg/header/2015_06/Badge_AppStore.g=
+if" class=3D"right" border=3D"0" align=3D"right" /></a>
+</td>
+<td class=3D"badge" style=3D"border-collapse:collapse!important;padding:0 0=
+ 0 15px">
+<a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhz=
+bbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXt=
+pKX%3DUBSSDCTY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4I=
+llK6IJYN8bUJ70_8qWpbplWEEVIsG359OktUnrogxZ_qe8IRLnZHFQ3JtMlJzbgKKPeM1ittIH5=
+msRBGak0NFer3OXgLzaXLAwMRO4cQuRpZhNxYE3Du5MBTQgdYgRW6uhOoKXA45wu2pZiNetozAI=
+u6dLFG-ZAbGLBkWqzWcYOSIkBactHEGRkPWNGauYSMe-zPMQMzRBNB_xZLnkCnLIr8KXl." tit=
+le=3D"Google Play" target=3D"_blank" style=3D"text-decoration:none;color:#0=
+0c8b4;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;=
+-o-transition:all .2s ease-out;transition:all .2s ease-out">
+<img width=3D"115" height=3D"36" style=3D"width:115px;height:36px;outline:0=
+;text-decoration:none;-ms-interpolation-mode:bicubic;max-width:100%;float:l=
+eft;clear:both;display:block;margin:0 auto;border:0" alt=3D"Google Play" sr=
+c=3D"http://zcrmstatic-a.akamaihd.net/crm/rg/AppBadge/gplay-115x36en.png" c=
+lass=3D"left" border=3D"0" align=3D"left" /></a>
+</td>
+<td class=3D"expander" style=3D"border-collapse:collapse!important;visibili=
+ty:hidden;width:0;padding:0"></td>
+</tr></table></td></tr></table></td></tr></table></center></td></tr></table=
+>
+   =20
+   =20
+   =20
+   =20
+    <table width=3D"78%" class=3D"body" style=3D"border-spacing: 0; border-=
+collapse: collapse; height: 100%; width: 100%; padding: 0;">
+        <tr style=3D"padding: 0;">
+            <td align=3D"center" valign=3D"top" style=3D"border-collapse: c=
+ollapse !important; padding: 0;">
+                <center>
+                    <!--Header Content -->
+                    <table class=3D"container" style=3D"border-spacing: 0; =
+border-collapse: collapse; width: 600px; background: #FFFFFF; margin: 0 aut=
+o; padding: 0;" bgcolor=3D"#FFFFFF">
+                        <tr style=3D"padding: 0;">
+                            <td style=3D"border-collapse: collapse !importa=
+nt; padding: 0;">
+
+                                <!-- Top USP -->
+                                <table class=3D"row hide-for-small" style=
+=3D"border-spacing: 0; border-collapse: collapse; width: 100% !important; p=
+adding: 0;">
+                                    <tr style=3D"padding: 0;">
+                                        <td class=3D"wrapper" style=3D"bord=
+er-collapse: collapse !important; padding: 0;">
+                                            <table class=3D"twelve columns"=
+ style=3D"border-spacing: 0; border-collapse: collapse; width: 600px; margi=
+n: 0 auto; padding: 0;">
+                                                <tr style=3D"padding: 0;">
+                                                    <td class=3D"twelve" st=
+yle=3D"border-collapse: collapse !important; width: 100% !important; paddin=
+g: 10px 0px;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBRCY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1XiCvRFo2LR0USkwpcjDGrnwchicmhProCo53xUVMz-hxOPY3R5Q326wsLEtdy=
+E-aQ7HNS_0blDxncGXyLyNrrWSw-0gmUHObIq-S1M2gmcu-_IsXeIDLRRrpgQLzFd1M2tBWBjf8=
+-yQOuh1zRmVz6Y3ahxgYqg_91kLuCxmSsqZdMSBvXvO4yitu5f0mfDxg." title=3D"" targe=
+t=3D"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-transi=
+tion: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transition: a=
+ll .2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"6=
+00" height=3D"39" style=3D"width: 600px; height: 39px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"" =
+src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/ID_USP.jpg" c=
+lass=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"expander" =
+style=3D"border-collapse: collapse !important; visibility: hidden; width: 0=
+px; padding: 0;"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- Mid Banner -->
+                                <table class=3D"row" style=3D"border-spacin=
+g: 0; border-collapse: collapse; width: 100% !important; padding: 0;">
+                                    <tr style=3D"padding: 0;">
+                                        <td class=3D"wrapper" style=3D"bord=
+er-collapse: collapse !important; padding: 0;">
+                                            <table class=3D"twelve columns"=
+ style=3D"border-spacing: 0; border-collapse: collapse; width: 600px; margi=
+n: 0 auto; padding: 0;">
+                                                <tr style=3D"padding: 0;">
+                                                    <td class=3D"twelve" bg=
+color=3D"#FFFFFF" style=3D"border-collapse: collapse !important; width: 100=
+% !important; padding: 10px 20px;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBSWY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1U4XYiCL8a7vuXbfKAFo_VNJLioIKHwExmQ3cETHSvzaUWPt9MBTE1kQtEDvSL=
+-U7tu6H8F7GzDJlXsp9GfEo0jXoMWFuwejFSzzCxpIlRz2fV37W28ymFhV-lWD6VC3EmK3XJqf9=
+TuPFE-znlfWVMfO1kLTT0FSSb8kqbZWPnycyNtEr4JoZyVvUSPC_ifB0." title=3D"ZALORA"=
+ target=3D"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-=
+transition: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transit=
+ion: all .2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"2=
+21" height=3D"31" style=3D"width: 221px; height: 31px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"ZA=
+LORA" src=3D"http://zcrmstatic-a.akamaihd.net/crm/sg/header/2015_06/ZALORA_=
+Logo.gif" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"expander" =
+style=3D"border-collapse: collapse !important; visibility: hidden; width: 0=
+px; padding: 0;"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- Bottom Options -->
+                                <table class=3D"row" style=3D"border-spacin=
+g: 0; border-collapse: collapse; width: 100% !important; padding: 0;">
+                                    <tr style=3D"padding: 0;">
+                                        <td class=3D"wrapper" style=3D"bord=
+er-collapse: collapse !important; padding: 0;">
+                                            <table class=3D"twelve headerco=
+lumns" style=3D"border-spacing: 0; border-collapse: collapse; width: 600px;=
+ padding: 0;">
+                                                <tr style=3D"padding: 0;">
+                                                    <td class=3D"hide-for-s=
+mall" style=3D"border-collapse: collapse !important; padding: 0;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBSAY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1WOeGobTHYvI78IGmlYj4e0IhJyty2oJOE7M-ihlsmN06AYeO-chUmfe7Y7AYe=
+IPFttpb29_P_OE2aRV1tPuhCgVUyX-In9nqdE3K1KLUaJ-_q477uqf9nPnfGFj9hmcFZIrdApYH=
+VIyBEGjN2E8SXbzP8tERd_i5bCPhQpnk1bbIRiIuZpkt2z." title=3D"New In" target=3D=
+"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-transition=
+: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transition: all .=
+2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"1=
+55" height=3D"65" style=3D"width: 155px; height: 65px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"Pr=
+oduk Baru" src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/id=
+_newin.jpg" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"headerbott=
+om" style=3D"border-collapse: collapse !important; padding: 0;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBSCY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1VoCZc91yT-4J3qWiajv2sHd2n8UgRrY1TxRQmKQbDngnxSIPkjn2g71aGOpch=
+XEluT7Enlodmi6nlcoiYKzIbGjVKImVqtv_AF4nSvUbRr405EAXr0cg_-thsFuxafTR7vWqaR81=
+iK8NToDpyi0-U48gRHy4LdFMQhpB6gvyT0NihpSCPmVQvVhG8FQ0." title=3D"Clothing" t=
+arget=3D"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-tr=
+ansition: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transitio=
+n: all .2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"1=
+21" height=3D"65" style=3D"width: 121px; height: 65px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"Pa=
+kaian" src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/id_clo=
+thing.jpg" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"headerbott=
+om" style=3D"border-collapse: collapse !important; padding: 0;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBTTY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1WOFGLCr814of8XDfSJqwcdDE4TanBlungz6dvOUvaY2oOZsf2JwATED8fyEEU=
+gmGPNFVG7VBBTgAlSTqFVyI0yDsJ0ViDDPWbF3AM4KQtwejWOGj3r_s9ffyPStuKlAOq5a9W0Jd=
+_CPxXgaM23Im9yZoxPvfAc76_qhvNen0rj13SXmASxM5eXanWP." title=3D"Shoes" target=
+=3D"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-transit=
+ion: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transition: al=
+l .2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"1=
+14" height=3D"65" style=3D"width: 114px; height: 65px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"Se=
+patu" src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/id_shoe=
+s.jpg" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"hide-for-s=
+mall" style=3D"border-collapse: collapse !important; padding: 0;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBTCY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1WqVdSaGdiar0ZuCbPnDdMXJXjopoqN-KY-74vT3p5nik-88Sn6cQ2CDahikDE=
+xHzsqUlgM9zhB5M0KWX6o8HtzQA73rdbJNcO2vZ0eicdScebnybgCbtfobSA6bgZaxKsNNuxjhQ=
+CCdiiQDNjg41Bnl2g4Mt3n72V7plFW6-wuJrMdzI2AInE5OsniS3bb." title=3D"Accessori=
+es" target=3D"_blank" style=3D"text-decoration: none; color: #00c8b4; -webk=
+it-transition: all .2s ease-out; -moz-transition: all .2s ease-out; -o-tran=
+sition: all .2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"1=
+32" height=3D"65" style=3D"width: 132px; height: 65px; outline: none; text-=
+decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: =
+none; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"Ak=
+sesoris" src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/id_a=
+cc.jpg" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"headerbott=
+om" style=3D"border-collapse: collapse !important; padding: 0;">
+                                                        <a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBUWY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ1T3m5uY=
+YDwQu_AGWk5yk1UNHCxEWQfa3RnCvvFFwe9SCrakcl5ZyTXg9DWk-EcGG5ZoRM-4AVivP-hV32T=
+TDLfHYMjarfi1l4JSesW13JhRGDGnBIxZzphdDaoC1gfYESPGkvIp5WCkNt9g2PpNFhF95-9-YA=
+cPdgHvKcu8s0g5KOjtaqR2vcbk6Vy3W1Gp5w5OPGPFHrbO6M." title=3D"Sale" target=3D=
+"_blank" style=3D"text-decoration: none; color: #00c8b4; -webkit-transition=
+: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transition: all .=
+2s ease-out; transition: all .2s ease-out;">
+                                                            <img width=3D"7=
+8" height=3D"65" style=3D"width: 78px; height: 65px; outline: none; text-de=
+coration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: no=
+ne; clear: both; display: block; margin: 0 auto; border: none;" alt=3D"Sale=
+" src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/header/2015_06/id_sale.jpg=
+" class=3D"center" border=3D"0" align=3D"none" />
+                                                        </a>
+                                                    </td>
+                                                    <td class=3D"expander" =
+style=3D"border-collapse: collapse !important; visibility: hidden; width: 0=
+px; padding: 0;"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of footer contents -->
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+      </tr>
+    </table>
+   =20
+    <table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0">
+<tr><td height=3D"5"><!-- --></td></table>
+
+<table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" style=3D"background-color:#000000;">
+<tr><td height=3D"2"><!-- --></td></table>
+
+<table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0">
+<tr><td height=3D"10"><!-- --></td></table>
+        </td>
+    </tr>
+</table>
+
+<!-- body -->
+<table width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">
+=09<tr><td>
+            <table width=3D"600" align=3D"center" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0">
+                <tr>
+                    <td width=3D"20" height=3D"500" style=3D"background-col=
+or:#646464;"><!-- -->
+                    </td>
+                    <td width=3D"290" height=3D"500" style=3D"background-co=
+lor:#646464;">
+   =09<a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJ=
+lYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTz=
+guRVXtpKX%3DUUSDTCTY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH=
+-aYG4IllK6IJYN8bUJ9w4Mvafb4W0LUpEt42eZixKgS_9kf7ykgNxx4sIy-QQj6SCUrx6UFvXYv=
+1gzCUDERfgQMjQwlm_shgjj4oZDv2rb5Hl2yY7_7lgJKWE7oDfCjFEYR1v5HPa-JzjVGlkmzl-2=
+MrSkTzxMHsZsbV5DuB0Tije0yOSAJIwa7vsrBx4NubtO0_mBAO8ehvtDQ-bHGdCA1HfdJJrO2M.=
+" target=3D"_blank" style=3D"text-decoration:none;">
+                        <table width=3D"290" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+                            <tr>
+                                <td height=3D"35" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"15" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" style=3D"background-co=
+lor:#646464;font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-s=
+ize:36px; letter-spacing:5px;"><b>TAMPIL MASKULIN</b></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"18" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"35" align=3D"center" style=3D=
+"background-color:#646464;font-family:Arial, Helvetica, sans-serif; color:#=
+FFFFFF; font-size:16px; letter-spacing:1px;">Buat penampilanmu lebih keren =
+dan menarik pilihan kami</td>
+                            </tr>
+                            <tr>
+                                <td height=3D"25" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"2" style=3D"background-color:=
+#FFFFFF;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"5" style=3D"background-color:=
+#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"25" align=3D"center" style=3D=
+"background-color:#646464;font-family:Arial, Helvetica, sans-serif; color:#=
+FFFFFF; font-size:18px; letter-spacing:1px;">HANYA 3 HARI</td>
+                            </tr>
+                            <tr>
+                                <td height=3D"50" align=3D"center" style=3D=
+"background-color:#646464;font-family:Arial, Helvetica, sans-serif; color:#=
+FFFFFF; font-size:40px; letter-spacing:4px;"><b>15% OFF*</b></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"5" style=3D"background-color:=
+#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"2" style=3D"background-color:=
+#FFFFFF;"><!-- --></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"23" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                        </table></a>
+                        <table width=3D"290" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+                            <tr>
+                                <td height=3D"30" align=3D"center" style=3D=
+"background-color:#646464;font-family:Arial, Helvetica, sans-serif; color:#=
+FFFFFF; font-size:16px;">GUNAKAN KODE</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <table width=3D"290" align=3D"center" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0">
+                                    <tr>
+                                        <td width=3D"45"><!-- --></td>
+                                        <td height=3D"50" align=3D"center" =
+style=3D"background-color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;=
+ color:#000000; font-size:28px;"><b>RE2Z8H1X</b></td>
+                                        <td width=3D"45"><!-- --></td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height=3D"10" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td height=3D"30" style=3D"background-color=
+:#646464;"><!-- --></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width=3D"290" height=3D"500">
+                       =09<a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUSDTCTY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ9w4Mvafb4W0LUpEt42eZixKgS_9kf7ykgNx=
+x4sIy-QQj6SCUrx6UFvXYv1gzCUDERfgQMjQwlm_shgjj4oZDv2rb5Hl2yY7_7lgJKWE7oDfCjF=
+EYR1v5HPa-JzjVGlkmzl-2MrSkTzxMHsZsbV5DuB0Tije0yOSAJIwa7vsrBx4NubtO0_mBAO8eh=
+vtDQ-bHGdCA1HfdJJrO2M." target=3D"_blank" style=3D"text-decoration:none;"><=
+img src=3D"http://zcrmstatic-a.akamaihd.net/crm/rg/pr/rep2/rg_p2_m_1.jpg" a=
+lt=3D"" width=3D"290" height=3D"500" border=3D"0" style=3D"display:block;" =
+/></a>
+                    </td>
+                </tr>
+            </table>
+
+    </td></tr>
+</table>
+   =20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0">
+=09<tr>
+    =09<td align=3D"center" style=3D"background-color:#FFFFFF;font-family:A=
+rial, Helvetica, sans-serif; color:#000000; font-size:50px; vertical-align:=
+middle;"><a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglL=
+jHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0z=
+bTzguRVXtpKX%3DUUSDTCWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXsh=
+TcH-aYG4IllK6IJYN8bUJ9w4Mvafb4W0LUpEt42eZiztDQr7t2ol-i8phMraUUxGYTRPXcnXhtY=
+Wsu1SeXtYDYxQJ9bbXGyoa1ad5NOxdTrd0jESMi3vKlkWar6lPSNexXPYm6Oe0HZq6zgDlHu_qT=
+uce7Zg37Ohxd_2Tfnu4AMvU7jprU8KbnM976ovmYXMx4nJjB1fdhM4JlkIVILEgvfewzbZ45ugi=
+R6D7hDR." target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"htt=
+p://zcrmstatic-a.akamaihd.net/crm/rg/pr/rep2/id_p2_m_2.jpg" alt=3D"CLOTHING=
+" width=3D"300" height=3D"400" border=3D"0" style=3D"display:block;"/></a>
+        </td>
+=09    <td>
+        =09<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+                <tr>
+                    <td align=3D"center" style=3D"background-color:#FFFFFF;=
+font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:50px; ve=
+rtical-align:middle;"><a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0G=
+zc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUaz=
+cm8fyoPlmNS0zbTzguRVXtpKX%3DUUSDTCAY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4=
+OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ9w4Mvafb4W0LUpEt42eZiye4jfhswg0HqKshw4FuZ=
+aWGoV3vOPgz-7Kd3RZkSuf0LOQeYeUHMDNCCn42gE67veubVtG3VGI2IaUUW2WM9rgvVaFkA99L=
+nymqzP-x4B5Vupg-xditWhMs3N1aNbxNEEIOLdQ1MHU2lozwjjApVNOtRc3n4-ea-NPAP4T5RFz=
+V-Yym_9aseteWnPU." target=3D"_blank" style=3D"text-decoration:none;"><img s=
+rc=3D"http://zcrmstatic-a.akamaihd.net/crm/rg/pr/rep2/id_p2_m_3.jpg" alt=3D=
+"SHOES" width=3D"300" height=3D"200" border=3D"0" style=3D"display:block;"/=
+></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align=3D"center" style=3D"background-color:#FFFFFF;=
+font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:50px; ve=
+rtical-align:middle;"><a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0G=
+zc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUaz=
+cm8fyoPlmNS0zbTzguRVXtpKX%3DUUSDTCCY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4=
+OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ9w4Mvafb4W0LUpEt42eZiy8XZgzaBAIsEjQTo6lvU=
+PfhvIor7xK30EPA1quB2LkC6IKeYaOsm_moNJPkqq1fSurdFHl_VusOSbPRB2kPhgV_EosvAze1=
+pzv43sGjIHwc373vq3onFrCX4xQ-OI0GVCpygu_TURDSIZlZHPInbnZr0GmzDrk-AxgizShMCiV=
+U3uz1F8YaoSk3F6EJ0." target=3D"_blank" style=3D"text-decoration:none;"><img=
+ src=3D"http://zcrmstatic-a.akamaihd.net/crm/rg/pr/rep2/id_p2_m_4.jpg" alt=
+=3D"SHORTS" width=3D"300" height=3D"200" border=3D"0" style=3D"display:bloc=
+k;"/></a>
+                    </td>
+                </tr>
+            </table>
+    =09</td>
+=09</tr>
+</table>
+
+
+<!-- tnc -->
+<table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0">
+=09<tr>
+=09=09<td width=3D"600" align=3D"center" style=3D"font-family: arial; font-=
+size: 11px; color: #000000;">
+      *Minimum pembelian RP 400.000. Valid hingga jam 23.59 19-Aug-2017. Un=
+tuk satu kali pemakaian. Berlaku untuk semua produk kecuali "non-sale items=
+".
+        </td>
+    </tr>
+</table>
+
+<table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0">
+=09<tr>
+=09=09<td width=3D"600" height=3D"10" align=3D"center"><!-- -->
+        </td>
+    </tr>
+</table>
+
+
+
+<!-- VTD -->
+
+<table width=3D"600" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0">
+=09<tr>
+=09=09<td width=3D"600" align=3D"center" style=3D"font-family: arial; font-=
+size: 11px; color: #000000;">
+=09=09<table width=3D"600" align=3D"center" cellspacing=3D"5" cellpadding=
+=3D"0">
+   <tbody>
+    <tr>
+     <td width=3D"600" height=3D"25" align=3D"center" bgcolor=3D"#000000" s=
+tyle=3D"font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255=
+); font-size: 16px; font-weight: bold;">ANDA MUNGKIN JUGA MEMINATI</td>
+    </tr>
+   </tbody>
+  </table>
+  <table height=3D"300" width=3D"600" padding=3D"0">
+   <tbody>
+    <tr>
+      <td valign=3D"top" height=3D"250" width=3D"140"><style type=3D"text/c=
+ss">
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #c00 !important;
+}
+@media only screen and (max-width:600px) {
+  table[class=3D"body"] img {
+    height: auto !important; width: auto !important;
+  }
+  table[class=3D"body"] center {
+    min-width: 0em !important;
+  }
+  table[class=3D"body"] .container {
+    width: 95% !important;
+  }
+  table[class=3D"body"] .row {
+    display: block !important; width: 100% !important;
+  }
+  table[class=3D"body"] .wrapper {
+    display: block !important; padding-right: 0em !important;
+  }
+  table[class=3D"body"] .columns {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] .column {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] table.column td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] td.expander {
+    width: 1px !important;
+  }
+  table[class=3D"body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class=3D"body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class=3D"body"] .footer-image {
+    height: auto !important; width: 70% !important;
+  }
+}
+</style>
+=09=09
+        <table class=3D"body" style=3D"border-collapse: collapse; border-sp=
+acing: 0em; text-align: left; vertical-align: top; height: 100%; width: 100=
+%; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;"><t=
+r style=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"l=
+eft"><td align=3D"center" class=3D"center" valign=3D"top" style=3D"-moz-hyp=
+hens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; hy=
+phens: auto; word-break: break-word; text-align: center; vertical-align: to=
+p; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;">
+                    <center style=3D"min-width: 100%; width: 100%;">
+                        <!-- BEGIN RECC SKU DISPLAY -->
+                        <table class=3D"columns" style=3D"border-collapse: =
+collapse; border-spacing: 0em; text-align: left; vertical-align: top; margi=
+n: 0em auto; padding: 0em;"><tr style=3D"text-align: left; vertical-align: =
+top; padding: 0em;" align=3D"left"><td style=3D"-moz-hyphens: auto; -webkit=
+-hyphens: auto; border-collapse: collapse !important; hyphens: auto; word-b=
+reak: break-word; text-align: left; vertical-align: top; color: #222; font-=
+family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height:=
+ 13px; font-size: 12px; margin: 0em; padding: 0px;" align=3D"left" valign=
+=3D"top">
+=09=09=09=09=09=09=09=09=09<table style=3D"border-collapse: collapse; borde=
+r-spacing: 0em; text-align: left; vertical-align: top; padding: 0em;"><tr s=
+tyle=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"left=
+"><td style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: =
+collapse !important; hyphens: auto; word-break: break-word; text-align: lef=
+t; vertical-align: top; color: #222; font-family: 'Helvetica', 'Arial', san=
+s-serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0=
+em; padding: 0px;" align=3D"left" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Volans-2=
+-Hypnorun-916885.html/?wt_em=3Did.Email.Campaign.ID_P21OM_M_ID.15073015.rec=
+_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampaign&utm_medium=3DE=
+mail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Drec_sku&toApp=3D1"=
+ target=3D"_blank" title=3D"Get it now" style=3D"color: #2ba6cb; text-decor=
+ation: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img alt=3D"Volans 2 Hypnorun" borde=
+r=3D"1" height=3D"200" width=3D"135" style=3D"height: 200px; width: 135px; =
+-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; =
+max-width: 100%; outline: none; text-decoration: none; border: none;" src=
+=3D"https://zstaticid01-a.akamaihd.net/p/league-5824-588619-1.jpg" title=3D=
+"Volans 2 Hypnorun" vspace=3D"0" align=3D"left" /></a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" s=
+tyle=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collaps=
+e !important; hyphens: auto; word-break: break-word; text-align: center; ve=
+rtical-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-ser=
+if; font-weight: normal; line-height: 13px; font-size: 10px; vertical-paddi=
+ng: 0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<b color=3D"#000000">
+=09=09=09=09=09=09=09=09=09=09=09=09=09League=20
+=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<font color=3D"#323232">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Volans 2 Hypnorun=20
+=09=09=09=09=09=09=09=09=09=09=09=09</font>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09RP
+=09=09=09=09=09=09=09=09=09=09=09=09 599000
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-shopnow-pane=
+l" style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: col=
+lapse !important; hyphens: auto; word-break: break-word; text-align: center=
+; vertical-align: top; color: #666666; font-family: 'Helvetica', 'Arial', s=
+ans-serif; font-weight: normal; line-height: 13px; font-size: 11px; margin:=
+ 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Volans-2=
+-Hypnorun-916885.html/?wt_em=3Did.Email.Campaign.ID_P21OM_M_ID.15073015.rec=
+_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampaign&utm_medium=3DE=
+mail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Drec_sku" style=3D"=
+color: #000000; text-decoration: none;" target=3D"_blank">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09SHOP NOW &gt;
+=09=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr></table></td>
+=09=09=09=09=09=09=09=09<td class=3D"expander" style=3D"-moz-hyphens: auto;=
+ -webkit-hyphens: auto; border-collapse: collapse !important; hyphens: auto=
+; word-break: break-word; text-align: left; vertical-align: top; visibility=
+: hidden; width: 0px; color: #222; font-family: 'Helvetica', 'Arial', sans-=
+serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0em=
+; padding: 0em;" align=3D"left" valign=3D"top"></td>
+=09=09=09=09=09=09=09</tr></table><!-- END RECC SKU DISPLAY --></center>
+                </td>
+            </tr></table></td>
+     <td valign=3D"top" width=3D"5"></td>
+     <td valign=3D"top" height=3D"250" width=3D"140"><style type=3D"text/cs=
+s">
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #c00 !important;
+}
+@media only screen and (max-width:600px) {
+  table[class=3D"body"] img {
+    height: auto !important; width: auto !important;
+  }
+  table[class=3D"body"] center {
+    min-width: 0em !important;
+  }
+  table[class=3D"body"] .container {
+    width: 95% !important;
+  }
+  table[class=3D"body"] .row {
+    display: block !important; width: 100% !important;
+  }
+  table[class=3D"body"] .wrapper {
+    display: block !important; padding-right: 0em !important;
+  }
+  table[class=3D"body"] .columns {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] .column {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] table.column td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] td.expander {
+    width: 1px !important;
+  }
+  table[class=3D"body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class=3D"body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class=3D"body"] .footer-image {
+    height: auto !important; width: 70% !important;
+  }
+}
+</style>
+=09=09
+        <table class=3D"body" style=3D"border-collapse: collapse; border-sp=
+acing: 0em; text-align: left; vertical-align: top; height: 100%; width: 100=
+%; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;"><t=
+r style=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"l=
+eft"><td align=3D"center" class=3D"center" valign=3D"top" style=3D"-moz-hyp=
+hens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; hy=
+phens: auto; word-break: break-word; text-align: center; vertical-align: to=
+p; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;">
+                    <center style=3D"min-width: 100%; width: 100%;">
+                        <!-- BEGIN RECC SKU DISPLAY -->
+                        <table class=3D"columns" style=3D"border-collapse: =
+collapse; border-spacing: 0em; text-align: left; vertical-align: top; margi=
+n: 0em auto; padding: 0em;"><tr style=3D"text-align: left; vertical-align: =
+top; padding: 0em;" align=3D"left"><td style=3D"-moz-hyphens: auto; -webkit=
+-hyphens: auto; border-collapse: collapse !important; hyphens: auto; word-b=
+reak: break-word; text-align: left; vertical-align: top; color: #222; font-=
+family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height:=
+ 13px; font-size: 12px; margin: 0em; padding: 0px;" align=3D"left" valign=
+=3D"top">
+=09=09=09=09=09=09=09=09=09<table style=3D"border-collapse: collapse; borde=
+r-spacing: 0em; text-align: left; vertical-align: top; padding: 0em;"><tr s=
+tyle=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"left=
+"><td style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: =
+collapse !important; hyphens: auto; word-break: break-word; text-align: lef=
+t; vertical-align: top; color: #222; font-family: 'Helvetica', 'Arial', san=
+s-serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0=
+em; padding: 0px;" align=3D"left" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Dr.-Kevi=
+n-Soft-&-Comfortable-Men-Slip-On-9307---Grey-1350791.html/?wt_em=3Did.Email=
+.Campaign.ID_P21OM_M_ID.15073015.rec_sku_10314765416275863_RSYS_2017-08-16&=
+utm_source=3DCampaign&utm_medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073=
+015&utm_content=3Drec_sku&toApp=3D1" target=3D"_blank" title=3D"Get it now"=
+ style=3D"color: #2ba6cb; text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img alt=3D"Dr Kevin Soft & Comforta=
+ble Men Slip On 9307 - Grey" border=3D"1" height=3D"200" width=3D"135" styl=
+e=3D"height: 200px; width: 135px; -ms-interpolation-mode: bicubic; clear: b=
+oth; display: block; float: left; max-width: 100%; outline: none; text-deco=
+ration: none; border: none;" src=3D"https://zstaticid01-a.akamaihd.net/p/dr=
+-kevin-4013-1970531-1.jpg" title=3D"Dr Kevin Soft & Comfortable Men Slip On=
+ 9307 - Grey" vspace=3D"0" align=3D"left" /></a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" s=
+tyle=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collaps=
+e !important; hyphens: auto; word-break: break-word; text-align: center; ve=
+rtical-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-ser=
+if; font-weight: normal; line-height: 13px; font-size: 10px; vertical-paddi=
+ng: 0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<b color=3D"#000000">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Dr Kevin=20
+=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<font color=3D"#323232">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Dr Kevin Soft & Comfortable Men Slip=
+ On 9307 - Grey=20
+=09=09=09=09=09=09=09=09=09=09=09=09</font>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09RP
+=09=09=09=09=09=09=09=09=09=09=09=09 139930
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-shopnow-pane=
+l" style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: col=
+lapse !important; hyphens: auto; word-break: break-word; text-align: center=
+; vertical-align: top; color: #666666; font-family: 'Helvetica', 'Arial', s=
+ans-serif; font-weight: normal; line-height: 13px; font-size: 11px; margin:=
+ 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Dr.-Kevi=
+n-Soft-&-Comfortable-Men-Slip-On-9307---Grey-1350791.html/?wt_em=3Did.Email=
+.Campaign.ID_P21OM_M_ID.15073015.rec_sku_10314765416275863_RSYS_2017-08-16&=
+utm_source=3DCampaign&utm_medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073=
+015&utm_content=3Drec_sku" style=3D"color: #000000; text-decoration: none;"=
+ target=3D"_blank">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09SHOP NOW &gt;
+=09=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr></table></td>
+=09=09=09=09=09=09=09=09<td class=3D"expander" style=3D"-moz-hyphens: auto;=
+ -webkit-hyphens: auto; border-collapse: collapse !important; hyphens: auto=
+; word-break: break-word; text-align: left; vertical-align: top; visibility=
+: hidden; width: 0px; color: #222; font-family: 'Helvetica', 'Arial', sans-=
+serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0em=
+; padding: 0em;" align=3D"left" valign=3D"top"></td>
+=09=09=09=09=09=09=09</tr></table><!-- END RECC SKU DISPLAY --></center>
+                </td>
+            </tr></table></td>
+     <td valign=3D"top" width=3D"5"></td>
+     <td valign=3D"top" height=3D"250" width=3D"140"><style type=3D"text/cs=
+s">
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #c00 !important;
+}
+@media only screen and (max-width:600px) {
+  table[class=3D"body"] img {
+    height: auto !important; width: auto !important;
+  }
+  table[class=3D"body"] center {
+    min-width: 0em !important;
+  }
+  table[class=3D"body"] .container {
+    width: 95% !important;
+  }
+  table[class=3D"body"] .row {
+    display: block !important; width: 100% !important;
+  }
+  table[class=3D"body"] .wrapper {
+    display: block !important; padding-right: 0em !important;
+  }
+  table[class=3D"body"] .columns {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] .column {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] table.column td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] td.expander {
+    width: 1px !important;
+  }
+  table[class=3D"body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class=3D"body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class=3D"body"] .footer-image {
+    height: auto !important; width: 70% !important;
+  }
+}
+</style>
+=09=09
+        <table class=3D"body" style=3D"border-collapse: collapse; border-sp=
+acing: 0em; text-align: left; vertical-align: top; height: 100%; width: 100=
+%; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;"><t=
+r style=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"l=
+eft"><td align=3D"center" class=3D"center" valign=3D"top" style=3D"-moz-hyp=
+hens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; hy=
+phens: auto; word-break: break-word; text-align: center; vertical-align: to=
+p; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;">
+                    <center style=3D"min-width: 100%; width: 100%;">
+                        <!-- BEGIN RECC SKU DISPLAY -->
+                        <table class=3D"columns" style=3D"border-collapse: =
+collapse; border-spacing: 0em; text-align: left; vertical-align: top; margi=
+n: 0em auto; padding: 0em;"><tr style=3D"text-align: left; vertical-align: =
+top; padding: 0em;" align=3D"left"><td style=3D"-moz-hyphens: auto; -webkit=
+-hyphens: auto; border-collapse: collapse !important; hyphens: auto; word-b=
+reak: break-word; text-align: left; vertical-align: top; color: #222; font-=
+family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height:=
+ 13px; font-size: 12px; margin: 0em; padding: 0px;" align=3D"left" valign=
+=3D"top">
+=09=09=09=09=09=09=09=09=09<table style=3D"border-collapse: collapse; borde=
+r-spacing: 0em; text-align: left; vertical-align: top; padding: 0em;"><tr s=
+tyle=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"left=
+"><td style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: =
+collapse !important; hyphens: auto; word-break: break-word; text-align: lef=
+t; vertical-align: top; color: #222; font-family: 'Helvetica', 'Arial', san=
+s-serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0=
+em; padding: 0px;" align=3D"left" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Stripe-Y=
+arn-Dye-Round-Neck-T-Shirt-882895.html/?wt_em=3Did.Email.Campaign.ID_P21OM_=
+M_ID.15073015.rec_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampai=
+gn&utm_medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Dr=
+ec_sku&toApp=3D1" target=3D"_blank" title=3D"Get it now" style=3D"color: #2=
+ba6cb; text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img alt=3D"Stripe Yarn Dye Round Ne=
+ck T-Shirt" border=3D"1" height=3D"200" width=3D"135" style=3D"height: 200p=
+x; width: 135px; -ms-interpolation-mode: bicubic; clear: both; display: blo=
+ck; float: left; max-width: 100%; outline: none; text-decoration: none; bor=
+der: none;" src=3D"https://zstaticid01-a.akamaihd.net/p/ocean-line-5427-598=
+288-1.jpg" title=3D"Stripe Yarn Dye Round Neck T-Shirt" vspace=3D"0" align=
+=3D"left" /></a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" s=
+tyle=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collaps=
+e !important; hyphens: auto; word-break: break-word; text-align: center; ve=
+rtical-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-ser=
+if; font-weight: normal; line-height: 13px; font-size: 10px; vertical-paddi=
+ng: 0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<b color=3D"#000000">
+=09=09=09=09=09=09=09=09=09=09=09=09=09OCEAN LINE=20
+=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<font color=3D"#323232">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Stripe Yarn Dye Round Neck T-Shirt=
+=20
+=09=09=09=09=09=09=09=09=09=09=09=09</font>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09RP
+=09=09=09=09=09=09=09=09=09=09=09=09 199900
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-shopnow-pane=
+l" style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: col=
+lapse !important; hyphens: auto; word-break: break-word; text-align: center=
+; vertical-align: top; color: #666666; font-family: 'Helvetica', 'Arial', s=
+ans-serif; font-weight: normal; line-height: 13px; font-size: 11px; margin:=
+ 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Stripe-Y=
+arn-Dye-Round-Neck-T-Shirt-882895.html/?wt_em=3Did.Email.Campaign.ID_P21OM_=
+M_ID.15073015.rec_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampai=
+gn&utm_medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Dr=
+ec_sku" style=3D"color: #000000; text-decoration: none;" target=3D"_blank">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09SHOP NOW &gt;
+=09=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr></table></td>
+=09=09=09=09=09=09=09=09<td class=3D"expander" style=3D"-moz-hyphens: auto;=
+ -webkit-hyphens: auto; border-collapse: collapse !important; hyphens: auto=
+; word-break: break-word; text-align: left; vertical-align: top; visibility=
+: hidden; width: 0px; color: #222; font-family: 'Helvetica', 'Arial', sans-=
+serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0em=
+; padding: 0em;" align=3D"left" valign=3D"top"></td>
+=09=09=09=09=09=09=09</tr></table><!-- END RECC SKU DISPLAY --></center>
+                </td>
+            </tr></table></td>
+     <td valign=3D"top" width=3D"5"></td>
+     <td valign=3D"top" height=3D"250" width=3D"140"><style type=3D"text/cs=
+s">
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #c00 !important;
+}
+@media only screen and (max-width:600px) {
+  table[class=3D"body"] img {
+    height: auto !important; width: auto !important;
+  }
+  table[class=3D"body"] center {
+    min-width: 0em !important;
+  }
+  table[class=3D"body"] .container {
+    width: 95% !important;
+  }
+  table[class=3D"body"] .row {
+    display: block !important; width: 100% !important;
+  }
+  table[class=3D"body"] .wrapper {
+    display: block !important; padding-right: 0em !important;
+  }
+  table[class=3D"body"] .columns {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] .column {
+    display: block !important; float: none !important; padding-left: 0px !i=
+mportant; padding-right: 0px !important; table-layout: fixed !important; wi=
+dth: 100% !important;
+  }
+  table[class=3D"body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] table.column td {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class=3D"body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class=3D"body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class=3D"body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class=3D"body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class=3D"body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class=3D"body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class=3D"body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class=3D"body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class=3D"body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class=3D"body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class=3D"body"] td.expander {
+    width: 1px !important;
+  }
+  table[class=3D"body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class=3D"body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class=3D"body"] .footer-image {
+    height: auto !important; width: 70% !important;
+  }
+}
+</style>
+=09=09
+        <table class=3D"body" style=3D"border-collapse: collapse; border-sp=
+acing: 0em; text-align: left; vertical-align: top; height: 100%; width: 100=
+%; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;"><t=
+r style=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"l=
+eft"><td align=3D"center" class=3D"center" valign=3D"top" style=3D"-moz-hyp=
+hens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; hy=
+phens: auto; word-break: break-word; text-align: center; vertical-align: to=
+p; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:=
+ normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0em;">
+                    <center style=3D"min-width: 100%; width: 100%;">
+                        <!-- BEGIN RECC SKU DISPLAY -->
+                        <table class=3D"columns" style=3D"border-collapse: =
+collapse; border-spacing: 0em; text-align: left; vertical-align: top; margi=
+n: 0em auto; padding: 0em;"><tr style=3D"text-align: left; vertical-align: =
+top; padding: 0em;" align=3D"left"><td style=3D"-moz-hyphens: auto; -webkit=
+-hyphens: auto; border-collapse: collapse !important; hyphens: auto; word-b=
+reak: break-word; text-align: left; vertical-align: top; color: #222; font-=
+family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height:=
+ 13px; font-size: 12px; margin: 0em; padding: 0px;" align=3D"left" valign=
+=3D"top">
+=09=09=09=09=09=09=09=09=09<table style=3D"border-collapse: collapse; borde=
+r-spacing: 0em; text-align: left; vertical-align: top; padding: 0em;"><tr s=
+tyle=3D"text-align: left; vertical-align: top; padding: 0em;" align=3D"left=
+"><td style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: =
+collapse !important; hyphens: auto; word-break: break-word; text-align: lef=
+t; vertical-align: top; color: #222; font-family: 'Helvetica', 'Arial', san=
+s-serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0=
+em; padding: 0px;" align=3D"left" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Crows-De=
+nim---Jacket-Gergo-1177345.html/?wt_em=3Did.Email.Campaign.ID_P21OM_M_ID.15=
+073015.rec_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampaign&utm_=
+medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Drec_sku&=
+toApp=3D1" target=3D"_blank" title=3D"Get it now" style=3D"color: #2ba6cb; =
+text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img alt=3D"Crows Denim - Jacket Ger=
+go" border=3D"1" height=3D"200" width=3D"135" style=3D"height: 200px; width=
+: 135px; -ms-interpolation-mode: bicubic; clear: both; display: block; floa=
+t: left; max-width: 100%; outline: none; text-decoration: none; border: non=
+e;" src=3D"https://zstaticid01-a.akamaihd.net/p/crows-denim-1174-5437711-1.=
+jpg" title=3D"Crows Denim - Jacket Gergo" vspace=3D"0" align=3D"left" /></a=
+>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" s=
+tyle=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collaps=
+e !important; hyphens: auto; word-break: break-word; text-align: center; ve=
+rtical-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-ser=
+if; font-weight: normal; line-height: 13px; font-size: 10px; vertical-paddi=
+ng: 0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<b color=3D"#000000">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Crows Denim=20
+=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<font color=3D"#323232">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Crows Denim - Jacket Gergo=20
+=09=09=09=09=09=09=09=09=09=09=09=09</font>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td class=3D"rec-sku-panel" style=
+=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !i=
+mportant; hyphens: auto; word-break: break-word; text-align: center; vertic=
+al-align: top; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; =
+font-weight: normal; line-height: 13px; font-size: 10px; vertical-padding: =
+0; margin: 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09RP
+=09=09=09=09=09=09=09=09=09=09=09=09 660000
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr><tr style=3D"text-align: left; vertical-=
+align: top; padding: 0em;" align=3D"left"><td height=3D"8px" style=3D"-moz-=
+hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important;=
+ hyphens: auto; word-break: break-word; text-align: left; vertical-align: t=
+op; color: #222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight=
+: normal; line-height: 13px; font-size: 12px; margin: 0em; padding: 0px;" a=
+lign=3D"left" valign=3D"top"></td></tr><tr style=3D"text-align: left; verti=
+cal-align: top; padding: 0em;" align=3D"left"><td class=3D"rec-shopnow-pane=
+l" style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: col=
+lapse !important; hyphens: auto; word-break: break-word; text-align: center=
+; vertical-align: top; color: #666666; font-family: 'Helvetica', 'Arial', s=
+ans-serif; font-weight: normal; line-height: 13px; font-size: 11px; margin:=
+ 0em; padding: 0px;" align=3D"center" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://zalora.co.id/Crows-De=
+nim---Jacket-Gergo-1177345.html/?wt_em=3Did.Email.Campaign.ID_P21OM_M_ID.15=
+073015.rec_sku_10314765416275863_RSYS_2017-08-16&utm_source=3DCampaign&utm_=
+medium=3DEmail&utm_campaign=3DID_P21OM_M_ID_15073015&utm_content=3Drec_sku"=
+ style=3D"color: #000000; text-decoration: none;" target=3D"_blank">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09SHOP NOW &gt;
+=09=09=09=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr></table></td>
+=09=09=09=09=09=09=09=09<td class=3D"expander" style=3D"-moz-hyphens: auto;=
+ -webkit-hyphens: auto; border-collapse: collapse !important; hyphens: auto=
+; word-break: break-word; text-align: left; vertical-align: top; visibility=
+: hidden; width: 0px; color: #222; font-family: 'Helvetica', 'Arial', sans-=
+serif; font-weight: normal; line-height: 13px; font-size: 12px; margin: 0em=
+; padding: 0em;" align=3D"left" valign=3D"top"></td>
+=09=09=09=09=09=09=09</tr></table><!-- END RECC SKU DISPLAY --></center>
+                </td>
+            </tr></table></td>
+    </tr>
+   </tbody>
+  </table>
+        </td>
+    </tr>
+</table>
+
+<!-- footer -->
+<table width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">
+=09<tr>
+=09    <td width=3D"600" align=3D"center">
+
+    =20
+
+    <table width=3D"600" cellpadding=3D"0" cellspacing "0" align=3D"center"=
+>
+        <tr>
+            <td>
+
+                <!-- body -->
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"300" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBWWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OmNV2Xm0vc6zKDz=
+uRHSskGXY071Jh3XiI9y44h-CVioA3nXMKOBdN5JIqCtk6GFauq_oCu_hXtXb5brX1aIkPXt4j_=
+ePPJamHLHdBu4-OC0-2m00nwn4DvZyf3gcNy51lz-CfsLlHTBeuSSfnfUlCj96nhpVWWDso4MQ0=
+ccIdRy4sDMyGTsTZ7ym0." style=3D"text-decoration:none;" target=3D"_blank"><i=
+mg src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Categor=
+y/cat_produkbaru.jpg" alt=3D"Produk Baru" width=3D"300" height=3D"120" bord=
+er=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"300" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBTRY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359Olv6bPHgdD3uUOh=
+YLQ1ezbkxjqZg8AOWMshFdVC81Su_PJWrNxjusi4V2Gep4ZhYY-N4VIlPzBO39NuMck4UDaKE28=
+pBgHi9AXbmTfCcMFJu22QRNH4_FEy4EZZIi9xgjfpa_xKX0QhFJyfwzTvsrBDnmUXPE_cZRuWbo=
+I0uaRxUYWArzK-nCcASkGAfUg." style=3D"text-decoration:none;" target=3D"_blan=
+k"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Ca=
+tegory/cat_pakaian.jpg" alt=3D"Pakaian" width=3D"300" height=3D"120" border=
+=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"300" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBTWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359Ol1l41CoRILRe4_=
+DpahGCSft4m0AyWq0Lg5bAgKm5CqiNYmNY4XawGsZJSeYfv-4fk3RBA5h3a8Wra3cAX50C2X18T=
+MkIgMwhO8M_i708ShRg0Og3pYzt9scOOkEOunXkC-wcBDWU8I4munPEi4V5EkY1P9MunSwKGXER=
+SMJOu1048WrVeordHvbNXzLM." style=3D"text-decoration:none;" target=3D"_blank=
+"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Cat=
+egory/cat_sepatu.jpg" alt=3D"Sepatu" width=3D"300" height=3D"120" border=3D=
+"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"300" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBUTY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359Om2WMvMuXANSznQ=
+8S_pi02BQk29aGw2T3zijhuF8iYir1E6-QfD8T08WgV5I7cjtSgoLtTC4NDx7j2tAIp_jgdwC6e=
+yXVakvcXQUS9Z0rHrgYq8azPnBf3ZtzVTWOSv8lOZ5gmWuWfCZjScxVLYchSfszCpCDL-UCXZ3r=
+eNd5IY15MVslTsZVfny8qpVOgw2g." style=3D"text-decoration:none;" target=3D"_b=
+lank"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep=
+/Category/cat_aksesoris.jpg" alt=3D"Aksesoris" width=3D"300" height=3D"120"=
+ border=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"600" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBYWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OmDEgV1K6AIyvnw=
+W6FYsIDM7XzVFtKCeiX6W87AfDO9B5Ittn5ldrrEBpx26t0PRITfspKhgvU0vXZ2ypXbCTBWMLG=
+fTFn0Uhe8cqqaqAhOTLZMQvQeypE4zoM5j8waWc4UOLstiUeH7WpXH5Uirl2P0_yMpR8bZ1Hmd3=
+b1O7PMErE1R1CE4vsp4EcurNO_." style=3D"text-decoration:none;" target=3D"_bla=
+nk"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/C=
+ategory/cat_mag.jpg" alt=3D"ZALORA Magazine" width=3D"600" height=3D"120" b=
+order=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+               =20
+                                 <table align=3D"center" width=3D"600" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"600" height=3D"100">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DYBASTAWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359Om9A2zMHExzdW06=
+MWDXcFCjM767EnS1bJ2tHtPD9ClFamTE3fxgha4J5fpM2SjcWBenccgva5cCtfmZcN_nUEr0kLQ=
+JqN4yMSzTQqHSlDJ8bj4xRz3505mOW-7alg1e9SlHYM5UKWV_U2GSPmE33nlzORc4q3E-lzpoEd=
+RZwmavi8vnLWLVuc5CjvCPh_7HEw." style=3D"text-decoration:none;" target=3D"_b=
+lank"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep=
+/Category/cat_hubungi.jpg" alt=3D"Hubungi Kami" width=3D"600" height=3D"100=
+" border=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"600" height=3D"50"><a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBYAY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWp=
+bplWEEVIsG359OleIYArBsT5thxbCE30Xld-_-HvMeq-qYNPc2KuaD4pgpXUcVPoWjxihXfJX2A=
+WnPNypLKqCuPd5jflnbdHJvPH9JJyACRN15NJQJmfi6tnWcNwg58glzvsEdFkBkp5ZGy981tq_c=
+xfoB7E4geDy6S-oUzuBHfwjADr4bMcWymuhN1Smc0RnHne2vOgIyKy." style=3D"text-deco=
+ration:none;" target=3D"_blank"><img src=3D"http://zcrmstatic-a.akamaihd.ne=
+t/crm/rg/NL_Footer_2016Sep/Category/sns_00.jpg" alt=3D"Blank" width=3D"150"=
+ height=3D"50" border=3D"0" style=3D"display:block;" /></a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBYAY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OleIYArBsT5thxb=
+CE30Xld-_-HvMeq-qYNPc2KuaD4pgpXUcVPoWjxihXfJX2AWnPNypLKqCuPd5jflnbdHJvPH9JJ=
+yACRN15NJQJmfi6tnWcNwg58glzvsEdFkBkp5ZGy981tq_cxfoB7E4geDy6S-oUzuBHfwjADr4b=
+McWymuhN1Smc0RnHne2vOgIyKy." style=3D"text-decoration:none;" target=3D"_bla=
+nk"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/C=
+ategory/sns_facebook.jpg" alt=3D"Facebook" width=3D"75" height=3D"50" borde=
+r=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBYCY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359On3feAB62iAsv1B=
+87WgFZKHsvqn6VuqELP5JVeHTIFW0LbuEK_PkjnvUsQmUtG5WVrib5TR8mAgMhNrroJiYaubNTc=
+NwFSMQZS0WyliKDWoMK3Mpeq58RMK1rIFBtEkZ-X2PxwUjk79vJxTdC1Q_MTCK8KXe4JndZqGr3=
+dcZSNNQR3Qk9rwBUOZcvLFJp0." style=3D"text-decoration:none;" target=3D"_blan=
+k"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Ca=
+tegory/sns_youtube.jpg" alt=3D"You Tube" width=3D"75" height=3D"50" border=
+=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBARY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OkpIkPv8fryS6Jg=
+ethmjcHLFxslmkebIYJvzraxahmNVpbB160CzPev0cfAM5nytqUZU7atTzu7pCL3wW4IzwIgSaV=
+vUm0SXYqCk96EidrDp3-dVFgLdFz9qwq17PD_SxvXiNWyEDsGQg43A-EPguxmjRaZ13GMYd8d9p=
+330Tam0b6O-CoOqUcwmjy-4jLSaw." style=3D"text-decoration:none;" target=3D"_b=
+lank"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep=
+/Category/sns_instagram.jpg" alt=3D"Instagram" width=3D"75" height=3D"50" b=
+order=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBATY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OnA_iZXMvZHimsh=
+Omle7jGiyVnSUmPDWl8jHkAhRUG5-1tGOnNEzDm0M1N7c5qSHwmDtk97e5smoHANbKr5GU5KgTT=
+6gW8ff-i499SrjPLM8hs6DBvzk0v8rie4ySrE0J9N6fh09LE_eARA_Ze8-VV81T8TvDDUY8QSK6=
+Jrnpve5_kuGSnDaXMVnhZEhis." style=3D"text-decoration:none;" target=3D"_blan=
+k"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Ca=
+tegory/sns_twitter.jpg" alt=3D"Twitter" width=3D"75" height=3D"50" border=
+=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50"><a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBATY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWp=
+bplWEEVIsG359OnA_iZXMvZHimshOmle7jGiyVnSUmPDWl8jHkAhRUG5-1tGOnNEzDm0M1N7c5q=
+SHwmDtk97e5smoHANbKr5GU5KgTT6gW8ff-i499SrjPLM8hs6DBvzk0v8rie4ySrE0J9N6fh09L=
+E_eARA_Ze8-VV81T8TvDDUY8QSK6Jrnpve5_kuGSnDaXMVnhZEhis." style=3D"text-decor=
+ation:none;" target=3D"_blank"><img src=3D"http://zcrmstatic-a.akamaihd.net=
+/crm/rg/NL_Footer_2016Sep/Category/sns_05.jpg" alt=3D"Blank" width=3D"150" =
+height=3D"50" border=3D"0" style=3D"display:block;" /></a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td width=3D"600" height=3D"50"><a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUBSSDBCY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWp=
+bplWEEVIsG359OngMCq1_sVFUgVM3AKX9C3eOHGV9GmEf7M6fRMcx8BvXuoG5v26UeR-fcs2QU9=
+OovZpKUxy_3Wz5OyakhXz3XTFgqUPH6eFYiZtoLRXxt29J44dlHczlFhbXNjm0-Nx4n3CX5XW1R=
+wn8lQbfcXP0YgpqvM8QT4h8Pr281EGKIs0o7rIRK3s-zhxEGK2Vg." style=3D"text-decora=
+tion:none;" target=3D"_blank"><img src=3D"http://zcrmstatic-a.akamaihd.net/=
+crm/rg/NL_Footer_2016Sep/Category/app_00.jpg
+" alt=3D"" width=3D"150" height=3D"50" border=3D"0" style=3D"display:block;=
+" /></a>
+                        </td>
+                        <td width=3D"600" height=3D"50"><a href=3D"https://=
+email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzg=
+mycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUBSSDBCY&_ei_=
+=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWp=
+bplWEEVIsG359OngMCq1_sVFUgVM3AKX9C3eOHGV9GmEf7M6fRMcx8BvXuoG5v26UeR-fcs2QU9=
+OovZpKUxy_3Wz5OyakhXz3XTFgqUPH6eFYiZtoLRXxt29J44dlHczlFhbXNjm0-Nx4n3CX5XW1R=
+wn8lQbfcXP0YgpqvM8QT4h8Pr281EGKIs0o7rIRK3s-zhxEGK2Vg." style=3D"text-decora=
+tion:none;" target=3D"_blank"><img src=3D"http://zcrmstatic-a.akamaihd.net/=
+crm/id/NL_Footer_2016Sep/Category/app.jpg
+" alt=3D"Download ZALORA App kami" width=3D"150" height=3D"50" border=3D"0"=
+ style=3D"display:block;" /></a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUBSSDBCY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OngMCq1_sVFUgVM=
+3AKX9C3eOHGV9GmEf7M6fRMcx8BvXuoG5v26UeR-fcs2QU9OovZpKUxy_3Wz5OyakhXz3XTFgqU=
+PH6eFYiZtoLRXxt29J44dlHczlFhbXNjm0-Nx4n3CX5XW1Rwn8lQbfcXP0YgpqvM8QT4h8Pr281=
+EGKIs0o7rIRK3s-zhxEGK2Vg." style=3D"text-decoration:none;" target=3D"_blank=
+"><img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Cat=
+egory/app2_ios.jpg
+" alt=3D"Download ZALORA App di App Store" width=3D"75" height=3D"50" borde=
+r=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50">
+                            <a href=3D"https://email.zalora.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbi=
+uMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUBSSDCTY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4w=
+EoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OktUnrogxZ_qe8I=
+RLnZHFQ3JtMlJzbgKKPeM1ittIH5msRBGak0NFer3OXgLzaXLAwMRO4cQuRpZhNxYE3Du5MBTQg=
+dYgRW6uhOoKXA45wu2pZiNetozAIu6dLFG-ZAbGLBkWqzWcYOSIkBactHEGRkPWNGauYSMe-zPM=
+QMzRBNB_xZLnkCnLIr8KXl." style=3D"text-decoration:none;" target=3D"_blank">=
+<img src=3D"http://zcrmstatic-a.akamaihd.net/crm/id/NL_Footer_2016Sep/Categ=
+ory/app2_android.jpg
+" alt=3D"Download ZALORA App di Play Store" width=3D"75" height=3D"50" bord=
+er=3D"0" style=3D"display:block;" />
+                            </a>
+                        </td>
+                        <td width=3D"600" height=3D"50"> <a href=3D"https:/=
+/email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kz=
+gmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUBSSDCTY&_ei=
+_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qW=
+pbplWEEVIsG359OktUnrogxZ_qe8IRLnZHFQ3JtMlJzbgKKPeM1ittIH5msRBGak0NFer3OXgLz=
+aXLAwMRO4cQuRpZhNxYE3Du5MBTQgdYgRW6uhOoKXA45wu2pZiNetozAIu6dLFG-ZAbGLBkWqzW=
+cYOSIkBactHEGRkPWNGauYSMe-zPMQMzRBNB_xZLnkCnLIr8KXl." style=3D"text-decorat=
+ion:none;" target=3D"_blank"><img src=3D"http://zcrmstatic-a.akamaihd.net/c=
+rm/rg/NL_Footer_2016Sep/Category/app_00.jpg
+" alt=3D"" width=3D"150" height=3D"50" border=3D"0" style=3D"display:block;=
+" /></a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align=3D"center" width=3D"600" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td height=3D"14" width=3D"600">
+                            <!-- space -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"color: #999; font-size: 10px; font-fam=
+ily: 'Helvetica', 'Arial', sans-serif; font-weight: normal;" align=3D"cente=
+r" border=3D"0" width=3D"600">
+                            Email ini ditujukan untuk itsmetenki@gmail.com<=
+br />
+                            Agar tak terlewat berita & penawaran terbaru, t=
+ambahkan <span style=3D"font-weight: bold; color: #777;">campaigns@e.zalora=
+.co.id</span> di kontak Anda.<br />
+                                                                Kami menjag=
+a informasi pribadi Anda, klik <a href=3D"https://email.zalora.com/pub/cc?_=
+ri_=3DX0Gzc2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFo=
+zbiuMgUazcm8fyoPlmNS0zbTzguRVXtpKX%3DUUUYBBWY&_ei_=3DEuMXdR5aZumFcPHB2lgUcj=
+C4wEoH2w4OCvuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359OlQpyAsw0wUR=
+qtsf7YMu5aLOWvEY4WrVfIeIuwMVhmvC2RrVcSJPa1OCeV2VfU42Yx7c-p7K78NmMdGcG0-EXL4=
+OqKBdYoyKkFXtsi66dW8B1PIIan9UeD6iVcmcXVLXIslhsV1Rtztxf5HSl0OgzunzrfQ3SzT_Ci=
+jhZzSDgs_iXw16UiEhyAHWRNQZCKpFdWKd9Q." style=3D"font-weight: bold; color: #=
+777; text-decoration: none;">disini</a> untuk melihat kebijakan privasi kam=
+i.<br /><br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Jika ingin berhenti berlang=
+ganan, klik <a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc2X%3DYQp=
+glLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm8fyoPlmN=
+S0zbTzguRVXtpKX%3DUUUYCTRY&_ei_=3DEhDEKnQteWTJDsxCMu2IrdXOw69tb5kS1ltGVL31z=
+P0W4vfGDC6cHXIYu6QqK_gzTRe2Cl4J5t8OoBGC_-0C0q71Kj2F7dE692PJC0NwWerCZiR6fvTO=
+YBtYh79i2dY8TEDb-APUZ9B1Z5Y6JynbRYlNXD6TQbVO7I-3FDdUvYjmCsJBq8WfauhfT22BAK9=
+FbHPLcYB2qg8-Si2ksFu4yETsMghHiYmn7Fh8LKu7488b5367n2ZTe87Z30_eoXyaQY6M2Zs63f=
+VHPbGPw_jxNPNXghqM0dxjrAmO6cHD7mjzG5zFSZqQ77-GJLC5vZQ." style=3D"font-weigh=
+t: bold; color: #777; text-decoration: none;">disini</a> (tapi Anda akan ke=
+tinggalan banyak informasi menarik). <br />Untuk menyesuaikan frekuensi pen=
+giriman email, klik <a href=3D"https://email.zalora.com/pub/cc?_ri_=3DX0Gzc=
+2X%3DYQpglLjHJlYQGhzbbnhJ9lWXgD0zbw6kzgmycMuKUDm1YgzdrgLDzbRpeFozbiuMgUazcm=
+8fyoPlmNS0zbTzguRVXtpKX%3DYBASTACY&_ei_=3DEuMXdR5aZumFcPHB2lgUcjC4wEoH2w4OC=
+vuC_V-wqXshTcH-aYG4IllK6IJYN8bUJ70_8qWpbplWEEVIsG359Ol0K3Y5TW-cfBh1q2cpW6jh=
+r8oSMVYPAjJbP_Qk4ZSsDeXEQsGMb_xWGzU0m8YU7XqoYdpKtuioqCsha3wtpMOge7TWQiq3p_v=
+Z0D39XEuI20ZX6P2WjpnGhMRy9SRrA2Jc8DSKM8vqJymLUscPl9l3AdDwr5tI1n_jCIJfl3fB1A=
+vrJL7gJs02hib9xRdsYPsecq3x-2bxIM." style=3D"font-weight: bold; color: #777;=
+ text-decoration: none;">disini</a>. <br/><br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=C2=A9 2017 ZALORA | PT. Fa=
+shion Eservices Indonesia.<br />
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Menara Bidakara I Lt.17, Jl=
+. Jendral Gatot Subroto Kav. 71-73 <br />
+                                                                Menteng Dal=
+am - Tebet, DKI Jakarta 12870, Indonesia
+                            </small>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+=09=09</td>
+    </tr>
+</table><br>
+
+
+
+
+</body>
+</html>
+

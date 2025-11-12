@@ -1,0 +1,575 @@
+﻿Delivered-To: hutamatr@gmail.com
+Received: by 10.200.33.214 with SMTP id 22csp474610qtz;
+        Thu, 24 Aug 2017 23:57:35 -0700 (PDT)
+X-Received: by 10.99.175.22 with SMTP id w22mr8986588pge.134.1503644255844;
+        Thu, 24 Aug 2017 23:57:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503644255; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xpcpn1ai6zxvT9kEdpRlL3C/9Bvn3Lkp+nwu4GGZU+/VzRFlNBKfh6c04eOQ8ShUEi
+         Di7J6Znqt6cG8P9hZXoim9Bz7vhK0UrTBmQU4YR5LegjKdSoWGKgjDyUTJG8hfKOv4dl
+         0BDz57abPdU/Ha+zs7TgWAWU1H6qvIdnlgH6vjM1dd0vRaoHNRPi5KfkxRxOYaCIaG9W
+         hRXLb1AzkbHq2Opz2AV9V3S7yCOxMrL1AivzKQ87rWJKPbrR+F0CwF+WJTbzF7ioenef
+         kqFUIFJS7lObTLDYJZ90P2EZRlqtYoCNRrjA6FL4ElWEmhGGwWgsBaCX0x5cxCWWBNio
+         /hbA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:mime-version:subject:reply-to:from:to:feedback-id
+         :list-unsubscribe:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=+i2aSVPa4rbpTyMaLCXsLFfsuBMJGyUKXZx0C1OgSII=;
+        b=VwTfKxvjKkzkTaFeBqFNFVVF/6IBDQoDraTEnLE6WFjvea/mlbAs8sQH5sE78kqt4B
+         VYD254L1Hsciwy+tD0/kuQ3YbQ+gceEFe0OndjP+bRuXpTFOgjgJGp3x4sVzrQc6+RGA
+         01f1b5cvogDmY/mxFcBLbYskJcRAXEgbd6wyFoOdnQknRyQW713KzHzuM5+Oo5dG0GRK
+         OS+UC/TTjmILRGzfWS256183JORWB5audSbhXgDrBT3yUAKvZmTch+2SCXip4V96EG6L
+         YJdgf2stxwOlk12EyARYUGHgiu4LdYlLyxOVLT0ZEVYRD9CCs5S8fNUVKRxA3yXlgEBw
+         p7rw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=G6uBCzTw;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=VvGQeoI9;
+       spf=pass (google.com: domain of 0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com designates 54.240.27.150 as permitted sender) smtp.mailfrom=0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com
+Return-Path: <0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com>
+Received: from a27-150.smtp-out.us-west-2.amazonses.com (a27-150.smtp-out.us-west-2.amazonses.com. [54.240.27.150])
+        by mx.google.com with ESMTPS id i67si4219531pgc.92.2017.08.24.23.57.35
+        for <hutamatr@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 24 Aug 2017 23:57:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com designates 54.240.27.150 as permitted sender) client-ip=54.240.27.150;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=G6uBCzTw;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=VvGQeoI9;
+       spf=pass (google.com: domain of 0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com designates 54.240.27.150 as permitted sender) smtp.mailfrom=0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=ds5tftndiq5w7mx3dskalrbgwofcp2ym; d=newsletter.tokopedia.com; t=1503644255; h=List-Unsubscribe:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=AUtO6xQbnxhKCYqXRNHSgR/LiCr64C4rWaOWatf2b9w=; b=G6uBCzTwVJvvuKeXjAZD12UgdnDPeQtpwDiwqSK44cUAr7Bk5qbo9KJj/jvgDsqG WudqHdabjjBRc+AYCVh/Yd2POX8niamATrtD1wBwv1z5as8sYeJR2/FcDb6M45LxhCu tYWNsofdtAFdCCUXgpTyL2MUbgc5q6SwEVzL9vCE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1503644255; h=List-Unsubscribe:Feedback-ID:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=AUtO6xQbnxhKCYqXRNHSgR/LiCr64C4rWaOWatf2b9w=; b=VvGQeoI9IdEbPSvYkOFeGT4gKNf1VlxSHw0v6d9y77Zq9nOksMP4qPFlVRx3EhIJ A6LrAm8F3dhBE8zI3GCuCmpwpTTFIaDNU5duBghyygJmwTXOQLADkdl+Z+pRl1tEAp7 F+fXHtv+cX1kqMsSjdTj6xqJpGyXhmypQRNLM6fE=
+List-Unsubscribe: <http://trk.newsletter.tokopedia.com/unsubscribed/nv/c/j5t7dLecT2Nei7GtiWpR/p/30045/key/aHV0YW1hdHJAZ21haWwuY29t/>
+Feedback-ID: 1.us-west-2.ZtpRxW5g2DKpajREozyjJ7uRVLSvjr1Y1lKw+NeHo9g=:AmazonSES
+To: hutamatr@gmail.com
+From: Tokopedia <exclusive@newsletter.tokopedia.com>
+Reply-To: exclusive@newsletter.tokopedia.com
+Subject: ✅ 1 Day Only - Electro Shocking Deal
+MIME-Version: 1.0
+Content-type: Multipart/Mixed; boundary="2044680182599fca5aceb804.03323885"
+Message-ID: <0101015e182e8156-b5666caa-2cc8-4183-ac9d-46d76c82c2c1-000000@us-west-2.amazonses.com>
+Date: Fri, 25 Aug 2017 06:57:34 +0000
+X-SES-Outgoing: 2017.08.25-54.240.27.150
+
+--2044680182599fca5aceb804.03323885
+Content-type: Multipart/Alternative; boundary="alt-2044680182599fca5aceb804.03323885"
+
+--alt-2044680182599fca5aceb804.03323885
+Content-Type: text/plain; charset="UTF-8"
+
+ 
+Produk Elektronik Cashback hingga Rp50.000.
+
+ [http://trk.newsletter.tokopedia.com/ec?kzrhTR/j5t7dLecT2Nei7GtiWpR] 
+
+HAI, TOPPERS!
+Promo seru Official Store Tokopedia
+[http://trk.newsletter.tokopedia.com/ec?pBVZEt/j5t7dLecT2Nei7GtiWpR] hadir lagi
+buat kamu. Khusus hari ini, temukan harga terbaik untuk beragam produk
+elektronik dan nikmati cashback hingga Rp50.000. Langsung gunakan kode di bawah
+ini sebelum promonya berakhir!
+
+ Kode Promo:
+ FLASHELEC 
+
+Berlaku hingga 25 Agustus 2017 
+ Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?57VCaE/j5t7dLecT2Nei7GtiWpR] 
+
+ [EVERCOSS ELEVATE Y2+ POWER DARK BLUE]
+[http://trk.newsletter.tokopedia.com/ec?BO60Fn/j5t7dLecT2Nei7GtiWpR] 
+
+EVERCOSS ELEVATE Y2+ POWER DARK BLUE 
+ Rp 1.699.000 
+ Rp 1.308.230 
+ 23% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?BO60Fn/j5t7dLecT2Nei7GtiWpR] 
+
+ [Anker PowerCore 10000, The Smallest, Lightest, Powerfull, High Speed]
+[http://trk.newsletter.tokopedia.com/ec?EfKm4q/j5t7dLecT2Nei7GtiWpR] 
+
+ Anker PowerCore 10000, The Smallest, Lightest, Powerfull, High Speed 
+ Rp 624.800 
+ Rp 393.624 
+ 37% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?EfKm4q/j5t7dLecT2Nei7GtiWpR] 
+
+ [FLEX2 High Performance Sports Earphone Sweatproof SOUL Black]
+[http://trk.newsletter.tokopedia.com/ec?0dzY3Y/j5t7dLecT2Nei7GtiWpR] 
+
+ FLEX2 High Performance Sports Earphone Sweatproof SOUL Black 
+ Rp 453.030 
+ Rp 299.000 
+ 34% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?0dzY3Y/j5t7dLecT2Nei7GtiWpR] 
+
+ [BB8 by Sphero]
+[http://trk.newsletter.tokopedia.com/ec?h3DDND/j5t7dLecT2Nei7GtiWpR] 
+
+ BB8 by Sphero 
+ Rp 2.014.517 
+ Rp 1.249.001 
+ 38% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?h3DDND/j5t7dLecT2Nei7GtiWpR] 
+
+ [Rexus Mouse Xierra X6]
+[http://trk.newsletter.tokopedia.com/ec?SfSMBB/j5t7dLecT2Nei7GtiWpR] 
+
+ Rexus Mouse Xierra X6 
+ Rp 119.000 
+ Rp 83.300 
+ 30% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?SfSMBB/j5t7dLecT2Nei7GtiWpR] 
+
+ [HP Notebook - 14-am125tx (1AD60PA)]
+[http://trk.newsletter.tokopedia.com/ec?o8ZCmo/j5t7dLecT2Nei7GtiWpR] 
+
+ HP Notebook - 14-am125tx (1AD60PA) 
+ Rp 6.399.000 
+ Rp 6.271.020 
+ 2% OFF Cek Sekarang
+[http://trk.newsletter.tokopedia.com/ec?o8ZCmo/j5t7dLecT2Nei7GtiWpR] 
+
+Promo Lainnya 
+
+ [http://trk.newsletter.tokopedia.com/ec?wb3lRa/j5t7dLecT2Nei7GtiWpR] 
+
+ [http://trk.newsletter.tokopedia.com/ec?RIljtE/j5t7dLecT2Nei7GtiWpR] 
+
+ [http://trk.newsletter.tokopedia.com/ec?a6CG0Y/j5t7dLecT2Nei7GtiWpR] 
+
+ Keunggulan Belanja di Official Store Tokopedia 
+
+Download App Tokopedia
+[Appstore] [http://trk.newsletter.tokopedia.com/ec?yILzay/j5t7dLecT2Nei7GtiWpR]
+[Playstore] [http://trk.newsletter.tokopedia.com/ec?2RDRGX/j5t7dLecT2Nei7GtiWpR]
+
+
+Ikuti Kami
+[Line] [http://trk.newsletter.tokopedia.com/ec?TkxGj5/j5t7dLecT2Nei7GtiWpR]
+[Google plus]
+[http://trk.newsletter.tokopedia.com/ec?GiPAKy/j5t7dLecT2Nei7GtiWpR] [Facebook]
+[http://trk.newsletter.tokopedia.com/ec?lANuyp/j5t7dLecT2Nei7GtiWpR] [Twitter]
+[http://trk.newsletter.tokopedia.com/ec?01GaKo/j5t7dLecT2Nei7GtiWpR] [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?lVlYA4/j5t7dLecT2Nei7GtiWpR] 
+
+ Hubungi Kami
+[http://trk.newsletter.tokopedia.com/ec?ALbOVY/j5t7dLecT2Nei7GtiWpR] 
+
+ Syarat & Ketentuan
+[http://trk.newsletter.tokopedia.com/ec?XpQxQJ/j5t7dLecT2Nei7GtiWpR] 
+
+ Kebijakan Privasi
+[http://trk.newsletter.tokopedia.com/ec?gAKSwS/j5t7dLecT2Nei7GtiWpR] 
+
+ Unsubscribe
+[http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/j5t7dLecT2Nei7GtiWpR/p/30045/key/aHV0YW1hdHJAZ21haWwuY29t/]
+
+ © 2009-2017, PT Tokopedia 
+
+--alt-2044680182599fca5aceb804.03323885
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title></title><style>
+		html, body { min-width:260px; min-height:100%; padding:0; Margin:0 auto; background:#fff; }
+		a img { border:none; }
+		.ReadMsgBody { width:100%; }
+		.ExternalClass { width:100%; }
+		.ExternalClass * { line-height:100%; }
+		table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+	</style><style type="text/css">
+		@media only screen and (max-width:480px) {
+			@-ms-viewport { width:320px; }
+			@viewport { width:320px; }
+		}
+	</style><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--></head><body style="background-color: #f8f8f8;">
+
+
+
+	<!--======================= SUB-SUBJECT =======================-->
+    <p style="font-size:0px">Produk Elektronik Cashback hingga Rp50.000.</p>
+    <!--======================= SUB-SUBJECT =======================-->
+
+
+
+	<!--[if mso]>
+	<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td>
+	<![endif]-->
+	<div style="Margin:0 auto; max-width:600px; min-width:260px; font:16px sans-serif;">
+		<div style="text-align:center; font-size:0;">
+		</div>
+		<!--======================= SEPERATOR =======================-->
+		<div style="height: 15px; background-color: #42B549;">	
+		</div>
+		<!--======================= END OF SEPERATOR =======================-->
+		<!--======================= HEADER BANNER =======================-->
+		<div>
+			<div>
+	        	<a href="http://trk.newsletter.tokopedia.com/ec?kzrhTR/j5t7dLecT2Nei7GtiWpR" target="_blank"><img style="display: block; width: 100%; height: auto; max-width: 600px;" src="https://d39sghb3udgxv0.cloudfront.net/30045/1503641808.jpg" alt="" width="600" border="0"></a>
+	        </div>
+	    </div>
+		<!--======================= HEADER BANNER END =======================-->
+		<!--======================= CONTENT 1 COLUMN =======================-->
+		<div style="background: #ffffff; padding-top: 20px;">
+			<div style="color:#505050;border-radius:4px; background:#fff; padding:0px 5% 10px 5%;"><b style="font-size: 150%;">Hai, Toppers!</b>
+                                
+            <p style="line-height:1.8em;">
+			Promo seru <a href="http://trk.newsletter.tokopedia.com/ec?pBVZEt/j5t7dLecT2Nei7GtiWpR" style="color: #42B549; text-decoration: none; font-weight: 700;" target="_blank">Official Store Tokopedia</a> hadir lagi buat kamu. Khusus hari ini, temukan harga terbaik untuk beragam produk elektronik dan nikmati cashback hingga Rp50.000. Langsung gunakan kode di bawah ini sebelum promonya berakhir!
+			</p>
+
+            </div>
+		</div>
+		<!--======================= CONTENT 1 COLUMN END =======================-->
+		<!--======================= KODE PROMO =======================-->
+        <div>
+            <div style="border-radius:4px;"> 
+                <div style="color:#505050;border-radius:4px; background:#ffffff; padding:0 3% 10px 3%"> 
+                    <div align="center"> 
+                        <div> 
+                            <div style="display:inline-block; font-weight:bold; padding:10px 30px 5px;font-size:26px;color:#f26039;"> 
+                                <span style="display:block; font-size:12px;color:#999;">Kode Promo:<br></span>
+                            FLASHELEC 
+                            </div>
+                            <div style="background-color: #f26039; height: 4px; width: 170px;">
+                            </div> 
+                            <div style="font-size:12px;color:#999;padding-top:8px">Berlaku hingga 25 Agustus 2017
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <!--======================= KODE PROMO END =======================-->
+         <!--======================= LARGE BUTTON =======================-->
+        <div align="center" style="padding: 15px 20px 20px; background-color: #ffffff;">
+            <a href="http://trk.newsletter.tokopedia.com/ec?57VCaE/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 10px 28px; background: #f26039; color: #FFFFFF; text-decoration: none; font-size: 24px; font-weight: bold;margin-bottom: 30px; border-radius: 4px;">
+            Cek Sekarang
+            </a>
+        </div>
+		<!--======================= LARGE BUTTON END =======================-->
+	
+		<!--======================= PRODUCT 3 COLUMN =======================-->
+		<div style="text-align:center; font-size:0; background:#ffffff; padding-bottom: 20px; padding-top: 20px;">
+			<!--[if mso]>
+			<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:33%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div>
+				<a href="http://trk.newsletter.tokopedia.com/ec?BO60Fn/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642240.png" alt="EVERCOSS ELEVATE Y2+ POWER DARK BLUE" width="200" style="display:block; width:90%; height:auto; max-width:240px; margin: 0 auto;padding-top: 30px;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	<br>EVERCOSS ELEVATE Y2+ POWER DARK BLUE
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 1.699.000</s>
+                    </div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 1.308.230
+                    </div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	23% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?BO60Fn/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="width:34%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div>
+				<a href="http://trk.newsletter.tokopedia.com/ec?EfKm4q/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642253.jpg" alt="Anker PowerCore 10000, The Smallest, Lightest, Powerfull, High Speed" width="200" style="display:block; width:90%; height:auto; max-width:240px; margin: 0 auto;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	Anker PowerCore 10000, The Smallest, Lightest, Powerfull, High Speed
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 624.800</s>
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 393.624
+					</div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	37% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?EfKm4q/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="width:33%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div style=": 10px;">
+				<a href="http://trk.newsletter.tokopedia.com/ec?0dzY3Y/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642266.png" alt="FLEX2 High Performance Sports Earphone Sweatproof SOUL Black" width="200" style="display:block; width:90%; height:auto; max-width:240px; margin: 0 auto;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	FLEX2 High Performance Sports Earphone Sweatproof SOUL Black
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 453.030</s>
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 299.000
+					</div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	34% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?0dzY3Y/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td></tr></table>
+			<![endif]-->
+		</div>
+		<!--======================= PRODUCT 3 COLUMN END =======================-->
+
+		<!--======================= PRODUCT 3 COLUMN =======================-->
+		<div style="text-align:center; font-size:0; background:#ffffff; padding-bottom: 20px; padding-top: 20px;">
+			<!--[if mso]>
+			<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:33%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div>
+				<a href="http://trk.newsletter.tokopedia.com/ec?h3DDND/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642276.jpg" alt="BB8 by Sphero" width="200" style="display:block; width:auto; height:180px; max-width:240px; margin: 0 auto;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	BB8 by Sphero
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 2.014.517</s>
+                    </div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 1.249.001
+                    </div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	38% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?h3DDND/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="width:34%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div>
+				<a href="http://trk.newsletter.tokopedia.com/ec?SfSMBB/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642286.jpg" alt="Rexus Mouse Xierra X6" width="200" style="display:block; width:90%; height:auto; max-width:240px; margin: 0 auto;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	Rexus Mouse Xierra X6
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 119.000</s>
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 83.300
+					</div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	30% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?SfSMBB/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="width:33%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#fff; vertical-align:top; width:33.3333%; min-width:160px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(33.3333%); width:calc(230400px - 48000%); min-width:calc(33.3333%);">
+				<div style=": 10px;">
+				<a href="http://trk.newsletter.tokopedia.com/ec?o8ZCmo/j5t7dLecT2Nei7GtiWpR" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642300.jpg" alt="HP Notebook - 14-am125tx (1AD60PA)" width="200" style="display:block; width:90%; height:auto; max-width:240px; margin: 0 auto;" border="0"></a>
+				</div>
+				<div>
+					<div style="height: auto; line-height: 1.5em;  font-size: 12px; width: 80%; margin: 4px auto;">
+                    	HP Notebook - 14-am125tx (1AD60PA)
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	<s>Rp 6.399.000</s>
+					</div>
+					<div style="padding: 1px 20px 5px; color: #161919; font-size: 14px; font-weight: bold;">
+                    	Rp 6.271.020
+					</div>
+					<div style="background:#f02222; font-weight: normal; border-radius: 3px; font-size: 11px; padding: 2%; color: #ffffff; width: 30%; display: block;margin: 5px auto;">
+                    	2% OFF
+					</div>
+					<a href="http://trk.newsletter.tokopedia.com/ec?o8ZCmo/j5t7dLecT2Nei7GtiWpR" target="_blank" style="display: inline-block; padding: 2px 4px; border: 2px solid #5e6a6a; border-radius: 3px; color: #5e6a6a; text-decoration: none; font-size: 13px; font-weight: bold; width: 110px; margin-bottom: 30px;">Cek Sekarang</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td></tr></table>
+			<![endif]-->
+		</div>
+		<!--======================= PRODUCT 3 COLUMN END =======================-->
+		
+		<!--======================= SEPERATOR OFS =======================-->
+		<div style="padding-bottom: 30px; background: #ffffff;">
+          <div style="display: block; padding-top: 10px; padding-bottom: 10px; font-weight: bold; font-size: 180%; border-top: 1px solid #000; border-bottom: 1px solid #000; text-align: center; line-height: 1.8em; margin-top: 10px; width: 95%; margin: 0 auto;">Promo Lainnya
+          </div>
+		</div>
+		<!--======================= SEPERATOR OFS END =======================-->
+	
+		<!--======================= ADDITIONAL BANNER =======================-->
+		<div style="background: #ffffff;">
+			<div>
+	        	<a href="http://trk.newsletter.tokopedia.com/ec?wb3lRa/j5t7dLecT2Nei7GtiWpR" target="_blank"><img style="display: block !important; line-height:0 !important; font-size:0 !important; width: 100%; height: auto; max-width: 600px;" src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642145.png" width="600" border="0"></a>
+	        </div>
+	    </div>
+		<!--======================= ADDITIONAL BANNER END =======================-->
+		<!--======================= ADDITIONAL BANNER =======================-->
+		<div style="background: #ffffff;padding-top: 10px;">
+			<div>
+	        	<a href="http://trk.newsletter.tokopedia.com/ec?RIljtE/j5t7dLecT2Nei7GtiWpR" target="_blank"><img style="display: block !important; line-height:0 !important; font-size:0 !important; width: 100%; height: auto; max-width: 600px;" src="https://d39sghb3udgxv0.cloudfront.net/30045/1503642161.jpg" width="600" border="0"></a>
+	        </div>
+	    </div>
+		<!--======================= ADDITIONAL BANNER END =======================-->
+		<!--======================= ADDITIONAL BANNER =======================-->
+		<div style="background: #ffffff;padding-top: 10px;">
+			<div>
+	        	<a href="http://trk.newsletter.tokopedia.com/ec?a6CG0Y/j5t7dLecT2Nei7GtiWpR" target="_blank"><img style="display: block !important; line-height:0 !important; font-size:0 !important; width: 100%; height: auto; max-width: 600px;" src="https://d39sghb3udgxv0.cloudfront.net/30045/1503317630.jpg" width="600" border="0"></a>
+	        </div>
+	    </div>
+		<!--======================= ADDITIONAL BANNER END =======================-->
+		<!--======================= BRANDING OFS USP =======================-->
+		
+		<div style="text-align:center; font-size:0; padding-top: 10px; background: #ffffff;">
+			<!--[if mso]>
+			<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="background: #ffffff;">
+				<div style="height: 2px; background-color: #42B549;">
+				</div>
+			</div>
+			<div style="line-height:1.8em; text-align: center; font-size: 12px; font-weight: 700; padding-bottom: 10px; background: #ffffff; padding-top: 3px; color: #262b2b;">
+			 Keunggulan Belanja di Official Store Tokopedia
+			</div>
+			
+			<div style="display:inline-block; font-size:16px; text-align:left; color:#231f20; background:#ffffff; vertical-align:top; width:25%; min-width:120px; max-width:50%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(25%); width:calc(230400px - 48000%); min-width:calc(25%);">
+				<img src="https://d39sghb3udgxv0.cloudfront.net/30045/1499846888.jpg" alt="" width="200" style="display:block; width:70%; height:auto; max-width:240px; margin: 0 auto;" border="0"></div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:left; color:#231f20; background:#ffffff; vertical-align:top; width:25%; min-width:120px; max-width:50%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(25%); width:calc(230400px - 48000%); min-width:calc(25%);">
+				<img src="https://d39sghb3udgxv0.cloudfront.net/30045/1499401502.jpg" alt="" width="200" style="display:block; width:70%; height:auto; max-width:240px; margin: 0 auto;" border="0"></div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:left; color:#231f20; background:#ffffff; vertical-align:top; width:25%; min-width:120px; max-width:50%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(25%); width:calc(230400px - 48000%); min-width:calc(25%);">
+				<img src="https://d39sghb3udgxv0.cloudfront.net/30045/1499401515.jpg" alt="" width="200" style="display:block; width:70%; height:auto; max-width:240px; margin: 0 auto;" border="0"></div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:left; color:#231f20; background:#ffffff; vertical-align:top; width:25%; min-width:120px; max-width:50%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(25%); width:calc(230400px - 48000%); min-width:calc(25%);">
+				<img src="https://d39sghb3udgxv0.cloudfront.net/30045/1499401528.jpg" alt="" width="200" style="display:block; width:70%; height:auto; max-width:240px; margin: 0 auto;" border="0"></div>
+			<!--[if mso]>
+			</td></tr></table>
+			<![endif]-->
+			<div style="background: #ffffff;">
+				<div style="height: 2px; background-color: #42B549; margin-top: 10px;">
+				</div>
+			</div>
+		</div>
+		<!--======================= BRANDING OFS USP =======================-->
+		<!--======================= GENERAL FOOTER =======================-->
+		<div style="text-align:center; font-size:0; background:#ffffff; padding-top: 15px; padding-bottom: 25px;">
+			<!--[if mso]>
+			<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="width:40%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:50%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+				<p align="center" style="font-size:10px;color:#161919; font-weight: bold;">Download App Tokopedia</p>
+				<a href="http://trk.newsletter.tokopedia.com/ec?yILzay/j5t7dLecT2Nei7GtiWpR"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233846.png" alt="Appstore" height="40"></a>
+				<a href="http://trk.newsletter.tokopedia.com/ec?2RDRGX/j5t7dLecT2Nei7GtiWpR"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233889.png" alt="Playstore" height="40"></a>
+			</div>
+			<!--[if mso]>
+			</td><td style="width:60%; background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:16px; text-align:center; color:#231f20; background:#ffffff; vertical-align:top; width:50%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+				<p align="center" style="font-size:10px;color:#161919;font-weight: bold;">Ikuti Kami</p>
+				<a href="http://trk.newsletter.tokopedia.com/ec?TkxGj5/j5t7dLecT2Nei7GtiWpR" target="_blank" style="padding: 0 5px;"><img src="https://d39sghb3udgxv0.cloudfront.net/300452017/05/1495112422.jpg" style="border-radius: 3px;" alt="Line" height="40"></a>
+				<a href="http://trk.newsletter.tokopedia.com/ec?GiPAKy/j5t7dLecT2Nei7GtiWpR" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt="Google plus" height="40" style="border-radius: 3px;"></a>
+				<a href="http://trk.newsletter.tokopedia.com/ec?lANuyp/j5t7dLecT2Nei7GtiWpR" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt="Facebook" height="40" style="border-radius: 3px;"></a>
+				<a href="http://trk.newsletter.tokopedia.com/ec?01GaKo/j5t7dLecT2Nei7GtiWpR" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt="Twitter" height="40" style="border-radius: 3px;"></a>
+				<a href="http://trk.newsletter.tokopedia.com/ec?lVlYA4/j5t7dLecT2Nei7GtiWpR" target="_blank" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt="Instagram" height="40" style="border-radius: 3px;"></a>
+			</div>
+			<!--[if mso]>
+			</td></tr></table>
+			<![endif]-->
+		</div>
+		<div style="height: 15px; background-color: #42B549;">	
+		</div>
+		<!--======================= GENERAL FOOTER END =======================-->
+	<!--======================= ANTI SPAM =======================-->
+	<div style="text-align:center; font-size:0; background-color: #f8f8f8; margin-top: 20px;">
+			<!--[if mso]>
+			<table border="0" cellpadding="0" cellspacing="0" width="800" align="center" bgcolor="#ffffff" style="width:800px;"><tr><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:17.5%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(17.5%); width:calc(230400px - 48000%); min-width:calc(17.5%);">
+				<div style="padding: 5px 0;">
+					<a href="http://trk.newsletter.tokopedia.com/ec?ALbOVY/j5t7dLecT2Nei7GtiWpR" target="_blank" style="text-decoration: none; color: #2fbe38;">Hubungi Kami</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:22%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(22%); width:calc(230400px - 48000%); min-width:calc(22%);">
+				<div style="padding: 5px 0;">
+					<a href="http://trk.newsletter.tokopedia.com/ec?XpQxQJ/j5t7dLecT2Nei7GtiWpR" target="_blank" style="text-decoration: none; color: #2fbe38;">Syarat &amp; Ketentuan</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:22%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(22%); width:calc(230400px - 48000%); min-width:calc(22%);">
+				<div style="padding: 5px 0;">
+					<a href="http://trk.newsletter.tokopedia.com/ec?gAKSwS/j5t7dLecT2Nei7GtiWpR" target="_blank" style="text-decoration: none; color: #2fbe38;">Kebijakan Privasi</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td><td style="background:#ffffff;">
+			<![endif]-->
+			<div style="display:inline-block; font-size:14px; text-align:center; background:#f8f8f8; vertical-align:top; width:17.5%; min-width:120px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(17.5%); width:calc(230400px - 48000%); min-width:calc(17.5%);">
+				<div style="padding: 5px 0;">
+					<a href="http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/j5t7dLecT2Nei7GtiWpR/p/30045/key/aHV0YW1hdHJAZ21haWwuY29t/" style="text-decoration: none; color: #2fbe38;">Unsubscribe</a>
+				</div>
+			</div>
+			<!--[if mso]>
+			</td></tr></table>
+			<![endif]-->
+		</div>
+		<div style="font-size:13px; color: #999999; padding: 20px;" align="center">
+			&copy; 2009-2017, PT Tokopedia
+		</div>
+	<!--======================= ANTI SPAM END =======================-->
+	</div>
+	<!--[if mso]>
+	</td></tr></table>
+	<![endif]-->
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img alt="" src="http://trk.newsletter.tokopedia.com/o/nv/c/j5t7dLecT2Nei7GtiWpR.gif"></body></html>
+
+
+--alt-2044680182599fca5aceb804.03323885--
+--2044680182599fca5aceb804.03323885--

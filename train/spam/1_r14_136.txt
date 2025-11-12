@@ -1,0 +1,582 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 24 Aug 2017 09:18:54 +0000 
+Return-Path: <imamdwiputrar@gmail.com>
+Received-SPF: pass (domain of gmail.com designates 74.125.82.47 as permitted sender)
+X-YMailISG: RHAf1cAWLDuNe7I7okqaKrf5VfpnQCyRdanzrhO3RcxIrx9A
+ JG8B1ksMTp9TSgVdugOPfpzMORz7iDB1PcURmr8Wpm18z3LGbjx21iF9Rl5g
+ I1d94X_F9613pXNhwdSowktbqXnMZPoWsZ8SuNoX0uXYW8zO6czgAyXWcEm4
+ 9gWKBZeMY9FdaQxkhEjzIv_AyE56dDFx8tRtXH1.IRIG2yvWvVHFNyt9D1f0
+ LS0fEn9H_YRcv0zhU5LMjWjreb6TEVpB9hVHOZNdDcD6TRm1AcZgkSNovvVP
+ WPew7T3lbW5J5IZ5tUE3kWhF3dEBAvCJnPahZJRKQQrFhgIb6MtE.6p8ZmNe
+ D6m8Wxhk4U6qUn0yqFckju6wrXQ1EMLBmudp5iO.RI5Wff2v.3ap3lKKnabg
+ V0qa.W5aCM7IEZm8UyttuKQuYqZM780FFpguMbbTbzHsGSxKTtSyi7os_olJ
+ NKbrpAd.fz1pIpNsXkf.5UfDu2GFYYgFBwH76KHbBhXoJ1gFkUcv6mGrDdWr
+ y9R_OGjVZkfyn6uevaueiFOXHjMY5tQBH94YxQWo8k5XWBBCaeT5Qvsr1q7d
+ ANKIMJDtgio1U6cYH6f.7zEohR3DeRiLNrTMjfL0rmPRbvXpHIAkziroOOP7
+ KfOSkTXwsFmiFBEikndI.fppKe3jAffmUydEwl2E4QJ4cCsewPqLDxFPB9ws
+ POP4pWqp8x8DSdVgQq1Pf39huP0e9bWAphIZU5jmV1RRcY71k8Cn65EPvU2r
+ KdBjdZqCEzfUQXMNZVRCmtUkUdLbLqwrsQ_J6I4AWF8qqhqQ86HrcV_uAQlM
+ 0aVUZp2fsx74sqAmxYlRwrjgMOxzlEMjyHIao_GUwYJ_xLTIBqLmhCfQAipV
+ K7AEPBGH9TSR7r5nSAKTYzVHF_ux71T1sKCBepmpEiYj55Zjy6N3O4IRGUNS
+ oBtVMJ9aYPZh7_dOUPfX23cJUq2SupXvDCVXOoTugYAXwHVMqJE3rPxwZL.c
+ Q3dqX7OH8pjKst38pyEghKstOxrCkvyqsx30E405s4WWTQPkJ7Pxfe_hSOcs
+ J5U58bxApVwynd3RbzFCkETBzRdzLVWBlUlEHmNobmcPWpqHQsynHmSO4V5_
+ _kiTuvvJSTHaOK0eI5FSDd2JiYT2fJhq2AK5Wa9ttuMmQzOD6X4165sGS9hx
+ .X.fkXu553e1CLJKscFje76H.QfDMpruUPYQLSLXENUVQ.AUhoo.WeaobqCW
+ ZG.FHFzt0gDNKqTnx59.aahbsiw.alE6PpwbzoCG6eGDlLvG93t_lWTU39_2
+ ZdmRi73XbjqJXlc.8_wtzckhWYeCx9KtFiXomkLQs8HW1F.wMEnMOqLwQuTO
+ YooHgeR6Svdv_4CXxp4UdzEH_qq5BreqGTaCr88zlD40tJJJfXFUVGpzzvKx
+ QJ4p.xXU
+X-Originating-IP: [74.125.82.47]
+Authentication-Results: mta1584.mail.ne1.yahoo.com  from=gmail.com; domainkeys=neutral (no sig);  from=gmail.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail-wm0-f47.google.com) (74.125.82.47)
+  by mta1584.mail.ne1.yahoo.com with SMTPS; Thu, 24 Aug 2017 09:18:54 +0000
+Received: by mail-wm0-f47.google.com with SMTP id x128so467341wmg.1
+        for <Yustinus_vernanda@yahoo.com>; Thu, 24 Aug 2017 02:18:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=qUQKv/TWXRukb0X4IooXw+cEvlgeaeCJLZkeuagjtpc=;
+        b=o86MZZTfq923bFuZrasGnm8iVCxkKex7mRStfyW9o/pbIfow55FYQ1qal1fgsgvTwQ
+         PoEbcmpxSSzn6b7SQ9DR+stW4i/HT0Hs5fImOiwyZjpnmHj9nk5kjicvPtId4Ez0ea38
+         0MjLxXQTftCgQZP118OgMfT4XHUcc2bRPXAaDhbsa4qibXs4q6HPWg+dgTUp0fS4NBq8
+         uiL8HSc++DQQjeHlKvMOIg9iLUfkmiQeWgkvY4cjlhTpqnguDwrnbZFA+V3erEmNwkNT
+         PPT86KzwtS/HYQcOkWRAvt6YUwvUaNZiCj9mK+8vxe34BCHz7ronyP0e4W1Xr0jzl6W6
+         hI3g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=qUQKv/TWXRukb0X4IooXw+cEvlgeaeCJLZkeuagjtpc=;
+        b=M8G8Rc1kGCsmtU9efODr+0pT+R4vOJftL6Cb9velNwg8xP/tlAg1jgMxWxlevEH1oT
+         ip7fsDoWR9HPD1E6IfkK0MqmOpJ6DXdAU+W03RMDrOqQPVDLC1ruutiUoGDNy5zKjXeK
+         2P+p8M49hsioQfeYUT+MLNofIRr+NFE/sGcZI5bmscMSVPqkxzuep5mrR8LdO2x99L+z
+         JKem1wfooLKQPyn6GdcSirvGEZgIZGKoXi9udvscz6P7j3SkonVVGXmJMPcXvKATnylN
+         oB3NAZtAWuzDTUUNs3AnChQEP+ZxlqSKhDoStiAsHMnmmkl+WxqGdKGjLqi0EnLqHXHE
+         lanA==
+X-Gm-Message-State: AHYfb5jNhWgJPtG0LjkqctvInz1bnIfNsbeE2MBVpxH8R+pH0SMmVeCX
+	t5noJsXmyLv2UoyH1OUVNvXkoJSwLw==
+X-Received: by 10.28.9.72 with SMTP id 69mr3498712wmj.154.1503566333977; Thu,
+ 24 Aug 2017 02:18:53 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:18:53 -0700 (PDT)
+Received: by 10.28.206.72 with HTTP; Thu, 24 Aug 2017 02:18:53 -0700 (PDT)
+In-Reply-To: <E1dht0W-ukl0Tc-L1@ucs21-ucs-12.msgpanel.com>
+References: <E1dht0W-ukl0Tc-L1@ucs21-ucs-12.msgpanel.com>
+From: Imamdwiputra Risanti <imamdwiputrar@gmail.com>
+Date: Thu, 24 Aug 2017 16:18:53 +0700
+Message-ID: <CAAUY2884D6B3efZRP7VSOQBk=hROx6Ef9cjxLX2Wvwa2Bvb0oA@mail.gmail.com>
+Subject: Fwd: Mau Tiket Citilink Gratis?
+To: Yustinus_vernanda@yahoo.com
+Content-Type: multipart/alternative; boundary="001a1144424c3bab6d05577c514a"
+Content-Length: 30335
+
+--001a1144424c3bab6d05577c514a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ----------
+From: "Citilink" <citilinkmail@citilink-indonesia.com>
+Date: Aug 16, 2017 2:44 PM
+Subject: Mau Tiket Citilink Gratis?
+To: <imamdwiputrar@gmail.com>
+Cc:
+
+[image: Citilink Logo]
+*Dear Frequent Flyer Citilink,*
+
+Terima kasih atas kesetiaan Anda memilih terbang bersama Citilink.
+
+[image: Citilink Logo]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D65fqh9j4fqdmbpyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trcekkbyrbbkuxf6aa6nnnyrmw8znwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fsupergreen-garudamiles%252=
+F%253Fbulk_email_rid%253D174%2526utm_source%253DEDM_optin%2526utm_medium%25=
+3Demail_buttoncta%2526utm_campaign%253DSupergreengarudamiles>
+[image: Citilink Logo]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6ahnr7ft8iuk35yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trsiqbh8ithg6d56aa6nnnyrmw8znwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fsupergreen-garudamiles%252=
+F%253Fbulk_email_rid%253D174%2526utm_source%253DEDM_optin%2526utm_medium%25=
+3Demail_buttoncta%2526utm_campaign%253DSupergreengarudamiles>
+Daftar Sekarang dan Dapatkan 1000 Mileage Poin
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6xr18umjhmommtyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trxt49e775jc8ecntjch1cqm79p5nwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fmember.citilink.co.id%252F%253Fbulk_email_rid%253=
+D174%2526utm_source%253DEDM_optin%2526utm_medium%253Demail_register%2526utm=
+_campaign%253Dmembercitilink%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22=
+051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278%=
+2523%252Fregister>
+
+Citilink Trip
+[image: Meals]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6x7pjp9a6t8jyfyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57tr7jkg6r3z5huebmpnmjzd3q9gbunwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttp%253A%252F%252Ftrip.citilink.co.id%252Fid%252F%253Fbulk_email_rid=
+%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEma=
+ilRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+Pesan hotel
+jadi lebih praktis di Citilink Trip
+Meals
+[image: Meals]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D655wqmme34hxx8yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trzo6z6hfk75xnhamm3iicy6m4smnwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fmenu-catalog-service-on-bo=
+ard%253Fbulk_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e=
+22051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d27=
+8>
+Nikmati cita rasa Nusantara
+di udara bersama Citilink
+BPTV
+[image: BPTV]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D67kntkpsem11j8yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trj4i5f7r3sfmdoscun6ci65ub38nwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fcitilink-merchants%253Fbul=
+k_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%=
+2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+Gunakan Boarding Pass Kamu
+untuk mendapatkan potongan harga di hotel, Restaurant dan Spa favoritmu
+[image: call center]
+GET CONNECTED WITH US
+[image: facebook]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6mfjjfchc4zyzfyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trn39wdheahsqzfo4zym6chdue7znwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.facebook.com%252Fcitilink%253Fbulk_email_rid%=
+253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmai=
+lRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+[image:
+instagram]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6fgmtexctet1dxyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trw5wmz5aqaymt87nxgr1fcqxma8nwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fwww.instagram.com%252Fcitilink%252F%253Fbulk_emai=
+l_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bu=
+lkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+[image:
+twitter]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6nsp3hi89zai5pyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57tro5nfnbcg519716axzaspkrf395tmmzifad15rae&url=3Dhttps%2=
+53A%252F%252Ftwitter.com%252Fcitilink%253Fbulk_email_rid%253D174%2526contac=
+tId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5=
+e684ae7-459f-49af-9488-bd87a475d278>
+[image:
+youtube]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6f5cyu3356hkz9yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trosuci9x3yeiacagduuss3ka8i98ggz8m9zk1i4qf5isxg8zb8gpo&=
+url=3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fbulk_email_rid%253D=
+174%2526v%253Dqi0SKeXX5QY%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051=
+b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+[image:
+googlepost]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D63csiuxzi17a7iyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trjbp4ax6mmr18xtyjpakaka9fpu8ggz8m9zk1i4qf5isxg8zb8gpo&=
+url=3Dhttps%253A%252F%252Fplus.google.com%252F%252Bcitilink%253Fbulk_email_=
+rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulk=
+EmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+*PT. Citilink Indonesia*
+Menara Citicon, Lantai 16. J. S. Parman KAV.72, Slipi
+Jakarta Barat 11410
+GET OUR APP NOW
+[image: Apple Store]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6fderaujybpnq3yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trurs16msdhgyi5x5h994zp8yrtdnwy3pxqj3mdy335aeth9iwiuiy&=
+url=3Dhttps%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fcitilink%252F=
+id692792816%253Fbulk_email_rid%253D174%2526ls%253D1%2526mt%253D8%2526contac=
+tId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5=
+e684ae7-459f-49af-9488-bd87a475d278>
+[image:
+Play Store]
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6pdree7merdfmdyz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trsc5d78ju5atyut8xqn8fhdhuqd8ggz8m9zk1i4qf5isxg8zb8gpo&=
+url=3Dhttp%253A%252F%252Ft.news.citilink-indonesia.com%252Fr%252F%253Fbulk_=
+email_rid%253D174%2526id%253Dh7b36ce%252C5f3872%252C5f9671%2526contactId%25=
+3Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5e684ae=
+7-459f-49af-9488-bd87a475d278>
+www.citilink.co.id
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D61r9qeb6xrts78yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trsnrdro7onb588cwe3ungxzwgz58ggz8m9zk1i4qf5isxg8zb8gpo&=
+url=3Dhttp%253A%252F%252Ft.news.citilink-indonesia.com%252Fr%252F%253Fbulk_=
+email_rid%253D174%2526id%253Dh7b36ce%252C5f3872%252C5f9672%2526ac_cid%253DD=
+M269%2526ac_bid%253D8074958%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e220=
+51b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278>
+Unsubscribe
+<http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6eespy563maan5yz4emnf=
+1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx=
+6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7=
+p8qp785echqz9s845h57trpg57dthffdm3zbqpgfy4bymh6d8ggz8m9zk1i4qf5isxg8zb8gpo&=
+url=3Dhttp%253A%252F%252Ft.news.citilink-indonesia.com%252Fr%252F%253Fbulk_=
+email_rid%253D174%2526id%253Dh7b36ce%252C5f3872%252C5f9673%2526p1%253D%2525=
+40ILhROxpWebIkbanAyXgOag%25253D%25253D%253Fid%253Dh7b36ce%252C5f3872%252C5f=
+9673%2526p1%253D%2540ILhROxpWebIkbanAyXgOag%253D%253D%2526contactId%253Ddc6=
+f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459=
+f-49af-9488-bd87a475d278>
+
+If you don't want to receive it anymore, *unsubscribe*
+<https://cloud-service.bpmonline.com/unsubscribe?emailid=3Dcce2bb6c-0f49-49=
+e2-84cf-3dc93a9dc700&key=3DnYoSNp86pf&emailaddress=3Dimamdwiputrar%40gmail.=
+com&recipientid=3D50433&useDefaultUnsub=3DTrue>
+.
+
+--001a1144424c3bab6d05577c514a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><div class=3D"gmail_quote">---------- Forwarded mes=
+sage ----------<br>From: &quot;Citilink&quot; &lt;<a href=3D"mailto:citilin=
+kmail@citilink-indonesia.com">citilinkmail@citilink-indonesia.com</a>&gt;<b=
+r>Date: Aug 16, 2017 2:44 PM<br>Subject: Mau Tiket Citilink Gratis?<br>To: =
+ &lt;<a href=3D"mailto:imamdwiputrar@gmail.com">imamdwiputrar@gmail.com</a>=
+&gt;<br>Cc: <br><br type=3D"attribution"><div>
+
+<div style=3D"background-color:#f6f8f1;padding:10px">  <table align=3D"cent=
+er" bgcolor=3D"white" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"600">
+<tbody>
+<tr>
+<td align=3D"center">        <table cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" align=3D"center" bgcolor=3D"white" width=3D"100%"><tr>
+<td align=3D"center" style=3D"padding-top:20px"><img alt=3D"Citilink Logo" =
+height=3D"53" src=3D"https://farm5.staticflickr.com/4254/34497439284_4dc384=
+4160_z.jpg" width=3D"150" style=3D"border:0;display:block!important"></td> =
+           </tr></table>
+<table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" width=3D"90%"><tbo=
+dy><tr>
+<td>                <span style=3D"color:#696969"><span style=3D"font-famil=
+y:arial,sans-serif"><span style=3D"font-size:11.0pt"><strong>Dear Frequent =
+Flyer Citilink,</strong></span></span></span><br>                =C2=A0<br>=
+<span style=3D"color:#3e8544"><span style=3D"font-family:arial,sans-serif">=
+<span style=3D"font-size:11.0pt">Terima kasih atas kesetiaan Anda memilih t=
+erbang bersama Citilink.</span></span></span><br>                =C2=A0<br>
+</td>            </tr></tbody></table>
+</td>    </tr>
+<tr>
+<td align=3D"center">        <table cellpadding=3D"20" cellspacing=3D"0" bo=
+rder=3D"0" align=3D"center" bgcolor=3D"white" width=3D"100%">
+<tr>
+<td align=3D"center"><a href=3D"http://us11.besteml.com/ru/v5/te_link_track=
+er?hash=3D65fqh9j4fqdmbpyz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwp=
+qzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1o=
+yyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57trcekkbyrbbkuxf6aa6nnnyr=
+mw8znwy3pxqj3mdy335aeth9iwiuiy&amp;url=3Dhttps%253A%252F%252Fwww.citilink.c=
+o.id%252Fsupergreen-garudamiles%252F%253Fbulk_email_rid%253D174%2526utm_sou=
+rce%253DEDM_optin%2526utm_medium%253Demail_buttoncta%2526utm_campaign%253DS=
+upergreengarudamiles" target=3D"_blank"><img alt=3D"Citilink Logo" src=3D"h=
+ttps://farm5.staticflickr.com/4315/35779044421_12b26285bd_z.jpg" style=3D"b=
+order:0;display:block;background-color:grey"></a></td>            </tr>
+<tr>
+<td align=3D"center"><a href=3D"http://us11.besteml.com/ru/v5/te_link_track=
+er?hash=3D6ahnr7ft8iuk35yz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwp=
+qzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1o=
+yyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57trsiqbh8ithg6d56aa6nnnyr=
+mw8znwy3pxqj3mdy335aeth9iwiuiy&amp;url=3Dhttps%253A%252F%252Fwww.citilink.c=
+o.id%252Fsupergreen-garudamiles%252F%253Fbulk_email_rid%253D174%2526utm_sou=
+rce%253DEDM_optin%2526utm_medium%253Demail_buttoncta%2526utm_campaign%253DS=
+upergreengarudamiles" target=3D"_blank"><img alt=3D"Citilink Logo" src=3D"h=
+ttps://farm5.staticflickr.com/4324/36012105071_4720299e86_z.jpg" style=3D"b=
+order:0;display:block;background-color:grey"></a></td>            </tr>
+</table>
+</td>    </tr>
+<tr>
+<td align=3D"center">        <table border=3D"0" cellpadding=3D"10" cellspa=
+cing=3D"0" width=3D"90%"><tbody><tr>
+<td>              </td>            </tr></tbody></table>
+<table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" width=3D"90%"><tbo=
+dy>
+<tr>
+<td align=3D"center" style=3D"padding-left:20px;padding-bottom:20px"><span =
+style=3D"padding:8px;background:#009900;border-radius:5px;font-size:12.0pt"=
+><a href=3D"http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6xr18umjhm=
+ommtyz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x5=
+1e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r9=
+9mejbodgoh7p8qp785echqz9s845h57trxt49e775jc8ecntjch1cqm79p5nwy3pxqj3mdy335a=
+eth9iwiuiy&amp;url=3Dhttps%253A%252F%252Fmember.citilink.co.id%252F%253Fbul=
+k_email_rid%253D174%2526utm_source%253DEDM_optin%2526utm_medium%253Demail_r=
+egister%2526utm_campaign%253Dmembercitilink%2526contactId%253Ddc6f3446-014b=
+-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-948=
+8-bd87a475d278%2523%252Fregister" style=3D"color:#fff" target=3D"_blank">Da=
+ftar Sekarang dan Dapatkan 1000 Mileage Poin</a></span></td>            </t=
+r>
+<tr><td><br></td></tr>
+</tbody></table>
+</td>    </tr>
+<tr>
+<td align=3D"center">      <table border=3D"0" cellpadding=3D"20" cellspaci=
+ng=3D"0" width=3D"100%"><tbody><tr>
+<td style=3D"padding:10px">                <table width=3D"100%" cellpaddin=
+g=3D"10" cellspacing=3D"0" border=3D"0"><tr>
+<td width=3D"33.33%" valign=3D"top" style=3D"border-right:1px solid #e8e8e8=
+">                      <table width=3D"124" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"margin:auto">
+<tr>
+<td align=3D"center"><font style=3D"color:#0b8645;font-size:17px">Citilink =
+Trip</font></td>                        </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px"><a href=3D"h=
+ttp://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6x7pjp9a6t8jyfyz4emnf1y=
+6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z=
+4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8=
+qp785echqz9s845h57tr7jkg6r3z5huebmpnmjzd3q9gbunwy3pxqj3mdy335aeth9iwiuiy&am=
+p;url=3Dhttp%253A%252F%252Ftrip.citilink.co.id%252Fid%252F%253Fbulk_email_r=
+id%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkE=
+mailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" target=3D"_blank"=
+><img alt=3D"Meals" src=3D"http://t.news.citilink-indonesia.com/res/citilin=
+k/7136a048b973023fd5f51a9522e3c018.png" width=3D"75%" style=3D"border:0;dis=
+play:block!important"></a></td>                        </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px">
+<span style=3D"color:#009933">Pesan hotel</span><br><span style=3D"color:#0=
+00000">jadi lebih praktis di Citilink Trip</span>
+</td>                        </tr>
+</table>
+</td>                    <td width=3D"33.33%" valign=3D"top" style=3D"borde=
+r-right:1px solid #e8e8e8">                      <table width=3D"124" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"margin:auto">
+<tr>
+<td align=3D"center"><font style=3D"color:#0b8645;font-size:17px">Meals</fo=
+nt></td>                        </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px"><a href=3D"h=
+ttp://us11.besteml.com/ru/v5/te_link_tracker?hash=3D655wqmme34hxx8yz4emnf1y=
+6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z=
+4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8=
+qp785echqz9s845h57trzo6z6hfk75xnhamm3iicy6m4smnwy3pxqj3mdy335aeth9iwiuiy&am=
+p;url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fmenu-catalog-service-on-=
+board%253Fbulk_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-=
+3e22051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d=
+278" target=3D"_blank"><img alt=3D"Meals" src=3D"http://t.news.citilink-ind=
+onesia.com/res/citilink/b2b4166bfbd50d331dd869a74cbaa477.png" width=3D"65%"=
+ style=3D"border:0;display:block!important"></a></td>                      =
+  </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px">
+<span style=3D"color:#009933">Nikmati cita rasa Nusantara</span><br><span s=
+tyle=3D"color:#000000">di udara bersama Citilink</span>
+</td>                        </tr>
+</table>
+</td>                    <td width=3D"33.33%" valign=3D"top">              =
+        <table width=3D"124" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" style=3D"margin:auto">
+<tr>
+<td align=3D"center"><font style=3D"color:#0b8645;font-size:17px">BPTV</fon=
+t></td>                        </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px"><a href=3D"h=
+ttp://us11.besteml.com/ru/v5/te_link_tracker?hash=3D67kntkpsem11j8yz4emnf1y=
+6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z=
+4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8=
+qp785echqz9s845h57trj4i5f7r3sfmdoscun6ci65ub38nwy3pxqj3mdy335aeth9iwiuiy&am=
+p;url=3Dhttps%253A%252F%252Fwww.citilink.co.id%252Fcitilink-merchants%253Fb=
+ulk_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b5=
+9%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" target=
+=3D"_blank"><img alt=3D"BPTV" src=3D"http://t.news.citilink-indonesia.com/r=
+es/citilink/0b03c044a654faf34d2ace3053126d6f.png" width=3D"65%" style=3D"bo=
+rder:0;display:block!important"></a></td>                        </tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:15px;font-size:12px">
+<span style=3D"color:#009933">Gunakan Boarding Pass Kamu</span><br><span st=
+yle=3D"color:#000000">untuk mendapatkan potongan harga di hotel, Restaurant=
+ dan Spa favoritmu</span>
+</td>                        </tr>
+</table>
+</td>                  </tr></table>
+</td>            </tr></tbody></table>
+</td>    </tr>
+<tr>
+<td align=3D"center" bgcolor=3D"#E1DDDF" class=3D"m_-3997631010261962245foo=
+ter">        <table border=3D"0" cellpadding=3D"20" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr>
+<td valign=3D"middle">              <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td><img alt=3D"call center" height=3D"40" src=3D"http://t.news.citilink-in=
+donesia.com/res/citilink/9b8840e18cd00aa7dc7157509252e067.png" style=3D"bor=
+der:0;display:block!important" width=3D"145"></td>                  </tr></=
+tbody></table>
+</td>              <td valign=3D"top" width=3D"250">              <table al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody>
+<tr>
+<td style=3D"padding-bottom:5px"><span style=3D"color:#757576;font-family:h=
+el vetica neue,arial,Arial,sans-serif;font-size:10px;font-weight:bold">GET =
+CONNECTED WITH US</span></td>                  </tr>
+<tr>
+<td align=3D"left" style=3D"padding-bottom:5px">                    <table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr>
+<td><a href=3D"http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6mfjjfc=
+hc4zyzfyz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf=
+9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx=
+6r99mejbodgoh7p8qp785echqz9s845h57trn39wdheahsqzfo4zym6chdue7znwy3pxqj3mdy3=
+35aeth9iwiuiy&amp;url=3Dhttps%253A%252F%252Fwww.facebook.com%252Fcitilink%2=
+53Fbulk_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051=
+b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" st=
+yle=3D"text-decoration:none" target=3D"_blank"><img alt=3D"facebook" height=
+=3D"24" src=3D"http://t.news.citilink-indonesia.com/res/citilink/28e65bc2f0=
+af3ec8a08aba945563e0e9.png" style=3D"border:0;display:block!important" widt=
+h=3D"24"></a></td>                          <td><a href=3D"http://us11.best=
+eml.com/ru/v5/te_link_tracker?hash=3D6fgmtexctet1dxyz4emnf1y6bp8dpqmrmiwkum=
+j67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoi=
+oght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845=
+h57trw5wmz5aqaymt87nxgr1fcqxma8nwy3pxqj3mdy335aeth9iwiuiy&amp;url=3Dhttps%2=
+53A%252F%252Fwww.instagram.com%252Fcitilink%252F%253Fbulk_email_rid%253D174=
+%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipi=
+entId%253D5e684ae7-459f-49af-9488-bd87a475d278" style=3D"text-decoration:no=
+ne" target=3D"_blank"><img alt=3D"instagram" height=3D"24" src=3D"http://t.=
+news.citilink-indonesia.com/res/citilink/e6da700608dcc901f4b7700b25eb1beb.p=
+ng" style=3D"border:0;display:block!important" width=3D"24"></a></td>      =
+                    <td><a href=3D"http://us11.besteml.com/ru/v5/te_link_tr=
+acker?hash=3D6nsp3hi89zai5pyz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbg=
+hwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyx=
+c1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57tro5nfnbcg519716axzas=
+pkrf395tmmzifad15rae&amp;url=3Dhttps%253A%252F%252Ftwitter.com%252Fcitilink=
+%253Fbulk_email_rid%253D174%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e220=
+51b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" =
+style=3D"text-decoration:none" target=3D"_blank"><img alt=3D"twitter" heigh=
+t=3D"24" src=3D"http://t.news.citilink-indonesia.com/res/citilink/1529fa91c=
+d61fbb94355ca0611ee771b.png" style=3D"border:0;display:block!important" wid=
+th=3D"24"></a></td>                          <td><a href=3D"http://us11.bes=
+teml.com/ru/v5/te_link_tracker?hash=3D6f5cyu3356hkz9yz4emnf1y6bp8dpqmrmiwku=
+mj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzo=
+ioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s84=
+5h57trosuci9x3yeiacagduuss3ka8i98ggz8m9zk1i4qf5isxg8zb8gpo&amp;url=3Dhttps%=
+253A%252F%252Fwww.youtube.com%252Fwatch%253Fbulk_email_rid%253D174%2526v%25=
+3Dqi0SKeXX5QY%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bu=
+lkEmailRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" style=3D"text-=
+decoration:none" target=3D"_blank"><img alt=3D"youtube" height=3D"24" src=
+=3D"http://t.news.citilink-indonesia.com/res/citilink/d49fc8aebae55d8569f46=
+f752752ae32.png" style=3D"border:0;display:block!important" width=3D"24"></=
+a></td>                          <td><a href=3D"http://us11.besteml.com/ru/=
+v5/te_link_tracker?hash=3D63csiuxzi17a7iyz4emnf1y6bp8dpqmrmiwkumj67qagnirsz=
+6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55=
+qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57trjbp4ax=
+6mmr18xtyjpakaka9fpu8ggz8m9zk1i4qf5isxg8zb8gpo&amp;url=3Dhttps%253A%252F%25=
+2Fplus.google.com%252F%252Bcitilink%253Fbulk_email_rid%253D174%2526contactI=
+d%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5e6=
+84ae7-459f-49af-9488-bd87a475d278" style=3D"text-decoration:none" target=3D=
+"_blank"><img alt=3D"googlepost" height=3D"24" src=3D"http://t.news.citilin=
+k-indonesia.com/res/citilink/ad8ac384886b1c8ecda36a4bf2803aed.png" style=3D=
+"border:0;display:block!important" width=3D"24"></a></td>                  =
+      </tr></tbody></table>
+</td>                  </tr>
+<tr>
+<td style=3D"line-height:9px"><span style=3D"color:#757576;font-family:Aria=
+l neue,arial,Arial,sans-serif;font-size:7px"><b>PT. Citilink Indonesia</b><=
+br>                    Menara Citicon, Lantai 16. J. S. Parman KAV.72, Slip=
+i<br>                    Jakarta Barat 11410 </span></td>                  =
+</tr>
+</tbody></table>
+</td>              <td valign=3D"top" width=3D"200">              <table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbody>
+<tr>
+<td style=3D"padding-bottom:5px"><span style=3D"color:#757576;font-family:A=
+rial neue,arial,Arial,sans-serif;font-size:10px;font-weight:bold">GET OUR A=
+PP NOW</span></td>                  </tr>
+<tr>
+<td>                    <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tbody><tr>
+<td><a href=3D"http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6fderau=
+jybpnq3yz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf=
+9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx=
+6r99mejbodgoh7p8qp785echqz9s845h57trurs16msdhgyi5x5h994zp8yrtdnwy3pxqj3mdy3=
+35aeth9iwiuiy&amp;url=3Dhttps%253A%252F%252Fitunes.apple.com%252Fus%252Fapp=
+%252Fcitilink%252Fid692792816%253Fbulk_email_rid%253D174%2526ls%253D1%2526m=
+t%253D8%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmai=
+lRecipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" style=3D"text-decora=
+tion:none" target=3D"_blank"><img alt=3D"Apple Store" border=3D"0" height=
+=3D"24" src=3D"http://t.news.citilink-indonesia.com/res/citilink/655ac93573=
+63f31d720ca84ec13383ca.png" style=3D"border:0;display:block!important" widt=
+h=3D"70"></a></td>                          <td><a href=3D"http://us11.best=
+eml.com/ru/v5/te_link_tracker?hash=3D6pdree7merdfmdyz4emnf1y6bp8dpqmrmiwkum=
+j67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoi=
+oght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845=
+h57trsc5d78ju5atyut8xqn8fhdhuqd8ggz8m9zk1i4qf5isxg8zb8gpo&amp;url=3Dhttp%25=
+3A%252F%252Ft.news.citilink-indonesia.com%252Fr%252F%253Fbulk_email_rid%253=
+D174%2526id%253Dh7b36ce%252C5f3872%252C5f9671%2526contactId%253Ddc6f3446-01=
+4b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%253D5e684ae7-459f-49af-9=
+488-bd87a475d278" target=3D"_blank"><img alt=3D"Play Store" border=3D"0" he=
+ight=3D"24" src=3D"http://t.news.citilink-indonesia.com/res/citilink/2e199f=
+7c706be4aa2e6f45fa286e6fe9.png" style=3D"border:0;display:block!important" =
+width=3D"70"></a></td>                        </tr></tbody></table>
+</td>                  </tr>
+<tr>
+<td><span style=3D"color:#757576;font-family:Arial neue,arial,Arial,sans-se=
+rif;font-size:7px;font-weight:light"><a href=3D"http://us11.besteml.com/ru/=
+v5/te_link_tracker?hash=3D61r9qeb6xrts78yz4emnf1y6bp8dpqmrmiwkumj67qagnirsz=
+6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55=
+qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57trsnrdro=
+7onb588cwe3ungxzwgz58ggz8m9zk1i4qf5isxg8zb8gpo&amp;url=3Dhttp%253A%252F%252=
+Ft.news.citilink-indonesia.com%252Fr%252F%253Fbulk_email_rid%253D174%2526id=
+%253Dh7b36ce%252C5f3872%252C5f9672%2526ac_cid%253DDM269%2526ac_bid%253D8074=
+958%2526contactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRec=
+ipientId%253D5e684ae7-459f-49af-9488-bd87a475d278" style=3D"color:#757576;f=
+ont-weight:bold;text-decoration:none" target=3D"_blank">www.citilink.co.id<=
+/a></span></td>                  </tr>
+</tbody></table>
+</td>            </tr></tbody></table>
+</td>      </tr>
+<tr>
+<td align=3D"center" bgcolor=3D"grey">        <table border=3D"0" cellpaddi=
+ng=3D"5" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+<td style=3D"padding-left:20px"><span style=3D"color:#fff;font-family:Arial=
+ neue,arial,Arial,sans-serif;font-size:10px;font-weight:bold"></span></td> =
+             <td style=3D"text-align:right;padding-right:20px"><span style=
+=3D"color:#fff;font-family:Arial neue,Arial,arial,sans-serif;font-size:8px"=
+><a href=3D"http://us11.besteml.com/ru/v5/te_link_tracker?hash=3D6eespy563m=
+aan5yz4emnf1y6bp8dpqmrmiwkumj67qagnirsz6qp3jaf3qfhbghwpqzpjiipm7uhsjjuqf9x5=
+1e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1of6ggoyxc1oyyq7yxb4q965oomcx6r9=
+9mejbodgoh7p8qp785echqz9s845h57trpg57dthffdm3zbqpgfy4bymh6d8ggz8m9zk1i4qf5i=
+sxg8zb8gpo&amp;url=3Dhttp%253A%252F%252Ft.news.citilink-indonesia.com%252Fr=
+%252F%253Fbulk_email_rid%253D174%2526id%253Dh7b36ce%252C5f3872%252C5f9673%2=
+526p1%253D%252540ILhROxpWebIkbanAyXgOag%25253D%25253D%253Fid%253Dh7b36ce%25=
+2C5f3872%252C5f9673%2526p1%253D%2540ILhROxpWebIkbanAyXgOag%253D%253D%2526co=
+ntactId%253Ddc6f3446-014b-4e42-88a5-3e22051b0b59%2526bulkEmailRecipientId%2=
+53D5e684ae7-459f-49af-9488-bd87a475d278" style=3D"TEXT-DECORATION:underline=
+;COLOR:#fff" target=3D"_blank">Unsubscribe</a> </span></td>            </tr=
+></tbody></table>
+</td>      </tr>
+</tbody>
+<td><img alt=3D"" height=3D"0" src=3D"http://t.news.citilink-indonesia.com/=
+r/?id=3Dh7b36ce,5f3872,1" width=3D"0">
+</td></table>
+</div>
+<p><span style=3D"color:rgb(102,102,102);font-family:verdana,geneva,sans-se=
+rif;font-size:11px">If you don&#39;t want to receive it anymore,=C2=A0</spa=
+n><a href=3D"https://cloud-service.bpmonline.com/unsubscribe?emailid=3Dcce2=
+bb6c-0f49-49e2-84cf-3dc93a9dc700&amp;key=3DnYoSNp86pf&amp;emailaddress=3Dim=
+amdwiputrar%40gmail.com&amp;recipientid=3D50433&amp;useDefaultUnsub=3DTrue"=
+ style=3D"font-family:verdana,geneva,sans-serif;font-size:11px;line-height:=
+16.7999992370605px" target=3D"_blank"><u><span style=3D"color:rgb(46,108,18=
+4)">unsubscribe</span></u></a><span style=3D"color:rgb(102,102,102);font-fa=
+mily:verdana,geneva,sans-serif;font-size:11px">.</span></p>
+<center><table><tr><td><img src=3D"http://us11.besteml.com/ru/v5/te_read_tr=
+acker/2420419?hash=3D6rtjks1f39mkc5oe46ett66y919dpqmrmiwkumj67qagnirsz6qp3j=
+af3qfhbghwpqzpjiipm7uhsjjuqf9x51e5tme6y8tx6z4myybuy9feqyzoioght7hdhd55qogm1=
+of6ggoyxc1oyyq7yxb4q965oomcx6r99mejbodgoh7p8qp785echqz9s845h57trum3skh8yzzs=
+6c3pj4p9axh5ehw" width=3D"1" height=3D"1" alt=3D"" title=3D"" border=3D"0">=
+</td></tr></table></center>
+</div></div>
+
+--001a1144424c3bab6d05577c514a--

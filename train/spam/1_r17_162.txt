@@ -1,0 +1,351 @@
+Delivered-To: kalindraad@gmail.com
+Received: by 10.182.26.75 with SMTP id j11csp816870obg;
+        Thu, 15 Jun 2017 06:12:18 -0700 (PDT)
+X-Received: by 10.99.173.75 with SMTP id y11mr5219215pgo.108.1497532338518;
+        Thu, 15 Jun 2017 06:12:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1497532338; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YijlcqxV8nfsFyR2EnLpjw5LbbP9paBWzQMN0741kM5VnapoDnqjIA9HA+4zMxe1uh
+         r2yFNHYwzuSu4F1GYA0eBb/cHyJlB7zP59Oqjf4dlkM0KZ4idAW+Nq5XanW4a7q4sETW
+         xrMS2QMoEK9brdXFg4Qk4N9yxcnjvGkCrr+TwwXh81Z/6s+s4OKJrp6tC0u25HlusK3b
+         r5o+oIC7U7eKkAIdaFkn3FCjYNqZIpwGDdhUr0I0BPRgC0tBbLk1gtITn6F28hWyLzYf
+         JeegXBR459v6eOuOKFLyXanJy42zv1ivfdPtsxArM2A56neekRx4kDEYVomfPIx/XeUF
+         /+uw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:reply-to:mime-version:list-unsubscribe:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=5RQw0jWCyL0E4IctShwY/ZnQc9DOTCeW8WGGlHfKc9k=;
+        b=Ut2E6PATVK44BuTFwewmGvqlCwOaiZx7rXMimTBE3rud78RMyK67Zvo37JVwvYW/X2
+         jr2uSnxpW1ILZwfhO3Cp5gbslkAEHSs+1M52PSuNBxZKVJhO04f92zHHtiqXQxAtJnU/
+         1LZ81Uku7qahkz4ZoJPxIKfrRSNRYj6jgx/jeIBY8gl1QbMDt1WneQOBsTHYnd8vm24N
+         J8snUOXZ6QKIZpfM3iHNTxK/OecDxR/h0emFGhOs+SVQ+jPpVFC1lDEtxTU60msEpUIJ
+         Uvx8qYLZf8sgATvlTFNXqaZ7fGYT72kAbm/tTtfz5WYqlEUMyklGLNxcPQKmk2jU7NMK
+         3+pg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com header.b=jvYykRpA;
+       dkim=pass header.i=@sendgrid.info header.b=kcI977+b;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+Return-Path: <bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com>
+Received: from o1.daily.kompasnewsletter.com ([167.89.59.192])
+        by mx.google.com with ESMTPS id k124si93224pgc.159.2017.06.15.06.12.18
+        for <kalindraad@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Jun 2017 06:12:18 -0700 (PDT)
+Received-SPF: neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) client-ip=167.89.59.192;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com header.b=jvYykRpA;
+       dkim=pass header.i=@sendgrid.info header.b=kcI977+b;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=kompasnewsletter.com; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to; s=s1; bh=aYwetEBKFJcRWFV1PsqInuS6yMU=; b=jvYykRpAO9GfXOKP57SMNBS qOq8OrDX2gIjca7n2RwTyRJCQLYLg+bgkT65+zxPR1UWPIkP/L9i/i+TEF+srEI1 dZ2ViWZi+0SlwfuS1bLTHsxbZeSi/DrDeNvtYyBkKw/MDHir9Sj8xtLvfWpuVhth CfR+uk/Icwo5Y21uQKpI=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to:x-feedback-id; s=smtpapi; bh=aYwetEBKFJcRWFV1PsqInuS6yMU=; b=kcI977+bk6qt1+KgXh /Li+6JXRlGAuomTFDCfvQlb3ymTNHLfKNY2KJi1sy3uJj8QAigcxb5SpfIgEBHlG cdNOnYFIQlCnH7VIN+Q7hC2NybYT6PEYTdcpCtWqoUoj2zE4ROLlS6IuMlaznH68 +9uwx0Q4TWqGrM9DELFT1GEzg=
+Received: by filter0337p1las1.sendgrid.net with SMTP id filter0337p1las1-15385-594287B1-15
+        2017-06-15 13:12:17.730211167 +0000 UTC
+Received: from MjE3MTkzOQ (unknown [13.76.246.68]) by ismtpd0019p1sin1.sendgrid.net (SG) with HTTP id M9v3M7F1SCum5lieP0iFxA for <kalindraad@gmail.com>; Thu, 15 Jun 2017 13:12:17.459 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=233d230e2e6831ca2f377286d744f36d7354b1c5db31d3bda93ccd912375
+Date: Thu, 15 Jun 2017 13:12:17 +0000
+From: Harian Kompas <kabar@kompasnewsletter.com>
+List-Unsubscribe: <http://print.kompasnewsletter.com/newsletter-signup-2/unsubscribe>
+Mime-Version: 1.0
+Reply-To: kabar@kompas.com
+Subject: [MEIKARTA] Yuk, Gabung ke Properti dengan Desain Terbaik di Indonesia Sekarang
+To: kalindraad@gmail.com
+X-Message-ID: <594286a70284f-2ae588929af78ff0fff6d03e7263c3cc-3092-090d8b960750e02a4f7474a15dd7f96b@print.kompasnewsletter.com>
+X-MyMail: 2ae588929af78ff0fff6d03e7263c3cc
+X-MyMail-Campaign: 3092
+X-MyMail-ID: 090d8b960750e02a4f7474a15dd7f96b
+Message-ID: <M9v3M7F1SCum5lieP0iFxA@ismtpd0019p1sin1.sendgrid.net>
+X-SG-EID: b0c/iCNHoRUZm7E9Be1FrbAkhLk3euimlBihWVhly9jgYZ1sN1hSuFU/Wi6+7QUq/UYlg11WgcTl9z hzV5QBCMTWSB5VgvVsGH8kqXIrGtaAcVQsuH8vXVZYAlI/0HRgKbKDyUHAn+Z1EJvOQe14Ij+Jq32C xeCb5qBmqV1if08dyj0VBebuWg902VoJvdafjzKOGquekM3aRBJY1DQUSHDUadcBTpsD5FP8kotLB0 Q=
+X-SG-ID: TbH8yVQD5/lqhH5C2dMcV+XSVrth6p2X0wXN47Yz4LYYD/PDhqLiFS3ylPMoZBJ6JZsqnPwXxwsikB 9T6iusF4+bEIhF43AcivK4p1Ff+qwZcC5PlrOOD0rRpLCki5ui1io1QruDpkz03ZHqZ4BPk0H9jr3C wblr+QWskZb5K8t7ninA187bIG95CD62sdaNx8oGm61UgJ4R+Ds03SeJaRhkmXmpGS01pCJpjLLgAI iAOL0cFDVzRPVH21Y3g5GN
+X-Feedback-ID: 2171939:Fib6XwN1VgiWthMJOTIzP0RDtml88dL7k8gvfhB7vJI=:cbRNKAwacia1ojr1OO0s06HSaoBU3BP5l/Oop23LHPQ=:SG
+
+--233d230e2e6831ca2f377286d744f36d7354b1c5db31d3bda93ccd912375
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkagTnP8EKGvbUMyYT5130whVyWclQbWOguz=
+4ewTrvbJlEJQAxRlE1kEBV0FP1gzLV6h-2FNxaamgMdBF1zweD1CyAhedqiiUcEh5VWElhShJbw=
+Y-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZ=
+TsI12FSGk1LiWCGZdYYr3pcUmXsn-2F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fhkf9UNRwteu=
+e1x9H9EMFxWYhuPzEXn1rwPveZpT65lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcurRYoUWvUc3=
+sBP7EQbXO63lkM-2BxAPSCgTHhCsxe-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmYgdqY324rALz0Q7=
+eEi9srJKF8iUI4zUjxDgi6i9-2BqcDIkkgUCjnG5zRHF2m-2FYFX3pZVE7zEq29lFWwp04NyAxp=
+VmBi6uWtC9EJfZEZS2B5JAz9uxHPyk4TLNgWvVvYGx-2BFMA1By8IZKvtEvEZJ99EueDQZTuhx4=
+Wg4UvYd08CvI6u-2BjQcr3e3OaV-2FKKLqcdYtYDQDK3LN4tn2XeG-2ByNvTw-3D-3D]
+
+ webversion [https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFi=
+wAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkagTnP8EKGvbUMyYT5130wh=
+VyWclQbWOguz4ewTrvbJlEJQAxRlE1kEBV0FP1gzLV6fvNhkvwk5FOoNdpI36O1W30Sri5NTVHV=
+oqgCsp0I08o0JLML09z2BKCyvneYx1YMa43AydDpvCaSv9b92ox8-2BevOaxSlhk9ifR-2F5GNL=
+q74U-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFc=
+lOZTsI12FSGk1LiWCGZdYYr3pcUmXsn-2F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fhkf9UNRw=
+teue1x9H9EMFxWYhuPzEXn1rwPveZpT65lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcurRYoUWv=
+Uc3sBP7EQbXO63lkM-2BxAPSCgTHhCsxe-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmhWi-2F0Rjitr=
+1l2-2FlOBzvaMIRqJfQJInJxtrFxwjEbiamP3JQwH5k-2FsZVvIBCpvwa1-2Bu-2FV2m4T1Lv9u=
+wxQhQWd3C6ZiPKVABfVVEbxMBnsrz5WxONd0xh1WL4JVgER1xh1NI9UdOXBhXIji1OkSEv1Kb8y=
+twwY26TtstKQgWVivWUNFbefWYXaWL2XjCHmQahpxvm4pK-2FUTlSD5d5f8l6O2w-3D-3D]=20
+
+=09=09[meikarta-1024x439px]
+
+Meikarta adalah pembangunan skala kota yang memiliki semua alasan untuk men=
+dulang sukses dengan lokasi strategis dan konsep kota modern yang dibangun =
+dengan standard intertasional.=C2=A0 Meikarta mencari
+tim sales kompeten dengan paket renumerasi terbaik yang pernah ada.
+
+ =09* Deputy General Manager=C2=A0 =C2=A0 Rp133.000.000,-
+ =09* Marketing Manager=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0 Rp66.500.000,-
+ =09* Sales Supervisor=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 Rp13.300.000,-
+ =09* Sales Executive=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 Rp5.000.000,-
+
+Siapkan CV Anda dan ikuti walk-in interview yang diselenggarakan pada tangg=
+al 16-18 Juni 2017 di:
+
+ =09* Gajah Mada Plaza pukul 10.00-20.00 WIB
+ =09* Plaza Semanggi pukul 10.00-20.00 WIB
+ =09* PX Pavillion, Puri Indah (hanya 16 & 17 Juni) pukul 10.00-20.00 WIB
+ =09* MaxxBox Lippo Cikarang pukul 10.00-20.00 WIB
+ =09* Hotel Darmawangsa pukul 10.00-20.00 WIB
+ =09* Hotel Aryaduta Jakarta (hanya 17 & 18 Juni) pukul 10.00-20.00 WIB
+ =09* Pluit Village Mall pukul 10.00-20.00 WIB
+
+Jadilah bagian dari sebuah sejarah pengembangan properti dengan desain tata=
+ kota terbaik di Indonesia.
+
+=C2=A0
+
+ [tel:02129617777]
+
+=09=09[meikarta-footer]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkagTnP8EKGvbUMyYT5130whVyWclQbWOguz=
+4ewTrvbJlHf8FtqtPIysKk2FH6kjgQC1sLnKmlmb-2BVe9DnN0Wva6J1w6cjwks74JzEBzEhUaD=
+SO6Ge4ZBhumpHwFGUHBzDkAAw-2FFAX19234sQgSkp-2BEE5h7LO2wue9Itw6DMMBJj-2BpnOpC=
+3ulrXNJHv6nyvrCRfugsbisA9wqM1HNOEBeN6b-2Bffj-2FiQqa8lYs3nqGRXsaH-2BjSNpv-2F=
+lAZt74hmiENncy_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9p=
+ATyIwFclOZTsI12FSGk1LiWCGZdYYr3pcUmXsn-2F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fh=
+kf9UNRwteue1x9H9EMFxWYhuPzEXn1rwPveZpT65lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcu=
+rRYoUWvUc3sBP7EQbXO63lkM-2BxAPSCgTHhCsxe-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmrP2PB=
+q2ciIf6zDg-2FGwym0IBPJyoK1WIRl5leFHQLARrkNeaeQOFvgC8KbdmrnhdJJRDfgIkq4-2B7-=
+2FvLmfu55pcpb9TSFfU3Ki6-2Fc32nf88ZgPKSaXbZQf2ncTq0TsTrtJ3V8rXnzKZXKWIg87GgG=
+inRp1Pgxbc2sLwwt-2FDoegrvEFqP9sHOvjHZIcWn3mkueoAyZZZTW-2FsdTyhN8XtnThOQ-3D-=
+3D]
+--233d230e2e6831ca2f377286d744f36d7354b1c5db31d3bda93ccd912375
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<title>KOMPAS ID - Beta - Kompas</title>
+<style>
+#outlook a{padding:0;}
+body{width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjus=
+t:100%;margin:0!important;padding:10px!important;}
+img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;displa=
+y:block;max-width:100%;height:auto;}
+
+a img{border:none;}
+table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+table td{border-collapse:collapse;}
+.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+.btn img{display:inline;}
+=09
+.footer a{
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+=09
+}
+
+.upperclass a {
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+}
+
+@media only screen and (max-width: 599px){
+=09body{-webkit-text-size-adjust:120% !important;-ms-text-size-adjust:120% =
+!important;}
+=09.wrap{width:96% !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap img{max-width:100% !important;height:auto !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap .m-b,.m-b img{display:block;min-width:100% !important;width:100% !=
+important;}
+}
+@media only screen and (max-width: 479px) {
+=09}
+@media only screen and (max-width: 320px) {
+=09}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+
+</style>
+</head>
+<body style=3D"cursor: auto; ">
+<center>
+<table style=3D"height:100% !important; margin:0; padding:0; width:100% !im=
+portant;margin-top:20px;" width=3D"99%" height=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0"><tbody><tr>
+<td valign=3D"top" align=3D"center">
+
+     =20
+        <table id=3D"templatePreheader" width=3D"600" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0"><tbody><tr>
+<td class=3D"preheaderContent" valign=3D"top">
+
+              <table style=3D"line-height:20px;margin-bottom:3px;" width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr>
+<td width=3D"75" valign=3D"middle"><a href=3D"https://u2171939.ct.sendgrid.=
+net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cB=
+pGNqbNs14nkagTnP8EKGvbUMyYT5130whVyWclQbWOguz4ewTrvbJlEJQAxRlE1kEBV0FP1gzLV=
+6h-2FNxaamgMdBF1zweD1CyAhedqiiUcEh5VWElhShJbwY-3D_0OYJJotz75mS8A0tZ8-2Feycx=
+vxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYr3pcUmXsn-2=
+F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fhkf9UNRwteue1x9H9EMFxWYhuPzEXn1rwPveZpT65=
+lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcurRYoUWvUc3sBP7EQbXO63lkM-2BxAPSCgTHhCsxe=
+-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmmz-2FD2WjOJ4BaupXek3L-2BFUXjDLC0EUXbeyVVz4dRv=
+DaTfJvDiBrvUWoH4jIyde1PjTaWovWvwDS2YdmcCYIoFj5ffo2PIXxvjfijKQv22wBgOlOCXBQX=
+1sk-2FE6oFPEZpuDn7HFkM-2Fye2ePZipxNVCJ3fQzNicZ509dt4rGLzNHdLQQEI0EAhOZF9ecr=
+JOjVlggeRGASZVopO515GJjF1Iw-3D-3D"><img src=3D"http://beta286.print.kompas.=
+com/marcom/wp-content/uploads/sites/15/2016/02/logo-kompas75.png"></a></td>
+                 =20
+                  <td width=3D"190" valign=3D"top"><div mc:edit=3D"std_preh=
+eader_links" style=3D"text-align:right;" class=3D"upperclass"> <span style=
+=3D"color:#A6A6A6;font-family:Arial;font-size:10px;"><a href=3D"https://u21=
+71939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7=
+muz9yP-2FQHMpKI6cBpGNqbNs14nkagTnP8EKGvbUMyYT5130whVyWclQbWOguz4ewTrvbJlEJQ=
+AxRlE1kEBV0FP1gzLV6fvNhkvwk5FOoNdpI36O1W30Sri5NTVHVoqgCsp0I08o0JLML09z2BKCy=
+vneYx1YMa43AydDpvCaSv9b92ox8-2BevOaxSlhk9ifR-2F5GNLq74U-3D_0OYJJotz75mS8A0t=
+Z8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYr3=
+pcUmXsn-2F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fhkf9UNRwteue1x9H9EMFxWYhuPzEXn1r=
+wPveZpT65lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcurRYoUWvUc3sBP7EQbXO63lkM-2BxAPS=
+CgTHhCsxe-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmmqZWuO28luIvtFk78gNNVCrxP1Cy1FyEknv6=
+JBqaEMrrcQRBAQz9nrMnVKVNirxZFExJ0mzPOxYblk8m5i6WcKdaleaWcJ-2BQ-2BBns7HyroVS=
+0HYby6-2FBPCDXVBJ0-2BY1SO3F6e85KJHZXDY6oIYCQzTSw4yZ3AUxbrbYCHBUyPhHyV31zfZ1=
+5air8KdN9x-2F4yBtMrQg3sr-2F1TdyzINzv5V7w-3D-3D">webversion</a></span> </div=
+></td>
+                 =20
+                </tr>
+</tbody></table>
+
+</td>
+          </tr>
+</tbody></table>
+
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><img  id=3D"headerImage campaign-icon" mc:label=3D"header_image" mc=
+:edit=3D"header_image" editable=3D"" label=3D"Image max width 600 pixel" cl=
+ass=3D"" data-id=3D"3096" alt=3D"meikarta-1024x439px" src=3D"http://print.k=
+ompasnewsletter.com/wp-content/uploads/sites/6/2017/06/meikarta-1024x439px-=
+600x257.jpg" style=3D"width:600px;height: auto;" width=3D"600" height=3D"25=
+7"></td>
+                  </tr>
+</tbody></table>
+           =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"30" border=3D"0" bgco=
+lor=3D"#Fff"><tbody><tr><td style=3D"text-align:left;" valign=3D"top">
+                            <div mc:edit=3D"std_content00" style=3D"margin-=
+bottom:20px;">
+                            =20
+                             =20
+                              <p>Meikarta adalah pembangunan skala kota yan=
+g memiliki semua alasan untuk mendulang sukses dengan lokasi strategis dan =
+konsep kota modern yang dibangun dengan standard intertasional.&nbsp; Meika=
+rta mencari tim sales kompeten dengan paket renumerasi terbaik yang pernah =
+ada.</p>
+<ol>
+<li>Deputy General Manager&nbsp; &nbsp; Rp133.000.000,-</li>
+<li>Marketing Manager&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Rp66.500.000,-</li>
+<li>Sales Supervisor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rp13.300.000,-</li>
+<li>Sales Executive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rp5.000.000,-</li>
+</ol>
+<p>Siapkan CV Anda dan ikuti walk-in interview yang diselenggarakan pada ta=
+nggal 16-18 Juni 2017 di:</p>
+<ul>
+<li>Gajah Mada Plaza pukul 10.00-20.00 WIB</li>
+<li>Plaza Semanggi pukul 10.00-20.00 WIB</li>
+<li>PX Pavillion, Puri Indah (hanya 16 &amp; 17 Juni) pukul 10.00-20.00 WIB=
+</li>
+<li>MaxxBox Lippo Cikarang pukul 10.00-20.00 WIB</li>
+<li>Hotel Darmawangsa pukul 10.00-20.00 WIB</li>
+<li>Hotel Aryaduta Jakarta (hanya 17 &amp; 18 Juni) pukul 10.00-20.00 WIB</=
+li>
+<li>Pluit Village Mall pukul 10.00-20.00 WIB</li>
+</ul>
+<p>Jadilah bagian dari sebuah sejarah pengembangan properti dengan desain t=
+ata kota terbaik di Indonesia.</p>
+<p>&nbsp;</p>
+<p><a href=3D"tel:02129617777"><img class=3D"aligncenter wp-image-3132 size=
+-full" src=3D"http://print.kompasnewsletter.com/wp-content/uploads/sites/6/=
+2017/06/Telepon-Meikarta.png" alt=3D"" style=3D"width:2000px;" width=3D"200=
+0" height=3D"241"></a></p></div></td>
+                        </tr>
+</tbody></table>
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp=
+4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkagTnP8EKGvbUMyYT=
+5130whVyWclQbWOguz4ewTrvbJlHf8FtqtPIysKk2FH6kjgQC1sLnKmlmb-2BVe9DnN0Wva6J1w=
+6cjwks74JzEBzEhUaDSO6Ge4ZBhumpHwFGUHBzDkAAw-2FFAX19234sQgSkp-2BEE5h7LO2wue9=
+Itw6DMMBJj-2BpnOpC3ulrXNJHv6nyvrCRfugsbisA9wqM1HNOEBeN6b-2Bffj-2FiQqa8lYs3n=
+qGRXsaH-2BjSNpv-2FlAZt74hmiENncy_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZC=
+P-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYr3pcUmXsn-2F01VE2i0IiYJExd5P=
+uBWpwAV-2F8-2B-2Fhkf9UNRwteue1x9H9EMFxWYhuPzEXn1rwPveZpT65lUi2B1-2B5gcZLzi9=
+zpW3LfoZ-2FObubJcurRYoUWvUc3sBP7EQbXO63lkM-2BxAPSCgTHhCsxe-2Fp1jx5JJCXk-2Fw=
+WXYl-2FQRdJDmFttVcRC0NTLNQbthlz9-2BlHaBMarV-2BcDAfVwmApCYkRL2X-2FpDVGvlhAys=
+d9zQ1L5S0ZPuazxb3R-2FI-2BCVLNwzC6Kk7pLIvusaN8Jx8F7TI-2BDJbnzHwA5jtJed0S-2Fg=
+Hj7uYqT4rgP56ecIkVFbQR4mpV85cqBKE8-2FH-2BcFeruLs0d27o0avAqQ-2BfHjZfAlZlrPkL=
+64NtNUdH-2B7PRRKCXLIp-2B3A-3D-3D"><img  id=3D"headerImage campaign-icon" mc=
+:label=3D"header_image" mc:edit=3D"header_image" editable=3D"" label=3D"Ima=
+ge max width 600 pixel" class=3D"" data-id=3D"3100" alt=3D"meikarta-footer"=
+ src=3D"http://print.kompasnewsletter.com/wp-content/uploads/sites/6/2017/0=
+6/meikarta-footer.jpg" style=3D"width:600px;height: auto;" width=3D"600" he=
+ight=3D"97"></a></td>
+                  </tr>
+</tbody></table>
+           =20
+
+</td>
+    </tr>
+</tbody></table>
+</center>
+<img src=3D"http://print.kompasnewsletter.com/mymail/3092/2ae588929af78ff0f=
+ff6d03e7263c3cc/" alt=3D"" width=3D"1" height=3D"1">
+<img src=3D"https://u2171939.ct.sendgrid.net/wf/open?upn=3D0OYJJotz75mS8A0t=
+Z8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYr3=
+pcUmXsn-2F01VE2i0IiYJExd5PuBWpwAV-2F8-2B-2Fhkf9UNRwteue1x9H9EMFxWYhuPzEXn1r=
+wPveZpT65lUi2B1-2B5gcZLzi9zpW3LfoZ-2FObubJcurRYoUWvUc3sBP7EQbXO63lkM-2BxAPS=
+CgTHhCsxe-2Fp1jx5JJCXk-2FwWXYl-2FQRdJDmc8OWnRiY4fLB7XjG-2F1av2hISMyXZBEEubC=
+oRmdbZEbUS6FO2lr9jXfk8CSNLic6bpSSTUtpKrM5DIMYIfKRwikSm8zIeSsvS0eRyv7M-2BrIq=
+nW5V-2BVWIC4S3R6G-2B2CBI5-2F6DPF9BxFwfA3gg6qgWKnzpIcP4U4vD4c3VS9WxW-2FMm35V=
+1SI7pB8TJ3yKiCe1gEhu1ehZ2YLJIue3-2F3-2B1VPBg-3D-3D" alt=3D"" width=3D"1" he=
+ight=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important=
+;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !importa=
+nt;margin-right:0 !important;margin-left:0 !important;padding-top:0 !import=
+ant;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !=
+important;"/>
+</body></html>
+
+--233d230e2e6831ca2f377286d744f36d7354b1c5db31d3bda93ccd912375--

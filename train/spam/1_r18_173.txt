@@ -1,0 +1,590 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.67.207 with SMTP id h76csp1133954ooe;
+        Wed, 13 Sep 2017 08:13:15 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QD8FVhCVFpbAOQMz/ct224JY2/npDeeS0vdtGarunt5OMxqsuK6wvS9QtU+2n89QnkJ+Nzp
+X-Received: by 10.129.154.85 with SMTP id r82mr81229ywg.135.1505315595253;
+        Wed, 13 Sep 2017 08:13:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505315595; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kKBtG5lrKB8BQ767rGTcQlwi6WBTqpzi6YXcLlQY6T0Kvwk+iOMbMLhtLaDNEUoH5v
+         lV14XdOd+ueGHGRIdHcItwyQsWXotc5evpFnEXfAvu/V6rZRLnfYvh6DmmGBCYT154gr
+         yEKs9Jf4+Vckz8ujDdzJXIT4Zr/H3M2J/IOoZX7zhjhNvJzgmUZuADEiIQydWyRVLfsl
+         4gDks6ylBJ/7OvYWCeey31Sl648FTR32zmfj3G5OvtRB6SQBPIjTbyhzzU+JMPm6kgKr
+         mtYPD1MLEHiLmm7ZmxI0rl69+M7vZlgAd2KmKrhr8vhEEJaZm9uLnyMzGY8WRmNiQk6A
+         /mVQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:to:list-unsubscribe:message-id:reply-to:subject
+         :from:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=DFsSwxwJAdn6RwUXfto4CssT2SlQAEXHQ+Oof60xD3Q=;
+        b=UM3KUcA4tpmzfBR2wkC+V6US6nhhLvJUCK+jcGWfG+tduvS2pRLFo7oXJDwHXSR6Q6
+         5a/Dr2HtqD/XqcnneyRvgiQRBvT0a/z/2PuQyoEHciyl5JiOMYOT7JxKxNYVeOhWywLJ
+         zXNfjfLBjxfIqJ8+ksFG9gMswdPwoHyVib1BOmnKREgrnJy7sJaA0b5TMqIeCoXDIUCe
+         VzxK5kq4jVPbgwBuSw4QOpMZwjtOsrrl1+1Vi2VBkSdihFT9W0q84PiqrgK8MgqbOybq
+         Zf98580WJjTr8cvocWXkewfywY/jvZCvThQTmhGcShdWbYX6jYbFklXKD+Ynzfm6ANee
+         zbBg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@filebebo.com header.s=mandrill header.b=WJe465rE;
+       dkim=pass header.i=@mandrillapp.com header.s=mandrill header.b=mW/C+AFo;
+       spf=pass (google.com: domain of bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com designates 198.2.186.26 as permitted sender) smtp.mailfrom=bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com
+Return-Path: <bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com>
+Received: from mail186-26.suw21.mandrillapp.com (mail186-26.suw21.mandrillapp.com. [198.2.186.26])
+        by mx.google.com with ESMTPS id 63si3001048ybl.59.2017.09.13.08.13.14
+        for <lukaspatty@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 13 Sep 2017 08:13:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com designates 198.2.186.26 as permitted sender) client-ip=198.2.186.26;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@filebebo.com header.s=mandrill header.b=WJe465rE;
+       dkim=pass header.i=@mandrillapp.com header.s=mandrill header.b=mW/C+AFo;
+       spf=pass (google.com: domain of bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com designates 198.2.186.26 as permitted sender) smtp.mailfrom=bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=filebebo.com; h=From:Subject:Reply-To:Message-Id:List-Unsubscribe:To:Date:MIME-Version:Content-Type; i=hello@filebebo.com; bh=DFsSwxwJAdn6RwUXfto4CssT2SlQAEXHQ+Oof60xD3Q=; b=WJe465rE69jahCBLdyLEIffMWcpO1D6Oo1IL1CLfgtD5Yp/3qCXRvgEpBtmrqk3dkBQP4ipuZ7M7
+   aAkl++a+IHdOewy7JyzFMBvrC4MXU0LUqcyznwy7H20zag2UeT2OHsUciA5V8cmiz2GVjCnLwpp7
+   LHRA7RFhZ/tG99lvsh4=
+Received: from pmta02.mandrill.prod.suw01.rsglab.com (127.0.0.1) by mail186-26.suw21.mandrillapp.com id hn55gm174bkt for <lukaspatty@gmail.com>; Wed, 13 Sep 2017 15:13:14 +0000 (envelope-from <bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com;
+  i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1505315594; h=From :
+  Subject : Reply-To : Message-Id : List-Unsubscribe : To : Date :
+  MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User :
+  List-Unsubscribe; bh=DFsSwxwJAdn6RwUXfto4CssT2SlQAEXHQ+Oof60xD3Q=;
+  b=mW/C+AFoCunVhyNyxm892I+74eGkKaspL/TsP6awcl631J2HDR/HbkU1OZ9hauqH/FSrwP 9rXCvp28c1FGL19vqepSeTILhVV9BCf4VAV/WzhpPrH1AuYkGhgwbq+/G9mgBQyH6zrs+Y6n UBbO1VAgzScNJ0ZBhTPIV0R8w96/Q=
+From: Filebebo <hello@filebebo.com>
+Subject: Upload - Share - Earn Money
+Return-Path: <bounce-md_30921202.59b94b0a.v1-49c0cfd5541a4cbc9eef04c8a5acb1a4@mandrillapp.com>
+Received: from [78.46.17.215] by mandrillapp.com id 49c0cfd5541a4cbc9eef04c8a5acb1a4; Wed, 13 Sep 2017 15:13:14 +0000
+X-Mailer: Sendy (https://sendy.co)
+Reply-To: Filebebo <hello@filebebo.com>
+Message-Id: <b2334fafe4d6c195116c9229420dae86@srv5.poptm.com>
+List-Unsubscribe: <http://newsletter.poptm.com/unsubscribe/TJr892y1aF8ced6W6w7gO7Evof3UoI00WP8O0Zms281GE/LGsUe23epoi3x3dUOAS36Q/g1AEz2aAbQ0m80g2lw6K0Q>
+To: Lukas Patty <lukaspatty@gmail.com>
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=30921202.49c0cfd5541a4cbc9eef04c8a5acb1a4
+X-Mandrill-User: md_30921202
+Date: Wed, 13 Sep 2017 15:13:14 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-yZS6p_ChBP44By7KBbJmsQ"
+
+--_av-yZS6p_ChBP44By7KBbJmsQ
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+        We've added a ton of features to your account. Check out the
+biggest changes below or log in to view them all.
+     
+
+  
+
+          =
+<http://newsletter.poptm.com/l/fIfRE0UHsxJ7wFtXKqcZ8g/g1AEz2aAbQ0m80g2lw6K0Q/g1AEz2aAbQ0m80g2lw6K0Q>
+=
+
+  
+
+ Upload - Share - Earn Money              Upload your files and earn money
+every time they are downloaded
+<http://newsletter.poptm.com/l/fIfRE0UHsxJ7wFtXKqcZ8g/g1AEz2aAbQ0m80g2lw6K0Q/g1AEz2aAbQ0m80g2lw6K0Q>
+    You can upload any file types like EXE, MP3, MPEG, AVI, RAR, ZIP, JPG,
+etc. Music files, video files, mp3, applications, games, ringtones, office
+files (e.g. in Excel, PowerPoint, Word, etc) ...
+
+  
+
+ We support : Paypal, Payza & Bitcoin
+
+  
+
+  Signup Now!
+<http://newsletter.poptm.com/l/fIfRE0UHsxJ7wFtXKqcZ8g/LGsUe23epoi3x3dUOAS36Q/g1AEz2aAbQ0m80g2lw6K0Q>
+   
+
+      == Pay Per Download ==
+
+      We pay upto $15 per 1000 unique downloads, we pay for downloads from
+almost all the countries in the world.
+
+  
+
+   
+
+      == Pay Per View ==
+
+      We aslo pay for videos which are embeded in your website, it is also
+upto $15 per 1000 unique views.
+
+  
+
+   
+
+      == Pay Per Sale ==
+
+      We pay 50% of purchased premium accounts + 50% of rebills done by the
+user
+
+  
+
+      == Daily Payouts ==
+
+      Payments are made on daily basis, minimum payout amount is just $10.
+
+              == Why are you waiting for? ==
+
+ Signup Now
+<http://newsletter.poptm.com/l/fIfRE0UHsxJ7wFtXKqcZ8g/LGsUe23epoi3x3dUOAS36Q/g1AEz2aAbQ0m80g2lw6K0Q>
+
+               
+
+                  Don't want to recieve such mails? Unsubscribe
+<http://newsletter.poptm.com/l/fIfRE0UHsxJ7wFtXKqcZ8g/LGsUe23epoi3x3dUOAS36Q/g1AEz2aAbQ0m80g2lw6K0Q>
+--_av-yZS6p_ChBP44By7KBbJmsQ
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+=09<title></title>
+=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+ /><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+=09<style type=3D"text/css">/* FONTS */
+    @media screen {
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fo=
+nts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff=
+) format('woff');
+        }
+       =20
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gs=
+tatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) form=
+at('woff');
+        }
+       =20
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 400;
+          src: local('Lato Italic'), local('Lato-Italic'), url(https://font=
+s.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) =
+format('woff');
+        }
+       =20
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 700;
+          src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(htt=
+ps://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-=
+qU.woff) format('woff');
+        }
+    }
+   =20
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+
+    /* RESET STYLES */
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-d=
+ecoration: none; }
+    table { border-collapse: collapse !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !impor=
+tant; width: 100% !important; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+   =20
+    /* MOBILE STYLES */
+    @media screen and (max-width:600px){
+        h1 {
+            font-size: 32px !important;
+            line-height: 32px !important;
+        }
+    }
+     =20
+          @media only screen and (max-width: 480px){
+        .emailImage{
+            height:auto !important;
+            max-width:600px !important;
+            width: 100% !important;
+        }
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*=3D"margin: 16px 0;"] { margin: 0 !important; }
+=09</style>
+</head>
+<body style=3D"background-color: #f4f4f4; margin: 0 !important; padding: 0 =
+!important;"><!-- HIDDEN PREHEADER TEXT -->
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max=
+-width: 0px; opacity: 0; overflow: hidden;">We&#39;ve added a ton of featur=
+es to your account. Check out the biggest changes below or log in to view t=
+hem all.</div>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><!--=
+ LOGO -->
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#539be2">
+=09=09=09<p><!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]--><!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></p>
+
+=09=09=09<p>&nbsp;</p>
+=09=09=09</td>
+=09=09</tr>
+=09=09<!-- HERO -->
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#539be2" style=3D"padding: 0px 10p=
+x 0px 10px;"><!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+ax-width: 600px;" width=3D"100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff" style=3D"padding=
+: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font=
+-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight=
+: 400; letter-spacing: 4px; line-height: 48px;" valign=3D"top">
+=09=09=09=09=09=09<h1 style=3D"font-size: 48px; font-weight: 400; margin: 0=
+;"><a href=3D"https://mandrillapp.com/track/click/30921202/newsletter.poptm=
+.com?p=3DeyJzIjoiM282ZEtCbjZLZlQ1emZNcWpFNHhEY0dyOUFNIiwidiI6MSwicCI6IntcIn=
+VcIjozMDkyMTIwMixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvbmV3c2xldHRlci5wb=
+3B0bS5jb21cXFwvbFxcXC9mSWZSRTBVSHN4Sjd3RnRYS3FjWjhnXFxcL2cxQUV6MmFBYlEwbTgw=
+ZzJsdzZLMFFcXFwvZzFBRXoyYUFiUTBtODBnMmx3NkswUVwiLFwiaWRcIjpcIjQ5YzBjZmQ1NTQ=
+xYTRjYmM5ZWVmMDRjOGE1YWNiMWE0XCIsXCJ1cmxfaWRzXCI6W1wiOWQ3ZmM4M2FiMmE0NmFmNz=
+VhNjAzNmZkMWMzOWNjMDFkODQ0OTFjZFwiXX0ifQ"><img alt=3D"" src=3D"https://file=
+bebo.com/images/logo.png" style=3D"width: 252px; height: 45px;" /></a></h1>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<h3 style=3D"font-size: 28px; font-weight: 400; margin: 0=
+px;"><span style=3D"color:#889DFF;">Upload</span> - <span style=3D"color:#3=
+AD193;">Share</span> - <span style=3D"color:#FF8C00;">Earn Money</span></h3=
+>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></td>
+=09=09</tr>
+=09=09<!-- COPY BLOCK -->
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"padding: 0px 10p=
+x 0px 10px;"><!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+ax-width: 600px;" width=3D"100%"><!-- COPY -->
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial,=
+ sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">Upload your files and earn money =
+every time they are downloaded</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- VIDEO -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+0px 0px 0px 0px;"><a href=3D"https://mandrillapp.com/track/click/30921202/n=
+ewsletter.poptm.com?p=3DeyJzIjoiM282ZEtCbjZLZlQ1emZNcWpFNHhEY0dyOUFNIiwidiI=
+6MSwicCI6IntcInVcIjozMDkyMTIwMixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvbm=
+V3c2xldHRlci5wb3B0bS5jb21cXFwvbFxcXC9mSWZSRTBVSHN4Sjd3RnRYS3FjWjhnXFxcL2cxQ=
+UV6MmFBYlEwbTgwZzJsdzZLMFFcXFwvZzFBRXoyYUFiUTBtODBnMmx3NkswUVwiLFwiaWRcIjpc=
+IjQ5YzBjZmQ1NTQxYTRjYmM5ZWVmMDRjOGE1YWNiMWE0XCIsXCJ1cmxfaWRzXCI6W1wiOWQ3ZmM=
+4M2FiMmE0NmFmNzVhNjAzNmZkMWMzOWNjMDFkODQ0OTFjZFwiXX0ifQ" target=3D"_blank">=
+<img alt=3D"Filebebo - Earn Money" class=3D"emailImage" src=3D"https://file=
+bebo.com/images/newsletter/newsletter_1.png" style=3D"display: block; width=
+: 598px; max-width: 100%; min-width: 100px; font-family: Lato, Helvetica, A=
+rial, sans-serif; color: rgb(255, 255, 255); font-size: 18px; border-width:=
+ 0px; border-style: solid; height: 333px;" /> </a></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+40px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial,=
+ sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">You can upload any file types lik=
+e EXE, MP3, MPEG, AVI, RAR, ZIP, JPG, etc. Music files, video files, mp3, a=
+pplications, games, ringtones, office files (e.g. in Excel, PowerPoint, Wor=
+d, etc) ...</p>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">We support : Paypal, Payza &amp; =
+Bitcoin</p>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<center>
+=09=09=09=09=09=09<div><!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" href=3D"http://newsletter.poptm.com/l/fIfRE=
+0UHsxJ7wFtXKqcZ8g/LGsUe23epoi3x3dUOAS36Q/g1AEz2aAbQ0m80g2lw6K0Q" style=3D"h=
+eight:40px;v-text-anchor:middle;width:200px;" arcsize=3D"10%" strokecolor=
+=3D"#289a6b" fillcolor=3D"#32C488">
+    <w:anchorlock/>
+    <center style=3D"color:#ffffff;font-family:sans-serif;font-size:13px;fo=
+nt-weight:bold;">Signup Now!</center>
+  </v:roundrect>
+<![endif]--><a href=3D"https://mandrillapp.com/track/click/30921202/newslet=
+ter.poptm.com?p=3DeyJzIjoiVlRRYVk0aVJOY2UzRkxDcVN0Wk1FMkc0aFN3IiwidiI6MSwic=
+CI6IntcInVcIjozMDkyMTIwMixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvbmV3c2xl=
+dHRlci5wb3B0bS5jb21cXFwvbFxcXC9mSWZSRTBVSHN4Sjd3RnRYS3FjWjhnXFxcL0xHc1VlMjN=
+lcG9pM3gzZFVPQVMzNlFcXFwvZzFBRXoyYUFiUTBtODBnMmx3NkswUVwiLFwiaWRcIjpcIjQ5Yz=
+BjZmQ1NTQxYTRjYmM5ZWVmMDRjOGE1YWNiMWE0XCIsXCJ1cmxfaWRzXCI6W1wiODUxNDI0MTE4M=
+TJiMmFiZWQwMWM0MTI3MTk4YWUyNWM3YWMxMjBmY1wiXX0ifQ" style=3D"background-colo=
+r:#32C488;border:1px solid #289a6b;border-radius:4px;color:#ffffff;display:=
+inline-block;font-family:sans-serif;font-size:17px;font-weight:bold;line-he=
+ight:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-s=
+ize-adjust:none;mso-hide:all;">Signup Now!</a></div>
+=09=09=09=09=09=09</center>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY HEADING -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+0px 30px 0px 30px; color: #111111; font-family: 'Lato', Helvetica, Arial, s=
+ans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<h2 style=3D"font-size: 24px; font-weight: 400; margin: 0=
+;"><span style=3D"color:#889DFF;">Pay Per Download</span></h2>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+20px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, =
+sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">We pay upto $15 per 1000 unique d=
+ownloads, we pay for downloads from almost all the countries in the world.<=
+/p>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<hr />
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY --><!-- COPY HEADING --><!-- COPY HEADING -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+0px 30px 0px 30px; color: #111111; font-family: 'Lato', Helvetica, Arial, s=
+ans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<h2 style=3D"font-size: 24px; font-weight: 400; margin: 0=
+;"><span style=3D"color:#3AD193;">Pay Per View</span></h2>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+20px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, =
+sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">We aslo pay for videos which are =
+embeded in your website, it is also&nbsp;upto $15 per 1000 unique views.</p=
+>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<hr />
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY --><!-- COPY HEADING -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+0px 30px 0px 30px; color: #111111; font-family: 'Lato', Helvetica, Arial, s=
+ans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<h2 style=3D"font-size: 24px; font-weight: 400; margin: 0=
+;"><span style=3D"color:#889DFF;">Pay Per Sale</span></h2>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial,=
+ sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">We pay 50% of&nbsp;purchased prem=
+ium accounts + 50% of rebills done by the user</p>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+
+=09=09=09=09=09=09<hr /></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY HEADING -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+0px 30px 0px 30px; color: #111111; font-family: 'Lato', Helvetica, Arial, s=
+ans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+=09=09=09=09=09=09<h2 style=3D"font-size: 24px; font-weight: 400; margin: 0=
+;"><span style=3D"color:#3AD193;">Daily Payouts</span></h2>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- COPY -->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#ffffff" style=3D"padding: =
+20px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #666666; font-f=
+amily: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: =
+400; line-height: 25px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">Payments are made on daily basis,=
+ minimum payout amount is just $10.</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></td>
+=09=09</tr>
+=09=09<!-- SUPPORT CALLOUT -->
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"padding: 30px 10=
+px 0px 10px;"><!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+ax-width: 600px;" width=3D"100%"><!-- HEADLINE -->
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#B3E5FC" style=3D"padding=
+: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font=
+-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight=
+: 400; line-height: 25px;">
+=09=09=09=09=09=09<h2 style=3D"font-size: 20px; font-weight: 400; color: #1=
+11111; margin: 0;">Why are you waiting for?</h2>
+
+=09=09=09=09=09=09<p style=3D"margin: 0;"><a href=3D"https://mandrillapp.co=
+m/track/click/30921202/newsletter.poptm.com?p=3DeyJzIjoiVlRRYVk0aVJOY2UzRkx=
+DcVN0Wk1FMkc0aFN3IiwidiI6MSwicCI6IntcInVcIjozMDkyMTIwMixcInZcIjoxLFwidXJsXC=
+I6XCJodHRwOlxcXC9cXFwvbmV3c2xldHRlci5wb3B0bS5jb21cXFwvbFxcXC9mSWZSRTBVSHN4S=
+jd3RnRYS3FjWjhnXFxcL0xHc1VlMjNlcG9pM3gzZFVPQVMzNlFcXFwvZzFBRXoyYUFiUTBtODBn=
+Mmx3NkswUVwiLFwiaWRcIjpcIjQ5YzBjZmQ1NTQxYTRjYmM5ZWVmMDRjOGE1YWNiMWE0XCIsXCJ=
+1cmxfaWRzXCI6W1wiODUxNDI0MTE4MTJiMmFiZWQwMWM0MTI3MTk4YWUyNWM3YWMxMjBmY1wiXX=
+0ifQ" style=3D"color: #539be2;" target=3D"_blank">Signup Now</a></p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></td>
+=09=09</tr>
+=09=09<!-- FOOTER -->
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"padding: 0px 10p=
+x 0px 10px;"><!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+ax-width: 600px;" width=3D"100%"><!-- NAVIGATION -->
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" bgcolor=3D"#f4f4f4" style=3D"padding: =
+30px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial,=
+ sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">&nbsp;</p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- LITMUS ATTRIBUTION -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#ffffff"><!--[if (gte mso 9)|(IE)]=
+>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"600">
+            <tr>
+            <td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+ax-width: 600px;" width=3D"100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff" style=3D"padding=
+: 30px 30px 30px 30px; color: #666666; font-family: Helvetica, Arial, sans-=
+serif; font-size: 14px; font-weight: 400; line-height: 18px;">
+=09=09=09=09=09=09<p style=3D"margin: 0;">Don&#39;t want to recieve such ma=
+ils?&nbsp;<a href=3D"https://mandrillapp.com/track/click/30921202/newslette=
+r.poptm.com?p=3DeyJzIjoiVlRRYVk0aVJOY2UzRkxDcVN0Wk1FMkc0aFN3IiwidiI6MSwicCI=
+6IntcInVcIjozMDkyMTIwMixcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvbmV3c2xldH=
+Rlci5wb3B0bS5jb21cXFwvbFxcXC9mSWZSRTBVSHN4Sjd3RnRYS3FjWjhnXFxcL0xHc1VlMjNlc=
+G9pM3gzZFVPQVMzNlFcXFwvZzFBRXoyYUFiUTBtODBnMmx3NkswUVwiLFwiaWRcIjpcIjQ5YzBj=
+ZmQ1NTQxYTRjYmM5ZWVmMDRjOGE1YWNiMWE0XCIsXCJ1cmxfaWRzXCI6W1wiODUxNDI0MTE4MTJ=
+iMmFiZWQwMWM0MTI3MTk4YWUyNWM3YWMxMjBmY1wiXX0ifQ" style=3D"color: #5db3ec;">=
+Unsubscribe</a></p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--></td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!-- END LITMUS ATTRIBUTION --><img src=3D"https://mandrillapp.com/track/op=
+en.php?u=3D30921202&id=3D49c0cfd5541a4cbc9eef04c8a5acb1a4" height=3D"1" wid=
+th=3D"1"></body>
+</html>
+<img src=3D"http://newsletter.poptm.com/t/g1AEz2aAbQ0m80g2lw6K0Q/fIfRE0UHsx=
+J7wFtXKqcZ8g" alt=3D"" style=3D"width:1px;height:1px;" />
+
+--_av-yZS6p_ChBP44By7KBbJmsQ--

@@ -1,0 +1,213 @@
+Delivered-To: jordyjonathan6@gmail.com
+Received: by 10.36.33.19 with SMTP id e19csp288944ita;
+        Thu, 31 Aug 2017 20:34:46 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb70BCL/cO9Lbeea3Ipt8WkofK6Q+qxlSYb+G68hBRjQdHon/tPZltsMsJZgcx0VLttYMq+Y
+X-Received: by 10.101.88.205 with SMTP id e13mr755704pgu.394.1504236886188;
+        Thu, 31 Aug 2017 20:34:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504236886; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nT7BJjLcbrj0OiwZb2fD9XV0AwiG1ugBWDx5m49hOAkWsL3IdQXoANgWIy0JoBlRda
+         ArOg7YKVDV+e4+RAMIqEuO/YRi88+cXJgk1i4nQq2ZXCELZ0gIgwgbRCClTD0z0P26Ao
+         a5R3r6TxF8EHDrns69fCZ2LeQUiRm/0Kgj3kjXQNU2YC08Uv26LF7n43tE5xfDlRAGhs
+         awjObiyHYZSBJ3EDoyXXyG74caN3GEk4U3xJjJxFL+6s1KJjW9jZwCJZFujLbr59aDzz
+         Q7kNyToj5dmClQIS/FWTFQrVzgjGyKdnNEumliEBnhhS+FdBAWtFPtQD4sQ4uKi8S/Ma
+         +/Gg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:subject:message-id:to:reply-to:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=JO0KoTkBXLOUTYs6VDh2zbWgdXEtzSXY1fjKZTvMLm0=;
+        b=iKuEWk5Pf2jQHwFZXADJ1NLbfmIblQINby2g2GgfuM/DaknIOdyhvmq4+jpaXihCXO
+         M81oV27SHKWztWyX159uGu7aj0JPIiA7ZEafXCgAafWIFSUXcqWoKIndJ+10oUJXyjh1
+         pBv9SBLB9pq+eQEFc2QiVABBLemmv7yZMJvotAUeP8lKDMgNRhu5adCnQlZEWVAiBjts
+         UC82eT11hTwoaJqkwhBxjl1DFWKIoRpcDdlKGikNj1QxdxiRkaP7ifXGOnkOZvCJ8ds9
+         WS/X0ibQC6HPBgMDdxIkMKxo8KLr50gz3ZvKogL24epr32/5Wb804Ro4ByYVxBpn/Zyr
+         fZ+g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dominos.co.id header.s=m1 header.b=xwlsxeiG;
+       dkim=pass header.i=@mktomail.com header.s=m1 header.b=EVJ1HdU2;
+       spf=pass (google.com: domain of 615-xsg-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com designates 103.237.104.12 as permitted sender) smtp.mailfrom=615-XSG-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com
+Return-Path: <615-XSG-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com>
+Received: from em-sn-12.mktomail.com (em-sn-12.mktomail.com. [103.237.104.12])
+        by mx.google.com with ESMTPS id g3si966401plk.263.2017.08.31.20.34.44
+        for <jordyjonathan6@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 31 Aug 2017 20:34:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 615-xsg-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com designates 103.237.104.12 as permitted sender) client-ip=103.237.104.12;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dominos.co.id header.s=m1 header.b=xwlsxeiG;
+       dkim=pass header.i=@mktomail.com header.s=m1 header.b=EVJ1HdU2;
+       spf=pass (google.com: domain of 615-xsg-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com designates 103.237.104.12 as permitted sender) smtp.mailfrom=615-XSG-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com
+X-MSFBL: am9yZHlqb25hdGhhbjZAZ21haWwuY29tQGR2cC0xMDMtMjM3LTEwNC0xMkBiZy1z bi0wMUA2MTUtWFNHLTE3ODo2OTA6MTkxMzoxNjIxOjA6MjIwMTo5Ojc5OTo2MDE5 MDg=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1504236302; s=m1; d=dominos.co.id; i=@dominos.co.id; h=Date:From:To:Subject:MIME-Version:Content-Type; bh=JO0KoTkBXLOUTYs6VDh2zbWgdXEtzSXY1fjKZTvMLm0=; b=xwlsxeiGT/KmStK1mYcKDcF2y3wgnKBWQSKj6+9BitsNknxUEmhn+vDv00/sC0Hz 79YE4Ek23WvRLj+DrjlrQxGYX4J/tXrkOdv1X41UkCuFKG+1T4w+/Mty8vwMNE2cUZc owHJp3V2sE9sxf8y8//xL9XQj2pJniZ+iujORbIg=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1504236302; s=m1; d=mktomail.com; i=@mktomail.com; h=Date:From:To:Subject:MIME-Version:Content-Type; bh=JO0KoTkBXLOUTYs6VDh2zbWgdXEtzSXY1fjKZTvMLm0=; b=EVJ1HdU2cmNJMzL9TGwlJBSmHgihdeQNx4vIUlkS2xKIGhPl1OHMK+LGKjQ+G4Gk 7TKkikP5zehhlSUTt8Ar+faBoTHaTNLjp7kOWOhCeVyEUsuhbJoa+GStYdzE9cIga5z 3jKjqDw1uwlZT4MS+qzWi4QDLUlLF+fxx3J0o0CU=
+Date: Thu, 31 Aug 2017 22:25:02 -0500 (CDT)
+From: "Domino's Pizza Indonesia" <promos@dominos.co.id>
+Reply-To: promos@dominos.co.id
+To: jordyjonathan6@gmail.com
+Message-ID: <937197098.562215672.1504236302427.JavaMail.root@snmas02.marketo.org>
+Subject: Selamat Hari Raya Idul Adha dari Domino's Pizza
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_562215671_11938667.1504236302427"
+X-Binding: bg-sn-01
+X-MarketoID: 615-XSG-178:690:1913:1621:0:2201:9:799:601908
+X-MktArchive: false
+List-Unsubscribe: <mailto:ONCDSZ2ZGJNHSVKMME3TIOKJMNVUU6TNMVAT2PI.799.2201.9@unsub-sn.mktomail.com>
+X-Mailfrom: 615-XSG-178.0.799.0.0.2201.9.601908@snsmtp.mktomail.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_562215671_11938667.1504236302427
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+To view this email as a web page, go to the following address: http://pizza=
+.dominos.co.id/index.php/email/emailWebview?mkt_tok=3DeyJpIjoiTVRoaE1tRmxZV=
+FUwWWpVMyIsInQiOiJpNVI5aU5teEtPYUx6dFU4K2Zkclp0WWRFcVZnNlZwbXh5OC9SeUdRVVpo=
+bXdaOCs1SlJaeFQ1RjJXeG1RSGNlN0lGS1N2anlwbk12WTdNVFN1UTIwT3ZBVWJSZEh5aElRaS9=
+BS1JYZ0RWRnB1a2tqcDlpeUdsNkJjSG42dkxWYyJ9
+
+Syarat & Ketentuan:
+1) Beli 3 pizza tipe crust hand tossed/thin crust/pan pizza ukuran medium s=
+eharga Rp. 130,000.=C2=A02)=C2=A0American Classic =E2=80=98TRIPLE=E2=80=99 =
+Cheeseburger diskon 30% lengkap dengan 3 (tiga) jenis keju berbeda: Mozzare=
+lla Crust (Sambal/Chili Garlic), Melted Cheddar Cheese dan Shredded Mozzare=
+lla Cheese.=C2=A0Semua diskon atau promo tidak dapat digabung dengan promo =
+lainnya. Minimum delivery order Rp. 50,000. Biaya layanan pengiriman hanya =
+dikenakan Rp. 15,000.
+
+This email was sent to jordyjonathan6@gmail.com. If you no longer wish to r=
+eceive these emails you may unsubscribe here: http://pizza.dominos.co.id/Un=
+subscribePage.html?mkt_unsubscribe=3D1&mkt_tok=3DeyJpIjoiTVRoaE1tRmxZVFUwWW=
+pVMyIsInQiOiJpNVI5aU5teEtPYUx6dFU4K2Zkclp0WWRFcVZnNlZwbXh5OC9SeUdRVVpobXdaO=
+Cs1SlJaeFQ1RjJXeG1RSGNlN0lGS1N2anlwbk12WTdNVFN1UTIwT3ZBVWJSZEh5aElRaS9BS1JY=
+Z0RWRnB1a2tqcDlpeUdsNkJjSG42dkxWYyJ9.
+<br>Email ini dikirim ke jordyjonathan6@gmail.com. Jika kamu tidak lagi mau=
+ menerima email ini, silahkan klik: http://pizza.dominos.co.id/UnsubscribeP=
+age.html?mkt_unsubscribe=3D1&mkt_tok=3DeyJpIjoiTVRoaE1tRmxZVFUwWWpVMyIsInQi=
+OiJpNVI5aU5teEtPYUx6dFU4K2Zkclp0WWRFcVZnNlZwbXh5OC9SeUdRVVpobXdaOCs1SlJaeFQ=
+1RjJXeG1RSGNlN0lGS1N2anlwbk12WTdNVFN1UTIwT3ZBVWJSZEh5aElRaS9BS1JYZ0RWRnB1a2=
+tqcDlpeUdsNkJjSG42dkxWYyJ9.
+
+------=_Part_562215671_11938667.1504236302427
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>=20
+<meta charset=3D"utf-8">=20
+<title>Untitled Document</title>             =20
+<style> @media only screen and (min-width: 640px) {table.mainTable { max-wi=
+dth: 600px !important } } </style>=20
+</head>=20
+<body>
+<div style=3D"text-align: center"><font face=3D"Verdana" size=3D"1">To view=
+ this email as a web page, <a href=3D
+"http://info.dominos.co.id/v/ZS22c00SA0000w0An20eGXO"
+>click here</a><br /><br /></font></div>
+=20
+<center>=20
+<table class=3D"mainTable" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>=20
+<tbody>=20
+<tr>=20
+<td colspan=3D"3">=20
+<div style=3D"display:inline-block" class=3D"mktoImg" id=3D"Banner1" mktolo=
+ckimgsize=3D"true">
+<a href=3D
+"http://info.dominos.co.id/XAe0cMS02000GO2Aw020Xh0" target=3D"_blank"
+><img src=3D"http://pizza.dominos.co.id/rs/615-XSG-178/images/Marketo Idul =
+Adha.jpg" alt=3D"Selamat Hari Raya Idul Adha" width=3D"100%" style=3D""></a=
+>
+</div> </td>=20
+</tr>=20
+<tr>=20
+<td colspan=3D"3">=20
+<div style=3D"display:inline-block" class=3D"mktoImg" id=3D"Banner2" mktolo=
+ckimgsize=3D"true">
+<a href=3D
+"http://info.dominos.co.id/wSAG22AXe0000c0N00w2i0O" target=3D"_blank"
+><img src=3D"http://pizza.dominos.co.id/rs/615-XSG-178/images/DELIVERY-DEAL=
+-2-MARKETO-640x240px.jpg" alt=3D"3 medium Pizza Rp 130,000" width=3D"100%" =
+style=3D""></a>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td colspan=3D"3">=20
+<div style=3D"display:inline-block" class=3D"mktoImg" id=3D"Banner4" mktolo=
+ckimgsize=3D"true">
+<a href=3D
+"http://info.dominos.co.id/z0wA2Ae0002S2jO0XcO0G00" target=3D"_blank"
+><img src=3D"http://pizza.dominos.co.id/rs/615-XSG-178/images/MARKETO-TRIPL=
+E-CHEESE-640x240px new.jpg" alt=3D"Disc. 30%! American classic Triple Chees=
+eburger" width=3D"100%" style=3D""></a>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td colspan=3D"3">=20
+<div style=3D"display:inline-block" class=3D"mktoImg" id=3D"Banner5" mktolo=
+ckimgsize=3D"true">
+<a href=3D
+"http://info.dominos.co.id/B000PX2G200020OS0AkecwA" target=3D"_blank"
+><img src=3D"http://pizza.dominos.co.id/rs/615-XSG-178/images/Drink-Marketo=
+-640x240.jpg" alt=3D"Segarnya minuman ringan di Domino's seharga Rp. 15ribu=
+" width=3D"100%" style=3D""></a>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td colspan=3D"3">=20
+<div style=3D"display:inline-block" class=3D"mktoImg" id=3D"Banner6" mktolo=
+ckimgsize=3D"true">
+<a href=3D
+"http://info.dominos.co.id/ZS22c00QA0000w0Al20eGXO" target=3D"_blank"
+><img src=3D"http://pizza.dominos.co.id/rs/615-XSG-178/images/Footer-640x24=
+0px.jpg" alt=3D"Domino's Pizza Website" width=3D"100%" style=3D""></a>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td colspan=3D"3" align=3D"center">=20
+<div class=3D"mktoText" id=3D"Text2">
+<div style=3D"margin-bottom: 0.0001pt; line-height: normal; background: whi=
+te; text-align: left;">
+<span style=3D"font-size: 16px; font-family: 'times new roman', times; colo=
+r: black; background: white;">Syarat &amp; Ketentuan:</span>
+</div>=20
+<div style=3D"margin-bottom: 0.0001pt; line-height: normal; background: whi=
+te; text-align: left;">
+<span style=3D"font-size: 16px; font-family: 'times new roman', times;"><sp=
+an style=3D"color: black; background: white;">1) Beli 3 pizza tipe crust ha=
+nd tossed/thin crust/pan pizza ukuran medium seharga Rp. 130,000.</span><sp=
+an style=3D"color: black;">&nbsp;</span><span style=3D"color: black;">2</sp=
+an><span style=3D"color: black;">)&nbsp;<span style=3D"background: white;">=
+American Classic =E2=80=98TRIPLE=E2=80=99 Cheeseburger diskon 30% lengkap d=
+engan 3 (tiga) jenis keju berbeda: Mozzarella Crust (Sambal/Chili Garlic), =
+Melted Cheddar Cheese dan Shredded Mozzarella Cheese.</span>&nbsp;<span sty=
+le=3D"background: white;">Semua diskon atau promo tidak dapat digabung deng=
+an promo lainnya. Minimum delivery order Rp. 50,000. Biaya layanan pengirim=
+an hanya dikenakan Rp. 15,000.</span></span>&nbsp;</span>
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> =20
+<a href=3D
+"http://info.dominos.co.id/gm0A22e0w200SG0AX000ROc"
+></a>
+<img src=3D"http://info.dominos.co.id/trk?t=3D1&mid=3DNjE1LVhTRy0xNzg6NjkwO=
+jE5MTM6MTYyMTowOjIyMDE6OTo3OTk6NjAxOTA4OmpvcmR5am9uYXRoYW42QGdtYWlsLmNvbQ%3=
+D%3D" width=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"" =
+/>
+
+<p><font face=3D"Verdana" size=3D"1"> We have contacted you because you pro=
+vided us with your email address jordyjonathan6@gmail.com. Your address is =
+listed. This email is sent from an account we use for sending messages only=
+. So if you want to contact us, please do not reply to this email, as we wi=
+ll not receive your response. Instead, please send your comments to reply.e=
+mail@dominos.co.id or visit our website in https://www.dominos.co.id. If yo=
+u no longer wish to receive these emails you may <a href=3D
+"http://info.dominos.co.id/u/iTOX02S0coe00A000Aw2G02"
+>unsubscribe</a> at any time. Thank you.</font> </p>
+</body>
+</html>
+------=_Part_562215671_11938667.1504236302427--

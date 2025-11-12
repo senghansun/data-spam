@@ -1,0 +1,68 @@
+Delivered-To: lukaspatty@gmail.com
+Received: by 10.74.125.66 with SMTP id q2csp5917239ooe;
+        Tue, 29 Aug 2017 02:41:19 -0700 (PDT)
+X-Received: by 10.202.83.133 with SMTP id h127mr3018402oib.29.1503999679372;
+        Tue, 29 Aug 2017 02:41:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503999679; cv=none;
+        d=google.com; s=arc-20160816;
+        b=iUbDM+92y+VpYn7TwA/6Q4E5AEAMQuWxzQNJhX2cd0BMJcsr7SU7JbhK0qE8dZnCp0
+         LDU5X4HFBQETgo5N8sftG6zhUWsunEO5gBACf80yH3MNE4fBl6WIZH9jP85kuNizKj0Z
+         69FQA6b65EfcTikwSKvIv2bhM7oZAFD2iI6Poux/dJVM1bcL6RH/zR8gazjxyr89boLt
+         RjuJKli0FDCJrzR7RKR2ku9tiM2Th5yo3lqqNq5b2Kip/8/otUrbpY1ph3vo529rDhWc
+         9u+QIuODao/XS4NW5pba/VhFbjeMjOjb3N1SolgfpPLXls0qVqLY0ffwads2DVyPBzg8
+         4q5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:to:subject:from:date
+         :message-id:arc-authentication-results;
+        bh=R5V16+C0x1OB+Vrr/bwDb4nRVJJekofCydgjWBWMCBE=;
+        b=oVfPcYomyEd+OVxWnrhAYvYUWGjXbVa0zQMJKPGiIyulsSVF4yXqLvpOux7dAetPhx
+         DnjZlq5XNNIuftKIdq3WSTvwgx+oBVuQSNgCjFWh/Xb+lbGqHvjqifz6LpNWkDGt3iJV
+         +b1J+ArVKlC5eA4bc8iqH60RClcbTWQ2/wh35bKthDCb6YaLWajj17c3IyLzcAHYXXN4
+         4xB+OM15wZATxynVnwPhM7UVQ1JUVv4tG1JIw3pvdqGB/BcbPB62w9SPZWjfsAMa2pVY
+         wBoOeOozXBXcwke1qFciWT+sBhKinyUnjwAu1zBYTTuygAnrZmk1/DViahUY/DRO7Ihz
+         r+UA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return01@mailwings.co designates 175.126.100.124 as permitted sender) smtp.mailfrom=return01@mailwings.co
+Return-Path: <return01@mailwings.co>
+Received: from s391.mailwings.co (s391.mailwings.co. [175.126.100.124])
+        by mx.google.com with SMTP id r189si299683oia.304.2017.08.29.02.41.18
+        for <lukaspatty@gmail.com>;
+        Tue, 29 Aug 2017 02:41:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return01@mailwings.co designates 175.126.100.124 as permitted sender) client-ip=175.126.100.124;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return01@mailwings.co designates 175.126.100.124 as permitted sender) smtp.mailfrom=return01@mailwings.co
+Message-Id: <59a536bf.c644ca0a.93297.c384SMTPIN_ADDED_MISSING@mx.google.com>
+Date: Tue, 29 Aug 2017 18:10:59 +0900
+From: lod_support < lod_support@logickorea.co.kr>
+Subject: [Ad] Lodoss War Online: New Class Shaman Update!
+To: <lukaspatty@gmail.com>
+MIME-Version: 1.0
+X-Mailer: Mymailer 3.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQ0KPHAgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0NCjxBIENMQVNTPSJ0eC1s
+aW5rIiBIUkVGPSJodHRwOi8vMTc1LjEyNi4xMDAuMTI0OjgwL2ZpbHRlci9jbGlja0RldGVjdGVy
+LmpzcD9jYW1wYWlnbklEPTE2OTcmZW5jb2Rpbmc9eWVzJm1haWxsaW5rPWZhbHNlJnRhcmdldF9p
+ZD0xNjQ1JmFkZHJlc3Nib29rX2lkPTE2NzQmbGlua0lEPTQ1MDEmdHlwZT1jbGljayJUQVJHRVQ9
+Il9ibGFuayI+PC9BPjwvcD4NDQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0KPGJy
+Pg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0KPGJyPg0NCjwvcD4N
+DQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0KPElNRw0NCiBTVFlMRT0iY2xlYXI6
+IG5vbmU7IGZsb2F0OiBub25lOyIgU1JDPSJodHRwOi8vczM5MS5tYWlsd2luZ3MuY28vYXR0YWNo
+ZWRGaWxlcy9pbWFnZXMvRE0xNC5qcGciIENMQVNTPSJ0eGMtaW1hZ2UiPjwvcD4NDQo8cCBzdHls
+ZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0KPGJyPg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4dC1h
+bGlnbjogY2VudGVyOyI+DQ0KPGJyPg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2Vu
+dGVyOyI+DQ0KPGJyPg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0K
+PGJyPg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQ0KSWYgeW91IGRp
+ZCBub3QgZWxlY3QNDQp0byByZWNlaXZlIG5ld3MgYW5kIHVwZGF0ZXMsIG9yIHdpc2ggdG8gdW5z
+dWJzY3JpYmUsIHBsZWFzZSBjbGljayANDQo8QSBIUkVGPSJodHRwOi8vMTc1LjEyNi4xMDAuMTI0
+OjgwL2ZpbHRlci9jbGlja0RldGVjdGVyLmpzcD9jYW1wYWlnbklEPTE2OTcmZW5jb2Rpbmc9eWVz
+Jm1haWxsaW5rPWZhbHNlJnRhcmdldF9pZD0xNjQ1JmFkZHJlc3Nib29rX2lkPTE2NzQmbGlua0lE
+PTQ1MDImdHlwZT1yZWplY3QiPlJlZnVzYWw8L0E+PGJyPg0NCjwvcD4NDQo8cCBzdHlsZT0idGV4
+dC1hbGlnbjogY2VudGVyOyI+DQ0KPGJyPg0NCjwvcD4NDQo8cD4NDQo8YnI+DQ0KPC9wPg0NCjwv
+aHRtbD4NDQoNCjxpbWcgc3JjPSdodHRwOi8vMTc1LjEyNi4xMDAuMTI0OjgwL2ZpbHRlci9jaGVj
+a2VyLmpzcD9pZD0xNjk3JnRhcmdldF9pZD0xNjQ1JmFkZHJlc3Nib29rX2lkPTE2NzQnIHdpZHRo
+PTAgaGVpZ2h0PTA+DQo8aWZyYW1lIG5hbWU9J215bWFpbGVyJyBmcmFtZWJvcmRlcj0wIGhlaWdo
+dD0wIHdpZHRoPTAgc3JjPSdodHRwOi8vMTc1LjEyNi4xMDAuMTI0OjgwL2ZpbHRlci9UcmFja2Vy
+LmpzcD9pZD0xNjk3JnRhcmdldF9pZD0xNjQ1JmFkZHJlc3Nib29rX2lkPTE2NzQnPjwvaWZyYW1l
+Pg0K

@@ -1,0 +1,449 @@
+Delivered-To: kalindraad@gmail.com
+Received: by 10.182.53.33 with SMTP id y1csp2778511obo;
+        Wed, 7 Jun 2017 23:32:39 -0700 (PDT)
+X-Received: by 10.98.64.143 with SMTP id f15mr35964722pfd.109.1496903559825;
+        Wed, 07 Jun 2017 23:32:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496903559; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BMs9rjiMk3QvNzHR91jI5QOdg0VxfnIsR3mj52aMOzE3j28C0NhfVwyXWGMW6ehIbZ
+         aSTpV8Dx14WrlUSV7QnO1/cvW4b+iKXyPveojC7yH8YXDbFlyRnmz0/8W5AD1Y9sZLC/
+         VTWmUpt5rP6xFFFFoJJ8cgC9TxGUe1GcklAv+rI32auonr7kSLxfjGxFHBv6jUgMjrX5
+         blWGCNaFlGb7HQn2WHkVX9AM02S2AQau8J0Q4jYdOADA1avF/fIDLXmywnlOXvoWjplW
+         0szqdoneNwog2HaMKcann4NXteEIytWq4xIhMu7kPYT+8QShYgr0AWVwjdaRg+mU2LiC
+         0cyw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:reply-to:mime-version:list-unsubscribe:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=M0DpYhJpv8Kzlvr5B83zrZ00iZHvjp8/E9LbpWKUt8c=;
+        b=J+jtiYkMd+1rvtmSJ3g2FahR/GhS7pWneUpvBq+SlhldVaIQIZgTFMYRu4rIxSa52h
+         OOtfg7rvCjD45Bs8/AwJQP/AV9gskm1ivp8MzPtCWsuCvSDD770P/+A7bCCWQTT031t0
+         TpOWtVTaK4D+psXBlKBidD2jTSjqfCDneTKzQ+VLJpTPYcomjMSpHA81ZLsByEvlwTWJ
+         V2PGuAnHSs4AYyKlTQnGwuQfeGuz19nmhtkKimKQuiZ8G7qVBwBUB115xTuBRPAaKSfx
+         k24PJl5qT0g8POXK6JJunDPUWk8CngCXc28GaRZPt0h4CQU7qN+p2WwA8jQk1ZR2a/s5
+         ABdQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com;
+       dkim=pass header.i=@sendgrid.info;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+Return-Path: <bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com>
+Received: from o1.daily.kompasnewsletter.com ([167.89.59.192])
+        by mx.google.com with ESMTPS id v88si3735826pfj.370.2017.06.07.23.32.39
+        for <kalindraad@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 07 Jun 2017 23:32:39 -0700 (PDT)
+Received-SPF: neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) client-ip=167.89.59.192;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com;
+       dkim=pass header.i=@sendgrid.info;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=kompasnewsletter.com; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to; s=s1; bh=QDOUwwvgiTM0jfpK9LrUo+imqn0=; b=MxBzWaWF0WjxSGzG87u3KGo hc7cDC87wljIDd7ll86LemYfxGNXxyx7Bmqc/uXiXVbOD4Rzzplk7vTub6dzrhW8 wcv3P1uvbXdjfOx1CXtoCQdofmCelnvXgtXyktxLB8BmlqXEsZBq0088cx9JKokW DCnFV8bgvR0cKRPw7+L4=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to:x-feedback-id; s=smtpapi; bh=QDOUwwvgiTM0jfpK9LrUo+imqn0=; b=bFi5Y7ord9Ce2yC+oA L/oxHjb6AEYiSKdibqV+lQXpfLTUhy5PJXgT2KNvDHW7Rg1srbOT1W1VakZSTa0Q X6A8iM5aJEmrwT0wQQ0t8xL/NNWVu73R0mVSoMLld1tk9mpHLl1uf+1ZV2OC4RvU d3abr9nKZlxhqeP9A2FMSJ+To=
+Received: by filter0069p1las1.sendgrid.net with SMTP id filter0069p1las1-7135-5938EF86-48
+        2017-06-08 06:32:39.09089923 +0000 UTC
+Received: from MjE3MTkzOQ (unknown [13.76.246.68]) by ismtpd0019p1sin1.sendgrid.net (SG) with HTTP id CrjAxHGWQtaYl_Wi0wk8iQ for <kalindraad@gmail.com>; Thu, 08 Jun 2017 06:32:38.739 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=1fc05a5e44cb491c6c8c5fc98629afadd0c4bd15253053078221929467f8
+Date: Thu, 08 Jun 2017 06:32:38 +0000
+From: Harian Kompas <kabar@kompasnewsletter.com>
+List-Unsubscribe: <http://print.kompasnewsletter.com/newsletter-signup-2/unsubscribe>
+Mime-Version: 1.0
+Reply-To: kabar@kompas.com
+Subject: [PROMO RAMADHAN] Kompas.id Diskon 50% hanya di bulan Ramadhan!
+To: kalindraad@gmail.com
+X-Message-ID: <5938ee9512eca-2ae588929af78ff0fff6d03e7263c3cc-2994-090d8b960750e02a4f7474a15dd7f96b@print.kompasnewsletter.com>
+X-MyMail: 2ae588929af78ff0fff6d03e7263c3cc
+X-MyMail-Campaign: 2994
+X-MyMail-ID: 090d8b960750e02a4f7474a15dd7f96b
+Message-ID: <CrjAxHGWQtaYl_Wi0wk8iQ@ismtpd0019p1sin1.sendgrid.net>
+X-SG-EID: b0c/iCNHoRUZm7E9Be1FrbAkhLk3euimlBihWVhly9itUsDmsFFKnxxo05RvxK76bBGzyT0cp/cyOO OLM7fcxgZQCDKGMq83IhAL++dk+qJipukwYjQLwIES+sl4xRE5dUsS3SziuxnUjyvo5NJeeQdE53GF r4O0v07ijvR5S9QHAg6pdHKUZKLk6mEfgyhrQ1LIm1mZe2LjlqPgJnVMZYeHH00jvZRllH01NN5J22 E=
+X-SG-ID: TbH8yVQD5/lqhH5C2dMcV+XSVrth6p2X0wXN47Yz4LZuXl7AKkvCxR2zxwigDqxb4W4PNwkdsL69wq Vn4EVX0JrkgEw06NGbgpF4qbcK1SJP//fTS4F+Ls/Q2V0hb/vZOTfUfsXzTNYap3ve6xHj1YJzUVr0 AzagdOA6qcCRRSBB+kSD9uh/ypfrw3q6TJTqrsp6T2RZNlULHQqcSv6NsAyzgmzJzyAfKWL9j+LWt/ k=
+X-Feedback-ID: 2171939:Fib6XwN1VgiWthMJOTIzP0RDtml88dL7k8gvfhB7vJI=:cbRNKAwacia1ojr1OO0s06HSaoBU3BP5l/Oop23LHPQ=:SG
+
+--1fc05a5e44cb491c6c8c5fc98629afadd0c4bd15253053078221929467f8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlGtbLJYkEu2zF4T-2BWlGJRer4GPMJ2GTzmkOWntXt0=
+cSk-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFcl=
+OZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4=
+HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaB=
+RKJJd6ch-2Fa3eZFlThsck4wZvibeTVD42JR6CvdII4DraYM4Jxf10cpX-2F4B-2Fbg6q4ToXgx=
+aRPOLKxRinOKGcAZDQ1cigNZOYqRhJ6-2BALqjnhDJvTdYQolTEdQPCrCFKxlg8iFwm5qrfrCO3=
+EK46GKRSVrNes-2BWwlMergpJJcmpVnuGM5Cy1YsmMF3Br6-2BmBBo0rSMBGIqwj2C-2FAbOcpZ=
+3tSYhTVHfdnCq-2FcUIVxLWYwRXtB]
+
+ webversion [https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFi=
+wAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0=
+sujVvOgLLjqRqR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwl2lISsBkJTEjAqR4OYidk9POvMbgArK=
+Odb4oV3N4-2FcjQ-2B9gjjeuKysS8Z7ZFzlzrtbSTg1HfJN9dkbXl6m58De508fNcNQaRQWabF3=
+pV5CmM-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIw=
+FclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUi=
+Id4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMp=
+maBRKJJd6ch-2Fa3eZFlThsck4wZvi3zYeNCn67h-2BE0uY87KtPa2D0UZmyiE90WYkWCi18DPx=
+qHoTZJjt3B6WiCayNKBl7Tsxe6XQGVf9dYBNEyCeK74R-2FeGYdO06MATHq7m6Su-2B3iCysLJs=
+IADFFj-2Bqqf6RzouTfcs2oSY8ENd1vScvHRXAQ5duiCOk8RAnCqiNMl0rm-2Fq5S1F640XZghH=
+ZzhpGEAdDCIhL5-2FiXkTEHHR7O8cD]=20
+
+=09=09[Promo-Kompas-Ramadan-Kompas.id-1024x439px]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9fEGzK16X8qMu7nUEp-2FdEQQTMdF7HmV9amb5CX9GVDS6gJAY6i-2BoQ7cdE2jk=
+5kM9lc2BqAU-2FIoVSXKWi33-2BjrJfNYxQT4HeS6dPvAug5ganXg22iVoFqT-2Fo2tzNTnz8dj=
+-2F7HEjOZR81CF-2B6tDkTU-2Fiee3UNhR-2BPqFzya1RwDGe82-2FvbLiXDoTPIwV-2B-2F3kM=
+tQE-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFcl=
+OZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4=
+HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaB=
+RKJJd6ch-2Fa3eZFlThsck4wZvj7vBbOO-2FxvXIdRs2SiERKbq6vMZ2H80-2BluzIvk1nF2AWv=
+8Aj2XEdd4r2s1ulUWXKVPO-2BP7Uu1KbegnnNtWJL-2BU2WRn5DXb7K1sBqYpoOZQL6TLpwStC6=
+afKF9HRooHe9-2Fy6od72aQqy5YtWPnGcLhSLYLboW14CpDXfcZxdmk1XuzqlX1bMMm0HxUJHQi=
+3qcQXrvj2o0UGdYNGbGj0-2BRfZ]
+
+SALAM SAHUR,
+
+Pagi-pagi ke Pasar Legi
+Beli bubur di pinggiran candi
+Habis sahur, jangan tidur lagi
+Mending melek sambil baca Kompas.id
+
+Ikuti liputan Ramadhan harian Kompas hanya di Kompas.id. Dapatkan diskon hi=
+ngga 50% khusus di bulan Ramadhan. Hanya berlaku tanggal 5 - 16 Juni 2017
+
+=09=09[buttonlangganan-2]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9fEGzK16X8qMu7nUEp-2FdEQQTMdF7HmV9amb5CX9GVDS6gJAY6i-2BoQ7cdE2jk=
+5kM9lc2BqAU-2FIoVSXKWi33-2BjrJfNYxQT4HeS6dPvAug5ganXg22iVoFqT-2Fo2tzNTnz8dj=
+-2F7HEjOZR81CF-2B6tDkTU-2Fiee3UNhR-2BPqFzya1RwDGe86DZ6A-2FwRh9Op-2Fo-2F9lGA=
+Io204YQ9s3mQ7rTmH1vVYMxQ_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8=
+epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsd=
+Rhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw=
+3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvgkEoDv2yI-2BK-2Fa6WBJ4Y-2BYTSlg=
+lbP5mkOXLntbBC9Kk9OvOlU0Dpi2icg-2BWxgkPaQBtTNxk9bGnMfVli7nFoC4Ebm3-2F4rnxXf=
+VysLPopNLJwhghiQ6uPVJlv0f7r7nb74kjfcyBZ2gpY9YHiT20aylKqn8hn-2FDaxZQA7B9opUL=
+mJt-2F6Xl-2FJIdo7kG-2B3EhmX5Qz1ks2LYsNiwcLajTASRNOF]
+
+ Info dan bantuan hubungi hotline Kompas melalui Whatsapp: +62812 900 50800=
+ [whatsapp://send/6281290050800#Intent;scheme=3Dsmsto;package=3Dcom.whatsap=
+p;action=3Dandroid.intent.action.SENDTO;end]=20
+Email: hotline@kompas.com | Tlp: 02125676000 (hari kerja atau jam 07.00-18.=
+00 WIB)
+
+Ikuti akun-akun media sosial HARIAN KOMPAS lainnya
+
+ [https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu=
+-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjq=
+RqR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlF79uY0PlOnCWdCJ59EQYjpbauSwOWKJiqvHs1ztEY=
+DUaE-2BDtMaMfWnWW-2Bou-2B-2BHgO_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP=
+-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8=
+-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUm=
+jnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvhAPRgd2yft5KwSugqDTsklvg=
+bOg9shGh0C-2BdGt3g4OtqmcISa7q8tUi0vadRfpyncCeJA6M1hErGkruT3hZauFaM1smvMmm7b=
+83Xi1hUh4tZlKhb4nP0sVZjhgq5NHtmXnbc4akIzL6-2B88KxmAi-2Bmr1W7uLS2E-2F0KW9-2F=
+N8dIPDMdRrKz9fN8hYpXy0hmdAxDVErYQ5p2wS3vuEUnePKXY3]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlyqQtTvk1RbL5l2CsICehtX3rm9caLXY3VBxa2S5Ljj=
+X1aOK94qvLd9rle50gZFUk_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8ep=
+kVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRh=
+q1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W=
+3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvhQ6zODAt-2FsvKhksIguRQnJDa3lzan83=
+fnQkm0wSztGTyXbi07vEeczKyb70RZK-2FRI6vd5OouftbJaNmGtr8lIapOocaPV-2Fweeqwsjy=
+979wgxSJKYgzRh-2BRwufjT-2FhBCQ3s5Seu8QFP1dN9MCIkGz-2BMCyHFPN-2B1HmfxVHE3F5P=
+9ND2BzKdg2kUm0tmVB6D0s754-2BQqfGthg7e8e8JYFPmTB]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwliqVhSQpBQFA4OCtNYSd-2BbWwy-2B9OGAdyxFuRsxa=
+Th4QtYl9-2FsQKEEoW-2FrcVsZ-2FYLZ_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZC=
+P-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M=
+8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNU=
+mjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvh0F9xnq-2BVeoeoWWUZ6A8y=
+FV7wsekXIuGwdD4QbKBYgF2QKBOTBz4eyBI3JqcUr7wMru9pAmtAz-2Bl8xt6sWcVUhaKQFDi3Q=
+oDpSTgax9RSp1E50f429T3a4TPsvgmeYdIO59mkWaeJbhRwLWCsR6eA046-2BL08V6DmuLCATsa=
+lO82Dg8U0DSidj-2FosEgzUzkb4QowLKvj2q4KxH1Hw3ZfXzt]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqR=
+qR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlVlaNa6IqDswhMVuNtRt2c9eRiB-2BuEubGCBQZ2cxX=
+tiuHhWx3Bxy1QYGAVuZohbE4_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8=
+epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsd=
+Rhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw=
+3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvh1JX4QXczIk64mcSN2LP1yAPSbrJVWU=
+L53g6yuOrUdUXy0uJ1auHn8ZCk-2Fgls7Ei6rNfKAT-2Fm1HQiX0gLdKfxt8muNYC-2BOq-2B3U=
+QeAfBaYgndIVQ7gon-2B-2Bmq64BxSgOUJFHsQmhZ7DSFEPO7228i2kMHv2JroeJlOOBPAxMeER=
+8elEyjnekojCRa-2Byq2es-2FGmPvs9wa8FDXiNSzN42PcVCP]
+--1fc05a5e44cb491c6c8c5fc98629afadd0c4bd15253053078221929467f8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<title>KOMPAS ID - Beta - Kompas</title>
+<style>
+#outlook a{padding:0;}
+body{width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjus=
+t:100%;margin:0!important;padding:10px!important;}
+img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;displa=
+y:block;max-width:100%;height:auto;}
+
+a img{border:none;}
+table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+table td{border-collapse:collapse;}
+.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+.btn img{display:inline;}
+=09
+.footer a{
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+=09
+}
+
+.upperclass a {
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+}
+
+@media only screen and (max-width: 599px){
+=09body{-webkit-text-size-adjust:120% !important;-ms-text-size-adjust:120% =
+!important;}
+=09.wrap{width:96% !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap img{max-width:100% !important;height:auto !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap .m-b,.m-b img{display:block;min-width:100% !important;width:100% !=
+important;}
+}
+@media only screen and (max-width: 479px) {
+=09}
+@media only screen and (max-width: 320px) {
+=09}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+
+</style>
+</head>
+<body style=3D"cursor: auto; ">
+<center>
+<table style=3D"height:100% !important; margin:0; padding:0; width:100% !im=
+portant;margin-top:20px;" width=3D"99%" height=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0"><tbody><tr>
+<td valign=3D"top" align=3D"center">
+
+     =20
+        <table id=3D"templatePreheader" width=3D"600" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0"><tbody><tr>
+<td class=3D"preheaderContent" valign=3D"top">
+
+              <table style=3D"line-height:20px;margin-bottom:3px;" width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr>
+<td width=3D"75" valign=3D"middle"><a href=3D"https://u2171939.ct.sendgrid.=
+net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cB=
+pGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTUp9Xz7aCl563r3Gq0tbS4=
+uwlGtbLJYkEu2zF4T-2BWlGJRer4GPMJ2GTzmkOWntXt0cSk-3D_0OYJJotz75mS8A0tZ8-2Fey=
+cxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2v=
+oS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalny=
+l0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvgcD-=
+2BnTm3601HL2wdIX4PKWfmHEOJDO0XrsM8soY-2FovX1-2BHtTiRuTP28L56maUtpRkaCPszYHC=
+7TtL7kyQD3EgP1DUa0g49Au2EM0bYZkPRSMuuVwoSE1VolAWsNtyl-2BJD9GU3mG9BklWYd-2F2=
+fR0g1E5Vmrn-2BEWw3DTFhfYpXlMhMUkUxfj1HNUrSk-2BtmjtPrxPvN48KTcZ1K-2F-2B5cXI9=
+0gH"><img src=3D"http://beta286.print.kompas.com/marcom/wp-content/uploads/=
+sites/15/2016/02/logo-kompas75.png"></a></td>
+                 =20
+                  <td width=3D"190" valign=3D"top"><div mc:edit=3D"std_preh=
+eader_links" style=3D"text-align:right;" class=3D"upperclass"> <span style=
+=3D"color:#A6A6A6;font-family:Arial;font-size:10px;"><a href=3D"https://u21=
+71939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7=
+muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTUp9=
+Xz7aCl563r3Gq0tbS4uwl2lISsBkJTEjAqR4OYidk9POvMbgArKOdb4oV3N4-2FcjQ-2B9gjjeu=
+KysS8Z7ZFzlzrtbSTg1HfJN9dkbXl6m58De508fNcNQaRQWabF3pV5CmM-3D_0OYJJotz75mS8A=
+0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYY=
+lbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7=
+HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsc=
+k4wZvg-2B-2BEcTNyxqmq3-2FmSFLBjCYdDwtngL5OO-2F-2FdlZXusthmobUp6PV0Ix5J-2Bjk=
+-2Fobt8-2F6EqGQfFMsSEW6IPmZrNlf3WZXNOJWmpcrBJQMm2CtbZzUTtSuyKnQdAck75htBQ-2=
+BX2FRBqtl6AGXSqxKpuHV9ooNrRsnkboNuof7MAw0ub1Me2YOUnFl1N-2BUnxFwvdCybQsNsINi=
+ZFWqDPUrbfwMdF">webversion</a></span> </div></td>
+                 =20
+                </tr>
+</tbody></table>
+
+</td>
+          </tr>
+</tbody></table>
+
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp=
+4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxj=
+fp-2F0sujVvOgLLjqRqR3CNjFSTUp9fEGzK16X8qMu7nUEp-2FdEQQTMdF7HmV9amb5CX9GVDS6=
+gJAY6i-2BoQ7cdE2jk5kM9lc2BqAU-2FIoVSXKWi33-2BjrJfNYxQT4HeS6dPvAug5ganXg22iV=
+oFqT-2Fo2tzNTnz8dj-2F7HEjOZR81CF-2B6tDkTU-2Fiee3UNhR-2BPqFzya1RwDGe82-2FvbL=
+iXDoTPIwV-2B-2F3kMtQE-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8=
+epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsd=
+Rhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw=
+3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvjAQp9xnMiib89gM8-2FdfXUcHdkqv83=
+rVZKXa3WYeUWyV8DTaK-2FnB8IBGkKQ0-2FnPph16GPVABukldiZze4clcwTUyFpF-2BPAMKIBn=
+O-2Bev404PkFkQjVad1zTT0OPwARcbGgaN-2B2vE1psUtI-2FxoD-2Fm4uR1-2FCMNwL7O6EP9x=
+HYcFScVajcOIvYi1pHtTBPCFkxiZHQy-2Bebr4N8AzQSiYMGgvUvG"><img  id=3D"headerIm=
+age campaign-icon" mc:label=3D"header_image" mc:edit=3D"header_image" edita=
+ble=3D"" label=3D"Image max width 600 pixel" class=3D"" data-id=3D"2998" al=
+t=3D"Promo-Kompas-Ramadan-Kompas.id-1024x439px" src=3D"http://print.kompasn=
+ewsletter.com/wp-content/uploads/sites/6/2017/06/Promo-Kompas-Ramadan-Kompa=
+s.id-1024x439px-600x257.jpg" style=3D"width:600px;height: auto;" width=3D"6=
+00" height=3D"257"></a></td>
+                  </tr>
+</tbody></table>
+           =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"30" border=3D"0" bgco=
+lor=3D"#Fff"><tbody><tr><td style=3D"text-align:left;" valign=3D"top">
+                            <div mc:edit=3D"std_content00" style=3D"margin-=
+bottom:20px;">
+                            =20
+                              <h2 style=3D"color:#505050;font-family:Arial;=
+line-height:150%;text-align:left;word-wrap: break-word;letter-spacing:3px; =
+font-weight:400; font-size:16px">Salam Sahur,</h2>
+                              <p>Pagi-pagi ke Pasar Legi<br>Beli bubur di p=
+inggiran candi<br>Habis sahur, jangan tidur lagi<br>Mending melek sambil ba=
+ca Kompas.id</p>
+<p>Ikuti liputan Ramadhan harian Kompas hanya di Kompas.id. Dapatkan diskon=
+ hingga 50% khusus di bulan Ramadhan. Hanya berlaku tanggal 5 - 16 Juni 201=
+7</p></div></td>
+                        </tr>
+</tbody></table>
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp=
+4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxj=
+fp-2F0sujVvOgLLjqRqR3CNjFSTUp9fEGzK16X8qMu7nUEp-2FdEQQTMdF7HmV9amb5CX9GVDS6=
+gJAY6i-2BoQ7cdE2jk5kM9lc2BqAU-2FIoVSXKWi33-2BjrJfNYxQT4HeS6dPvAug5ganXg22iV=
+oFqT-2Fo2tzNTnz8dj-2F7HEjOZR81CF-2B6tDkTU-2Fiee3UNhR-2BPqFzya1RwDGe86DZ6A-2=
+FwRh9Op-2Fo-2F9lGAIo204YQ9s3mQ7rTmH1vVYMxQ_0OYJJotz75mS8A0tZ8-2FeycxvxM3Byb=
+Md0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZia=
+r8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVy=
+gsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvhCpEfq44KlpPL=
+EFSw3DXUXtw-2FX6MnUU-2BI-2B7cwqwJJL2EW6cDQgOv1Q7ZChTclcOhMfBuafRm6YoJkr0Spg=
+-2FKsFOyRCTtCaOXALRTeBDy8b4PLVLTzy7cM9SEAHXkIOeEfxD3X6jSJOwGhGWYHvJMMpA3Tas=
+3thSf2HK8u5o1zj7BRC2LgluL21jhgmaIlqFYK4OuW60ttzIQkHY7SWxtr8"><img  id=3D"he=
+aderImage campaign-icon" mc:label=3D"header_image" mc:edit=3D"header_image"=
+ editable=3D"" label=3D"Image max width 600 pixel" class=3D"" data-id=3D"22=
+85" alt=3D"buttonlangganan-2" src=3D"http://print.kompasnewsletter.com/wp-c=
+ontent/uploads/sites/6/2017/03/buttonlangganan-1.jpg" style=3D"width:600px;=
+height: auto;" width=3D"600" height=3D"114"></a></td>
+                  </tr>
+</tbody></table>
+           =20
+
+  <table id=3D"templateBody" width=3D"600" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0"><tbody><tr><td class=3D"bodyContent" valign=3D"top"><table=
+ width=3D"100%" cellspacing=3D"0" cellpadding=3D"20" border=3D"0" bgcolor=
+=3D"#fff"><tbody><tr><td valign=3D"top">
+                            <div mc:edit=3D"std_social" style=3D"color:#505=
+050;font-family:Arial;font-size:11px;line-height:150%;text-align:center;bac=
+kground-color:#FFF;"> Info dan bantuan hubungi hotline  Kompas melalui What=
+sapp: <a href=3D"whatsapp://send/6281290050800#Intent;scheme=3Dsmsto;packag=
+e=3Dcom.whatsapp;action=3Dandroid.intent.action.SENDTO;end" style=3D"color:=
+#505050;text-decoration:none;">+62812 900 50800</a> <br>
+                              Email: hotline@kompas.com=20
+                              | Tlp: 02125676000 (hari kerja atau jam 07.00=
+-18.00 WIB)<br><br>
+                              Ikuti akun-akun media sosial <strong>Harian K=
+ompas</strong> lainnya<br><br><div class=3D"btn"><a href=3D"https://u217193=
+9.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9=
+yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTUp9Xz7a=
+Cl563r3Gq0tbS4uwlF79uY0PlOnCWdCJ59EQYjpbauSwOWKJiqvHs1ztEYDUaE-2BDtMaMfWnWW=
+-2Bou-2B-2BHgO_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9p=
+ATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigf=
+EIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD7=
+7KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvizhiMKSN80v5knhoX6rEIEA-2BA5VZh9zm3abFAT4=
+tcVyt-2BK28NldHKF2-2FVfKcE0-2Fik7y2hIHmkiq1pcQxDIsADkeUjlgWtPGfY7on30Vt2h9C=
+33H0moCS0NZASQe2I1pYvNeMXUh1Ap5Zi-2BdWO1BiX-2FcCxozufBX3Nz2AibQt-2BiQFkNkc-=
+2B33dzNgWv7dcvJqLVT7yJ-2BN6ur-2F5xrDdbVqeuK" style=3D"color:#000;font-weigh=
+t:normal;text-decoration:underline;" editable=3D"" label=3D"Social Media Bu=
+tton" class=3D""><img src=3D"http://doc.kompasnewsletter.com/wp-content/upl=
+oads/sites/9/2016/12/social_footer_twitter-30.png" style=3D"width:30px;marg=
+in-right:5px;"></a> <a href=3D"https://u2171939.ct.sendgrid.net/wf/click?up=
+n=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vt=
+OhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlyqQtTvk1RbL5=
+l2CsICehtX3rm9caLXY3VBxa2S5LjjX1aOK94qvLd9rle50gZFUk_0OYJJotz75mS8A0tZ8-2Fe=
+ycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2=
+voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwaln=
+yl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvgsU=
+kuNqTFyQ8XRNgpRojYmcBLRWcLPYX9F7MBI7T2J93Rk9auXm3lHZ4QK-2F3giwzoI15khdbObQn=
+M0-2F4-2F6ZT6z1CvG-2FcOw56fh7VZo4EmeKDmEFqd0kBIlr91m-2Fc1d8O7qLbxwxtvsc2by5=
+6WDmMnulMEYFnHSVH5p-2Fosk-2BsDe5UopDbmQqUij-2FXK6MEFruTWZv2ZpzvCxO1JiIvKM61=
+UO" style=3D"color:#000;font-weight:normal;text-decoration:underline;" edit=
+able=3D"" label=3D"Social Media Button" class=3D""><img src=3D"http://doc.k=
+ompasnewsletter.com/wp-content/uploads/sites/9/2016/12/social_footer_facebo=
+ok-30.png" style=3D"width:30px;margin-right:5px;"></a> <a href=3D"https://u=
+2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGv=
+V7muz9yP-2FQHMpKI6cBpGNqbNs14nka0vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTU=
+p9Xz7aCl563r3Gq0tbS4uwliqVhSQpBQFA4OCtNYSd-2BbWwy-2B9OGAdyxFuRsxaTh4QtYl9-2=
+FsQKEEoW-2FrcVsZ-2FYLZ_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8ep=
+kVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRh=
+q1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcAwalnyl0792mOVygsTVmucQNUmjnLSraw3W=
+3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZvj0MbOjR0hxrhTs9c7Bi2arzNwbAccgC6n=
+P65mBBTeVPnDY3-2FsdAYC-2FyyF93R3KrI1k4t-2BEJFZ1A1lLuTK-2Bnm8rSEIQ1QdFGw8b-2=
+BmGtkOzJp8cr6EuAvyh4rPBxjPs08fh3iMZi0Jb1DKQg2s62OzCwYc-2FMqDqSgRqhoS-2FSkpL=
+NIchYc6wOzjWntIni4ofGEdtpJmrr5vNk4mSZWTmaxqB1" style=3D"color:#000;font-wei=
+ght:normal;text-decoration:underline;" editable=3D"" label=3D"Social Media =
+Button" class=3D""><img src=3D"http://doc.kompasnewsletter.com/wp-content/u=
+ploads/sites/9/2016/12/social_footer_youtube-30.png" style=3D"width:30px;ma=
+rgin-right:5px;"></a> <a href=3D"https://u2171939.ct.sendgrid.net/wf/click?=
+upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nka0=
+vtOhPGJyXDzoxjfp-2F0sujVvOgLLjqRqR3CNjFSTUp9Xz7aCl563r3Gq0tbS4uwlVlaNa6IqDs=
+whMVuNtRt2c9eRiB-2BuEubGCBQZ2cxXtiuHhWx3Bxy1QYGAVuZohbE4_0OYJJotz75mS8A0tZ8=
+-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlbiW=
+FIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HAcA=
+walnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4wZ=
+vgJ056Dl8cCJLDCJu57xBoUOvviiX4HIpeSSv3HNW4A2-2B-2FdKvyprAEQT0j4huaE8wTKrxeJ=
+0OubRr58Hgw-2FHWKm-2F4dhdi6nCWmUAucHIv36K1XB4EF9JeI09hlZXWo61Qe2L8a5Dtk2YD7=
+lKvUhdjGTLEdnt0hv6BnEyX-2B77vS9pt-2FblLjcyo5SlWlR5qf4Ipx861sopstYvovmF5bq0-=
+2Fr7" style=3D"color:#000;font-weight:normal;text-decoration:underline;" ed=
+itable=3D"" label=3D"Social Media Button" class=3D""><img src=3D"http://doc=
+.kompasnewsletter.com/wp-content/uploads/sites/9/2016/12/social_footer_inst=
+agram-30.png" style=3D"width:30px;margin-right:5px;"></a> <br></div>
+                            </div></td>
+                        </tr>
+</tbody></table></td>
+                  </tr>
+</tbody></table>
+           =20
+
+</td>
+    </tr>
+</tbody></table>
+</center>
+<img src=3D"http://print.kompasnewsletter.com/mymail/2994/2ae588929af78ff0f=
+ff6d03e7263c3cc/" alt=3D"" width=3D"1" height=3D"1">
+<img src=3D"https://u2171939.ct.sendgrid.net/wf/open?upn=3D0OYJJotz75mS8A0t=
+Z8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYlb=
+iWFIB2voS2FFmZiar8WDCfQd3M8-2FcMsdRhq1WkOigfEIJUiId4HPPDn94sgF06-2FFN6Er7HA=
+cAwalnyl0792mOVygsTVmucQNUmjnLSraw3W3MQrUVD77KzMpmaBRKJJd6ch-2Fa3eZFlThsck4=
+wZvjhJa30PZF3KfNHE2MrlV60w5SyvyzhVh958GxtFcNV67z0lNYehYVWtRq5-2F-2FmIcoQ3Iz=
+FiNBEXwv-2B9LyRCPQj90Iq6dAGJk-2B3UB4IsSF6uK8-2BQud4L-2FmcF1Ro2spy94AAPpDAr4=
+TGuicpCVrFn4ePXyiH5NH08wURu7D118gqI-2B4qxB9xLASPG3ped2Kbqzo94WG-2BZg8oFu-2B=
+ANnnIKbNzG" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:=
+1px !important;width:1px !important;border-width:0 !important;margin-top:0 =
+!important;margin-bottom:0 !important;margin-right:0 !important;margin-left=
+:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-=
+right:0 !important;padding-left:0 !important;"/>
+</body></html>
+
+--1fc05a5e44cb491c6c8c5fc98629afadd0c4bd15253053078221929467f8--

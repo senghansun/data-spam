@@ -1,0 +1,456 @@
+Delivered-To: kalindraad@gmail.com
+Received: by 10.182.53.33 with SMTP id y1csp988167obo;
+        Sat, 20 May 2017 22:58:23 -0700 (PDT)
+X-Received: by 10.36.105.208 with SMTP id e199mr34412204itc.67.1495346303542;
+        Sat, 20 May 2017 22:58:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495346303; cv=none;
+        d=google.com; s=arc-20160816;
+        b=E4ob9AjoLzfhJ6QA5H4D+dGmUpMF4Ed0Lu5dACmxRgXGQraXrCXozZjk35lKD7YQSB
+         ZsI8Ne1Iv3jFzUKc+w5rbZC4HAcRxriaDdnwBZmuiKZ+p9rVkQctbZV45M/6/dJ+wYqY
+         lsz1VkgNnKOOq3hSUnS8hMKpDGcskgirCN8g0wziJKuEyzGSwkewG/rvR76GJGQJxM04
+         AGuRbsVZJh/odSwfai6zurKF+Nc/cR24t40wSvKsX7rhHgbCr1BrYRCQ/wPNh1CsDEY9
+         mg50o6/Jk/tih/NqgDzOmer0tLsbh2zsIJfRJyvVy5Ucm/q5jN0UZq5poYwKwwzBBHWU
+         CFzQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:reply-to:mime-version:list-unsubscribe:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=4vHsxIwS1CACrKYhQ+E0Qj1NHjlZtVBX+vlqaSUikW8=;
+        b=nY5A9jgrUU5z26WRFla5MfpnIiV/vmf/0n4gXcQjnPOAGIgLsKsNXpSh+i8xSE4SjG
+         mtx7u22Rr0CzgamcPPEexNklrBstBi8jSSa0jo1HFl/oWbOymV8sApr6AcZglL721o7j
+         9N0gP8beoNxMWWPi+SSW082HaX1v7XpZcKF/ZNTnsJMRDaVS5kR7TGlfaQvYS/0xtBNB
+         xMPNPG52WZOthjBs5h6pDePRcav3IhfCCzMTUB5pBCLyi2K0AqTQbuC4PwSOQOO94HZT
+         lBBpI0a6ivW2jtIAvSdKxW99OZnStepDAxnjS0jdDiHo2QKFgPiToh96DtFdlLecHQqp
+         xkbg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com;
+       dkim=pass header.i=@sendgrid.info;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+Return-Path: <bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com>
+Received: from o1.daily.kompasnewsletter.com ([167.89.59.192])
+        by mx.google.com with ESMTPS id j11si14608033iod.77.2017.05.20.22.58.23
+        for <kalindraad@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 20 May 2017 22:58:23 -0700 (PDT)
+Received-SPF: neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) client-ip=167.89.59.192;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kompasnewsletter.com;
+       dkim=pass header.i=@sendgrid.info;
+       spf=neutral (google.com: 167.89.59.192 is neither permitted nor denied by best guess record for domain of bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com) smtp.mailfrom=bounces+2171939-c928-kalindraad=gmail.com@daily.kompasnewsletter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=kompasnewsletter.com; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to; s=s1; bh=ES5ohJCpZrt0Bk3A3FEE+y2iUbA=; b=XM3vTtj85HIjJKSRvWRHIdo Et3yj1BUcsk3+HHY0B63jH2u1sTlz54KkmNq0ZyhFdaZDQBkkrUXVrIDjbpOLmhx cK8wpchwO+bbShvwhtSZvVNm2BzOnGkYT5QBZK/1+bbkcxozBbiAEicAkOC0c6fo nE1rR8jFBFR+wBO1cmHE=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:list-unsubscribe:mime-version:reply-to:subject:to:x-feedback-id; s=smtpapi; bh=ES5ohJCpZrt0Bk3A3FEE+y2iUbA=; b=Ojepf2tZSVuZ8gqCDd dymOHt2oDw6XHyb7QK+DOVjI2O/S1opWDAETJMRy43yNI/DnE30AJdMNAjHxN5Tm 4t/4r52IrU8mJtLBLNzmpO/Bd6RhZxl8M7Dg8NW8EEn8KL+cnAdRg4S14XIxIZwc mG3Y9XyuH4c7zV6O0sfkC1iLs=
+Received: by filter0157p1las1.sendgrid.net with SMTP id filter0157p1las1-23718-59212C7E-B
+        2017-05-21 05:58:22.507102547 +0000 UTC
+Received: from MjE3MTkzOQ (unknown [13.76.246.68]) by ismtpd0018p1sin1.sendgrid.net (SG) with HTTP id BpZjL9afT-Ods7ys2FnfjQ for <kalindraad@gmail.com>; Sun, 21 May 2017 05:58:22.171 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=16fc17e9837d6e349234e12cc1ace3eef05cf68218550b144f659b6359c2
+Date: Sun, 21 May 2017 05:58:22 +0000
+From: Harian Kompas <kabar@kompasnewsletter.com>
+List-Unsubscribe: <http://print.kompasnewsletter.com/newsletter-signup-2/unsubscribe>
+Mime-Version: 1.0
+Reply-To: kabar@kompas.com
+Subject: [POTONGAN 45% LANGGANAN KOMPAS] Rayakan Hari Kebangkitan Nasional
+To: kalindraad@gmail.com
+X-Message-ID: <59212bc9ec4e4-2ae588929af78ff0fff6d03e7263c3cc-2793-090d8b960750e02a4f7474a15dd7f96b@print.kompasnewsletter.com>
+X-MyMail: 2ae588929af78ff0fff6d03e7263c3cc
+X-MyMail-Campaign: 2793
+X-MyMail-ID: 090d8b960750e02a4f7474a15dd7f96b
+Message-ID: <BpZjL9afT-Ods7ys2FnfjQ@ismtpd0018p1sin1.sendgrid.net>
+X-SG-EID: b0c/iCNHoRUZm7E9Be1FrbAkhLk3euimlBihWVhly9iDtYTBEwuaq7eFK+VLgKNLGN01HW1hctmEmO 9Hwxd1FYXy7QN1oeMLIpioOg3DabYICHm18bUPGznJxNxfKqgrRtnfFxwldSKRmagXEHKKRVa5GbNU DjGxyY7ZeIGxP86DGlrEmJvpChLXLNbW8vGSQO6NtksAl4qLbM63oQzXfZpCsfl4J26o/MWpFg+fuq s=
+X-SG-ID: TbH8yVQD5/lqhH5C2dMcV+XSVrth6p2X0wXN47Yz4LY7Lj2ra1ND3T35XBx+HcGM50DsCTWpjA8bgG zWKALSAqMR95KAcRkGxyVoQDDrnsNyY8pc/qHoVlITJB62Rj7cIWag5j7iUBjhbFtWt/j0QkXiJ1vi 9EnfXaCoUZ4RzK9SIpgZX1IVn9gPxkc0ZH+c9qzcftqYaHwceWKOLvxypfT3aNLraWdFfBNCknULnY 0=
+X-Feedback-ID: 2171939:Fib6XwN1VgiWthMJOTIzP0RDtml88dL7k8gvfhB7vJI=:cbRNKAwacia1ojr1OO0s06HSaoBU3BP5l/Oop23LHPQ=:SG
+
+--16fc17e9837d6e349234e12cc1ace3eef05cf68218550b144f659b6359c2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzjBrT-2Bff966IIUCCdMHHfnhNVVWRPprRulavaIgi=
+9lLFU-3D_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwF=
+clOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QIno=
+Pn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJ=
+MLhbIag3QluxkIEEqEwkmib-2FAt0HIvA9pfUhMJ9cU4Tjpwoh2n7MQZ6-2BgVBuqfQjAc2S-2F=
+QlzKpniy6Q-2B0t-2Fn6pgOaI3sVOwIcx6odaMrMFItqEAHhItK13H-2BLZlK2lvff3HQSqWoXc=
+rWjEUIhuG8MOKYaK2JKDej-2FltkG5OtkV6lAfG0Wo2pucKxp5HtRsjLi6RVz9EhhVsKtyr9iIt=
+aKfcXRBXbX66NERb3wxJa-2FZbgCbnq0nu1]
+
+ webversion [https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFi=
+wAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-=
+2Bp2x8dgwU2sLohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzj9AYobg1u6HqYt0cnN-2B1GF8b7Nu=
+NMIZI459a4JeZCjkW7OqCMgO105WMeuhAxaVRfoLScd1YCUM0GBGViPI9h4494Pfz56H6Z6oW9T=
+x1PZ9H0RG0kfWhIoa7XSQ9WKFZ7_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bd=
+yv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ=
+7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXd=
+eZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvCFuXogCfvfh5xNWGkwZMXaUJ=
+W3yHYBZbb6tqhjm7pDWy9XARXlPDZNlPLnUVre389nsocAXTu-2BGBe44YzjWW41YEzgw8T4v8t=
+2Y5nF8o0yZALV1-2BXjtI98DaxUNukH3kJy7Pj5yUibveXbnftB8JD2Za-2BW-2B4qQXbQ5vi2M=
+YnXBneF-2F2FSa0hK262XR1ZHFy8VnIPGO5b847436k5n58gcK]=20
+
+=09=09[FA-slider-HARKITNAS-1024x439-45]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlzCxf06MAjTfWeDigcELvJaqLPn8-2FpLwU0hwuYbGEoWqKFEedXkbyhaIi6ys=
+kVtJR-2FcrE2-2BS8lc7JAwZj4EAmDr-2BiaaGaXgq7E-2FQym0Oo8CGuJBX7jCpvViE-2BWzz2=
+x8FLzB6Pa8IRMPc01i0zlijKtiH92xQQklvBhyU6-2BKSzJTEwTulb-2BUxtV9w1ndgQ9hjtZrW=
+RWJMZTsqLRLxKO0QBN_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUY=
+ZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v=
+5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPT=
+MZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvAzdgib7c4mNe1k5s-2BSPFUEMJpgGqv28=
+Z1E-2BOr85-2BMgxkvcwzl8KlQjtwCjG-2FFI4BDuQZBEokrgncVGLAA-2B-2BELbW3mL6n5TGT=
+92i0EKw1ZL2VbtTBZMuKPYUrMK2UbViOAPgIhD87xZuS4BlqjA-2B0FZ5SrRliYDfkuH92HZR6O=
+9aG3bB53-2BPx83-2BaVsIRS6h-2ByU-2FHO-2BiZlsu3GGoD-2FU8KFu]
+
+SALAM INDONESIA,
+
+Sudah saatnya Indonesia bangkit, berusaha untuk berdiri sejajar dengan nega=
+ra-negara maju dunia. Jadikan momen Hari Kebangkitan Nasional kali ini seba=
+gai pengingat bahwa kita memang bisa. Pasti bisa!
+
+Merayakan Hari Kebangkitan Nasional, Kompas memberi potongan harga khusus b=
+agi Anda: potongan harga 45% untuk Paket Kompas Digital Lengkap 12 Bulan da=
+n potongan harga 25% untuk Paket Kompas Digital
+Lengkap 6 Bulan.
+
+Pastikan Anda melakukan pembelian selama periode 18 Mei =E2=80=93 24 Mei 20=
+17.
+
+=09=09[buttonlangganan-2]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlzCxf06MAjTfWeDigcELvJaqLPn8-2FpLwU0hwuYbGEoWqKFEedXkbyhaIi6ys=
+kVtJR-2FcrE2-2BS8lc7JAwZj4EAmDr-2BiaaGaXgq7E-2FQym0Oo8CGuJBX7jCpvViE-2BWzz2=
+x8FLzB6Pa8IRMPc01i0zlijKtiH92xQQklvBhyU6-2BKSzJTEwTulb-2BUxtV9w1ndgQ9hjvY-2=
+B34LP2OAducz14uP-2FSCc_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8ep=
+kVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6T=
+F64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifk=
+eDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvBr3VPLMXR-2B-2BDI-2BqCdTNJNcx=
+4d1kcGvqPPxqEJGX6xJ90kVx94zt-2Fqum-2BsCz6-2BgsWKB-2F75RQw52-2FHFgo9QkReuJTF=
+z8KaltLzyNn0Yi-2BEZDyj05ViIlWHM3jr0vGFF60DxB1XNxElKPLDU1L-2FOz-2Fbd9uRWKSb-=
+2F0lAp4DQfW1IpMvhoi6At7gqDRm63HLd18-2FzF86OG-2B9sW89BB1c-2BIO7akU]
+
+ Info dan bantuan hubungi hotline Kompas melalui Whatsapp: +62812 900 50800=
+ [whatsapp://send/6281290050800#Intent;scheme=3Dsmsto;package=3Dcom.whatsap=
+p;action=3Dandroid.intent.action.SENDTO;end]=20
+Email: hotline@kompas.com | Tlp: 02125676000 (hari kerja atau jam 07.00-18.=
+00 WIB)
+
+Ikuti akun-akun media sosial HARIAN KOMPAS lainnya
+
+ [https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu=
+-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2=
+sLohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzjHbUO1Uam1JAaS-2BjPTVHEIqLgERYWmEq-2BRuT=
+CRK3o3cgLHcVkxNjd5f5EZPRMkTxU_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2=
+Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2Hr=
+nQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpn=
+XdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvCEIV0m9jmdm693jd6ekYho=
+WNkB5y-2B6dzQjGr0aS7L3uzYSMz6wVq9VOUwIBP-2FNq-2FpltGJNeD8V96h6MQ0ZZuhm-2Bh9=
+-2BHxZVmHkyN7rbB0bszihwTjqBenCDWAPYdz8nPzhVbkrBOIpm7U-2FIBTrBvQ7wetD6HDjP1-=
+2FojyjfkcMAAxvq5HYpzAJ9saWmhJfROOC1-2ByhVkmZ651Ppsdm42ghny]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzjsxvXtGSkeo7sqU76wGL1AKLJ0xWO0vqgL6SpcuLj=
+4-2FvQZkzt4oSeOlP1-2BLMPKGJE_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2B=
+dyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2Hrn=
+Q7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnX=
+deZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvA1Bd6wXy2hjgaLqnF9PnwKQ=
+YxHUICcYC7FtIS8yF7KUx9RyyHwk7VVY0lcGCJJ25DJLxagd8fMYJOYfavL6CheE-2BJHJ3jNgO=
+8V-2Fp6HbxZ1LFZPVn-2B6rwSuTIdP9PPrMqNzHq7O6jQcYaHyv6hT3PMjH-2F62shxj-2By7pA=
+viMTL40Q3SbgIR07n7R5zkJbl1UDtX9-2F2szCZAzeHCiynu6rhEn]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzjErbJ0-2FRMbotGros-2BOrGcrbt3WvJN5vBfdI-2=
+FLB1cf9REYR0F5eX0tGYil3489v4CX_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-=
+2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2H=
+rnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCp=
+nXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvDSkqEUdvp4-2BeC7lyKCA=
+9Z5vEmJm5W2gbMMCD-2B3TuR48IPM-2F2l0CIKKFnbslLJXvgZ9MWq8JDEEL-2BIoExe4RSzsXD=
+6-2FnNxYsKCkOAykIdwcNPPF-2Bc9Xh9GgBZ-2Bpf8dF0LuA1mWN5cpkoKQm1GfPvoqJ4hyGsz-=
+2BWdA8JfJwkuJBeGRxKx27cffmQ9K-2F0h3U9fGEqpuMZZhqNg3AvImP7DHZS]
+[https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-=
+2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2s=
+LohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzj7gS6eOM7NfXXpdyaTArevkdgHKjQ6U-2BnQ9r6IC=
+rcuXjySbr7-2FXybE4MFOhxRj9X3_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2B=
+dyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2Hrn=
+Q7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnX=
+deZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvC3uYpurijLY84tQ-2Fecxgl=
+-2Fp7qJuw6Y3uLaHLUKLhGCjlBRLe4P1g4C8rrtY71YL9OMsgoSZ-2FspoMZHeGXmBcFH7KYD8N=
+1hTDqE089vCJ4p87oJ8VOpKRLilbJrWh9nKnwKgz-2B0ZmP-2F-2F-2FHGMSvfxIFYgQl6fu7zj=
+PTLHWavNNIAT8NePaqXgKLh4woeJJVo3wf3q6Gg3VrCBjmAdX4kgMj4]
+--16fc17e9837d6e349234e12cc1ace3eef05cf68218550b144f659b6359c2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<title>KOMPAS ID - Beta - Kompas</title>
+<style>
+#outlook a{padding:0;}
+body{width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjus=
+t:100%;margin:0!important;padding:10px!important;}
+img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;displa=
+y:block;max-width:100%;height:auto;}
+
+a img{border:none;}
+table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+table td{border-collapse:collapse;}
+.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+.btn img{display:inline;}
+=09
+.footer a{
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+=09
+}
+
+.upperclass a {
+=09color:#707070;
+=09font-family:Arial;
+=09font-size:10px;
+}
+
+@media only screen and (max-width: 599px){
+=09body{-webkit-text-size-adjust:120% !important;-ms-text-size-adjust:120% =
+!important;}
+=09.wrap{width:96% !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap img{max-width:100% !important;height:auto !important;}
+=09.wrap table{width:100% !important;}
+=09.wrap .m-b,.m-b img{display:block;min-width:100% !important;width:100% !=
+important;}
+}
+@media only screen and (max-width: 479px) {
+=09}
+@media only screen and (max-width: 320px) {
+=09}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736=
+px) {
+=09=09body{-webkit-text-size-adjust:170% !important;-ms-text-size-adjust:17=
+0% !important;}
+=09}
+
+</style>
+</head>
+<body style=3D"cursor: auto; ">
+<center>
+<table style=3D"height:100% !important; margin:0; padding:0; width:100% !im=
+portant;margin-top:20px;" width=3D"99%" height=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0"><tbody><tr>
+<td valign=3D"top" align=3D"center">
+
+     =20
+        <table id=3D"templatePreheader" width=3D"600" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0"><tbody><tr>
+<td class=3D"preheaderContent" valign=3D"top">
+
+              <table style=3D"line-height:20px;margin-bottom:3px;" width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr>
+<td width=3D"75" valign=3D"middle"><a href=3D"https://u2171939.ct.sendgrid.=
+net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cB=
+pGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlZGBLwqYLNe0mJCqV=
+53tzjBrT-2Bff966IIUCCdMHHfnhNVVWRPprRulavaIgi9lLFU-3D_0OYJJotz75mS8A0tZ8-2F=
+eycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2=
+B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8=
+QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0H=
+IvBnDS628MpHIWvVgbD-2FbL3STMijptu2wq5zx8ib9BZ2wsuoiK4CWWfR8LVQ5liiDhoTuulC0=
+xcKkPD-2BJZeumGbNMOScgAOlUukexzrSgj1WkEnBH408VQ01iIhb-2BRTqwvLOQBIAvAtHLKZV=
+ZWsiZJElATgBpAlblUFW7gwkQWMzC9AhdPuuNfbrt68rOp0gKw36pj3f5Qyti-2FWDxnHirGoo"=
+><img src=3D"http://beta286.print.kompas.com/marcom/wp-content/uploads/site=
+s/15/2016/02/logo-kompas75.png"></a></td>
+                 =20
+                  <td width=3D"190" valign=3D"top"><div mc:edit=3D"std_preh=
+eader_links" style=3D"text-align:right;" class=3D"upperclass"> <span style=
+=3D"color:#A6A6A6;font-family:Arial;font-size:10px;"><a href=3D"https://u21=
+71939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7=
+muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2sLohVMDe1-2FU=
+ZlZGBLwqYLNe0mJCqV53tzj9AYobg1u6HqYt0cnN-2B1GF8b7NuNMIZI459a4JeZCjkW7OqCMgO=
+105WMeuhAxaVRfoLScd1YCUM0GBGViPI9h4494Pfz56H6Z6oW9Tx1PZ9H0RG0kfWhIoa7XSQ9WK=
+FZ7_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZT=
+sI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yz=
+vgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbI=
+ag3QluxkIEEqEwkmib-2FAt0HIvBjOFp0HUAJ-2BtAxJHUx-2Bx-2Bl1H-2BD5rh98xM-2BJLx4=
+7K8lLiB9TH4vhm5zhaMXfNNnFYUa3ZFDDEE3v1yUn57gPBANs-2BTM-2BcnrfOR06uHg-2BjQdv=
+FEwD2s-2B5U1QlgtRu0MDnQOL8UoS0lzap9y8Je05iEcJNZyRu9X4waOP-2BAoFCOk4QVd7midt=
+pSl6rFlk0nyPIk3l8A26IdDpeLMmSvv0gl7K">webversion</a></span> </div></td>
+                 =20
+                </tr>
+</tbody></table>
+
+</td>
+          </tr>
+</tbody></table>
+
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp=
+4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yP=
+J4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlzCxf06MAjTfWeDigcELvJaqLPn8-2FpLwU0hwuYbGEo=
+WqKFEedXkbyhaIi6yskVtJR-2FcrE2-2BS8lc7JAwZj4EAmDr-2BiaaGaXgq7E-2FQym0Oo8CGu=
+JBX7jCpvViE-2BWzz2x8FLzB6Pa8IRMPc01i0zlijKtiH92xQQklvBhyU6-2BKSzJTEwTulb-2B=
+UxtV9w1ndgQ9hjtZrWRWJMZTsqLRLxKO0QBN_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpM=
+VJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGa=
+VKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOz=
+iuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvBJF03QB3cupDXNc=
+BXcjKDmFlO1VdRGJdyJp93khw1VX6NhzjPDDCShvaOkKVsIBDn3w7iSwWp5IkEP-2F85j5nTPkg=
+zQlD59PuTTCZPll9FShUpgXGb2p0dlflzPaoMkhmKFrB75vphr49RcjofjgoR93m4qiBw-2FSf-=
+2F8OA8rvBpzjzbhqzQ6-2FwU-2FOJdK4CkcSSpHQT-2FMfjp5xq-2FUDiGSL5he"><img  id=
+=3D"headerImage campaign-icon" mc:label=3D"header_image" mc:edit=3D"header_=
+image" editable=3D"" label=3D"Image max width 600 pixel" class=3D"" data-id=
+=3D"2797" alt=3D"FA-slider-HARKITNAS-1024x439-45" src=3D"http://print.kompa=
+snewsletter.com/wp-content/uploads/sites/6/2017/05/FA-slider-HARKITNAS-1024=
+x439-45-600x257.jpg" style=3D"width:600px;height: auto;" width=3D"600" heig=
+ht=3D"257"></a></td>
+                  </tr>
+</tbody></table>
+           =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"30" border=3D"0" bgco=
+lor=3D"#Fff"><tbody><tr><td style=3D"text-align:left;" valign=3D"top">
+                            <div mc:edit=3D"std_content00" style=3D"margin-=
+bottom:20px;">
+                            =20
+                              <h2 style=3D"color:#505050;font-family:Arial;=
+line-height:150%;text-align:left;word-wrap: break-word;letter-spacing:3px; =
+font-weight:400; font-size:16px">Salam Indonesia,</h2>
+                              <p>Sudah saatnya Indonesia bangkit, berusaha =
+untuk berdiri sejajar dengan negara-negara maju dunia. Jadikan momen Hari K=
+ebangkitan Nasional kali ini sebagai pengingat bahwa kita memang bisa. Past=
+i bisa!</p>
+<p>Merayakan Hari Kebangkitan Nasional, Kompas memberi potongan harga khusu=
+s bagi Anda: potongan harga 45% untuk Paket Kompas Digital Lengkap 12 Bulan=
+ dan potongan harga 25% untuk Paket Kompas Digital Lengkap 6 Bulan.</p>
+<p>Pastikan Anda melakukan pembelian selama periode 18 Mei =E2=80=93 24 Mei=
+ 2017.</p></div></td>
+                        </tr>
+</tbody></table>
+ =20
+              <table id=3D"templateHeader" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" bgcolor=3D"#Fff"><tbody><tr><td class=3D"headerContent o-f=
+ix m-b"><a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp=
+4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yP=
+J4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlzCxf06MAjTfWeDigcELvJaqLPn8-2FpLwU0hwuYbGEo=
+WqKFEedXkbyhaIi6yskVtJR-2FcrE2-2BS8lc7JAwZj4EAmDr-2BiaaGaXgq7E-2FQym0Oo8CGu=
+JBX7jCpvViE-2BWzz2x8FLzB6Pa8IRMPc01i0zlijKtiH92xQQklvBhyU6-2BKSzJTEwTulb-2B=
+UxtV9w1ndgQ9hjvY-2B34LP2OAducz14uP-2FSCc_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd=
+0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN=
+3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5=
+GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvBVPMCb5B1Yr=
+GeXfKLA2KGbw-2Fnmbh6V4CQvbDQv-2Bkwi2CqHN2bz4bHRic17Z-2FuoQfNenFv1tKF0ex4wsw=
+HOP7RVxnMRi6yt9k9VAs4Sk8XKwCk4na9iqjIuKlwTCkmkflQvdwIWWAbESRryheuNJ9-2F-2Fa=
+GvEqqJCXDrxt7CzgmqMFanuI-2FXK-2FNGU5mYsSKCnbcDXdczrL97GI9NgXxvKx9nS"><img  =
+id=3D"headerImage campaign-icon" mc:label=3D"header_image" mc:edit=3D"heade=
+r_image" editable=3D"" label=3D"Image max width 600 pixel" class=3D"" data-=
+id=3D"2285" alt=3D"buttonlangganan-2" src=3D"http://print.kompasnewsletter.=
+com/wp-content/uploads/sites/6/2017/03/buttonlangganan-1.jpg" style=3D"widt=
+h:600px;height: auto;" width=3D"600" height=3D"114"></a></td>
+                  </tr>
+</tbody></table>
+           =20
+
+  <table id=3D"templateBody" width=3D"600" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0"><tbody><tr><td class=3D"bodyContent" valign=3D"top"><table=
+ width=3D"100%" cellspacing=3D"0" cellpadding=3D"20" border=3D"0" bgcolor=
+=3D"#fff"><tbody><tr><td valign=3D"top">
+                            <div mc:edit=3D"std_social" style=3D"color:#505=
+050;font-family:Arial;font-size:11px;line-height:150%;text-align:center;bac=
+kground-color:#FFF;"> Info dan bantuan hubungi hotline  Kompas melalui What=
+sapp: <a href=3D"whatsapp://send/6281290050800#Intent;scheme=3Dsmsto;packag=
+e=3Dcom.whatsapp;action=3Dandroid.intent.action.SENDTO;end" style=3D"color:=
+#505050;text-decoration:none;">+62812 900 50800</a> <br>
+                              Email: hotline@kompas.com=20
+                              | Tlp: 02125676000 (hari kerja atau jam 07.00=
+-18.00 WIB)<br><br>
+                              Ikuti akun-akun media sosial <strong>Harian K=
+ompas</strong> lainnya<br><br><div class=3D"btn"><a href=3D"https://u217193=
+9.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9=
+yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlZG=
+BLwqYLNe0mJCqV53tzjHbUO1Uam1JAaS-2BjPTVHEIqLgERYWmEq-2BRuTCRK3o3cgLHcVkxNjd=
+5f5EZPRMkTxU_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pAT=
+yIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6=
+QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxT=
+xWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvDYmMTfqCH4aQw31E6cpo5rs4rJr9bbqSvFSuOql=
+BdIOdqd53PdyLBOmTZHElCbFp6kc8OrRMdet5nlerRYG6VJFi5T1NmEQOKhJNZjbwVlVs-2Br1D=
+aOISR3H9FAY-2BJwROkvomlJ1QtRD4JoepdVolEFniCcR2vgS1tX4FewjpM9QnSPB5vLHJft3FX=
+EFTlHCMciSl11gUH7XCpWD7af1iud" style=3D"color:#000;font-weight:normal;text-=
+decoration:underline;" editable=3D"" label=3D"Social Media Button" class=3D=
+""><img src=3D"http://doc.kompasnewsletter.com/wp-content/uploads/sites/9/2=
+016/12/social_footer_twitter-30.png" style=3D"width:30px;margin-right:5px;"=
+></a> <a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUckPxxp4v=
+HbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4=
+b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzjsxvXtGSkeo7sqU76wGL1AKLJ=
+0xWO0vqgL6SpcuLj4-2FvQZkzt4oSeOlP1-2BLMPKGJE_0OYJJotz75mS8A0tZ8-2FeycxvxM3B=
+ybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2=
+SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK=
+-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvAcpVx0j=
+wEMNTEmIcY7tAFjnQ6FSZB945MWetZmNErXLhkisy0xyLLy1mzzIExpWrvbkpD868iofMSYl59J=
+hHJfSSBWzeLeuCkz4-2Fz-2B-2FpmY0R9uTumne3L3AzGjg2pirtcU7rr29A9s4odtnaqL8PtJf=
+7O-2FZgHt0WMnEV1VGvuKIyYj-2BnGInaFzSnECgmPSPZBxGAjoJnUn3Y5Bzj8yyt1D" style=
+=3D"color:#000;font-weight:normal;text-decoration:underline;" editable=3D""=
+ label=3D"Social Media Button" class=3D""><img src=3D"http://doc.kompasnews=
+letter.com/wp-content/uploads/sites/9/2016/12/social_footer_facebook-30.png=
+" style=3D"width:30px;margin-right:5px;"></a> <a href=3D"https://u2171939.c=
+t.sendgrid.net/wf/click?upn=3DgUckPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-=
+2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpSfu6yPJ4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlZGBLw=
+qYLNe0mJCqV53tzjErbJ0-2FRMbotGros-2BOrGcrbt3WvJN5vBfdI-2FLB1cf9REYR0F5eX0tG=
+Yil3489v4CX_0OYJJotz75mS8A0tZ8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATy=
+IwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6Q=
+InoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTx=
+WcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIvDS214Qdr-2B5ZvOD53yYlHCFMfQFqEJnSS9AVbLa=
+raJWdNblsjzFfNzXIhZftFapYQhhlCZIguO0-2BJMab67SAyycWvDGXkdRvL9lUoqHSb2IToTxL=
+izsmuuqOEzbLzqELToSglbdv93xuFdC83qwSLpw2j60Od1-2B-2Bm-2Flghm2EpvOFaHQ-2FZud=
+ShS9b8AqxHe7XVGmj8b4JcfXWCgihhZBLgiX" style=3D"color:#000;font-weight:norma=
+l;text-decoration:underline;" editable=3D"" label=3D"Social Media Button" c=
+lass=3D""><img src=3D"http://doc.kompasnewsletter.com/wp-content/uploads/si=
+tes/9/2016/12/social_footer_youtube-30.png" style=3D"width:30px;margin-righ=
+t:5px;"></a> <a href=3D"https://u2171939.ct.sendgrid.net/wf/click?upn=3DgUc=
+kPxxp4vHbFiwAt28wXG4Tu-2BFcA93jGvV7muz9yP-2FQHMpKI6cBpGNqbNs14nkaCwUKQw7SpS=
+fu6yPJ4b8Q-2Bp2x8dgwU2sLohVMDe1-2FUZlZGBLwqYLNe0mJCqV53tzj7gS6eOM7NfXXpdyaT=
+ArevkdgHKjQ6U-2BnQ9r6ICrcuXjySbr7-2FXybE4MFOhxRj9X3_0OYJJotz75mS8A0tZ8-2Fey=
+cxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYodukV-2B-=
+2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P1RfA8QC=
+xuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2FAt0HIv=
+BkiYnQ2t-2ByNpxISiG0tCRrLDMqc57ZFtpp-2F5mmTxHFM-2FNkCSrfrRjO9hHnLd7v0ZbzJGR=
+fjHxEmOMo5bKPyTv72eklDE1Z8IWhuRUbEN-2FEiU2eV196sZBDS6e5sX2tq2BX4sn72etXmTrl=
+24MqNtn9Xk-2FDK48VNMhBT338PD2MKrNHr9mtoaQnTx8SGxSyHED3P14QcCzxsvdj5VOzJYbC"=
+ style=3D"color:#000;font-weight:normal;text-decoration:underline;" editabl=
+e=3D"" label=3D"Social Media Button" class=3D""><img src=3D"http://doc.komp=
+asnewsletter.com/wp-content/uploads/sites/9/2016/12/social_footer_instagram=
+-30.png" style=3D"width:30px;margin-right:5px;"></a> <br></div>
+                            </div></td>
+                        </tr>
+</tbody></table></td>
+                  </tr>
+</tbody></table>
+           =20
+
+</td>
+    </tr>
+</tbody></table>
+</center>
+<img src=3D"http://print.kompasnewsletter.com/mymail/2793/2ae588929af78ff0f=
+ff6d03e7263c3cc/" alt=3D"" width=3D"1" height=3D"1">
+<img src=3D"https://u2171939.ct.sendgrid.net/wf/open?upn=3D0OYJJotz75mS8A0t=
+Z8-2FeycxvxM3BybMd0BpMVJZCP-2Bdyv8epkVUYZF9pATyIwFclOZTsI12FSGk1LiWCGZdYYod=
+ukV-2B-2BusBU2SrIN3RGaVKBo2HrnQ7XD6TF64v5Sczk6QInoPn3yzvgT0CMLEGZcax6C5AZ7P=
+1RfA8QCxuv-2BK-2B5GkOziuSOCpnXdeZifkeDPTMZSdxTxWcJMLhbIag3QluxkIEEqEwkmib-2=
+FAt0HIvAKGs27r8TS-2BSxZznMZhNLfWbdBiFUEC2Clu-2F8s-2BjcWk1tFM-2F54LVIPSM3RSx=
+CipzVhf6FJM4T-2FF9rDY7-2F6q9xsFtXHilf-2FBlqRdVOowRtLcZ3OM9W1fm-2FNPfdbYrVZS=
+-2B6ifgxImqO2OJOVO4KX030NwEeAa9m8HOEli4i1mDt9jbtNEs9CLDXa4AimADWyIj05eK0h8L=
+mS7dgIBUiqErNM" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"hei=
+ght:1px !important;width:1px !important;border-width:0 !important;margin-to=
+p:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-=
+left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padd=
+ing-right:0 !important;padding-left:0 !important;"/>
+</body></html>
+
+--16fc17e9837d6e349234e12cc1ace3eef05cf68218550b144f659b6359c2--

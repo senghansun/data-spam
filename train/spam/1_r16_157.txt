@@ -1,0 +1,1946 @@
+Delivered-To: vincentjraven@gmail.com
+Received: by 10.100.161.161 with SMTP id q30csp4063013pjc;
+        Sun, 13 Aug 2017 23:35:35 -0700 (PDT)
+X-Received: by 10.237.34.79 with SMTP id o15mr30590106qtc.134.1502692535049;
+        Sun, 13 Aug 2017 23:35:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502692535; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FwyD6ckWUYEzKd0Xs9OHmuHHfpnH2uisfyKhlIsaTlLlfwy1koEDLcDfNXPw5yUXpM
+         W10LD+/tWJ7Ouor35fQmC71zLitL+8tf9A3CbIv780YlkI5GWPdZr4SMnNpQHg8jpJYz
+         Z5FKe2v1wvqgGsLKTwSVl8rcwgGbukGNFO2rD635yZhsUmPZqCxAgT13BtTGaKc7eN+H
+         SKQncGnqKWUFnAAAMCkj62f/9RBDITzNu6XHY510qjhyl2dk3y7/YuZ7qQCYonl9zlcZ
+         WQdwJp1DzU86UH/j9lNb+mjvT6EJ/Llr8YWiM8N+Ru19ABo9kFJh4M6gq+eBlqpPHq4Z
+         AkUg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:to:reply-to:from:subject:date:message-id
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=mcHQVRfAJT27KsJ624Rff3QxDVQCYqG8fJpa3uTjGAQ=;
+        b=c3pLcwH5xPWxRDFsTuflO9IB6Mm/h4CKGnZU8xew9vY7mDKkidS3CRwMut0/TMXagt
+         EPT8T0WhuwfJ1uOpI8cTzTIArMzsJnG+ODyKIoR7Na4QOQEtvxD7OTIawzX99a/q2xSe
+         pzB49q/x1PiiAjHT9qtza3bdLkQQlf8NRGSGZ3A170e/TUX+eUl5adc0gR35C0EhY6mV
+         efrQ0FPkSrjM+lxLyPjZEmSzxgAZ0Mjhjs81BA23bxfnNE5AXh6Agsu11hIei61DamCl
+         gf0hzomiye4W7dxzaYvhRqvDR97WZDI5Vb0TrUlUQCZ8oI3nG5MuPoJGsyHnI5eD9saP
+         FAbg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tiket.com header.s=rgfo2hpd5jx7pe6rz6ghp76op545puad header.b=Ak+EIvY5;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=kQ7Lmt2z;
+       spf=pass (google.com: domain of 0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com designates 54.240.11.150 as permitted sender) smtp.mailfrom=0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com
+Return-Path: <0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com>
+Received: from a11-150.smtp-out.amazonses.com (a11-150.smtp-out.amazonses.com. [54.240.11.150])
+        by mx.google.com with ESMTPS id f43si5719602qtf.332.2017.08.13.23.35.34
+        for <vincentjraven@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 13 Aug 2017 23:35:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com designates 54.240.11.150 as permitted sender) client-ip=54.240.11.150;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tiket.com header.s=rgfo2hpd5jx7pe6rz6ghp76op545puad header.b=Ak+EIvY5;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=kQ7Lmt2z;
+       spf=pass (google.com: domain of 0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com designates 54.240.11.150 as permitted sender) smtp.mailfrom=0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=rgfo2hpd5jx7pe6rz6ghp76op545puad; d=tiket.com; t=1502692534; h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type; bh=6HzLvL8vLpQ3wFgyRfiBhN/sXKj4JZ5kq2VFqe8P4RM=; b=Ak+EIvY5BaIMXDbfhB41weHp58ShaDUEvVwRlVgG4YupAcG+lpvc/HRt3gUh/Zqv EU+hNuyEjgegh/MfLtdGSdVmAudmzVT/RpedrixGcfbVJUEb9EnW2EMJe6lS8Z7ChPD YoZ/bVM1yGB+5EwgH66nzuRHWvNupv3WRA7/GN9Q=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1502692534; h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:Feedback-ID; bh=6HzLvL8vLpQ3wFgyRfiBhN/sXKj4JZ5kq2VFqe8P4RM=; b=kQ7Lmt2zRo7i598XO6VvZ5nnMcZa/uv1t0ARZ+TGymk3Syda1+IexMKzkuttuuPj /os8GwNfMfoM/9oL5yJPXvhRt3qaddjYCSuKAxIUafLyOk3jgeaNuLxcR+DKvf6rJ1k qK8iW/DdvM+IvXGMrYbuDJa+TqpyL1tjOHqK0MZo=
+Message-ID: <0100015ddf74661a-04b89254-ae1f-4fa5-96f2-2938a16d9de9-000000@email.amazonses.com>
+Date: Mon, 14 Aug 2017 06:35:33 +0000
+Subject: Semangat Baru di Hari Senin! Diskon Pesawat & Hotel Hingga Rp 550.000 
+From: "Tiket.com" <noreply@tiket.com>
+Reply-To: noreply@tiket.com
+To: vincentjraven@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_=_swift_v4_150269064659913d563ec5c_=_"
+X-SES-Outgoing: 2017.08.14-54.240.11.150
+Feedback-ID: 1.us-east-1.jHfF/ESX98jp05VpBn6X9bsjq0PVsf52o/UwW23NCJQ=:AmazonSES
+
+--_=_swift_v4_150269064659913d563ec5c_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+Hotel 100K, BNI550K, Train25K, Flight172K
+Jika anda tidak bisa membaca email ini, silakan melihat email dengan membuk=
+a tautan berikut: http://www.tiket.com/newsletter/d?sid=3D19636887&token=3D=
+3d3e8a35f8395571f1904d8468857bce&part=3D201708
+
+
+
+--_=_swift_v4_150269064659913d563ec5c_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+ />
+=09<meta  name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0, maximum-scale=3D1.0," />=20
+=09<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+=09<style type=3D"text/css">
+=09=09
+
+=09=09@media screen {
+=09=09=09@import url(//fonts.googleapis.com/css?family=3DDroid+Sans:400,700=
+);
+=09=09=09body {
+=09=09=09=09margin: 0 auto;
+=09=09=09}
+=09=09}
+
+=09=09@media only screen and (max-width: 480px) and (max-device-width: 480p=
+x) {
+=09=09=09.text-menu {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09p[class=3D"text-menu"] {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09h1 {
+=09=09=09=09font-size: 21px !important;
+=09=09=09}
+=09=09=09h2 {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09h2.border-text {
+=09=09=09=09height: 13px !important;
+=09=09=09}
+
+=09=09=09span.border-text {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09.wd-75 {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-75"] {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09.wd-25 {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-25"] {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09    color: #333 !important;
+=09=09=09    width: 95% !important;
+=09=09=09    padding: 15px 0px 15px 10px !important;
+=09=09=09    font-size: 12px !important;
+=09=09=09}
+
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09border: none !important;
+=09=09=09=09font-size: 9pt !important;
+=09=09=09}
+
+=09=09=09.icon-arrow {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09img[class=3D"icon-arrow"] {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"sm-text-center"],
+=09=09=09h2[class=3D"sm-text-center"],
+=09=09=09p[class=3D"sm-text-center"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.two-column,
+=09=09=09.img-responsive,
+=09=09=09.three-column,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.full {
+=09=09=09    display: block;
+=09=09=09    width: 100% !important;
+=09=09=09 }
+
+=09=09=09.text-responsive {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"text-responsive"],
+=09=09=09p[class=3D"text-responsive"],
+=09=09=09h2[class=3D"text-responsive"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09}
+
+=09=09@media only screen and (min-width: 481px) and (min-device-width: 481p=
+x) and (max-width: 640px) and (max-device-width: 640px) {
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09font-size: 10pt !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09=09padding: 15px 0px 15px 10px !important;
+=09=09=09=09width: 95% !important;
+=09=09=09=09font-size: 12pt !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.img-responsive,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.two-column {
+=09=09=09=09max-width: 50% !important;
+=09=09=09}
+
+=09=09=09.three-column {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+=09=09}
+=09</style>
+</head>
+
+<body>
+=09<div style=3D"font-size: 15px; margin: 0 !important; background: #ffffff=
+; font-family: Droid Sans, arial, helvetica, sans-serif !important; width: =
+100%; table-layout: fixed;">
+=09=09<div style=3D"width: 100%; margin: 0 auto;">
+=09=09=09<table width=3D"100%" align=3D"center" style=3D"Margin: 0 auto; ma=
+x-width: 700px; border-spacing: 0; color: #333333;" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0">
+=09=09=09=09<!-- START HEAD EMAIL -->
+=09=09=09=09<tr>
+=09<td style=3D"text-align: center; padding: 15px; background: rgb(230, 231=
+, 232);" align=3D"center">
+=09=09=09=09<p style=3D"margin: 0px;">
+=09=09=09<a href=3D"http://www.tiket.com/newsletter/d?sid=3D19636887&token=
+=3D3d3e8a35f8395571f1904d8468857bce&part=3D201708" style=3D"text-decoration=
+: none; color: #333333;">Lihat tampilan di web browser anda</a>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/orange-dash-lin=
+e.jpg" style=3D"width: 100%; max-width: 700px; height: auto; " width=3D"700=
+">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/tiket-logo.j=
+pg" style=3D"max-width: 230px;" width=3D"230">
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154);">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/pesawat?utm_source=
+=3Dnewsletter&utm_medium=3Demail&utm_content=3Dflight-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">FLIGHT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/kereta-api?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dtrain-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">TRAIN</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/hotel?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Dhotel-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">HOTEL</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/event?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Devent-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">EVENT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/sewa-mobil?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dcar-search-top-header&utm_c=
+ampaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: =
+none;">CAR</a></p>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;" align=3D"center">
+=09=09<h2 style=3D"text-align: center; margin: 0px; font-size: 21px; color:=
+ #15629b; ">
+=09=09=09Hi Jurgen Raven=09=09</h2>
+=09</td>
+</tr>=09=09=09=09<!-- START HEAD EMAIL -->
+
+=09=09=09=09<!-- START CONTENT -->
+=09=09=09=09
+
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/Promo-BNI-N=
+LD" target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/1/7/newsletter-170809_bni_ilovemonday_ri72_newsletter-u=
+tama_700x700px.jpg" style=3D"max-width:700px; width: 100%; height: auto;" w=
+idth=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+<tr>
+=09<td style=3D"text-align: center; padding: 15px;" align=3D"center">
+=09=09=09=09=09<h1 style=3D"color: #f6921e;" align=3D"center">
+                BNI I LOVE MONDAY            </h1>
+=09=09
+=09=09
+        <div style=3D"margin-bottom: 20px;" align=3D"center">Awali Hari Sen=
+inmu dengan berbagai promo dari Tiket.com!<br>Dapatkan diskon pesawat & hot=
+el hingga Rp 550.000 khusus kartu kredit BNI<br>Terbang dan menginap jadi l=
+ebih hemat<br><br>Periode promo :=C2=A0<strong>Setiap Hari Senin & Selasa d=
+i Bulan Agustus 2017</strong><br><br><a href=3D"http://go.tiket.com/Promo-B=
+NI-NLD" target=3D"_blank"><strong>Pesan Hotel dan Tiket Pesawat Sekarang Ju=
+ga!</strong></a></div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09=09=09=09<h2 class=3D"border-text" style=3D"width: 100%; height: 15px=
+; border-bottom: 1.5px solid #c0c0c0; text-align: center;">
+=09=09      <span class=3D"border-text" style=3D"font-size: 24px; backgroun=
+d-color: #fff; padding: 0 10px;">
+=09=09        Pilihan Hotel Bisnis & Liburan di Makassar=09=09      </span>
+=09=09    </h2>
+=09=09=09</td>
+</tr>
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px;">
+=09=09=09=09=09<table dir=3D"rtl" width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/0/2/newsletter-02_gammara_hotel_makassar.news31=
+0x299.jpg" style=3D"max-width: 310px; width: 100%; height: auto;" width=3D"=
+310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>Gammara Hotel Makassar</strong></=
+h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Jalan H. M. Daen=
+g Patompo, Metro Tanjung Bunga, Makassar, Sulawesi Selatan   Sulawesi Selat=
+an</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">825</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">000</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/makassar/makassar/g=
+ammara-hotel-makassar-1?utm_source=3Dnewsletter&utm_medium=3Demail&utm_cont=
+ent=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fgammara-hotel-makassar-1&ut=
+m_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"backgroun=
+d:#ffca05; font-size:12pt; padding:15px; display:inline-block; text-decorat=
+ion:none; color:#231f20; font-weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The Rinra Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/1/newsletter-01_the_rinra_hotel.news193x127.jpg" style=3D"margin: =
+10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">880</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">600</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/the-rinra?startdate=3D2017-08-15&enddate=3D2017=
+-08-16&uid=3Dbusiness:23523475&utm_source=3Dnewsletter&utm_medium=3Demail&u=
+tm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fthe-rinra&utm_campai=
+gn=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"background:#ffca0=
+5; font-size:10pt; padding:10px; display:inline-block; text-decoration:none=
+; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Arthama Hotels Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/3/newsletter-03_arthama_hotel.news193x127.jpg" style=3D"margin: 10=
+px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">600</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/losari/arthama-hotels-makassar?startdate=3D2017-08-15&en=
+ddate=3D2017-08-16&uid=3Dbusiness:24443565&utm_source=3Dnewsletter&utm_medi=
+um=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Flosari%2Farthama-ho=
+tels-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" st=
+yle=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-blo=
+ck; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Grand Clarion Hotel and Convention Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/5/newsletter-05_grand_clarion_makassar.news193x127.jpg" style=3D"m=
+argin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">748</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/grand-clarion-hotel-and-convention-makassar?sta=
+rtdate=3D2017-08-15&enddate=3D2017-08-16&uid=3Dbusiness:21765136&utm_source=
+=3Dnewsletter&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar=
+%2Fmakassar%2Fgrand-clarion-hotel-and-convention-makassar&utm_campaign=3DUp=
+date New Rate for 2017" target=3D"_blank" style=3D"background:#ffca05; font=
+-size:10pt; padding:10px; display:inline-block; text-decoration:none; color=
+:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Aryaduta Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/6/newsletter-06_aryaduta_hotel_makassar.news193x127.jpg" style=3D"=
+margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">797</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">999</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/hotel-aryaduta-makassar-1?startdate=3D2017-08-1=
+5&enddate=3D2017-08-16&uid=3Dbusiness:22505045&utm_source=3Dnewsletter&utm_=
+medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fhote=
+l-aryaduta-makassar-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_b=
+lank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:in=
+line-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Grand Asia Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/7/newsletter-07_grand_asia_makassar.news193x127.jpg" style=3D"marg=
+in: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">456</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">300</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/grand-asia-hotel-makassar?startdate=3D2017-08-1=
+5&enddate=3D2017-08-16&uid=3Dbusiness:21619623&utm_source=3Dnewsletter&utm_=
+medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fgran=
+d-asia-hotel-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_b=
+lank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:in=
+line-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>M-Regency Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/9/newsletter-09_mregency.news193x127.jpg" style=3D"margin: 10px 0;=
+ width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">375</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/losari/m-regency-makassar?startdate=3D2017-08-15&enddate=
+=3D2017-08-16&uid=3Dbusiness:20731701&utm_source=3Dnewsletter&utm_medium=3D=
+email&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Flosari%2Fm-regency-makas=
+sar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"bac=
+kground:#ffca05; font-size:10pt; padding:10px; display:inline-block; text-d=
+ecoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Swiss-Belhotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/0/newsletter-10_swiss-belhotel_makassar.news193x127.jpg" style=3D"=
+margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">790</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/swiss-belhotel-makassar-1?startdate=3D2017-08-1=
+5&enddate=3D2017-08-16&uid=3Dbusiness:23568348&utm_source=3Dnewsletter&utm_=
+medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fswis=
+s-belhotel-makassar-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_b=
+lank" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:in=
+line-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>LARIZ Wthree Lagaligo Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/1/newsletter-11_la_riz_whtree_lagaligo.news193x127.jpg" style=3D"m=
+argin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">349</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">999</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/lariz-lagaligo-makassar?startdate=3D2017-08-15&=
+enddate=3D2017-08-16&uid=3Dbusiness:21504456&utm_source=3Dnewsletter&utm_me=
+dium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Flariz-=
+lagaligo-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank=
+" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline=
+-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Citadines Royal Bay Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/2/newsletter-12_citadines_royal_bay_makassar.news193x127.jpg" styl=
+e=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">484</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/citadines-royal-bay-makassar-1?startdate=3D2017=
+-08-15&enddate=3D2017-08-16&uid=3Dbusiness:24505741&utm_source=3Dnewsletter=
+&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2=
+Fcitadines-royal-bay-makassar-1&utm_campaign=3DUpdate New Rate for 2017" ta=
+rget=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px; =
+display:inline-block; text-decoration:none; color:#231f20; max-width:140px"=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/HtlWkdy-NL"=
+ target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_top_hotel_weekday_extended_agustus=
+_ads_banner_1200x628px1.jpg" style=3D"max-width:700px; width: 100%; height:=
+ auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px; background: rgb(230, 231, 232)=
+;">
+=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" class=3D"full" style=3D"text-align: =
+center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/0/8/newsletter-08_maxone_makassar.news310x299.j=
+pg" style=3D"max-width: 310px; width: 100%; height: auto;" width=3D"310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" class=3D"full" style=3D"text-align: =
+center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>MaxoneHotels at Resort Delia - Ma=
+kassar</strong></h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Jl. Taman Makam =
+Pahlawan No. 2-5, Makassar 90233, Indonesia   Sulawesi Selatan</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">418</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">999</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/makassar/makassar/m=
+axonemks?utm_source=3Dnewsletter&utm_medium=3Demail&utm_content=3Dhotel%2Fi=
+ndonesia%2Fmakassar%2Fmakassar%2Fmaxonemks&utm_campaign=3DUpdate New Rate f=
+or 2017" target=3D"_blank" style=3D"background:#ffca05; font-size:12pt; pad=
+ding:15px; display:inline-block; text-decoration:none; color:#231f20; font-=
+weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Aerotel Smile Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/3/newsletter-13_aerotel_smile_makassar.news193x127.jpg" style=3D"m=
+argin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">415</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/aerotel-smile-makassar?startdate=3D2017-08-15&e=
+nddate=3D2017-08-16&uid=3Dbusiness:141810&utm_source=3Dnewsletter&utm_mediu=
+m=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Faerotel-s=
+mile-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" st=
+yle=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-blo=
+ck; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Whiz Prime Hotel Hasanuddin Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/4/newsletter-14_whiz_prime_hasanuddin.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">359</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/whiz-prime-hotel-hasanuddin-makassar?startdate=
+=3D2017-08-15&enddate=3D2017-08-16&uid=3Dbusiness:22316992&utm_source=3Dnew=
+sletter&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmak=
+assar%2Fwhiz-prime-hotel-hasanuddin-makassar&utm_campaign=3DUpdate New Rate=
+ for 2017" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; p=
+adding:10px; display:inline-block; text-decoration:none; color:#231f20; max=
+-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Swiss-Belinn Panakkukang Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/6/newsletter-16_swiss_belinn_panakukkang_makassar.news193x127.jpg"=
+ style=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">635</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/panakkukang/swiss-belinn-panakkukang?startdate=3D2017-08=
+-15&enddate=3D2017-08-16&uid=3Dbusiness:19448722&utm_source=3Dnewsletter&ut=
+m_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fpanakkukang%2=
+Fswiss-belinn-panakkukang&utm_campaign=3DUpdate New Rate for 2017" target=
+=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px; disp=
+lay:inline-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Best Western Plus Makassar Beach</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/7/newsletter-17_best_western_plus_makassar.news193x127.jpg" style=
+=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">639</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/best-western-plus-makassar-beach?startdate=3D20=
+17-08-15&enddate=3D2017-08-16&uid=3Dbusiness:20162080&utm_source=3Dnewslett=
+er&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar=
+%2Fbest-western-plus-makassar-beach&utm_campaign=3DUpdate New Rate for 2017=
+" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10=
+px; display:inline-block; text-decoration:none; color:#231f20; max-width:14=
+0px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Hotel Sahid Jaya Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/8/newsletter-18_sahid_jaya_makassar.news193x127.jpg" style=3D"marg=
+in: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">450</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/sahid-jaya-makassar?startdate=3D2017-08-15&endd=
+ate=3D2017-08-16&uid=3Dbusiness:23375257&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fsahid-jaya=
+-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=
+=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-block;=
+ text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Losari Beach Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/1/9/newsletter-19_losari_beach_hotel_makassar.news193x127.jpg" style=
+=3D"margin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">530</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/losari-beach-hotel?startdate=3D2017-08-15&endda=
+te=3D2017-08-16&uid=3Dbusiness:19532879&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Flosari-bea=
+ch-hotel&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=
+=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-block;=
+ text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Hotel Santika Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/0/newsletter-20_santika_makassar.news193x127.jpg" style=3D"margin:=
+ 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">500</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/hotel-santika-makassar?startdate=3D2017-08-15&e=
+nddate=3D2017-08-16&uid=3Dbusiness:2949&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fhotel-sant=
+ika-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" sty=
+le=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-bloc=
+k; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Dalton Hotel & Convention Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/1/newsletter-21_dalton_hotel_makassar.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">339</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">999</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/dalton-hotel-convention-makassar?startdate=3D20=
+17-08-15&enddate=3D2017-08-16&uid=3Dbusiness:24242887&utm_source=3Dnewslett=
+er&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar=
+%2Fdalton-hotel-convention-makassar&utm_campaign=3DUpdate New Rate for 2017=
+" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10=
+px; display:inline-block; text-decoration:none; color:#231f20; max-width:14=
+0px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Avira Hotel Panakkukang - Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/2/newsletter-22_avira_hotel_makassar.news193x127.jpg" style=3D"mar=
+gin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">305</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/avirahotel-panakkukang-makassar?startdate=3D201=
+7-08-15&enddate=3D2017-08-16&uid=3Dbusiness:19994266&utm_source=3Dnewslette=
+r&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%=
+2Favirahotel-panakkukang-makassar&utm_campaign=3DUpdate New Rate for 2017" =
+target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; padding:10px=
+; display:inline-block; text-decoration:none; color:#231f20; max-width:140p=
+x">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/KAITF-NL" t=
+arget=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_kereta-katf-semua_channel_kemerdek=
+aan-agt2017_ads_socmed_1200x628px1.jpg" style=3D"max-width:700px; width: 10=
+0%; height: auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09<tr>
+=09=09=09=09=09=09<td style=3D"padding:15px;">
+=09=09=09=09=09<table dir=3D"rtl" width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; margin: 0px;">
+=09=09=09=09=09=09=09=09=09=09<img class=3D"img-resposive" src=3D"https://w=
+ww.tiket.com/img/newsletter/1/5/newsletter-15_pesonna_makassar.news310x299.=
+jpg" style=3D"max-width: 310px; width: 100%; height: auto;" width=3D"310"/>
+=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09<td width=3D"50%" dir=3D"ltr" class=3D"full" style=3D"=
+text-align: center;" align=3D"center">
+=09=09=09=09=09=09=09=09=09
+<h2 style=3D"margin: 0 0 10px 0;"><strong>Pesonna Hotel  Makassar</strong><=
+/h2>
+<p style=3D"margin: 0 0 15px 0; color: rgb(166, 168, 171)">Jl. Mappanyuki N=
+o.49, Kunjung Mae, Mariso, Kota Makassar, Sulawesi Selatan, Indonesia   Sul=
+awesi Selatan</p>
+<p style=3D"margin: 0 0 10px 0;">
+=09
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/selected-star=
+.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+       =20
+        <img src=3D'https://www.tiket.com/images/newsletter/2/unselected-st=
+ar.png' style=3D"max-width: 25px; margin: 5px;" width=3D"25">
+
+        </p>
+
+<p style=3D"margin: 0;">
+    <span style=3D"font-size:10pt; font-weight:normal; vertical-align:top; =
+line-height:12px;padding-right:4px;">IDR</span>
+    <span style=3D"font-size:38pt; font-weight:bold;  vertical-align:top;li=
+ne-height:40px">360</span>
+    <span style=3D"font-size:14pt; font-weight:normal; vertical-align:top;l=
+ine-height:16px">000</span>
+</p>
+
+<div style=3D"padding-top: 20px">
+    <p>
+        <a href=3D"http://www.tiket.com/hotel/indonesia/makassar/makassar/p=
+esonna-hotel-makassar-1?utm_source=3Dnewsletter&utm_medium=3Demail&utm_cont=
+ent=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fpesonna-hotel-makassar-1&ut=
+m_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=3D"backgroun=
+d:#ffca05; font-size:12pt; padding:15px; display:inline-block; text-decorat=
+ion:none; color:#231f20; font-weight:bold; max-width: 190px">
+            BOOK NOW=20
+            <img class=3D"icon-arrow" src=3D"https://www.tiket.com/images/n=
+ewsletter/2/raquo.png" style=3D"max-width: 14px;" width=3D"14">
+        </a>
+    </p>
+</div>=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09=09</tr>
+
+<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Expressia Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/3/newsletter-23_expressia_makassar.news193x127.jpg" style=3D"margi=
+n: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">315</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/expressia-hotel-makassar?startdate=3D2017-08-15=
+&enddate=3D2017-08-16&uid=3Dbusiness:24355130&utm_source=3Dnewsletter&utm_m=
+edium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fexpre=
+ssia-hotel-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_bla=
+nk" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inli=
+ne-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>The One Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/4/newsletter-24_theone_hotel_makassar.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">289</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">999</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/the-one-hotel-makassar-1?startdate=3D2017-08-15=
+&enddate=3D2017-08-16&uid=3Dbusiness:24563877&utm_source=3Dnewsletter&utm_m=
+edium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fthe-o=
+ne-hotel-makassar-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_bla=
+nk" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inli=
+ne-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Favor Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/5/newsletter-25_favor_hotel_makassar.news193x127.jpg" style=3D"mar=
+gin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">345</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/favor-hotel-makassar-1?startdate=3D2017-08-15&e=
+nddate=3D2017-08-16&uid=3Dbusiness:23175320&utm_source=3Dnewsletter&utm_med=
+ium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Ffavor-h=
+otel-makassar-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" =
+style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-b=
+lock; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>favehotel Daeng Tompo</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/6/newsletter-26_favehotel_daeng_tompo.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">378</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">972</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/favehotel-daeng-tompo?startdate=3D2017-08-15&en=
+ddate=3D2017-08-16&uid=3Dbusiness:19991757&utm_source=3Dnewsletter&utm_medi=
+um=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Ffavehote=
+l-daeng-tompo&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" st=
+yle=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-blo=
+ck; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Red Planet Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/7/newsletter-27_red_planet_makassar.news193x127.jpg" style=3D"marg=
+in: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">331</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">999</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/tune-hotel-makassar?startdate=3D2017-08-15&endd=
+ate=3D2017-08-16&uid=3Dbusiness:19967756&utm_source=3Dnewsletter&utm_medium=
+=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Ftune-hotel=
+-makassar&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" style=
+=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-block;=
+ text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Amaris Hotel Hertasning Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/8/newsletter-28_amaris_hertasning.news193x127.jpg" style=3D"margin=
+: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">327</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">601</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/amaris-hotel-hertasning?startdate=3D2017-08-15&=
+enddate=3D2017-08-16&uid=3Dbusiness:21200638&utm_source=3Dnewsletter&utm_me=
+dium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Famaris=
+-hotel-hertasning&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank=
+" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline=
+-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09<table width=3D"100%">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Melia Hotel Makassar</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/0/4/newsletter-04_melia_makassar.news193x127.jpg" style=3D"margin: 1=
+0px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">800</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/makassar/melia-hotel-makassar-1?startdate=3D2017-08-15&e=
+nddate=3D2017-08-16&uid=3Dbusiness:23023441&utm_source=3Dnewsletter&utm_med=
+ium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fmakassar%2Fmelia-h=
+otel-makassar-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank" =
+style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline-b=
+lock; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Grand Celino Hotel</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/2/9/newsletter-29_grand_celino_makassar.news193x127.jpg" style=3D"ma=
+rgin: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">266</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/ujung-tanah/grand-celino-hotel-1?startdate=3D2017-08-15&=
+enddate=3D2017-08-16&uid=3Dbusiness:23552363&utm_source=3Dnewsletter&utm_me=
+dium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fujung-tanah%2Fgra=
+nd-celino-hotel-1&utm_campaign=3DUpdate New Rate for 2017" target=3D"_blank=
+" style=3D"background:#ffca05; font-size:10pt; padding:10px; display:inline=
+-block; text-decoration:none; color:#231f20; max-width:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33.33333333333=
+3%" style=3D"text-align: center;" align=3D"center" class=3D"full">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 0 0 15px 0; font-size: 18=
+px;"><strong>Grand Citihub Hotel @Panakkukang</strong></p>
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"mar=
+gin: 0 0 10px 0;">
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/img/news=
+letter/3/0/newsletter-30_citihub_panakukang.news193x127.jpg" style=3D"margi=
+n: 10px 0; width: 100% height: 100%"/>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09<p style=3D"margin: 5px;">
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:10pt; font-weight=
+:normal; vertical-align:top; line-height:10px;padding-right:4px;">IDR</span=
+>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:36pt; font-weight=
+:bold; vertical-align:top;line-height:36px">295</span>
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"font-size:16pt; font-weight=
+:normal; vertical-align:top;line-height:14px">000</span>
+=09=09=09=09=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09=09=09=09=09<div style=3D"padding-top: 15px">
+=09=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiket.com/hotel/=
+indonesia/makassar/panakkukang/grand-citihub-hotel-panakkukang?startdate=3D=
+2017-08-15&enddate=3D2017-08-16&uid=3Dbusiness:23675441&utm_source=3Dnewsle=
+tter&utm_medium=3Demail&utm_content=3Dhotel%2Findonesia%2Fmakassar%2Fpanakk=
+ukang%2Fgrand-citihub-hotel-panakkukang&utm_campaign=3DUpdate New Rate for =
+2017" target=3D"_blank" style=3D"background:#ffca05; font-size:10pt; paddin=
+g:10px; display:inline-block; text-decoration:none; color:#231f20; max-widt=
+h:140px">
+=09=09=09=09=09=09=09=09=09=09=09=09=09BOOK NOW=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/im=
+ages/newsletter/2/raquo.png" style=3D"max-width: 10px;" width=3D"10">
+=09=09=09=09=09=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/FMRDK-NL" t=
+arget=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/h/u/newsletter-hut_ri_2017_flight_kemerdekaan_no_orange=
+_ads_socmed_1200x628px.jpg" style=3D"max-width:700px; width: 100%; height: =
+auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+
+
+=09=09=09=09<!-- END CONTENT -->
+
+=09=09=09=09<!-- START FOOTER -->
+=09=09=09=09<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/mail-line.jpg" =
+style=3D"width: 100%; max-width: 700px; height: auto;" width=3D"700">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<strong>Share Our Newsletter to a Friend!</strong>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<form action=3D"https://www.tiket.com/newsletter_forward ?>" method=
+=3D"GET" enctype=3D"multipart/form-data">
+=09=09=09<input name=3D"newsletter_id" type=3D"hidden" value=3D"769">
+=09=09=09<input name=3D"newsletter_token" type=3D"hidden" value=3D"99dfff17=
+fefc6d3f7c2c2a843cdef27d">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"wd-75" style=3D"width: 75%">
+=09=09=09=09=09=09<input name=3D"email" type=3D"email" placeholder=3D"examp=
+le@example.com" class=3D"form-lg" style=3D"border: none; background-color: =
+#e6e7e8; color: #333; padding: 20px 0 20px 15px; font-size: 18px; width: 95=
+%;">
+=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"wd-25" style=3D"width: 25%">
+=09=09=09=09=09=09<button class=3D"btn-lg-send" type=3D"submit" style=3D"ba=
+ckground: #00a7e1; padding: 20px; border: none; width: 100%; font-size: 12p=
+t; color:#fff;">
+=09=09=09=09=09=09=09SEND NOW=20
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+white-raquo.png" class=3D"icon-arrow" style=3D"max-width: 14px;" width=3D"1=
+4">
+=09=09=09=09=09=09</button>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</form>
+=09</td>
+</tr>
+<tr><td style=3D"padding: 15px;"></td></tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154); padding: 0px; width:100%; ">
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td style=3D"padding: 15px; text-align: center; col=
+or: #fff;">
+=09=09=09=09=09=09=09=09=09<h2 style=3D"margin: 10px 0 5px 0; font-size: 21=
+px;"><strong>Butuh Bantuan?</strong></h2>
+=09=09=09=09=09=09=09=09=09<p  style=3D"font-size: 16px; margin: 0 0 5px 0;=
+">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"tel:+622129633600" style=3D"text-d=
+ecoration: none; color: #fff;">+62 21 2963 3600</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 16px; margin: 0 0 5px 0;"=
+>
+=09=09=09=09=09=09=09=09=09=09Email : <a href=3D"mailto:cs@tiket.com" style=
+=3D"text-decoration: none; color: #fff;">cs@tiket.com</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" align=3D"right">
+=09=09=09=09=09=09<p style=3D"margin: 0px; text-align: right;">
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+cs-2.jpg" style=3D"max-width: 250px; width: 100% height: auto;" width=3D"25=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/ee4c8d9c" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(160, 191, 94)=
+;">Available on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+android-2.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=
+=3D"210">
+=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09<p style=3D"font-size: 16px; margin-top: 10px; color: rgb=
+(160, 191, 94);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.co=
+m/images/newsletter/2/green-raquo.png" style=3D"max-width: 13px;" width=3D"=
+13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/6c61f6f2" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(7, 8, 8);">Av=
+ailable on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+ios.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=3D"21=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin-top: 10px; font-size: 16px; color: rgb=
+(7, 8, 8);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.com/ima=
+ges/newsletter/2/raquo.png" style=3D"max-width: 13px;" width=3D"13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 250px;" class=3D"left-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center">
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09Sent to <a href=3D"#" style=3D"color: rgb(166, 168, 17=
+1); text-decoration: none;">vincentjraven@gmail.com</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin: 10px 0;">
+=09=09=09=09=09=09=09Why did I get this? <a href=3D"http://www.tiket.com/ne=
+wsletter/manage_subscribe?email=3Dvincentjraven%40gmail.com&token=3Dce50c08=
+b0fdf9c4a40c94afeb3f1a1da" style=3D"text-decoration: none; color: #15629b;"=
+><strong>Unsubscribe</strong></a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09To ensure that our messages get to your inbox,<br/>
+=09=09=09=09=09=09=09please add <a href=3D"mailto:mailto:noreply@tiket.com"=
+ style=3D"color: rgb(166, 168, 171); text-decoration: none;">noreply@tiket.=
+com</a> to your address book.
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 450px;" class=3D"right-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center" align=
+=3D"center">
+=09=09=09=09=09=09<p style=3D"padding: 15px; text-align: center;">
+=09=09=09=09=09=09=09<a href=3D"http://facebook.com/tiket" target=3D"_blank=
+" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/facebook.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://twitter.com/tiket" target=3D"_blank"=
+ style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/twitter.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://plus.google.com/+tiket" target=3D"_b=
+lank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/g+.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://tiketdotcom.tumblr.com/" target=3D"_=
+blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/tumblr.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://www.youtube.com/user/tiketdotcom" ta=
+rget=3D"_blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/youtube.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>=09=09=09=09<!-- END FOOTER -->
+=09=09=09</table>
+=09=09</div>
+=09</div>
+</body>
+</html>
+
+
+
+--_=_swift_v4_150269064659913d563ec5c_=_--
