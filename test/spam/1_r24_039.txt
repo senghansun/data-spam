@@ -1,0 +1,376 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.13.68 with SMTP id 65csp181289vsn;
+        Tue, 30 May 2017 21:35:01 -0700 (PDT)
+X-Received: by 10.99.245.69 with SMTP id e5mr27137541pgk.203.1496205300942;
+        Tue, 30 May 2017 21:35:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496205300; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yUh8ToX10QWONfYvRAotvtGa8wvbBo9N7XfVsd41lbIxDBjUIyc4Rwq+2MZtwQRJZs
+         6mceAJ4+whh+/HKjBEVXai3FMdEAfJt9P9TpumRH4hKkbyH+vi8XzOeDJikHGba97jw+
+         OhRTGkAmOnZhUGUMbp5Y0tvU8h52We/7/JVYAryqCH4embjsescZxPpv6x1edM9FY3Km
+         nMxtCsNtYBTFUTTE48FuMqScd214FIt+pwdgvJAnEKWQh9iqJ2varo1V37HGm8+YZuEw
+         i2OpBCbBecGVoJKfoSURoTLmjHC1NGLpHzHS3+B94ZO7khYXsixPWMoXYn5d18PDLuBz
+         77RQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:mime-version:subject:reply-to:from:to:feedback-id
+         :list-unsubscribe:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=xwf0R8Z4wbT+QxylaJlHT5r3TpnucqdinncpoWeRjM4=;
+        b=MjsqOEKCtxFWdEdQsz3jhzfBTxWTIJDpuPzibovu0Qig6sknfjg8eby7wHG/j1tini
+         aPSQXoq50xSj9FD3d9e37D2l47hE5JW9jJ2Y32xLEDD/i25WrUeZ0Ge48cPNJeH3Z9G+
+         zGHchobfvMIO1r91FUafROePhtWlnxvT3pcz3ZR6HoMUwcXywu/8G5CZBWPqqbJIxxxa
+         teAu2ind0+L1KlNsqlEkXoR2/pca80bw8vYSL+Px52kcpJnp5k/kF81fcV0NpEmXUCyl
+         Ea5iA6GqnWdBw44wTZXZvYr7El7TbZGMlSBTMqmAzoowaeKdMDwy88dazFXVyyN1CnR+
+         QBJw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com;
+       dkim=pass header.i=@amazonses.com;
+       spf=pass (google.com: domain of 0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com designates 54.240.27.74 as permitted sender) smtp.mailfrom=0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com
+Return-Path: <0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com>
+Received: from a27-74.smtp-out.us-west-2.amazonses.com (a27-74.smtp-out.us-west-2.amazonses.com. [54.240.27.74])
+        by mx.google.com with ESMTPS id q67si16106673pfl.18.2017.05.30.21.35.00
+        for <rikosatrianto@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Tue, 30 May 2017 21:35:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com designates 54.240.27.74 as permitted sender) client-ip=54.240.27.74;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com;
+       dkim=pass header.i=@amazonses.com;
+       spf=pass (google.com: domain of 0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com designates 54.240.27.74 as permitted sender) smtp.mailfrom=0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=ds5tftndiq5w7mx3dskalrbgwofcp2ym; d=newsletter.tokopedia.com; t=1496205300; h=List-Unsubscribe:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=Z12+4jxItNQ7ZLGg9Yxf7IgFAT1TGr5x8AxE05LoHI8=; b=FlSK43/HC8knt5nbdgtLaYVEtJ2/EMHmSjEZo3HENLMHdAQ8cs+A0ADAP/0NRV8L AGy2O+1ypPYG2fHLKu5KiF03Qp0DCeGvG6OdJxgbEdqEnGnjuHJGVc6Q9BxEEknNdEr C6xu/L71fKR7Fh7vMtq+caW0McqNiHR+CN++6Po0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1496205300; h=List-Unsubscribe:Feedback-ID:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=Z12+4jxItNQ7ZLGg9Yxf7IgFAT1TGr5x8AxE05LoHI8=; b=chZhZbNZVzzOg3EoUxxzihd31g0QmWfyvFARFwAkNu2dwOxxwUcB6tCiSLkxN0/g 7AZElmzYsyWiWBgaAQ/a8Vcl/bvciDPUPOPz/chihw01ObZQnxNyFeav91CznQ6tFim KFMly+dzyAgwl//sWHvJIT5thudh/ORrG4QAfs7E=
+List-Unsubscribe: <http://trk.newsletter.tokopedia.com/unsubscribed/nv/c/2vtzSZzoAsTT1ita7kX3/p/30045/key/cmlrb3NhdHJpYW50b0BnbWFpbC5jb20=/>
+Feedback-ID: 1.us-west-2.ZtpRxW5g2DKpajREozyjJ7uRVLSvjr1Y1lKw+NeHo9g=:AmazonSES
+To: rikosatrianto@gmail.com
+From: Tokopedia <exclusive@newsletter.tokopedia.com>
+Reply-To: exclusive@newsletter.tokopedia.com
+Subject: Hari Terakhir! Cashback Hingga 100rb
+MIME-Version: 1.0
+Content-type: Multipart/Mixed; boundary="309387843592e47f1e09f81.51817924"
+Message-ID: <0101015c5cc90f29-1469feb0-5610-4954-9f5f-13f82a0ef14a-000000@us-west-2.amazonses.com>
+Date: Wed, 31 May 2017 04:34:59 +0000
+X-SES-Outgoing: 2017.05.31-54.240.27.74
+
+--309387843592e47f1e09f81.51817924
+Content-type: Multipart/Alternative; boundary="alt-309387843592e47f1e09f81.51817924"
+
+--alt-309387843592e47f1e09f81.51817924
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+    .bodyContent {
+        color:#505050;
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:16px;
+        line-height:125%;
+        }
+
+    .header {
+        font-size: 30px;
+        }
+
+
+    @media only screen and (max-width: 480px){
+    .bodyContent{
+        font-size:24px !important;}
+    }
+
+
+
+
+    
+    
+    Persiapan Lebaran Dimulai Dari Tokopedia.
+
+    
+    
+                
+                    
+        
+                Kesulitan melihat email? Lihat di browser
+            
+        
+                
+                            
+                        
+                    
+                             
+                                Hai, Toppers!
+                                
+                                 Kesempatan Terakhir Cashback!
+
+                                
+                              Dapatkan cashback 25%  maksimal Rp100.000 tiap beli dan bayar apa pun di Tokopedia. Bebas pilih pakai metode pembayaran apa aja.
+                                
+          Promo berakhir dalam hitungan jam. Buruan, jangan sampai ketinggalan!
+
+                     
+                     
+                             
+                                 
+                                     
+                                         
+
+                                        Kode Promo:
+                                        TOKOCASH
+                                         
+                                        Berlaku Hingga 31 Mei 2017
+                                        
+                                     
+                                 
+                             
+                        
+                    
+                                    
+                                    Belanja Sekarang
+                                    
+                                
+                            
+                            Pelajari Syarat dan Ketentuan: 
+
+                            Kode promo dapat digunakan satu kali per hari dan terbatas pada salah satu platform Tokopedia (Marketplace, Pulsa, atau Tiket KAI). 
+                                Promo ini berlaku untuk Tokopedia, Top Up pulsa dan voucher elektronik, pembayaran berbagai tagihan, pembelian tiket, dan belanja brand-brand terbaik  tanpa minimum transaksi.
+                                Promo tidak berlaku untuk Top Up Saldo, Top Up TokoCash, Giftcard, dan Donasi. 
+ Cashback baru diterima oleh pembeli saat transaksi sudah selesai (pembeli sudah melakukan Konfirmasi Terima Barang) dan nomor resi valid.
+
+                              
+
+  Pengguna harus melakukan aktivasi TokoCash dalam 7 hari setelah dapat cashback
+                                Cek syarat dan ketentuan selengkapnya di sini. 
+
+                               
+                             
+                         
+                    
+                            
+                                            Bagikan Promo Ini:
+                                                Bagikan kabar baik ini ke temanmu via Whatsapp dan Facebook
+                                                
+                                                        
+                                                        
+                                                        WhatsApp
+                                                        
+                                                    
+                                                     
+                                                        
+                                                        Facebook
+                                                        
+                                                    
+                                                
+                                                
+                                        
+                                        
+                        
+                                    
+                                
+                
+                            
+                                        
+                                                    Download Aplikasi Tokopedia 
+                                                        
+                                                        
+                                                                
+                                                                            
+                                                                        
+                                                                        
+                                                                            
+                                                                        
+                                                                    
+                                                        
+                                                
+                                                    Ikuti Kami
+                                                        
+                                                        
+                                                                
+                                                                            
+                                                                        
+                                                                        
+                                                                            
+                                                                        
+                                                                        
+                                                                            
+                                                                        
+                                                                        
+                                                                            
+                                                                        
+                                                                        
+                                                                            
+                                                                        
+                                                                    
+                                                        
+                                            
+                                
+                    
+                            
+                                        Hubungi Kami | Syarat & Ketentuan | Kebijakan Privasi | Unsubscribe
+                                    
+                                
+                                        © 2009-2017, PT Tokopedia
+                                    
+                                
+                    
+        
+
+--alt-309387843592e47f1e09f81.51817924
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><style type="text/css">
+
+    .bodyContent {
+        color:#505050;
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:16px;
+        line-height:125%;
+        }
+
+    .header {
+        font-size: 30px;
+        }
+
+
+    @media only screen and (max-width: 480px){
+    .bodyContent{
+        font-size:24px !important;}
+    }
+
+
+
+
+    </style></head><body class="bodyContent" style="margin: 0; padding: 0;font-family:sans-serif;">
+    <!-- sub-subject -->
+    <p style="font-size:0px">Persiapan Lebaran Dimulai Dari Tokopedia.</p>
+
+    <!-- email container -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #F7F7F7;"><!-- margin top-bottom --><tbody><tr><td>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 10px 0 20px;"><tbody><tr><td></td>
+                    </tr></tbody></table></td>
+        </tr><!-- end of margin --><!-- browser view --><tr><td align="center" style="font-size: 11px; color: #4F4F4F; padding: 10px 0 20px;">
+                Kesulitan melihat email? <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Femail-html-permalink%2Fnv%2FpeId%2F54162%2Fc%2F2vtzSZzoAsTT1ita7kX3%2F" style="text-decoration: none; color: #42B549">Lihat di browser</a>
+            </td>
+        </tr><!-- end of browser view --><!-- email body --><tr><td>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;background-color: #FFFFFF; color: #4F4F4F;"><!-- header --><tbody><!-- banner --><tr><td>
+                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=YwyNkL" target="_blank"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1496144795.jpg" alt="Cashback s.d Rp100rb. Hari Terakhir!"></a>
+                        </td>
+                    </tr><!-- end of banner --><!-- content --><tr><td>
+                            <div style="border-radius:4px; padding:1%"> 
+                                <div style="color:#505050;border-radius:4px; background:#fff; padding:10px 3% 10px 3%;"><b class="header">Hai, Toppers!</b><p></p>
+                                
+                                <p style="line-height:1.8em;"><br><span style="display: inline-block; padding-bottom: 20px; font-weight: bold;"> Kesempatan Terakhir Cashback!</span>
+
+                                <br>
+                              Dapatkan cashback 25%  maksimal Rp100.000 tiap beli dan bayar apa pun di Tokopedia. Bebas pilih pakai metode pembayaran apa aja.
+                                <br><br>
+          Promo berakhir dalam hitungan jam. Buruan, jangan sampai ketinggalan!
+
+                     <!-- kode promo -->
+                    </p></div></div></td></tr><tr><td style="border-radius:4px; padding:1%"> 
+                            <div style="color:#505050;border-radius:4px; background:#fff; padding:10px 3% 10px 3%"> 
+                                <div align="center"> 
+                                    <div> 
+                                        <div style="display:inline-block;font-weight:bold;padding:20px 30px;color:#f26039;border:2px solid #e5e5e5;background-color:#ececec;margin:0px 10px 10px"> 
+
+                                        <div style="font-size: 100%; display: block; padding-bottom: 20px; color:#434343;">Kode Promo:</div>
+                                        <div style="font-size: 200%;">TOKOCASH</div>
+                                        </div> 
+                                        <div style="font-size: 80%; color:#999;padding-top:8px">Berlaku Hingga 31 Mei 2017
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </td>
+                    </tr><!-- button --><tr><td align="center" style="padding: 10px 20px 20px">
+                                    <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=tX0fkS" target="_blank" style="display: inline-block; padding: 25px 28px; background: linear-gradient(#FF805F,#f26039); color: #FFFFFF; text-decoration: none; font-size: 26px; font-weight: bold; width: 350px; margin-bottom: 30px; text-transform: uppercase; border-radius: 10px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                                    Belanja Sekarang
+                                    </a>
+                                </td>
+                            </tr><!-- tnc --><tr align="center"><td style="padding:10px 18px; border-width:2px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#fcf3d0" id="m_-3399913640788259468">
+                            <p class="header" align="center" style=" text-decoration: none; font-weight:700; color: #000;">Pelajari Syarat dan Ketentuan:</p> 
+
+                            <ul style="text-align:left; list-style-type:disc;line-height:1.6em; padding:2% 7% 1%;"><li style="margin-bottom:10px;">Kode promo dapat digunakan satu kali per hari dan terbatas pada salah satu platform Tokopedia (Marketplace, Pulsa, atau Tiket KAI).</li> 
+                                <li style="margin-bottom:10px;">Promo ini berlaku untuk <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=3ODNhW" target="_blank" style="font-weight: bold; text-decoration: none; color: #42B549;">Tokopedia</a>, <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=xQGvTM" target="_blank" style="font-weight: bold; text-decoration: none; color: #42B549;">Top Up pulsa dan voucher elektronik</a>, <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=C5JMhV" target="_blank" style="font-weight: bold; text-decoration: none; color: #42B549;">pembayaran berbagai tagihan</a>, <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=QBvSDv" target="_blank" style="font-weight: bold; color: #42B549; text-decoration: none;">pembelian tiket</a>, dan belanja <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=xoO3TE" target="_blank" style="font-weight: bold; text-decoration: none; color: #42B549;">brand-brand terbaik</a>  tanpa minimum transaksi.</li>
+                                <li style="margin-bottom:10px;">Promo tidak berlaku untuk Top Up Saldo, Top Up TokoCash, Giftcard, dan Donasi.</li> 
+ <li style="margin-bottom:10px;">Cashback baru diterima oleh pembeli saat transaksi sudah selesai (pembeli sudah melakukan Konfirmasi Terima Barang) dan nomor resi valid.
+
+                              
+
+  </li><li style="margin-bottom:10px;">Pengguna harus melakukan aktivasi TokoCash dalam 7 hari setelah dapat cashback</li>
+                                <li style="margin-bottom:10px;">Cek syarat dan ketentuan selengkapnya <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=bvuZCI" target="_blank" style="font-weight: bold; text-decoration: none; color: #42B549;">di sini</a>.</li> 
+
+                               
+                            </ul><a rel="nofollow"></a> 
+                        </td> 
+                    </tr><!-- share --><tr><td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;"><tbody><tr><td width="240" align="center">
+                                            <table><tbody><tr style="text-align: center;"><td class="header" style="font-weight: 700; padding: 30px">Bagikan Promo Ini:<br></td>
+                                                </tr><tr style="text-align: center;"><td style="font-weight: 500; padding-bottom: 10px;">Bagikan kabar baik ini ke temanmu via Whatsapp dan Facebook<br></td>
+                                                </tr><tr><td>
+                                                        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;"><tbody><tr><td align="center" style="padding: 5px 20px">
+                                                        <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=pdSwma" target="_blank" style="display: inline-block; padding: 15px 20px; background: linear-gradient(#64c66a,#42B549); color: #FFFFFF; text-decoration: none;  width: 180px; border-radius: 10px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                                                        WhatsApp
+                                                        </a>
+                                                    </td>
+                                                     <td align="center" style="padding: 5px 20px">
+                                                        <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=wB3ztd" target="_blank" style="display: inline-block; padding: 15px 20px; background: linear-gradient(#64c66a,#42B549); color: #FFFFFF; text-decoration: none;  width: 180px; border-radius: 10px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                                                        Facebook
+                                                        </a>
+                                                    </td>
+                                                </tr></tbody></table></td>
+                                                </tr></tbody></table></td>
+                                        </tr></tbody></table></td>
+                                        </tr><!-- seperator --><tr><td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#42B549" style="border-collapse:collapse; font-size:12px; margin-top: 20px;"><tbody><tr><td width="25%" height="20" align="center">
+                                    </td>
+                                </tr></tbody></table></td>
+                </tr><!-- footer --><tr><td style="padding: 30px 30px; background-color: #fff;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; font-size:13px;color:#999999;"><tbody><tr><td>
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; "><tbody><tr><td width="240" align="left">
+                                                    <table border="0" style="border-collapse:collapse;"><tbody><tr style="padding-left: 2px;"><td style="font-size:13px;color:#000;padding-bottom:10px;">Download Aplikasi Tokopedia <br></td>
+                                                        </tr><tr><td style="padding:3px 0;"></td>
+                                                        </tr><tr><td>
+                                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;"><tbody><tr><td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=AxvCJX" style="padding: 0 5px 0 0;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233846.png" alt="Appstore" height="35"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=5cMmvv" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233889.png" alt="Playstore" height="35"></a>
+                                                                        </td>
+                                                                    </tr></tbody></table></td>
+                                                        </tr></tbody></table></td>
+                                                <td width="280" align="right">
+                                                    <table border="0" style="border-collapse:collapse;"><tbody><tr><td style="font-size:13px;color:#000;padding-bottom:10px;" align="right">Ikuti Kami</td>
+                                                        </tr><tr><td style="padding:2px;"></td>
+                                                        </tr><tr><td>
+                                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;"><tbody><tr><td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=O6HzMC" style="padding: 0 5px;"><img src="https://d39sghb3udgxv0.cloudfront.net/300452017/05/1495112422.jpg" style="border-radius: 3px" alt="Line" height="40"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=pXfWF4" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt="Google plus" height="40"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=ByFyJx" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt="Facebook" height="40"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=GXXAR5" style="padding: 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt="Twitter" height="40"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=9hDHFI" style="padding: 0 0 0 5px;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt="Instagram" height="40"></a>
+                                                                        </td>
+                                                                    </tr></tbody></table></td>
+                                                        </tr></tbody></table></td>
+                                            </tr></tbody></table></td>
+                                </tr></tbody></table></td>
+                    </tr><!-- end of footer --><!-- anti-spam --><tr><td>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse:collapse; background-color: #F7F7F7; font-size:13px; color: #999999; border-top: 1px solid #DDDDDD;"><tbody><tr><td width="560" align="center" style="padding: 30px 20px 0;">
+                                        <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=2yg0MT" style="text-decoration: none; color: #2fbe38;">Hubungi Kami</a> | <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=S7TVDC" style="text-decoration: none; color: #2fbe38;">Syarat &amp; Ketentuan</a> | <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?uc=XjHmog" style="text-decoration: none; color: #2fbe38;">Kebijakan Privasi</a> | <a href="http://trk.newsletter.tokopedia.com/em_2vtzSZzoAsTT1ita7kX3/?redirect_uri=http%3A%2F%2Ftrk.newsletter.tokopedia.com%2Funsubscribe%2Fnv%2Fc%2F2vtzSZzoAsTT1ita7kX3%2Fp%2F30045%2Fkey%2Fcmlrb3NhdHJpYW50b0BnbWFpbC5jb20%3D%2F" style="text-decoration: none; color: #2fbe38;">Unsubscribe</a>
+                                    </td>
+                                </tr><tr><td width="560" align="center" style="padding: 10px 20px 30px;">
+                                        © 2009-2017, PT Tokopedia
+                                    </td>
+                                </tr></tbody></table></td>
+                    </tr><!-- end of anti-spam --></tbody></table></td>
+        </tr><!-- end of email body --></tbody></table><!-- end of email container --><img alt="" src="http://trk.newsletter.tokopedia.com/o/nv/c/2vtzSZzoAsTT1ita7kX3.gif"></body></html>
+
+
+--alt-309387843592e47f1e09f81.51817924--
+--309387843592e47f1e09f81.51817924--

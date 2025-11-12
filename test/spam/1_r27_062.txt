@@ -1,0 +1,134 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.146.214 with SMTP id j205csp2237591ywg;
+        Fri, 8 Sep 2017 15:03:29 -0700 (PDT)
+X-Received: by 10.37.57.193 with SMTP id g184mr3632347yba.65.1504908209426;
+        Fri, 08 Sep 2017 15:03:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504908209; cv=none;
+        d=google.com; s=arc-20160816;
+        b=gIHwCdOxYlHdj11qgvkJs87bH7GyZ2Xsp7d89YwAXNKWQU/ansKuuT7tyo+2M6lFBV
+         vHicSqrKFjwc7TOsXMgDwowMv9g2uK9ZKpxXeSXdGeSp6shC/EnzRwSa7wNmestJkYWf
+         MCg0JKXehD6Sr09QRNUWToEu4YgwhC59UbJeox1K0gHqHGoJsjermcRqkesI1LI7O4E0
+         DelDUycgfzFON+D0Qo1fjRpmY2sMshSl9lxNNDD20Y+exhXm1SXx8Mgt68y2oibu+BSM
+         cJj9b3T+8l8b2ykrwzzV/MD2VaO6EfaWdJfQJw20gTJVCJBzhHnZKY/zh7OWFPqc1eY2
+         K90w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:date:message-id:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=mBFD5gtPBgWnjWgl0gsV0tacYqPoFXF0UxUi6qMZXP0=;
+        b=mvXiwhIRTV1NkEYMjA53xIwV66BG9nrYyRWa6rcnTWNAluE+pWWpbTPI/cLHlsLykk
+         hyLUvzTN21yd0L2Uy8dk1cv/J+Jnd5sZBVY/gz3CpkkrtE0maXPTy8f4/YDV2nDC1KQ4
+         ad0KUvOok0pyjQJChgUejs5zyxIv8ln1WZ0DZjoU4FwKU424xz+EfEsVhSMp0sObMPtl
+         ZHgtzJJ5aI90sAVkmddUaDgKBUi/pNCiH5rwYt8s503ha2QJCaZxY6zMT978cy9lMRA0
+         d1UmFf+P2waWdf+Xa9c/6AsI+Txuq4D8ZiIvhRoItYKXtW8x0kfhc8tKPs84/pipImPR
+         6OsA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@taktical-co.20150623.gappssmtp.com header.s=20150623 header.b=S3xVUsSH;
+       spf=softfail (google.com: domain of transitioning ilan.n@taktical.co does not designate 209.85.220.69 as permitted sender) smtp.mailfrom=ilan.n@taktical.co
+Return-Path: <ilan.n@taktical.co>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 143sor1251474ywe.478.2017.09.08.15.03.28
+        for <sylviestephanies@gmail.com>
+        (Google Transport Security);
+        Fri, 08 Sep 2017 15:03:29 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning ilan.n@taktical.co does not designate 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@taktical-co.20150623.gappssmtp.com header.s=20150623 header.b=S3xVUsSH;
+       spf=softfail (google.com: domain of transitioning ilan.n@taktical.co does not designate 209.85.220.69 as permitted sender) smtp.mailfrom=ilan.n@taktical.co
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=taktical-co.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:message-id:date:subject:from:to;
+        bh=mBFD5gtPBgWnjWgl0gsV0tacYqPoFXF0UxUi6qMZXP0=;
+        b=S3xVUsSH/qV3MAjXocX4SNFgdGKy8p+IXZNCTKjVxpAGbwPYtaxqYI7VMwjs+LD8o2
+         paYznBRZF5OTf9osBJJYB01fbZZYIo2OnVGRNa3x0r4LAll7RIBQ9TAEsPW30NiwVHOv
+         koIWIoFF7PGqFD+pmsdjHb90Q/s8C8ttBRyEnEFWG2GKwPJkXq6HVIhtBnQ47PjG46gP
+         C6Xuf+np7U1/ezQ25rz4R3dsduxzfJj2m+YSlnGNVxj7LUCi85vsH8J/0O+JFQ2BPLoi
+         14wByvM6RkcgyPYut1blzwdg9qT+M0mACYjgan1xbyXIdAHYmlVxGTs54VI44mU9TB4r
+         bG5Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:message-id:date:subject:from:to;
+        bh=mBFD5gtPBgWnjWgl0gsV0tacYqPoFXF0UxUi6qMZXP0=;
+        b=iEcSdjFh8ivv77UpA9TmlYaWT2SrG2J+sDSU4xYEcmsi7r6m0EKY7sJrhhXvH5ly+T
+         88mv63o2eV3qnVF8unT84y1SkbiYzH4ZOYd+O2C1CyS9ovQuK9fdJocnuSaPm5UnY0xD
+         W9yhwQ8PftzufwsYR9hxWoeXMW1DJmMgsrV8AcPWrNZyZYG/zGPyTdJ8WRNpkH22sY2c
+         3X9snFP0vK75ExRb30YCXxnz9hj3qUFWoSiVR757D5OdF5rpTIZaP7Mwke7Hg/M2uz85
+         n1p9lEOQThg8jWB+AbPv7JFGf6OpknbcVH64hMEneS6qTfCOk4gpug6jfz1LtYL8Vxot
+         nj7Q==
+X-Gm-Message-State: AHPjjUgbbzgnib6NMth57iu2iLq+F76Kp1lLP0CuyO+dAghukUIRtROw
+	Yir+hawlMfguKFlL785QsSgyTPJ7x8L4
+X-Google-Smtp-Source: ADKCNb5vbFQMy617DyncFtjAj8SI5N9iF9iXxJjbUwSBjiD9F+DH/82vuisr7b64vJWvl3vUhp1W3ybfgQ==
+MIME-Version: 1.0
+X-Received: by 10.129.4.20 with SMTP id 20mr2683889ywe.69.1504908208791; Fri,
+ 08 Sep 2017 15:03:28 -0700 (PDT)
+Message-ID: <001a113f25fe3470020558b4bf7a@google.com>
+Date: Fri, 08 Sep 2017 22:03:28 +0000
+Subject: LINKEDIN REQUEST: Digital Marketing Plan
+From: Ilan Nass <ilan.n@taktical.co>
+To: sylviestephanies@gmail.com
+Content-Type: multipart/alternative; boundary="001a113f25fe346fed0558b4bf77"
+
+--001a113f25fe346fed0558b4bf77
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Hi Sylvie,
+Sorry for the delay here, as you can imagine I got a LOT of requests from  
+this thing going viral!
+
+You can download the template here.
+
+I'd love to offer you a free 100 point audit of your current marketing  
+campaigns. Worst case, you get some free insight and a nice report :).
+
+We specialize in Programmatic Facebook/Pinterest/Twitter ads, SEO, SEM and  
+Lead generation
+
+You can also sign up for my weekly growth hacks email (ilansweekly.com) or  
+follow me on LinkedIn or Twitter where I share cool stuff I find.
+
+Glad we got a chance to connect. Lets stay in touch!
+
+Cheers,
+
+Ilan Nass
+Founder
+Taktical.co | @ilannass
+(646) 450-2796
+
+--001a113f25fe346fed0558b4bf77
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sylvie,
+
+<p>Sorry for the delay here, as you can imagine I got a LOT of requests fro=
+m this thing going viral! </p>=20
+
+<p>You can download the template<a href=3D"https://www.dropbox.com/s/ti83c1=
+ds1ibeocv/Digital%20Marketing%20Template%20from%20Taktical%20-%20updated.zi=
+p?dl=3D0"> here.</a></p>=20
+
+<p><b>I'd love to offer you a free 100 point audit of your current marketin=
+g campaigns.  Worst case, you get some free insight and a nice report :). <=
+/b></p>=20
+
+<p>We specialize in Programmatic Facebook/Pinterest/Twitter ads, SEO, SEM a=
+nd Lead generation</p>
+
+<p>You can also sign up for my <a href=3D"http://ilansweekly.com/">weekly g=
+rowth hacks email (ilansweekly.com)</a> or follow me on <a href=3D"https://=
+www.linkedin.com/in/ilannass/">LinkedIn</a> or <a href=3D"https://twitter.c=
+om/ilannass">Twitter</a> where I share cool stuff I find. </p>
+
+<p>Glad we got a chance to connect.  Lets stay in touch! </p>
+
+<br>Cheers,
+<br>
+<br>Ilan Nass
+<br>Founder
+<br>Taktical.co | @ilannass
+<br>(646) 450-2796
+
+
+
+
+--001a113f25fe346fed0558b4bf77--

@@ -1,0 +1,597 @@
+X-Apparently-To: sherrarizkarachman@yahoo.com; Fri, 25 Aug 2017 15:05:15 +0000
+Return-Path: <bounce+29e583.e664cd-sherrarizkarachman=yahoo.com@levisvipclub.com>
+Received-SPF: pass (domain of levisvipclub.com designates 184.173.153.101 as permitted sender)
+X-YMailISG: 643d_8EWLDtoZptcGbvWlN1FfwvblGjZmvwPX9gKcF3QjH5g
+ WhT.Q19X_.6Zo6m7Eq2PXED04MImnrKsmdv3fZax7tFBUgt8lnn2F49fpWVA
+ TrliVoYgMX24Q7a0OJ3KP4.WPTtG_zZ6rQZzeXthWE1mbB7HOqCOx1yOpFI5
+ f8Tm2wL8VqfkJJDDbMZLSyLXckGOBvGaH2u5mFSl9aRsX4euY_3gwo1bfpSD
+ 5INi77daAPmBDSVe2GfYz6rH2162deDRR9tIttANKJcZOYxFi5D2GhsnK5P5
+ wubA7PxrQXodDGpoYy3rya_uyuL9GqAc5SSigihaNoFokgMVe9mE18BDlLpv
+ YoS9Y3mmEFhFow3xMKQF1KUIZPE5PeT2ygntm4..cDHJ62QR3nayRO3t3SZH
+ 5mOsnbK4dH7RSEvnUjTP2cUiOV5KS2Tmn2u_7gRxdor6D4qVgjIcoGa4zCSC
+ .ohbiCSXUamOLUAisvOLaisBCsAAdImEvu_AkF2Nh1EU3x6w4ixJoNjGl6FZ
+ Oc1LVOogrq2R9NI5y9yb8d6CWMnTzXTYEfXlMlsh0nwnlTTor0AKMu1o6Unc
+ Fa0_KW1GeZgQpX6Ujj35_iHFau__2TqQcldXT_pVUtcGFfyZ0SheGDD1apRb
+ QpnXXn1aofGrRvphTGxgB3kbjQgUAgiRy_u180qIXQrWKL9hq8gYe3lLGpJ2
+ _9JfvagjSJ1QSqa69UUU3a9fckzH5UbGhst3uBTqJNK1ntcsKagWTYi1nXPt
+ 8D9zdp8QkpqBaYXxn3rIaOo1hEbQiw.hZv6H22UHUDevJ4x.U.BE_ylJ06PF
+ qstRvzWhqjeHLnhqoaicVyd62BN4.MISIMwpCJHZZE_Jk69l1MOp6eUEadAf
+ JRzcgWW2xNq_P_e.Hfl19Kd_.Be_Aru1RGFKL5eTZzCuNccAL7QriIv90mu.
+ McXplsI8KeCMq2hvL9YAhgrJUPmv5TXUjWoJGivwEfet7.24devImjs9VNwK
+ MrohF_CEqN2b6H3OA23ZavDxcwjkw14UG63OeDNzqfvzIT10t_loJyrzCBJL
+ ASOy0bkhSfhViFo.eLAfky.gT0GqqFE5PUWViize1vetjHsCcb6Pzpws4Tn.
+ XKRqTA4Dxp6TdF8x47sd8y0IWg7MuOHqjJArm1hHGhPU5O0mLkl3nRN0fyju
+ cKZNqKsAC0mkErfFRmZ3CJYNZokYiQLIpPppEFNs57eVTvEfl4xTVSg0h3eP
+ svcTUWo7foO0v2pBOiDw55n5nNgReXEhIZIQx7C0DJTDF9IR1SdBlkx4_NW6
+ XW.pV9AaMkN5l4wY6ZjCXYQ2ehlhsNdEVwhSKW..1iXA_iolPfk3EGZlAePn
+ o8mFWzxpOEp.vj4LX6Vt64TjubErHdOp4PK_M5keOzViw8k0aSRgcFDl126f
+ SlpI7t3MuDtkHGAM0DHgS1tU2c9qJqyUe7UzGol5cu4.aw5RoSq5snUpcrXb
+ VVdYRnB6GA--
+X-Originating-IP: [184.173.153.101]
+Authentication-Results: mta1078.mail.ne1.yahoo.com  from=levisvipclub.com; domainkeys=fail (bad syntax);  from=mailgun.org; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail-p101.mailgun.info) (184.173.153.101)
+  by mta1078.mail.ne1.yahoo.com with SMTPS; Fri, 25 Aug 2017 15:05:13 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=levisvipclub.com; q=dns/txt;
+ s=smtp; t=1503673505; h=Message-Id: Date: To: From: Subject:
+ Mime-Version: Content-Type: Sender;
+ bh=lWlzsd47xQI9N9xSYzHwmkCQO4r5RMVD4pFt0tq+CjI=; b=aHfsoEd7TN+3ru3ZHgtFDKnFoYX+29Ueye5Uq5SP91sx97kkdeb9Vqqs5H1mUkT9I5Zajn5W
+ rQDxbTv3uvvKWqUYIBz9Isz/ntvqKv3SywzrgI2/hEIP9q5VUPSfnR1MlKE00e2hX9190wlq
+ HQafnKrlqsJuBAGSiAyxsSWyN8A=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=levisvipclub.com; s=smtp;
+ q=dns; h=Sender: Content-Type: Mime-Version: Subject: From: To: Date:
+ Message-Id;
+ b=R4u7OSCo4OwSALEJ6sDSYcq4UM/Rl1Kiuhr0T7bTNRe60yZpp35OCKORvMYepDFAWqgi4d
+ B5K2QYqQ4qPrr9UFijMlYKcVdlagHDRdkWO9MyJNfhU/MATue/uW7/MaioFp/Mqh5CbG1frc
+ FQ43ev2b+uRzB0IJdzJxT/TJR+AXA=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1503673505; h=Message-Id: Date: To: From: Subject: Mime-Version:
+ Content-Type: Sender; bh=lWlzsd47xQI9N9xSYzHwmkCQO4r5RMVD4pFt0tq+CjI=;
+ b=nGhTHv78rYm08CqICYY53eR4uL9Q4+QhNxwFx3mNsdT/I09XXHQtQJiRBAbojaB84GS4Q42t
+ eY9cl29YivURKCXK9s4p3e9DzlFpsk3+uOhhIf4qr7HHRGBE/kY1DS9ywSmkfnCBrH5DRxJi
+ wnBA+vVPVGVXYIE8R2ijpe+XCmA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns;
+ h=Sender: Content-Type: Mime-Version: Subject: From: To: Date:
+ Message-Id;
+ b=RIHXnCq1ZWT4enKJpbi32emvcmLgOD811leUicleTyHyj6x1ebuy+cYH8pVztpP96aUC8j
+ 1baQRYfG1LX7QUF1tsuWNqAWi7xnEFgx61uUWnBfQXl22ebtB92lcO5EqXelvCDgOOPKUibd
+ vTLcjnbUR6fss/JKOcxV6J1KIV1I4=
+Sender: noreply@levisvipclub.com
+X-Mailgun-Sending-Ip: 184.173.153.101
+X-Mailgun-Sid: WyI3YTExOSIsICJzaGVycmFyaXprYXJhY2htYW5AeWFob28uY29tIiwgImU2NjRjZCJd
+Received: from levi-prod-japan.c.levis-154007.internal
+ (142.119.198.104.bc.googleusercontent.com [104.198.119.142]) by
+ mxa.mailgun.org with ESMTP id 59a03ca1.7fe77824adf0-smtp-out-n03; Fri, 25
+ Aug 2017 15:05:05 -0000 (UTC)
+Content-Type: multipart/alternative; boundary="===============6294714647489073273=="
+Mime-Version: 1.0
+Subject: BUY ONE GET ONE FREE!
+From: Levi's VIP Club<noreply@levisvipclub.com>
+To: sherrarizkarachman@yahoo.com
+Date: Fri, 25 Aug 2017 15:05:03 -0000
+Message-Id: <20170825150503.3552.79244@levi-prod-japan.c.levis-154007.internal>
+X-Mailgun-Tag: newsletter-EDM_BOGOF_AUGUST_2017
+Content-Length: 23336
+
+--===============6294714647489073273==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+ Sherra 
+
+BUY ONE GET ONE FREE!
+Promo khusus Beli 1 Gratis 1 pada periode 25 Agustus - 3 September 2107 untuk item tertentu, kamu hanya perlu membayar 1 item dengan harga yang lebih tinggi. Promo ini berlaku di semua Original Levi's® Store dan juga beberapa department store.
+
+LEVI'S® BAND HUNT
+Levi's® masih mencari band indie yang punya lagu original. Buat kamu yang belum ikutan, ayo buruan register! Pendaftaran bisa lewat online - kirimkan link demo musik kamu bisa berupa video atau audio ke sini.
+
+Buat kamu yang punya demo musik CD bisa langsung bawa CDnya ke Original Levi's® Store dan daftar langsung disana dengan mengisi formulir yang tersedia. Buat kamu yang belum punya demo musik, Levi's® menawarkan untuk langsung rekaman di Pop Up Studio.
+
+Tapi kesempatan ini terbatas untuk 12 pendaftar pertama. Info lebih lanjut bisa dilihat di sini.
+Jadi tunggu apa lagi? Ayo gabung sekarang!
+--===============6294714647489073273==
+Mime-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html style=3D"height: 100%;">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html;charset=3DUTF-8"=
+>
+    <meta content=3D"width=3D600, initial-scale=3D1.0; " name=3D"viewport">
+
+</head>
+<body style=3D"margin: 0;padding: 0px;min-height: 100%;font-family: Tahoma,=
+ Helvetica, sans-serif;color: #808080;font-size: 14px;">
+<table class=3D"container transaction" cellpadding=3D"0" border=3D"0" cells=
+pacing=3D"0" align=3D"center" style=3D"width: 600px;border-collapse: collap=
+se;border-spacing: 0;padding: 0px;margin: 0 auto;font-size: 0px;" width=3D"=
+600" bgcolor=3D"#FFFFFF">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;">
+<tr>
+    <td colspan=3D"3" class=3D"dash first" style=3D"margin: 0;padding: 0;">
+        <span>
+            <img src=3D"https://levisvipclub.com/static/website/img/email/b=
+order-black.jpg" style=3D"max-width: 100%;padding: 30px 0px;padding-top: 0p=
+x;">
+        </span>
+    </td>
+</tr>
+<tr>
+    <td colspan=3D"3" style=3D"margin: 0;padding: 0;">
+        <span class=3D"merchant-logo" style=3D"padding: 0px 30px;margin-top=
+: 10px;">
+            <img src=3D"https://levisvipclub.com/static/website/img/email/l=
+evislogo.png" style=3D"max-width: 100%;width: 306px;margin-top: 17px;margin=
+-bottom: 21px;">
+        </span>
+    </td>
+</tr>
+<tr>
+    <td colspan=3D"3" class=3D"dash" style=3D"margin: 0;padding: 0;">
+        <span>
+            <img src=3D"https://levisvipclub.com/static/website/img/email/b=
+order-red.jpg" style=3D"max-width: 100%;padding: 30px 0px 0px;">
+        </span>
+    </td>
+</tr>
+</table>
+
+    <div class=3D"" style=3D"margin: 0;padding: 0;">
+        <div class=3D"main-wrapper" style=3D"margin: 0 auto;padding: 10px 3=
+0px 20px;display: block;width: 525px;float: none;">
+            <div class=3D"content" style=3D"margin: 0;padding: 0;">
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;">
+<tr class=3D"membership_section" style=3D"width: 430px;display: table;color=
+: #FFFFFF;background-color: #C21E2E;">
+    <td class=3D"greeting" style=3D"margin: 0;padding: 10px 12px;width: 45%=
+;color: #7F7F7F;font-weight: bold;font-size: 13px;vertical-align: top;">
+        <p class=3D"hello" style=3D"margin: 0;padding: 0;font-size: 23px;li=
+ne-height: 22px;color: #FFFFFF;text-align: left;text-transform: uppercase;"=
+>
+       =20
+            Sherra
+       =20
+        </p>
+        <p class=3D"detail" style=3D"margin: 0;padding: 0;font-size: 15px;l=
+ine-height: 21px;color: #FFFFFF;margin-top: 5px;text-align: left;">
+            0018 0198
+            <br>
+            BLUE | 0 poin
+            <br><br><br>
+        </p>
+    </td>
+    <td class=3D"member_status_wrapper" style=3D"margin: 0;padding: 10px 12=
+px;width: 91%;color: #7F7F7F;font-weight: bold;font-size: 13px;display: inl=
+ine-block;height: 100%;vertical-align: top;">
+       =20
+        <div style=3D"margin: 0;padding: 0;background-color: #FFFFFF;width:=
+ 100%;height: 100%;display: table;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"member_status" style=3D"width: auto;border-collapse: collapse;border-sp=
+acing: 0;padding: 0px;margin: 0px;font-size: 13px;vertical-align: middle;di=
+splay: table-cell;">
+                <tr>
+                    <td height=3D"20" style=3D"height: 20px;margin: 0;paddi=
+ng: 0;vertical-align: top;" colspan=3D"3"></td>
+                </tr>
+                <tr>
+                    <td width=3D"13" style=3D"width: 13px;margin: 0;padding=
+: 0;vertical-align: top;">&nbsp;</td>
+                    <td class=3D"level" style=3D"margin: 0;padding: 0;verti=
+cal-align: top;display: table;color: #7f7f7f;">
+                    TINGKATKAN LEVEL KAMU
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"bar" align=3D"center" valign=3D"middle" style=3D"width: 100%;bord=
+er-collapse: collapse;border-spacing: 0;padding: 0px;margin: 8px 0px;font-s=
+ize: 0px;">
+                        <tr>
+                            <td style=3D"margin: 0;padding: 0;vertical-alig=
+n: top;width: 62px;display: table;float: left;">
+                                <img src=3D"https://levisvipclub.com/static=
+/website/img/email/bar-blue.png" style=3D"max-width: 100%;width: 62px;">
+                                <div class=3D"star" style=3D"margin: 0;padd=
+ing: 0;background-color: #FFFFFF;width: 100%;height: 100%;display: table;">
+                                   =20
+                                        <img src=3D"https://levisvipclub.co=
+m/static/website/img/email/blue.png" style=3D"max-width: 100%;width: 14px;p=
+adding-top: 5px;display: table;margin: 0 auto;">
+                                   =20
+                                </div>
+                            </td>
+                            <td style=3D"margin: 0;padding: 0;vertical-alig=
+n: top;width: 62px;display: table;float: left;">
+                                <img src=3D"https://levisvipclub.com/static=
+/website/img/email/bar-silver.png" style=3D"max-width: 100%;width: 62px;">
+                                <div class=3D"star" style=3D"margin: 0;padd=
+ing: 0;background-color: #FFFFFF;width: 100%;height: 100%;display: table;">
+                                   =20
+                                </div>
+                            </td>
+                            <td style=3D"margin: 0;padding: 0;vertical-alig=
+n: top;width: 62px;display: table;float: left;">
+                                <img src=3D"https://levisvipclub.com/static=
+/website/img/email/bar-gold.png" style=3D"max-width: 100%;width: 62px;">
+                                <div class=3D"star" style=3D"margin: 0;padd=
+ing: 0;background-color: #FFFFFF;width: 100%;height: 100%;display: table;">
+                                   =20
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: =
+0px;margin: 0px;font-size: 0px;">
+                        <tr>
+                            <td style=3D"margin: 0;padding: 0;vertical-alig=
+n: top;">
+                           =20
+                            <div class=3D"member_requirement" style=3D"marg=
+in: 0;padding: 0;color: #7F7F7F;font-size: 11px;line-height: 15px;vertical-=
+align: top;padding-bottom: 12px;background-color: #FFFFFF;width: 100%;heigh=
+t: 100%;display: table;">
+                                DENGAN TRANSAKSI Rp. 1,500,000
+                            </div>
+                           =20
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                    <td width=3D"13" style=3D"width: 13px;margin: 0;padding=
+: 0;vertical-align: top;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height=3D"20" style=3D"height: 20px;margin: 0;paddi=
+ng: 0;vertical-align: top;" colspan=3D"3"></td>
+                </tr>
+            </table>
+        </div>
+       =20
+    </td>
+</tr>
+</table>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;margin-top: 25px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <h1 style=3D"margin: 0;padding: 0;font-size: 26px;font-weight: bold=
+;margin-top: 0px;color: #7f7f7f;">
+        BUY ONE GET ONE FREE!</h1>
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr><td style=3D"margin: 0;padding: 0;"><hr class=3D"short" style=
+=3D"margin: 2px 0 30px;padding: 0;height: 3px;border: none;border-top: 1px =
+dashed #7F7F7F;"></td></tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"details" s=
+tyle=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: 0p=
+x;margin: 0px;font-size: 0px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr>
+            <td style=3D"margin: 0;padding: 0;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwdT81uwyAYe5pw=
+AwGB_Bw4dOra09TD1nP0Fb4W1hQiwjZ1Tz8yyZJlS7ZsZ7DrlHUkGMlFzwepheaat6zVWrJ-lEo=
+1is_4HeiSk6OfsEBklm3OSoVWnPcsxII5wky8cfYyKuRWwnh1KAYY7KBFi9a5TvVak9n4Upam3T=
+XyULH1MJtYcFVcvp40RaQ3LP98zYjVJtmsHnOGHH7vkMH6B8S66gk-pRp-kGIi_qwzlrqDvu7fp=
+pfT8XSYdufj-f1j2p79Aa1nSOg" style=3D"text-decoration: none;font-size: 20px;=
+color: #7F7F7F;">
+                <img src=3D"https://levisvipclub.com/static/website/img/ema=
+il/Levis_BOGOF_SocMed.jpg" class=3D"main_banner" style=3D"max-width: 100%;m=
+argin-bottom: 30px;">
+                </a>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"details" s=
+tyle=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: 0p=
+x;margin: 0px;font-size: 0px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <p style=3D"margin: 0;padding: 0;font-size: 20px;line-height: 27px;=
+color: #7F7F7F;margin-bottom: 25px; text-align:justify;">
+            Promo khusus Beli 1 Gratis 1 pada periode 25 Agustus - 3 Septem=
+ber 2107 untuk item tertentu, kamu hanya perlu membayar 1 item dengan harga=
+ yang lebih tinggi. Promo ini berlaku di semua Original Levi's&reg; Store d=
+an juga beberapa department store.
+        </p>
+        <div class=3D"medsos" style=3D"margin: 0;padding: 0;font-size: 20px=
+;line-height: 27px;color: #7F7F7F;margin-bottom: 25px;" align=3D"middle">
+            <a href=3D"http://email.levisvipclub.com/c/eJwdT81uwyAYe5pwAwGB=
+_Bw4dOra09TD1nP0Fb4W1hQiwjZ1Tz8yyZJlS7ZsZ7DrlHUkGMlFzwepheaat6zVWrJ-lEo1is_=
+4HeiSk6OfsEBklm3OSoVWnPcsxII5wky8cfYyKuRWwnh1KAYY7KBFi9a5TvVak9n4Upam3TXyUL=
+H1MJtYcFVcvp40RaQ3LP98zYjVJtmsHnOGHH7vkMH6B8S66gk-pRp-kGIi_qwzlrqDvu7fppfT8=
+XSYdufj-f1j2p79Aa1nSOg" style=3D"text-decoration: none;font-size: 18px;colo=
+r: #FFFFFF;padding: 8px 15px;background: #C21E2E;border-radius: 5px;font-we=
+ight: bold;">
+            	More Info
+            </a>
+        </div>
+    </td>
+</tr>
+</table>
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;margin-top: 25px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <h1 style=3D"margin: 0;padding: 0;font-size: 26px;font-weight: bold=
+;margin-top: 0px;color: #7f7f7f;">
+        LEVI'S&reg; BAND HUNT</h1>
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr><td style=3D"margin: 0;padding: 0;"><hr class=3D"short" style=
+=3D"margin: 2px 0 30px;padding: 0;height: 3px;border: none;border-top: 1px =
+dashed #7F7F7F;"></td></tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"details" s=
+tyle=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: 0p=
+x;margin: 0px;font-size: 0px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr>
+            <td style=3D"margin: 0;padding: 0;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwVT8FuwyAU-5pw=
+AxHCK82BQ6e1PVU9bD1HL0AEWwIRYau6rx-RfLAt2bKtdoeDNJYELXir-FFACxx4xzoAwVQvpGw=
+kn91voGtOln7hipEZtjsbbUFyrliIxeWIM_HajUccUeA09UqCU0IZ6Ds7WUA0HEcya1_K2nSnRl=
+wq9h5mEgu2ihGjpf4nlspNWlZXQgkpkqw373LGHP6-MaPxC8a66oU-pRpeSNHRPbfZlbqDnt9vw=
+9v9er8Mp8f18fE57M_-ASFMSi8" style=3D"text-decoration: none;font-size: 20px;=
+color: #7F7F7F;">
+                <img src=3D"https://levisvipclub.com/static/website/img/ema=
+il/IG_&_FB_13.jpg" class=3D"main_banner" style=3D"max-width: 100%;margin-bo=
+ttom: 30px;">
+                </a>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"details" s=
+tyle=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: 0p=
+x;margin: 0px;font-size: 0px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+    <p style=3D"margin: 0;padding: 0;font-size: 20px;line-height: 27px;colo=
+r: #7F7F7F;margin-bottom: 25px; text-align:justify;">
+        Levi's&reg; masih mencari band indie yang punya lagu original. Buat=
+ kamu yang belum ikutan, ayo buruan register! Pendaftaran bisa lewat online=
+ - kirimkan link demo musik kamu bisa berupa video atau audio <a href=3D"ht=
+tp://email.levisvipclub.com/c/eJwVT8FuwyAU-5pwAwGBkBw4tNra09TD1nP0AlSwJRAB3=
+bR9_Yjkg23Jlm21GwZhLAqaU6boyCWTVNKe9FJyoiYuRCfo6r4D3nOy-BN2iMSQwymYSUGpIiFW=
+lyOsyOul5-phJmMXpmAaWD9S-xjECOMo6MQYWrWvde_6U8cvDUcPMYkE28QC0WL_jLXx8ly2UEp=
+IEWVdvMsZcvj7ggzGbxDbqF_wKbXshqqO7qesrrYZ-PXlbT7frrfLfLpf7-8f83HsHxiHSFo" s=
+tyle=3D"text-decoration: none;color: #C21E2E;font-weight: bold;font-size: 2=
+0px;">ke sini</a>.
+    </p>
+    <p style=3D"margin: 0;padding: 0;font-size: 20px;line-height: 27px;colo=
+r: #7F7F7F;margin-bottom: 25px; text-align:justify;">
+        Buat kamu yang punya demo musik CD bisa langsung bawa CDnya ke Orig=
+inal Levi's&reg; Store dan daftar langsung disana dengan mengisi formulir y=
+ang tersedia. Buat kamu yang belum punya demo musik, Levi's&reg; menawarkan=
+ untuk langsung rekaman di Pop Up Studio.
+    </p>
+    <p style=3D"margin: 0;padding: 0;font-size: 20px;line-height: 27px;colo=
+r: #7F7F7F;margin-bottom: 25px; text-align:justify;">
+        Tapi kesempatan ini terbatas untuk 12 pendaftar pertama. Info lebih=
+ lanjut bisa dilihat <a href=3D"http://email.levisvipclub.com/c/eJwVT81uwyA=
+Ye5pwAxECJBw4dOrPaeph7Tn6CkywpYAIXdU9fYnkg23Jlm21k5Ibi4JmtB_pxEQvqKADGYRgZF=
+SM847Txf0FnEuy-AcyRGLI5qy4F5zSkYRYXYmwIK8nAGO-FSgjgQFQJqlUUk1muDFpuESL9rXmb=
+th17Niw9RCTSLBN3CBa7B-xNp5TfmRU9OpdKVDC_y8UMP4Ose15gU-pxe6o6uie6-JqW4AP-8_5=
+43w6H-fd9XT9uszbpzfiRUbL" style=3D"text-decoration: none;color: #C21E2E;fon=
+t-weight: bold;font-size: 20px;">di sini</a>.
+    <br />
+    Jadi tunggu apa lagi? Ayo gabung sekarang!
+    </p>
+        <div class=3D"medsos" style=3D"margin: 0;padding: 0;font-size: 20px=
+;line-height: 27px;color: #7F7F7F;margin-bottom: 25px;" align=3D"middle">
+            <a href=3D"http://email.levisvipclub.com/c/eJwVT8FuwyAU-5pwAxHC=
+K82BQ6e1PVU9bD1HL0AEWwIRYau6rx-RfLAt2bKtdoeDNJYELXir-FFACxx4xzoAwVQvpGwkn91=
+voGtOln7hipEZtjsbbUFyrliIxeWIM_HajUccUeA09UqCU0IZ6Ds7WUA0HEcya1_K2nSnRlwq9h=
+5mEgu2ihGjpf4nlspNWlZXQgkpkqw373LGHP6-MaPxC8a66oU-pRpeSNHRPbfZlbqDnt9vw9v9e=
+r8Mp8f18fE57M_-ASFMSi8" style=3D"text-decoration: none;font-size: 18px;colo=
+r: #FFFFFF;padding: 8px 15px;background: #C21E2E;border-radius: 5px;font-we=
+ight: bold;">
+                More Info
+            </a>
+        </div>
+    </td>
+</tr>
+</table>
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;margin-top: 35px;" align=3D"center">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr>
+            <td style=3D"margin: 0;padding: 0;text-align: center;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwVj70OwiAAhJ-m=
+bBB-Sx0YavyZjIN2bijQgFbaUKLRp5cmt9zlcl_OKlfX3FgQFMVE4oYKIrDADDEhKJI7ynnF8eT=
+eAS5ptvChFx2RQVuyQiI4xhKFmF2KegJecUMdNaQZiGnMyCQb5MhqOVpiqcB2Byblc14q1lb0VL=
+TtIDOjYIsBSa3epaRT-D110sa_dCz4r_bzXFovkFV0n3VyuQDh8XDp99fz9dS33bm73fvtwh8_4=
+EB5" style=3D"text-decoration: none;font-size: 20px;color: #7F7F7F;">
+                    <img src=3D"https://levisvipclub.com/static/website/img=
+/email/LiveInLevis-logo.png" class=3D"main_banner" style=3D"max-width: 100%=
+;margin-bottom: 0px;">
+                </a>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+
+            </div>
+
+        </div>
+    </div>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: 0px;font=
+-size: 0px;">
+<tr>
+    <td style=3D"margin: 0;padding: 0;">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"wi=
+dth: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px;margin: =
+0px;font-size: 0px;">
+        <tr><td style=3D"margin: 0;padding: 0;"><hr class=3D"short" style=
+=3D"margin: 2px 0 0px;padding: 0;height: 3px;border: none;border-top: 1px d=
+ashed #7F7F7F;"></td></tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"footer" st=
+yle=3D"width: 100%;border-collapse: collapse;border-spacing: 0;padding: 0px=
+;margin: 0px;font-size: 12px;clear: both;line-height: 21px;font-weight: bol=
+d;">
+<tr>
+    <td class=3D"footer_link" style=3D"margin: 0;padding: 15px 30px;width: =
+100%;text-align: right;">
+        <a href=3D"http://email.levisvipclub.com/c/eJwdjztvwyAUhX-N2YwwTzMw=
+pEqTqcrQZrau8Y2gIdjCNFX762tXOtOno_OYHGot_USi46wzrOeqU0wxQYVSnBrLpWwkS_iM7VL=
+mqf2EBTL1dCdr2ynJmKExVywZEglO33pjdQ_CW-hQTGC9lahhZChH4Q1JLtS6rI04NPy06T_oGR=
+efvkbq58eGSHFrwFKgxN87FPDhAXlb8QNhnncPqS7j95qwbr3t6_FteLmcL6fhcD1f3z-G_ckfb=
+1dEBA" style=3D"text-decoration: none;color: #7F7F7F;float: none;font-size:=
+ 13px;">CUSTOMER BENEFITS</a> <span style=3D"margin: 0px 5px;">|</span> <a =
+href=3D"http://email.levisvipclub.com/c/eJwVT0tvwyAY-zXhBuKZ0AOHVlt7mnrYeo6=
+-8BBsKUQEbdp-_Yjkg23Jlu2MH0dpHUqGUzZRzRVTVFFBhFKcTCcu5SDp6r8T3mpx-BM2yMSSw9=
+kxU5LSiaTcfM2womjYCG4J1gYIyyRGrYL12orTIjXTwgW0mtjaNojzwK8dRw-xhSTXxd5K9XgtF=
+jrpGlWzR18r1PT3BRVsfELuc34hltJTT9RM9j_76lsfgF9f3ubL_Xa_zufH7fH-MR-X_gEBFEcx=
+" style=3D"text-decoration: none;color: #7F7F7F;float: none;font-size: 13px=
+;">STORE LOCATOR</a> <span style=3D"margin: 0px 5px;">|</span> <a href=3D"m=
+ailto:cs.vipindonesia@levi.com" style=3D"text-decoration: none;color: #7F7F=
+7F;float: none;font-size: 13px;">CUSTOMER SERVICE</a> <span style=3D"margin=
+: 0px 5px;">|</span> <a href=3D"http://email.levisvipclub.com/c/eJwVj7uKwzA=
+URL_G6iyu9XQKFQl5VEuKTWpzfaUg7zqykcWG7NfHhimGYZjDeBeMUeTZ4AQ0FlqhGw0aJJdaC2=
+53QqlKwRj-hnrOk69_cMbEiW_JUjdaAVg-pBJywpFF12tFtt35nh7GPGQvySjZtgSWJKDwbHSxl=
+LmS-0qcV207nKbnall2Sww5Yx7-fzEjxSemFf7GOE1bhxWXwmsZQ1lx9en41R2ul-u5298v9-9b=
+tx34AMvbP-8" class=3D"red" style=3D"text-decoration: none;color: #C21E2E;fl=
+oat: none;font-size: 13px;">LEVI.COM</a>
+    </td>
+</tr>
+<tr>
+    <td class=3D"sosmed" style=3D"margin: 0;padding: 0px 30px;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" valign=3D"right=
+" style=3D"width: auto;border-collapse: collapse;border-spacing: 0;padding:=
+ 0px;margin: 0px;font-size: 0px;float: right;">
+    <tr>
+        <td style=3D"margin: 0;padding: 0;">
+            <div class=3D"account-link" style=3D"margin: 0;padding: 0;float=
+: left;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwdj8tuwyAURL_G=
+7IwwDxMvWKRqk1WVRZu1dY2vBY0DFqBa7dcXV5rVkeZoZjbY99LOxBvOOs1OXHWKKSaoUIpTPXA=
+pG8lW_PbtluLcfsEGgVp6kNx2SjKmqQ8FU4CVOGN7AQOcFlj4NCEblNZc9kKJeeFDx5CsxpWy5U=
+acG36p2fedLmBxivFBbXxW9O-u0jkGzB5IMtlhSpD87wMSWPeEUEf9gIvxqJBiAu55xVJntG-v7=
+-PL7Xq7jOf79f7xOR7H_gCILUlZ" style=3D"text-decoration: none;color: #C21E2E;=
+float: left;">
+                    <img src=3D"https://levisvipclub.com/static/website/img=
+/email/icon-fb.png" style=3D"max-width: 100%;margin-right: 5px;width: 30px;=
+">
+                </a>
+            </div>
+            <div class=3D"account-link" style=3D"margin: 0;padding: 0;float=
+: left;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwVT01rwzAU-zXx=
+Leb5M-vBh45-MFjpYes5vDqv2GvqBMe0bL9-MegiIQlpcGSt9gOLToLo4E0aYcCA4soYybuN1Lr=
+RMNIztnOehvYHZ0zc86osrTAaoOMxFcoJRxacuXUIIK2yXpAmUNb6m1a0uUotrijY6EIp89KobS=
+MPK8orljXN_fRY2Wet_dix7JZAOWOOf3fM6MMD07rjF8M0VSsrLtFrGalm2_3u1L-fj-dDv70cL=
+1_fff3yD5bBQ98" style=3D"text-decoration: none;color: #C21E2E;float: left;"=
+>
+                    <img src=3D"https://levisvipclub.com/static/website/img=
+/email/icon-tw.png" style=3D"max-width: 100%;margin-right: 5px;width: 30px;=
+">
+                </a>
+            </div>
+            <div class=3D"account-link" style=3D"margin: 0;padding: 0;float=
+: left;">
+                <a href=3D"http://email.levisvipclub.com/c/eJwdj7FuwyAURb_G=
+bEaAwXYGhlRtMlUZmszWM34ptDZYgGo1Xx8c6U5HulfnThrbVpqJOC0Y71gvFFdMsYY2SgnaHYS=
+UlWQz_rl6jWGqf2AFTw3dSaq5kox11PmM0cNMrD4g59LcRdP3gHzEu2SdGGHkvAXTjj2Ztc15TV=
+VzrMSpZNu20k8ZviMs1ISlsNf44PwUPCYHhZCok8UYIbrHL0QwdgFfxP7BhrC3SNYetzRjLir1x=
+_vn8HY5X07D8Xa-fV2H_dwT1z9LAg" style=3D"text-decoration: none;color: #C21E2=
+E;float: left;">
+                    <img src=3D"https://levisvipclub.com/static/website/img=
+/email/icon-ig.png" style=3D"max-width: 100%;margin-right: 0px;width: 30px;=
+">
+                </a>
+            </div>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+<tr>
+    <td class=3D"dash" style=3D"margin: 0;padding: 0;">
+        <span>
+            <img src=3D"https://levisvipclub.com/static/website/img/email/b=
+order-red.jpg" style=3D"max-width: 100%;padding: 30px 0px;padding-top: 10px=
+;">
+        </span>
+    </td>
+</tr>
+</table>
+
+
+    </td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.levisvipclub=
+.com/o/eJwVjr0OgjAYAJ_GbjT9-woMHTQqk2FQZtK_pFUopBCNPr2w3nB3TnkphXUoKkZoSSoG=
+FAgQjjkAw2XNhDgIMvh3LOY8ueKpZ52wxTtZCgqCkBLHtPqc9ICCqjzQmjJL68oYLoy0BkrpKsm=
+od8ApymoJPmed4--ls7Zh1GkrfHWYJmynEa0q-c8y-HVzFpfzrT-1TXvtj13T3R_9fvkHnXU3Qg=
+"></body>
+</html>
+
+--===============6294714647489073273==--

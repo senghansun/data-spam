@@ -1,0 +1,2671 @@
+﻿Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.5.70 with SMTP id 67csp1378551vsf;
+        Wed, 26 Jul 2017 13:16:45 -0700 (PDT)
+X-Received: by 10.55.209.86 with SMTP id s83mr2770547qki.171.1501100205740;
+        Wed, 26 Jul 2017 13:16:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501100205; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vgxDktL1lbX/YMBQqvgVBY910yqrX1H35xME1rjP4dZoLjyTNJSt5b3BELIfZ3SsyX
+         Ty/fsC2GxsDFXqWxWUpH7OBjkkn5hXrUNp2cq+CC1EL+KHBvw/ELTyilb9d7r6f3dzTb
+         8Gi8Rbuixqh5HUUe5Zr3WJc3gtS3x/oU1m8/sb8RMx8pWDJQpySyHJh6M6qNdngCUC82
+         kGkcSDqotv0XcdJZyqzVkVN+HdF+3KlOkpsVIM85BDsWnqem8zjpU/5UEOsV/OSuPHX9
+         Snq7bZtZ2rDCfbkK/c3iM+ECM40bF1peiKyXhx6N86hOQ2Pi66gNLWUrsHsBsDmFeKIl
+         cJpQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:date:sender
+         :domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=4U7e0T7EfgbQ5u6BKcrlWcdTkxCoJSZPhIzagTewDKA=;
+        b=Cv+hoDEsFw/UVnwzlOwRViOWfGYbecXtP+23dUu9v1W6oW/eofT3S/UXDsoOK9XTTx
+         o5mNKQ609xt3aJEKEGg7M94w7jPYPYCA+rTdM3CD0LbKamYZPV0Ly2n4sqWJL7wRRoRv
+         fBAaOhUMYUzj/ZkFTKJrueL2pJVl3jlbrtFjdweqkBa0dxvltu61CdjvrEPbeyakKWmN
+         spHt8ejM9GTguSONnKaQwbFl/mpO6DSNGfmJ5bsCQU8rK+e/nVgXfPTrcD9dRxGF90/r
+         W/dBE4PqY6TGSsVNe1Ou8jJZ8Pxr6hSuok4yNYhj0kIrM7GXQjk7eZW3rp4TnpOU84h1
+         vQjg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.b=FdM0l3ZM;
+       dkim=pass header.i=@mailgun.org header.b=KNlmyvcQ;
+       spf=pass (google.com: domain of bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com designates 104.130.122.223 as permitted sender) smtp.mailfrom=bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com>
+Received: from mail223.static.mailgun.info (mail223.static.mailgun.info. [104.130.122.223])
+        by mx.google.com with UTF8SMTPS id e192si2750791qka.103.2017.07.26.13.16.45
+        for <rikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 26 Jul 2017 13:16:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com designates 104.130.122.223 as permitted sender) client-ip=104.130.122.223;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.b=FdM0l3ZM;
+       dkim=pass header.i=@mailgun.org header.b=KNlmyvcQ;
+       spf=pass (google.com: domain of bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com designates 104.130.122.223 as permitted sender) smtp.mailfrom=bounce+d19e20.fc5a0b-rikosatrianto=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=newsletter.bukalapak.com; q=dns/txt; s=smtp; t=1501100205; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=4U7e0T7EfgbQ5u6BKcrlWcdTkxCoJSZPhIzagTewDKA=; b=FdM0l3ZMUat2xVb98OH9xs55ouXMo3w9l4uvLUQE2sHWa5pdWpqvUJh7N9KHS3BVBs0hWIT4 F38GsOLT/bP9aHKZbWhBnay6ssAJajybw9IuBLx2l0p7/RF4HhCSHgVmoBoDMfKKRixiaMEg ihKIdxBojT4ZI10unhIkSCZF6i0=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=newsletter.bukalapak.com; s=smtp; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=AcNuKFNIQOQRC7sv1oJ8JI2Dchv7ROi65oNCs21UlgdC/DdyVNNp1L1lUOZOJyXI8fPmot UEAqFB6FDAMlgKCp4GRmzf+q8dTke1uVrMHnazdtakjHJ7+ywHoRUZTarSSUllAs0W0ndcUl 8cmEbyVx/QPptzaIGYIE5SAaic17c=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1501100205; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=4U7e0T7EfgbQ5u6BKcrlWcdTkxCoJSZPhIzagTewDKA=; b=KNlmyvcQ2abdiqk4QwET/mLCoJhvwtAmHtzwDuv1yKC7tHepDvgNOCc5vFE2lAPYuLEinhWx 1Mhaq8gBCDbDtUF5Veg+nrPzEAlOrUi5kiYmB/+hQSTEIkfrn70+IeRlCNLdjDq1xCNpfYOd Sr3D26cX4TF9gsRbdRLzL6LBHjc=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=gBACImiY15uvedKsuDFGiAfUy5SzircXNS2UN9sxCcoNFSGfPvmg5j7X84yPZAxjarxUco jz558tBgIYPwjtKQqt4uvMjbrTh3JFnZdGE37AWoLBZjlDQPumUoXr/+QT3G32pxl0ayTPgg rrTG73jY1+Bx3hWuekZ43h2EvmVdk=
+X-Feedback-Id: 57988b8e803267cd4092b267:mailgun
+Sender: info@newsletter.bukalapak.com
+Date: Wed, 26 Jul 2017 20:16:45 +0000
+X-Mailgun-Sending-Ip: 104.130.122.223
+X-Mailgun-Sid: WyI1MmVhZSIsICJyaWtvc2F0cmlhbnRvQGdtYWlsLmNvbSIsICJmYzVhMGIiXQ==
+Received: by luna.mailgun.net with HTTP; Wed, 26 Jul 2017 20:16:44 +0000
+Message-Id: <20170726201644.125675.9E75177DDE07EE1E@newsletter.bukalapak.com>
+To: rikosatrianto@gmail.com
+From: Bukalapak <info@newsletter.bukalapak.com>
+Subject: 3 Produk Elektronik Rumah Tangga dengan Harga Hemat
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="0ed6beaedd20497fafaf01dc47463568"
+
+--0ed6beaedd20497fafaf01dc47463568
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+Lihat Penawaran Elektronik Lainnya Harga Mulai Rp50.000
+
+Tampilkan Email Ini di Browser=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fnewsletters%2Fannouncements%2F8832%3Funsub_token%3D3f95d798=
+d17ab910d350600b5f31a73a9ccdcac157ed99d1b3c395dd2d7eb19acmlrb3NhdHJpYW50b0B=
+nbWFpbC5jb20%253D&lllsttu=3Dc2f6a4b25042a49857eb2b1728782f42abd7d70d4ff373c=
+80e7dad3f4bdc0266&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+H=
+emat&tag=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.=
+com )
+
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dpromoelekt=
+ronikrumahtangga%26utm_content%3Dlogo&lllsttu=3Dc15e8ebcf80e80ebdbacdddfdf9=
+720651aa933426d2adbac1ab91ee558dd857b&subject=3D3+Produk+Elektronik+Rumah+T=
+angga+dengan+Harga+Hemat&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dri=
+kosatrianto%40gmail.com )
+
+
+-->
+
+***********************************
+3 Elektronik Pelengkap Rumah Tangga
+***********************************
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo%2Fbelanja-asik-produk-elektronik%3Futm_source%3Dnewsletter%26utm_medi=
+um%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_content%3Dbann=
+eratas&lllsttu=3Db0c6630951dc845674df317cba40ef3028f105562b3bd2f55e5a43b5e5=
+7268d6&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3D=
+newsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo%2Fbelanja-asik-produk-elektronik%3Futm_source%3Dnewsletter%26utm_medi=
+um%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_content%3Dbann=
+eratas&lllsttu=3Db0c6630951dc845674df317cba40ef3028f105562b3bd2f55e5a43b5e5=
+7268d6&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3D=
+newsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+-->
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+p%2Felektronik%2Ftelevisi%2F10q9qf-jual-led-sharp-aquos-lc-32le260i-termura=
+h-harga-grosir%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaig=
+n%3Dpromoelektronikrumahtangga%26utm_content%3Dledsharpaquos&lllsttu=3Dcda0=
+a998c2e998d9b906b71bfd06d89c169a02b4a644a64ed8433e6e11a0868f&subject=3D3+Pr=
+oduk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3Dnewsletter&type=3DCli=
+ckEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+LED Sharp Aquos 32=E2=80=9D
+
+Nonton jadi lebih seru dengan televisi Sharp Aquos 32 inci. Sudah
+dilengkapi dengan antena booster untuk memperkuat sinyal yang
+diterima televisi, sehingga mampu meningkatkan kualitas gambar
+yang ditayangkan. Tersedia juga Port USB untuk memutar file foto,
+musik, dan film.
+
+-->
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+p%2Frumah-tangga%2Fdapur%2Fblender%2Ffs57k-jual-oxone-hand-blender-and-copp=
+er-ox-292%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dp=
+romoelektronikrumahtangga%26utm_content%3Doxoneblendercopper&lllsttu=3D95b9=
+59dd4cacbebc3a97cb75b978017663d7eebcba50a0cc1fba8558c8d79a80&subject=3D3+Pr=
+oduk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3Dnewsletter&type=3DCli=
+ckEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+Oxone Blender and Chopper
+
+Blender Ox-292 adalah blender 4 in 1 yang menggabungkan blender
+mini, blender tangan, pengocok telur, dan chopper. Memiliki pisau
+yang kuat dan tajam, anti karat, dan awet untuk digunakan.
+Nikmati mengolah makanan favorit bersama keluarga dengan cara
+efektif dan efisien.
+
+-->
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+p%2Frumah-tangga%2Felektronik-1111%2Fsetrika-steamer%2F3nux8f-jual-maspion-=
+setrika-ha-110%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaig=
+n%3Dpromoelektronikrumahtangga%26utm_content%3Dsetrikamaspion&lllsttu=3Db37=
+f5b57683d9a86392fa43cc368a8dcde0ec117b6d0c0b9ef31203c5596c1df&subject=3D3+P=
+roduk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3Dnewsletter&type=3DCl=
+ickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+Setrika Maspion
+
+Kegiatan menyetrika jadi lebih mudah dan menyenangkan. Setrika
+Maspion menggunakan tapak teflon yang licin saat digunakan.
+Dilengkapi juga dengan pengatur panas yang dapat disesuaikan
+dengan jenis kain, mulai dari kain katun hingga sutra.
+
+-->
+
+Lihat promo produk elektronik rumah tangga lainnya di Bukalapak.
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo%2Fbelanja-asik-produk-elektronik%3Futm_source%3Dnewsletter%26utm_medi=
+um%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_content%3Dctal=
+ink&lllsttu=3D17498df68cd2d3abc7d73080cfb72cd016a5541db624e7d39b2b2978a3976=
+e6b&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&tag=3Dnew=
+sletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+-->
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo-detail%2Fpakai-bukadompet-dapat-diskon-10%3Futm_source%3Dnewsletter%2=
+6utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_conte=
+nt%3Ddompet10&lllsttu=3D474ab1f3e0e17529b02a499fdfcf267e6644d5a25f2c47a04f1=
+28a64bd7437df&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat=
+&tag=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com =
+)
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dpromoelekt=
+ronikrumahtangga%26utm_content%3Dsearchbar&lllsttu=3Debd000facc0f75d2125550=
+43d6ff12228039a8b1b564668e180ef3e98c9dca79&subject=3D3+Produk+Elektronik+Ru=
+mah+Tangga+dengan+Harga+Hemat&tag=3Dnewsletter&type=3DClickEmail&user_email=
+=3Drikosatrianto%40gmail.com )
+
+
+Copyright =C2=A9 2017, PT. Bukalapak.com All rights reserved.
+Plaza City View Lt. 1. Jl. Kemang Timur No. 22
+Jakarta Selatan. Indonesia. 12510
+
+Customer Support:
+Buka Bantuan=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbit.l=
+y%2F2apHgGP&lllsttu=3Dddb69514a830af7c8d892e1d7dac38b8a65631794309567a6d258=
+ac93c8d786b&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&t=
+ag=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F1XmbQ4k&lllsttu=3D7bc5348e9f45c25e2e84b75c72695cc3ecafa0e14d1e1f6baec159=
+1290c93ed5&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F2jWIDmD&lllsttu=3D7e034708327e8cf021309068832f441c12b1ac18045e1b8eaf0c0e=
+a89239a6f9&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F2li9cPg&lllsttu=3D173a57a103a5a4538c183233d21dc6306b792f6a896df0f68d3978=
+be86743bc7&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F1ImzzOI&lllsttu=3D3ff7a037a5d056537852cd5730c681be2cefc8d351244a8d52ba07=
+b8d1331dc5&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F2jWzjdG&lllsttu=3D83b7340ffe785cd63033552b6dfcb5f13312c6e61c46f338b39d73=
+1471335553&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F1W3g2Zx&lllsttu=3D1373775ce5587682c87a2a9ec37dec46d99eb5a8b7d3a6ead63cb5=
+2e7d01b4b2&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttp%3A%2F%2Fbl.id=
+%2F1TKOre2&lllsttu=3Dc24df5f7123c6210a1b78c859e3e6b78d29f6eb27431f499d2bbba=
+af23952d8a&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40gmail.com )
+
+
+Kami melindungi penggunaan data dan infomasi penting para
+pengguna Bukalapak.
+Silakan lihat di Kebijakan Privasi=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fprivacy&lllsttu=3D4da7c42f62d14973882aeaee62855b3b30398eadc=
+472ff75fe5ce5dfb5cc39d5&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+H=
+arga+Hemat&tag=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40=
+gmail.com )
+ Anda memperoleh email ini karena keanggotaan Anda pada
+Bukalapak.
+Untuk berhenti berlangganan newsletter klik di sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2135&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fother_settings%2Funsubscribe_newsletter%3Funsub_token%3D3f9=
+5d798d17ab910d350600b5f31a73a9ccdcac157ed99d1b3c395dd2d7eb19acmlrb3NhdHJpYW=
+50b0BnbWFpbC5jb20%253D&lllsttu=3Df776a4a8d60c94de955c64da3b7c8f1bcffea1131a=
+90182aec37637f65835ceb&subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Ha=
+rga+Hemat&tag=3Dnewsletter&type=3DClickEmail&user_email=3Drikosatrianto%40g=
+mail.com )
+.
+
+Harap jangan membalas email ini, karena email ini dikirimkan
+secara otomatis oleh sistem.
+--0ed6beaedd20497fafaf01dc47463568
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+=09<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+=09=09<!-- NAME: 1:3:1 COLUMN - FULL WIDTH -->
+=09=09<!--[if gte mso 15]>
+=09=09<xml>
+=09=09=09<o:OfficeDocumentSettings>
+=09=09=09<o:AllowPNG/>
+=09=09=09<o:PixelsPerInch>96</o:PixelsPerInch>
+=09=09=09</o:OfficeDocumentSettings>
+=09=09</xml>
+=09=09<![endif]-->
+=09=09<meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+=09=09<title>3 Produk Elektronik Rumah Tangga dengan Harga Hemat</title>
+       =20
+    <style type=3D"text/css">
+=09=09p{
+=09=09=09margin:10px 0;
+=09=09=09padding:0;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09h1,h2,h3,h4,h5,h6{
+=09=09=09display:block;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img,a img{
+=09=09=09border:0;
+=09=09=09height:auto;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09body,#bodyTable,#bodyCell{
+=09=09=09height:100%;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100%;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09table{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09p,a,li,td,blockquote{
+=09=09=09mso-line-height-rule:exactly;
+=09=09}
+=09=09a[href^=3Dtel],a[href^=3Dsms]{
+=09=09=09color:inherit;
+=09=09=09cursor:default;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09p,a,li,td,body,table,blockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,=
+.ExternalClass span,.ExternalClass font{
+=09=09=09line-height:100%;
+=09=09}
+=09=09a[x-apple-data-detectors]{
+=09=09=09color:inherit !important;
+=09=09=09text-decoration:none !important;
+=09=09=09font-size:inherit !important;
+=09=09=09font-family:inherit !important;
+=09=09=09font-weight:inherit !important;
+=09=09=09line-height:inherit !important;
+=09=09}
+=09=09.templateContainer{
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09a.mcnButton{
+=09=09=09display:block;
+=09=09}
+=09=09.mcnImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent{
+=09=09=09word-break:break-word;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09.mcnDividerBlock{
+=09=09=09table-layout:fixed !important;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09body,#bodyTable{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09#bodyCell{
+=09=09=09/*@editable*/border-top:0;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 1
+=09@tip Set the styling for all first-level headings in your emails. These =
+should be the largest of your headings.
+=09@style heading 1
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:26px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 2
+=09@tip Set the styling for all second-level headings in your emails.
+=09@style heading 2
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:22px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 3
+=09@tip Set the styling for all third-level headings in your emails.
+=09@style heading 3
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:20px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 4
+=09@tip Set the styling for all fourth-level headings in your emails. These=
+ should be the smallest of your headings.
+=09@style heading 4
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:18px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Style
+=09@tip Set the background color and borders for your email's preheader are=
+a.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/background-color:#fafafa;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Text
+=09@tip Set the styling for your email's preheader text. Choose a size and =
+color that is easy to read.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Link
+=09@tip Set the styling for your email's preheader links. Choose a color th=
+at helps them stand out from your text.
+=09*/
+=09=09#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextConte=
+nt p a{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Style
+=09@tip Set the background color and borders for your email's header area.
+=09*/
+=09=09#templateHeader{
+=09=09=09/*@editable*/background-color:#ed1651;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:0px;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Text
+=09@tip Set the styling for your email's header text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Link
+=09@tip Set the styling for your email's header links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#2BAADF;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Upper Body
+=09@section Upper Body Style
+=09@tip Set the background color and borders for your email's upper body ar=
+ea.
+=09*/
+=09=09#templateUpperBody{
+=09=09=09/*@editable*/background-color:#e26b8d;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Upper Body
+=09@section Upper Body Text
+=09@tip Set the styling for your email's upper body text. Choose a size and=
+ color that is easy to read.
+=09*/
+=09=09#templateUpperBody .mcnTextContent,#templateUpperBody .mcnTextContent=
+ p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Upper Body
+=09@section Upper Body Link
+=09@tip Set the styling for your email's upper body links. Choose a color t=
+hat helps them stand out from your text.
+=09*/
+=09=09#templateUpperBody .mcnTextContent a,#templateUpperBody .mcnTextConte=
+nt p a{
+=09=09=09/*@editable*/color:#ed1651;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Style
+=09@tip Set the background color and borders for your email's columns.
+=09*/
+=09=09#templateColumns{
+=09=09=09/*@editable*/background-color:#ffffff;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Text
+=09@tip Set the styling for your email's column text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent,#templateColumns .c=
+olumnContainer .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Link
+=09@tip Set the styling for your email's column links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent a,#templateColumns =
+.columnContainer .mcnTextContent p a{
+=09=09=09/*@editable*/color:#2BAADF;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Lower Body
+=09@section Lower Body Style
+=09@tip Set the background color and borders for your email's lower body ar=
+ea.
+=09*/
+=09=09#templateLowerBody{
+=09=09=09/*@editable*/background-color:#ffffff;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:2px none #EAEAEA;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Lower Body
+=09@section Lower Body Text
+=09@tip Set the styling for your email's lower body text. Choose a size and=
+ color that is easy to read.
+=09*/
+=09=09#templateLowerBody .mcnTextContent,#templateLowerBody .mcnTextContent=
+ p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Lower Body
+=09@section Lower Body Link
+=09@tip Set the styling for your email's lower body links. Choose a color t=
+hat helps them stand out from your text.
+=09*/
+=09=09#templateLowerBody .mcnTextContent a,#templateLowerBody .mcnTextConte=
+nt p a{
+=09=09=09/*@editable*/color:#2BAADF;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Style
+=09@tip Set the background color and borders for your email's footer area.
+=09*/
+=09=09#templateFooter{
+=09=09=09/*@editable*/background-color:#fafafa;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:0px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Text
+=09@tip Set the styling for your email's footer text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:center;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Link
+=09@tip Set the styling for your email's footer links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09@media only screen and (min-width:768px){
+=09=09.templateContainer{
+=09=09=09width:600px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body,table,td,p,a,li,blockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09#bodyCell{
+=09=09=09padding-top:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.columnWrapper{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImage{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnC=
+aptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,=
+.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCapt=
+ionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCapti=
+onRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImag=
+eCardRightTextContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupContent{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOu=
+ter .mcnTextContent{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardTopImageContent,.mcnCaptionBlockInner .mcnCaptionTopCont=
+ent:last-child .mcnTextContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardBottomImageContent{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockInner{
+=09=09=09padding-top:0 !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockOuter{
+=09=09=09padding-top:9px !important;
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnTextContent,.mcnBoxedTextContentColumn{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcpreview-image-uploader{
+=09=09=09display:none !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 1
+=09@tip Make the first-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/font-size:22px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 2
+=09@tip Make the second-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/font-size:20px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 3
+=09@tip Make the third-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/font-size:18px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 4
+=09@tip Make the fourth-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Boxed Text
+=09@tip Make the boxed text larger in size for better readability on small =
+screens. We recommend a font size of at least 16px.
+=09*/
+=09=09.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentCon=
+tainer .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Visibility
+=09@tip Set the visibility of the email's preheader on small screens. You c=
+an hide it to save space.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Text
+=09@tip Make the preheader text larger in size for better readability on sm=
+all screens.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Header Text
+=09@tip Make the header text larger in size for better readability on small=
+ screens.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Upper Body Text
+=09@tip Make the upper body text larger in size for better readability on s=
+mall screens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateUpperBody .mcnTextContent,#templateUpperBody .mcnTextContent=
+ p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Column Text
+=09@tip Make the column text larger in size for better readability on small=
+ screens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent,#templateColumns .c=
+olumnContainer .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Lower Body Text
+=09@tip Make the lower body text larger in size for better readability on s=
+mall screens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateLowerBody .mcnTextContent,#templateLowerBody .mcnTextContent=
+ p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Footer Text
+=09@tip Make the footer content text larger in size for better readability =
+on small screens.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}</style>
+</head>
+    <body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;"=
+>
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding=
+: 0;width: 100%;background-color: #FAFAFA;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" sty=
+le=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;border-top=
+: 0;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+                            <tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateP=
+reheader" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;background-color: #fafafa;background-image:=
+ none;background-repeat: no-repeat;background-position: center;background-s=
+ize: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: =
+9px;">
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=3D"600=
+" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;">
+=09=09=09=09=09=09=09=09=09=09<tr>
+                                =09=09=09<td valign=3D"top" class=3D"prehea=
+derContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock" style=3D"min-width=
+: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"390" style=3D"width:390px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 390px;border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody>
+<tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetic=
+a;font-size: 12px;line-height: 150%;text-align: left;">
+                       =20
+                            Lihat Penawaran Elektronik Lainnya Harga Mulai =
+Rp50.000
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"210" style=3D"width:210px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 210px;border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody>
+<tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetic=
+a;font-size: 12px;line-height: 150%;text-align: left;">
+                       =20
+                            <a href=3D"http://glimpsetrack.net/redirect?lat=
+e_id=3D2135&amp;link=3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fnewsletters%2Fanno=
+uncements%2F8832%3Funsub_token%3D3f95d798d17ab910d350600b5f31a73a9ccdcac157=
+ed99d1b3c395dd2d7eb19acmlrb3NhdHJpYW50b0BnbWFpbC5jb20%253D&amp;lllsttu=3Dc2=
+f6a4b25042a49857eb2b1728782f42abd7d70d4ff373c80e7dad3f4bdc0266&amp;subject=
+=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter=
+&amp;type=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=
+=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-d=
+ecoration: underline;">Tampilkan Email Ini di Browser</a>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateH=
+eader" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;background-color: #ed1651;background-image: no=
+ne;background-repeat: no-repeat;background-position: center;background-size=
+: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padding-bottom: 0;"=
+>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=3D"600=
+" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;">
+=09=09=09=09=09=09=09=09=09=09<tr>
+                                =09=09=09<td valign=3D"top" class=3D"header=
+Container" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" class=3D"mcnCodeBlock" style=3D"border-colla=
+pse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                <table width=3D"100%" border=3D"0" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" background=3D"" style=3D"border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                  <td align=3D"center" style=3D"text-align: center;vertical=
+-align: top;font-size: 0;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;">
+                 =20
+                    <!--logo-->
+                    <div style=3D"display:inline-block; vertical-align:top;=
+">
+                      <table border=3D"0" align=3D"center" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;">
+                      <tbody>
+<tr>
+                                      <td height=3D"10" style=3D"mso-line-h=
+eight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;"></td>
+                                    </tr>
+                        <tr>
+                          <td align=3D"center" width=3D"100" style=3D"mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                            <table border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspa=
+ce: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;">
+                              <tbody>
+<tr>
+                                <td align=3D"center" style=3D"line-height: =
+0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                  <a target=3D"_blank" href=3D"http://glimp=
+setrack.net/redirect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%=
+2Fcampaign%2FNLRET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F%3Futm_sou=
+rce%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumah=
+tangga%26utm_content%3Dlogo&amp;lllsttu=3Dc15e8ebcf80e80ebdbacdddfdf9720651=
+aa933426d2adbac1ab91ee558dd857b&amp;subject=3D3+Produk+Elektronik+Rumah+Tan=
+gga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_=
+email=3Drikosatrianto%40gmail.com" style=3D"mso-line-height-rule: exactly;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img style=3D"di=
+splay: block;line-height: 0px;font-size: 0px;border: 0px;height: 40px;width=
+: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;=
+" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805fb8f1=
+25/583d6f4dabb70b84119ea16a/1fca17d2e027f2588c0896b63261e59d/LOGO_bukalapak=
+_white.png" target=3D"_blank" alt=3D"Logo"></a>
+                                </td>
+                              </tr>
+                            </tbody>
+</table>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </div>
+                    <!--end logo-->
+                    </td>
+</tr>
+<tr>
+                                      <td height=3D"10" style=3D"mso-line-h=
+eight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;"></td>
+                                    </tr>
+                 =20
+               =20
+              </tbody>
+</table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateU=
+pperBody" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;background-color: #e26b8d;background-image:=
+ none;background-repeat: no-repeat;background-position: center;background-s=
+ize: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;=
+">
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=3D"600=
+" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;">
+=09=09=09=09=09=09=09=09=09=09<tr>
+                                =09=09=09<td valign=3D"top" class=3D"bodyCo=
+ntainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 10px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody>
+<tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetic=
+a;font-size: 16px;line-height: 150%;text-align: left;">
+                       =20
+                            <h1 class=3D"null" style=3D"text-align: center;=
+display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;f=
+ont-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;lette=
+r-spacing: normal;"><span style=3D"font-family:helvetica neue,helvetica,ari=
+al,verdana,sans-serif"><span style=3D"font-size:28px"><span style=3D"color:=
+#FFFFFF">3 Elektronik Pelengkap Rumah Tangga</span></span></span></h1>
+
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 0px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody>
+<tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"http://glimpsetrack.net/redi=
+rect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLR=
+ET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo%2Fbelanja-asik-produ=
+k-elektronik%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%=
+3Dpromoelektronikrumahtangga%26utm_content%3Dbanneratas&amp;lllsttu=3Db0c66=
+30951dc845674df317cba40ef3028f105562b3bd2f55e5a43b5e57268d6&amp;subject=3D3=
++Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp=
+;type=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" title=3D"" c=
+lass=3D"" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/594c8ee99f2e3a9f7e74f6ee7/images/a7e7d36c=
+-862d-4496-8f1f-146778fbbc2e.gif" width=3D"600" style=3D"max-width: 700px;p=
+adding-bottom: 0;display: inline !important;vertical-align: bottom;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" class=3D"mcnImage">
+                                    </a>
+                               =20
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+                </td>
+            </tr>
+    </tbody>
+</table>
+</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateC=
+olumns" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;background-color: #ffffff;background-image: n=
+one;background-repeat: no-repeat;background-position: center;background-siz=
+e: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;">
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" class=3D"templateContainer" style=3D"border-collapse=
+: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" style=3D"mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;">
+=09=09=09=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" class=3D"colum=
+nContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;"></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" class=3D"colum=
+nContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;"></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" class=3D"colum=
+nContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;"></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateL=
+owerBody" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;background-color: #ffffff;background-image:=
+ none;background-repeat: no-repeat;background-position: center;background-s=
+ize: cover;border-top: 0;border-bottom: 2px none #EAEAEA;padding-top: 0;pad=
+ding-bottom: 9px;">
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=3D"600=
+" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;">
+=09=09=09=09=09=09=09=09=09=09<tr>
+                                =09=09=09<td valign=3D"top" class=3D"bodyCo=
+ntainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 0px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody>
+<tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"http://glimpsetrack.net/redi=
+rect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLR=
+ET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo%2Fbelanja-asik-produ=
+k-elektronik%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%=
+3Dpromoelektronikrumahtangga%26utm_content%3Dbanneratas&amp;lllsttu=3Db0c66=
+30951dc845674df317cba40ef3028f105562b3bd2f55e5a43b5e57268d6&amp;subject=3D3=
++Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp=
+;type=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" title=3D"" c=
+lass=3D"" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/594c8ee99f2e3a9f7e74f6ee7/images/5ec2ff28=
+-0596-4927-89bd-a76cacc763e6.png" width=3D"600" style=3D"max-width: 700px;p=
+adding-bottom: 0;display: inline !important;vertical-align: bottom;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" class=3D"mcnImage">
+                                    </a>
+                               =20
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+                </td>
+            </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 10px 18px 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnCaption=
+RightContentOuter" width=3D"100%" style=3D"border-collapse: collapse;mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;">
+    <tbody>
+<tr>
+        <td valign=3D"top" class=3D"mcnCaptionRightContentInner" style=3D"p=
+adding: 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"mcnCaptionRightImageContentContainer" style=3D"border-coll=
+apse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td class=3D"mcnCaptionRightImageContent" valign=3D"top=
+" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                   =20
+                       =20
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLRET-PRA01%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fp%2Felektronik%2Ftelevisi%2F10q9qf-jua=
+l-led-sharp-aquos-lc-32le260i-termurah-harga-grosir%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_c=
+ontent%3Dledsharpaquos&amp;lllsttu=3Dcda0a998c2e998d9b906b71bfd06d89c169a02=
+b4a644a64ed8433e6e11a0868f&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+d=
+engan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=
+=3Drikosatrianto%40gmail.com" title=3D"" class=3D"" target=3D"_blank" style=
+=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                       =20
+
+                        <img alt=3D"" src=3D"https://gallery.mailchimp.com/=
+594c8ee99f2e3a9f7e74f6ee7/images/56636113-f33c-4cee-ac53-96ae8e3a1234.jpg" =
+width=3D"132" style=3D"max-width: 300px;border: 0;height: auto;outline: non=
+e;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bot=
+tom;" class=3D"mcnImage">
+                        </a>
+
+                   =20
+                    </td>
+                </tr>
+            </tbody>
+</table>
+            <table class=3D"mcnCaptionRightTextContentContainer" align=3D"r=
+ight" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"396" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td valign=3D"top" class=3D"mcnTextContent" style=3D"ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;word-break: break-word;color: #202020;font-family: Helvetica;fon=
+t-size: 16px;line-height: 150%;text-align: left;">
+                        <div style=3D"text-align: left;">
+<div style=3D"text-align: left;">
+<p style=3D"margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-fami=
+ly: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>=
+<span style=3D"font-size:17px">LED Sharp Aquos 32=E2=80=9D</span></strong><=
+br>
+<span style=3D"font-size:16px"><span style=3D"font-family:helvetica neue,he=
+lvetica,arial,verdana,sans-serif">Nonton jadi lebih seru dengan televisi Sh=
+arp Aquos 32 inci. Sudah dilengkapi dengan antena booster untuk memperkuat =
+sinyal yang diterima televisi, sehingga mampu meningkatkan kualitas gambar =
+yang ditayangkan. Tersedia juga Port USB untuk memutar file foto, musik, da=
+n film.</span></span></p>
+</div>
+</div>
+
+                    </td>
+                </tr>
+            </tbody>
+</table>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 10px 18px 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnCaption=
+RightContentOuter" width=3D"100%" style=3D"border-collapse: collapse;mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;">
+    <tbody>
+<tr>
+        <td valign=3D"top" class=3D"mcnCaptionRightContentInner" style=3D"p=
+adding: 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"mcnCaptionRightImageContentContainer" style=3D"border-coll=
+apse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td class=3D"mcnCaptionRightImageContent" valign=3D"top=
+" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                   =20
+                       =20
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLRET-PRA01%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fp%2Frumah-tangga%2Fdapur%2Fblender%2Ff=
+s57k-jual-oxone-hand-blender-and-copper-ox-292%3Futm_source%3Dnewsletter%26=
+utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_conten=
+t%3Doxoneblendercopper&amp;lllsttu=3D95b959dd4cacbebc3a97cb75b978017663d7ee=
+bcba50a0cc1fba8558c8d79a80&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+d=
+engan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=
+=3Drikosatrianto%40gmail.com" title=3D"" class=3D"" target=3D"_blank" style=
+=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                       =20
+
+                        <img alt=3D"" src=3D"https://gallery.mailchimp.com/=
+594c8ee99f2e3a9f7e74f6ee7/images/ff32f258-d580-415a-8e21-dc18afacf5a6.jpg" =
+width=3D"132" style=3D"max-width: 300px;border: 0;height: auto;outline: non=
+e;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bot=
+tom;" class=3D"mcnImage">
+                        </a>
+
+                   =20
+                    </td>
+                </tr>
+            </tbody>
+</table>
+            <table class=3D"mcnCaptionRightTextContentContainer" align=3D"r=
+ight" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"396" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td valign=3D"top" class=3D"mcnTextContent" style=3D"ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;word-break: break-word;color: #202020;font-family: Helvetica;fon=
+t-size: 16px;line-height: 150%;text-align: left;">
+                        <div style=3D"text-align: left;"><span style=3D"fon=
+t-family:helvetica neue,helvetica,arial,verdana,sans-serif"><strong><span s=
+tyle=3D"font-size:17px">Oxone Blender and Chopper</span></strong><br>
+<span style=3D"font-size:15px">Blender Ox-292 adalah blender 4 in 1 yang me=
+nggabungkan blender mini, blender tangan, pengocok telur, dan chopper. Memi=
+liki pisau yang kuat dan tajam, anti karat, dan awet untuk digunakan. Nikma=
+ti mengolah makanan favorit bersama keluarga dengan cara efektif dan efisie=
+n.</span></span></div>
+
+                    </td>
+                </tr>
+            </tbody>
+</table>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 10px 18px 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnCaption=
+RightContentOuter" width=3D"100%" style=3D"border-collapse: collapse;mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;">
+    <tbody>
+<tr>
+        <td valign=3D"top" class=3D"mcnCaptionRightContentInner" style=3D"p=
+adding: 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"mcnCaptionRightImageContentContainer" style=3D"border-coll=
+apse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td class=3D"mcnCaptionRightImageContent" valign=3D"top=
+" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                   =20
+                       =20
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLRET-PRA01%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fp%2Frumah-tangga%2Felektronik-1111%2Fs=
+etrika-steamer%2F3nux8f-jual-maspion-setrika-ha-110%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_c=
+ontent%3Dsetrikamaspion&amp;lllsttu=3Db37f5b57683d9a86392fa43cc368a8dcde0ec=
+117b6d0c0b9ef31203c5596c1df&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+=
+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_emai=
+l=3Drikosatrianto%40gmail.com" title=3D"" class=3D"" target=3D"_blank" styl=
+e=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+                       =20
+
+                        <img alt=3D"" src=3D"https://gallery.mailchimp.com/=
+594c8ee99f2e3a9f7e74f6ee7/images/519c3480-5c6a-41ab-a6b2-c660c33edb94.jpg" =
+width=3D"132" style=3D"max-width: 300px;border: 0;height: auto;outline: non=
+e;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bot=
+tom;" class=3D"mcnImage">
+                        </a>
+
+                   =20
+                    </td>
+                </tr>
+            </tbody>
+</table>
+            <table class=3D"mcnCaptionRightTextContentContainer" align=3D"r=
+ight" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"396" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+<tr>
+                    <td valign=3D"top" class=3D"mcnTextContent" style=3D"ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;word-break: break-word;color: #202020;font-family: Helvetica;fon=
+t-size: 16px;line-height: 150%;text-align: left;">
+                        <div style=3D"text-align: left;"><span style=3D"fon=
+t-family:helvetica neue,helvetica,arial,verdana,sans-serif"><span style=3D"=
+font-size:15px"><strong>Setrika Maspion</strong><br>
+Kegiatan menyetrika jadi lebih mudah dan menyenangkan. Setrika Maspion meng=
+gunakan tapak teflon yang licin saat digunakan. Dilengkapi juga dengan peng=
+atur panas yang dapat disesuaikan dengan jenis kain, mulai dari kain katun =
+hingga sutra.</span></span></div>
+
+                    </td>
+                </tr>
+            </tbody>
+</table>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top=
+-width: 1px;border-top-style: solid;border-top-color: #EAEAEA;border-collap=
+se: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody>
+<tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetic=
+a;font-size: 16px;line-height: 150%;text-align: left;">
+                       =20
+                            <p style=3D"text-align: center;margin: 10px 0;p=
+adding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16p=
+x;line-height: 150%;"><span style=3D"font-size:18px">Lihat promo produk ele=
+ktronik rumah tangga lainnya di Bukalapak.</span></p>
+
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 0px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody>
+<tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"http://glimpsetrack.net/redi=
+rect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLR=
+ET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo%2Fbelanja-asik-produ=
+k-elektronik%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%=
+3Dpromoelektronikrumahtangga%26utm_content%3Dctalink&amp;lllsttu=3D17498df6=
+8cd2d3abc7d73080cfb72cd016a5541db624e7d39b2b2978a3976e6b&amp;subject=3D3+Pr=
+oduk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;ty=
+pe=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" title=3D"" clas=
+s=3D"" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/594c8ee99f2e3a9f7e74f6ee7/images/1f043a6c=
+-33c0-450e-85d6-adfd84e0aef9.gif" width=3D"208" style=3D"max-width: 208px;p=
+adding-bottom: 0;display: inline !important;vertical-align: bottom;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" class=3D"mcnImage">
+                                    </a>
+                               =20
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+                </td>
+            </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody>
+<tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetic=
+a;font-size: 16px;line-height: 150%;text-align: left;">
+                       =20
+                           =20
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top=
+: 1px solid #EAEAEA;border-collapse: collapse;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+<tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+</table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 0px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody>
+<tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"http://glimpsetrack.net/redi=
+rect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLR=
+ET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo-detail%2Fpakai-bukad=
+ompet-dapat-diskon-10%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_=
+campaign%3Dpromoelektronikrumahtangga%26utm_content%3Ddompet10&amp;lllsttu=
+=3D474ab1f3e0e17529b02a499fdfcf267e6644d5a25f2c47a04f128a64bd7437df&amp;sub=
+ject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" titl=
+e=3D"" class=3D"" target=3D"_blank" style=3D"mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/594c8ee99f2e3a9f7e74f6ee7/images/b9c54439=
+-e2a9-44f1-83ee-a0b5affd79af.png" width=3D"600" style=3D"max-width: 700px;p=
+adding-bottom: 0;display: inline !important;vertical-align: bottom;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" class=3D"mcnImage">
+                                    </a>
+                               =20
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+                </td>
+            </tr>
+    </tbody>
+</table>
+</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+                            <tr>
+=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" id=3D"templateF=
+ooter" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;background-color: #fafafa;background-image: no=
+ne;background-repeat: no-repeat;background-position: center;background-size=
+: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padding-bottom: 9px=
+;">
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=3D"600=
+" style=3D"width:600px;">
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;">
+=09=09=09=09=09=09=09=09=09=09<tr>
+                                =09=09=09<td valign=3D"top" class=3D"footer=
+Container" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 0px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody>
+<tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"http://glimpsetrack.net/redi=
+rect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLR=
+ET-PRA01%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F%3Futm_source%3Dnewsletter=
+%26utm_medium%3Demail%26utm_campaign%3Dpromoelektronikrumahtangga%26utm_con=
+tent%3Dsearchbar&amp;lllsttu=3Debd000facc0f75d212555043d6ff12228039a8b1b564=
+668e180ef3e98c9dca79&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+=
+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Drik=
+osatrianto%40gmail.com" title=3D"" class=3D"" target=3D"_blank" style=3D"ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/594c8ee99f2e3a9f7e74f6ee7/images/fb5d3678=
+-5b82-416d-8320-319479f6f695.gif" width=3D"600" style=3D"max-width: 700px;p=
+adding-bottom: 0;display: inline !important;vertical-align: bottom;border: =
+0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: =
+bicubic;" class=3D"mcnImage">
+                                    </a>
+                               =20
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+                </td>
+            </tr>
+    </tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                <!--footer-->
+  <table width=3D"100%" bgcolor=3D"#f1f1f2" align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+    <tbody>
+<tr>
+      <td align=3D"center" bgcolor=3D"#ffffff" style=3D"mso-line-height-rul=
+e: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+          <tbody>
+<tr>
+            <td bgcolor=3D"#fafafa" width=3D"600" align=3D"center" style=3D=
+"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+              <table width=3D"100%" align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+                <tbody>
+<tr>
+                  <td height=3D"20" style=3D"mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"></td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center;vertical=
+-align: top;font-size: 0;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;">
+                    <!--left-->
+                    <div style=3D"display:inline-block;vertical-align:top;"=
+>
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;">
+                        <tbody>
+<tr>
+                          <td width=3D"355" align=3D"center" style=3D"mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                            <table width=3D"95%" align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;=
+mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+                              <!--content-->
+                              <tbody>
+<tr>
+                                <td align=3D"left" style=3D"font-family: he=
+lvetica, 'Open sans', Arial, sans-serif;color: #9B9B9B;font-size: 11px;line=
+-height: 150%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">Copyright =C2=A9 2017, PT. Bukalapak.com All r=
+ights reserved.<br>Plaza City View Lt. 1. Jl. Kemang Timur No. 22<br>Jakart=
+a Selatan. Indonesia. 12510</td>
+                              </tr>
+                              <!--end content-->
+                              <tr>
+                                <td height=3D"10" style=3D"mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+/td>
+                              </tr>
+                              <!--CS-->
+                                    <tr>
+                                      <td align=3D"left" style=3D"mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 1=
+00%;">
+                                        <table border=3D"0" align=3D"left" =
+cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#d0d2d3" style=3D"border-rad=
+ius: 4px;border: 0px solid #00974C;border-collapse: collapse;mso-table-lspa=
+ce: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;">
+                    <tbody>
+<tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica;font-size: 12px;padding-left: 15px;padding-right: 15px;letter=
+-spacing: 0px;color: #404041;mso-line-height-rule: exactly;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;">Customer Support:=20
+                        <a target=3D"_blank" href=3D"http://glimpsetrack.ne=
+t/redirect?late_id=3D2135&amp;link=3Dhttp%3A%2F%2Fbit.ly%2F2apHgGP&amp;llls=
+ttu=3Dddb69514a830af7c8d892e1d7dac38b8a65631794309567a6d258ac93c8d786b&amp;=
+subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnew=
+sletter&amp;type=3DClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" s=
+tyle=3D"color: #d71d4b;text-decoration: underline;font-weight: regular;mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">Buka Bantuan=20
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+</table>
+                                      </td>
+                                    </tr>
+                                    <!--end CS-->
+                              <tr>
+                                <td height=3D"15" style=3D"mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+/td>
+                              </tr>
+                            </tbody>
+</table>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </div>
+                    <!--end left-->
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align=3D"center" style=3D"text-align:center;vertica=
+l-align:top;font-size:0;">
+                    <![endif]-->
+                    <!--right-->
+                    <div style=3D"display:inline-block;vertical-align:top;"=
+>
+                      <table align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: =
+100%;">
+                        <tbody>
+<tr>
+                          <td width=3D"230" align=3D"left" style=3D"mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                            <table align=3D"left" width=3D"95%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+                              <!--apps-->
+                              <tbody>
+<tr>
+                                <td align=3D"left" style=3D"mso-line-height=
+-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                  <table border=3D"0" align=3D"left" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                    <tbody>
+<tr>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F1XmbQ4k&amp;lllsttu=3D7bc5348e9f45c=
+25e2e84b75c72695cc3ecafa0e14d1e1f6baec1591290c93ed5&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;border-radius: 4px;width: 105px;height: auto;outline: n=
+one;text-decoration: none;-ms-interpolation-mode: bicubic;" src=3D"https://=
+trello-attachments.s3.amazonaws.com/583c3b6a4a7987805fb8f125/58734fa9b91377=
+7c4a6499d3/715ee3c1166d2ea728026a3118953856/google_play.png" alt=3D"img"></=
+a></td>
+                                      <td width=3D"10" style=3D"mso-line-he=
+ight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"></td>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F2jWIDmD&amp;lllsttu=3D7e034708327e8=
+cf021309068832f441c12b1ac18045e1b8eaf0c0ea89239a6f9&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;border-radius: 4px;width: 105px;height: auto;outline: n=
+one;text-decoration: none;-ms-interpolation-mode: bicubic;" src=3D"https://=
+trello-attachments.s3.amazonaws.com/583c3b6a4a7987805fb8f125/58734fa9b91377=
+7c4a6499d3/3400fd330acc55bcca98b8098f211b42/app_store.png" alt=3D"img"></a>=
+</td>
+                                    </tr>
+                                  </tbody>
+</table>
+                                </td>
+                              </tr>
+                              <!--end apps-->
+                              <tr>
+                                <td height=3D"15" style=3D"mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+/td>
+                              </tr>
+                              <!--social-->
+                              <tr>
+                                <td align=3D"left" style=3D"mso-line-height=
+-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                  <table border=3D"0" align=3D"left" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                    <tbody>
+<tr>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F2li9cPg&amp;lllsttu=3D173a57a103a5a=
+4538c183233d21dc6306b792f6a896df0f68d3978be86743bc7&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;width: 35px;height: auto;outline: none;text-decoration:=
+ none;-ms-interpolation-mode: bicubic;" src=3D"https://trello-attachments.s=
+3.amazonaws.com/583c3b6a4a7987805fb8f125/583d6ee367f95c5820b2f059/07c9db834=
+fe123a5276bdabd56b6d8b2/Social_FB_2.png" alt=3D"img"></a></td>
+                                      <td width=3D"10" style=3D"mso-line-he=
+ight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"></td>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F1ImzzOI&amp;lllsttu=3D3ff7a037a5d05=
+6537852cd5730c681be2cefc8d351244a8d52ba07b8d1331dc5&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;width: 35px;height: auto;outline: none;text-decoration:=
+ none;-ms-interpolation-mode: bicubic;" src=3D"https://trello-attachments.s=
+3.amazonaws.com/583c3b6a4a7987805fb8f125/583d6ee367f95c5820b2f059/605e4f15d=
+d1f53c2f5dbba00faa16dd6/Social_TW_2.png" alt=3D"img"></a></td>
+                                      <td width=3D"10" style=3D"mso-line-he=
+ight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"></td>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F2jWzjdG&amp;lllsttu=3D83b7340ffe785=
+cd63033552b6dfcb5f13312c6e61c46f338b39d731471335553&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;width: 35px;height: auto;outline: none;text-decoration:=
+ none;-ms-interpolation-mode: bicubic;" src=3D"https://trello-attachments.s=
+3.amazonaws.com/583c3b6a4a7987805fb8f125/583d6ee367f95c5820b2f059/65fcbe2a9=
+43a06d2c2a78f4bd7912d30/Social_GP_2.png" alt=3D"img"></a></td>
+                                      <td width=3D"10" style=3D"mso-line-he=
+ight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"></td>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F1W3g2Zx&amp;lllsttu=3D1373775ce5587=
+682c87a2a9ec37dec46d99eb5a8b7d3a6ead63cb52e7d01b4b2&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;width: 35px;height: auto;outline: none;text-decoration:=
+ none;-ms-interpolation-mode: bicubic;" src=3D"https://trello-attachments.s=
+3.amazonaws.com/583c3b6a4a7987805fb8f125/583d6ee367f95c5820b2f059/5b9d5cc9e=
+4aee105048e5a90a9d35742/Social_YTB_2.png" alt=3D"img"></a></td>
+                                      <td width=3D"10" style=3D"mso-line-he=
+ight-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"></td>
+                                      <td align=3D"left" style=3D"line-heig=
+ht: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;"><a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2135&amp;link=3Dhttp%3A%2F%2Fbl.id%2F1TKOre2&amp;lllsttu=3Dc24df5f7123c6=
+210a1b78c859e3e6b78d29f6eb27431f499d2bbbaaf23952d8a&amp;subject=3D3+Produk+=
+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Drikosatrianto%40gmail.com" target=3D"_blank" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;"><img style=3D"display: block;line-height: 0px;font-si=
+ze: 0px;border: 0px;width: 35px;height: auto;outline: none;text-decoration:=
+ none;-ms-interpolation-mode: bicubic;" src=3D"https://trello-attachments.s=
+3.amazonaws.com/583c3b6a4a7987805fb8f125/583d6ee367f95c5820b2f059/939c2c72b=
+84a380a12b8990df87d0fe6/Social_IG_2.png" alt=3D"img"></a></td>
+                                    </tr>
+                                  </tbody>
+</table>
+                                </td>
+                              </tr>
+                              <!--end social-->
+                              <tr>
+                                <td height=3D"15" style=3D"mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+/td>
+                              </tr>
+                            </tbody>
+</table>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </div>
+                    <!--end right-->
+                    <!-- copyright -->
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: =
+100%;">
+                        <tbody>
+<tr>
+                          <td width=3D"600" align=3D"center" style=3D"mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                            <table width=3D"95%" border=3D"0" align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;=
+mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+                              <tbody>
+<tr>
+                                <td align=3D"left" style=3D"font-family: He=
+lvetica;font-size: 11px;line-height: 150%;color: #9B9B9B;font-style: normal=
+;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+Kami melindungi penggunaan data dan infomasi penting para pengguna Bukalapa=
+k. <br>Silakan lihat di<span style=3D"color:#D71249"> </span><a href=3D"htt=
+p://glimpsetrack.net/redirect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fwww.b=
+ukalapak.com%2Fprivacy&amp;lllsttu=3D4da7c42f62d14973882aeaee62855b3b30398e=
+adc472ff75fe5ce5dfb5cc39d5&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+d=
+engan+Harga+Hemat&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=
+=3Drikosatrianto%40gmail.com" target=3D"_blank" style=3D"mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><sp=
+an style=3D"color:#D71249;text-decoration: underline;">Kebijakan Privasi</s=
+pan></a> Anda memperoleh email ini karena keanggotaan Anda pada Bukalapak.<=
+br>Untuk berhenti berlangganan newsletter <a href=3D"http://glimpsetrack.ne=
+t/redirect?late_id=3D2135&amp;link=3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fothe=
+r_settings%2Funsubscribe_newsletter%3Funsub_token%3D3f95d798d17ab910d350600=
+b5f31a73a9ccdcac157ed99d1b3c395dd2d7eb19acmlrb3NhdHJpYW50b0BnbWFpbC5jb20%25=
+3D&amp;lllsttu=3Df776a4a8d60c94de955c64da3b7c8f1bcffea1131a90182aec37637f65=
+835ceb&amp;subject=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&am=
+p;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Drikosatrianto%40g=
+mail.com" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><span style=3D"color:#d=
+71249;text-decoration: underline;">klik di sini</span></a>.<br>
+                                  Harap jangan membalas email ini, karena e=
+mail ini dikirimkan secara otomatis oleh sistem.
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height=3D"20" style=3D"mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+/td>
+                              </tr>
+                            </tbody>
+</table>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+              <!-- end copyright -->
+                  </td>
+                </tr>
+              </tbody>
+</table>
+            </td>
+          </tr>
+        </tbody>
+</table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  <!--end footer-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<![endif]-->
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"http://glimpsetrack.net/img?late_id=3D2135&amp;llsttu=3D1dd=
+35d09b630842091a741b561653fd9d54b7dff477e195ba3552e71f6efa9a1&amp;subject=
+=3D3+Produk+Elektronik+Rumah+Tangga+dengan+Harga+Hemat&amp;tag=3Dnewsletter=
+&amp;type=3DOpenEmail&amp;user_email=3Drikosatrianto%40gmail.com">
+</body>
+</html>
+
+--0ed6beaedd20497fafaf01dc47463568--

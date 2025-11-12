@@ -1,0 +1,317 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.176.25.2 with SMTP id v2csp1206451uag;
+        Tue, 20 Jun 2017 01:04:14 -0700 (PDT)
+X-Received: by 10.107.38.211 with SMTP id m202mr25738481iom.66.1497945854844;
+        Tue, 20 Jun 2017 01:04:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1497945854; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yv4HvIyYXQocgm7A5iXU/Va1HzeGfXVY0BwI6Y7BpI9PUYwRsgClMpnPhSK+9+MAfA
+         gg5lYtufkHM5msRjYNIdinPx+71g+Z1qEM4LqtME70A6sMPYMwvJ+7ieJw9aWei2Grlf
+         +g+/kE0/uW+dOMprOi2zqzOWV1ZqzPO6qdFkjkaspSVdpAnrrld0xZWHV2peCQY/iJ14
+         I/lZ5gZxwYhgRaQcZv3LayVI3rWl2kDAQFAULbpmAAzwS9I9h8jMvDhDc1fl9Yx8Ni7S
+         hxLGhXKTOm5AqWPaXu4uEfeYK1MycSmAjuaDrU86RznrGdPo13+T1aUlEQPJpv27JXQG
+         fLwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:reply-to:mime-version:from:date
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=qHd3Bk6E0VPQw8B039/c71csLZfcgDoefmIfs9lo4WU=;
+        b=0kBOgvjIFjlVLqQTXVIoTniVuqsGAR11dfqAcdsRUkoqc6bKQ2VYcNituCkyMlNqr7
+         YeA3mX3ryAQfv1+2OI4ccHFUpM3x43d98ZWWsd89gPSDXlKVh3/AddlARVWjuhs04n/f
+         ZhaNv5l/N3v83p3mYqHyThrCnn8lDuYXqcnRqsrhYY/ayla6mOnyJRMQJVnHp1Jm47Zh
+         eKaH5tI/iXt1/b3VFs85lThm4PoofR3seZkUO+1lfBmHMKbfYgwfIBl5KVH0F8CkZHY8
+         1XVboCX32QyEH3oXrIYeHUhJxOMa5kWvh6Y958onk3aK8a4PASoNhQBti0JTDPK40cOB
+         KD3A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@fun-japan.jp header.b=DCfjub98;
+       dkim=pass header.i=@sendgrid.info header.b=rCG7UH08;
+       spf=pass (google.com: domain of bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp designates 198.21.6.90 as permitted sender) smtp.mailfrom=bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fun-japan.jp
+Return-Path: <bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp>
+Received: from o1.email.fun-japan.jp (o1.email.fun-japan.jp. [198.21.6.90])
+        by mx.google.com with ESMTPS id j201si11771178ioe.2.2017.06.20.01.04.14
+        for <itsmetenki@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 20 Jun 2017 01:04:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp designates 198.21.6.90 as permitted sender) client-ip=198.21.6.90;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@fun-japan.jp header.b=DCfjub98;
+       dkim=pass header.i=@sendgrid.info header.b=rCG7UH08;
+       spf=pass (google.com: domain of bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp designates 198.21.6.90 as permitted sender) smtp.mailfrom=bounces+1214116-d199-itsmetenki=gmail.com@wlemail.fun-japan.jp;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fun-japan.jp
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=fun-japan.jp; h=content-type:from:mime-version:reply-to:subject:to; s=s1; bh=9kayaqyj0IpePWffyA0q+b3dKyI=; b=DCfjub98QYvzqoyEDr6uU5b5V0B97 i8jIPBBq6I1BkpPTOJTSZ6gXZl1vj7U4BTpk3sqi1fRwOHcv3IRx3CXG6x3j3mBt S3vEyqgYOjtvRw8nNhMNWNfBkIrb8LOiBTHAA7/j7GJOlblUoJHy6oLhfkkD+8ql tXgHItjcT4E14o=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:mime-version:reply-to:subject:to:x-feedback-id; s=smtpapi; bh=9kayaqyj0IpePWffyA0q+b3dKyI=; b=rCG7UH08eMIwPyj184 dEjiaQc4RClfO+J62x3b+5siqTFB/rBxYGJ5K3j8hMxyLvj8sNLdQDulbPWAN5U2 2OzHe9w7EUTFBIkFsZZhUJ5AMEAwdGrBq40fnmNuFkXQcZfGhLQNLy0UGzCfMkwl h5TFLHU0IoB9BsAktMUJSjspc=
+Received: by filter0949p1mdw1.sendgrid.net with SMTP id filter0949p1mdw1-2649-5948D6D1-44
+        2017-06-20 08:03:29.520261772 +0000 UTC
+Received: from MTIxNDExNg (o16789125x209.outbound-mail.sendgrid.net [167.89.125.209]) by ismtpd0005p1iad1.sendgrid.net (SG) with HTTP id HXP5wMPUSUGRkKKcBohUVQ for <support-id@fun-japan.jp>; Tue, 20 Jun 2017 08:03:29.475 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=36316fb11597e86d35ec2c466267ca91aee7640fb06b655e353fad99ee27
+Date: Tue, 20 Jun 2017 08:03:29 +0000
+From: "Fun! Japan" <support-id@fun-japan.jp>
+Mime-Version: 1.0
+Reply-to: support-id@fun-japan.jp
+Subject: [Campaign] ?Liburan Gratis ke Hokkaido, JEPANG?Apply sampai tanggal 17 Juli 2017!
+To: itsmetenki@gmail.com
+Message-ID: <HXP5wMPUSUGRkKKcBohUVQ@ismtpd0005p1iad1.sendgrid.net>
+X-SG-EID: 2DKT2n3YKRuf3v7+h8CQqr/f8hhKlz4MBNP8u+Kb2uiEWD804RwLWwc2WhHBx0bMIo/kS9aBaHU4dm S7Rs36oQmBBh51haQbhXy/G6KXz1/UIivK+pYPM7U1oqSY68gKXPh4vCZjAO1+VzB5phsUHlToiGa4 EhCQlNWelYI5+cELQH5gkmMSIFsmIrstK1acZwBi9uMiswZG1HIae+PVqsz0SKF3rgiGwIdRZecGN6 k=
+X-SG-ID: VPWZYjw6GOzHdwkwPeoX9QiEbzQXX/gF9P8njHP5+LDDQiJSGV27PdHr88cjuWa1NopYg3GxqN5hi8 uVrV3KQv85jTzvGuUywy5JvW1fDTQEUvxtVyGNwat7znUzEH6fZC48BByYA9F+qYJGk1/7ilLvJL0m pnelP9UE4AWEYG+AZDtMfBb0EEAalKgFLQIyIaA4aovtYg41dnDX8iN4pA==
+X-Feedback-ID: 1214116:eWj4441w2AtBBPIX0JTKkA==:lnx/QhHpyxatwvYR0jDWS9nabmq9fswxyKHhpd99nlk=:SG
+
+--36316fb11597e86d35ec2c466267ca91aee7640fb06b655e353fad99ee27
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+Fun! Japan Indonesia Mail Magazine
+
+---------------------------------------------------------------------------=
+-----
+
+Hello notenki
+
+=C2=A0
+
+Kami mau mengingatkan lagi tentang VISIT JAPAN CAMPAIGN yang akan berakhir =
+sebulan lagi! Jangan lupa untuk daftar di website FUN! JAPAN ya!
+Kamu bisa daftar campaign ini sampai tanggal 17 Juli 2017, daftarlah sebany=
+ak kamu bisa untuk memenangkan kesempatan menang kamu!
+=C2=A0
+Campaign yang kedelapan kali ini kami akan membawa pemenang ke Hokkaido bag=
+ian Timur untuk menikmati wisata kuliner yang segar dan lezat juga pemandan=
+gan indah di bulan September.
+=C2=A0
+Register dari tautan di bawah ini setelah login di website FUN! JAPAN
+
+https://indonesia.fun-japan.jp/Articles/2017/05/31/ID_20170601-Visit-Japan-=
+Campaign8 ( https://indonesia.fun-japan.jp/Articles/2017/05/31/ID_20170601-=
+Visit-Japan-Campaign8?utm_source=3Dmail&utm_medium=3Dmail_20170620&utm_camp=
+aign=3D170620-Idm03FbCwb-linaaaAdAlg1865&utm_content=3Dvisit_japan_campaign=
+ )
+
+Kami tunggu pendaftarannya ya!
+=C2=A0
+Terima kasih!=C2=A0
+
+Fun! Japan Team
+
+https://indonesia.fun-japan.jp/ ( https://indonesia.fun-japan.jp/?utm_sourc=
+e=3Dmail&utm_medium=3Dmail_20170620&utm_campaign=3D170620-Idm03FbCwb-linaaa=
+AdAlg1865&utm_content=3Dvisit_japan_campaign )
+=C2=A0
+
+
+Klik di sini untuk mengikuti Campaign ( https://indonesia.fun-japan.jp/Arti=
+cles/2017/05/31/ID_20170601-Visit-Japan-Campaign8?utm_source=3Dmail&utm_med=
+ium=3Dmail_20170620&utm_campaign=3D170620-Idm03FbCwb-linaaaAdAlg1865&utm_co=
+ntent=3Dvisit_japan_campaign )
+
+=C2=A9 Fun! Japan=C2=A0Indonesia
+
+Contact us:=C2=A0support-id@fun-japan.jp ( mailto:support-id@fun-japan.jp )
+--36316fb11597e86d35ec2c466267ca91aee7640fb06b655e353fad99ee27
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<style type=3D"text/css">.ReadMsgBody{width:100%;}.ExternalClass{width:100%=
+;}span.yshortcuts{color:#000;background-color:none;border:none;}span.yshort=
+cuts:hover,span.yshortcuts:active,span.yshortcuts:focus{color:#000;backgrou=
+nd-color:none;border:none;}p{margin-top:0;margin-right:0;margin-bottom:0;ma=
+rgin-left:0;}*{-webkit-text-size-adjust:none;}</style><table cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:collapse;back=
+ground:#ddd;min-width:620px;table-layout:fixed;"><tbody><tr><td align=3D"ce=
+nter" style=3D"padding-right:10px;padding-top:10px;padding-bottom:10px;padd=
+ing-left:10px;"><div style=3D"width:auto;margin-right:auto;margin-left:auto=
+;margin-top:0;margin-bottom:0;color:#000;font-family:Arial;font-size:12px;l=
+ine-height:150%;"><table style=3D"width:100%;border-collapse:separate;table=
+-layout:fixed;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D=
+"center"><table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" style=3D"=
+border-collapse:separate;border-spacing:0px;table-layout:fixed;width:600px;=
+background:#FFFFFF;"><tbody><tr><td><table cellpadding=3D"0" cellspacing=3D=
+"0" style=3D"width:600px;border-collapse:collapse;table-layout:fixed;"><tbo=
+dy><tr><td width=3D"100%" style=3D"vertical-align:top;"><div><table style=
+=3D"width:100%;border-collapse:separate;table-layout:fixed;" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#ffffcf;"><table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:=
+separate;border-spacing:0px;table-layout:fixed;"><tbody><tr><td style=3D"ve=
+rtical-align:middle;padding-top:10px;padding-bottom:10px;padding-left:0;pad=
+ding-right:0;"><div style=3D"word-wrap:break-word;line-height:140%;text-ali=
+gn:left;"><p style=3D"text-align:center;font-size:11px;margin:0;">
+=09<strong><span style=3D"font-size:12px;"><span style=3D"font-family:tahom=
+a,geneva,sans-serif;">Fun! Japan Indonesia Mail Magazine</span></span></str=
+ong></p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div><div><table=
+ style=3D"border-collapse:separate;border-spacing:0px;table-layout:fixed;" =
+cellpadding=3D"5" cellspacing=3D"5"><tbody><tr><td></td></tr></tbody></tabl=
+e><table style=3D"width:100%;border-collapse:separate;table-layout:fixed;" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#FFF=
+FFF;"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"bo=
+rder-collapse:separate;border-spacing:0px;table-layout:fixed;"><tbody><tr><=
+td style=3D"vertical-align: top;" align=3D"center"><div><a href=3D"http://e=
+mail.fun-japan.jp/wf/click?upn=3Db4Ndp4gXDkVW0LFAh8UglIe6-2FeUyUndZ-2FB9KUn=
+BXlCb100YlvIxFl0VqHXJpSxdUkmUWxRv34qO-2F2VIaZly7H1LyeXlD-2Fntc4-2Fz-2B-2BGJ=
+qGXW2pTYj0kRa1BVba-2FLr6p-2BGQVxYtinAM0A0Lc6neRje1ByEUtCN2krZjgJIi1Me-2BlL1=
+5VUYeldyDU6D97CnfggkPDA3KtNRSeBw4CSTYtzl8w-3D-3D_OokKjk-2F-2BC9zA0W17DJrfGu=
+2ivB3AMJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6h77-2BiQwFOepaE5t1VSEHzEWavmyEdo=
+oWs7yn-2BjGG2V6TnWLXTA9c1-2BnIL-2BuvIHa73tyu0qqPWrMMd-2F1MCtveTN11bu1exm4eQ=
+dgMij799E7tNwGjKtxbOkzLPiqyW-2BAQ14HToPaYZWFBjVnmyILyKw3Gd9PUtLQjG6uBixyY3F=
+NxNpqK-2FDbbpD6-2BTLYIQ9GizEj0UOek9WHZLfq0tPQFIfqgXs2Xkzw913Hdmag4sbTl7zGHu=
+wM9K4dQvfyrIKWtakF4Exr0l-2BcKUJc73WvDM0yAFIXrKbhdRxc-2Fbgq9iw8M2R1TxYEBjiNk=
+YZEPFCwC2boQ97XIwQrLfs2PLcbgPO-2Fcgj95eZQBsy0tM4dv1xEN5jF0XiToAmjMkZCbw9e2G=
+" style=3D"width:auto;" target=3D"_blank"><img style=3D"border:medium none;=
+width:600px;height:90px;resize:none;position:relative;display:block;top:0px=
+;left:0px;" width=3D"600" height=3D"90" src=3D"http://static.sendgrid.com/u=
+ploads/UID_1214116_NL_23981154_5c92782d03d38c0006e7df374a1737e5/ff54e567482=
+72ccdf2eef4ec1511936d" /></a></div></td></tr></tbody></table></td></tr></tb=
+ody></table></div><div><table style=3D"border-collapse:separate;border-spac=
+ing:0px;table-layout:fixed;" cellpadding=3D"5" cellspacing=3D"5"><tbody><tr=
+><td></td></tr></tbody></table><table style=3D"width:100%;border-collapse:s=
+eparate;table-layout:fixed;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr=
+><td style=3D"background:#FFFFFF;"><table width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:separate;border-spacing:0px;tabl=
+e-layout:fixed;"><tbody><tr><td width=3D"100%" style=3D"width:100%;border-t=
+op-color:#cc1a1a;border-top-style:solid;border-top-width:2px;" ></td></tr><=
+/tbody></table></td></tr></tbody></table></div><div><table style=3D"border-=
+collapse:separate;border-spacing:0px;table-layout:fixed;" cellpadding=3D"5"=
+ cellspacing=3D"5"><tbody><tr><td></td></tr></tbody></table><table style=3D=
+"width:100%;border-collapse:separate;table-layout:fixed;background:#FFFFFF;=
+" cellspacing=3D"15" cellpadding=3D"0"><tbody><tr><td style=3D"background:#=
+FFFFFF;"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"border-collapse:separate;border-spacing:0px;table-layout:fixed;"><tbody><t=
+r><td style=3D"vertical-align:top;"><div style=3D"word-wrap:break-word;line=
+-height:140%;text-align:left;"><div>
+=09<span style=3D"font-size:12px;"><span style=3D"font-family:arial,helveti=
+ca,sans-serif;">Hello notenki</span></span></div>
+<div>
+=09&nbsp;</div>
+<div>
+=09Kami mau mengingatkan lagi tentang <span style=3D"color:#800000;"><stron=
+g>VISIT JAPAN CAMPAIGN</strong></span> yang akan berakhir sebulan lagi! Jan=
+gan lupa untuk daftar di website <span style=3D"color:#ff0000;"><strong>FUN=
+! JAPAN</strong></span> ya!<br />
+=09Kamu bisa daftar campaign ini sampai tanggal <strong><u>17 Juli 2017</u>=
+</strong>, daftarlah sebanyak kamu bisa untuk memenangkan kesempatan menang=
+ kamu!<br />
+=09&nbsp;<br />
+=09Campaign yang kedelapan kali ini kami akan membawa pemenang ke Hokkaido =
+bagian Timur untuk menikmati wisata kuliner yang segar dan lezat juga peman=
+dangan indah di bulan September.<br />
+=09&nbsp;<br />
+=09Register dari tautan di bawah ini setelah login di website FUN! JAPAN<br=
+ />
+=09<br />
+=09<span style=3D"color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot=
+;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a h=
+ref=3D"http://email.fun-japan.jp/wf/click?upn=3Db4Ndp4gXDkVW0LFAh8UglIe6-2F=
+eUyUndZ-2FB9KUnBXlCZmtz3MY8xcSmfkFvGpylXqF1XtH4fvW0wDZcvu7ePV0IR5xFPBizBvnJ=
+4C9CCyF-2BsQHcjBMuRul2rDH8YdiNBLxoyADSBxHFa8YNhEx-2F-2FR5syyfFm-2FjvMmXLR0-=
+2FxzTuR6auB4SsRRTbL5hmKWLNAl3La9D-2FOhGoDg6NQiw2RGnErzv2AkLLSVCOeGpHbc2cW3w=
+88P-2BAkVu3KwpIdsw-2BNqAVY950OxaXa903rFPwCWvVE7u8VgDdG7A3D4I67n8neM-3D_OokK=
+jk-2F-2BC9zA0W17DJrfGu2ivB3AMJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6hBfQXOxjQ8=
+RebsYgpxjKt9zPnINlh-2F7v0KAtsnQ9EfDCwjv6CXER48ddjWhaILiZhsiDa-2FS6rvtiGbHEM=
+42NbDKJN2y18t-2BA96rgHa9bS8cFhPyoTHeVhM6e-2BWh9o2FSpQ02P8se-2BhRYjdY-2BjhJW=
+IQCAv5N4uRAdn4ULJ0kOQGTUrPkMtekyLyDmQ1BShKD-2FoDNjMVU-2BMaVEMwIleZNsgfYJaKH=
+6ixNRQ0fhSVOB-2FZPGfV2-2B2x6NqZRsGIFHqG5f7bFXvq9Zle-2Bug-2F1KDZKQYyj2pBxaa-=
+2BFUCSOmnilTPZaW5f9oYFwFo3CuW6iP4b5u-2BuQIhYy-2BaidPS6aTkpufyPYo-2BrLSMPk6X=
+MbhDLdtpRakzjW42j-2FJiRB1pLnCl9J3M" target=3D"_blank">https://indonesia.fun=
+-japan.jp/Articles/2017/05/31/ID_20170601-Visit-Japan-Campaign8</a></span><=
+br />
+=09<br />
+=09Kami tunggu pendaftarannya ya!<br />
+=09&nbsp;<br />
+=09Terima kasih!&nbsp;<br />
+=09<br />
+=09Fun! Japan Team</div>
+<div>
+=09<a href=3D"http://email.fun-japan.jp/wf/click?upn=3Db4Ndp4gXDkVW0LFAh8Ug=
+lIe6-2FeUyUndZ-2FB9KUnBXlCb100YlvIxFl0VqHXJpSxdUkmUWxRv34qO-2F2VIaZly7H1Lye=
+XlD-2Fntc4-2Fz-2B-2BGJqGXW2pTYj0kRa1BVba-2FLr6p-2BGQVxYtinAM0A0Lc6neRje1ByE=
+UtCN2krZjgJIi1Me-2BlL15VUYeldyDU6D97CnfggkPDA3KtNRSeBw4CSTYtzl8w-3D-3D_OokK=
+jk-2F-2BC9zA0W17DJrfGu2ivB3AMJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6hbz7lfK-2B=
+EdPrxRJik1RHr-2FMMMw3ffwKk4QKsPEcN3X1H5KnW8flErggdG8r0XSKPViGFXztFZwvhfH7Wn=
+5zpxM3rE84hacJPTZVGhUtFfbdhGr-2B-2BXHGTo7w8FQB4QBCnkMEM0-2F-2B1iPIO6L00HQQl=
+RiWwvocqz3YlAE5pU4-2F2OCUggNtpIZbS1vmvxIzzSFTSqCw0On6cH-2BJYhJUAfy5OUbREMxb=
+yKxpqVsSyMrMF72DYikpAKE91eoDPPFj5HWtmeYr8ilB166a0OfkaiVkoKnfuRZRfwczlbLmU2O=
+IEGPmEtMSMy1YMEHRjcszCLwxgRbSQHjolMmIwWUwMiRvI3oQd3SemrXExl4kcfroH7xJyy0xbz=
+lPMIaxWIqRzFxE5W" target=3D"_blank">https://indonesia.fun-japan.jp/</a><br =
+/>
+=09&nbsp;</div>
+</div></td></tr></tbody></table></td></tr></tbody></table></div><div><table=
+ style=3D"border-collapse:separate;border-spacing:0px;table-layout:fixed;" =
+cellpadding=3D"5" cellspacing=3D"5"><tbody><tr><td></td></tr></tbody></tabl=
+e><table style=3D"width:100%;border-collapse:separate;table-layout:fixed;ba=
+ckground:#FFFFFF;" cellspacing=3D"15" cellpadding=3D"0"><tbody><tr><td styl=
+e=3D"background:#FFFFFF;"><table width=3D"100%" cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"border-collapse:separate;border-spacing:0px;table-layout:=
+fixed;"><tbody><tr><td style=3D"vertical-align:top;" align=3D"center"><div>=
+<a href=3D"http://email.fun-japan.jp/wf/click?upn=3Db4Ndp4gXDkVW0LFAh8UglIe=
+6-2FeUyUndZ-2FB9KUnBXlCZmtz3MY8xcSmfkFvGpylXqF1XtH4fvW0wDZcvu7ePV0IR5xFPBiz=
+BvnJ4C9CCyF-2BsQHcjBMuRul2rDH8YdiNBLxoyADSBxHFa8YNhEx-2F-2FR5uRz-2BJ6n1LVyn=
+CZ68FJRE2s6sjLQ5B5e67f-2FIAo1od5nbBTp6YlTVyazXQuC8twFV6XQCjDN9LI2N09Slir2kp=
+L6q-2F305-2Fk8-2FjKIWeqxJByKkjI7dXk7zJEwXTRNhkooWPS-2BqtefaRQG-2Bnmns-2Bcnh=
+lQ-3D_OokKjk-2F-2BC9zA0W17DJrfGu2ivB3AMJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6=
+hcKHJgzcepuywYW0jqzhCXGH84tq4iqZ0SmGu40VJ9YJ0YjYlQKx71L9uYUHYYKItSQdIAApa-2=
+B1sUi2YNkkXIjgFtoFM7GnqUEQThA8vTrCgd0L5Kf4si0xX2lBrBDP3cAR1oHMFsDI5Lh6ceAor=
+V3iQm2LmxGJB3-2F3Znddz1SXd-2FcyrDnoGhV4kXGCpuONC5ZhuT1KzEhQMekAiflkf2dlrmNu=
+4sn-2BZXF-2FxwsQD1v-2B-2BorSbCDFp-2FIE2lc7PBU5IBCDELmOp2yRvhPppMiilPcj7dQBB=
+vn-2F6RevtRsVtJt2UDOoHlixEa4anckP8woNib0Gmwxk8DX2o5M-2Bvrcs-2Byb1Pi1jRMirAe=
+ZbuHs-2Fi2G9xRo6k5qyNCCTRjHvfZ1-2FIw" style=3D"width:auto;" target=3D"_blan=
+k"><img style=3D"border:medium none;width:570px;height:259px;resize:none;po=
+sition:relative;display:block;top:0px;left:0px;" width=3D"570" height=3D"25=
+9" src=3D"http://static.sendgrid.com/uploads/UID_1214116_NL_24599179_a5d5c9=
+2cf7ece51ec936f14feac08a36/0ec6ae8aee206655a89038f417ae90af" /></a></div></=
+td></tr><tr><td style=3D"vertical-align:top;"><div style=3D"word-wrap:break=
+-word;line-height:140%;text-align:left;"><p style=3D"color: rgb(0, 0, 0); f=
+ont-family: Arial; font-size: 12px; line-height: 140%; margin: 0px; text-al=
+ign: center;">
+=09<br />
+=09<strong><span style=3D"font-size:14px;"><a href=3D"http://email.fun-japa=
+n.jp/wf/click?upn=3Db4Ndp4gXDkVW0LFAh8UglIe6-2FeUyUndZ-2FB9KUnBXlCZmtz3MY8x=
+cSmfkFvGpylXqF1XtH4fvW0wDZcvu7ePV0IR5xFPBizBvnJ4C9CCyF-2BsQHcjBMuRul2rDH8Yd=
+iNBLxoyADSBxHFa8YNhEx-2F-2FR5syyfFm-2FjvMmXLR0-2FxzTuR6auB4SsRRTbL5hmKWLNAl=
+3La9D-2FOhGoDg6NQiw2RGnErzv2AkLLSVCOeGpHbc2cW3w88P-2BAkVu3KwpIdsw-2BNqAVY95=
+0OxaXa903rFPwCWvVE7u8VgDdG7A3D4I67n8neM-3D_OokKjk-2F-2BC9zA0W17DJrfGu2ivB3A=
+MJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6hLRYYvuGlBlNy9npYeqM6wMhm6NB5lOxB4tLQ1=
+wzdKaOeC4nLM-2BkXSFgRZe6usZs-2FtS-2Ff8W-2FpxwhjhfFiIhMhf2v2fDu56PxiI1RoirMK=
+bqLLb2tFl3uAuY-2BXa42APiEkaZk4G8Vg8wXrH8jvyigbxsJwGycW-2FUjD2hy57DaUM4Qxail=
+q-2Bdfjrdv8kvSrWDpTTMZS3xrPJGm-2BNaCE6hmCcOzkw3kqv797-2BcFv8NhCyb-2FbGW6sQu=
+ARpwg7PrHsFPlJ8i0d6uD-2FW6WaOiPQhAWrAnGaeRWwWQPQZONE9qDjZYNvXW7DN1fSNaAl2iA=
+PMRMypj2PEw-2B7jtfSwDzJQXaSNWtwE74-2FCw6RNya-2F00wJqTVhHv-2FIHXhxyy5N9vl27-=
+2BFW" target=3D"_blank">Klik di sini untuk mengikuti Campaign</a></span></s=
+trong></p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div><div><table=
+ style=3D"border-collapse:separate;border-spacing:0px;table-layout:fixed;" =
+cellpadding=3D"5" cellspacing=3D"5"><tbody><tr><td></td></tr></tbody></tabl=
+e><table style=3D"width:100%;border-collapse:separate;table-layout:fixed;ba=
+ckground:#f1f1f1;" cellspacing=3D"8" cellpadding=3D"0"><tbody><tr><td style=
+=3D"background:#f1f1f1;"><table width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse:separate;border-spacing:0px;table-layout:f=
+ixed;"><tbody><tr><td style=3D"vertical-align:middle;font-size:11px;padding=
+-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;"><div s=
+tyle=3D"word-wrap:break-word;line-height:140%;text-align:left;"><p style=3D=
+"font-size:11px;margin:0px;text-align:left;">
+=09<span style=3D"font-size:12px;"><strong><span style=3D"font-family:tahom=
+a,geneva,sans-serif;">&copy; Fun! Japan&nbsp;Indonesia</span></strong></spa=
+n></p>
+</div></td><td style=3D"vertical-align:middle;font-size:11px;padding-top:10=
+px;padding-right:10px;padding-bottom:10px;padding-left:10px;"><div style=3D=
+"word-wrap:break-word;line-height:140%;text-align:left;"><p style=3D"font-s=
+ize:11px;margin:0px;text-align:left;">
+=09<span style=3D"font-size:12px;"><strong><span style=3D"font-family:tahom=
+a,geneva,sans-serif;">Contact us:&nbsp;<a href=3D"mailto:support-id@fun-jap=
+an.jp">support-id@fun-japan.jp</a></span></strong></span></p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></=
+td></tr></tbody></table><img src=3D"http://email.fun-japan.jp/wf/open?upn=
+=3DOokKjk-2F-2BC9zA0W17DJrfGu2ivB3AMJi-2BLKvr7defSotywEEFIOnc7Ho8eiBMNX6hyC=
+aymIxINU7rcnvZ7BzxZuB-2Fy1XIB3w1b-2FSHzxVXvexk2EZPY3tkWywwLyWBkJx9bKai-2Fig=
+eGfY9McunP5QCPjo6hF1ZjTOGw6glMtSMqGgZldUvdU9ROYOkFo1P1j3ABXoGQe7YCcyvi7QJlN=
+zOAfn4vfU9z15WAaeUlbeD-2Feb91Knp2DD33CxzoFX4p3t6aYHKpNdkzeDqnt-2FfY2RvnfB87=
+IjkcecwFoNy6aU2cO6gtlEuHASfCMQtCHKu0h-2B-2BXpwqiEQwHb39En81dBse-2BaMGjfGWio=
+-2FOQUp1-2BAt-2FZ9QRAm-2FWNlsG4HFVX58NrpvLlG2eqB4GHTMNJHBRB-2BvYmT8-2B21vUh=
+o-2BNon3A-2B5RNCRG2gqNqyQvJbh5fy-2F675zTi" alt=3D"" width=3D"1" height=3D"1=
+" border=3D"0" style=3D"height:1px !important;width:1px !important;border-w=
+idth:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin=
+-right:0 !important;margin-left:0 !important;padding-top:0 !important;paddi=
+ng-bottom:0 !important;padding-right:0 !important;padding-left:0 !important=
+;"/>
+
+--36316fb11597e86d35ec2c466267ca91aee7640fb06b655e353fad99ee27--

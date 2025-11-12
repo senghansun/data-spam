@@ -1,0 +1,246 @@
+﻿Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.85.142 with SMTP id q14csp4572201vsg;
+        Tue, 22 Aug 2017 00:01:54 -0700 (PDT)
+X-Received: by 10.99.143.11 with SMTP id n11mr16243697pgd.145.1503385314053;
+        Tue, 22 Aug 2017 00:01:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503385314; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LGJjwqvMYOmTezI857dZN+BXEHZQXYnLvmuVggKbTgDPjUIoTIYYct0PLwPlpB7hPY
+         dX+66e683JpRnxjGnG5Swx41dcKJasnSyFfJGepfEy5Kj/kSzuqxCA2Kobfz7OpYWxnt
+         YiKUvaiSYyBKIM2BZ1jpjRv8yw9llNhw8vw1Cus72E1H+bEu1DwSM/3sa3+tU5Onz5gm
+         bX3oF7fajLtOtI3nE7TOxU7u1W2/fuesotGZOo2A5UfCcZ0+BQ5m5rjnFFyUpM3Jt62T
+         Ax8uU+GDGN0G+dVCFacOapcgvzt0hC5PnOqgyYByInkXCLFCgMc3YZZsNN8BoCFkS3Pr
+         IgoQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:to:from:subject:precedence
+         :message-id:date:dkim-signature:arc-authentication-results;
+        bh=U9O6zP5T3GEnsLmjokiI9Mdfg85ITu5QTHrPcM/itdc=;
+        b=vVUzCe5JKpucadUmt7FBharjBIuB9EunSUU3Vb2BbhDdi+b3AZvVG0KeKogM445Vdd
+         +hpfTxJhMY5n6A3R/7J9QiUO5btuVkN3TTVuAfuJUJ2wp4C8eydqYegKgvm4X53Saxgb
+         BXF7nWnt9QrrI4kcvjK6bXWVTwG9kSFpENMGMJ09E7X2PR9MU+cRrtxYw3zhR+NBBS9K
+         FlVsDH5XtSoh9Csl+AKX+W2gJu9vyR18jkehm03cpVQr1DUXK/9zs8G7mWVCcceZwrGs
+         N7D7J1SfzSLVsvJO2m3Ki9dAAlsdlfWkvCt4DNklqRnXQnliniut5vH1m5IySyuxbtXc
+         m54g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@elevenia.co.id header.s=selector header.b=TeG1UBRF;
+       spf=pass (google.com: domain of info@elevenia.co.id designates 112.215.119.78 as permitted sender) smtp.mailfrom=info@elevenia.co.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=elevenia.co.id
+Return-Path: <info@elevenia.co.id>
+Received: from ems8.elevenia.co.id (ems8.elevenia.co.id. [112.215.119.78])
+        by mx.google.com with SMTP id o3si8725066pld.1018.2017.08.22.00.01.53
+        for <rikosatrianto@gmail.com>;
+        Tue, 22 Aug 2017 00:01:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of info@elevenia.co.id designates 112.215.119.78 as permitted sender) client-ip=112.215.119.78;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@elevenia.co.id header.s=selector header.b=TeG1UBRF;
+       spf=pass (google.com: domain of info@elevenia.co.id designates 112.215.119.78 as permitted sender) smtp.mailfrom=info@elevenia.co.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=elevenia.co.id
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; t=1503385313; s=selector; d=elevenia.co.id; h=Date:Message-Id:Precedence:Subject:From:To:Content-transfer-encoding:X-Mailer:X-NetpionMsgID:MIME-Version:Content-type; bh=U9O6zP5T3GEnsLmjokiI9Mdfg85ITu5QTHrPcM/itdc=; b=TeG1UBRF7ph2oS2E+gKfY6OnFbbKu04+6Tw3+MFoqn+07HueP4IKwJcuFlxAOq+k gdk5XzlLl/Q3h8BUql7pTp196W0ad8h2+8oDH73P1IuK2PPYFUbpb64sxoR+OnLWuR1 nIYOVhm/JJB2I4itB7IJEPC/U4Ofj2C/N6wt8VUI=
+Date: Tue, 22 Aug 2017 14:01:53 +0700
+Message-Id: <1503385313686.16613.6.30963060@ems8.elevenia.co.id>
+Precedence: bulk
+Subject: Isi Token Listrik Di elevenia Lebih Hemat Lho!
+From: elevenia <info@elevenia.co.id>
+To: "Rico Satrianto님" <rikosatrianto@gmail.com>
+Content-transfer-encoding: BASE64
+X-Mailer: Netpion Enterprise v3.5/Scheduler v3.7.7
+X-NetpionMsgID: 1503385313686.16613.6.30963060
+MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<title>user newsletter</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+
+
+<body style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td align="center">
+    <table width="600" border="0" cellpadding="0" cellspacing="0" style="FONT-SIZE: 12px; FONT-FAMILY: Verdana, sans-serif; WIDTH: 600px; min-width:600px !important; COLOR: #eeeeee; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #FFFFFF">
+      <tbody>
+        <tr>
+          <td width="600">
+            <table width="600" border="0" cellpadding="0" cellspacing="0" style="WIDTH: 600px; MARGIN: 0px auto; min-width:600px;">
+              <!-- greetings -->
+              <tbody>
+                <tr>
+                  <td style="COLOR: #ffffff">
+                    <table width="600" border="0" cellpadding="0" cellspacing="0" style="MARGIN-BOTTOM: 0px; WIDTH: 600px; min-width:600px;">
+                      <tbody>
+						
+						
+						<!-- HEADER -->
+						<tr>
+                          <td bgcolor="#fff" style="background-color:#ffffff; padding: 20px 0;" width="600">
+                            <table style="WIDTH: 100%" cellspacing="0" cellpadding="0" border="0">
+                              <tbody>
+							  
+                                <tr style="vertical-align: top;">
+                                  <td>
+									<p style="color:#000; font-size: 12px; margin-top: 15px; margin-bottom:20px; margin-right:0px; margin-left:15px; line-height: 22px; text-align:left;font-family:'Verdana';">
+										<a href="http://ems.elevenia.co.id/8I-116613I-430963060I-4goaSoZE-8zPqrCF-1689105I-4ehhgE-8D-7D-7DDDD-6PaPcPHSBD-6oCD-6SJF-3UhbI-5zCUuoPF-1rPDzaPhhPuC-8UhbI-5bPJSUbF-1PbBSaI-3" name="ANCHOR507702" style="border:0px none; outline:0px none;" target="_blank">
+											<img style="" alt="elevenia" src="http://image.elevenia.co.id/targetMail/20160610/b1/crmnl_03.jpg" />
+										</a>
+									</p>
+                                  </td>
+								  <td valign="bottom">
+									<p style="color:#000; font-size: 12px; margin-top: 15px; margin-bottom:20px; margin-right:15px; margin-left:0px; line-height: 22px; text-align:right;font-family:'Verdana';">
+										<img style="" alt="klikcarihepi" src="http://image.elevenia.co.id/targetMail/20160610/b1/crmnl_05.jpg" />
+									</p>
+                                  </td>
+                                </tr>
+								
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+						<!-- END: HEADER -->
+						
+						<!-- CONTENT HERE -->
+						
+						
+						<tr>
+                          <td bgcolor="#ffffff" width="600">
+							<p style="color:#000; font-size: 0px; margin-top: 0px; margin-bottom:0px; margin-right:0px; margin-left:0px; line-height: 0px; text-align:center;font-family:'Verdana';">
+								<img src="http://image.elevenia.co.id/targetMail/20170821/b1/sd1/tokenpln_01.jpg" style="display: block; outline: none;">
+							</p>
+                          </td>
+                        </tr>
+						
+						<tr>
+                          <td bgcolor="#ffffff" width="600">
+							<p style="color:#000; font-size: 0px; margin-top: 0px; margin-bottom:0px; margin-right:0px; margin-left:0px; line-height: 0px; text-align:center;font-family:'Verdana';">
+								<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689106I-4ehhgE-8D-7D-7DDDD-6PaPcPHSBD-6oCD-6SJD-7vuCDzSHED-7sUazBNBSHD-7SHJPKD-6JCF-3hBvF-1gaHC-8hSJF-11410340161C-8UhbI-5zCUuoPF-1rPDzaPhhPuC-8UhbI-5bPJSUbF-1PbBSaC-8UhbI-5oBbgBSEHF-1NMwI-5suCbChSCHI-5snrI-520170822I-5dI-3" name="ANCHOR507703" style="font-size:0; line-height:0; border:0px none; outline:0px none;" target="_blank">
+									<img src="http://image.elevenia.co.id/targetMail/20170821/b1/sd1/tokenpln_02.jpg" style="display: block; outline: none;">
+								</a>
+							</p>
+                          </td>
+                        </tr>
+						
+						<tr>
+                          <td bgcolor="#ffffff" width="600">
+							<p style="color:#000; font-size: 0px; margin-top: 0px; margin-bottom:0px; margin-right:0px; margin-left:0px; line-height: 0px; text-align:center;font-family:'Verdana';">
+								<img src="http://image.elevenia.co.id/targetMail/20170821/b1/sd1/tokenpln_03.jpg" style="display: block; outline: none;">
+							</p>
+                          </td>
+                        </tr>
+
+						
+						<!-- END: CONTENT HERE -->
+						
+						
+						<!-- KLIK CARI HEPI HERE -->
+						<tr>
+                          <td bgcolor="#fff" style="background-color:#fff;" width="600">
+                            <table style="WIDTH: 100%" cellspacing="0" cellpadding="0" border="0">
+                              <tbody>
+                                <tr>
+                                  <td style="WIDTH: 600px">
+									
+									<p style="color:#2f2f2f; font-size: 18px; margin-top: 28px; margin-bottom:28px; text-align:center; line-height: 25px; font-family: 'Verdana', sans-serif; font-weight:normal;">
+										Ayo, belanja mudah dan menyenangkan bersama <strong style="letter-spacing: -0.5px;">elevenia.<br></strong> Tinggal <span style="color:#60bc3f;font-weight:bold;">Klik</span> <span style="color:#f02636;font-weight:bold;">Cari</span> <span style="color:#f8af2c;font-weight:bold;">Hepi</span> <i>!</i>
+									</p>
+									
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+						<!-- END: KLIK CARI HEPI HERE -->
+						
+
+						<!-- FOOTER HERE-->
+						<tr>
+							<td align="center" valign="top" id="secSmallBan" width="100%" bgcolor="#282828"  >
+							<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="border-collapse:collapse;border:0px; width:600px;">
+
+							<tr>
+							<td style="padding: 25px 0px 10px;background-color:#282828;">
+							<table style="border-collapse:collapse;margin:0 auto;width: 100%;">
+							<tr>
+							<td class="termofUse" style="padding:0 0 0 20px;font-size:12px; font-family:Arial; color:#fefefe; font-weight:bold;width:50%;" align="left">
+							<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689107I-4ehhgE-8D-7D-7DDDD-6PaPcPHSBD-6oCD-6SJD-7zhBhSoD-7zPucSoPD-5UzPuD-5BEuPPbPHhD-6JCI-3" name="ANCHOR507704" style="color:#fefefe;text-decoration:none;outline:0px none;" target="_blank">Terms of Use</a>
+							<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<a href="http://ems.elevenia.co.id/3I-116613I-430963060I-4goaSoZE-8zPqrCF-1689108I-4ehhgE-8D-7D-7DDDD-6PaPcPHSBD-6oCD-6SJD-7zhBhSoD-7zPucSoPD-5UzPuD-5BEuPPbPHhD-6JCI-3" name="ANCHOR507705" style="color:#fefefe;text-decoration:none;outline:0px none;" target="_blank">Privacy Policy</a>
+							<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689109I-4ehhgzE-8D-7D-7DDDD-6PaPcPHSBD-6oCD-6SJD-7uPESzhPuD-7UHzUvzouSvPD-7HPDzaPhhPuD-6JCF-3SzRRnF-1WI-3" name="ANCHOR507706" style="color:#fefefe;text-decoration:none;outline:0px none;" target="_blank">Unsubscribe</a>
+							</td>
+
+							<td style="padding:0 20px 0 0;" align="right" class="termofUse2">
+							<table style="border-collapse:collapse;" class="termofUse3">
+							<tr>
+							<td>
+							<a href="http://ems.elevenia.co.id/7I-116613I-430963060I-4goaSoZE-8zPqrCF-1689110I-4ehhgzE-8D-7D-7DDDD-6mBoPvCCZD-6oCbD-7PaPcPHSBD-6oCD-6SJI-3" name="ANCHOR507707" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logofacebook.png" alt="Facebook" style="margin-right:3px;padding:0pt" width="25"></a>
+							</td>
+							<td>
+							<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689111I-4ehhgzE-8D-7D-7hDShhPuD-6oCbD-7PaPcPHSBLGI-3" name="ANCHOR507708" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logotwitter.png" alt="Twitter" style="margin-right:3px;padding:0pt" width="25"></a>
+							</td>
+							<td>
+							<a href="http://ems.elevenia.co.id/9I-116613I-430963060I-4goaSoZE-8zPqrCF-1689112I-4ehhgzE-8D-7D-7DDDD-6ACUhUvPD-6oCbD-7UzPuD-7PaPcPHSBSJI-3" name="ANCHOR507709" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logoyoutube.png" alt="YouTube" style="margin-right:3px;padding:0pt" width="25"></a>
+							</td>
+							<td>
+							<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689113I-4ehhgzE-8D-7D-7gaUzD-6ECCEaPD-6oCbD-7D-3iaPcPHSBfCLJD-7gCzhzI-3" name="ANCHOR507710" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logogoogle.png" alt="Google+" style="margin-right:3px;padding:0pt" width="25"></a>
+							</td>
+							<td>
+							<a href="http://ems.elevenia.co.id/6I-116613I-430963060I-4goaSoZE-8zPqrCF-1689114I-4ehhgE-8D-7D-7SHzhBEuBbD-6oCbD-7PaPcPHSBLGI-3" name="ANCHOR507711" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logoinstagram.png" alt="Instagram" style="margin-right:3px;padding:0pt" width="25"></a>
+							</td>
+							<td>
+							<a href="http://ems.elevenia.co.id/5I-116613I-430963060I-4goaSoZE-8zPqrCF-1689115I-4ehhgzE-8D-7D-7aSHPD-6bPD-7tD-7hSD-7gD-7C-740PaPcPHSBI-3" name="ANCHOR507712" target="_blank"><img class="logososmedimage" src="http://image.elevenia.co.id/targetMail/20160819/b1/logoline.png" alt="Instagram" style="margin-right:0px;padding:0pt" width="25"></a>
+							</td>
+							</tr>
+							</table>
+							</td>
+							</tr>
+							</table>
+							</td>
+							</tr>
+
+
+
+							<tr>
+							<td style="background-color:#282828;padding: 0 20px 10px;">
+							<p style="color:#b0b0b0; font-size:12px; font-family:Arial; text-align:left;">
+							Promo dapat berubah sewaktu - waktu tanpa ada pemberitahuan sebelumnya. Jumlah stok produk dan diskon diberikan terbatas. 
+							<br><br>
+							Copyright &copy; 2017, PT XL Planet, All Rights Reserved. a joint venture between PT XL Axiata, Tbk. and SK Planet Co. Ltd. 
+
+							AIA Central, 30th floor Jl. Jend. Sudirman Kav. 48A Jakarta Selatan 12930 - Indonesia.
+							</p>
+							</td>
+							</tr>
+							</table>
+							</td>
+						</tr>
+						<!-- END: FOOTER HERE -->
+						
+						
+						
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                
+                
+				
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+  </tr>
+  </table>
+  <img style='display:none;' height="1" width="1" border="0" src="http://ems.elevenia.co.id/8I-116613I-430963060I-4uPmuPzeI-4I-3" /></body></html>

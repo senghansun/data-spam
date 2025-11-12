@@ -1,0 +1,388 @@
+Delivered-To: imamromersono@gmail.com
+Received: by 10.80.180.173 with SMTP id w42csp1712421edd;
+        Fri, 4 Aug 2017 22:27:39 -0700 (PDT)
+X-Received: by 10.84.229.72 with SMTP id d8mr5777851pln.12.1501910859743;
+        Fri, 04 Aug 2017 22:27:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501910859; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WBN0gC6/GISRi4Ibm179rPAHOxKQCo9xMh3CL2sNwiBNnWkVnTn2IMwonny1PsOO5i
+         Z8P97cJIVtJ6ERZCEgVyQ8FdQFCZnRf1iQr3CHr7M6RbhT6H+9UcOzMKxOdLUM+adYeU
+         Vidsjjoeue+KAUWD5cR5sQe1uPTVyYYkK8P+lDGQR+uNZT0fr21zC9PhcMFwDQmfJ3kv
+         slMXmEek8kfVivbyggfgvEJCvylcXGoIaXTbENx83vaFfq6DTZKrDviOmMmDMHpTiiws
+         BjHMJbiQzDp8hD4nbSEAsAgd7/i0VfkqhUHQwrR4a2worwXh3bzqurm/iT9ZXXO8fUmj
+         t17A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:feedback-id:list-unsubscribe:errors-to
+         :reply-to:from:subject:to:date:dkim-signature
+         :arc-authentication-results;
+        bh=uHTcHO3lxbJnQ1LVlgOdit6zrt0y4yDXRVSGB32gsww=;
+        b=QHHlpNb3c6xoYiKhey8zhI5soXDwQWNdX9PIFPWOQTXqq9kqgnxCbS/s6zjCWQCDgL
+         gzQ9a11DFLwqaCv1yHkpL8M1g35zF70uqeiMn3X+RrFfAESSrimFPruM6AziFq+5xgsb
+         E6bzXCKGlu7AYV1mA1NWNgVwg9MEiaPT1KkbZzuI1wDo7w1kJXknNfbCdPhzlGPy8Gww
+         F8m4d4+PcSdD8FCXco3a4to6BhmCvAbE+TV0AyS1PKmlw/TkKGUubqki72qFeOIXhjsP
+         Bq6OA1cwrBfN33on4kV2q8VPX/1X3K+hs8sUrgcE+J7Zks2fKdR+H2cS1OdO+nI/iZFW
+         WnrA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.b=fsrJU6kF;
+       spf=pass (google.com: domain of notification+kr4kngaeymwa@facebookmail.com designates 66.220.144.145 as permitted sender) smtp.mailfrom=notification+kr4kngaeymwa@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+Return-Path: <notification+kr4kngaeymwa@facebookmail.com>
+Received: from mx-out.facebook.com (66-220-144-145.outmail.facebook.com. [66.220.144.145])
+        by mx.google.com with ESMTPS id b83si1903643pfm.350.2017.08.04.22.27.39
+        for <imamromersono@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 04 Aug 2017 22:27:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of notification+kr4kngaeymwa@facebookmail.com designates 66.220.144.145 as permitted sender) client-ip=66.220.144.145;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.b=fsrJU6kF;
+       spf=pass (google.com: domain of notification+kr4kngaeymwa@facebookmail.com designates 66.220.144.145 as permitted sender) smtp.mailfrom=notification+kr4kngaeymwa@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com; s=s1024-2013-q3; t=1501910858; bh=uHTcHO3lxbJnQ1LVlgOdit6zrt0y4yDXRVSGB32gsww=; h=Date:To:Subject:From:MIME-Version:Content-Type; b=fsrJU6kF4QQs32HWXcxyhGj3n7GiOR0qM79aYsBMmWlUMKlqniK1UrH30FppRZX20
+	 6NjfiqUR1YM0h8+phpPv0vqMmFUcDYttIk+gKdcxA8aDkosYgzyoR2dhmgaY65AW4o
+	 4XFU/i5qicQva9OdCV+q4RbjINbLi11zLB91rtaE=
+Received: from facebook.com (gSc5RgbtmAHHMZjGy/jCcIK8+ukKFIa5zm8zVvdWxR0LF3pwA0TQnpbecZDwWUxD 10.103.99.83) by facebook.com with Thrift id cb561e64799e11e780780002c9e16244-c5b5a150; Fri, 04 Aug 2017 22:27:38 -0700
+X-Facebook: from 2401:db00:1020:6078:face:0:7e:0 ([MTI3LjAuMC4x]) by async.twshared111.09.atn1.facebook.com with HTTP (ZuckMail);
+Date: Fri, 4 Aug 2017 22:27:38 -0700
+To: Imam Romersono <imamromersono@gmail.com>
+Subject: Lihat apa yang dibicarakan orang dalam grup Anda, Aeromodelling Jual Beli
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: notification+kr4kngaeymwa@facebookmail.com
+From: Facebook <notification+kr4kngaeymwa@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: notification+kr4kngaeymwa@facebookmail.com
+X-Facebook-Notify: group_nf_highlights; mailid=555fa958c1dbfG5af577f25f2aG555fadf222091G47a
+List-Unsubscribe: <https://www.facebook.com/o.php?k=AS3WDxdtHRmr81YS&u=100010325860138&mid=555fa958c1dbfG5af577f25f2aG555fadf222091G47a>
+Feedback-ID: 77:group_nf_highlights:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+Message-ID: <18147c73e113afa6a4a9a4a67381be71@async.twshared111.09.atn1.facebook.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_18147c73e113afa6a4a9a4a67381be71"
+
+--b1_18147c73e113afa6a4a9a4a67381be71
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Baca Kiriman
+https://www.facebook.com/n/?groups%2F451378301652038%2F1260487900741070%2F&=
+medium=3Demail&mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&bcode=3D2=
+.1501910858.AbzT8wd2q64o4CSHD4I&code=3D53715&n_m=3Dimamromersono%40gmail.co=
+m
+
+
+Sunting Pengaturan Email
+https://www.facebook.com/n/?settings&medium=3Demail&mid=3D555fa958c1dbfG5af=
+577f25f2aG555fadf222091G47a&bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&code=
+=3D53715&n_m=3Dimamromersono%40gmail.com&tab=3Dnotifications&section=3Demai=
+l
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Halo Imam,
+
+1 orang mengomentari foto ini di Aeromodelling Jual Beli
+
+"Google Headplay HD (bisa input AV/HDMI , RECEIVER + Transmiter immerison 5=
+,8 GHZ (600mw)
+Rp3,750,000 - Kota Surabaya
+
+Misi numpang jualan beberapa barang ga kepake
+KONDISI BARU : Google FPV Headplay (BISA UTK AV/HDMI)=20
+Package Including:
+1 x Goggle
+1 x AV Cable
+1 x Battery charger with 3 plugs
+1 x 1000mah battery
+1 x lens
+1 x antenna
+Spec : RED
+Screen resolution: 1280x800 (HD)
+Field of View: 72...=C2=A0=C2=A0=C2=A0=C2=A0"
+
+Terima kasih,
+Tim Facebook
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Pesan ini dikirim ke imamromersono@gmail.com. Jika Anda tidak ingin menerim=
+a email ini lagi dari Facebook, ikuti tautan di bawah ini untuk berhenti be=
+rlangganan.
+https://www.facebook.com/o.php?k=3DAS3WDxdtHRmr81YS&u=3D100010325860138&mid=
+=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a
+Facebook, Inc., Attention: Community Support, 1 Hacker Way, Menlo Park, CA =
+94025
+
+
+--b1_18147c73e113afa6a4a9a4a67381be71
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional //EN"><html><head=
+><title>Facebook</title><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3Dutf-8" /><style>@media all and (max-width: 480px){*[class].i=
+b_t{min-width:100% !important}*[class].ib_row{display:block !important}*[cl=
+ass].ib_ext{display:block !important;padding:10px 0 5px 0;vertical-align:to=
+p !important;width:100% !important}*[class].ib_img,*[class].ib_mid{vertical=
+-align:top !important}*[class].mb_blk{display:block !important;padding-bott=
+om:10px;width:100% !important}*[class].mb_hide{display:none !important}*[cl=
+ass].mb_inl{display:inline !important}}.d_mb_show{display:none}.d_mb_show_c=
+enter{display:table;margin:auto}@media only screen and (max-device-width: 4=
+80px){.d_mb_hide{display:none !important}.d_mb_show{display:block !importan=
+t}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text h5,.mb_text h6{=
+line-height:normal}.mb_work_text h1{font-size:18px;line-height:normal;margi=
+n-top:4px}.mb_work_text h2,.mb_work_text h3{font-size:16px;line-height:norm=
+al;margin-top:4px}.mb_work_text h4,.mb_work_text h5,.mb_work_text h6{font-s=
+ize:14px;line-height:normal}.mb_work_text a{color:#1270e9}.mb_work_text p{m=
+argin-top:4px}</style></head><body style=3D"margin:0;padding:0;" dir=3D"ltr=
+" bgcolor=3D"#ffffff"><table border=3D"0" width=3D"100%;" cellspacing=3D"0"=
+ cellpadding=3D"0" id=3D"email_table" style=3D"border-collapse:collapse;"><=
+tr><td id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,L=
+ucida Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table bo=
+rder=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"bord=
+er-collapse:collapse;"><tr><td height=3D"1" colspan=3D"3" style=3D"line-hei=
+ght:1px;"><span style=3D"color:#FFFFFF;display:none !important;font-size:1p=
+x;">=C2=A0 1 orang mengomentari foto ini di Aeromodelling Jual Beli =C2=A0 =
+=C2=A0=C2=A0=C2=A0 Felix Georly 4 Agustus pukul 0:23 =C2=A0 Google Headplay=
+ HD (bisa input AV/HDMI , RECEIVER + Transmiter immerison 5,8 GHZ (600mw) R=
+p3,750,000 - Kota Surabaya Misi numpang jualan beberapa barang ga kepake KO=
+NDISI BARU : Google FPV Headplay (BISA UTK AV/HDMI) Package Including: 1 x =
+Goggle 1 x AV Cable 1 x Battery charger with 3 plugs 1 x 1000mah battery 1 =
+x lens 1 x antenna Spec : RED Screen resolution: 1280x800 (HD) Field of Vie=
+w: 72... =C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0 Suka Komentari Bagikan =C2=A0 =C2=
+=A0</span></td></tr><tr><td width=3D"15" style=3D"display:block;width:15px;=
+">&nbsp;&nbsp;&nbsp;</td><td style=3D""><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr=
+ style=3D""><td height=3D"16" style=3D"line-height:16px;" colspan=3D"3">&nb=
+sp;</td></tr><tr><td width=3D"32" align=3D"left" valign=3D"middle" style=3D=
+"height:32;line-height:0px;"><a href=3D"https://www.facebook.com/n/?groups%=
+2F451378301652038%2F1260487900741070%2F&amp;medium=3Demail&amp;mid=3D555fa9=
+58c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64=
+o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail.com" style=3D"col=
+or:#3b5998;text-decoration:none;"><img src=3D"https://static.xx.fbcdn.net/r=
+src.php/v3/yk/r/_2faPUZhPI6.png" width=3D"32" height=3D"32" style=3D"border=
+:0;" /></a></td><td width=3D"15" style=3D"display:block;width:15px;">&nbsp;=
+&nbsp;&nbsp;</td><td width=3D"100%" style=3D""><a href=3D"https://www.faceb=
+ook.com/n/?groups%2F451378301652038%2F1260487900741070%2F&amp;medium=3Demai=
+l&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501=
+910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail=
+.com" style=3D"color:#3b5998;text-decoration:none;font-family:Helvetica Neu=
+e,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19px;li=
+ne-height:32px;">Facebook</a></td></tr><tr style=3D"border-bottom:solid 1px=
+ #e5e5e5;"><td height=3D"16" style=3D"line-height:16px;" colspan=3D"3">&nbs=
+p;</td></tr></table></td><td width=3D"15" style=3D"display:block;width:15px=
+;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td width=3D"15" style=3D"display:block;=
+width:15px;">&nbsp;&nbsp;&nbsp;</td><td style=3D""><table border=3D"0" widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:col=
+lapse;"><tr style=3D""><td height=3D"14" style=3D"line-height:14px;">&nbsp;=
+</td></tr><tr><td style=3D""><span class=3D"mb_text" style=3D"font-family:H=
+elvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-=
+size:16px;line-height:21px;color:#141823;">1 orang mengomentari foto ini di=
+ <a href=3D"https://www.facebook.com/n/?groups%2F451378301652038%2F&amp;med=
+ium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcod=
+e=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromerso=
+no%40gmail.com" style=3D"color:#3b5998;text-decoration:none;">Aeromodelling=
+ Jual Beli</a></span></td></tr><tr style=3D""><td height=3D"7" style=3D"lin=
+e-height:7px;">&nbsp;</td></tr><tr><td style=3D""><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:coll=
+apse;"><tr><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verd=
+ana,arial,sans-serif;border:solid 1px #e5e5e5;border-radius:2px 2px 0 0;pad=
+ding:10px;display:block;"><table border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D""><a href=3D"ht=
+tps://www.facebook.com/felix.georly" style=3D"color:#3b5998;text-decoration=
+:none;"><img src=3D"https://scontent.xx.fbcdn.net/v/t1.0-1/p100x100/1045334=
+3_10206970814681145_465136913196693950_n.jpg?_nc_ad=3Dz-m&amp;oh=3Dce224268=
+fd72155dee3d65154f74df88&amp;oe=3D5A2E9586" width=3D"50" height=3D"50" styl=
+e=3D"border:0;" /></a></td><td width=3D"10" style=3D"display:block;width:10=
+px;">&nbsp;&nbsp;&nbsp;</td><td width=3D"100%" style=3D""><table border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;">=
+<tr><td style=3D""><a href=3D"https://www.facebook.com/felix.georly" style=
+=3D"color:#141823;text-decoration:none;font-family:Helvetica Neue,Helvetica=
+,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:2=
+1px;font-weight:bold;">Felix Georly</a></td></tr><tr><td style=3D"font-fami=
+ly:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;f=
+ont-size:14px;line-height:19px;color:#898f9c;">4 Agustus pukul 0:23</td></t=
+r></table></td></tr><tr style=3D""><td height=3D"10" style=3D"line-height:1=
+0px;">&nbsp;</td></tr><tr><td colspan=3D"3" style=3D""><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr=
+><td style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica Neue=
+,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;lin=
+e-height:21px;color:#141823;">Google Headplay HD (bisa input AV/HDMI , RECE=
+IVER + Transmiter immerison 5,8 GHZ (600mw)
+<br />Rp3,750,000 - Kota Surabaya
+<br />
+<br />Misi numpang jualan beberapa barang ga kepake
+<br />KONDISI BARU : Google FPV Headplay (BISA UTK AV/HDMI)=20
+<br />Package Including:
+<br />1 x Goggle
+<br />1 x AV Cable
+<br />1 x Battery charger with 3 plugs
+<br />1 x 1000mah battery
+<br />1 x lens
+<br />1 x antenna
+<br />Spec : RED
+<br />Screen resolution: 1280x800 (HD)
+<br />Field of View: 72...</span></td></tr><tr style=3D""><td height=3D"10"=
+ style=3D"line-height:10px;">&nbsp;</td></tr><tr><td style=3D""><a href=3D"=
+https://www.facebook.com/n/?groups%2F451378301652038%2F1260487900741070%2F&=
+amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&a=
+mp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimam=
+romersono%40gmail.com" style=3D"color:#3b5998;text-decoration:none;"><img s=
+rc=3D"https://scontent.xx.fbcdn.net/v/t1.0-0/s200x200/20597034_102121838873=
+64704_9108763484155460231_n.jpg?_nc_ad=3Dz-m&amp;oh=3Daf8bad5c354ab6f7fb00c=
+6c4dedb1a4b&amp;oe=3D5A34A9A9" style=3D"border:0;" /></a></td><td width=3D"=
+10" style=3D"display:block;width:10px;">&nbsp;&nbsp;&nbsp;</td><td style=3D=
+""><a href=3D"https://www.facebook.com/n/?groups%2F451378301652038%2F126048=
+7900741070%2F&amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fa=
+df222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&=
+amp;n_m=3Dimamromersono%40gmail.com" style=3D"color:#3b5998;text-decoration=
+:none;"><img src=3D"https://scontent.xx.fbcdn.net/v/t1.0-0/s200x200/2059710=
+7_10212183887284702_5956613445554131733_n.jpg?_nc_ad=3Dz-m&amp;oh=3D6529ecd=
+b1ab1280480575f19d3b8300a&amp;oe=3D5A35A5FB" style=3D"border:0;" /></a></td=
+></tr></table></td></tr></table></td></tr><tr><td style=3D"font-size:11px;f=
+ont-family:LucidaGrande,tahoma,verdana,arial,sans-serif;background:#f2f2f2;=
+border:solid 1px #e5e5e5;border-top:0;border-radius:0 0 2px 2px;padding:0px=
+ 10px;display:block;"><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td he=
+ight=3D"5" style=3D"line-height:5px;">&nbsp;</td></tr><tr><td style=3D"padd=
+ing:5px 10px;border-right:1px solid #e5e5e5;"><a href=3D"https://www.facebo=
+ok.com/n/?email%2Fufi%2Fclick&amp;action=3Dlike&amp;target=3D12604879007410=
+70&amp;hash=3DAVJRP41fHpT4D2JT&amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5=
+af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&=
+amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail.com&amp;lloc=3Demail_ufi_l=
+ike&amp;sig_t=3D1501910858&amp;sig=3DAVKfXLQjWoe14WzR" style=3D"color:#3b59=
+98;text-decoration:none;"><table border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse;"><tr><td valign=3D"middle" style=
+=3D"padding:5px 0px 0px 8px;"><img src=3D"https://static.xx.fbcdn.net/rsrc.=
+php/v3/yM/r/aL-TjjYppK9.png" width=3D"16" height=3D"16" style=3D"border:0;"=
+ /></td><td valign=3D"middle" style=3D"padding:0px 8px;"><a href=3D"https:/=
+/www.facebook.com/n/?email%2Fufi%2Fclick&amp;action=3Dlike&amp;target=3D126=
+0487900741070&amp;hash=3DAVJRP41fHpT4D2JT&amp;medium=3Demail&amp;mid=3D555f=
+a958c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q=
+64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail.com&amp;lloc=3D=
+email_ufi_like&amp;sig_t=3D1501910858&amp;sig=3DAVKfXLQjWoe14WzR" style=3D"=
+color:#4c4c4c;text-decoration:none;font-family:Helvetica Neue,Helvetica,Luc=
+ida Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:b=
+old;vertical-align:middle;font-size:14px;line-height:16px;text-shadow:0 1px=
+ 0 #ffffff;">Suka</a></td></tr></table></a></td><td style=3D"padding:5px 10=
+px;border-right:1px solid #e5e5e5;"><a href=3D"https://www.facebook.com/n/?=
+email%2Fufi%2Fclick&amp;action=3Dcomment&amp;target=3D1260487900741070&amp;=
+hash=3DAVKw8mfWiCQSk8s0&amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f2=
+5f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;cod=
+e=3D53715&amp;n_m=3Dimamromersono%40gmail.com&amp;lloc=3Demail_ufi_comment&=
+amp;sig_t=3D1501910858&amp;sig=3DAVLPUHVRWrYWcwtU" style=3D"color:#3b5998;t=
+ext-decoration:none;"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"border-collapse:collapse;"><tr><td valign=3D"middle" style=3D"p=
+adding:5px 0px 0px 8px;"><img src=3D"https://static.xx.fbcdn.net/rsrc.php/v=
+3/yK/r/pydUbhpFodk.png" width=3D"16" height=3D"16" style=3D"border:0;" /></=
+td><td valign=3D"middle" style=3D"padding:0px 8px;"><a href=3D"https://www.=
+facebook.com/n/?email%2Fufi%2Fclick&amp;action=3Dcomment&amp;target=3D12604=
+87900741070&amp;hash=3DAVKw8mfWiCQSk8s0&amp;medium=3Demail&amp;mid=3D555fa9=
+58c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64=
+o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail.com&amp;lloc=3Dem=
+ail_ufi_comment&amp;sig_t=3D1501910858&amp;sig=3DAVLPUHVRWrYWcwtU" style=3D=
+"color:#4c4c4c;text-decoration:none;font-family:Helvetica Neue,Helvetica,Lu=
+cida Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:=
+bold;vertical-align:middle;font-size:14px;line-height:16px;text-shadow:0 1p=
+x 0 #ffffff;">Komentari</a></td></tr></table></a></td><td style=3D"padding:=
+5px 10px;"><a href=3D"https://www.facebook.com/n/?email%2Fufi%2Fclick&amp;a=
+ction=3Dshare&amp;target=3D1260487900741070&amp;hash=3DAVKBUeXHjL-kj4Tz&amp=
+;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;=
+bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamrom=
+ersono%40gmail.com&amp;lloc=3Demail_ufi_share&amp;sig_t=3D1501910858&amp;si=
+g=3DAVI1Vx-8MKq2yGPX" style=3D"color:#3b5998;text-decoration:none;"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:c=
+ollapse;"><tr><td valign=3D"middle" style=3D"padding:5px 0px 0px 8px;"><img=
+ src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/1xTlxxl7Lck.png" width=
+=3D"16" height=3D"16" style=3D"border:0;" /></td><td valign=3D"middle" styl=
+e=3D"padding:0px 8px;"><a href=3D"https://www.facebook.com/n/?email%2Fufi%2=
+Fclick&amp;action=3Dshare&amp;target=3D1260487900741070&amp;hash=3DAVKBUeXH=
+jL-kj4Tz&amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222=
+091G47a&amp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n=
+_m=3Dimamromersono%40gmail.com&amp;lloc=3Demail_ufi_share&amp;sig_t=3D15019=
+10858&amp;sig=3DAVI1Vx-8MKq2yGPX" style=3D"color:#4c4c4c;text-decoration:no=
+ne;font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,=
+sans-serif;white-space:nowrap;font-weight:bold;vertical-align:middle;font-s=
+ize:14px;line-height:16px;text-shadow:0 1px 0 #ffffff;">Bagikan</a></td></t=
+r></table></a></td><td width=3D"100%" style=3D""></td></tr><tr style=3D""><=
+td height=3D"5" style=3D"line-height:5px;">&nbsp;</td></tr></table></td></t=
+r></table></td></tr><tr style=3D""><td height=3D"7" style=3D"line-height:7p=
+x;">&nbsp;</td></tr></table></td><td width=3D"15" style=3D"display:block;wi=
+dth:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td width=3D"15" style=3D"displa=
+y:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td style=3D""><table border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-coll=
+apse:collapse;"><tr style=3D""><td height=3D"2" style=3D"line-height:2px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td class=3D"mb_blk" style=3D""><a href=
+=3D"https://www.facebook.com/n/?groups%2F451378301652038%2F1260487900741070=
+%2F&amp;medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G4=
+7a&amp;bcode=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3D=
+imamromersono%40gmail.com" style=3D"color:#3b5998;text-decoration:none;"><t=
+able border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:collapse;bo=
+rder-radius:2px;text-align:center;display:block;border:solid 1px #344c80;bo=
+x-shadow:inset 0 1px 1px rgba(255, 255, 255, 0.1),0 1px 0 rgba(0, 0, 0, 0.1=
+);background:#4c649b;padding:7px 16px 11px 16px;"><a href=3D"https://www.fa=
+cebook.com/n/?groups%2F451378301652038%2F1260487900741070%2F&amp;medium=3De=
+mail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1=
+501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gm=
+ail.com" style=3D"color:#3b5998;text-decoration:none;display:block;"><cente=
+r><font size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Luci=
+da Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bo=
+ld;vertical-align:middle;color:#ffffff;text-shadow:0 -1px 0 #415686;font-si=
+ze:14px;line-height:14px;">Baca&nbsp;Kiriman</span></font></center></a></td=
+></tr></table></a></td><td width=3D"10" style=3D"display:block;width:10px;"=
+ class=3D"mb_hide">&nbsp;&nbsp;&nbsp;</td><td class=3D"mb_blk" style=3D""><=
+a href=3D"https://www.facebook.com/n/?settings&amp;medium=3Demail&amp;mid=
+=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;bcode=3D2.1501910858.Ab=
+zT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamromersono%40gmail.com&amp;=
+tab=3Dnotifications&amp;section=3Demail" style=3D"color:#3b5998;text-decora=
+tion:none;"><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D"border-collaps=
+e:collapse;border-radius:2px;text-align:center;display:block;border:solid 1=
+px #c9ccd1;box-shadow:0 1px 0 rgba(0, 0, 0, 0.04);background:#f6f7f8;paddin=
+g:7px 16px 11px 16px;"><a href=3D"https://www.facebook.com/n/?settings&amp;=
+medium=3Demail&amp;mid=3D555fa958c1dbfG5af577f25f2aG555fadf222091G47a&amp;b=
+code=3D2.1501910858.AbzT8wd2q64o4CSHD4I&amp;code=3D53715&amp;n_m=3Dimamrome=
+rsono%40gmail.com&amp;tab=3Dnotifications&amp;section=3Demail" style=3D"col=
+or:#3b5998;text-decoration:none;display:block;"><center><font size=3D"3"><s=
+pan style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verd=
+ana,arial,sans-serif;white-space:nowrap;font-weight:bold;vertical-align:mid=
+dle;color:#525252;text-shadow:0 1px 0 #ffffff;font-size:14px;line-height:14=
+px;">Sunting&nbsp;Pengaturan&nbsp;Email</span></font></center></a></td></tr=
+></table></a></td><td width=3D"100%" class=3D"mb_hide" style=3D""></td></tr=
+><tr style=3D""><td height=3D"32" style=3D"line-height:32px;" colspan=3D"3"=
+>&nbsp;</td></tr></table></td><td width=3D"15" style=3D"display:block;width=
+:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td width=3D"15" style=3D"display:b=
+lock;width:15px;">&nbsp;&nbsp;&nbsp;</td><td style=3D""><table border=3D"0"=
+ width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collaps=
+e:collapse;"><tr style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"16" =
+style=3D"line-height:16px;">&nbsp;</td></tr><tr><td style=3D"font-family:He=
+lvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-s=
+ize:11px;color:#aaaaaa;line-height:16px;">Pesan ini dikirim ke <a href=3D"m=
+ailto:imamromersono&#064;gmail.com" style=3D"color:#3b5998;text-decoration:=
+none;">imamromersono&#064;gmail.com</a>. Jika Anda tidak ingin menerima ema=
+il ini lagi dari Facebook, <a href=3D"https://www.facebook.com/o.php?k=3DAS=
+3WDxdtHRmr81YS&amp;u=3D100010325860138&amp;mid=3D555fa958c1dbfG5af577f25f2a=
+G555fadf222091G47a" style=3D"color:#3b5998;text-decoration:none;">berhenti =
+berlangganan</a>. Jika Anda tidak membuat akun Facebook dengan menggunakan =
+alamat email ini, <a href=3D"https://www.facebook.com/disavow_contact/?data=
+=3DAaJNlxGeVg7nINhWHEs5PIff-7mio1AleeWJaS9Gs-jWmpmmL1NaEGAnivTH2SSy49zB8Am-=
+GzIRHLLgbgfTf0aXEOvGSfHu8t5E6954LtdBGOKfXyx5t7_0JP_engcFL2M7EYj9JJlCUBg4zLg=
+71eY_QB9Lq6h4IvI7OL6qMk3UVhno7o_Sp9POxUuwzrlnBfk" style=3D"color:#3b5998;te=
+xt-decoration:none;">beri tahu kami</a>.<br />Facebook, Inc., Attention: Co=
+mmunity Support, 1 Hacker Way, Menlo Park, CA 94025</td></tr></table></td><=
+td width=3D"15" style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td>=
+</tr><tr style=3D""><td height=3D"20" style=3D"line-height:20px;" colspan=
+=3D"3">&nbsp;</td></tr></table><span style=3D""><img src=3D"https://www.fac=
+ebook.com/email_open_log_pic.php?cn=3DmaiyJt97HX&amp;mid=3D555fa958c1dbfG5a=
+f577f25f2aG555fadf222091G47a" style=3D"border:0;width:1px;height:1px;" /></=
+span></td></tr></table></body></html>
+
+
+
+--b1_18147c73e113afa6a4a9a4a67381be71--

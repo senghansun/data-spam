@@ -1,0 +1,117 @@
+﻿Delivered-To: rwen.ibra@gmail.com
+Received: by 10.200.46.173 with SMTP id h42csp2035946qta;
+        Sat, 26 Aug 2017 01:40:43 -0700 (PDT)
+X-Received: by 10.202.173.14 with SMTP id w14mr1245772oie.283.1503736843385;
+        Sat, 26 Aug 2017 01:40:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503736843; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fQG/jshwMYrgm1bBAz5ftKl4IZLLUI1IcO0IOWdwW8iodrbRQf1TZscQQz1wQr2RQC
+         aItzkoja1eSiygL4mw7xtWUIZUXynbJsvCY5Mdy/aZJ/tyvDZ0H5NtZrQ9RMsco+hY3k
+         JXFXCke1Y8MOWCmJNgU2EBtDjJr1P6Xlr8WQD8nze9pa7mRm46gsy5cPbPycTgAH0wfn
+         HKRDD01sSnAOBWYJNi8Vis4no0sJ4NVGUBwhr5k9LvEKMnY9EcLjRtNZYMBK10ohILZY
+         TG3Bz9PIN0t0e0B7ubAOkk6mGe7Zr67auVdvMevw6q0gzWc2yMcOxZFanT7MlaRttBcI
+         dn2A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:to:date:from:subject:message-id
+         :domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=+nQXoq+e1I96ItTjff2u8ufkCvQrChsNLmtrJ5Brs5A=;
+        b=vp7cb2VzW2dph2M5q/+u/513XUMMVgX0iHnBOtN72ODblW5nXDf3kDzr87vgN0n3iD
+         YNT1wuM5krDB39nUvhSp8wAyLNZFai7y+lUgU26fvgwBBZBGVZc/OJkehUK2QbZCqGHO
+         gqITmHr/E1IbWbPA1nRMqlFh0dM2JKY6gEgfGvF7ZWMCSvseWcjWQPrF+4Vd6L/CZKpN
+         6N8d2k6qDxv7l0SD87xhbdcDWgO1eZ0Wzncp4wjvPsQBO8xSl6KMoOn5u3RUFDqd19d5
+         FVxbmsyR2PFNRs69weCSF510ZxigbnYNaUTjdUTGtdYdePauxVcf8vufMGUNamMNl/ql
+         N1gQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@survey.jmsend.com header.s=jm header.b=M1kC825Z;
+       spf=pass (google.com: domain of survey@survey.jmsend.com designates 74.63.238.230 as permitted sender) smtp.mailfrom=survey@survey.jmsend.com
+Return-Path: <survey@survey.jmsend.com>
+Received: from lsn008-e.jsmtp.net (lsn008-e.jsmtp.net. [74.63.238.230])
+        by mx.google.com with ESMTPS id m186si6792715oib.81.2017.08.26.01.40.42
+        for <rwen.ibra@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sat, 26 Aug 2017 01:40:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of survey@survey.jmsend.com designates 74.63.238.230 as permitted sender) client-ip=74.63.238.230;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@survey.jmsend.com header.s=jm header.b=M1kC825Z;
+       spf=pass (google.com: domain of survey@survey.jmsend.com designates 74.63.238.230 as permitted sender) smtp.mailfrom=survey@survey.jmsend.com
+X-Feedback-ID: B:322885617:2369236:JangoMail
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; c=simple/simple; d=survey.jmsend.com; s=jm; h=Message-ID:Subject:From:Date:To:MIME-Version:X-Mailer:List-Unsubscribe: X-UserID:X-VConfig:Content-Type; t=1503736806; bh=dZ+5nuV9l/V8PAglb2A7Y8dOO6c=; b=M1kC825Z0NlQpIy9wDGoQAkzbaGZ6Y1q1E8NS48qw3DwpQIPM2SCmycd0Esq+3Eq8TzHpm
+	  j3yg8W8shVpjs8qItv+d4xaBDLGn6UYSfeuUoM3gfwCSE6thKfw45cgUyAPc0ZjvWyStw5
+	  2C8R9kJlLhb4a6niAc2l82Gt/bjRkTQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=survey.jmsend.com; h=Message-ID:Subject:From:Date:To:MIME-Version:X-Mailer:List-Unsubscribe: X-UserID:X-VConfig:Content-Type; q=dns; s=jm; b=AFsXpGrx0dq2UX03CdFZAd7xvmCe2ABoeAMopJwcVgPoGuN3EpGHi5klNjUJ2GefK0gM1M
+	  6IcX1XzU7v7g2ehiML/8l2g7/VUE6odCL/mor40y9rRgUNOk0NtI1crksNfIyiyxyKGaMu
+	  hs4axIMoSAr5IQK0nCamG8m2AXLSj1g=;
+Message-ID: <236923632288561792804@jsmtp.net>
+Subject: Masalah Transportasi Lokal
+From: Jon dari YOC Research <survey@survey.jmsend.com>
+Date: Sat, 26 Aug 2017 08:36:34 +0000
+To: rwen.ibra@gmail.com
+MIME-Version: 1.0
+X-Mailer: N/A
+List-Unsubscribe: <http://track.survey.jmsend.com/u.z?j=322885617&m=ebd16ec8fc7d4a84b09fe5dd835fc005>,<mailto:survey@survey.jmsend.com?Subject=Unsubscribe>
+X-UserID: 2369236.322885617
+X-VConfig: 92804
+Content-Type: multipart/alternative; boundary="dd997bb8_2fbe_4523_a0e9_f47bca3ea484"
+
+--dd997bb8_2fbe_4523_a0e9_f47bca3ea484
+Content-Type: text/plain; charset="utf-8"
+
+Kami ingin mendengar pendapat Anda tentang masalah transportasi lokal yang ada.  Sebagai bentuk terima kasih atas kesediaan Anda meluangkan waktu untuk berpartisipasi dalam survei ini, kami akan memberikan kartu hadiah Visa senilai 130.000 Rupiah kepada Anda.
+
+Survei transportasi online singkat ini dilakukan di wilayah Anda oleh YOC Research, suatu perusahaan penelitian pasar global.  Hasil dari survei ini akan membantu proses pembuatan keputusan transportasi lokal.  Survei ini bisa diselesaikan dalam waktu 15-18 menit.
+
+Klik pada tautan di bawah ini untuk memulai survei, atau salin dan tempelkan tautan ke peramban web Anda.
+
+http://your-opinions-count.com/survey/selfserve/53c/4328?list=4&bDID=694903a2-8694-42d7-8137-2c969be67f69&decLang=indonesian
+
+Keikutsertaan survei ini bersifat sukarela. Kami menghubungi Anda melalui penyedia layanan kami untuk tujuan melakukan penelitian ini. Semua tanggapan Anda akan dijaga kerahasiaannya. Data hanya akan dibagikan dengan klien kami secara anonim. Kami mungkin akan meminta informasi demografis dasar, seperti usia Anda, untuk disertakan dalam analisis agregat. Dengan menyelesaikan survei ini, Anda setuju bahwa kami bisa menggunakan data ini untuk tujuan penelitian yang diuraikan di atas.
+
+Terima kasih banyak.
+
+Jonathan Livingston
+
+Direktur Bagian Penelitian
+
+YOC Research
+
+ 
+
+Email ini dikirimkan oleh YOC Research, berlokasi di 777 3rd Avenue, New York, NY 10017 (A.S.). Untuk tidak menerima email lebih lanjut dari kami, silakan klik di sini <http://track.survey.jmsend.com/u.z?j=322885617&m=ebd16ec8fc7d4a84b09fe5dd835fc005> .
+--dd997bb8_2fbe_4523_a0e9_f47bca3ea484
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p><span style="font-family:arial,helvetica,sans-serif;">Kami ingin mendengar pendapat Anda tentang masalah transportasi lokal yang ada. &nbsp;Sebagai bentuk terima kasih atas kesediaan Anda meluangkan waktu untuk berpartisipasi dalam survei ini, kami akan memberikan kartu hadiah Visa senilai 130.000 Rupiah kepada Anda.</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Survei transportasi online singkat ini dilakukan di wilayah Anda oleh YOC Research, suatu perusahaan penelitian pasar global. &nbsp;Hasil dari survei ini akan membantu proses pembuatan keputusan transportasi lokal. &nbsp;Survei ini bisa diselesaikan dalam waktu 15-18 menit.</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Klik pada tautan di bawah ini untuk memulai survei, atau salin dan tempelkan tautan ke peramban web Anda.</span></p>
+
+<p>http://your-opinions-count.com/survey/selfserve/53c/4328?list=4&bDID=694903a2-8694-42d7-8137-2c969be67f69&decLang=indonesian</p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Keikutsertaan survei ini bersifat sukarela. Kami menghubungi Anda melalui penyedia layanan kami untuk tujuan melakukan penelitian ini. Semua tanggapan Anda akan dijaga kerahasiaannya. Data hanya akan dibagikan dengan klien kami secara anonim. Kami mungkin akan meminta informasi demografis dasar, seperti usia Anda, untuk disertakan dalam analisis agregat. Dengan menyelesaikan survei ini, Anda setuju bahwa kami bisa menggunakan data ini untuk tujuan penelitian yang diuraikan di atas.</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Terima kasih banyak.</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Jonathan Livingston</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">Direktur Bagian Penelitian</span></p>
+
+<p><span style="font-family: arial, helvetica, sans-serif;">YOC Research</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:9pt;"><span style="font-family: arial, helvetica, sans-serif;">Email ini dikirimkan oleh YOC Research, berlokasi di 777 3</span><sup style="font-family: arial, helvetica, sans-serif;">rd</sup><span style="font-family: arial, helvetica, sans-serif;"> Avenue, New York, NY 10017 (A.S.). Untuk tidak menerima email lebih lanjut dari kami, silakan </span><a href="http://track.survey.jmsend.com/u.z?j=322885617&m=ebd16ec8fc7d4a84b09fe5dd835fc005"><u style="font-family: arial, helvetica, sans-serif;">klik di sini</u></a><span style="font-family: arial, helvetica, sans-serif;">.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<img src="http://track.survey.jmsend.com/o.z?j=322885617&mid=92804&8A916B1337C94B389DCA63BA416E810F" alt=""></body>
+</html>
+--dd997bb8_2fbe_4523_a0e9_f47bca3ea484--

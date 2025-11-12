@@ -1,0 +1,527 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.159.36.40 with SMTP id 37csp2896634uaq;
+        Thu, 8 Jun 2017 08:52:13 -0700 (PDT)
+X-Received: by 10.99.186.91 with SMTP id l27mr34314375pgu.87.1496937133491;
+        Thu, 08 Jun 2017 08:52:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496937133; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uPCmWXeskCzjbb/htxsQhK04jZDg6WJiSxSYo1j//cCguTx/DITWVAcK57D0PRhzYc
+         MN0HY8TYer2xC9yI0TIh/1ucpn/Utn1mNKMAeU8uz6lbotY+8OH+K0zN8UQvMKmHJmqS
+         aBFFvaCbriPTspiMJdvUswQBHHl9n9PxByON0/4yoF/mgP5joAiKSi5254wh5+kAnlX2
+         XGyel4PYBGx9w8J/J/DyHuGKJhYY1dbjYQpYV1TV6KPXAymf3/MzA8Sx+ghsv5Cv+CGS
+         ISwM/WKHDdUr1vESt6MeDpFaOW0E11/nRa6fQET0H+BIn6KILGYB/b8cFF/zGct2Sb5A
+         UsSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:date:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=IPfSNRLP9OQA5WPKw8/z430D/EP+4rtvdw4RJ6h6FnM=;
+        b=zQ0+bETYP0iah8yLxtQXohleEd2nSSIXLEdHjmvMtTl2iTDInBzopUIp/YYpv5fDMD
+         fnqwM5SfAz7a/mhaRzwB+umKsglgl+1FzBSSi03lhJ8R5TkNNbm86NikhX3LWFbcyyiY
+         1G/HQ39xrQzlwpE941YEzgbUa88GRydHiA3D210joY9N1k+WTA9l9wxY5R9JQ6dhyqWa
+         lqU7Dk7LdcTYft0kE3Hf4vxWBN7SQo8+lOaCD9KedTQ8TLZjHwKGfjm2FrUI9bSFbdMx
+         wC7G7OqMRkGy06+0c5V9/qD4sPojGO6AOU6Viofi9ZIA3HVmZKJf8GrHlchC3MEDilqM
+         g+0A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@youtube.com;
+       spf=pass (google.com: domain of 3rxi5wqclckgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3rXI5WQcLCkgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Return-Path: <3rXI5WQcLCkgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id l19sor2948818pgc.78.2017.06.08.08.52.13
+        for <itsmetenki@gmail.com>
+        (Google Transport Security);
+        Thu, 08 Jun 2017 08:52:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3rxi5wqclckgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@youtube.com;
+       spf=pass (google.com: domain of 3rxi5wqclckgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3rXI5WQcLCkgxy1ozv88y434lo.myws32wo3oxusqwksv.myw@youtube-subscriptions.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=youtube.com; s=20161025;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=IPfSNRLP9OQA5WPKw8/z430D/EP+4rtvdw4RJ6h6FnM=;
+        b=kfxH8zDqpvK/CZnzHirT0ejeseG/KsKS0h0jkZBUBIBTB41y4pHW9K51XbonccEUvE
+         53xOz/SAB67qCg5FFskglCMO0a4UnJVUd1VUFZhg3FxmFCYDkC0fqGrrSxRTvvUptPq0
+         lpuWIX3C/sDy0Mpa1p9jZ7MZpBsT5a82S4wLkotpGjF/B7Cvn62by3NQRdKKHxUqrHUn
+         0pC6sv7v0xznWVFcXQtawy4iyHcbVi0I/g9GWkS2v9D+SoWbv/LQOb09kdDINgUHBxmW
+         MzLEO7wYtS7yzDSbrqnstpdN5TxPkE/FzlS/BFUo+KBFtX5vALwoKzZGyhjsGoaDR/j6
+         8PpA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+        bh=IPfSNRLP9OQA5WPKw8/z430D/EP+4rtvdw4RJ6h6FnM=;
+        b=ZkilQzqa6ukGvHi0M6V1MQksOEyxfr+vqa2a3QXGN/okdB34nFO9Ib7VkMT9ZP03dj
+         H2cRvQBX+4TmcDUMJ9+DFwrOg6knw1y1OaTKGCD+1YKG/3x5JAndFp6ugNeQl2JGNfSM
+         VX+u+GEf+PrInSKeVRP2DyckEiSv7/xEcS9ilVDW76w2FqgOBurtEXgoElE9bShAybRi
+         VaHZ5bFBkxeEHaiI4qrhj3rlZtQ7XBRFLjAbGdCAWkGdFW0ym3K0X3mUsntAnJ9oR+pN
+         x93iK/m9nkE3KWEw60wugOzd5iGDVo1cn/npVp15y2mMVKxV7qHj89HzB8usNnYTg9Rg
+         E6bw==
+X-Gm-Message-State: AODbwcDGA5kx1FRsQqVOvncnvWx3PzvIHMs2ZPZ61bFrJeumNu9LlB3p LNCfjCwOK3Cyj1Bv+T0I+6jj+ndr9nE=
+MIME-Version: 1.0
+X-Received: by 10.99.97.69 with SMTP id v66mr19848486pgb.163.1496937133136; Thu, 08 Jun 2017 08:52:13 -0700 (PDT)
+Date: Thu, 08 Jun 2017 08:52:13 -0700
+X-Google-Id: yt-em-lss
+X-Feedback-Id: em-lss:UCOP_sLaAdMG8ThI9LEurXlg:onnBkLLKkfs:YouTube
+X-No-Auto-Attachment: 1
+Message-ID: <94eb2c0cc59c125c32055174d6ae@google.com>
+Subject: ?? diptaradhian is live now: HADIAH CB 600 RIBU RUPIAH, RAMAIKAN GUYS ACC HARUS WIN! - RF Classic Online Indonesia #Server Solar
+From: YouTube <noreply@youtube.com>
+To: Lemon Lemming <itsmetenki@gmail.com>
+Content-Type: multipart/alternative; boundary="94eb2c0cc59c125c10055174d6ab"
+
+--94eb2c0cc59c125c10055174d6ab
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+8J+UtCBkaXB0YXJhZGhpYW4gaXMgbGl2ZSBub3c6IEhBRElBSCBDQiA2MDAgUklCVSBSVVBJQUgs
+IFJBTUFJS0FOIEdVWVMgQUNDICANCkhBUlVTIFdJTiEgLSBSRiBDbGFzc2ljIE9ubGluZSBJbmRv
+bmVzaWEgI1NlcnZlciBTb2xhcg0KZGlwdGFyYWRoaWFuIGlzIGxpdmUgc3RyZWFtaW5nIEhBRElB
+SCBDQiA2MDAgUklCVSBSVVBJQUgsIFJBTUFJS0FOIEdVWVMgQUNDICANCkhBUlVTIFdJTiEgLSBS
+RiBDbGFzc2ljIE9ubGluZSBJbmRvbmVzaWEgI1NlcnZlciBTb2xhci4NCkhBRElBSCBDQiA2MDAg
+UklCVSBSVVBJQUgsIFJBTUFJS0FOIEdVWVMgQUNDIEhBUlVTIFdJTiEgLSBSRiBDbGFzc2ljIE9u
+bGluZSAgDQpJbmRvbmVzaWEgI1NlcnZlciBTb2xhcg0KaHR0cDovL3d3dy55b3V0dWJlLmNvbS93
+YXRjaD92PW9ubkJrTExLa2ZzJmZlYXR1cmU9ZW0tbHNzDQpZb3UgY2FuIHVuc3Vic2NyaWJlIGZy
+b20gbm90aWZpY2F0aW9ucyBmb3IgbGl2ZSBldmVudHMgYnkgdmlzaXRpbmcgdGhlICANCmFjY291
+bnQgbm90aWZpY2F0aW9ucyBwYWdlOg0KaHR0cHM6Ly93d3cueW91dHViZS5jb20vYWNjb3VudF9u
+b3RpZmljYXRpb25zP2ZlYXR1cmU9ZW0tbHNzDQo=
+--94eb2c0cc59c125c10055174d6ab
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html lang=3D"en">
+<head>
+<title>
+Live on YouTube: diptaradhian - HADIAH CB 600 RIBU RUPIAH, RAMAIKAN GUYS AC=
+C HARUS WIN! - RF Classic Online Indonesia #Server Solar!
+</title>
+<style>
+* {
+font-family: arial, Arial, sans-serif;
+}
+@media only screen and (max-device-width: 480px) {
+body[class=3Dsuppress-border-on-mobile] {
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table[class=3Dsuppress-on-mobile], td[class=3Dsuppress-on-mobile], div[clas=
+s=3Dsuppress-on-mobile], img[class=3Dsuppress-on-mobile], span[class=3Dsupp=
+ress-on-mobile] {
+display: none !important;
+width: 0px !important;
+height: 0px !important;
+line-height: 0px !important;
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table[class=3Douter-container-width], td[class=3Douter-container-width], ta=
+ble[class=3Dinner-container-width], td[class=3Dinner-container-width], tabl=
+e[class=3Dheader-container-width], td[class=3Dheader-container-width] {
+width: 320px !important;
+}
+td[class=3Dheader-left-size], img[class=3Dheader-left-size], td[class=3Dhea=
+der-right-size], img[class=3Dheader-right-size] {
+width: 115px !important;
+height: 23px !important;
+}
+td[class=3Dheader-logo-size], img[class=3Dheader-logo-size] {
+width: 90px !important;
+height: 36px !important;
+}
+table[class=3Dcontent-container-pad-width], td[class=3Dcontent-container-pa=
+d-width] {
+width: 32px !important;
+}
+table[class=3Dcontent-container-width], td[class=3Dcontent-container-width]=
+, div[class=3Dcontent-container-width] {
+width: 256px !important;
+margin: 0px !important;
+}
+table[class=3Dvideo-spotlight-width], td[class=3Dvideo-spotlight-width], ta=
+ble[class=3Dvideo-2col-width], td[class=3Dvideo-2col-width], table[class=3D=
+video-3col-width], td[class=3Dvideo-3col-width], table[class=3Dinner-3col-c=
+ontent-container-width], td[class=3Dinner-3col-content-container-width] {
+width: 256px !important;
+}
+table[class=3Dvideo-2col-with-avatars-width], td[class=3Dvideo-2col-with-av=
+atars-width] {
+width: 216px !important;
+}
+td[class=3Dvideo-spotlight-size], img[class=3Dvideo-spotlight-size], img[cl=
+ass=3Dvideo-2col-size], img[class=3Dvideo-3col-size] {
+width: 256px !important;
+height: 144px !important;
+}
+td[class=3Dplaylist-spotlight-size], img[class=3Dplaylist-spotlight-size], =
+td[class=3Dplaylist-2col-size], img[class=3Dplaylist-2col-size] {
+width: 204px !important;
+height: 115px !important;
+}
+table[class=3Dplaylist-spotlight-thumbs-container-size], td[class=3Dplaylis=
+t-spotlight-thumbs-container-size], table[class=3Dplaylist-2col-thumbs-cont=
+ainer-size], td[class=3Dplaylist-2col-thumbs-container-size] {
+width: 52px !important;
+height: 132px !important;
+}
+td[class=3Dplaylist-spotlight-thumbs-count-size], td[class=3Dplaylist-2col-=
+thumbs-count-size] {
+width: 52px !important;
+height: 36px !important;
+}
+td[class=3Dplaylist-spotlight-thumb-container-size], td[class=3Dplaylist-2c=
+ol-thumb-container-size] {
+width: 52px !important;
+height: 32px !important;
+}
+img[class=3Dplaylist-spotlight-thumb-size], img[class=3Dplaylist-2col-thumb=
+-size] {
+width: 48px !important;
+height: 27px !important;
+}
+table[class=3Dchannel-summary-width], td[class=3Dchannel-summary-width] {
+width: 205px !important;
+}
+td[class=3Dalign-left], span[class=3Dalign-left] {
+width: 256px !important;
+align: left !important;
+text-align: left !important;
+}
+td[class=3Dbanner-size], img[class=3Dbanner-size] {
+width: 256px !important;
+height: 32px !important;
+}
+div[class=3Dbanner-font], a[class=3Dbanner-link-font] {
+font-size: 11px !important;
+line-height: 13px !important;
+color: #999999;
+text-decoration: none;
+}
+table[class=3Dtext-pad-height], td[class=3Dtext-pad-height] {
+height: 7px !important;
+}
+table[class=3Dsmall-pad-height], td[class=3Dsmall-pad-height] {
+height: 12px !important;
+}
+table[class=3Dlarge-pad-height], td[class=3Dlarge-pad-height] {
+height: 16px !important;
+}
+img[class=3Davatar-size] {
+width: 30px !important;
+height: 30px !important;
+}
+table[class=3Dfooter-pad-width], td[class=3Dfooter-pad-width] {
+width: 20px !important;
+}
+table[class=3Dfooter-width], td[class=3Dfooter-width] {
+width: 280px !important;
+}
+table[class=3Dmore-videos-text-width], td[class=3Dmore-videos-text-width] {
+width: 166px !important;
+}
+table[class=3Dmore-videos-link-width], td[class=3Dmore-videos-link-width] {
+width: 90px !important;
+}
+span[class=3Dmore-videos-link-size] {
+width: 90px !important;
+height: 26px !important;
+}
+div[class=3Dsection-title-font] {
+font-size: 14px !important;
+}
+div[class=3Dsection-subtitle-font] {
+font-size: 12px !important;
+}
+div[class=3Dgreeting-font], div[class=3Dmore-link-font] {
+font-size: 14px !important;
+line-height: 16px !important;
+}
+div[class=3Dregular-text-font] {
+font-size: 11px !important;
+}
+div[class=3Dsystem-message-font] {
+font-size: 11px !important;
+line-height: 13px !important;
+}
+div[class=3Dspotlight-title-font], a[class=3Dspotlight-title-font] {
+font-size: 13px !important;
+line-height: 15px !important;
+}
+div[class=3Dspotlight-title-without-owner-font], a[class=3Dspotlight-title-=
+without-owner-font] {
+font-size: 20px !important;
+line-height: 24px !important;
+}
+div[class=3Dspotlight-link-font], a[class=3Dspotlight-link-font] {
+font-size: 11px !important;
+line-height: 13px !important;
+}
+div[class=3Dvideo-title-font-class], a[class=3Dvideo-title-font-class] {
+font-size: 11px !important;
+line-height: 13px !important;
+}
+div[class=3Dvideo-link-font-class], a[class=3Dvideo-link-font-class], span[=
+class=3Dvideo-link-font-class] {
+font-size: 10px !important;
+line-height: 12px !important;
+}
+div[class=3Dplaylist-spotlight-thumbs-count-number-font], div[class=3Dplayl=
+ist-2col-thumbs-count-number-font] {
+font-size: 14px !important;
+}
+div[class=3Dplaylist-spotlight-thumbs-count-text-font], div[class=3Dplaylis=
+t-2col-thumbs-count-text-font] {
+font-size: 12px !important;
+}
+div[class=3Dfooter-font] {
+font-size: 10px !important;
+line-height: 13px !important;
+}
+}
+</style>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body class=3D"suppress-border-on-mobile">
+<table class=3D"outer-container-width" width=3D"640" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0"><tr><td class=3D"suppress-on-mo=
+bile" width=3D"22" bgcolor=3D"#F0F0F0"></td><td class=3D"inner-container-wi=
+dth" width=3D"596" bgcolor=3D"#F0F0F0">
+<table class=3D"inner-container-width" width=3D"596" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"suppress-on-mobile" height=3D"16"></td>
+</tr>
+<tr>
+<td class=3D"inner-container-width" width=3D"596">
+<table class=3D"header-container-width" width=3D"596" align=3D"center" vali=
+gn=3D"top" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td width=3D"9"></td>
+<td class=3D"header-left-size" width=3D"230" height=3D"47" align=3D"left" v=
+align=3D"center">
+<img class=3D"header-left-size" width=3D"230" height=3D"47" src=3D"https://=
+www.gstatic.com/youtube/img/email/email_header_left.png" />
+</td>
+<td class=3D"header-logo-size" width=3D"118" height=3D"47" align=3D"center"=
+ valign=3D"center">
+<img class=3D"header-logo-size" width=3D"112" height=3D"47" src=3D"https://=
+www.youtube.com/yt/img/logo_2x.png" />
+</td>
+<td class=3D"header-right-size" width=3D"230" height=3D"47" align=3D"right"=
+ valign=3D"center">
+<img class=3D"header-right-size" width=3D"230" height=3D"47" src=3D"https:/=
+/www.gstatic.com/youtube/img/email/email_header_right.png" />
+</td>
+<td width=3D"9"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"suppress-on-mobile" height=3D"16"></td>
+</tr>
+<tr>
+<td class=3D"inner-container-width" width=3D"596" align=3D"left" bgcolor=3D=
+"#FFFFFF">
+<div style=3D"border-style:solid; border-width:1px; border-color:#CCCCCC;">
+<table class=3D"inner-container-width" width=3D"596" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"small-pad-height" height=3D"22" colspan=3D"3"></td>
+</tr>
+<tr>
+<td class=3D"content-container-pad-width" width=3D"40"></td>
+<td class=3D"content-container-width" width=3D"516">
+<table class=3D"content-container-width" width=3D"516" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0">
+<tr>
+<td>
+<div class=3D"greeting-font" style=3D"font-family:arial,Arial,sans-serif; f=
+ont-size:18px; line-height:24px; color:#333333; -webkit-text-size-adjust:no=
+ne;">
+<a href=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=
+=3D/channel/UCOP_sLaAdMG8ThI9LEurXlg%3Ffeature%3Dem-lss">diptaradhian</a> i=
+s live streaming <a href=3D"https://www.youtube.com/attribution_link?a=3Dc3=
+qDABS40mD-92Uz&u=3D/watch%3Fv%3DonnBkLLKkfs%26feature%3Dem-lss">HADIAH CB 6=
+00 RIBU RUPIAH, RAMAIKAN GUYS ACC HARUS WIN! - RF Classic Online Indonesia =
+#Server Solar</a>.
+</div>
+</td>
+</tr>
+</table>
+<table class=3D"suppress-on-mobile" height=3D"22" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0">
+<tr>
+<td class=3D"suppress-on-mobile" height=3D"22"></td>
+</tr>
+</table>
+<div class=3D"suppress-on-mobile" style=3D"border-bottom:1px solid #E1E1E1"=
+></div>
+<table class=3D"suppress-on-mobile" height=3D"22" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0">
+<tr>
+<td class=3D"suppress-on-mobile" height=3D"22"></td>
+</tr>
+</table>
+<table class=3D"small-pad-height" height=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0">
+<tr>
+<td class=3D"small-pad-height" height=3D"0"></td>
+</tr>
+</table>
+<table class=3D"video-spotlight-width" width=3D"516" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"video-spotlight-size" width=3D"516" height=3D"290" align=3D"ce=
+nter">
+<a href=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=
+=3D/watch%3Fv%3DonnBkLLKkfs%26feature%3Dem-lss" style=3D"text-decoration:no=
+ne; display:block;" class=3D"nonplayable">
+<img class=3D"video-spotlight-size" src=3D"http://i.ytimg.com/vi/onnBkLLKkf=
+s/sddefault_live.jpg?w=3D640&h=3D360&feature=3Dem-lss&sigh=3DgFZE2lkcs2c6aV=
+8Dyd53iGZSbRg" width=3D"516" height=3D"290" border=3D"0">
+</a>
+</td>
+</tr>
+<tr><td>
+<table class=3D"small-pad-height" height=3D"16" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0">
+<tr>
+<td class=3D"small-pad-height" height=3D"16"></td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class=3D"video-spotlight-width" width=3D"516" align=3D"left">
+<a href=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=
+=3D/watch%3Fv%3DonnBkLLKkfs%26feature%3Dem-lss" style=3D"text-decoration:no=
+ne;">
+<div class=3D"spotlight-title-font" style=3D"font-family:arial,Arial,sans-s=
+erif; font-size:15px; color:#333333; line-height:20px; font-weight:bold; -w=
+ebkit-text-size-adjust:none;">
+HADIAH CB 600 RIBU RUPIAH, RAMAIKAN GUYS ACC HARUS WIN! - RF Classic Online=
+ Indonesia #Server Solar
+</div>
+</a>
+<div class=3D"spotlight-link-font" style=3D"font-family:arial,Arial,sans-se=
+rif; font-size:13px; color:#999999; line-height:20px; -webkit-text-size-adj=
+ust:none;">
+<a class=3D"spotlight-link-font" href=3D"https://www.youtube.com/attributio=
+n_link?a=3Dc3qDABS40mD-92Uz&u=3D/channel/UCOP_sLaAdMG8ThI9LEurXlg%3Ffeature=
+%3Dem-lss" style=3D"font-size:13px; color:#999999; line-height:20px; text-d=
+ecoration:none; -webkit-text-size-adjust:none;">
+<a href=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=
+=3D/channel/UCOP_sLaAdMG8ThI9LEurXlg%3Ffeature%3Dem-lss" style=3D"font-fami=
+ly:arial,Arial,sans-serif; color:#999999; text-decoration:none;">by diptara=
+dhian</a>
+</a>
+</div>
+</td>
+</tr>
+</table>
+<table class=3D"small-pad-height" height=3D"16" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0">
+<tr>
+<td class=3D"small-pad-height" height=3D"16"></td>
+</tr>
+</table>
+<table class=3D"content-container-width" width=3D"516" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"content-container-width" width=3D"516">
+<div class=3D"spotlight-link-font" style=3D"font-family:arial,Arial,sans-se=
+rif; font-size:13px; color:#333333; line-height:15px; -webkit-text-size-adj=
+ust:none;">
+Hai guys... <br/>kali ini gue akan sering sering Live Streaming guys, karen=
+a gue bakal sering Live Streaming jadi kalian bisa kebodohan gue dalam berm=
+ain guys :(<br/><br/>------------------------------------------------------=
+---------------------------------------------------------------<br/>- Subsc=
+ribe Channel diptaradhian :<br/> https://www.youtube.com/channel/UCOP_sLaAd=
+MG8ThI9LEu&shy;rXlg<br/>Jangan Lupa Untuk Subscribe :<br/>- Subscribe Chann=
+el CanduGame :<br/> https://www.youtube.com/channel/UCgWDT9cWZHnmg2-A5nhotP=
+A<br/>- Subscribe Channel CakCop Gaming Indonesia :<br/> https://www.youtub=
+e.com/channel/UCA2n_KdawlQtqe8cnqy&shy;8wWA<br/>- Subscribe Channel Ilham D=
+anuega : <br/> https://www.youtube.com/channel/UC8BhxT0ns3lKEUBmX2f&shy;VNV=
+A<br/>- Subscribe Channel Zein Delorean :<br/> https://www.youtube.com/chan=
+nel/UCGZ03zLMXJOLq6Q7cTh&shy;QLVA<br/>-------------------------------------=
+---------------------------------------------------------------------------=
+----------<br/>Add Discord Gaming TV Indonesia :<br/>https://discord.gg/Dv7=
+sEHB<br/><br/>Spek PC :<br/>1. VGA Zotac N...
+(<a href=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=
+=3D/watch%3Fv%3DonnBkLLKkfs%26feature%3Dem-lss" style=3D"text-decoration:no=
+ne;">More</a>)
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class=3D"content-container-pad-width" width=3D"40"></td>
+</tr>
+<tr>
+<td class=3D"large-pad-height" height=3D"22" colspan=3D"3"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"small-pad-height" height=3D"16"></td>
+</tr>
+<tr>
+<td class=3D"inner-container-width" width=3D"596" align=3D"center">
+<table class=3D"inner-container-width" width=3D"596" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0">
+<tr>
+<td class=3D"footer-pad-width" width=3D"20"></td>
+<td class=3D"footer-width" width=3D"556">
+<div style=3D"color: #999999; font-size:11px; line-height:14px; font-family=
+:arial, Arial, sans-serif; -webkit-text-size-adjust:none;">
+You were sent this email because you chose to receive updates from <a href=
+=3D"https://www.youtube.com/attribution_link?a=3Dc3qDABS40mD-92Uz&u=3D/chan=
+nel/UCOP_sLaAdMG8ThI9LEurXlg%3Ffeature%3Dem-lss" style=3D"text-decoration:n=
+one; color:#1B7FCC;">diptaradhian</a>. If you don't want these updates anym=
+ore, you can <a href=3D"https://www.youtube.com/attribution_link?noapp=3D1&=
+a=3Dc3qDABS40mD-92Uz&u=3D/channel_updates_unsubscribe%3Fuid%3DhWpxze0NJbtTk=
+0cDwRtPNg%26channel_id%3DUCOP_sLaAdMG8ThI9LEurXlg%26token%3DJ_ecittUQCBXFgM=
+LzC6BzE9wqXZ8MTQ5NjkzNzEzM0AxNDk2OTM3MTMz%26feature%3Dem-lss" style=3D"text=
+-decoration:none; color:#1B7FCC;">unsubscribe here</a>.
+</div>
+</td>
+<td class=3D"footer-pad-width" width=3D"20"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"small-pad-height" height=3D"16"></td>
+</tr>
+<tr>
+<td class=3D"inner-container-width" width=3D"596">
+<table class=3D"inner-container-width" width=3D"596" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0">
+<tr>
+<td class=3D"footer-pad-width" width=3D"20"></td>
+<td class=3D"footer-width" width=3D"556">
+<div style=3D"color:#999999; font-size:11px; line-height:14px; font-family:=
+arial, Arial, sans-serif; -webkit-text-size-adjust:none;">
+=C2=A92017 YouTube, LLC 901 Cherry Ave, San Bruno, CA 94066
+<img class=3D"open_tracking_img" src=3D"https://www.youtube.com/attribution=
+_link?a=3Dc3qDABS40mD-92Uz&u=3D/gen_204%3Fa%3D" width=3D"1" height=3D"1">
+</div>
+</td>
+<td class=3D"footer-pad-width" width=3D"20"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"large-pad-height" height=3D"22"></td>
+</tr>
+</table>
+</td><td class=3D"suppress-on-mobile" width=3D"22" bgcolor=3D"#F0F0F0"></td=
+></tr></table>
+</body>
+</html>
+
+--94eb2c0cc59c125c10055174d6ab--

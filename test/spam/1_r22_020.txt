@@ -1,0 +1,377 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.107.146.133 with SMTP id u127csp3864729iod;
+        Sun, 20 Aug 2017 21:25:41 -0700 (PDT)
+X-Received: by 10.98.20.83 with SMTP id 80mr4644548pfu.37.1503289541203;
+        Sun, 20 Aug 2017 21:25:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503289541; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ThH0GAhzOQHLKV26jO0Yw9IGJHPtkbLKbSDaslAHoBgzkVh86+tT2Ccqfzaxo5kMVv
+         lkrFytvfuAr51X/NR/56IaTZAuLJicsWKOX+XLKoIZtfHJrRVVF8Vj3yo5eEJaAfeenx
+         HSWM+WFmEITrjjDrFSjT2VS+C25y25qwME15tWciVyqu26XSpbIZM9HsBmHAPCIgbK0C
+         J/fxOigL2OWl9NSo6WtfSa3Y6kT+qEKwWRhlASERjOHgx5w+qYye6E3b3cfMcIYAb0yT
+         ooYW3JgiRsDVVj7Dp3F1LMtwron+gWXpzpehKxQ/pd3+twrfzzjm6cqDvywKOTOzi98d
+         nnMw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:mime-version:subject:reply-to:from:to:feedback-id
+         :list-unsubscribe:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=l8wrvTqilJxnEUF3AIJQdCwVHTq0f848a4tx3zBmp0M=;
+        b=aOPlJTyS9NHanVWBHO0SPtF9TPM2SONdGmQI95MlMiaaaGhqKdGlNs88kDZMqzdmcy
+         Pcio4Sh4HFJF82QwvMvOVcELxTtvbmH81oPNmiLwU7yjQRuUS4dcPYWhOhYfmKK5cDzj
+         3Y9IUJrwYgyXfkFs6L4TNR+izU63gwpn0gGLX7QkIpaZESpfpU7kXzMLFqDwbBZCXfjb
+         130kpsQ9XXNCpC4qBdBLEB4E9KSjQoXYq/YpFPzLo68VVCDkYoznjEgWrXHH7h8rZmDU
+         3C31AXuQHh9BObCms7N48ihGRvnqUPofjQ0VvKrgFzuC8MANiQ2HRfO4fooKk5CEJHCl
+         gc+g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=m3Vx3+Qp;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=Pmufh1YZ;
+       spf=pass (google.com: domain of 0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com designates 54.240.27.141 as permitted sender) smtp.mailfrom=0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com
+Return-Path: <0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com>
+Received: from a27-141.smtp-out.us-west-2.amazonses.com (a27-141.smtp-out.us-west-2.amazonses.com. [54.240.27.141])
+        by mx.google.com with ESMTPS id k7si6864012pfb.444.2017.08.20.21.25.40
+        for <riandebialfian@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 20 Aug 2017 21:25:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com designates 54.240.27.141 as permitted sender) client-ip=54.240.27.141;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.tokopedia.com header.s=ds5tftndiq5w7mx3dskalrbgwofcp2ym header.b=m3Vx3+Qp;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=Pmufh1YZ;
+       spf=pass (google.com: domain of 0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com designates 54.240.27.141 as permitted sender) smtp.mailfrom=0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=ds5tftndiq5w7mx3dskalrbgwofcp2ym; d=newsletter.tokopedia.com; t=1503289540; h=List-Unsubscribe:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=eXW+v1S6K4WV/UhL92vyaD7KaKj8EUtc1jIA8pEzsHM=; b=m3Vx3+Qp6q5gPdo8WPYTDRHrmhMIaTHWIbWtiq1OV64epjxp82PNa/XMiZbGCJME SOa1HnXFzfB07Q0nUjVdJEWb7KHgbw07jWbrJf1RyT6TYDYN2qCVtY8NuzQEVV2dwwT rCLahLcmMnIGkx3F1Kx74e38VhbD0PvEP4pIKibI=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1503289540; h=List-Unsubscribe:Feedback-ID:To:From:Reply-To:Subject:MIME-Version:Content-type:Message-ID:Date; bh=eXW+v1S6K4WV/UhL92vyaD7KaKj8EUtc1jIA8pEzsHM=; b=Pmufh1YZnOgEgHC5IQDKfjXSMZD4hgbNvFjQcGjENhn0Pvs98Saf/UEtBglz07fH mUTY3eywwrA/zCurrBlgRsZ/sr9ljV4ValNzNDr74M650UbvGTOHxJ0vx5+got3GxGF zi5RMBd7EZWaQUVCli735HNYKb4qxVtWTc1nYAfM=
+List-Unsubscribe: <http://trk.newsletter.tokopedia.com/unsubscribed/nv/c/CDnUQIGO1J6OgGd0Njgp/p/30045/key/cmlhbmRlYmlhbGZpYW5AZ21haWwuY29t/>
+Feedback-ID: 1.us-west-2.ZtpRxW5g2DKpajREozyjJ7uRVLSvjr1Y1lKw+NeHo9g=:AmazonSES
+To: riandebialfian@gmail.com
+From: Tokopedia <exclusive@newsletter.tokopedia.com>
+Reply-To: exclusive@newsletter.tokopedia.com
+Subject: Hai Rian Debi Alfian! Gratis Ongkir hingga 40Ribu
+MIME-Version: 1.0
+Content-type: Multipart/Mixed; boundary="992377840599a60c2b77a45.34830175"
+Message-ID: <0101015e0309ff48-464691e0-38a5-4a82-899d-f3b476c8f61b-000000@us-west-2.amazonses.com>
+Date: Mon, 21 Aug 2017 04:25:40 +0000
+X-SES-Outgoing: 2017.08.21-54.240.27.141
+
+--992377840599a60c2b77a45.34830175
+Content-type: Multipart/Alternative; boundary="alt-992377840599a60c2b77a45.34830175"
+
+--alt-992377840599a60c2b77a45.34830175
+Content-Type: text/plain; charset="UTF-8"
+
+ 
+Yuk belanja sekarang!
+
+   
+
+ [Gunakan Kode Voucher GRATISONGKIR, Khusus Untuk Pembelian Menggunakan
+Aplikasi] [http://trk.newsletter.tokopedia.com/ec?YdsSzg/CDnUQIGO1J6OgGd0Njgp] 
+
+Hai, Rian Debi Alfian!
+
+Nikmati kejutan promo GRATIS ONGKOS KIRIM HINGGA 40RIBU, dengan minimum
+transaksi 100ribu di aplikasi. Promo ini berlaku selama periode 21 - 31 AGUSTUS
+2017, untuk semua metode pembayaran. 
+
+Gunakan kode voucher berikut di halaman pembayaran:
+
+ Kode Promo:
+ GRATISONGKIR 
+
+Berlaku hingga 31 Agustus 2017 
+
+ CEK SEKARANG
+[http://trk.newsletter.tokopedia.com/ec?FE2o6R/CDnUQIGO1J6OgGd0Njgp] 
+
+Download App Tokopedia
+[Download di AppStore]
+[http://trk.newsletter.tokopedia.com/ec?yILzay/CDnUQIGO1J6OgGd0Njgp] [Download
+di Google PlayStore]
+[http://trk.newsletter.tokopedia.com/ec?2RDRGX/CDnUQIGO1J6OgGd0Njgp] 
+
+Ikuti Kami
+[Line Messenger]
+[http://trk.newsletter.tokopedia.com/ec?TkxGj5/CDnUQIGO1J6OgGd0Njgp] [Google+]
+[http://trk.newsletter.tokopedia.com/ec?GiPAKy/CDnUQIGO1J6OgGd0Njgp] [Facebook]
+[http://trk.newsletter.tokopedia.com/ec?lANuyp/CDnUQIGO1J6OgGd0Njgp] [Twitter]
+[http://trk.newsletter.tokopedia.com/ec?01GaKo/CDnUQIGO1J6OgGd0Njgp] [Instagram]
+[http://trk.newsletter.tokopedia.com/ec?lVlYA4/CDnUQIGO1J6OgGd0Njgp] 
+
+Hubungi Kami
+[http://trk.newsletter.tokopedia.com/ec?ALbOVY/CDnUQIGO1J6OgGd0Njgp] | Syarat &
+Ketentuan [http://trk.newsletter.tokopedia.com/ec?XpQxQJ/CDnUQIGO1J6OgGd0Njgp] |
+Kebijakan Privasi
+[http://trk.newsletter.tokopedia.com/ec?gAKSwS/CDnUQIGO1J6OgGd0Njgp] |
+Unsubscribe
+[http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/CDnUQIGO1J6OgGd0Njgp/p/30045/key/cmlhbmRlYmlhbGZpYW5AZ21haWwuY29t/]
+
+ © 2009-2017, PT Tokopedia 
+
+ 
+
+--alt-992377840599a60c2b77a45.34830175
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><title></title><style type="text/css">
+        div, p, a, li, td { 
+            -webkit-text-size-adjust:none; 
+        }
+        p {
+            font-size: 14px;
+            Margin-bottom: 10px;
+        }
+        body {
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            background-color: #ffffff;
+        }
+        table {
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #333333;
+        }
+        td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+        }
+        a {
+            border-radius:3px;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        .webkit {
+            max-width: 600px;
+        }
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            -webkit-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.75);
+        }
+        .full-width-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .inner {
+            padding: 20px;
+        }
+        a {
+            color: #ee6a56;
+            text-decoration: underline;
+        }
+        .h1 {
+            font-size: 21px;
+            font-weight: bold;
+            Margin-bottom: 18px;
+        }
+
+        .one-column .contents {
+            text-align: center;
+        }
+        .two-column {
+            text-align: center;
+            font-size: 0;
+        }
+        .two-column .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .contents {
+            width: 100%;
+        }
+        .two-column .contents {
+            font-size: 14px;
+            text-align: center;
+            color:#000;
+        }
+        .two-column img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .two-column .text {
+            padding-top: 30px;
+        }
+
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .three-column .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .three-column .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+        .three-column img {
+            width: 100%;
+            max-width: 60px;
+            height: auto;
+        }
+        .three-column .text {
+            padding-top: 10px;
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+            text-align:center;
+        }
+    </style><!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table {border-collapse: collapse !important;}
+        </style>
+    <![endif]--></head><body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;">
+
+    <!--======================= SUB SUBJECT ========================-->
+    <p style="font-size:0px">Yuk belanja sekarang!</p>
+    <!--======================= /SUB SUBJECT ========================-->
+
+
+    <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+        <div class="webkit" style="max-width:600px;">
+                <div style="font-family:Arial, sans-serif;font-size:1px;color:#f6f7fb;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;">
+                </div>
+
+            <!--[if (gte mso 9)|(IE)]>
+                <table width="600" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+                <tr>
+                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+            <![endif]-->
+
+            <table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;-webkit-box-shadow:inset 0px -1px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow:inset 0px -1px 5px 0px rgba(0,0,0,0.75);box-shadow:inset 0px -1px 5px 0px rgba(0,0,0,0.75);"><tbody><tr><td align="center" width="100%" height="10" style="background-color:#42B549;padding:0;">
+                                     
+                  </td>
+                </tr><tr><td class="contents">
+                        <!--============ HEADER BANNER ============-->
+                        <a href="http://trk.newsletter.tokopedia.com/ec?YdsSzg/CDnUQIGO1J6OgGd0Njgp" target="_blank">
+                            <img src="https://d39sghb3udgxv0.cloudfront.net/30045/1503058451.jpg" align="absbottom" alt="Gunakan Kode Voucher GRATISONGKIR, Khusus Untuk Pembelian Menggunakan Aplikasi" style="display:block; width:100%; height:auto; float:left;"></a>
+                        <!--============ /HEADER BANNER ============-->
+                    </td>
+                </tr><tr><td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                        <table width="100%" border="0" style="border-spacing:0;font-family:sans-serif;color:#333333;background:#ffffff;"><tbody><tr><td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                    <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;"><tbody><tr><td class="inner contents" style="background-color:#ffffff; padding-top:0;padding-bottom:10px;padding-right:20px;padding-left:20px;width:100%;text-align:left; color:#333333; font-size:20px;">
+                                                <!--========================= COPY ======================-->
+                                                <p style="color:#333333; font-size:24px; font-weight:600;">Hai, Rian Debi Alfian!</p>
+                                                <p style="font-size:15px;line-height: 1.8em;">Nikmati kejutan promo <b>gratis Ongkos Kirim hingga 40ribu</b>, dengan minimum transaksi 100ribu di aplikasi. Promo ini berlaku selama periode <b>21 - 31 Agustus 2017</b>, untuk semua metode pembayaran.
+                                                <br><br>
+                                                Gunakan kode voucher berikut di halaman pembayaran:
+                                                </p>
+                                                <!--========================= /COPY ======================-->
+                                            </td>
+                                        </tr><tr><td>
+                                                <!--========================= PROMO CODE ===============================-->
+                                                <div style="font-weight:bold; padding:10px 30px 5px;font-size:26px;color:#f26039;text-align:center;"> 
+                                                <span style="font-size:12px;color:#999;">Kode Promo:<br></span>
+                                                GRATISONGKIR 
+                                                </div>
+                                                <div style="background-color:#f26039;height:4px;width:150px;text-align:center;margin:0 auto;">
+                                                </div> 
+                                                <div style="font-size:12px;color:#999;padding-top:8px;padding-bottom:20px;text-align:center;">Berlaku hingga 31 Agustus 2017
+                                                </div>
+                                                 <!--========================= /PROMO CODE ===============================-->
+                                            </td>
+                                        </tr><tr><td align="center" style="padding-top:10px;padding-bottom:30px;padding-right:10px;padding-left:10px;">
+                                                    <table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="center">
+                                <a href="http://trk.newsletter.tokopedia.com/ec?FE2o6R/CDnUQIGO1J6OgGd0Njgp" target="_blank" style="font-size: 20px; font-family: Arial, sans-serif; font-weight:bold; color: #ffffff; text-decoration: none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background-color: #f26039; border-top: 12px solid #f26039; border-bottom: 12px solid #f26039; border-right: 20px solid #f26039; border-left: 20px solid #f26039; display: inline-block;">CEK SEKARANG</a>
+                                                            </td>
+                                                        </tr></tbody></table></td>
+                                        </tr></tbody></table></td>
+                            </tr></tbody></table></td>
+              </tr><tr><td align="center" width="100%" height="4" style="background-color:#42B549;">
+
+                  </td>
+              </tr><tr><td class="two-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;background:#f7f7f7;">
+
+                      <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+                          <tr>
+                          <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <![endif]-->
+                      <!--=================== DOWNLOAD APP ====================-->
+                      <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                          <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;"><tbody><tr><td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;">
+                                      <table class="contents" style="border-spacing:0;font-family:sans-serif;width:100%;font-size:14px;text-align:center;color:#333333;"><tbody><tr><td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                  <p style="font-family:arial, sans-serif;font-size:11px;Margin:0;Margin-bottom:10px;">Download App Tokopedia</p>
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?yILzay/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233846.png" alt="Download di AppStore" width="auto" height="25" style="border-width:0;max-height:25px;width:auto;"></a>
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?2RDRGX/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/205872016/07/1468233889.png" alt="Download di Google PlayStore" width="auto" height="25" style="border-width:0;max-height:25px;width:auto;"></a>
+                                              </td>
+                                          </tr></tbody></table></td>
+                              </tr></tbody></table></div>
+                      <!--=================== /DOWNLOAD APP ====================-->
+
+                      <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <![endif]-->
+
+                      <!--=================== SOCIAL MEDIA ====================-->
+                      <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                          <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;"><tbody><tr><td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;">
+                                      <table class="contents" style="border-spacing:0;font-family:sans-serif;width:100%;font-size:14px;color:#333333;"><tbody><tr><td valign="middle" align="left" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align: center;">
+                                                  <p style="font-family:arial, sans-serif;font-size:11px;Margin:0;Margin-bottom:10px;">Ikuti Kami</p>
+
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?TkxGj5/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://d39sghb3udgxv0.cloudfront.net/30045/1497495992.jpg" alt="Line Messenger" width="25" style="border-width:0;border-radius:90%;max-width:25px;"></a>
+
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?GiPAKy/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt="Google+" width="25" style="border-width:0;border-radius:90%;max-width:25px;"></a>
+
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?lANuyp/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt="Facebook" width="25" style="border-width:0;border-radius:90%;max-width:25px;"></a>
+
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?01GaKo/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt="Twitter" width="25" style="border-width:0;border-radius:90%;max-width:25px;"></a>
+
+                                                  <a href="http://trk.newsletter.tokopedia.com/ec?lVlYA4/CDnUQIGO1J6OgGd0Njgp" style="border-radius:3px;color:#ee6a56;text-decoration:underline;"><img src="https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt="Instagram" width="25" style="border-width:0;border-radius:90%;max-width:25px;"></a>
+                                              </td>
+                                          </tr></tbody></table></td>
+                              </tr></tbody></table></div>
+                      <!--=================== /SOCIAL MEDIA ====================-->
+
+                      <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          </table>
+                      <![endif]-->
+
+                  </td>
+              </tr><tr><td class="one-column" style="background-color:#f7f7f7; padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;"><tbody><tr><td class="inner contents" align="left" style=" color:#333333; font-family:arial;font-size:12px;padding-top:0;padding-bottom:10px;padding-right:20px;padding-left:20px;width:100%;text-align:center; width:600px;">
+                                  <p style="font-family:arial; text-align:center; sans-serif;font-size:12px;Margin:0;Margin-bottom:10px; margin-top:0px;">
+                                  <a href="http://trk.newsletter.tokopedia.com/ec?ALbOVY/CDnUQIGO1J6OgGd0Njgp" target="_blank" style="text-decoration: none; color: #2fbe38;">Hubungi Kami</a> | 
+                                  <a href="http://trk.newsletter.tokopedia.com/ec?XpQxQJ/CDnUQIGO1J6OgGd0Njgp" target="_blank" style="text-decoration: none; color: #2fbe38;">Syarat &amp; Ketentuan</a> | 
+                                  <a href="http://trk.newsletter.tokopedia.com/ec?gAKSwS/CDnUQIGO1J6OgGd0Njgp" target="_blank" style="text-decoration: none; color: #2fbe38;">Kebijakan Privasi</a> | 
+                                   <a href="http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/CDnUQIGO1J6OgGd0Njgp/p/30045/key/cmlhbmRlYmlhbGZpYW5AZ21haWwuY29t/" style="text-decoration: none; color: #2fbe38;">Unsubscribe</a></p>
+                              </td>
+                          </tr><tr><td class="inner contents" align="left" style=" color:#333333; font-family:arial;font-size:10px;padding-top:0;padding-bottom:20px;padding-right:20px;padding-left:20px;width:100%;text-align:center; width:600px;">
+                                  © 2009-2017, PT Tokopedia
+                              </td>
+                          </tr><tr><td align="center" width="100%" height="20" style="background-color:#42B549">
+
+                              </td>
+                          </tr></tbody></table></td>
+              </tr><!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+              <![endif]--></tbody></table></div>
+    </center>
+
+
+
+<img alt="" src="http://trk.newsletter.tokopedia.com/o/nv/c/CDnUQIGO1J6OgGd0Njgp.gif"></body></html>
+
+
+--alt-992377840599a60c2b77a45.34830175--
+--992377840599a60c2b77a45.34830175--

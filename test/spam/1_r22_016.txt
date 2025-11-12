@@ -1,0 +1,1633 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.157.33.58 with SMTP id i55csp1642438otb;
+        Thu, 21 Sep 2017 01:36:26 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QDFClI1OE7eDFzpqsT67o3JRH0OXj7DmYk+NIRKGlA+3yqwPMGZ4qUypHoAmL3FCr7yUmcQ
+X-Received: by 10.55.52.19 with SMTP id b19mr1907682qka.218.1505982986616;
+        Thu, 21 Sep 2017 01:36:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505982986; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OXUoUiQ+uYYACrCUIThBgD2DH7SEOuK/fmzRaQiyJ+z6KTmHVs29zhQF3dUSURLF2X
+         pgPux1D4JUXjidccfIK40pLIzJxG4PrBj1EXaPoF6PM4kSv6ffW4j7gnPVZvP3Ptv57x
+         sS57uWVUKIhdpf/KWjovkvgndh5zTPcvCMz2p2PJ4Zs6CikQg2zkwaIB8/o+C9pmQGcO
+         NceUhmSuXxFtfLBUzcgMNBQpik2lc3NgGtoAMTCdkAdgeCLQi8d7FkxrvUL9j2UNjKwr
+         MCf+FB4U9WyI4o3bdc3/pHOh1Puvcw3oNUO3PzKvX++SGUnD3wGSdijaSgTRpJqa5PZ4
+         05kw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:date:sender
+         :domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=SXyP7JZ39OLlfq0koBCFXSYR0APLSb25gV+Sjn9SAYU=;
+        b=z95l9YiMhR/LhMrU1noz0J2NBY8TUTa5USvaDFsL1lMK5kf7AKiryHm59yrQbVAqXK
+         SBclmVbV2Iy2C2KmVz9KCjPtZjK5d4AjnhXiQ2SKcOmKc2Ov+NX0i4uuef3jO46LYlie
+         zQaKEjJSMWH9mLrPcUi+wgBlTbtPwvtVjDqjE/hcnZGLNq/l/Ifwy9OVa4zhDaN0obVN
+         ycKVp91SaBpxR3Ue3q3Nio97OVc92T3quyskFRLXPAH7m6qC8b+9vVfrqgbX9bweAmJJ
+         6BJCA7aE0YfwTymj/IUWeLliRJmh9aG66MhGWZ5BNln0F8ai2dR+Fx4l0bGR6/ydjM1e
+         Rdiw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=dwV4sacn;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=2vJhm4GQ;
+       spf=pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) smtp.mailfrom=bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com>
+Received: from mail224.static.mailgun.info (mail224.static.mailgun.info. [104.130.122.224])
+        by mx.google.com with UTF8SMTPS id k33si811712qte.59.2017.09.21.01.36.26
+        for <riandebialfian@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 21 Sep 2017 01:36:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) client-ip=104.130.122.224;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=dwV4sacn;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=2vJhm4GQ;
+       spf=pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) smtp.mailfrom=bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=newsletter.bukalapak.com; q=dns/txt; s=smtp; t=1505982986; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=SXyP7JZ39OLlfq0koBCFXSYR0APLSb25gV+Sjn9SAYU=; b=dwV4sacntvKN+oZkt96rhpA0mFaSSTOGnt8YLMM0IhI0MfywIR+gmws4HxsQqQYkGzBP7PJu tl+gZHV7YpWNXTLc9GethFHtXyk3/C166cVO3j7VH8XKfd2JQXFXcfPXSEZKzuv9fGLLK5EZ 52jilzCfvv47ElLuwFG/8yaQDEE=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=newsletter.bukalapak.com; s=smtp; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=jQtTj3LJf/NmnCncV84b349kzmBFo8hfxckSV9cgqd8IPaCqarMSkkHDIvhhDVdnpSC/DX oiZ8iWsVmEzhsmmKyxk6VYaaKpVy2p8GK7OFFUxf7x7lMXQ9UfOb9mQbOvxqB+XC5m9BBfmm YtW98lgPixhwYUrUIEdBHNTiMwgLs=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1505982986; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=SXyP7JZ39OLlfq0koBCFXSYR0APLSb25gV+Sjn9SAYU=; b=2vJhm4GQIdF6ad9Zd37yojx6t2QLtFLMLletOj0bRLTbg3xeOGgF2dc9PCPd4fO2Kdsu6kKC qMA0EWXjc0/DkOJEe5j7wocn6Lmdoyw1QLvMhKFHQ3gGR7xNSjhtYwHdCKSbIrQb2zAsXA0g Mol3sVC2aexjcaWheKjWv8bOAxE=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=qBrsJBz0D9URHUO3RNZHL+J1H5hYQe4S8rSNq4U+E8wiH8WBpF/eqVQ03UtJIMhDgpwxo9 F0oI0tAChl1uitZEgHXa0858bqwFLxO60PEtbDK1Y6QowoM/ywBHUU/ApQ7Pxllql7Jf8XPw dutobtFRfSMSQvn3yEw02Eo+7sdX4=
+X-Feedback-Id: 57988b8e803267cd4092b267:mailgun
+Sender: info=newsleter.bukalapak.com@newsletter.bukalapak.com
+Date: Thu, 21 Sep 2017 08:36:26 +0000
+X-Mailgun-Sending-Ip: 104.130.122.224
+X-Mailgun-Sid: WyJkMGJjMSIsICJyaWFuZGViaWFsZmlhbkBnbWFpbC5jb20iLCAiZmM1YTBiIl0=
+Received: by luna.mailgun.net with HTTP; Thu, 21 Sep 2017 08:34:31 +0000
+Message-Id: <20170921083431.121688.5EE15F9CCD3D8128@newsletter.bukalapak.com>
+To: riandebialfian@gmail.com
+From: Bukalapak <info@newsleter.bukalapak.com>
+Subject: Produk Terkini dari Brand Resmi Ini Pas buat Kamu
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="09d40b5594c04d3a8f3a65c95bae5e8b"
+
+--09d40b5594c04d3a8f3a65c95bae5e8b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+Ada Diskon Hingga 65% dan Hadiah Langsung.
+
+Tampilkan Email Ini di Browser=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fnewsletter_manager%2Fview%2F%3Fid%3D844%26unsub_token%3Dfc4=
+c3049391b6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbG=
+ZpYW5AZ21haWwuY29t%26data%3D&lllsttu=3Da701ec5bd860c8a7a7a8e593e84a84e27217=
+fd0bd1fbf7f8ab376e82995c18c5&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+=
+Pas+buat+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfia=
+n%40gmail.com )
+
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages=
+35&lllsttu=3D1a311e3c0cbda7a0dae0694553f07a8fa8600369b7cf6ae2537aac3e80308e=
+38&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&tag=3Dnewsle=
+tter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Rekomendasi Produk Terkini
+
+dari Lapak Brand Resmi
+
+Dapatkan promo terbatas untuk produk-produk
+terbaru dan terbaik
+
+dari lapak brand resmi.
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+brand%2Fofficial%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campa=
+ign%3Dbrandpages35&lllsttu=3D6ef5d6681229fda31b5594cc93bd66bd04f093b36d8126=
+45da4fa6e07f707f31&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+K=
+amu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.=
+com )
+
+
+Deuter Official
+
+Diskon 30%
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+deuter-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campai=
+gn%3Dbrandpages35&lllsttu=3D66d285339f841058cc31357d936d67032a48d5a25397688=
+8d0c411cd745cebae&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Ka=
+mu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+deuter-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campai=
+gn%3Dbrandpages35&lllsttu=3D66d285339f841058cc31357d936d67032a48d5a25397688=
+8d0c411cd745cebae&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Ka=
+mu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+Oceantoy
+Official
+
+Diskon Hingga
+65% + Gratis Ongkir
+
+(khusus mainan
+Ride On)
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+oceantoy-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_camp=
+aign%3Dbrandpages35&lllsttu=3D1f0563b647398926ec11e5ebc5a4d4304014c56cbdf47=
+81e241c19a4589938ba&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+=
+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail=
+.com )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+oceantoy-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_camp=
+aign%3Dbrandpages35&lllsttu=3D1f0563b647398926ec11e5ebc5a4d4304014c56cbdf47=
+81e241c19a4589938ba&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+=
+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail=
+.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo-detail%2Fbeli-tiket-pesawat-sekarang-diskon-rp150-000%3Futm_source%3D=
+newsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&lllsttu=3Df16=
+6be752a210a7b244d1d467028259dbb344667bda5394144c91d8751e70ffc&subject=3DPro=
+duk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&tag=3Dnewsletter&type=3DClic=
+kEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Comforta
+Springbed Official
+
+Diskon Hingga
+55%
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+comforta-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_camp=
+aign%3Dbrandpages35&lllsttu=3Df6116b1701ec37f38013b0d11bdf3d1b4d1ee49993afd=
+6834e7cb8078d2ecdf7&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+=
+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail=
+.com )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+comforta-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_camp=
+aign%3Dbrandpages35&lllsttu=3Df6116b1701ec37f38013b0d11bdf3d1b4d1ee49993afd=
+6834e7cb8078d2ecdf7&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+=
+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail=
+.com )
+
+
+Kapal Api
+
+Diskon 10% +
+Hadiah Langsung
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+kapal-api-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_cam=
+paign%3Dbrandpages35&lllsttu=3Dbd5058477c0491a5f2b1bbd1b02b17faaad4e6d3c599=
+cba121059d349aa13eae&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat=
++Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmai=
+l.com )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+kapal-api-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_cam=
+paign%3Dbrandpages35&lllsttu=3Dbd5058477c0491a5f2b1bbd1b02b17faaad4e6d3c599=
+cba121059d349aa13eae&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat=
++Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmai=
+l.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+promo-detail%2Fbayar-cincai%3Futm_source%3Dnewsletter%26utm_medium%3Demail%=
+26utm_campaign%3Dbrandpages35&lllsttu=3Dc75cecbab344056a1fe51bf24f31c8e15df=
+e3707ae827ecc64ae9d096e1e070c&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini=
++Pas+buat+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfi=
+an%40gmail.com )
+
+
+JBL Official
+Store
+
+Diskon Hingga
+40%
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+jbl-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%=
+3Dbrandpages35&lllsttu=3D68d9f54bbda6cf4ee641c5e6b2b4c29065b1d1413b0389345a=
+fe4775a7fecf5b&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&=
+tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com =
+)
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+jbl-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%=
+3Dbrandpages35&lllsttu=3D68d9f54bbda6cf4ee641c5e6b2b4c29065b1d1413b0389345a=
+fe4775a7fecf5b&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&=
+tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com =
+)
+
+
+MG Sports &
+Music
+
+Diskon Hingga
+10% (khusus LP Support)
+
+Buka Aja di Sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+mg-sports-and-music-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail=
+%26utm_campaign%3Dbrandpages35&lllsttu=3Dedcd4886244a9e5c672d620960db1db8eb=
+12e3c7293e4603d661f8f6ad35e1e6&subject=3DProduk+Terkini+dari+Brand+Resmi+In=
+i+Pas+buat+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialf=
+ian%40gmail.com )
+
+
+
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+mg-sports-and-music-official%3Futm_source%3Dnewsletter%26utm_medium%3Demail=
+%26utm_campaign%3Dbrandpages35&lllsttu=3Dedcd4886244a9e5c672d620960db1db8eb=
+12e3c7293e4603d661f8f6ad35e1e6&subject=3DProduk+Terkini+dari+Brand+Resmi+In=
+i+Pas+buat+Kamu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialf=
+ian%40gmail.com )
+
+
+Ingin dapat promo menarik dari brand resmi
+lainnya?
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+brand%2Fofficial%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campa=
+ign%3Dbrandpages35&lllsttu=3D6ef5d6681229fda31b5594cc93bd66bd04f093b36d8126=
+45da4fa6e07f707f31&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+K=
+amu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.=
+com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages=
+35&lllsttu=3D1a311e3c0cbda7a0dae0694553f07a8fa8600369b7cf6ae2537aac3e80308e=
+38&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&tag=3Dnewsle=
+tter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Copyright =C2=A9 2017, PT.
+Bukalapak.com All rights reserved.
+Plaza City View Lt. 1. Jl. Kemang Timur No. 22
+Jakarta Selatan. Indonesia. 12510
+
+Customer Support:
+Buka Bantuan=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbit.l=
+y%2F2apHgGP&lllsttu=3D6a177fbaf46acb93d25bf484f487ed0b0d0ec578274a053f47be5=
+c5058f98bc6&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&tag=
+=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fplay=
+.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.bukalapak.android%26referre=
+r%3DAIEMF-NWSFT&lllsttu=3D5e9ae9755388435ac76705537468207f24e88dc55b84ef435=
+d1d4a6384013776&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu=
+&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com=
+ )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F1XmbQ4k&lllsttu=3Dd8326c3d0359c1e505a654f37d0b773ffcfbeec85b163305374a=
+b0df7e3ad5d4&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F2li9cPg&lllsttu=3D9c0e342531e50b6e8e0efecaa08c312991c39fc27a692c33fe06=
+9a3f1a680630&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F1ImzzOI&lllsttu=3D2b4c18f91f5ed448bd8d136f364bdb791ef6af56fde862370855=
+6fd8a0458001&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F2jWzjdG&lllsttu=3D895bbbb5c1e0db62bca3229dd60afbccb375f0b5566cb3245419=
+7f7d900f7e9d&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F1W3g2Zx&lllsttu=3Da50b485f986e3f9ddf390ca0b5640f2ce23785468781a1978f08=
+7cbb61ad9a13&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttp%3A%2F%2Fbukl.=
+pk%2F1TKOre2&lllsttu=3Dc4536bedfc1ffc1554b2548f153e11e65532de9867d599f0aa6c=
+f7f5f00e5aed&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&ta=
+g=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Kami melindungi penggunaan data dan infomasi penting para
+pengguna Bukalapak.
+Silakan lihat di Kebijakan Privasi=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F=
+privacy%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbra=
+ndpages35&lllsttu=3Ddd348d13cfde6de08cf02759063dbd4ca52a63e256f4f272c73227e=
+619fef741&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&tag=
+=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+ Anda memperoleh email ini karena keanggotaan Anda pada
+Bukalapak.
+Untuk berhenti berlangganan newsletter klik di sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2751&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fother_settings%2Funsubscribe_newsletter%3Funsub_token%3Dfc4=
+c3049391b6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbG=
+ZpYW5AZ21haWwuY29t&lllsttu=3Db31dfd5d4d035077b37c31888d68794209649fa0e57028=
+2cb8279fca36a59224&subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+K=
+amu&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.=
+com )
+.
+
+Harap jangan membalas email
+ini, karena email ini dikirimkan secara otomatis oleh sistem.
+--09d40b5594c04d3a8f3a65c95bae5e8b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"width: 100%;">
+
+<head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <!--[if !mso]><!-->
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <!--<![endif]-->
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Produk Terkini dari Brand Resmi Ini Pas buat Kamu</title>
+ =20
+<style>.ReadMsgBody {
+width: 100%; background-color: #ffffff;
+}
+.ExternalClass {
+width: 100%; background-color: #ffffff;
+}
+.ExternalClass {
+line-height: 100%;
+}
+body {
+-webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padd=
+ing: 0;
+}
+img:hover {
+opacity: 1 !important;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    width: auto !important;
+  }
+  *[class=3D"table-inner"] {
+    width: 90% !important; text-align: center !important;
+  }
+  *[class=3D"table-full"] {
+    width: 100% !important; text-align: center !important;
+  }
+  img[class=3D"img1"] {
+    width: 100% !important; height: auto !important;
+  }
+}
+</style>
+</head>
+
+<body style=3D"-webkit-text-size-adjust: none; -ms-text-size-adjust: none; =
+margin: 0; padding: 0;">
+<!--hidden preview-->
+ <div style=3D"display: none; font-size: 1px; color: #333333; line-height: =
+1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+  Ada Diskon Hingga 65% dan Hadiah Langsung.           =20
+</div>
+<!--end hidden preview-->
+<!--Modul-->
+  <table bgcolor=3D"#ffffff" align=3D"center" width=3D"700" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout:=
+ fixed; margin: 0 auto;">
+    <tr>
+            <td height=3D"0"></td>
+          </tr>
+    <tr>
+      <td align=3D"center">
+        <table bgcolor=3D"#ffffff" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-radius: 0px; border-spacing: 0; t=
+able-layout: fixed; margin: 0 auto; border: 0px solid #e2e2e2;">
+          <tr>
+            <td height=3D"20"></td>
+          </tr>
+          <tr>
+            <td width=3D"700" align=3D"center">
+              <table width=3D"700" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center; vertica=
+l-align: top; font-size: 0;">
+                  =20
+                    <!--right-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin:=
+ 0 auto;">
+                        <tr>
+                          <td width=3D"700" align=3D"center">
+                            <table align=3D"center" width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; tabl=
+e-layout: auto; margin: 0 auto;">
+                              <!--content-->
+                              <tr>
+                                <td align=3D"center"><a href=3D"http://glim=
+psetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fwww.bukalapak=
+.com%2Fnewsletter_manager%2Fview%2F%3Fid%3D844%26unsub_token%3Dfc4c3049391b=
+6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbGZpYW5AZ21=
+haWwuY29t%26data%3D&amp;lllsttu=3Da701ec5bd860c8a7a7a8e593e84a84e27217fd0bd=
+1fbf7f8ab376e82995c18c5&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+P=
+as+buat+Kamu&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Dri=
+andebialfian%40gmail.com" target=3D"blank" style=3D"font-family: Open sans,=
+ Arial, Sans-serif; font-size: 11px; color: #d71249; font-style: regular; t=
+ext-decoration: underline; font-weight: regular;">Tampilkan Email Ini di Br=
+owser</a></td>
+                              </tr>
+                              <!--end content-->=20
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end right-->
+                   =20
+                  </td>
+                </tr>
+                <tr>
+                  <td height=3D"20"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end Modul-->=20
+<!--Body-->
+  <table width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cel=
+lspacing=3D"0" bgcolor=3D"#ffffff" style=3D"border-spacing: 0; table-layout=
+: fixed; margin: 0 auto;">
+    <tr>
+            <td height=3D"0"></td>
+          </tr>
+          <table bgcolor=3D"#ffffff" width=3D"100%" border=3D"0" align=3D"c=
+enter" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-bottom-width: 0p=
+x; border-bottom-color: #ffffff; border-bottom-style: solid; border-spacing=
+: 0; table-layout: fixed; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center; vertica=
+l-align: top; font-size: 0;">
+                    <!--logo-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table width=3D"700" border=3D"0" align=3D"center" ce=
+llpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout:=
+ auto; margin: 0 auto;">
+                       <tr>
+            <td height=3D"10"></td>
+          </tr>
+                        <tr>
+                          <td align=3D"center" width=3D"100">
+                            <table border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                              <tr>
+                                <td align=3D"center" style=3D"line-height: =
+0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F%3Futm_source%3Dnewsletter%2=
+6utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D1a311e3c0cb=
+da7a0dae0694553f07a8fa8600369b7cf6ae2537aac3e80308e38&amp;subject=3DProduk+=
+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;type=3D=
+ClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" s=
+tyle=3D"color: #f95759; text-decoration: none;"> <img style=3D"display: blo=
+ck; line-height: 0px; font-size: 0px; height: 40px; width: auto; border: 0p=
+x;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805fb8=
+f125/583d6d61cee46d0a32851fd2/adf253e0f2856799aacedf3a52a838d2/Logo_Bukalap=
+ak.png" alt=3D"Logo"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+            <td height=3D"10"></td>
+          </tr>
+                      </table>
+                    </div>
+                    <!--end logo-->
+                     =20
+                  </td>
+                </tr>
+              </table>
+    <tr>
+      <td align=3D"center">
+        <table width=3D"100%" bgcolor=3D"#FFFFFF" border=3D"0" align=3D"cen=
+ter" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-radius: 0px; borde=
+r-spacing: 0; table-layout: fixed; margin: 0 auto; border: 0px solid #e2e2e=
+2;">
+          <tr>
+            <td align=3D"center" width=3D"700">
+             =20
+                    <!-- 1/1 content center -->
+  <table align=3D"center" bgcolor=3D"#f2f2f2" width=3D"700" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout:=
+ auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td height=3D"30"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"600">
+              <table width=3D"90%" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                <!-- content -->
+                <tr>
+                  <td align=3D"center" style=3D"font-family: helvetica, 'Op=
+en Sans', Arial, sans-serif; font-size: 24px; color: #2B2B2B; line-height: =
+28px;">
+<strong>Rekomendasi Produk Terkini<br>
+                    dari Lapak Brand Resmi</strong><br>
+</td>
+                </tr>
+                <!-- end content -->
+                <tr>
+            <td height=3D"10"></td>
+          </tr>
+                <!-- content -->
+                <tr>
+                  <td align=3D"center" style=3D"font-family: helvetica, 'Op=
+en Sans', Arial, sans-serif; font-size: 14px; color: #2B2B2B; line-height: =
+22px;">Dapatkan promo terbatas untuk produk-produk terbaru dan terbaik<br>
+                    dari lapak brand resmi.<br>
+</td>
+                </tr>
+                <!-- end content -->
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"10"></td>
+          </tr>
+          <!-- header img -->
+                    <table width=3D"700" border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 0px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.=
+com%2Fbrand%2Fofficial%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm=
+_campaign%3Dbrandpages35&amp;lllsttu=3D6ef5d6681229fda31b5594cc93bd66bd04f0=
+93b36d812645da4fa6e07f707f31&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+=
+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=
+=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"color: #f95759; t=
+ext-decoration: none;"><img style=3D"display: block; line-height: 0px; font=
+-size: 0px; border: 0px;" class=3D"img1" src=3D"https://trello-attachments.=
+s3.amazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/d8625689=
+e96f471d30cbafed7aec3ff4/atas_31.png" alt=3D"img" width=3D"700" height=3D"2=
+50"></a></td>
+                </tr>
+                    </table>
+                    <!-- end header img -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- end 1/1 content center -->
+                    <!-- brand 1-3 -->
+  <div style=3D"display: table; width: 100%; border-spacing: 0; border-coll=
+apse: collapse; background-color: #ffffff; margin: auto 0;">
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+bgcolor=3D"#ffffff" style=3D"background-color: #ffffff; border-spacing: 0; =
+table-layout: auto; margin: 0 auto;">
+      <tbody>
+<tr>
+        <td align=3D"center" class=3D"aapl-container" style=3D"padding: 0px=
+;">
+          <!-- img 1 + img 2 -->
+          <table width=3D"700" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" style=3D"background-color: #f2f2f2; border-spacing:=
+ 0; table-layout: auto; margin: 0 auto;">
+            <tbody>
+<tr>
+              <td align=3D"center" valign=3D"top" style=3D"border-top-width=
+: 10px; border-top-color: #ffffff; border-top-style: solid; border-bottom-w=
+idth: 10px; border-bottom-color: #ffffff; border-bottom-style: solid;">
+                <table width=3D"700" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;"=
+>
+                  <tbody>
+<tr>
+                    <td align=3D"center" valign=3D"bottom" width=3D"345" st=
+yle=3D"padding-top: 25px; border-right-color: #ffffff; border-right-width: =
+5px; border-right-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">Deuter Official</td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon 30%<br>
+                                                  <br>
+</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fdeuter-official%3Futm_source%3Dnewslet=
+ter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D66d285=
+339f841058cc31357d936d67032a48d5a253976888d0c411cd745cebae&amp;subject=3DPr=
+oduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;ty=
+pe=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_bla=
+nk" style=3D"color: #ffffff; text-decoration: none; font-weight: regular;">=
+Buka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: bot=
+tom; padding-top: 10px;">
+                            <div class=3D"img-1">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fdeuter-official%3Futm_source%3Dn=
+ewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D=
+66d285339f841058cc31357d936d67032a48d5a253976888d0c411cd745cebae&amp;subjec=
+t=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&=
+amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=
+=3D"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/0fd888f336eb=
+f97f95db89865edf0cc2/deuter.png" width=3D"304" style=3D"display: block; mar=
+gin: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                    <td align=3D"center" valign=3D"top" width=3D"345" style=
+=3D"padding-top: 25px; border-left-color: #ffffff; border-left-width: 5px; =
+border-left-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">Oceantoy Official</td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon Hingga 65% + Gratis Ongkir<br>
+                                                  (khusus mainan Ride On)<b=
+r>
+</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Foceantoy-official%3Futm_source%3Dnewsl=
+etter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D1f05=
+63b647398926ec11e5ebc5a4d4304014c56cbdf4781e241c19a4589938ba&amp;subject=3D=
+Produk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;=
+type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_b=
+lank" style=3D"color: #ffffff; text-decoration: none; font-weight: regular;=
+">Buka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: top=
+; padding-top: 10px;">
+                            <div class=3D"img-2">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Foceantoy-official%3Futm_source%3=
+Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=
+=3D1f0563b647398926ec11e5ebc5a4d4304014c56cbdf4781e241c19a4589938ba&amp;sub=
+ject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewslett=
+er&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" targe=
+t=3D"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/59437d023bd4=
+e7d5edb24c5ec45ae098/toys.png" width=3D"304" style=3D"display: block; margi=
+n: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                  </tr>
+                </tbody>
+</table>
+              </td>
+            </tr>
+          </tbody>
+</table>
+=09=09=09<!-- header img -->
+                    <table width=3D"700" border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 0px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.=
+com%2Fpromo-detail%2Fbeli-tiket-pesawat-sekarang-diskon-rp150-000%3Futm_sou=
+rce%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lll=
+sttu=3Df166be752a210a7b244d1d467028259dbb344667bda5394144c91d8751e70ffc&amp=
+;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnews=
+letter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" t=
+arget=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img styl=
+e=3D"display: block; line-height: 0px; font-size: 0px; border: 0px;" class=
+=3D"img1" src=3D"https://trello-attachments.s3.amazonaws.com/5968461223ea19=
+e13292bc9f/59bf78d44415dbd0df4cb57a/a4bd279887c73de9175205c9d6872c93/AYOTER=
+BANGLAH.png" alt=3D"img" width=3D"700" height=3D"175"></a></td>
+                </tr>
+                    </table>
+                    <!-- end header img -->
+        </td>
+      </tr>
+      </tbody>
+=09  </table>
+=09</div>
+=09<!-- end brand 1-3 -->
+=09<!-- brand 4-6 -->
+  <div style=3D"display: table; width: 100%; border-spacing: 0; border-coll=
+apse: collapse; background-color: #ffffff; margin: auto 0;">
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+bgcolor=3D"#ffffff" style=3D"background-color: #ffffff; border-spacing: 0; =
+table-layout: auto; margin: 0 auto;">
+      <tbody>
+<tr>
+        <td align=3D"center" class=3D"aapl-container" style=3D"padding: 0px=
+;">
+          <!-- img 4 + img 5 -->
+          <table width=3D"700" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" style=3D"background-color: #f2f2f2; border-spacing:=
+ 0; table-layout: auto; margin: 0 auto;">
+            <tbody>
+<tr>
+              <td align=3D"center" valign=3D"top" style=3D"border-top-width=
+: 10px; border-top-color: #ffffff; border-top-style: solid; border-bottom-w=
+idth: 10px; border-bottom-color: #ffffff; border-bottom-style: solid;">
+                <table width=3D"700" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;"=
+>
+                  <tbody>
+<tr>
+                    <td align=3D"center" valign=3D"bottom" width=3D"345" st=
+yle=3D"padding-top: 25px; border-right-color: #ffffff; border-right-width: =
+5px; border-right-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">Comforta Springbed Official</td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon Hingga 55%</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fcomforta-official%3Futm_source%3Dnewsl=
+etter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3Df611=
+6b1701ec37f38013b0d11bdf3d1b4d1ee49993afd6834e7cb8078d2ecdf7&amp;subject=3D=
+Produk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;=
+type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_b=
+lank" style=3D"color: #ffffff; text-decoration: none; font-weight: regular;=
+">Buka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: bot=
+tom; padding-top: 10px;">
+                            <div class=3D"img-4">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fcomforta-official%3Futm_source%3=
+Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=
+=3Df6116b1701ec37f38013b0d11bdf3d1b4d1ee49993afd6834e7cb8078d2ecdf7&amp;sub=
+ject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewslett=
+er&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" targe=
+t=3D"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/0a8f6a2fbc1f=
+8808037f0dd5e1c38bec/comforta.png" width=3D"304" style=3D"display: block; m=
+argin: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                    <td align=3D"center" valign=3D"top" width=3D"345" style=
+=3D"padding-top: 25px; border-left-color: #ffffff; border-left-width: 5px; =
+border-left-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">Kapal Api</td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon 10% + Hadiah Langsung<br>
+</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fkapal-api-official%3Futm_source%3Dnews=
+letter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3Dbd5=
+058477c0491a5f2b1bbd1b02b17faaad4e6d3c599cba121059d349aa13eae&amp;subject=
+=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&a=
+mp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D=
+"_blank" style=3D"color: #ffffff; text-decoration: none; font-weight: regul=
+ar;">Buka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: top=
+; padding-top: 10px;">
+                            <div class=3D"img-5">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fkapal-api-official%3Futm_source%=
+3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=
+=3Dbd5058477c0491a5f2b1bbd1b02b17faaad4e6d3c599cba121059d349aa13eae&amp;sub=
+ject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewslett=
+er&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" targe=
+t=3D"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/c0feaafc1782=
+86d377c99842888b5b4f/kapal-api.png" width=3D"304" style=3D"display: block; =
+margin: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                  </tr>
+                </tbody>
+</table>
+              </td>
+            </tr>
+          </tbody>
+</table>
+          <!-- header img -->
+                    <table width=3D"700" border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 0px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.=
+com%2Fpromo-detail%2Fbayar-cincai%3Futm_source%3Dnewsletter%26utm_medium%3D=
+email%26utm_campaign%3Dbrandpages35&amp;lllsttu=3Dc75cecbab344056a1fe51bf24=
+f31c8e15dfe3707ae827ecc64ae9d096e1e070c&amp;subject=3DProduk+Terkini+dari+B=
+rand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp=
+;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"color:=
+ #f95759; text-decoration: none;"><img style=3D"display: block; line-height=
+: 0px; font-size: 0px; border: 0px;" class=3D"img1" src=3D"https://www.buka=
+lapak.com/uploads/attachment/21991/bayar_cincai.jpg" alt=3D"img" width=3D"7=
+00" height=3D"175"></a></td>
+                </tr>
+                    </table>
+                    <!-- end header img -->
+         =20
+        </td>
+      </tr>
+      </tbody>
+=09  </table>
+=09</div>
+=09<!-- end brand 1-3 -->
+=09<!-- brand 4-6 -->
+  <div style=3D"display: table; width: 100%; border-spacing: 0; border-coll=
+apse: collapse; background-color: #ffffff; margin: auto 0;">
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+bgcolor=3D"#ffffff" style=3D"background-color: #ffffff; border-spacing: 0; =
+table-layout: auto; margin: 0 auto;">
+      <tbody>
+<tr>
+        <td align=3D"center" class=3D"aapl-container" style=3D"padding: 0px=
+;">
+          <!-- img 4 + img 5 -->
+          <table width=3D"700" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" style=3D"background-color: #f2f2f2; border-spacing:=
+ 0; table-layout: auto; margin: 0 auto;">
+            <tbody>
+<tr>
+              <td align=3D"center" valign=3D"top" style=3D"border-top-width=
+: 10px; border-top-color: #ffffff; border-top-style: solid; border-bottom-w=
+idth: 10px; border-bottom-color: #ffffff; border-bottom-style: solid;">
+                <table width=3D"700" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;"=
+>
+                  <tbody>
+<tr>
+                    <td align=3D"center" valign=3D"bottom" width=3D"345" st=
+yle=3D"padding-top: 25px; border-right-color: #ffffff; border-right-width: =
+5px; border-right-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">JBL Official Store </td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon Hingga 40%</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fjbl-official%3Futm_source%3Dnewsletter=
+%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D68d9f54bb=
+da6cf4ee641c5e6b2b4c29065b1d1413b0389345afe4775a7fecf5b&amp;subject=3DProdu=
+k+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;type=
+=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank=
+" style=3D"color: #ffffff; text-decoration: none; font-weight: regular;">Bu=
+ka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: bot=
+tom; padding-top: 10px;">
+                            <div class=3D"img-4">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fjbl-official%3Futm_source%3Dnews=
+letter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllsttu=3D68d=
+9f54bbda6cf4ee641c5e6b2b4c29065b1d1413b0389345afe4775a7fecf5b&amp;subject=
+=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&a=
+mp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D=
+"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/9798cf2934f3=
+ee9b5642c90212142450/jbl.png" width=3D"304" style=3D"display: block; margin=
+: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                    <td align=3D"center" valign=3D"top" width=3D"345" style=
+=3D"padding-top: 25px; border-left-color: #ffffff; border-left-width: 5px; =
+border-left-style: solid;">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tbody>
+                                               <!--title-->
+                                                <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 20px; color: #2B2B2B; line-height: 20px; font-weight=
+: bold; padding-bottom: 5px;">MG Sports &amp; Music </td>
+                                                </tr>
+                                                <!--end title-->
+                                                <!--price-->
+                                               =20
+   <tr align=3D"center">
+                                                  <td style=3D"font-family:=
+ helvetica; font-size: 14px; color: #ED1651; font-weight: regular; padding-=
+bottom: 10px;">Diskon Hingga 10% (khusus LP Support)</td>
+                                                </tr>
+                                                <!--end price-->
+                        <!--button-->
+                                    <tr>
+                                      <td align=3D"center">
+                                        <table border=3D"0" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#88C663" style=3D"border-r=
+adius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: =
+0px solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 14px; padding-left: 20px; padding-right: 20px; le=
+tter-spacing: 0px;">
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl=
+%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fmg-sports-and-music-official%3Futm_sou=
+rce%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lll=
+sttu=3Dedcd4886244a9e5c672d620960db1db8eb12e3c7293e4603d661f8f6ad35e1e6&amp=
+;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnews=
+letter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" t=
+arget=3D"_blank" style=3D"color: #ffffff; text-decoration: none; font-weigh=
+t: regular;">Buka Aja di Sini
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end button-->
+                        <tr>
+                          <td align=3D"center" style=3D"vertical-align: top=
+; padding-top: 10px;">
+                            <div class=3D"img-5">
+                              <a href=3D"http://glimpsetrack.net/redirect?l=
+ate_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP=
+35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fmg-sports-and-music-official%3Fu=
+tm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&a=
+mp;lllsttu=3Dedcd4886244a9e5c672d620960db1db8eb12e3c7293e4603d661f8f6ad35e1=
+e6&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;">
+                                <img src=3D"https://trello-attachments.s3.a=
+mazonaws.com/5968461223ea19e13292bc9f/59bf78d44415dbd0df4cb57a/7f714cf39e38=
+7a789554dccec62f53c6/mg-sport.png" width=3D"304" style=3D"display: block; m=
+argin: 0;" border=3D"0" alt=3D"">
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+</table>
+                    </td>
+                  </tr>
+                </tbody>
+</table>
+              </td>
+            </tr>
+          </tbody>
+</table>
+         =20
+        </td>
+      </tr>
+      </tbody>
+=09  </table>
+=09</div>
+=09<!-- end brand 1-3 -->
+  <!-- 1/1 content center -->
+  <table align=3D"center" bgcolor=3D"#ffffff" width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center">
+        <table width=3D"700" bgcolor=3D"#f2f2f2" align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-l=
+ayout: auto; margin: 0 auto;">
+          <tr>
+            <td height=3D"20"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"600">
+              <table width=3D"90%" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                <!-- content -->
+                <tr>
+                  <td align=3D"center" style=3D"font-family: helvetica, 'Op=
+en Sans', Arial, sans-serif; font-size: 18px; color: #2B2B2B; line-height: =
+28px;">Ingin dapat promo menarik dari brand resmi lainnya?</td>
+                </tr>
+                <!-- end content -->
+                <tr>
+            <td height=3D"10"></td>
+          </tr>
+                <!--button-->
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fbrand%2Fofficial%3Futm_sourc=
+e%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbrandpages35&amp;lllst=
+tu=3D6ef5d6681229fda31b5594cc93bd66bd04f093b36d812645da4fa6e07f707f31&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; height: 45px; width: =
+auto; border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/58d2=
+3dea31be8dfeee87f9fa/596edf354f8050b7decdd742/762456e8bd48f2b61e79e7eddb3b4=
+d9c/Button-65px.gif" target=3D"_blank" alt=3D"Logo"></a>
+=09=09=09=09=09=09=09=09=09=09</td>
+                                    </tr>
+                                    <!--end button-->
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"20"></td>
+          </tr>
+         =20
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- end 1/1 content center -->
+                   =20
+                   <!-- search bar -->
+                    <table width=3D"100%" border=3D"0" align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: =
+auto; margin: 0 auto;">
+                    =20
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.=
+com%2F%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbran=
+dpages35&amp;lllsttu=3D1a311e3c0cbda7a0dae0694553f07a8fa8600369b7cf6ae2537a=
+ac3e80308e38&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kam=
+u&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfia=
+n%40gmail.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: =
+none;"><img style=3D"display: block; line-height: 0px; font-size: 0px; bord=
+er: 0px;" class=3D"img1" src=3D"https://trello-attachments.s3.amazonaws.com=
+/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/8be86f4549840c5030058234=
+42ca621b/search_bar.gif" alt=3D"img" width=3D"700" height=3D"auto"></a></td=
+>
+                </tr>
+                    </table>
+                    <!-- search bar -->
+                    <!--footer-->
+  <table width=3D"100%" bgcolor=3D"#f1f1f2" align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center" bgcolor=3D"#ffffff">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td bgcolor=3D"#f1f1f2" width=3D"700" align=3D"center">
+              <table width=3D"100%" align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; =
+margin: 0 auto;">
+                <tr>
+                  <td height=3D"20"></td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center; vertica=
+l-align: top; font-size: 0;">
+                    <!--left-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin:=
+ 0 auto;">
+                        <tr>
+                          <td width=3D"395" align=3D"center">
+                            <table width=3D"85%" align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-l=
+ayout: auto; margin: 0 auto;">
+                              <!--content-->
+                              <tr>
+                                <td align=3D"left" style=3D"font-family: he=
+lvetica, 'Open sans', Arial, sans-serif; color: #9B9B9B; font-size: 11px; l=
+ine-height: 150%;">Copyright =C2=A9 2017, PT. Bukalapak.com All rights rese=
+rved.<br>Plaza City View Lt. 1. Jl. Kemang Timur No. 22<br>Jakarta Selatan.=
+ Indonesia. 12510</td>
+                              </tr>
+                              <!--end content-->
+                              <tr>
+                                <td height=3D"10"></td>
+                              </tr>
+                              <!--CS-->
+                                    <tr>
+                                      <td align=3D"left">
+                                        <table border=3D"0" align=3D"left" =
+cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#d0d2d3" style=3D"border-rad=
+ius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: 0p=
+x solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 12px; padding-left: 15px; padding-right: 15px; le=
+tter-spacing: 0px; color: #404041;">Customer Support:=20
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2751&amp;link=3Dhttp%3A%2F%2Fbit.ly%2F2apHgGP&amp;lllsttu=3D6a177fbaf46a=
+cb93d25bf484f487ed0b0d0ec578274a053f47be5c5058f98bc6&amp;subject=3DProduk+T=
+erkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;type=3DC=
+lickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" st=
+yle=3D"color: #d71d4b; text-decoration: underline; font-weight: regular;">B=
+uka Bantuan=20
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end CS-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end left-->
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align=3D"center" style=3D"text-align:center;vertica=
+l-align:top;font-size:0;">
+                    <![endif]-->
+                    <!--right-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tr>
+                          <td width=3D"255" align=3D"left">
+                            <table align=3D"left" width=3D"85%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-lay=
+out: auto; margin: 0 auto;">
+                              <!--apps-->
+                              <tr>
+                                <td align=3D"center">
+                                  <table border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fplay.google.com%2Fstore%2F=
+apps%2Fdetails%3Fid%3Dcom.bukalapak.android%26referrer%3DAIEMF-NWSFT&amp;ll=
+lsttu=3D5e9ae9755388435ac76705537468207f24e88dc55b84ef435d1d4a6384013776&am=
+p;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnew=
+sletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" =
+target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img sty=
+le=3D"display: block; line-height: 0px; font-size: 0px; border-radius: 4px;=
+ width: 105px; border: 0px;" src=3D"https://trello-attachments.s3.amazonaws=
+.com/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/715ee3c1166d2ea72802=
+6a3118953856/google_play.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F1XmbQ4k&amp;lllst=
+tu=3Dd8326c3d0359c1e505a654f37d0b773ffcfbeec85b163305374ab0df7e3ad5d4&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; border-radius: 4px; w=
+idth: 105px; border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.c=
+om/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/3400fd330acc55bcca98b8=
+098f211b42/app_store.png" alt=3D"img"></a>
+</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!--end apps-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                              <!--social-->
+                              <tr>
+                                <td align=3D"center">
+                                  <table border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F2li9cPg&amp;lllst=
+tu=3D9c0e342531e50b6e8e0efecaa08c312991c39fc27a692c33fe069a3f1a680630&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; border: =
+0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805f=
+b8f125/583d6ee367f95c5820b2f059/07c9db834fe123a5276bdabd56b6d8b2/Social_FB_=
+2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F1ImzzOI&amp;lllst=
+tu=3D2b4c18f91f5ed448bd8d136f364bdb791ef6af56fde8623708556fd8a0458001&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; border: =
+0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805f=
+b8f125/583d6ee367f95c5820b2f059/605e4f15dd1f53c2f5dbba00faa16dd6/Social_TW_=
+2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F2jWzjdG&amp;lllst=
+tu=3D895bbbb5c1e0db62bca3229dd60afbccb375f0b5566cb32454197f7d900f7e9d&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; border: =
+0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805f=
+b8f125/583d6ee367f95c5820b2f059/65fcbe2a943a06d2c2a78f4bd7912d30/Social_GP_=
+2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F1W3g2Zx&amp;lllst=
+tu=3Da50b485f986e3f9ddf390ca0b5640f2ce23785468781a1978f087cbb61ad9a13&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; border: =
+0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805f=
+b8f125/583d6ee367f95c5820b2f059/5b9d5cc9e4aee105048e5a90a9d35742/Social_YTB=
+_2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2751&amp;link=3Dhttp%3A%2F%2Fbukl.pk%2F1TKOre2&amp;lllst=
+tu=3Dc4536bedfc1ffc1554b2548f153e11e65532de9867d599f0aa6cf7f5f00e5aed&amp;s=
+ubject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsle=
+tter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" tar=
+get=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img style=
+=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; border: =
+0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a7987805f=
+b8f125/583d6ee367f95c5820b2f059/939c2c72b84a380a12b8990df87d0fe6/Social_IG_=
+2.png" alt=3D"img"></a>
+</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!--end social-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end right-->
+                    <!-- copyright -->
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tr>
+                          <td width=3D"700" align=3D"center">
+                            <table width=3D"85%" border=3D"0" align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-l=
+ayout: auto; margin: 0 auto;">
+                              <tr>
+                                <td align=3D"left" style=3D"font-family: He=
+lvetica; font-size: 11px; line-height: 150%; color: #9B9B9B; font-style: no=
+rmal;">
+Kami melindungi penggunaan data dan infomasi penting para pengguna Bukalapa=
+k. <br>Silakan lihat di<span style=3D"color: #D71249;"> </span><a href=3D"h=
+ttp://glimpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fbuk=
+alapak.com%2Fcampaign%2FNLACQ-BRP35%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2=
+Fprivacy%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dbr=
+andpages35&amp;lllsttu=3Ddd348d13cfde6de08cf02759063dbd4ca52a63e256f4f272c7=
+3227e619fef741&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+K=
+amu&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialf=
+ian%40gmail.com" target=3D"_blank" style=3D"color: #f95759; text-decoration=
+: none;"><span style=3D"color: #D71249; text-decoration: underline;">Kebija=
+kan Privasi</span></a> Anda memperoleh email ini karena keanggotaan Anda pa=
+da Bukalapak.<br>Untuk berhenti berlangganan newsletter <a href=3D"http://g=
+limpsetrack.net/redirect?late_id=3D2751&amp;link=3Dhttps%3A%2F%2Fwww.bukala=
+pak.com%2Fother_settings%2Funsubscribe_newsletter%3Funsub_token%3Dfc4c30493=
+91b6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbGZpYW5A=
+Z21haWwuY29t&amp;lllsttu=3Db31dfd5d4d035077b37c31888d68794209649fa0e570282c=
+b8279fca36a59224&amp;subject=3DProduk+Terkini+dari+Brand+Resmi+Ini+Pas+buat=
++Kamu&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebia=
+lfian%40gmail.com" target=3D"_blank" style=3D"color: #f95759; text-decorati=
+on: none;"><span style=3D"color: #d71249; text-decoration: underline;">klik=
+ di sini</span></a>.<br>
+                                  Harap jangan membalas email ini, karena e=
+mail ini dikirimkan secara otomatis oleh sistem.
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height=3D"20"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+              <!-- end copyright -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end footer-->
+                   =20
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"0"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end Body-->
+ =20
+<img src=3D"http://glimpsetrack.net/img?late_id=3D2751&amp;llsttu=3D0f7e992=
+3272ffd964c1b59253fa7035eb6d616f5c374b9c849f901971e6034e3&amp;subject=3DPro=
+duk+Terkini+dari+Brand+Resmi+Ini+Pas+buat+Kamu&amp;tag=3Dnewsletter&amp;typ=
+e=3DOpenEmail&amp;user_email=3Driandebialfian%40gmail.com">
+</body>
+
+</html>
+
+--09d40b5594c04d3a8f3a65c95bae5e8b--

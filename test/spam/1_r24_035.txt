@@ -1,0 +1,1619 @@
+﻿Delivered-To: rwen.ibra@gmail.com
+Received: by 10.200.46.173 with SMTP id h42csp2449565qta;
+        Sun, 20 Aug 2017 08:56:08 -0700 (PDT)
+X-Received: by 10.28.88.143 with SMTP id m137mr4903461wmb.71.1503244568732;
+        Sun, 20 Aug 2017 08:56:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503244568; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Zbt3ToqNBPqySRCfJG0vLCp7LygDEzxqFbQDzy2wQOzL1VdXXDdC0ceZGSKddLqVfH
+         G7yfiAqe8PZctTDcwsocFJDa0HQ2yoIZdUD5985O68OCqHOZVw1nPmp/t4UxNJnMyCRq
+         h91SVJZUA3AQB1hNVX0FTjOWzcRtuvXuDrSpQymc0TJTrZgy/SuJtN1a18cDTIfbjx+2
+         19kpMUM4uiltvqzayeSLlbbJS0dO2cGvl2cmRYayOjlioiFRnlYjykCLJNRRrCnqPJ0F
+         UZyMEcXSHFwqg3bACy4ZN4rUkn3BxKmjp4ShsvgM4MGQ4J67aj6ZkF24BQzs/4ruTdiP
+         SmbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:reply-to:feedback-id:precedence:mime-version
+         :list-unsubscribe:list-id:from:subject:to:dkim-signature
+         :arc-authentication-results;
+        bh=NmwG51WZrnksa4EoT7HmFQw03j2LAS+H05+LPscqXSg=;
+        b=wABhluSuhVu9NsdaKccYvA+4GYA8Cs4v+Vpw+EqdzedARuu4M6SVnxBoaMjud9kjBv
+         QV0nGDQH93pxyzDIcJ0QNbBY0Y0MrB0jRnGaheHMR9u2V+J/NqL+hagPL2OQQKKmp0ib
+         fuWD9WXBgeaKAru1Ll2uUC/UT+b9cEtnPEaQKYRQMXEnHiJthzlnMMk73L/8hA4zhf6W
+         FXcyjg5WJqMDEoXWv92ikpHqmPZwFNaf5fJIC/Lf515Wx2Hoge8rA7PxDh9JPmd6Fytg
+         C8XDd87hUeueUHhHDlUdxLM3gzL0175m+QT21+dp57VHahM75an2KeQseGLYH40I2sSp
+         TqDQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@promo.supersoccer.tv header.s=mail header.b=enk9spUJ;
+       spf=pass (google.com: domain of noreply@promo.supersoccer.tv designates 213.32.142.237 as permitted sender) smtp.mailfrom=noreply@promo.supersoccer.tv
+Return-Path: <noreply@promo.supersoccer.tv>
+Received: from promo.supersoccer.tv (promo.supersoccer.tv. [213.32.142.237])
+        by mx.google.com with ESMTPS id o14si4445370wmi.240.2017.08.20.08.56.08
+        for <rwen.ibra@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 20 Aug 2017 08:56:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@promo.supersoccer.tv designates 213.32.142.237 as permitted sender) client-ip=213.32.142.237;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@promo.supersoccer.tv header.s=mail header.b=enk9spUJ;
+       spf=pass (google.com: domain of noreply@promo.supersoccer.tv designates 213.32.142.237 as permitted sender) smtp.mailfrom=noreply@promo.supersoccer.tv
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=promo.supersoccer.tv; q=dns/txt; s=mail; bh=NmwG51WZrnksa4EoT7HmFQw03j2LAS+H05+LPscqXSg=; h=from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe;
+        b=enk9spUJE2n+eny3LmUZLzHS++FTWssbpnG6Z8D9BXfRtc8RBeTlW+jAeKHi1/71/t7R97Frn8YC
+        zWfG17rqXNAFLsCm7zEJdDhE7pHo1hey2mwt/UI3mGq2R3xkjDGCjphqikcbFQrQEX0Lr+X2cg/B
+        rM+0Zc51MVazeao4gL4=
+To: <rwen.ibra@gmail.com>
+Subject: Maintenance Super Soccer TV
+From: Super Soccer TV <no-reply@supersoccer.co.id>
+List-Id: MTY1NDgxOS00MTA0MjI4LTEy <MTY1NDgxOS00MTA0MjI4LTEy.list-id.promo.supersoccer.tv>
+List-Unsubscribe: <mailto:unsubscribe@promo.supersoccer.tv?subject=unsub-2scwz82u89kyfj&body=2scwz82u89kyfj>,<http://r.promo.supersoccer.tv/7nh6rsajk9kyfg.html>
+Content-Type: multipart/alternative; boundary="-------?=_84744-8441179580986"
+MIME-Version: 1.0
+Precedence: bulk
+Feedback-ID: ded_213.32.142.237:1654819:1654819_15:Sendinblue
+X-Mailer: Sendinblue
+X-Mailin-Client: 1654819
+X-Mailin-Campaign: 15
+Reply-To: tools@supersoccer.co.id
+Message-Id: <201708200920.2scwz82u89kyfj@promo.supersoccer.tv>
+Date: Sun, 20 Aug 2017 09:20:26 +0200
+
+---------?=_84744-8441179580986
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+If you are not able to see this mail, click http://r.promo.supersoccer.tv/7=
+nh6rsajk9kyff.html=C2=A0
+[  ]( http://r.promo.supersoccer.tv/click/ulwr3565pc9kyfd.html )    =C2=A0
+
+=C2=A0
+Halo Guys,
+=C2=A0
+Untuk meningkatkan pelayanan di website www.supersoccer.tv dan aplikasi Sup=
+erSoccer TV, kami akan melakukan maintenance pada hari Senin, 21 Agustus 20=
+17 mulai pukul 09:00-21:00. Selama proses Maintenance Anda tetap akan bisa =
+menikmati program-program yang ada di Super Soccer TV hanya saja tidak dapa=
+t melakukan proses registrasi akun dan pengaktifan paket.
+=C2=A0
+Karena itu, bagi Anda yang belum mengaktifkan paket langganan di Super Socc=
+er TV, segera aktifkan paket langganan sekarang agar Anda tidak melewatkan =
+tayangan-tayangan menarik di Super Soccer TV. Aktifkan paket langganan Anda=
+ melalui link di bawah ini:   =C2=A0
+=C2=A0    Premium =C2=A0
+
+Paket langganan yang memberikan akses lengkap konten Super Soccer TV.     H=
+D =C2=A0
+
+Paket langganan yang memberikan akses lengkap konten Super Soccer TV dengan=
+ kualitas video High Definition.     Super =C2=A0
+
+Paket langganan yang memberikan akses lengkap konten Super Soccer TV dan ch=
+annel beIN Sports.    =C2=A0
+=C2=A0
+
+Premium
+1 Bulan: Rp 50.000=C2=A0   =C2=A0    [ SUBSCRIBE ]( http://r.promo.supersoc=
+cer.tv/click/ulwr3566hs9kyfd.html )
+
+HD
+1 Bulan: Rp 100.000=C2=A0   =C2=A0    [ SUBSCRIBE ]( http://r.promo.superso=
+ccer.tv/click/ulwr3567a89kyfd.html )
+
+Super Monthly
+1 Bulan: Rp 125.000=C2=A0   =C2=A0    [ SUBSCRIBE ]( http://r.promo.superso=
+ccer.tv/click/ulwr35682o9kyfd.html )     =C2=A0
+=C2=A0
+
+Premium
+1 Tahun: Rp 350.000=C2=A0   =C2=A0    [ SUBSCRIBE ]( http://r.promo.superso=
+ccer.tv/click/ulwr3568v49kyfd.html )
+
+HD
+1 Tahun: Rp 750.000=C2=A0   =C2=A0    [ SUBSCRIBE ]( http://r.promo.superso=
+ccer.tv/click/ulwr3569nk9kyfd.html )
+
+Super Yearly
+1 Tahun: 950.000   =C2=A0    [ SUBSCRIBE ]( http://r.promo.supersoccer.tv/c=
+lick/ulwr356ag09kyfd.html )     =C2=A0
+=C2=A0
+=C2=A0  VideoMAX SuperSoccer TV =C2=A0
+
+Aktifkan VideoMAX SuperSoccer TV dengan mengakses aplikasi MyTelkomsel atau=
+ hubungi *363# sudah termasuk kuota 2GB - Rp 20.000.   =C2=A0    [ SELENGKA=
+PNYA ]( http://r.promo.supersoccer.tv/click/ulwr356b8g9kyfd.html )     =C2=
+=A0     =C2=A0
+
+Super Soccer TV
+Contact us:
+(021) 2918-1373
+[ support@supersoccer.co. ]( # )id
+[  ]( http://r.promo.supersoccer.tv/click/ulwr356c0w9kyfd.html )
+[  ]( http://r.promo.supersoccer.tv/click/ulwr356ctc9kyfd.html )
+[  ]( http://r.promo.supersoccer.tv/click/a7ax11q1ylc9kyfd.html )     =C2=
+=A0     =C2=A0
+This email was sent to rwen.ibra@gmail.com
+You received this email because you are registered with supersoccer
+=C2=A0
+[ Unsubscribe here ]( http://r.promo.supersoccer.tv/7nh6rsajk9kyfg.html ) =
+=C2=A0
+
+Sent by
+[  ]( http://r.promo.supersoccer.tv/click/a7ax11q1zds9kyfd.html )  =C2=A0  =
+   =C2=A0
+=C2=A9 2017 supersoccer =C2=A0
+
+
+---------?=_84744-8441179580986
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:sc=
+hemas-microsoft-com:office:office"><head><meta http-equiv=3D"X-UA-Compatibl=
+e" content=3D"IE=3Dedge" /><meta name=3D"viewport" content=3D"width=3Ddevic=
+e-width, initial-scale=3D1" /><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8" /><meta name=3D"apple-mobile-web-app-capable" c=
+ontent=3D"yes" /><meta name=3D"apple-mobile-web-app-status-bar-style" conte=
+nt=3D"black" /><meta name=3D"format-detection" content=3D"telephone=3Dno" /=
+><title>Maintenance Super Soccer TV</title><style type=3D"text/css">
+        /* Resets */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCla=
+ss font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        a[x-apple-data-detectors]{
+            color:inherit !important;
+            text-decoration:none !important;
+            font-size:inherit !important;
+            font-family:inherit !important;
+            font-weight:inherit !important;
+            line-height:inherit !important;
+        }       =20
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        .yshortcuts a {border-bottom: none !important;}
+        .rnb-del-min-width{ min-width: 0 !important; }
+
+        /* Add new outlook css start */
+        .templateContainer{
+            max-width:590px !important;
+            width:auto !important;
+        }
+        /* Add new outlook css end */
+
+        /* Image width by default for 3 columns */
+        img[class=3D"rnb-col-3-img"] {
+        max-width:170px;
+        }
+
+        /* Image width by default for 2 columns */
+        img[class=3D"rnb-col-2-img"] {
+        max-width:264px;
+        }
+
+        /* Image width by default for 2 columns aside small size */
+        img[class=3D"rnb-col-2-img-side-xs"] {
+        max-width:180px;
+        }
+
+        /* Image width by default for 2 columns aside big size */
+        img[class=3D"rnb-col-2-img-side-xl"] {
+        max-width:350px;
+        }
+
+        /* Image width by default for 1 column */
+        img[class=3D"rnb-col-1-img"] {
+        max-width:550px;
+        }
+
+        /* Image width by default for header */
+        img[class=3D"rnb-header-img"] {
+        max-width:590px;
+        }
+
+        /* Ckeditor line-height spacing */
+        .rnb-force-col p, ul, ol{margin:0px!important;}
+        .rnb-del-min-width p, ul, ol{margin:0px!important;}
+
+        /* tmpl-2 preview */
+        .rnb-tmpl-width{ width:100%!important;}
+
+        /* tmpl-11 preview */
+        .rnb-social-width{padding-right:15px!important;}
+
+        /* tmpl-11 preview */
+        .rnb-social-align{float:right!important;}
+
+        @media only screen and (min-width:590px){
+        /* mac fix width */
+        .templateContainer{width:590px !important;}
+        }
+
+        @media screen and (max-width: 360px){
+        /* yahoo app fix width "tmpl-2 tmpl-10 tmpl-13" in android devices =
+*/
+        .rnb-yahoo-width{ width:360px!important;}
+        }
+
+        @media screen and (max-width: 480px) {
+        td[class=3D"rnb-container-padding"] {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        }
+
+        /* force container nav to (horizontal) blocks */
+        td[class=3D"rnb-force-nav"] {
+        display: block;
+        }
+        }
+
+        @media only screen and (max-width : 600px) {
+
+        /* center the address &amp; social icons */
+        .rnb-text-center {text-align:center !important;}
+
+        /* force container columns to (horizontal) blocks */
+        td[class~=3D"rnb-force-col"] {
+        display: block;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width:100%;
+        }
+
+        table[class~=3D"rnb-container"] {
+         width: 100% !important;
+        }
+
+        table[class=3D"rnb-btn-col-content"] {
+        width: 100% !important;
+        }
+        table[class=3D"rnb-col-3"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+
+        /* change left/right padding and margins to top/bottom ones */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        /*border-bottom: 1px solid #eee;*/
+        }
+
+        table[class=3D"rnb-last-col-3"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+        }
+
+        table[class=3D"rnb-col-2"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+
+        /* change left/right padding and margins to top/bottom ones */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        /*border-bottom: 1px solid #eee;*/
+        }
+
+        table[class=3D"rnb-col-2-noborder-onright"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+
+        /* change left/right padding and margins to top/bottom ones */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        }
+
+        table[class=3D"rnb-col-2-noborder-onleft"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+
+        /* change left/right padding and margins to top/bottom ones */
+        margin-top: 10px;
+        padding-top: 10px;
+        }
+
+        table[class=3D"rnb-last-col-2"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+        }
+
+        table[class=3D"rnb-col-1"] {
+        /* unset table align=3D"left/right" */
+        float: none !important;
+        width: 100% !important;
+        }
+
+        img[class=3D"rnb-col-3-img"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        img[class=3D"rnb-col-2-img"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        img[class=3D"rnb-col-2-img-side-xs"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        img[class=3D"rnb-col-2-img-side-xl"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        img[class=3D"rnb-col-1-img"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        img[class=3D"rnb-header-img"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        margin:0 auto;
+        }
+
+        img[class=3D"rnb-logo-img"] {
+        /**max-width:none !important;**/
+        width:100% !important;
+        }
+
+        td[class=3D"rnb-mbl-float-none"] {
+        float:inherit !important;
+        }
+
+        .img-block-center{text-align:center!important;}
+
+        .logo-img-center
+        {
+            float:inherit!important;
+        }
+
+        /* tmpl-11 preview */
+        .rnb-social-align{margin:0 auto!important; float:inherit!important;=
+}
+
+        /* tmpl-11 preview */
+        .rnb-social-center{display:inline-block;}
+
+    }</style><!--[if gte mso 11]><style type=3D"text/css">table{border-spac=
+ing: 0; }table td {border-collapse: separate;}</style><![endif]--><!--[if !=
+mso]><!--><style type=3D"text/css">table{border-spacing: 0;} table td {bord=
+er-collapse: collapse;}</style> <!--<![endif]--><!--[if gte mso 15]><xml><o=
+:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch><=
+/o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><o:Offi=
+ceDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:Of=
+ficeDocumentSettings></xml><![endif]--></head><body>
+
+<table border=3D"0" align=3D"center" width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0" class=3D"main-template" bgcolor=3D"#ffffff" style=3D"backgroun=
+d-color:#ffffff;">
+
+=09<tbody><tr style=3D"display:none !important; font-size:1px; mso-hide: al=
+l;"><td></td><td></td></tr>
+    <tr>
+        <td align=3D"center" valign=3D"top">
+        <!--[if gte mso 9]>
+                        <table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"590" style=3D"width:590px;">
+                        <tr>
+                        <td align=3D"center" valign=3D"top" width=3D"590" s=
+tyle=3D"width:590px;">
+                        <![endif]-->
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"templateContainer" style=3D"max-width:590px!important; w=
+idth: 590px;">
+        <tbody><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:590px; background-color:#ffffff;" name=3D"Layout_1" id=3D"Layout_1">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"min-width:590px; background-color: #f=
+fffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color: rgb(255, 255, 255); border-radius: 0px; padding-left: 20px;=
+ padding-right: 20px; border-collapse: separate;">
+                            <tbody><tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" align=3D"l=
+eft">
+                                    <table width=3D"100%" cellpadding=3D"0"=
+ border=3D"0" align=3D"center" cellspacing=3D"0">
+                                        <tbody><tr>
+                                            <td valign=3D"top" align=3D"cen=
+ter">
+                                                <table cellpadding=3D"0" bo=
+rder=3D"0" align=3D"center" cellspacing=3D"0" ng-class=3D"{'logo-img-center=
+':col.td.align}" class=3D"logo-img-center">=20
+                                                    <tbody><tr>
+                                                        <td valign=3D"middl=
+e" align=3D"center">
+                                                            <div style=3D"b=
+order-top:0px None #000;border-right:0px None #000;border-bottom:0px None #=
+000;border-left:0px None #000;display:inline-block;"><a style=3D"text-decor=
+ation:none;" target=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/=
+ulwr3565pc9kyfd.html"><img width=3D"550" vspace=3D"0" hspace=3D"0" border=
+=3D"0" alt=3D"[&quot;supersoccer&quot;]" style=3D"max-width:550px;" class=
+=3D"rnb-logo-img" src=3D"http://r.promo.supersoccer.tv/7rotpc9kyfe.jpg"></a=
+>
+                                                            </div></td>
+                                                    </tr>
+                                                </tbody></table>
+                                                </td>
+                                        </tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"0" style=3D"font-size:1px; li=
+ne-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+            <!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+        </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+           =20
+            <table width=3D"100%" cellpadding=3D"0" border=3D"0" cellspacin=
+g=3D"0" bgcolor=3D"#ffffff" style=3D"background-color:#ffffff;" name=3D"Lay=
+out_29" id=3D"Layout_29"><tbody><tr>
+                    <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff"=
+ style=3D"background-color: #ffffff;"><table border=3D"0" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#fffff=
+f" style=3D"height: 0px; background-color: rgb(255, 255, 255); border-radiu=
+s: 0px; border-collapse: separate; padding-left: 20px; padding-right: 20px;=
+"><tbody><tr>
+                                <td class=3D"rnb-container-padding" bgcolor=
+=3D"#ffffff" style=3D"background-color: #ffffff; font-size: px;font-family:=
+ ; color: ;">
+
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"rnb-columns-container" align=3D"center" style=3D"=
+margin:auto;">
+                                        <tbody><tr>
+
+                                            <td class=3D"rnb-force-col" ali=
+gn=3D"center">
+
+                                                <table border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" class=3D"rnb-col-1">
+
+                                                    <tbody><tr>
+                                                        <td height=3D"10"><=
+/td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style=3D"font-s=
+ize:18px;font-family:Arial,Helvetica,sans-serif; color:#999; font-weight:no=
+rmal; text-align:center;">
+
+                                                            <span style=3D"=
+color:#999; font-weight:normal;"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10"><=
+/td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                </td></tr>
+                                    </tbody></table></td>
+                            </tr>
+
+                        </tbody></table>
+
+                    </td>
+                </tr>
+
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+        </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:100%; background-color:#ffffff;" name=3D"Layout_30">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px=
+; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rg=
+b(200, 200, 200);">
+
+                                        <tbody><tr>
+                                            <td height=3D"0" style=3D"font-=
+size:1px; line-height:1px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign=3D"top" class=3D"rnb=
+-container-padding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;=
+" align=3D"left">
+
+                                                <table width=3D"100%" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container"=
+>
+                                                    <tbody><tr>
+                                                        <td class=3D"rnb-fo=
+rce-col" valign=3D"top" style=3D"padding-right: 0px;">
+
+                                                            <table border=
+=3D"0" valign=3D"top" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" al=
+ign=3D"left" class=3D"rnb-col-1">
+
+                                                                <tbody><tr>
+                                                                    <td sty=
+le=3D"font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; c=
+olor:#555;"><div><span style=3D"color:#000000;">Halo Guys,</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"color:#000000;">Untuk meningkatkan pelayanan di website=
+ www.supersoccer.tv dan aplikasi SuperSoccer TV, kami akan melakukan mainte=
+nance pada hari Senin, 21 Agustus 2017 mulai pukul 09:00-21:00. Selama pros=
+es Maintenance Anda tetap akan bisa menikmati program-program yang ada di S=
+uper Soccer TV hanya saja tidak dapat melakukan proses registrasi akun dan =
+pengaktifan paket.</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"color:#000000;">Karena itu, bagi Anda yang belum mengak=
+tifkan paket langganan di Super Soccer TV, segera aktifkan paket langganan =
+sekarang agar Anda tidak melewatkan tayangan-tayangan menarik di Super Socc=
+er TV. Aktifkan paket langganan Anda melalui link di bawah ini:</span></div=
+>
+</td>
+                                                                </tr>
+                                                                </tbody></t=
+able>
+
+                                                            </td></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height=3D"20" style=3D"font=
+-size:1px; line-height:1px;border-bottom:0px;">&nbsp;</td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:100%; background-color:#ffffff;" name=3D"Layout_13" id=3D"Layout_13">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ma=
+x-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(=
+255, 255, 255); border-radius: 0px; border-collapse: separate; padding-left=
+: 20px; padding-right: 20px;">
+                            <tbody><tr>
+                                <td height=3D"0" style=3D"font-size:1px; li=
+ne-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" align=3D"l=
+eft">
+
+                                    <table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container">
+                                        <tbody><tr>
+                                            <td class=3D"rnb-force-col" wid=
+th=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:18px; font-family:Arial,Helvetica,sans-serif; color:#999; text-align:ce=
+nter;">
+                                                            <span style=3D"=
+color:#999; "><span style=3D"color:#000000;"><strong><span style=3D"font-si=
+ze:18px;">Premium</span></strong></span></span></td>
+                                                    </tr><tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><span style=3D"color:#000000;">Paket langganan yan=
+g memberikan akses lengkap konten Super Soccer TV.</span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:18px; font-family:Arial,Helvetica,sans-serif; color:#999; text-align:ce=
+nter;">
+                                                            <span style=3D"=
+color:#999; "><span style=3D"color:#000000;"><b>HD</b></span></span></td>
+                                                    </tr><tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><span style=3D"color:#000000;">Paket langganan yan=
+g memberikan akses lengkap konten Super Soccer TV dengan kualitas video Hig=
+h Definition.</span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 0px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-la=
+st-col-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:18px; font-family:Arial,Helvetica,sans-serif; color:#999; text-align:ce=
+nter;">
+                                                            <span style=3D"=
+color:#999; "><span style=3D"color:#000000;"><strong><span style=3D"font-si=
+ze:18px;">Super</span></strong></span></span></td>
+                                                    </tr><tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><span style=3D"color:#000000;">Paket langganan yan=
+g memberikan akses lengkap konten Super Soccer TV dan channel beIN Sports.<=
+/span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+
+                                                </td></tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+            </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:100%; background-color:#ffffff;" name=3D"Layout_16" id=3D"Layout_16">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ma=
+x-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(=
+255, 255, 255); border-radius: 0px; border-collapse: separate; padding-left=
+: 20px; padding-right: 20px;">
+                            <tbody><tr>
+                                <td height=3D"0" style=3D"font-size:1px; li=
+ne-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" align=3D"l=
+eft">
+
+                                    <table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container">
+                                        <tbody><tr>
+                                            <td class=3D"rnb-force-col" wid=
+th=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><strong><span style=3D"color:#000000;">Premium</sp=
+an></strong></div>
+
+<div style=3D"text-align: center;"><span style=3D"color:#000000;"><strong s=
+tyle=3D"background-color: transparent;">1 Bulan: Rp 50.000</strong><span st=
+yle=3D"background-color: transparent;">&nbsp;</span></span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr3566hs9kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><strong><span style=3D"color:#000000;">HD</span></=
+strong></div>
+
+<div style=3D"text-align: center;"><span style=3D"color:#000000;"><strong s=
+tyle=3D"background-color: transparent;">1 Bulan: Rp 100.000</strong><span s=
+tyle=3D"background-color: transparent;">&nbsp;</span></span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr3567a89kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 0px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-la=
+st-col-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><strong><span style=3D"color:#000000;">Super Month=
+ly</span></strong></div>
+
+<div style=3D"text-align: center;"><span style=3D"color:#000000;"><strong s=
+tyle=3D"background-color: transparent;">1 Bulan: Rp 125.000</strong><span s=
+tyle=3D"background-color: transparent;">&nbsp;</span></span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr35682o9kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td></tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+            </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:100%; background-color:#ffffff;" name=3D"Layout_17" id=3D"Layout_17">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ma=
+x-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(=
+255, 255, 255); border-radius: 0px; border-collapse: separate; padding-left=
+: 20px; padding-right: 20px;">
+                            <tbody><tr>
+                                <td height=3D"0" style=3D"font-size:1px; li=
+ne-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" align=3D"l=
+eft">
+
+                                    <table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container">
+                                        <tbody><tr>
+                                            <td class=3D"rnb-force-col" wid=
+th=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><strong><span style=3D"color:#000000;">Premium</sp=
+an></strong></div>
+
+<div style=3D"text-align: center;"><span style=3D"color:#000000;"><strong s=
+tyle=3D"background-color: transparent;">1 Tahun: Rp 350.000</strong><span s=
+tyle=3D"background-color: transparent;">&nbsp;</span></span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr3568v49kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 20px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><strong><span style=3D"color:#000000;">HD</span></=
+strong></div>
+
+<div style=3D"text-align: center;"><span style=3D"color:#000000;"><strong s=
+tyle=3D"background-color: transparent;">1 Tahun: Rp 750.000</strong><span s=
+tyle=3D"background-color: transparent;">&nbsp;</span></span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr3569nk9kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td><td class=3D"rnb-force=
+-col" width=3D"170" valign=3D"top" style=3D"padding-right: 0px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-la=
+st-col-3" width=3D"170">
+                                                    <tbody><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div style=
+=3D"text-align: center;"><span style=3D"color:#000000;"><strong>Super Yearl=
+y</strong></span></div>
+
+<div style=3D"text-align: center;"><strong style=3D"color: rgb(0, 0, 0); fo=
+nt-size: 14px; background-color: transparent;">1 Tahun: 950.000</strong></d=
+iv>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" class=3D"rnb-btn-=
+col-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51937" align=3D"center" height=3D=
+"26" style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif; text-=
+align:center; color:#ffffff; font-weight:normal; padding-left:18px; padding=
+-right:18px; background-color:e51937; border-radius:4px;border-top:0px None=
+ #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0p=
+x None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr356ag09kyfd.h=
+tml">SUBSCRIBE</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td></tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"10" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+            </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <div>
+                <!--[if mso]>
+                <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"100%" style=3D"width:100%;">
+                <tr>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                <td valign=3D"top" width=3D"590" style=3D"width:590px;">
+                <![endif]-->
+            <table class=3D"rnb-del-min-width" width=3D"100%" cellpadding=
+=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"min-widt=
+h:100%; background-color:#ffffff;" name=3D"Layout_35" id=3D"Layout_35">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;">
+                        <table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"rnb-container" bgcolor=3D"#ffffff" style=3D"ma=
+x-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(=
+255, 255, 255); border-radius: 0px; border-collapse: separate; padding-left=
+: 20px; padding-right: 20px;">
+                            <tbody><tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff;" align=3D"l=
+eft">
+
+                                    <table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container">
+                                        <tbody><tr>
+                                            <td class=3D"rnb-force-col" wid=
+th=3D"550" valign=3D"top" style=3D"padding-right: 0px;">
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"rnb-co=
+l-1" width=3D"550">
+                                                    <tbody><tr>
+                                                        <td width=3D"100%" =
+class=3D"img-block-center" valign=3D"top" align=3D"left">
+                                                            <table width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td wid=
+th=3D"100%" valign=3D"top" align=3D"left" class=3D"img-block-center">
+                                                                        <ta=
+ble style=3D"display: inline-block;" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0">
+                                                                           =
+ <tbody><tr>
+                                                                           =
+     <td>
+                                                                           =
+         <div style=3D"border-top:0px None #000;border-right:0px None #000;=
+border-bottom:0px None #000;border-left:0px None #000;display:inline-block;=
+"><img border=3D"0" width=3D"550" hspace=3D"0" vspace=3D"0" class=3D"rnb-co=
+l-1-img" alt=3D"" src=3D"http://r.promo.supersoccer.tv/7rouhs9kyfe.jpg" sty=
+le=3D"vertical-align: top; max-width: 1920px;"></div>
+                                                                           =
+ </td>
+                                                                           =
+ </tr>
+                                                                        </t=
+body></table>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table></td>
+                                                    </tr><tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td style=3D"font-s=
+ize:18px; font-family:Arial,Helvetica,sans-serif; color:#999; text-align:le=
+ft;">
+                                                            <span style=3D"=
+color:#999; "><span style=3D"color:#000000;"><strong><span style=3D"font-si=
+ze:18px;">VideoMAX SuperSoccer TV</span></strong></span></span></td>
+                                                    </tr><tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td style=3D"font-s=
+ize:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#555;">
+                                                            <div><div><span=
+ style=3D"color:#000000;">Aktifkan VideoMAX SuperSoccer TV dengan mengakses=
+ aplikasi MyTelkomsel atau hubungi *363# sudah termasuk kuota 2GB - Rp 20.0=
+00.</span></div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"10" c=
+lass=3D"col_td_gap" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>
+                                                    </tr><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"left" cellspacing=3D"0" class=3D"rnb-btn-co=
+l-content" style=3D"border-collapse: separate;margin:0 auto;">
+                                                                <tbody><tr>
+                                                                    <td wid=
+th=3D"auto" valign=3D"middle" bgcolor=3D"e51837" align=3D"left" height=3D"2=
+6" style=3D"font-size:14px; font-family:Arial,Helvetica,sans-serif; text-al=
+ign:center; color:#ffffff; font-weight:normal; padding-left:18px; padding-r=
+ight:18px; background-color:e51837; border-radius:4px;border-top:0px None #=
+000;border-right:0px None #000;border-bottom:0px None #000;border-left:0px =
+None #000;">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a style=3D"text-decoration:none; color:#ffffff; font-weight:normal;" targ=
+et=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr356b8g9kyfd.h=
+tml">SELENGKAPNYA</a>
+                                                                        </s=
+pan>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr></tbody></table>
+
+                                                </td></tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+               =20
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+            </div></td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <table class=3D"rnb-del-min-width rnb-tmpl-width" width=3D"100%=
+" cellpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" styl=
+e=3D"min-width:590px; background-color:#ffffff;" name=3D"Layout_18" id=3D"L=
+ayout_18">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#555" style=3D"min-width:590px; background-color: #555;=
+">
+                        <table width=3D"590" class=3D"rnb-container" cellpa=
+dding=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0">
+                            <tbody><tr>
+                                <td height=3D"10" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"rnb-container-p=
+adding" style=3D"font-size: 14px; font-family: Arial,Helvetica,sans-serif; =
+color: #919191;" align=3D"left">
+
+                                    <table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"rnb-columns-container">
+                                        <tbody><tr>
+                                            <td class=3D"rnb-force-col" sty=
+le=3D"padding-right:20px; padding-left:20px; mso-padding-alt: 0 0 0 20px;" =
+valign=3D"top">
+
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" width=3D"264" align=3D"left" c=
+lass=3D"rnb-col-2" style=3D"border-bottom:0;">
+
+                                                    <tbody><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" align=3D"left" cellspacing=3D"0" class=3D"rnb-btn-co=
+l-content">
+                                                                <tbody><tr>
+                                                                    <td val=
+ign=3D"middle" align=3D"left" style=3D"font-size:14px; font-family:Arial,He=
+lvetica,sans-serif; color:#919191;" class=3D"rnb-text-center">
+                                                                        <di=
+v><div><span style=3D"color:#FFFFFF;">Super Soccer TV</span></div>
+
+<div><span style=3D"color:#FFFFFF;">Contact us:</span></div>
+
+<div><span style=3D"color:#FFFFFF;">(021) 2918-1373</span><br>
+<a href=3D"#" style=3D"text-decoration: none; color: rgb(204, 204, 204);"><=
+span style=3D"color:#FFFFFF;">support@supersoccer.co.</span></a><span style=
+=3D"color:#FFFFFF;">id</span></div>
+</div>
+                                                                    </td></=
+tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            <td class=3D"rnb-force-col rnb-=
+social-width" valign=3D"top" style=3D"mso-padding-alt: 0 20px 0 0; padding-=
+right: 15px;">
+
+                                                <table border=3D"0" valign=
+=3D"top" cellspacing=3D"0" cellpadding=3D"0" width=3D"246" align=3D"right" =
+class=3D"rnb-last-col-2">
+
+                                                    <tbody><tr>
+                                                        <td valign=3D"top">
+                                                            <table cellpadd=
+ing=3D"0" border=3D"0" cellspacing=3D"0" class=3D"rnb-social-align" style=
+=3D"float: right;" align=3D"right">
+                                                                <tbody><tr>
+                                                                    <td val=
+ign=3D"middle" class=3D"rnb-text-center" ng-init=3D"width=3DsetSocialIconsB=
+lockWidth(item.sbLength)" width=3D"125" align=3D"right">
+                                                                        <di=
+v class=3D"rnb-social-center">
+                                                                        <ta=
+ble align=3D"left" style=3D"float:left; display: inline-block; mso-table-ls=
+pace:0pt; mso-table-rspace:0pt;" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0">
+                                                                        <tb=
+ody><tr>
+                                                                           =
+     <td style=3D"padding:0px 5px 5px 0px; mso-padding-alt: 0px 2px 5px 0px=
+;" align=3D"left">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a target=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr356c0=
+w9kyfd.html"><img alt=3D"Facebook" border=3D"0" hspace=3D"0" vspace=3D"0" s=
+tyle=3D"vertical-align:top;" target=3D"_blank" src=3D"http://r.promo.supers=
+occer.tv/7rova89kyfe.png"></a></span>
+                                                                        </t=
+d></tr></tbody></table>
+                                                                        </d=
+iv><div class=3D"rnb-social-center">
+                                                                        <ta=
+ble align=3D"left" style=3D"float:left; display: inline-block; mso-table-ls=
+pace:0pt; mso-table-rspace:0pt;" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0">
+                                                                        <tb=
+ody><tr>
+                                                                           =
+     <td style=3D"padding:0px 5px 5px 0px; mso-padding-alt: 0px 2px 5px 0px=
+;" align=3D"left">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a target=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/ulwr356ct=
+c9kyfd.html"><img alt=3D"Twitter" border=3D"0" hspace=3D"0" vspace=3D"0" st=
+yle=3D"vertical-align:top;" target=3D"_blank" src=3D"http://r.promo.superso=
+ccer.tv/7row2o9kyfe.png"></a></span>
+                                                                        </t=
+d></tr></tbody></table>
+                                                                        </d=
+iv><div class=3D"rnb-social-center">
+                                                                        <ta=
+ble align=3D"left" style=3D"float:left; display: inline-block; mso-table-ls=
+pace:0pt; mso-table-rspace:0pt;" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0">
+                                                                        <tb=
+ody><tr>
+                                                                           =
+     <td style=3D"padding:0px 5px 5px 0px; mso-padding-alt: 0px 2px 5px 0px=
+;" align=3D"left">
+                                                                        <sp=
+an style=3D"color:#ffffff; font-weight:normal;">
+                                                                           =
+ <a target=3D"_blank" href=3D"http://r.promo.supersoccer.tv/click/a7ax11q1y=
+lc9kyfd.html"><img alt=3D"Instagram" border=3D"0" hspace=3D"0" vspace=3D"0"=
+ style=3D"vertical-align:top;" target=3D"_blank" src=3D"http://r.promo.supe=
+rsoccer.tv/7rowv49kyfe.png"></a></span>
+                                                                        </t=
+d></tr></tbody></table>
+                                                                        </d=
+iv></td>
+                                                                </tr>
+                                                            </tbody></table=
+>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                </td>
+                                        </tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <table class=3D"rnb-del-min-width rnb-tmpl-width" width=3D"100%=
+" cellpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" styl=
+e=3D"min-width:590px; background-color:#ffffff;" name=3D"Layout_3" id=3D"La=
+yout_3">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#555" style=3D"min-width:590px; background-color: #555;=
+">
+                        <table width=3D"590" class=3D"rnb-container" cellpa=
+dding=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0" style=3D"paddin=
+g-right:20px; padding-left:20px;">
+                            <tbody><tr>
+                                <td height=3D"10" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style=3D"font-size:14px; color:#91=
+9191; font-weight:normal; text-align:center; font-family:Arial,Helvetica,sa=
+ns-serif;">This email was sent to rwen.ibra@gmail.com<div>You received this=
+ email because you are registered with supersoccer</div><div>&nbsp;</div></=
+div>
+                                    <div style=3D"font-size:14px; font-weig=
+ht:normal; text-align:center; font-family:Arial,Helvetica,sans-serif;">
+                                        <a style=3D"text-decoration:none; c=
+olor:#ccc;font-size:14px;font-weight:normal;font-family:Arial,Helvetica,san=
+s-serif;" target=3D"_blank" href=3D"http://r.promo.supersoccer.tv/7nh6rsajk=
+9kyfg.html">Unsubscribe here</a></div>
+                                </td></tr>
+                            <tr>
+                                <td height=3D"10" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style=3D"text-align:center;">
+                                        <div style=3D"font-family:Arial, He=
+lvetica, sans-serif;color:#aaaaaa;opacity:0.8">Sent by</div><a href=3D"http=
+://r.promo.supersoccer.tv/click/a7ax11q1zds9kyfd.html" target=3D"_blank"><i=
+mg border=3D"0" hspace=3D"0" vspace=3D"0" alt=3D"SendinBlue" style=3D"margi=
+n:auto;" src=3D"http://r.promo.supersoccer.tv/7roxnk9kyfe.png"></a>
+                                    </div></td>
+                            </tr><tr>
+                                <td height=3D"10" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr></tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+    </tr><tr>
+
+        <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"ba=
+ckground-color:#ffffff;">
+
+            <table class=3D"rnb-del-min-width rnb-tmpl-width" width=3D"100%=
+" cellpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" styl=
+e=3D"min-width:590px; background-color:#ffffff;" name=3D"Layout_20" id=3D"L=
+ayout_20">
+                <tbody><tr>
+                    <td class=3D"rnb-del-min-width" align=3D"center" valign=
+=3D"top" bgcolor=3D"#333" style=3D"min-width:590px; background-color: #333;=
+">
+                        <table width=3D"590" class=3D"rnb-container rnb-yah=
+oo-width" cellpadding=3D"0" border=3D"0" align=3D"center" cellspacing=3D"0"=
+ style=3D"padding-right:20px; padding-left:20px;">
+                            <tbody><tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style=3D"font-size:14px; color:#919191;=
+ font-weight:normal; text-align:center; font-family:Arial,Helvetica,sans-se=
+rif;">
+                                    <div>=C2=A9 2017 supersoccer</div>
+                                </td></tr>
+                            <tr>
+                                <td height=3D"20" style=3D"font-size:1px; l=
+ine-height:1px;">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+    </tr></tbody></table>
+            <!--[if gte mso 9]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        </td>
+        </tr>
+        </tbody></table>
+
+<div><img width=3D"1" height=3D"1" src=3D"http://r.promo.supersoccer.tv/tra=
+ck/7nh6rsajk9kyfh.gif" /></div></body></html>
+
+
+---------?=_84744-8441179580986--

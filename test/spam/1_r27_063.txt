@@ -1,0 +1,135 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.146.214 with SMTP id j205csp573982ywg;
+        Thu, 7 Sep 2017 11:17:09 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb4+FGeRoWuHHmid2uMmhbeNpbN6R8FQ5OJMj6Y8SJOD5Ub49IlIIGA6w3rHw/waWpqYztCN
+X-Received: by 10.98.61.142 with SMTP id x14mr242698pfj.258.1504808229268;
+        Thu, 07 Sep 2017 11:17:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504808229; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TWhUIYddoCkFDKt7ez2uiisdWkYVXFZwShlQaQetBV0esKtR61i0amNO+xWBZYxU4r
+         /4CWudcJRj41NODVNatLQiF49t0lS045Ehr5INhFPL02NsmF3dCmmiojpWSqEj26lvse
+         3GLAESRw+6EIH91nSHSIkvJ5tsdk1wQiiQGqZ9Mw+JrLV30A3JFMXFaTDI1MDlTYBUVX
+         ONjm1mGoEP7Lwm3lZ8/1Rf0Sis45c72Sr+qzX4qcvfppmdlZ/OrATer09qVmxCdGMLj1
+         0Cn8J6T/DbZkh1goC9ZxYPb2NlkEOep4OIou+8V0ggC5kd6lIAQtaQWz3bE0qwldNwVT
+         8hZg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:sender:list-unsubscribe:mime-version:subject:date:to
+         :from:domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=VzUfQ3vQBvvjdKhqQJsyiYs9VyxngsPlP+quWXe795k=;
+        b=qA53kRSd+iF11gRIGeUPKsz9ETwnDQ068j9m+FXKn3B/k4ZHMBOVPtUXxn2W8IiOYP
+         e5xMrZov8aNd3erHmNSnXbiC8GTJ+h53xWvxwylcbb9YOmOWxoWkPbDOeJkUc9Breotl
+         c9+8kP84lI15DMpnVJ045pr41OheQQj/JOMfqBB1v0P/3Gq2cNrVKxmcVPjhkgTLq0Rl
+         ulh1tZL8kTJtKX7udBjDq5ytSwhi/3lLoPfMX61Zg0XQ7cNmvbOprgaHL41dD6NwTgXF
+         EWktFA1ezkudFDbMt68byZNebgXEZrxOMhiC8lDLcmQhTTDpjOAPw9ejISd6vsnM4poR
+         H7PA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@m.fotomagazzino.com header.s=intl header.b=HqrBBEj3;
+       spf=pass (google.com: domain of sent05@m.fotomagazzino.com designates 103.71.230.195 as permitted sender) smtp.mailfrom=sent05@m.fotomagazzino.com
+Return-Path: <sent05@m.fotomagazzino.com>
+Received: from smtp230195.spread22.com (smtp230195.spread22.com. [103.71.230.195])
+        by mx.google.com with ESMTP id 44si153565plb.449.2017.09.07.11.17.08
+        for <sylviestephanies@gmail.com>;
+        Thu, 07 Sep 2017 11:17:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sent05@m.fotomagazzino.com designates 103.71.230.195 as permitted sender) client-ip=103.71.230.195;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@m.fotomagazzino.com header.s=intl header.b=HqrBBEj3;
+       spf=pass (google.com: domain of sent05@m.fotomagazzino.com designates 103.71.230.195 as permitted sender) smtp.mailfrom=sent05@m.fotomagazzino.com
+Received: from WIN-OEG3Q6KGUNT (unknown [103.71.231.251])
+	by smtp230195.spread22.com (Postfix) with ESMTPA id 4D07F1E1563
+	for <sylviestephanies@gmail.com>; Fri,  8 Sep 2017 02:16:34 +0800 (HKT)
+DKIM-Signature:v=1; a=rsa-sha1; c=relaxed/relaxed; d=m.fotomagazzino.com; s=intl;
+ q=dns/txt; h=From:Subject:Date:To; bh=NhYVpPgmH0w5NQoRidBBzKlXI4Q=;
+ b=HqrBBEj3SEUgFE3nUfu9l5l5XRqSH7XPLRFD0vSwl0nPbq/mk9lNPxZzl52w8MzE83jGq+
+ KBgfffgjxMaSNoJEMYZyW9TljuIoCMZkYPuQYXFa7C1t9OcO4PCcoXAH9sacR8JK04RdWFB
+ h+ns6X3mu+5hqP2y0LeEFMWJZanDsU=;
+DomainKey-Signature: s=intl;
+ h=From:To:Date:Subject:MIME-Version:Content-Type:X-Mailer:X-Spread-Camp
+ aignId:X-Spread-SubscriberId:X-Spread-SpreaderId:X-Spread-Engine-Build:
+ List-Unsubscribe:Sender:Message-ID;b=feP93KP/1FrfdejhNshrCrWVBcZP2Seb/O9upwCZgdNZApC1nOHyQ0q257rgm71QrEzWk
+ z+9MHlhFNA69a8utsyDjheKJWkVoLdNEcjzzIPZkGiZ2uFVGYr4HSYmWqbsT9hEjw440zbH
+ gPqFnyWWTye1AfTFjqpQrymXGsWy4rk=;d=m.fotomagazzino.com; a=rsa-sha1; c=simple; q=dns;
+From: "tompandfh@163.com" <tompandfh@163.com> 
+To: "sylviestephanies@gmail.com" <sylviestephanies@gmail.com>
+Date: Fri, 08 Sep 2017 02:16:32 +0800
+Subject: Re:Ship out from my supplier factory to the destination place.
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="_=aspNetEmail=_f2c937fdab444906a6f96e9c8fcd78ea"
+X-Mailer: aspNetEmail ver 3.7.0.19
+X-Spread-CampaignId: 985318
+X-Spread-SubscriberId: 586451336
+X-Spread-SpreaderId: 37163
+X-Spread-Engine-Build: 4.0.5501.20950
+List-Unsubscribe: <mailto:unsubscribe@reasonables2.com?subject=sub/586451336/user/37163/campid/985318/type/e>, <http://s.m.fotomagazzino.com/Unsubscribe.aspx?sub=586451336&user=37163&campid=985318&type=e>
+Sender: sent05@m.fotomagazzino.com
+Message-ID: <WIN-OEG3Q6KGUNT5eba0890876d43a88ea1853e14bc974a@WIN-OEG3Q6KGUNT>
+
+--_=aspNetEmail=_f2c937fdab444906a6f96e9c8fcd78ea
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+=0D=0A<=21DOCTYPE HTML PUBLIC =22-//W3C//DTD HTML 4=2E0 Transitional//EN=22=
+>=0D=0A<HTML><HEAD>=0D=0A<META content=3D=22text/html; charset=3DUTF-8=22=
+ http-equiv=3Dcontent-type>=0D=0A<META name=3DGENERATOR content=3D=22MSHT=
+ML 8=2E00=2E7601=2E19104=22></HEAD>=0D=0A<BODY>=0D=0A<DIV =0D=0Astyle=3D=22=
+TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
+x; FONT: 14px/21px =E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91; WHITE-SPACE: nor=
+mal; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webki=
+t-text-stroke-width: 0px=22>=0D=0A<DIV =0D=0Astyle=3D=22LINE-HEIGHT: 24px=
+; FONT-FAMILY: Calibri; COLOR: rgb(0,0,128); FONT-SIZE: 16px=22>=0D=0A<DI=
+V style=3D=22LINE-HEIGHT: normal; FONT-SIZE: 14px=22 id=3D_mcePaste><FONT=
+ =0D=0Acolor=3D=23000000 face=3D=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91></FO=
+NT>=0D=0A<P>Dear Sir,<BR>=26nbsp;<BR>I=26=2339;m Tom, do freight export s=
+ector in shenzhen has been =0D=0A10 years=2E</P>=0D=0A<P><BR>Now worked i=
+n Shenzhen DFH international freight export co=2E, LTD=2E</P>=0D=0A<P><BR=
+>Our company=26=2339;s main services of air to the airport=EF=BC=8CSometi=
+mes also can do =0D=0Aair freight to door=2E</P>=0D=0A<P><BR>Such as a do=
+zen flights directly with our company signed a cooperation =0D=0Aagreemen=
+t, give us a fixed plate=2E</P>=0D=0A<P><BR>Our company with (CA, UPS, MU=
+, HU, SQ, EK, EY,) such as a dozen flights =0D=0Asigned direct relations =
+of cooperation=EF=BC=8Ceach flight we have fixed plate=2E</P>=0D=0A<P>=26=
+nbsp;</P>=0D=0A<P><BR>If you are interested in for us, please do not hesi=
+tate to contact =0D=0Ame=2E<BR></P>=0D=0A<DIV =0D=0Astyle=3D=22TEXT-TRANS=
+FORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; FONT: 1=
+4pt/21px Calibri; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb=
+(0,51,102); WORD-SPACING: 0px; -webkit-text-stroke-width: 0px=22>Best=26n=
+bsp;regards</DIV>=0D=0A<DIV =0D=0Astyle=3D=22TEXT-TRANSFORM: none; BACKGR=
+OUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; FONT: 14pt/21px Calibri; =
+WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(0,51,102); WORD-S=
+PACING: 0px; -webkit-text-stroke-width: 0px=22>Tom =0D=0APan</DIV>=0D=0A<=
+DIV =0D=0Astyle=3D=22TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; FONT: 14pt/21px Calibri; WHITE-SPACE: normal; LET=
+TER-SPACING: normal; COLOR: rgb(0,51,102); WORD-SPACING: 0px; -webkit-tex=
+t-stroke-width: 0px=22>=0D=0A<DIV =0D=0Astyle=3D=22TEXT-TRANSFORM: none; =
+BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; FONT: 14pt/21px Cal=
+ibri; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(0,51,102); =
+WORD-SPACING: 0px; -webkit-text-stroke-width: 0px=22><SPAN =0D=0Astyle=3D=
+=22FONT-FAMILY: =E5=AE=8B=E4=BD=93; COLOR: rgb(0,0,0); FONT-SIZE: 9pt=22>=
+<SPAN =0D=0Astyle=3D=22FONT-FAMILY: Calibri=22><SPAN style=3D=22FONT-SIZE=
+: 14pt=22><SPAN =0D=0Astyle=3D=22COLOR: rgb(0,51,102)=22>Tel:86=26nbsp;75=
+5=26nbsp;66802954<BR>Mobile/Wechat:+86 =0D=0A18296683005<BR>Email:sales5=40=
+globallogistics-dfh=2Ecom</SPAN></SPAN></SPAN></SPAN></DIV>=0D=0A<DIV =0D=
+=0Astyle=3D=22TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); T=
+EXT-INDENT: 0px; FONT: 14pt/21px Calibri; WHITE-SPACE: normal; LETTER-SPA=
+CING: normal; COLOR: rgb(0,51,102); WORD-SPACING: 0px; -webkit-text-strok=
+e-width: 0px=22><SPAN =0D=0Astyle=3D=22FONT-FAMILY: =E5=AE=8B=E4=BD=93; C=
+OLOR: rgb(0,0,0); FONT-SIZE: 9pt=22><SPAN =0D=0Astyle=3D=22FONT-FAMILY: C=
+alibri=22><SPAN style=3D=22FONT-SIZE: 14pt=22><SPAN =0D=0Astyle=3D=22COLO=
+R: rgb(0,51,102)=22>QQ=EF=BC=9A1444854805</SPAN></SPAN></SPAN></SPAN></DI=
+V>=0D=0A<DIV =0D=0Astyle=3D=22TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb=
+(255,255,255); TEXT-INDENT: 0px; FONT: 13px/19px verdana; WHITE-SPACE: no=
+rmal; LETTER-SPACING: normal; COLOR: rgb(0,51,102); WORD-SPACING: 0px; -w=
+ebkit-text-stroke-width: 0px=22>=0D=0A<DIV style=3D=22POSITION: static =21=
+important; FONT-FAMILY: Calibri; FONT-SIZE: 12pt=22>=0D=0A<DIV style=3D=22=
+POSITION: static =21important; FONT-SIZE: 12pt=22><SPAN =0D=0Astyle=3D=22=
+FONT-SIZE: 14pt=22>Skype:wuliukuaidi5455=26nbsp;</SPAN></DIV></DIV></DIV>=
+</DIV><BR></DIV></DIV></DIV>=0D=0A<P><BR class=3DApple-interchange-newlin=
+e>=26nbsp;</P><a href=3D=22http://s=2Em=2Efotomagazzino=2Ecom/Unsubscribe=
+=2Easpx?sub=3D586451336=26user=3D37163=26campid=3D985318=26type=3Dh=22>UN=
+SUBSCRIBE</a></BODY></HTML>=0D=0A=0D=0A=0D=0A<img src=3D=22http://t=2Em=2E=
+fotomagazzino=2Ecom//o=2Easpx/s/586451336/c/985318=22 width=3D=221=22 hei=
+ght=3D=221=22 />=0D=0A
+
+--_=aspNetEmail=_f2c937fdab444906a6f96e9c8fcd78ea--
+

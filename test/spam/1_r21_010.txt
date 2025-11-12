@@ -1,0 +1,210 @@
+﻿Delivered-To: nikosatrianto@gmail.com
+Received: by 10.31.52.78 with SMTP id b75csp1375692vka;
+        Wed, 26 Jul 2017 18:33:16 -0700 (PDT)
+X-Received: by 10.98.220.22 with SMTP id t22mr2491218pfg.301.1501119195969;
+        Wed, 26 Jul 2017 18:33:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501119195; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TMCwYsuK+3Xq/me8YL2aYvTnMtYokJEIEmYO3MNeQyrUXfswwlARmF/TVheMsXKTp6
+         V3rsheDtjf4H0ziP6rigIQqTQxatepe18NPMYuiPM8Yi6SgghgM7D1mbdCE0rYWRXdEl
+         MSJw/UbA6w0fhwRCY6x07OUIBezo5QHk3UH3lo7OOPSOXIKcCgDVqYdP5S9R5XQcwHnY
+         qAt4pe7ZASLSR2BjQjK1A/BwjW1w8jGqRtF92/nnwgFaueON7rgwbScmk45Fn7x8Rcvc
+         tOdCk9SkzsUTN4nPDxca7k0NRMu8NLesMcwR3Yks1gQEQI0mJfi7kwtHwIfvc2TVMkDj
+         Atcg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=campaign-guid:campaign-track:campaign-type:campaign-unsub
+         :feedback-id:list-unsubscribe:mime-version:to:reply-to:from:subject
+         :date:message-id:dkim-signature:dkim-filter
+         :arc-authentication-results;
+        bh=QGWkmyqpiES03reqtA7Msoup7dAiOHTTEbFkz4S2fNw=;
+        b=awz0GsZ39vpeOZd6o2L3fychfXcjt908iWnkx3flCbkcnKrw9387nRYFx/WhHWt+Rq
+         vrts/erwASyRpeo1WWjn4SQCl+yAvUUj1Uv5DiUVmYMn95xfLIsYe/g8Y5IjHnrEXG3G
+         jJKS5zutq/kZ1/gjR9eAJuIwACdHwVr+ZNZleUIpG+DqlKK8VzCx22PH87+rldV9DqPN
+         zKve+NdTYloosGm4BBDkYF5L5YtmHh/6ognCsZjQ4+c9IzSVaubA98ede0xhbO+f+3zq
+         94wW3gKVJrgabY2qfJBQrffiRgRp4jrBSC7/1djcFMRu+2KhtsuABYFa3dJ6HhsXYH/i
+         ANQw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kirim.email header.b=hS19i+nU;
+       spf=pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.185 as permitted sender) smtp.mailfrom=bounceke3@kirim.email
+Return-Path: <bounceke3@kirim.email>
+Received: from vps11.kirim.email (vps11.kirim.email. [203.114.75.185])
+        by mx.google.com with ESMTPS id g5si7653826pgc.860.2017.07.26.18.33.15
+        for <nikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 26 Jul 2017 18:33:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.185 as permitted sender) client-ip=203.114.75.185;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kirim.email header.b=hS19i+nU;
+       spf=pass (google.com: domain of bounceke3@kirim.email designates 203.114.75.185 as permitted sender) smtp.mailfrom=bounceke3@kirim.email
+Received: from [127.0.0.1] (main.kirim.email [103.200.4.90]) (using TLSv1 with cipher ECDHE-RSA-AES128-SHA (128/128 bits)) (Client did not present a certificate) by sending.localdomain (Postfix) with ESMTPSA id 863634245C for <nikosatrianto@gmail.com>; Thu, 27 Jul 2017 08:33:14 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.11.0 sending.localdomain 863634245C
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/relaxed; d=kirim.email; s=senddefault; t=1501119194; bh=QGWkmyqpiES03reqtA7Msoup7dAiOHTTEbFkz4S2fNw=; h=Date:Subject:From:Reply-To:To:List-Unsubscribe:From; b=hS19i+nUZKlQxpiyDe9H3vR+H0hum1HZryR6bHeFqG5H6qJBYRKZUge2yveBI0Raa
+	 ERn2kERnysK4dUVLINj6LmpGQllayAZsxPcjBM6gz0vN5GVEFWzCiGr+6dA1y3aaQX
+	 9SB7w+KgQW/jGmYG6vQ+f4B3dVY2NgWK5oppbUZA=
+Message-ID: <20f6537b91019179c247e065a4c1c003@swift.generated>
+Date: Thu, 27 Jul 2017 08:33:14 +0700
+Subject: Produk GRATIS Hari Ini - Lefery Skin Whitening
+From: "Sains-Jurnal.com" <i@sains-jurnal.site>
+Reply-To: "Sains-Jurnal.com" <i@sains-jurnal.site>
+To: nikosatrianto@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_=_swift_v4_1501119194_70180589a0c7557666776dff4d82a58d_=_"
+X-MAILER: Kirim.Email
+List-Unsubscribe: <https://aplikasi.kirim.email//unsub/vkosmWB6u7AHpDf20170727053821Wfc/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0>
+Feedback-ID: vkosmWB6u7AHpDf20170727053821Wfc:be905dda-90ef-46e5-b618-a6574a423d1c:BC:f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0
+Campaign-UNSUB: https://aplikasi.kirim.email//unsub/vkosmWB6u7AHpDf20170727053821Wfc/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0
+Campaign-TYPE: bc_
+Campaign-TRACK: vkosmWB6u7AHpDf20170727053821Wfc
+Campaign-GUID: be905dda-90ef-46e5-b618-a6574a423d1c
+
+--_=_swift_v4_1501119194_70180589a0c7557666776dff4d82a58d_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[**Memiliki kulit Putih dan bersinar hanya dalam 2 Minggu!**](https://aplik=
+asi.kirim.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f5ba9a294951014646e5=
+be189e6c6500674375b5f815f4cf4504999b54744be0)
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Memiliki kulit 5 kali lebih putih hanya dalam 14 hari! =20
+[![](http://i.imgur.com/2td1hZu.jpg)](https://aplikasi.kirim.email/redir/Ll=
+CpnIwzK1H80JW20170727053822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815=
+f4cf4504999b54744be0)
+
+[**Solusi terbaik untuk kulit**](https://aplikasi.kirim.email/redir/LlCpnIw=
+zK1H80JW20170727053822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4=
+504999b54744be0)
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Daripada membuang-buang uang untuk membeli pemutih kulit yang mahal, tetapi=
+ tidak member hasil nyata, kami telah menemukan produk yang mampu menjadika=
+n kulit Anda 5 kali lebih putih dengan harga lebih terjangkau. (Kami memili=
+ki PRODUK GRATIS hari ini khusus untuk Anda)
+
+[<span style=3D"font-size:14px">**Bisa digunakan untuk Pria dan Wanita**</s=
+pan>](https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f=
+5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)
+
+Hasil uji klinis, yang dilakukan oleh Prof. Romain Lefery, membuktikan bahw=
+a ada formula, yang membantu untuk menangani keriput muka, kulit wajah berm=
+inyak, berjerawat, flek hitam, kulit yang tidak kenyal, kendur dan kering. =
+Dengan formula ini, wajah dapat kelihatan lebih sehat dan muda.
+
+[**DAPATKAN PRODUK INI SECARA GRATIS HANYA UNTUK ANDA KHUSUS HARI INI.**](h=
+ttps://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f5ba9a29=
+4951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)
+
+Banyak produk perawatan kulit yang beredar di pasar, dan rata-rata merupaka=
+n produk yang mahal. Silahkan mencoba sendiri dan rasakan manfaatnya langsu=
+ng di rumah.
+
+[**DAPATKAN PRODUK INI SECARA GRATIS HANYA UNTUK ANDA KHUSUS HARI INI.**](h=
+ttps://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f5ba9a29=
+4951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)
+
+[**>> KLIK DISINI UNTUK MENDAPATKANNYA SECARA GRATIS =20
+\>> KLIK DISINI UNTUK MENDAPATKANNYA SECARA GRATIS**](https://aplikasi.kiri=
+m.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f5ba9a294951014646e5be189e6c=
+6500674375b5f815f4cf4504999b54744be0)
+
+\*Masukkan Nama dan No HP anda dihalaman selanjutnya, Costumer Service kami=
+ akan menghubungi Anda untuk konfirmasi.
+
+<div id=3D"kirimemail-userinfo-footer" style=3D"font: Arial, Helvetica, san=
+s-serif!important; font-size: 10px!important;"><div class=3D"kirimemail-use=
+rinfo kirimemail-clearfix clearfix" id=3D"kirimemail-senderinfo">Sains Jurn=
+al =20
+Lefery ACR =20
+Skin Whitening =20
+Indonesia
+
+</div>- - - - - -
+
+[Unsubscribe](https://aplikasi.kirim.email/unsub/vkosmWB6u7AHpDf20170727053=
+821Wfc/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)<no=
+script>![](https://aplikasi.kirim.email//image/vkosmWB6u7AHpDf2017072705382=
+1Wfc/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0)</nos=
+cript></div>
+
+--_=_swift_v4_1501119194_70180589a0c7557666776dff4d82a58d_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w=
+3.org/TR/REC-html40/loose.dtd">
+<html><body><h1><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80=
+JW20170727053822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999=
+b54744be0"><strong>Memiliki kulit Putih dan bersinar hanya dalam 2 Minggu!<=
+/strong></a></h1>
+
+<p>Memiliki kulit 5 kali lebih putih hanya dalam 14 hari!<br><a href=3D"htt=
+ps://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053822MsB/f5ba9a2949=
+51014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><img src=3D"http://=
+i.imgur.com/2td1hZu.jpg" style=3D"height:145px; width:500px"></a></p>
+
+<h1><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW2017072705=
+3822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><=
+strong>Solusi terbaik untuk kulit</strong></a></h1>
+
+<p>Daripada membuang-buang uang untuk membeli pemutih kulit yang mahal, tet=
+api tidak member hasil nyata, kami telah menemukan produk yang mampu menjad=
+ikan kulit Anda 5 kali lebih putih dengan harga lebih terjangkau. (Kami mem=
+iliki PRODUK GRATIS hari ini khusus untuk Anda)</p>
+
+<p><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053=
+822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><s=
+pan style=3D"font-size:14px"><strong>Bisa digunakan untuk Pria dan Wanita</=
+strong></span></a></p>
+
+<p>Hasil uji klinis, yang dilakukan oleh Prof. Romain Lefery, membuktikan b=
+ahwa ada formula, yang membantu untuk menangani keriput muka, kulit wajah b=
+erminyak, berjerawat, flek hitam, kulit yang tidak kenyal, kendur dan kerin=
+g. Dengan formula ini, wajah dapat kelihatan lebih sehat dan muda.</p>
+
+<p><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053=
+822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><s=
+trong>DAPATKAN PRODUK INI SECARA GRATIS HANYA UNTUK ANDA KHUSUS HARI INI.</=
+strong></a></p>
+
+<p>Banyak produk perawatan kulit yang beredar di pasar, dan rata-rata merup=
+akan produk yang mahal. Silahkan mencoba sendiri dan rasakan manfaatnya lan=
+gsung di rumah.</p>
+
+<p><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053=
+822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><s=
+trong>DAPATKAN PRODUK INI SECARA GRATIS HANYA UNTUK ANDA KHUSUS HARI INI.</=
+strong></a></p>
+
+<p><a href=3D"https://aplikasi.kirim.email/redir/LlCpnIwzK1H80JW20170727053=
+822MsB/f5ba9a294951014646e5be189e6c6500674375b5f815f4cf4504999b54744be0"><s=
+trong>&gt;&gt; KLIK DISINI UNTUK MENDAPATKANNYA SECARA GRATIS<br>
+&gt;&gt; KLIK DISINI UNTUK MENDAPATKANNYA SECARA GRATIS</strong></a></p>
+
+<p>*Masukkan Nama dan No HP anda dihalaman selanjutnya, Costumer Service ka=
+mi akan menghubungi Anda untuk konfirmasi.</p><div id=3D"kirimemail-userinf=
+o-footer" style=3D"font: Arial, Helvetica, sans-serif!important; font-size:=
+ 10px!important;"><div id=3D'kirimemail-senderinfo' class=3D'kirimemail-use=
+rinfo kirimemail-clearfix clearfix'><p>Sains Jurnal<br/>Lefery ACR<br/>Skin=
+ Whitening<br/>Indonesia<br/></p></div><hr><a href=3D"https://aplikasi.kiri=
+m.email/unsub/vkosmWB6u7AHpDf20170727053821Wfc/f5ba9a294951014646e5be189e6c=
+6500674375b5f815f4cf4504999b54744be0"> Unsubscribe</a><noscript><img alt=3D=
+"" style=3D"display: none;" width=3D"1" height=3D"1" src=3D"https://aplikas=
+i.kirim.email//image/vkosmWB6u7AHpDf20170727053821Wfc/f5ba9a294951014646e5b=
+e189e6c6500674375b5f815f4cf4504999b54744be0" border=3D"0"></noscript></div>=
+</body></html>
+
+
+--_=_swift_v4_1501119194_70180589a0c7557666776dff4d82a58d_=_--

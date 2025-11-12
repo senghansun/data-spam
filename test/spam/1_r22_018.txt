@@ -1,0 +1,716 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.157.33.58 with SMTP id i55csp4001078otb;
+        Mon, 18 Sep 2017 10:25:18 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QAC9mRwlj/keWK9P1R/Uoh3lQL+om7QBTreQKBJKRU94ATosd/JMcHZ+8Ye2jUlUevHhhj6
+X-Received: by 10.98.12.19 with SMTP id u19mr8026483pfi.143.1505755518544;
+        Mon, 18 Sep 2017 10:25:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505755518; cv=none;
+        d=google.com; s=arc-20160816;
+        b=l+Hh8HePIzmWMd+chKs/5x2D74chfogDjadLXP4Wiil9V9wFYhLVmtCuFZfcAF6nIF
+         wix6da8Fn/O2SiUbLbXwnWC/jCtJ2w3z0u3xBfqprrsWdPyuVt3yakHednKi734Vex3z
+         s2wVuP7bLnpcHclKvsNGDhI0dKKHTahmzcxFQ96SJ4bjakDWySfZKEUwPE//SB+BsQWw
+         ldK1SE61etjbmTshpirzcUaYBhF/IP/0KqIlSx1eDAYYMBol9BSVz0xEKD4pKZqhtz0v
+         6o9oSWPT+dV977eFQfI+R5JGFw9m2kZwU6JVcEAOGl6Lyq4znC2UjjyU6fICqQCUPrmK
+         d/ig==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=C7n7KH1hJ4jPJfsT5LmitAeYF0rnyR23a2hXWqHu4eQ=;
+        b=GOBOJAOQlo8I2Mi4JZOfNFTXNNqt3LJZzU9l2O54lgoVpUmI4MCSOzN7vEWEP/0Jdn
+         emnBsblAygwOHcwvE6oFHGf/6iP21C6kMSCyGpG8TIKhs+0o3OLd1PN61trbXbDKekCo
+         dcmH6ABu1u/OikXl96TQg0AO98DDjidW4dW66gHSZ70xJ8HEpw6se0OqFfAz+zVzA6IA
+         8ERIy82hxtJapzoEJ6OtF8sk4rR+C6kxHJGT7/cXjzwlfoAV501CbJOAnAL1zkEwMPHL
+         B9mjCaLMMjdV/ePzToe17BsdHXF0ahVlJj6iAmC73DuhbknujpjLbYe7g7T7KxZ8IZm/
+         ujgA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@padiciti.com header.s=dkim header.b=IuIYi3yR;
+       spf=pass (google.com: domain of news@padiciti.com designates 128.199.209.58 as permitted sender) smtp.mailfrom=news@padiciti.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=padiciti.com
+Return-Path: <news@padiciti.com>
+Received: from mail2.padishow.com (mail2.padishow.com. [128.199.209.58])
+        by mx.google.com with ESMTPS id z60si5184176plh.252.2017.09.18.10.25.18
+        for <riandebialfian@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 18 Sep 2017 10:25:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of news@padiciti.com designates 128.199.209.58 as permitted sender) client-ip=128.199.209.58;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@padiciti.com header.s=dkim header.b=IuIYi3yR;
+       spf=pass (google.com: domain of news@padiciti.com designates 128.199.209.58 as permitted sender) smtp.mailfrom=news@padiciti.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=padiciti.com
+Received: from localhost (localhost [127.0.0.1]) by mail2.padishow.com (Postfix) with ESMTP id 64DAB41C69 for <riandebialfian@gmail.com>; Mon, 18 Sep 2017 13:25:17 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=padiciti.com; h= content-transfer-encoding:content-type:content-type:mime-version :subject:subject:message-id:to:from:from:date:date; s=dkim; t= 1505755517; x=1508347518; bh=WatkwKZZJtDwIBdOs+NMOzV9HPvjL8QIZZd LPqAwBq4=; b=IuIYi3yRM3lG3J42fkerIhR+OnGR4oaODvzUT2E8f/Lc4woUIId Q/JvuQqAY+ES8OH6kiuTZ4YUq9xsT2sPjCMk26B5zMvCalcnRDAvJJ1wHYXmO7RX gwqmeYgZ5juE/QURn9yJ+kuc73hdDWvrS6mL15H1PnpLP7XG7s2swdQo=
+Received: from mail2.padishow.com ([127.0.0.1]) by localhost (mail2.padishow.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id KFV2McQCb2Az for <riandebialfian@gmail.com>; Tue, 19 Sep 2017 00:25:17 +0700 (WIB)
+Received: from sql01.prd.la.padipay (sql01.prd.la.padipay [182.23.65.80]) by mail2.padishow.com (Postfix) with ESMTPSA id 4EA9E41C72 for <riandebialfian@gmail.com>; Tue, 19 Sep 2017 00:25:11 +0700 (WIB)
+Date: Tue, 19 Sep 2017 00:25:11 +0700 (WIB)
+From: Padiciti <news@padiciti.com>
+To: riandebialfian@gmail.com
+Message-ID: <1505341572.206218.1505755511165.JavaMail.root@sql01.prd.la.padipay>
+Subject: Potongan Rp.30.000 Pemesanan Tiket Kereta Dengan PAYPRO
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF">
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    </p>
+    <p>
+      <title>Promo Gopoints Tiket Kereta Api pembayaran Paypro 2017</title>
+      <p> </p>
+      <table data-mobile="true" dir="ltr" data-width="600"
+        style="background-color: rgb(255, 255, 255);" cellspacing="0"
+        cellpadding="0" width="100%" border="0">
+        <tbody>
+          <tr>
+            <td style="padding:0;margin:0;" valign="top" align="center">
+              <div class="WRAPPER" style="max-width: 600px; margin:
+                auto;">
+                <table class="wrapper" style="width: 600px;"
+                  cellspacing="0" cellpadding="0" bgcolor="#ffffff"
+                  align="center" width="600" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="margin:0;padding:0;" valign="top"
+                        align="left">
+                        <table data-editable="image"
+                          data-mobile-width="1" cellspacing="0"
+                          cellpadding="0" align="center" width="100%"
+                          border="0">
+                          <tbody>
+                            <tr>
+                              <td style="display: inline-block; padding:
+                                0px 0px 20px; margin: 0px;"
+                                class="tdBlock" valign="top"
+                                align="left"><img
+src="http://padicititour.com/images/mail/padiciti-diskon30ribu-paypro-gopoints--agustus2017-Blast.jpg"
+data-src="http://padicititour.com/images/mail/padiciti-diskon30ribu-paypro-gopoints--agustus2017-Blast.jpg|600|206|600|206|0|0|1"
+data-origsrc="http://padicititour.com/images/mail/padiciti-diskon30ribu-paypro-gopoints--agustus2017-Blast.jpg?_ga=1.205891155.1920015099.1478157906"
+                                  style="border-width: 0px;
+                                  border-style: none; border-color:
+                                  transparent; display: block; width:
+                                  100%; max-width: 100% !important;"
+                                  width="600"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table data-editable="text" cellspacing="0"
+                          cellpadding="0" align="center" width="100%"
+                          border="0">
+                          <tbody>
+                            <tr>
+                              <td class="lh-8" style="padding: 10px;
+                                font-size: 16px; font-family: Times New
+                                Roman, Times, serif; line-height: 1.85;"
+                                valign="top" align="left">
+                                <div style="text-align: center;"><span
+                                    style="font-family: Arial, Helvetica
+                                    Neue, Helvetica, sans-serif;
+                                    background-color: transparent;
+                                    color: rgb(4, 129, 12); font-weight:
+                                    bold;"></span></div>
+                                <span style="font-family: Arial,
+                                  Helvetica Neue, Helvetica,
+                                  sans-serif;">
+                                  <div style="text-align: center;"><span
+                                      style="background-color:
+                                      transparent; color:rgb(32, 74,
+                                      139); font-weight: bold;"><font
+                                        style="font-size: 18px;"
+                                        size="18">Diskon sebesar Rp
+                                        30.000,- untuk semua rute
+                                        perjalanan kereta api. kode
+                                        voucher didapatkan dengan
+                                        menukar GOPOINTS pada aplikasi
+                                        gojek</font></span></div>
+                                </span>
+                                <div style="text-align: center;"><span
+                                    style="font-family: Arial, Helvetica
+                                    Neue, Helvetica, sans-serif; color:
+                                    rgb(4, 129, 12); font-weight: bold;"></span></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0px;">
+                        <div data-box="button" style="width: 100%;
+                          margin-top: 0px; margin-bottom: 0px;
+                          text-align: center;">
+                          <table data-editable="button" style="margin:
+                            0px auto;" cellspacing="0" cellpadding="0"
+                            align="center" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="tdBlock" style="display:
+                                  inline-block; padding: 13px 25px;
+                                  margin: 0px; background-color: rgb(32,
+                                  74, 139); border-radius: 7px;"
+                                  valign="top" align="center"><a
+                                    href="https://www.padiciti.com/tiket-kereta-api"
+                                    style="font-family: Arial,
+                                    'Helvetica Neue', Helvetica,
+                                    sans-serif; color: rgb(255, 255,
+                                    255); font-size: 18px;
+                                    text-decoration: none; font-weight:
+                                    bold;" target="_blank">Pesan Tiket
+                                    Sekarang</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table data-editable="line" cellspacing="0"
+                          cellpadding="0" align="center" width="100%"
+                          border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px; margin:
+                                0px;" valign="top" align="center">
+                                <div
+style="height:1px;line-height:1px;border-top-width:3px;border-top-style:solid;border-top-color:#dedede;"><img
+src="imap://bima%2Eramadani%40padiciti%2Ecom@mail.padiciti.com:143/fetch%3EUID%3E/Sent%3E136?part=1.2.3&amp;filename=nbkhoimdnhgmknep.gif"
+                                    alt="" style="display:block;"
+                                    height="1" width="1"></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table data-editable="text" cellspacing="0"
+                          cellpadding="0" align="center" width="100%"
+                          border="0">
+                          <tbody>
+                            <tr>
+                              <td class="lh-8" style="padding: 10px;
+                                font-size: 16px; font-family: Times New
+                                Roman, Times, serif; line-height: 1.85;"
+                                valign="top" align="left"><span
+                                  style="font-family: Arial, Helvetica
+                                  Neue, Helvetica, sans-serif;"><font
+                                    style="font-size: 15px;" size="15">Kabar
+                                    penting bagi seluruh pengguna
+                                    Padiciti. Dalam rangka meningkatkan
+                                    kepuasan Anda, Padiciti bagi-bagi
+                                    diskon kereta api khusus untuk
+                                    pengguna aplikasi gojek dengan
+                                    menggunakan pembayaran Paypro.
+                                    Tukarkan GOPOINTS anda dengan
+                                    voucher dari Padiciti.</font></span>
+                                <div><span style="font-family: Arial,
+                                    Helvetica Neue, Helvetica,
+                                    sans-serif;"><font style="font-size:
+                                      15px;" size="15"><br>
+                                    </font></span></div>
+                                <div style="text-align: center; "><span
+                                    style="font-family: Arial, Helvetica
+                                    Neue, Helvetica, sans-serif; color:
+                                    rgb(129, 129, 129); font-weight:
+                                    bold;"><font style="font-size:
+                                      17px;" size="17">Syarat &amp;
+                                      Ketentuan</font></span></div>
+                                <div>
+                                  <ol>
+                                    <li><span style="font-family: Arial,
+                                        Helvetica Neue, Helvetica,
+                                        sans-serif;"><font
+                                          style="font-size: 15px;"
+                                          size="15">Diskon sebesar Rp
+                                          30.000,- untuk semua rute
+                                          perjalanan kereta api. kode
+                                          voucher didapatkan dengan
+                                          menukar GOPOINTS di aplikasi
+                                          gojek<span <="" font=""></span></font></span></li>
+                                    <font style="font-size: 15px;"
+                                      size="15">
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Minimun Pembelian
+                                            <b>Rp.120.000,-</b><br>
+                                          </font></span></li>
+                                      <li>Tata Cara pembayaran </li>
+                                      <div style=" background: #d9d9d9;
+                                        padding: 10px 15px;
+                                        border-radius: 5px"><b>PayPro</b>
+                                        : Pilih <b>Pembayaran</b> ?
+                                        Pilih <b>eWallet</b> ? Pilih
+                                        Pembayaran <b>PayPro</b> ? <b>Masukan
+                                          Kode Voucher</b>? <b> bayar</b></div>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher dapat
+                                            digunakan untuk pembayaran
+                                            menggunakan Paypro<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher hanya
+                                            berlaku untuk pemesanan
+                                            tiket kereta api di website
+                                            aplikasi Padiciti<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher tidak
+                                            dapat digabungkan dengan
+                                            promo lainnya<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher berlaku
+                                            untuk 1 (satu) kali
+                                            transaksi<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher tidak
+                                            dapat diuangkan.<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Voucher berlaku
+                                            hingga 30 (tiga puluh) hari
+                                            setelah penukaran poin<br>
+                                          </font></span></li>
+                                      <li><span style="font-family:
+                                          Arial, Helvetica Neue,
+                                          Helvetica, sans-serif;"><font
+                                            style="font-size: 15px;"
+                                            size="15">Penukaran voucher
+                                            hanya berlaku 1x24 jam
+                                            setelah Anda mendapatkan
+                                            kode voucher<br>
+                                          </font></span></li>
+                                    </font>
+                                  </ol>
+                                  <font style="font-size: 15px;"
+                                    size="15">
+                                    <div><span style="font-family:
+                                        Arial, Helvetica Neue,
+                                        Helvetica, sans-serif;"><font
+                                          style="font-size: 15px;"
+                                          size="15">Kami berharap dengan
+                                          adanya Promo Tiket Kereta Api
+                                          ini, Anda semakin nyaman
+                                          bertransaksi menggunakan
+                                          Padiciti. Silahkan kunjungi <a
+                                            href="http://padiciti.com"
+                                            target="_blank" title="Pesan
+                                            Tiket Kereta Api">padiciti.com</a>
+                                          atau download aplikasinya.</font></span><br>
+                                    </div>
+                                  </font></div>
+                                <font style="font-size: 15px;" size="15">
+                                </font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0" cellpadding="0"
+                          width="100%" border="0">
+                          <tbody>
+                            <tr data-columns="yes" style="text-align:
+                              center;">
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="172">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="" valign="top"
+                                        align="left">
+                                        <table data-editable="text"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td class="lh-1"
+                                                style="padding: 10px;
+                                                font-size: 16px;
+                                                font-family: Times New
+                                                Roman, Times, serif;
+                                                line-height: 1.15;"
+                                                valign="top"
+                                                align="left"><span
+                                                  style="color: rgb(38,
+                                                  38, 38); font-family:
+                                                  Arial, Helvetica,
+                                                  sans-serif; font-size:
+                                                  14px;">Customer
+                                                  service:</span>
+                                                <div><span style="color:
+                                                    rgb(38, 38, 38);
+                                                    font-family: Arial,
+                                                    Helvetica,
+                                                    sans-serif;
+                                                    font-size: 14px;">(021)-2221
+                                                    4018</span></div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="137">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="" valign="top"
+                                        align="left">
+                                        <table data-editable="text"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td class="lh-1"
+                                                style="padding: 10px;
+                                                font-size: 16px;
+                                                font-family: Times New
+                                                Roman, Times, serif;
+                                                line-height: 1.15;"
+                                                valign="top"
+                                                align="left">
+                                                <div><span style="color:
+                                                    rgb(38, 38, 38);
+                                                    font-family: Arial,
+                                                    Helvetica,
+                                                    sans-serif;
+                                                    font-size: 14px;">email:</span></div>
+                                                <div><span style="color:
+                                                    rgb(38, 38, 38);
+                                                    font-family: Arial,
+                                                    Helvetica,
+                                                    sans-serif;
+                                                    font-size: 14px;"><a
+href="http://cs@padiciti.com" target="_blank" title="costumer service
+                                                      Padiciti">cs@padiciti.com</a></span></div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="72">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="display:
+                                                inline-block; padding:
+                                                10px 0px; margin: 0px;"
+                                                class="tdBlock"
+                                                valign="top"
+                                                align="center"><a
+                                                  href="https://www.facebook.com/padiciti"
+                                                  title="Fanpage
+                                                  Padiciti"
+                                                  target="_blank"><img
+src="http://www.padicititour.com/logo/padiciti-tour-facebook.png?img1487590594471"
+data-src="http://www.padicititour.com/logo/padiciti-tour-facebook.png|72|72|65|67|0|0|1"
+data-origsrc="http://www.padicititour.com/logo/padiciti-tour-facebook.png?_ga=1.198001519.1920015099.1478157906"
+                                                    style="border-width:
+                                                    0px; border-style:
+                                                    none; border-color:
+                                                    transparent;
+                                                    display: block;"
+                                                    height="72"
+                                                    width="72"></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="74">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="display:
+                                                inline-block; padding:
+                                                10px 0px; margin: 0px;"
+                                                class="tdBlock"
+                                                valign="top"
+                                                align="center"><a
+                                                  href="http://www.twitter.com/padiciti"
+                                                  title="twitter
+                                                  padiciti"
+                                                  target="_blank"><img
+src="http://www.padicititour.com/logo/padiciti-tour-twitter.png?img1487590594471"
+data-src="http://www.padicititour.com/logo/padiciti-tour-twitter.png|74|69|65|67|0|0|1"
+data-origsrc="http://www.padicititour.com/logo/padiciti-tour-twitter.png?_ga=1.198001519.1920015099.1478157906"
+                                                    style="border-width:
+                                                    0px; border-style:
+                                                    none; border-color:
+                                                    transparent;
+                                                    display: block;"
+                                                    height="69"
+                                                    width="74"></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="72">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="99%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="display:
+                                                inline-block; padding:
+                                                10px 0px; margin: 0px;"
+                                                class="tdBlock"
+                                                valign="top"
+                                                align="center"><a
+                                                  href="http://www.instagram.com/padiciti"
+                                                  title="instagram -
+                                                  Padiciti"
+                                                  target="_blank"><img
+                                                    src="http://www.padicititour.com/logo/padiciti-tour-instagram.png"
+data-src="http://www.padicititour.com/logo/padiciti-tour-instagram.png|71|74|65|65|0|0|1"
+data-origsrc="http://www.padicititour.com/logo/padiciti-tour-instagram.png?_ga=1.198001519.1920015099.1478157906"
+                                                    style="border-width:
+                                                    0px; border-style:
+                                                    none; border-color:
+                                                    transparent;
+                                                    display: block;"
+                                                    height="74"
+                                                    width="71"></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="73">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="96%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="display:
+                                                inline-block; padding:
+                                                10px 0px; margin: 0px;"
+                                                class="tdBlock"
+                                                valign="top"
+                                                align="center"><a
+                                                  href="https://plus.google.com/118432939650306401936"
+                                                  title="google plus -
+                                                  Padiciti"
+                                                  target="_blank"><img
+                                                    src="http://www.padicititour.com/logo/padiciti-tour-google-plus.png"
+data-src="http://www.padicititour.com/logo/padiciti-tour-google-plus.png|70|71|65|67|0|0|1"
+data-origsrc="http://www.padicititour.com/logo/padiciti-tour-google-plus.png?_ga=1.198001519.1920015099.1478157906"
+                                                    style="border-width:
+                                                    0px; border-style:
+                                                    none; border-color:
+                                                    transparent;
+                                                    display: block;"
+                                                    height="71"
+                                                    width="70"></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellspacing="0" cellpadding="0"
+                          width="100%" border="0">
+                          <tbody>
+                            <tr data-columns="yes" style="text-align:
+                              center;">
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="196">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="" valign="top"
+                                        align="left">
+                                        <table data-editable="text"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td> <br>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="203">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="99%">
+                                          <tbody>
+                                            <tr>
+                                              <td> <br>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td style="margin: 0px; padding: 0px;"
+                                class="" valign="top" align="center"
+                                width="201">
+                                <table cellspacing="0" cellpadding="0"
+                                  align="center" width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table data-editable="image"
+                                          data-mobile-width="1"
+                                          cellspacing="0"
+                                          cellpadding="0" align="center"
+                                          width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="display:
+                                                inline-block; padding:
+                                                10px 0px; margin: 0px;"
+                                                class="tdBlock"
+                                                valign="top"
+                                                align="center"><br>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </body>
+</html>

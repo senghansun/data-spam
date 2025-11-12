@@ -1,0 +1,404 @@
+Delivered-To: imamromersono@gmail.com
+Received: by 10.80.180.189 with SMTP id w58csp628495edd;
+        Thu, 27 Jul 2017 03:34:38 -0700 (PDT)
+X-Received: by 10.107.2.16 with SMTP id 16mr4595178ioc.112.1501151678252;
+        Thu, 27 Jul 2017 03:34:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501151678; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oQaBUCvrfQwT0rKo4eDfQbiYoVBIACcjOSVWX98lsLxuov+L/Bn9qhvA994UmihHCL
+         Q7H1wrc/h3Jzd5V2KCfbSPWSQPSeiY6iqcR4GYKnG42XXvIBpiO+ayQ6aSWlCbT8U20a
+         WuW00HlXEoL+oA24zlYHyV/gn0MHpASBb8YOr0KsNw1/Fttsr8mdnGYQmQx+0cYI7GI4
+         60+3ZI4X+PXCBu77KbLGvvZ2fmCX4fb4xCNsAFnq46vMewqOwtbB7avJBMfef6h9zlVv
+         7+gswP6HtW06uYWa3RGQyCCBCdWvY7hwXMb9Yc3E4nbY7jH+El+W07yAQ0lEAkqHLJP0
+         k3wQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-id:subject:message-id:to:reply-to:mime-version:from:date
+         :content-transfer-encoding:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=N79iQM6gh5pNngvWBhb6otIvCopZ7byujsxdrdaAreg=;
+        b=TTBw1POrL6eq2l4KTj9/NsbR8+fPfZGqJvsna2W66NqlUZz/4Zjpq6gJcuGCtorml1
+         OhMPUd+27giHwRNTXNID1qr8Zck+gkQiL2wHN57b5lFShjiphT850rIjzvvDdvNP97Ue
+         piTqd7GKawKZmS/z3JLUZqc/Q5hzWXc50ZESwJ8yQ8AWqE4M3pNBfFZ7Y7ADSdbht2zN
+         JhmSJCnvM7NsY2HiJvVXfcD8s0SZ9IJE7O4hKRffmCSc14S6yv3l/N5rwNqIkiQlctzD
+         o3LJufM/8wNre3udiTVTYD57KBUay1S+iD7uG/UYDkwL8UnC38H2x/H7Tgb8jkpafVHs
+         VIDQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@binomo.com header.b=cZcc7oAj;
+       dkim=pass header.i=@sendgrid.info header.b=B6zZ6LiN;
+       spf=pass (google.com: domain of bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com designates 167.89.71.34 as permitted sender) smtp.mailfrom=bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=binomo.com
+Return-Path: <bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com>
+Received: from o1.sender.binomo.com (o1.sender.binomo.com. [167.89.71.34])
+        by mx.google.com with ESMTPS id h83si7391952ioa.194.2017.07.27.03.34.37
+        for <imamromersono@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 27 Jul 2017 03:34:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com designates 167.89.71.34 as permitted sender) client-ip=167.89.71.34;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@binomo.com header.b=cZcc7oAj;
+       dkim=pass header.i=@sendgrid.info header.b=B6zZ6LiN;
+       spf=pass (google.com: domain of bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com designates 167.89.71.34 as permitted sender) smtp.mailfrom=bounces+1812989-d3db-imamromersono=gmail.com@sender.binomo.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=binomo.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=binomo.com; h=content-transfer-encoding:content-type:from:mime-version:reply-to:to:subject:list-id; s=s1; bh=IhhvLItnZV4NPXhwRtKqWi42RbY=; b=cZcc7oAjWNuHQrbu6ICFoUV RNlgMv2SiJ1nDQYcUG1kqxUB5l+G3p67lrSmzDENb4Gojkt5ymoYQJ4JrRTNWlnC E1lh7lklpf75/8BRYd4qjtIOwkyuSCThhqL/FP+wRJa5NuM007lCjw6skouQqpFO pgDnrYMvdiP8JrHbr0cs=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=content-transfer-encoding:content-type:from:mime-version:reply-to:to:subject:list-id:x-feedback-id; s=smtpapi; bh=IhhvLItnZV4NPXhwRtKqWi42RbY=; b=B6zZ6LiNzlUmuHa7wj TcSfoRuOZWFDA5Gp9LGEXnKaF+Gq04GMXQV7mQMOzPMIu+tKGwUuGyd5Zwsv7Jyg Ka+LO0X0Hzp0THXQVjhvexGK66rHMMK4slJfbLVjyFXyui9rgUZEIuCf4yufIApe My0W/5XJx7Q4FruCUvuVztev0=
+Received: by filter0922p1mdw1.sendgrid.net with SMTP id filter0922p1mdw1-12804-5979C1B3-13
+        2017-07-27 10:34:27.14512879 +0000 UTC
+Received: from MTgxMjk4OQ (s243.142.binomo.com [188.42.243.142]) by ismtpd0036p1mdw1.sendgrid.net (SG) with HTTP id _YpW5LjZTAezVNETobYteg Thu, 27 Jul 2017 10:34:27.101 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 27 Jul 2017 10:34:33 +0000 (UTC)
+From: Binomo <news@binomo.com>
+Mime-Version: 1.0
+Reply-to: support@binomo.com
+To: imamromersono@gmail.com
+Message-ID: <_YpW5LjZTAezVNETobYteg@ismtpd0036p1mdw1.sendgrid.net>
+Subject: 3 kualitas pedagang yang sukses
+X-Postmaster-Msgtype: email_marketing_3274
+List-id: email_marketing_3274
+X-MSG-TYPE: bulk
+X-Mailer: Binomo<robot@sender.binomo.com>
+X-SG-EID: cHx3kC6wQEiOwuaIfkCeBHN9PVQc2wZUWO5PHB9NzPXWKuBCOm/mif+FB7mGwHUzOn9vm7H5x1Nk1T WLfrLFppEKnkPcbluNjJcGNuZ2FGQa5rOFko3VqqsFAo0b32zEODcQx2qWgSWhtnVBsdsIQOtdupwV Mm8lIPHlOwtL46LXA3o1fRpBlXYGDsud3vhR3CE4/IXghV9HYfLEUcMkEGYZyATeXUOgSY0JyzwCEr 8=
+X-SG-ID: ITqWK2Yy7qodS8zw8Te5u1vMnYBQZIvffU3+scDF/MJXJ9yai/S80ApSi8TIE9H1
+X-Feedback-ID: 1812989:GGiLeomAlLlqcyCtDq68TMFCI8WRVKxrgj2ue/F2YDk=:iNmGMCgOilWmQ4gS85XgknhppGV2t8CBRdCBYmQItdA=:SG
+
+<html><body>
+     <!--=D0=9F=D0=A0=D0=95=D0=A5=D0=95=D0=94=D0=95=D0=A0-->
+    <div class=3D"preheader" height=3D"0" style=3D"font-size: 0.1px; color:=
+ #fff; line-height: 0px; max-height: 0px; max-width: 0px; opacity: 0; overf=
+low: hidden;" width=3D"0">
+      Bagaimana Cara mengembangkan kualitas itu?&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=
+=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;=E1=85=A0&nbsp;
+    </div>
+    <center>
+      <div id=3D"main" lang=3D"x-main" style=3D"border-collapse: collapse; =
+font-family: &#39;Roboto&#39;, Helvetica, Arial, sans-serif; font-size: 10p=
+x; line-height: 10px; Padding: 0 10px; width: 600px; max-width: 600px; marg=
+in: 0 auto;" width=3D"100%">
+        <!--HEADER--><br>
+        <table bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0" class=3D"=
+header" lang=3D"x-header" style=3D"border-collapse: collapse;" valign=3D"ce=
+nter" width=3D"100%">
+          <tbody><tr>
+            <td align=3D"left" style=3D"padding: 0;" valign=3D"middle">
+              <a href=3D"https://u1812989.ct.sendgrid.net/wf/click?upn=3DGB=
+2FXq8XrPI-2FK20DpvpPtV1ydHbaXhGOFI9HjW6JZv-2B0e-2BT3cMATHddeK7KfCiglGCIg-2F=
+K5P4k-2BfRNYVqkvOl8TbcHk5NMJbtx-2FAOwJYvc-2BtU4sdc9Om3uVSpwghVD2bu54hP3zOVS=
+lIVzS9ovw21Q-3D-3D_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2Bp=
+AEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbozpSUjVLu05dxRD-2Bx5dFuR3wJPYjvJIuxgw=
+4FROJRlEZQe9dzkaaV6MRQ9Z1h9HUd4l0xD7TpqGznF3T7XKMMdyj5FC5Ykf3LNKZCWF0bqAOi8=
+FHRPysKn20w7OOq8r55B-2BzdzJN9TeXiBWX04ERo1Uzcbwh7CNmZVuzU2VvTvf2B72fcye2P-2=
+F-2FnleH-2BuAcsYQ-3D-3D"><img alt=3D"binomo" border=3D"0" src=3D"https://a.=
+binomo.com/uploads/mailers/1500565708_mailer_7fd4e437.jpg" style=3D"border:=
+ 0; display:block; "></a>
+            </td>
+            <td align=3D"right" style=3D"font-family: &#39;Roboto&#39;, Hel=
+vetica, Arial, sans-serif; font-size: 12px; font-weight: 300;" valign=3D"mi=
+ddle">
+              <a href=3D"https://u1812989.ct.sendgrid.net/wf/click?upn=3DGB=
+2FXq8XrPI-2FK20DpvpPtbnT14-2B-2BpMzPQ3wLatSRkSnEVkNWhxq7dVIGKiJrMZ7SekZtj6q=
+GinvlZ6-2FcNjTLRdf2MIrWmnUqk-2BXYXR-2Bo1VEnnnpPLz4a4bpCfJNJcZeXpaDpQQOWngyk=
+v2cSSKCgMD10z9EqrPKjSlATEyUWfJ6kpUKQAI9zc2L5-2BMuhbxd-2BFG7LmD4NmC0ijaEECD-=
+2BkI9d1-2BrD6Wrf41x6apClDlxPGT-2FVaZL4Oe5Y830L3zsRh_7h19-2FNvT0N8r231IXBjL3=
+Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo2f-=
+2BCACMC4YbRihB0Lo5FJO-2BKZSUgY9YWyAv9VWtLaY4J1GGpB1Ov3fAcCpPfg4l765aV1R2lXv=
+tw-2Fua3iY5o-2BSUyhHgIk4dkDteb-2FGO78sTYko4PPSDqn6UJIp3T1mO-2Fivf7yYSHAh2Iv=
+6HrEQ5R6WNBMGty5-2BZTnKRNXWKowUUiJpaiLbOBsu8p3MvHki7NQ-3D-3D" style=3D"colo=
+r: #5B98E0; text-decoration: none;">Versi web&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp=
+;&nbsp;</a><a href=3D"https://u1812989.ct.sendgrid.net/wf/click?upn=3DGB2FX=
+q8XrPI-2FK20DpvpPtbnT14-2B-2BpMzPQ3wLatSRkSnF-2Fuo-2Fw-2F44FuGoglYUvKS4tQY5=
+gcU7eSBESJKdxQVzF8FZyg1Rc6I1k8-2BcowaNlLShwBLrzmuUV75lc4TDwTpuaZrVIqIN3SAVr=
+03zY1dxwvUQkX9TSDWkmSZTf7dzLnZ-2FSzzLaWrnte3LdUB5524aE2qIlgvIwExydhJELl1f3l=
+Tqr-2BzeeQyRLpuaE85nEJvoV64H3SNzWYvePHFOVaara3MJwKyCyGNHrb7nzVIp7joLZ8jJflE=
+x9mSlBzB5H2JDD0a2fyA8-2FEDtropXgrsZ_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2=
+FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAboyy5OEW2-2BleVPGDHtb=
+KRLYgEAmvHmefQyOaDtj7knWVEih018nJfSp8-2BcrUrFVX4-2BoxLm16o5HQGWjKSh0C3xX8E7=
+eojlV94TJvRuz8AcnD0I-2FO-2BX3TGkn2BFq4pEBXFlKtCD4S9w2QexqbMslJwhAbc5RPC0-2B=
+rICpgFb0Bf2ckTumhQudnIn2XRDEF4uk-2BrZQ-3D-3D" style=3D"color: #5B98E0; text=
+-decoration: none;">Setop ikuti</a>
+            </td>
+          </tr>
+        </tbody></table>
+        <br><br><!--=D0=A1=D0=A2=D0=90=D0=A0=D0=A2 =D0=9A=D0=9E=D0=9D=D0=A2=
+=D0=95=D0=9D=D0=A2=D0=90--><!--SOCIAL NEW-->
+        <table align=3D"center" bgcolor=3D"#252B33" border=3D"0" cellspacin=
+g=3D"0" class=3D"content" height=3D"150" lang=3D"x-block" style=3D"overflow=
+: hidden; border-radius: 3px;" width=3D"100%">
+          <tbody><tr>
+            <td height=3D"20"></td>
+          </tr>
+          <tr>
+            <td align=3D"center">
+              <img alt=3D"" src=3D"https://a.binomo.com/uploads/mailers/150=
+0565709_mailer_8c1503fa.png" style=3D"display:block;" width=3D"43"><br>
+              <p style=3D"font-size: 13px; line-height: 17px; font-family:&=
+#39;Roboto&#39;, Helvetica, Arial, sans-serif; text-align: center; color: #=
+AAADB3; font-weight: 300;" valign=3D"middle">
+                <strong style=3D"font-size: 18px; line-height: 21px; color:=
+ #ffffff;">Turnamen Gratis </strong><br>Berdaganglah pada akun demo hari in=
+i =E2=80=94 <br>dapatkan transaksi sebagai hadiah! <!--SPACE-->
+                </p><table width=3D"100%">
+                  <tbody><tr>
+                    <td height=3D"15"></td>
+                  </tr>
+                </tbody></table>
+                <!--button-->
+                <table align=3D"center" border=3D"0" cellspacing=3D"0" widt=
+h=3D"182">
+                  <tbody><tr>
+                    <td align=3D"center" bgcolor=3D"#ffdd47" height=3D"28" =
+style=3D"border-radius: 1px; overflow: hidden;" valign=3D"middle" width=3D"=
+131">
+                      <a href=3D"https://u1812989.ct.sendgrid.net/wf/click?=
+upn=3DGB2FXq8XrPI-2FK20DpvpPtTyLt-2BPQxNAj6dmtNDETQ3LgiGAtdETg19rD9d0E8Q4-2=
+FVbzDkn0FQg2rDjBBGAJ0eRDwM4e0oYEa6wNp23fElkzGBQXegF-2BVTpB9XXtq2l4ZXpfZnDQL=
+v0xJnNcA4JBCJ-2FnSH9o4THFV96jrEbPvpQE-3D_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXW=
+PRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo0x6OZsHauvuSEB=
+6j5yKWEygmEqi-2BPXE-2F1ZjnAaJPPDq5kpRDkqAyxyjvVXm7WxO8Nkcvk-2FTtn7PzIyf-2B1=
+hWqJS1ayDe-2BMQqvWBaZMVmQ8kWw6zwim9K3Gx4q2dT-2BLxtyb3nu4KhryqJ-2BB7mwC-2FIe=
+u1kM2-2Frc4aYN5bTbuCrBbk71OKCGvlDMAhDSJ0gGJP80A-3D-3D" style=3D"font-family=
+:&#39;Roboto&#39;, Helvetica, Arial, sans-serif;font-size: 10px; color: #2E=
+323F; font-weight: bold; text-decoration: none; text-transform: uppercase; =
+letter-spacing: 1px; text-align: center; display: inline-block; width: 100%=
+;" target=3D"_blank"> DAPATKAN  </a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              <p></p>
+            </td>
+            </tr><tr>
+              <td height=3D"30"></td>
+            </tr>
+
+        </tbody></table>
+        <br><br><!--IMAGE BLOCK--><a href=3D"https://u1812989.ct.sendgrid.n=
+et/wf/click?upn=3DyrFTA-2F9O1FDgQd17t-2B9Rgoolbm-2Fgz11NOTpeV9-2B0gSaPoMKml=
+NhG1XnpUm0jWrkgtjm-2BqS-2Fy16ZmJAkod8RK45Jvao-2BF9B4uh-2BEHG9qn7SI-2BPGi9hn=
+fB2hfLCAnNzmCFKal8ksKOt3iOHjGOfBen-2FQ-3D-3D_7h19-2FNvT0N8r231IXBjL3Mj3W7Wh=
+lEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo9I4MtPFI5h=
+CQFNM9febhvA0Jan6anBOHmKjMqWgmKBgGskRUIGQif9g97pGFCmjD64LpLMm70ZHS0vUf0gS7s=
+W8ymI-2FgN9JQcSbQC0HwQvB7Bg-2BM-2B0-2F0zcyWMhOxzlZAWROE1VqeK9eGWPZlSJ9Irr-2=
+BkV8DAld29-2B5wE0JZn-2B0Ku-2BLIwCgS2mirA2riTJJPwQ-3D-3D" style=3D"line-heig=
+ht: 0; display: block;" target=3D"_blank"><img alt=3D"Bagaimana Cara mengem=
+bangkan kualitas itu?" lang=3D"x-block" src=3D"https://a.binomo.com/uploads=
+/mailers/1500565708_mailer_221fd8ca.jpg" style=3D"border-radius: 4px; overf=
+low: hidden; display: block; width: 100%;" width=3D"100%"></a><br><br><br><=
+!--CONTENT-->
+        <div lang=3D"x-block">
+          <h2 style=3D"color: #252B33; font-size: 30px; margin: 0;padding: =
+0; font-weight: 500; text-align: left; line-height: 37px;">
+            3 kualitas pedagang yang sukses
+          </h2>
+        </div>
+        <br><br><!--SOCIAL NEW-->
+        <table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellspacin=
+g=3D"0" class=3D"content" lang=3D"x-block" width=3D"100%">
+          <tbody><tr>
+            <td style=3D"vertical-align: top;" valign=3D"middle" width=3D"4=
+0">
+              <img src=3D"https://a.binomo.com/uploads/mailers/1500565708_m=
+ailer_7dd9fedb.jpg" style=3D"display:block;" width=3D"100%">
+            </td>
+            <td width=3D"20"></td>
+            <td style=3D"font-size: 15px; line-height: 23px; font-family:&#=
+39;Roboto&#39;, Helvetica, Arial, sans-serif; text-align: left; color: #000=
+000;" valign=3D"middle">
+              <strong>1. Disiplin diri </strong><br><strong>Cara mengembang=
+kan</strong>: jangan pernah melanggar aturan Anda sendiri! Ikuti rencana da=
+n strategi yang dipilih, jangan melebihi batas laba dan kerugian. Masuki pa=
+sar hanya jika Anda yakin dengan analisis dan keputusan Anda. Selalu simpan=
+ catatan hasil transaksi Anda di <a href=3D"https://u1812989.ct.sendgrid.ne=
+t/wf/click?upn=3DGB2FXq8XrPI-2FK20DpvpPteFI00O9qB6aRbnk8tQjsNBfEJk2mQa06zp3=
+jHZrTqX31N3DyJcjJXAeqOC3-2FqDJO7DFmRYx4AgYY2TjVgPBTyQaOiLWK7syqyJVLxXFr18YP=
+ry9lOenzLROn00tMkIz6T6tew1VfzXO15HqKtwQLHobhR7p7TE-2B0eL2VT1guq2E_7h19-2FNv=
+T0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J=
+-2BGoi6kAbo6-2ByN5bg0lEWz7OFvrgH1CuWRq8JpsurzA2pMPjVk5cIfNytdc-2Bl2erwEFt2h=
+kmzroODr5SRy8-2FvQaxnrY2tmNURB6IVIilShITdRXB2qd-2FVq8L8eZs9Mu2K3XuoHbe-2FTr=
+d-2FRKdYOI55tHSv9-2Fs4AWw1-2B3vCD6-2BBpymyWqFNXcQkwxPxdqnzKHE5MckvXW6l1g-3D=
+-3D" style=3D"color: #4a90e2;text-decoration: none;" target=3D"_blank">dala=
+m catatan harian pedagang </a> dan analisis kesalahannya.
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"20"></td>
+          </tr>
+          <tr>
+            <td style=3D"vertical-align: top;" valign=3D"middle" width=3D"4=
+0">
+              <img src=3D"https://a.binomo.com/uploads/mailers/1500565708_m=
+ailer_2b667ce6.jpg" style=3D"display:block;" width=3D"100%">
+            </td>
+            <td width=3D"20"></td>
+            <td style=3D"font-size: 15px; line-height: 23px; font-family:&#=
+39;Roboto&#39;, Helvetica, Arial, sans-serif; text-align: left; color: #000=
+000;" valign=3D"middle">
+              <strong>2. Kemampuan merencanakan </strong><br><strong>Cara m=
+engembangkan</strong>: pilih waktu yang tepat untuk berdagang, jadi tidak a=
+da yang mengganggu Anda. Jangan lupa bahwa berita ekonomi penting dapat =E2=
+=80=9Cmengguncangkan=E2=80=9D kutipan harga dan memberikan kejutan ke pasar=
+.
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"20"></td>
+          </tr>
+          <tr>
+            <td style=3D"vertical-align: top;" valign=3D"middle" width=3D"4=
+0">
+              <img src=3D"https://a.binomo.com/uploads/mailers/1500565708_m=
+ailer_37aa91e9.jpg" style=3D"display:block;" width=3D"100%">
+            </td>
+            <td width=3D"20"></td>
+            <td style=3D"font-size: 15px; line-height: 23px; font-family:&#=
+39;Roboto&#39;, Helvetica, Arial, sans-serif; text-align: left; color: #000=
+000;" valign=3D"middle">
+              <strong>3. Pengembangan diri </strong><br><strong>Cara mengem=
+bangkan</strong>: luangkan setidaknya 30 menit sehari untuk melakukan pendi=
+dikan mandiri. Fokus pada refleksi tentang dan menganalisis pasar, jangan m=
+udah menyerah.
+            </td>
+          </tr>
+        </tbody></table>
+        <br><br><br><!--button-->
+        <div class=3D"button" style=3D"width: 100%; background-color: #ffdd=
+47; border-radius: 3px;">
+          <br><br>
+          <p align=3D"center" style=3D"width: 70%; Margin: 0 auto;">
+            <a href=3D"https://u1812989.ct.sendgrid.net/wf/click?upn=3DGB2F=
+Xq8XrPI-2FK20DpvpPtV1ydHbaXhGOFI9HjW6JZv-2B0e-2BT3cMATHddeK7KfCiglGCIg-2FK5=
+P4k-2BfRNYVqkvOl8TbcHk5NMJbtx-2FAOwJYvc-2BtU4sdc9Om3uVSpwghVD2bu54hP3zOVSlI=
+VzS9ovw21Q-3D-3D_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAE=
+JhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo03r6yhEzoSYZxeVIc2xRbxMY2UyeOgv4uLV1PM=
+tqBb4s91Pef4-2FfHOgM9rTp67OUm4WMFC1PEFzcex6Ky9N4WGwKxKKr3b86Tl8Sd87LWY3dV1w=
+dR9mwh3YDZUkTQbuwfmA3PDCE-2FGSqPnxgKGLAgQvlQ9B4wVwU1PdB1GKWB8AoPR5XvUz-2FGy=
+V81WdoHiq4A-3D-3D" style=3D"font-family:&#39;Roboto&#39;, Helvetica, Arial,=
+ sans-serif;font-size: 18px; color: #000000; font-weight: bold; text-decora=
+tion: none; text-transform: uppercase; letter-spacing: 1px; text-align: cen=
+ter; display: inline-block; width: 100%; line-height: 20px;" target=3D"_bla=
+nk"> BERDAGANG DENGAN CERDAS  </a>
+          </p>
+          <br><br>
+        </div>
+        <!--=D0=9A=D0=9E=D0=9D=D0=95=D0=A6 =D0=9A=D0=9E=D0=9D=D0=A2=D0=95=
+=D0=9D=D0=A2=D0=90--><br><br><br><br><br><center class=3D"contacts_main" la=
+ng=3D"x-block" style=3D"background-color: #f5f5f5;">
+          <p align=3D"center" lang=3D"x-block-comodo" style=3D"Margin: 0;">
+            <br><br><br><span style=3D"color: #252B33; font-size: 16px; lin=
+e-height: 23px; margin: 0;padding: 0; font-weight: 500; text-align: center;=
+">Untuk setiap pertanyaan, silahkan hubungi<br>tim dukungan kami</span><br>
+          </p>
+          <p align=3D"center" lang=3D"x-block-comodo"><a href=3D"skype:supp=
+ort.binomo" style=3D"border: 0; text-decoration: none;"><img alt=3D"" src=
+=3D"https://a.binomo.com/uploads/mailers/1500565708_mailer_7bc4531d.jpg" st=
+yle=3D"border-width:0; Margin: 0 31px; text-decoration: none; padding: 5px;=
+" width=3D"100"></a><a href=3D"mailto:support@binomo.com" style=3D"border: =
+0; text-decoration: none;"><img alt=3D"" src=3D"https://a.binomo.com/upload=
+s/mailers/1500565708_mailer_b2b951c8.jpg" style=3D"border-width:0; Margin: =
+0 15px; text-decoration: none; padding: 5px;" width=3D"140"></a>
+          </p>
+        </center><br><br><br><!--FOOTER-->
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" width=3D"100=
+%">
+          <tbody><tr>
+            <td align=3D"left" style=3D"vertical-align: top;" valign=3D"top=
+" width=3D"50">
+              <br><br><img alt=3D"!" border=3D"0" height=3D"30" src=3D"http=
+s://a.binomo.com/uploads/mailers/1500565707_mailer_99e0f834.png" width=3D"2=
+4">
+            </td>
+            <td align=3D"left" style=3D"font-size: 11px; line-height: 15px;=
+  color: #868686; text-align: left;">
+              <p>
+                Operasi keuangan yang ditawarkan oleh situs ini, mungkin me=
+miliki risiko yang lebih tinggi. Selama dibeli, yang ditawarkan oleh situs =
+ini, layanan keuangan dan alat, Anda dapat mengalami kerugian keuangan yang=
+ serius, atau benar-benar kehilangan dana dalam jaminan - dagangan akun And=
+a. Silahkan menilai semua risiko keuangan dan mendapatkan nasihat dari pena=
+sihat keuangan independen sebelum bertransaksi. Perusahaan Binomo tidak ber=
+tanggung jawab untuk setiap kerusakan langsung, tidak langsung atau berbang=
+kit atau kerusakan lainnya akibat dari tindakan pengguna di situs ini.<br><=
+br>Binomo =C2=A9<br>Tiburon Corporation Limited <br> Tempat penyedian layan=
+an ini adalah Republik Seychelles.<br>Suite 1, Second Floor, Sound &amp; Vi=
+sion House, Francis Rachel Str., Victoria, Mahe, Seychelle<br><br>Data prib=
+adi Anda dilindungi.<br><a href=3D"https://u1812989.ct.sendgrid.net/wf/clic=
+k?upn=3DGB2FXq8XrPI-2FK20DpvpPtaa9ZYTzSOWXFhZF3z322oxChx6BxBuZy9Qdmds-2FF0h=
+T-2B7AqGh9RFWcS8jYLAJOZQyoIkC5aneg2dzIyHkB68ahOgpVYL5AxTHIOuD6DKXKp2EkZ0daJ=
+F0diboq1s-2FbXnA-3D-3D_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c=
+-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo-2FMHCOHZs0cNcl-2Fkl8DqHXEuI9hl2=
+c-2BoOjC95FXRnLAMhltvmnALllEUw9CM6Ys-2BtoUmP2VrucFc5olVaPekkO7CIcvwR83jATU7=
+1Utk3yaPZoT55lTua5QvMVaSss-2BhuEyAI4TeMZDLnXyntZv6ZgnIcG22JaDCvQ6DNYyrXEh7F=
+-2BQ85vp1ILCP2orZ8Wh2PA-3D-3D" style=3D"color: #4a90e2 " target=3D"_blank">=
+Lebih lanjut </a>tentang perlindungan data pribadi di Binomo<br><br>Anda me=
+nerima surat ini karena berlangganan newsletter <a href=3D"https://u1812989=
+.ct.sendgrid.net/wf/click?upn=3DGB2FXq8XrPI-2FK20DpvpPtV1ydHbaXhGOFI9HjW6JZ=
+v-2B0e-2BT3cMATHddeK7KfCiglGCIg-2FK5P4k-2BfRNYVqkvOl8TbcHk5NMJbtx-2FAOwJYvc=
+-2BtU4sdc9Om3uVSpwghVD2bu54hP3zOVSlIVzS9ovw21Q-3D-3D_7h19-2FNvT0N8r231IXBjL=
+3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNdpmn-2BNV4J-2BGoi6kAbo8a=
+bBgJD3exRf2hsBH2kfMnfb7xakdCj-2FZJRykBMgUuFRiAsXL-2Bl5kNwnJfSl93fs0Rjsa3vac=
+1JgqPFEyZo2MxUAWd5vLQyZc6LRnRnl8t-2BxI9J0lLqM25Onjpgj0-2FzxasrNG8DhxSD7iLhC=
+8FUlQSAvq1JRpRuVBgxR9shhS4n90sR7fQsF-2BN0-2FrWLYYobWA-3D-3D" style=3D"color=
+: #4a90e2" target=3D"_blank">Binomo</a><br>Anda dapat mengubah pengaturan d=
+i <a href=3D"https://u1812989.ct.sendgrid.net/wf/click?upn=3DGB2FXq8XrPI-2F=
+K20DpvpPte29YCXb9-2BjKeEcgc2JxdH5Z73tNKN8-2F8yxW-2FnSMKOY9X3qtxxDv5gze42fEQ=
+Bq1jD-2BTWBoslZMpJFZ7ESCg4oBSr1LKGJc0DPgq9AcS34Tk9mUTY4xe7eEdfGt7Y6FUVg-3D-=
+3D_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPU=
+Ndpmn-2BNV4J-2BGoi6kAbo3pLbeqJJjqowVbaXJIyFq2IPTZ3edLtdTtd3eR2Vq-2FahPItX9D=
+9rd68MBq2DA-2FcK6iQpD76UhWduFlJPUN57WgdXKjAnEQ82KeNhWyRTy3YOAmEk1F6lniMQ45d=
+-2BlYZo84-2BNHZ74GOrMRWP9WkHfp6O287h9qR4-2F4HD-2FmRKHy3mEhu0mBfIyEufcl75Ob-=
+2B7GQ-3D-3D" style=3D"color: #4a90e2" target=3D"_blank">Papan Pemuka </a><b=
+r>Jika Anda memiliki saran untuk milis, menulis ke kotak <a href=3D"mailto:=
+email@binomo.com" style=3D"color: #4a90e2"> email@binomo.com</a><br>Jika An=
+da tidak lagi ingin menerima email dari kami, klik <a href=3D"https://u1812=
+989.ct.sendgrid.net/wf/click?upn=3DGB2FXq8XrPI-2FK20DpvpPtbnT14-2B-2BpMzPQ3=
+wLatSRkSnF-2Fuo-2Fw-2F44FuGoglYUvKS4tQY5gcU7eSBESJKdxQVzF8FZyg1Rc6I1k8-2Bco=
+waNlLShwBLrzmuUV75lc4TDwTpuaZrVIqIN3SAVr03zY1dxwvUQkX9TSDWkmSZTf7dzLnZ-2FSz=
+zLaWrnte3LdUB5524aE2qIlgvIwExydhJELl1f3lTqr-2BzeeQyRLpuaE85nEJvoV64H3SNzWYv=
+ePHFOVaara3MJwKyCyGNHrb7nzVIp7joLZ8jJflEx9mSlBzB5H2JDD0a2fyA8-2FEDtropXgrsZ=
+_7h19-2FNvT0N8r231IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXPUNd=
+pmn-2BNV4J-2BGoi6kAboxr3rRwyyDvLW9i-2BtGEiVRw5IuBABgDOOnNvRqulBKTFrKBqYCnF2=
+2qbpmYR-2FxwdOQa-2BaGabCuMZpLzi3lC0MiI2wTye8aCPwEB5kmx6JdB-2Brihd9RTVX1XCWb=
+aw9lRG4qkN-2FEqXvWO1Kos7myg75v5JlULRZwDnzMmH-2BUwzPm52z-2BvnFYw8B702MP1Wtg8=
+52A-3D-3D" style=3D"color: #4a90e2 " target=3D"_blank">Setop ikuti</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </center>
+
+
+<img src=3D"https://u1812989.ct.sendgrid.net/wf/open?upn=3D7h19-2FNvT0N8r23=
+1IXBjL3Mj3W7WhlEXWPRV-2FL3P3FC9wfA2c-2BpAEJhJLgwEeB0BXNAvWCh9ljbNl303wnGWci=
+Q1rUEgPwONmzgNGslHBoH6FUE-2FfZTZU7dKrBkYWqL-2BODUtHHzIJp3-2BZkVgE5RSARFzoz9=
+6dKHENm1nCDId-2FieDuPy12H3EM29RgJq4aaSelT7UAA1-2BXR8od8YKYaDn4YuCOxslDMDyNv=
+Ztjl9Fwz3zhg-2BcUf8m5-2BtCjkKaCYb732v2KeAIm9C5boYXtsMyO1svg3eqsB6pmSEaD3P0S=
+3Es-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px =
+!important;width:1px !important;border-width:0 !important;margin-top:0 !imp=
+ortant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !=
+important;padding-top:0 !important;padding-bottom:0 !important;padding-righ=
+t:0 !important;padding-left:0 !important;"/>
+</body></html>

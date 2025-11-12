@@ -1,0 +1,636 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.196.10 with SMTP id j10csp1069589ywi;
+        Fri, 25 Aug 2017 09:59:37 -0700 (PDT)
+X-Received: by 10.129.146.70 with SMTP id j67mr8903861ywg.364.1503680377439;
+        Fri, 25 Aug 2017 09:59:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503680377; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bNXgwLZkXxtUl54oSwN5zYurfVa/IxRkU0ou5MErg2AtqHMJpvAm2DAqj4cF4BIPLC
+         xpdn8dnljEiu8i46fhoVjx5YKeQit0+YUndsmgtlnYaT8vqf+YfsKlZdIywuVoIvjEKO
+         REA2n2heNsOobOqDyeOglOvIsETZUr5Lee8zcVam+RSKBrGdeEIToRz+vPynBG1nNFdF
+         OUw69ZyWp1tA4uEBy0Z8djQ+Qo5m+yj2kOQdND7TSozNADB4wXzCtbYkmchOHXt+9S4d
+         zVW3BHdUYlCZ/9PBDPJUVid4VAP4ecfrnBF+zsbGUlB42adUin0N3VcacUUusnfxgOBL
+         FBlw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=MHC621ASIRHPc8nbcqgmgkfXJGjrFyH+YnhR8lPtstY=;
+        b=dzUZp6dKA4nzSko+D1Ttrq4DUsJ9JwNwzDvzhyKuINP4aKaO2qBrvV8V/l5AD2ofHR
+         tXy/5RDDnSVkHSx02PtMo969qfIf4RJNYbi4y4RgjJ48B2XtSFchyzH4mrU+X6gwpqSU
+         ndMhKHbUyT5bpwlYRuapnDj19mbM/wTf69UgD3fNSZFyB3f8adYiegPqnMW9TK2Fnltn
+         4u4etbW50LGg+6RHyPP6hX5qJoqNDAbHRgJbBr5AJiaxLitMDO5iUqVo6xKk5xSOr/cp
+         plPFiXVIy8F89bpa6yfIjq06UNROpHHaybbUPsoYXFprSvcGWSNsTH1qx/EYB9Ar9dCx
+         B+XA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@getpostman.com header.s=k1 header.b=vMKeZgVo;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=obLXfDch;
+       spf=pass (google.com: domain of bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net designates 198.2.130.177 as permitted sender) smtp.mailfrom=bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=getpostman.com
+Return-Path: <bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net>
+Received: from mail177.atl101.mcdlv.net (mail177.atl101.mcdlv.net. [198.2.130.177])
+        by mx.google.com with ESMTPS id d191si551653ybh.406.2017.08.25.09.59.37
+        for <sylviestephanies@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 25 Aug 2017 09:59:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net designates 198.2.130.177 as permitted sender) client-ip=198.2.130.177;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@getpostman.com header.s=k1 header.b=vMKeZgVo;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=obLXfDch;
+       spf=pass (google.com: domain of bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net designates 198.2.130.177 as permitted sender) smtp.mailfrom=bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=getpostman.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=getpostman.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=abhinav.asthana@getpostman.com;
+ bh=MHC621ASIRHPc8nbcqgmgkfXJGjrFyH+YnhR8lPtstY=;
+ b=vMKeZgVoAuxC9Los2RSMheU7QRTGcuVwIwwSY7EYZg34pSqL7lmeJctdzaolPsSMTeaCaC97Wror
+   DAROIkYYfSuGKVtmNCTO8uV/Vs0cMafeF8tIVleqzE7QeuOIPBpzWQJEz8iDiZKoQzmTR8pbukgE
+   epdRjlvPO4IWoMKnAJ4=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=gmail.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:
+ List-Unsubscribe:Content-Type:MIME-Version;
+ bh=liGYG8SVcD/KhuGpXkym6oGcKbo=;
+ b=obLXfDchIgEqBBiKbZHtPSgokf7CnwiJTXyy+pd/vAipSdiZMnbv9DBoOrqxCv8OXikiqvUMFeK+
+   pjtjkICsTOkqHA+AqXy94A2yBBYc/uLDs0H5ADehs0JimMy4amjmHh5D2L5/tEFSB5xq4KxxqdTx
+   /bfqhbHISmup8CzlveE=
+Received: from (127.0.0.1) by mail177.atl101.mcdlv.net id hk1bni2akeck for <sylviestephanies@gmail.com>; Fri, 25 Aug 2017 16:59:14 +0000 (envelope-from <bounce-mc.us14_62880281.446607-sylviestephanies=gmail.com@mail177.atl101.mcdlv.net>)
+Subject: =?utf-8?Q?August=20News=20From=20Postman?=
+From: =?utf-8?Q?Abhinav=20from=20Postman?= <abhinav.asthana@getpostman.com>
+Reply-To: =?utf-8?Q?Abhinav=20from=20Postman?= <abhinav.asthana@getpostman.com>
+To: <sylviestephanies@gmail.com>
+Date: Fri, 25 Aug 2017 16:59:14 +0000
+Message-ID: <bbd5e9160d5ec59728e064207.b4ac287c66.20170825165811.e69b6c0b78.7e0ac575@mail177.atl101.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CIDe69b6c0b78b4ac287c66**
+X-Campaign: mailchimpbbd5e9160d5ec59728e064207.e69b6c0b78
+X-campaignid: mailchimpbbd5e9160d5ec59728e064207.e69b6c0b78
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=bbd5e9160d5ec59728e064207&id=e69b6c0b78&e=b4ac287c66
+X-MC-User: bbd5e9160d5ec59728e064207
+Feedback-ID: 62880281:62880281.446607:us14:mc
+List-ID: bbd5e9160d5ec59728e064207mc list <bbd5e9160d5ec59728e064207.34507.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <http://getpostman.us14.list-manage.com/unsubscribe?u=bbd5e9160d5ec59728e064207&id=bba0cca85f&e=b4ac287c66&c=e69b6c0b78>, <mailto:unsubscribe-mc.us14_bbd5e9160d5ec59728e064207.e69b6c0b78-b4ac287c66@mailin1.us2.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-mcda: FALSE
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_2097582205"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_2097582205
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Postman
+August 2017 Postman Newsletter
+Postman Announces Multi-Region Support for Monitoring!
+
+Postman Announces Multi-Region Support for Monitoring!
+Want to test and improve API latency across multiple time zones? Postman n=
+ow supports API monitoring in six different regions around the world! (htt=
+p://www.prweb.com/releases/2017/08/prweb14605923.htm) Postman users can no=
+w measure API load times from different regions=2C and refactor code to im=
+prove the user experience of their apps.
+
+Postman currently supports these six regions: US East=2C US West=2C Canada=
+=2C EU=2C Asia Pacific=2C and South America. Get more details on our blog=
+ (http://blog.getpostman.com/2017/08/17/setting-up-multi-region-api-tests-=
+in-postman/) .
+
+Postman
+New Features Beaming into Postman
+
+Our team is hard at work adding new features and enhancements to Postman.=
+ Here are some of our recent favorites:
+* Collaboration and CORS for mocks (https://trello.com/c/0WAgGL1y/52-colla=
+boration-and-cors-for-mocks)
+* Multi-level folders and folder reordering (http://blog.getpostman.com/20=
+17/05/19/multi-level-folders-and-folder-reordering/)
+* Pro features now available for free in =E2=80=9Csmall project=E2=80=9D q=
+uantities (http://blog.getpostman.com/2017/07/14/announcing-postman-5-0-pr=
+o-features-for-free/)
+
+http://blog.getpostman.com/2017/08/11/spotlight-on-engineering-andrew-broz=
+/
+Spotlight on Engineering: Andrew Broz
+
+Can't decide where to eat lunch? Andrew Broz talks about his Lunch Picker=
+ collection and experiences at Postman in our spotlight on engineering (ht=
+tp://blog.getpostman.com/2017/08/11/spotlight-on-engineering-andrew-broz/)=
+ !
+API Testing Tips from a Postman Professional
+
+Learn to test APIs like a Postman professional! Postman developer James Me=
+ssinger discusses organization=2C JSON schema=2C Postman BDD and more in h=
+is top 10 tips for simplifying API testing (http://blog.getpostman.com/201=
+7/07/28/api-testing-tips-from-a-postman-professional/) .
+
+------------------------------------------------------------
+Testing REST APIs with Postman
+
+Looking to run deeper tests based on your JSON-styled responses? Get the s=
+tory on how to install the Postman BDD framework (https://seleniumwithjava=
+python.wordpress.com/home/testing-rest-apis-with-postman-and-jenkins-part-=
+1/) .
+
+For more on the Postman BDD framework=2C visit our docs page (https://docu=
+menter.getpostman.com/view/220187/postman-bdd-examples/6Z3uY71) .
+------------------------------------------------------------
+Shopify Relies on Postman For Customer Onboarding
+
+With hundreds of API endpoints to QA and document=2C Shopify uses Postman=
+ for more than just development. Find out how Postman simplifies Shopify's=
+ customer onboarding process in this new blog post (http://blog.getpostman=
+=2Ecom/2017/08/16/shopify-relies-on-postman-for-more-than-just-development/)=
+ .
+Join Us at API World in September!
+
+Postman is sponsoring and speaking at this year's API World 2017 Conferenc=
+e & Expo (http://apiworld.co) (September 23 - 27) in San Jose=2C Californi=
+a.
+* Want a free ticket to attend API World? (https://www.eventbrite.com/e/ap=
+i-world-2017-tickets-30521108457?discount=3DAPI17-OPENPOSTMAN) We have 50=
+ free OPEN passes=2C which will get you into the expo floor=2C OPEN talks=
+=2C and conference keynotes. First come=2C first served!
+* Visit us on the expo floor at booth #321. (http://apiworld.co/expo/) Sti=
+ckers=2C fidget spinners=2C and Postman demos - what's not to like?
+* We're giving away an Amazon Echo! (https://www.amazon.com/Amazon-Echo-An=
+d-Alexa-Devices/b?ie=3DUTF8&node=3D9818047011) Come by our booth and get y=
+our badge scanned to enter.
+* Abhinav Asthana (Postman's CEO & co-founder) will be speaking on Tuesday=
+=2C September 26 at 11:00 a.m.=2C in an OPEN talk entitled: "Mocks: Fake A=
+PIs for Real Developers." (http://apiworld.co/conference/speakers/)
+
+=C2=A9 2017 Postdot Technologies Inc.=2C All Rights Reserved.
+
+Our mailing address is:
+Postdot Technologies=2C 49 Geary Street=2C Suite 235=2C San Francisco=2C C=
+A 94108
+
+Click to unsubscribe from these emails. (http://getpostman.us14.list-manag=
+e.com/unsubscribe?u=3Dbbd5e9160d5ec59728e064207&id=3Dbba0cca85f&e=3D=
+b4ac287c66&c=3De69b6c0b78)
+--_----------=_MCPart_2097582205
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+=2Ew3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dutf-=
+8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-sca=
+le=3D1">
+    <meta http-equiv=3D"x-ua-compatible" content=3D"IE=3Dedge">
+    <title>Welcome to Postman</title>
+    <link href=3D"https://fonts.googleapis.com/css?family=3DDosis:500%7COp=
+en+Sans:400=2C600=2C700" rel=3D"stylesheet">
+    <!--[if mso]>
+    <style>
+      .emailContent {
+      font-family:Arial=2Csans-serif;
+      }
+    </style>
+    <![endif]-->
+    <style type=3D"text/css">
+    #bodyTable{
+      max-width:550px;
+      height:100% !important;
+      margin:0 auto;
+      padding:0;
+      font-family:'Open Sans'=2Csans-serif;
+      color:#282828;
+    }
+    a{
+      color:#EF5B25;
+      text-decoration:none;
+    }
+    hr{
+      border:1px solid #E5E5E5;
+      border-width:1px 0 0;
+      margin-bottom:30px;
+    }
+
+    /* Media query for mobile*/
+
+@media only screen and (max-width: 480px)  {
+
+  .full {
+
+    display:block;
+
+    width:100%;
+
+  }
+
+}
+
+
+    .emailContainer{
+      display:block;
+      width:100% !important;
+      box-sizing:border-box !important;
+    }
+    .headerImage{
+      overflow:hidden !important;
+    }
+    .responsive-image{
+      max-width:550px !important;
+    }
+    .emailContent{
+      margin-top:15px !important;
+      padding:20px !important;
+    }
+    .emailBody h1=2C.emailBody p{
+      text-align:center !important;
+    }
+    .ctaButton{
+      max-width:510px !important;
+      width:40% !important;
+    }
+</style>
+  </head>
+  <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=3D=
+"0" offset=3D"0" bgcolor=3D"#FFFFFF">
+    <center>
+      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" id=3D"bodyTable">
+        <tbody>
+          <tr>
+            <td align=3D"center">
+              <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"550" class=3D"emailContainer">
+                <!-- Header -->
+                <tbody>
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%">
+                        <tbody>
+                          <tr>
+                            <td align=3D"center" class=3D"headerImage">
+                              <!-- IMAGE --> <img src=3D"http://pages.getp=
+ostman.com/rs/067-UMD-991/images/newsletter-header.png" alt=3D"Postman" wi=
+dth=3D"100%" style=3D"display: block;" border=3D"0" class=3D"responsive-im=
+age"> </td>
+                          </tr>
+                        </tbody>
+                      </table> </td>
+                  </tr>
+                  <tr>
+                    <td style=3D"padding:25px 0 0 0;" align=3D"center" bgc=
+olor=3D"#F2F2F2">
+                      <div>
+                        <span style=3D"margin: 0; font-size: 20px; font-we=
+ight: 600; text-align: center;">August 2017 Postman Newsletter </span>
+                      </div> </td>
+                  </tr>
+                  <!-- Content -->
+                  <tr>
+                    <td bgcolor=3D"#F2F2F2">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" class=3D"emailContentContainer" bgcolor=3D"#F2F2F2">
+                        <tbody>
+                          <tr>
+                            <td align=3D"center" valign=3D"top" width=3D"1=
+00%">
+                              <table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"max-width:510px;" class=3D"emailConten=
+t">
+                                <!-- Body Content -->
+                                <tbody>
+                                  <tr>
+                                    <td bgcolor=3D"#ffffff" style=3D"font-=
+family:'Open Sans'=2C sans-serif;font-size:12px;padding:0px;border-radius:=
+3px;" align=3D"center" class=3D"emailBody">
+                                      <table width=3D"100%" cellpadding=3D=
+"0" cellspacing=3D"0" align=3D"center" style=3D"text-align:center;">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <div>
+                                                <!--<img src=3D"http://pag=
+es.getpostman.com/rs/067-UMD-991/images/monitor-results-1 2.png" alt=3D"Po=
+stman" width=3D"100%" style=3D"display: block;" border=3D"0" class=3D"resp=
+onsive-image" /> -->
+                                                <div class=3D"newsItem1" s=
+tyle=3D"padding:25px 25px 25px 25px;">
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">Postman Announces Multi-Region Support for Mo=
+nitoring!<br> <br> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"paddi=
+ng-bottom: 25px;"><img src=3D"http://pages.getpostman.com/rs/067-UMD-991/i=
+mages/monitoring.png" alt=3D"Postman Announces Multi-Region Support for Mo=
+nitoring!" width=3D"100%" style=3D"display: block;" border=3D"0" class=3D"=
+responsive-image"></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Want to test and improve API=
+ latency across multiple time zones? <a href=3D"http://getpostman.us14.lis=
+t-manage.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=3D6fa1dda360&e=
+=3Db4ac287c66" style=3D"font-family:verdana=2C geneva=2C sans-serif;color=
+:#ef5b25;text-decoration:none;">Postman now supports API monitoring in six=
+ different regions around the world!</a> Postman users can now measure API=
+ load times from different regions=2C and refactor code to improve the use=
+r experience of their apps.<br><br> Postman currently supports these six r=
+egions: US East=2C US West=2C Canada=2C EU=2C Asia Pacific=2C and South Am=
+erica. <a href=3D"http://getpostman.us14.list-manage.com/track/click?u=3Db=
+bd5e9160d5ec59728e064207&id=3D133cd4adb6&e=3Db4ac287c66" style=3D"font-fa=
+mily:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-decoration:none;">=
+Get more details on our blog</a>.<br><br> </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!-- Start Grey Spacer -->
+                                                <div>
+                                                  <div class=3D"newsItem1"=
+ style=3D"padding:0 0 30px; background-color:#F2F2F2;">
+                                                    <table>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style=3D"fon=
+t-size:14px;font-weight:bold;"> </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <!-- End Grey Spacer -->
+                                                <!-- Start Story Two -->
+                                                <img src=3D"http://pages.g=
+etpostman.com/rs/067-UMD-991/images/EventBrite.png" alt=3D"Postman" width=
+=3D"100%" style=3D"display: block;" border=3D"0" class=3D"responsive-image=
+">
+                                                <div class=3D"newsItem1" s=
+tyle=3D"padding:25px 25px 25px 25px;">
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">New Features Beaming into Postman<br> <br> </=
+td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Our team is hard at work addi=
+ng new features and enhancements to Postman. Here are some of our recent f=
+avorites:
+                                                          <ul style=3D"pad=
+ding:0;margin:0 0 0 20px;">
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;"><a href=3D"http://getpostman.us14.list-manage1.com/t=
+rack/click?u=3Dbbd5e9160d5ec59728e064207&id=3D493b4899f5&e=3Db4ac287c66"=
+ style=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-d=
+ecoration:none;">Collaboration and CORS for mocks </a> </li>
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;"> <a href=3D"http://getpostman.us14.list-manage2.com/=
+track/click?u=3Dbbd5e9160d5ec59728e064207&id=3D7d1072bb8c&e=3Db4ac287c66"=
+ style=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-d=
+ecoration:none;">Multi-level folders and folder reordering</a> </li>
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;"><a href=3D"http://getpostman.us14.list-manage2.com/t=
+rack/click?u=3Dbbd5e9160d5ec59728e064207&id=3D7959035cc4&e=3Db4ac287c66"=
+ style=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-d=
+ecoration:none;">Pro features now available for free in =E2=80=9Csmall pro=
+ject=E2=80=9D quantities</a> </li>
+                                                          </ul> </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!-- End Story Two -->
+                                                <!-- Start Grey Spacer -->
+                                                <div>
+                                                  <div class=3D"newsItem1"=
+ style=3D"padding:0 0 30px; background-color:#F2F2F2;">
+                                                    <table>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style=3D"fon=
+t-size:14px;font-weight:bold;"> </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <!-- End Grey Spacer -->
+                                                <!-- Start Story Three -->
+                                                <a href=3D"http://getpostm=
+an.us14.list-manage1.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=3D10=
+5ba5d225&e=3Db4ac287c66" style=3D"font-family:verdana=2C geneva=2C sans-s=
+erif;color:#ef5b25;text-decoration:none;"><img src=3D"http://pages.getpost=
+man.com/rs/067-UMD-991/images/andrewSpotlight-on-Engineering%402x-1200x596=
+=2Epng" alt=3D"Postman" width=3D"100%" style=3D"display: block;" border=3D"0=
+" class=3D"responsive-image"></a>
+                                                <div class=3D"newsItem1" s=
+tyle=3D"padding:25px 25px 25px 25px;">
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">Spotlight on Engineering: Andrew Broz<br> <br=
+> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Can't decide where to eat lun=
+ch? Andrew Broz talks about his Lunch Picker collection and experiences at=
+ Postman in our <a href=3D"http://getpostman.us14.list-manage.com/track/cl=
+ick?u=3Dbbd5e9160d5ec59728e064207&id=3D79a6795182&e=3Db4ac287c66" style=
+=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-decorat=
+ion:none;">spotlight on engineering</a>! </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!-- End Story Three -->
+                                                <!-- Start Grey Spacer -->
+                                                <div>
+                                                  <div class=3D"newsItem1"=
+ style=3D"padding:0 0 30px; background-color:#F2F2F2;">
+                                                    <table>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style=3D"fon=
+t-size:14px;font-weight:bold;"> </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <!-- End Grey Spacer -->
+                                                <!-- Start Story Three -->
+                                                <div class=3D"newsItem1" s=
+tyle=3D"padding:25px 25px 25px 25px;">
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">API Testing Tips from a Postman Professional<=
+br> <br> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Learn to test APIs like a Pos=
+tman professional! Postman developer James Messinger discusses organizatio=
+n=2C JSON schema=2C Postman BDD and more in his <a href=3D"http://getpostm=
+an.us14.list-manage.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=3De12=
+f89b1a6&e=3Db4ac287c66" style=3D"font-family:verdana=2C geneva=2C sans-se=
+rif;color:#ef5b25;text-decoration:none;">top 10 tips for simplifying API t=
+esting</a>.<br><br> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">
+                                                          <hr> Testing RES=
+T APIs with Postman<br> <br> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Looking to run deeper tests b=
+ased on your JSON-styled responses? Get the story on how to install the <a=
+ href=3D"http://getpostman.us14.list-manage.com/track/click?u=3Dbbd5e9160d=
+5ec59728e064207&id=3Dae94fc09cc&e=3Db4ac287c66" style=3D"font-family:verd=
+ana=2C geneva=2C sans-serif;color:#ef5b25;text-decoration:none;">Postman B=
+DD framework</a>.<br><br> For more on the Postman BDD framework=2C <a href=
+=3D"http://getpostman.us14.list-manage.com/track/click?u=3Dbbd5e9160d5ec59=
+728e064207&id=3D91de122425&e=3Db4ac287c66" style=3D"font-family:verdana=
+=2C geneva=2C sans-serif;color:#ef5b25;text-decoration:none;">visit our do=
+cs page</a>. </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">
+                                                          <hr> Shopify Rel=
+ies on Postman For Customer Onboarding<br> <br> </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">With hundreds of API endpoint=
+s to QA and document=2C Shopify uses Postman for more than just developmen=
+t. Find out how Postman simplifies Shopify's customer onboarding process i=
+n this new <a href=3D"http://getpostman.us14.list-manage.com/track/click?u=
+=3Dbbd5e9160d5ec59728e064207&id=3D29c7113f52&e=3Db4ac287c66" style=3D"fon=
+t-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-decoration:non=
+e;">blog post</a>.<br> </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!-- End Story Three -->
+                                                <!-- Start Grey Spacer -->
+                                                <div>
+                                                  <div class=3D"newsItem1"=
+ style=3D"padding:0 0 30px; background-color:#F2F2F2;">
+                                                    <table>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style=3D"fon=
+t-size:14px;font-weight:bold;"> </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <!-- End Grey Spacer -->
+                                                <!-- Start Final Story -->
+                                                <!-- <img src=3D"http://pa=
+ges.getpostman.com/rs/067-UMD-991/images/EventBrite.png" alt=3D"Postman" w=
+idth=3D"100%" style=3D"display: block;" border=3D"0" class=3D"responsive-i=
+mage" />  -->
+                                                <div class=3D"newsItem1" s=
+tyle=3D"padding:25px 25px 25px 25px;">
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style=3D"font-=
+size:14px;font-weight:bold;">Join Us at API World in September!<br> <br> <=
+/td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td style=3D"text-=
+align:left;font-size:12px;line-height:22px;">Postman is sponsoring and spe=
+aking at this year's <a href=3D"http://getpostman.us14.list-manage.com/tra=
+ck/click?u=3Dbbd5e9160d5ec59728e064207&id=3De4a8b13c07&e=3Db4ac287c66" st=
+yle=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-deco=
+ration:none;">API World 2017 Conference &amp; Expo</a> (September 23 - 27)=
+ in San Jose=2C California.
+                                                          <ul style=3D"pad=
+ding:0;margin:0 0 0 20px;">
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;">Want a <a href=3D"http://getpostman.us14.list-manage=
+1.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=3D966f17f3fc&e=3D=
+b4ac287c66" style=3D"font-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;=
+text-decoration:none;">free ticket to attend API World?</a> We have 50 fre=
+e OPEN passes=2C which will get you into the expo floor=2C OPEN talks=2C a=
+nd conference keynotes. First come=2C first served! </li>
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;">Visit us on the expo floor at <a href=3D"http://getp=
+ostman.us14.list-manage1.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=
+=3Dd03d014f39&e=3Db4ac287c66" style=3D"font-family:verdana=2C geneva=2C s=
+ans-serif;color:#ef5b25;text-decoration:none;">booth #321.</a> Stickers=2C=
+ fidget spinners=2C and Postman demos - what's not to like?</li>
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;">We're giving away <a href=3D"http://getpostman.us14.=
+list-manage.com/track/click?u=3Dbbd5e9160d5ec59728e064207&id=3Daebea00539&=
+e=3Db4ac287c66" style=3D"font-family:verdana=2C geneva=2C sans-serif;colo=
+r:#ef5b25;text-decoration:none;">an Amazon Echo!</a> Come by our booth and=
+ get your badge scanned to enter.</li>
+                                                            <li style=3D"m=
+argin:10px 0 10px 0;">Abhinav Asthana (Postman's CEO &amp; co-founder) wil=
+l be speaking on Tuesday=2C September 26 at 11:00 a.m.=2C in an OPEN talk=
+ entitled: <a href=3D"http://getpostman.us14.list-manage1.com/track/click?=
+u=3Dbbd5e9160d5ec59728e064207&id=3Dbf6437d7c5&e=3Db4ac287c66" style=3D"fo=
+nt-family:verdana=2C geneva=2C sans-serif;color:#ef5b25;text-decoration:no=
+ne;">"Mocks: Fake APIs for Real Developers."</a> </li>
+
+                                                          </ul> </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!-- End Story Two -->
+                                              </div> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table> </td>
+                                  </tr>
+                                  <!-- Footer -->
+                                  <tr>
+                                    <td bgcolor=3D"#F2F2F2" style=3D"font-=
+family:'Open Sans'=2C sans-serif;font-size:10px;padding:25px 0;color:#9999=
+99;text-align:center;" class=3D"emailFooter"> <p style=3D"padding:0 25px;"=
+>=C2=A9 2017 Postdot Technologies Inc.=2C All Rights Reserved.</p> <p styl=
+e=3D"padding:0 25px;">Our mailing address is:<br> Postdot Technologies=2C=
+ 49 Geary Street=2C Suite 235=2C San Francisco=2C CA 94108</p> <p style=3D=
+"padding:0 25px;"> <a href=3D"http://getpostman.us14.list-manage.com/unsub=
+scribe?u=3Dbbd5e9160d5ec59728e064207&id=3Dbba0cca85f&e=3Db4ac287c66&c=3De69b=
+6c0b78" style=3D"color:#404040 !important;">Click to unsubscribe from thes=
+e emails.</a> </p> </td>
+                                    <!-- End of .footer -->
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- End of .emailContent --> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- End of .emailContentContainer --> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End of emailContainer --> </td>
+          </tr>
+        </tbody>
+      </table>
+</center><img src=3D"http://getpostman.us14.list-manage.com/track/open.php=
+?u=3Dbbd5e9160d5ec59728e064207&id=3De69b6c0b78&e=3Db4ac287c66" height=3D"=
+1" width=3D"1"></body></html>
+--_----------=_MCPart_2097582205--

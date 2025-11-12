@@ -1,0 +1,596 @@
+﻿Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.5.70 with SMTP id 67csp589272vsf;
+        Fri, 28 Jul 2017 08:47:20 -0700 (PDT)
+X-Received: by 10.237.63.163 with SMTP id s32mr11527571qth.61.1501256840396;
+        Fri, 28 Jul 2017 08:47:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501256840; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a/2s55o5XuXOeqZaS3Jm9oyNvgIMvINLb9aj+58hyRlFNDpW0YPoaPt79txMmpHyl6
+         BtQzAE7agiDd+pD7CJM2URyKk2BoIbYDLDEIJ6I9s1dHfUK6MUEy09mmQYCLtD02DdMc
+         bAblW6UflCrkf1r2EJYP2Vi5unbVlZcZttAUuSsTVeVMt3S8GOb5Ked5Sl8dEbscmihd
+         fkjQU5BW2qWG58v7RZ8Qjxb0hRHYDWvT8/6ApUWMaULXvlFDUNelGrwuCR44ObUlBtK9
+         sum68+nm92C1/PugLK4zaM5Oz5TCOeBSeGJ/op/WAcKn/RZEqEc7WAco++56/1DOU36K
+         mvPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:to:reply-to:from:subject:date:message-id:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=O6o0PUov4WGX/16YxpusjeaZzzUQqKELWc5UiLyBfUM=;
+        b=N4n3aVo3gBYboYmIWqIsPZSfY6ezt+u/L9k0Yb0bOikw/qzCOnAv/GayFOfL4mPGx1
+         0RHFKExWtp5VjUzsM7jMwSoorbMnxQtQ3FyV2xKyZFa1YDmIaQSTrH06V7aBdfYIEl9R
+         eKvaug/0OugyXhs/OjleQLh6oruKpMD02QU03TUv0usyVdJ7r3HA79DXthbcigEJ4KLw
+         +BEt/ZdLFw7OdZJ+0HFSPmKDQ8ZoTEh97QW2to5iV7Vbbk04i0QPjzu82W2vNosb813R
+         mtH8O7iIhVhqNocIsnPZaYmytB5aWp6h5HAS1OHPqWi48Z42QjdcJhCtVLpVzdugckC+
+         SlZw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tiket.com header.b=AgSheRnf;
+       dkim=pass header.i=@amazonses.com header.b=LxT6JGEi;
+       spf=pass (google.com: domain of 0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com designates 54.240.11.149 as permitted sender) smtp.mailfrom=0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com
+Return-Path: <0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com>
+Received: from a11-149.smtp-out.amazonses.com (a11-149.smtp-out.amazonses.com. [54.240.11.149])
+        by mx.google.com with ESMTPS id z33si17796425qtb.268.2017.07.28.08.47.20
+        for <rikosatrianto@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Fri, 28 Jul 2017 08:47:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com designates 54.240.11.149 as permitted sender) client-ip=54.240.11.149;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tiket.com header.b=AgSheRnf;
+       dkim=pass header.i=@amazonses.com header.b=LxT6JGEi;
+       spf=pass (google.com: domain of 0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com designates 54.240.11.149 as permitted sender) smtp.mailfrom=0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=rgfo2hpd5jx7pe6rz6ghp76op545puad; d=tiket.com; t=1501256840; h=Message-ID:Date:Subject:From:Reply-To:To:Content-Type; bh=9st9SVJzr999LFJvor6YklHDK0oQrm12q6L+mp0l5Sk=; b=AgSheRnfH0ToqgM7J5MCuu+TKHinFmawLHnNzstILCOiXrmNsFlY0PfSH7vWObT5 6tO8jLCPAAxQXwgu86uPaGY9GI+aAskQmbdTBLvVtTtG2nsm7IcMUeG5FI3nf+f7/3+ EK4nN9UBR/nGRASSJ47RO2XKcffFTsehzFKg67zo=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1501256840; h=Message-ID:Date:Subject:From:Reply-To:To:Content-Type:Feedback-ID; bh=9st9SVJzr999LFJvor6YklHDK0oQrm12q6L+mp0l5Sk=; b=LxT6JGEi0qOuEyQlfAyonoeHMZRIQ3Y1jlCtwuBERFksGE6YMuV1O5MdL3Twgec8 s069uwp71yilFXCUGIhZe8Nu6PhRcPetgZWqZmpzSSsW+Fjp+BI4PEMNc/6e8lt3CCi kjj2jSmbGMOpe7/4hpo7Fx8lDNK93M6ET2hg1so8=
+Message-ID: <0100015d89e171e0-76ac342a-8b88-45cf-808f-dd774138c568-000000@email.amazonses.com>
+Date: Fri, 28 Jul 2017 15:47:19 +0000
+Subject: Harga Spesial & Kejutan Besar di #KAITravelFair 2017
+From: "Tiket.com" <noreply@tiket.com>
+Reply-To: noreply@tiket.com
+To: rikosatrianto@gmail.com
+Content-Type: multipart/alternative; boundary="_=_swift_v4_1501252473597b4b79812bd_=_"
+X-SES-Outgoing: 2017.07.28-54.240.11.149
+Feedback-ID: 1.us-east-1.jHfF/ESX98jp05VpBn6X9bsjq0PVsf52o/UwW23NCJQ=:AmazonSES
+
+--_=_swift_v4_1501252473597b4b79812bd_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+KAI Travel Fair, Kereta Api 25K, Pesawat Internasional 500K, Hotel Weekday =
+100K
+Jika anda tidak bisa membaca email ini, silakan melihat email dengan membuk=
+a tautan berikut: http://www.tiket.com/newsletter/d?sid=3D23029591&token=3D=
+3d7993588b1c28349e9fe17f47f7a661&part=3D201707
+
+
+
+--_=_swift_v4_1501252473597b4b79812bd_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+ />
+=09<meta  name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0, maximum-scale=3D1.0," />=20
+=09<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+=09<style type=3D"text/css">
+=09=09
+
+=09=09@media screen {
+=09=09=09@import url(//fonts.googleapis.com/css?family=3DDroid+Sans:400,700=
+);
+=09=09=09body {
+=09=09=09=09margin: 0 auto;
+=09=09=09}
+=09=09}
+
+=09=09@media only screen and (max-width: 480px) and (max-device-width: 480p=
+x) {
+=09=09=09.text-menu {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09p[class=3D"text-menu"] {
+=09=09=09=09font-size: 13px !important;=20
+=09=09=09}
+
+=09=09=09h1 {
+=09=09=09=09font-size: 21px !important;
+=09=09=09}
+=09=09=09h2 {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09h2.border-text {
+=09=09=09=09height: 13px !important;
+=09=09=09}
+
+=09=09=09span.border-text {
+=09=09=09=09font-size: 18px !important;
+=09=09=09}
+
+=09=09=09.wd-75 {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-75"] {
+=09=09=09=09width: 60% !important;
+=09=09=09}
+
+=09=09=09.wd-25 {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09td[class=3D"wd-25"] {
+=09=09=09=09width: 40% !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09    color: #333 !important;
+=09=09=09    width: 95% !important;
+=09=09=09    padding: 15px 0px 15px 10px !important;
+=09=09=09    font-size: 12px !important;
+=09=09=09}
+
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09border: none !important;
+=09=09=09=09font-size: 9pt !important;
+=09=09=09}
+
+=09=09=09.icon-arrow {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09img[class=3D"icon-arrow"] {
+=09=09=09=09width: 10px !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"sm-text-center"],
+=09=09=09h2[class=3D"sm-text-center"],
+=09=09=09p[class=3D"sm-text-center"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.two-column,
+=09=09=09.img-responsive,
+=09=09=09.three-column,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.full {
+=09=09=09    display: block;
+=09=09=09    width: 100% !important;
+=09=09=09 }
+
+=09=09=09.text-responsive {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09td[class=3D"text-responsive"],
+=09=09=09p[class=3D"text-responsive"],
+=09=09=09h2[class=3D"text-responsive"]
+=09=09=09{
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09}
+
+=09=09@media only screen and (min-width: 481px) and (min-device-width: 481p=
+x) and (max-width: 640px) and (max-device-width: 640px) {
+=09=09=09.btn-lg-send {
+=09=09=09=09padding: 15px !important;
+=09=09=09=09width: 100% !important;
+=09=09=09=09font-size: 10pt !important;
+=09=09=09}
+
+=09=09=09.form-lg {
+=09=09=09=09padding: 15px 0px 15px 10px !important;
+=09=09=09=09width: 95% !important;
+=09=09=09=09font-size: 12pt !important;
+=09=09=09}
+
+=09=09=09.sm-text-center {
+=09=09=09=09text-align: center !important;
+=09=09=09}
+
+=09=09=09.img-responsive,
+=09=09=09.left-footer,
+=09=09=09.right-footer {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+
+=09=09=09.two-column {
+=09=09=09=09max-width: 50% !important;
+=09=09=09}
+
+=09=09=09.three-column {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+=09=09}
+=09</style>
+</head>
+
+<body>
+=09<div style=3D"font-size: 15px; margin: 0 !important; background: #ffffff=
+; font-family: Droid Sans, arial, helvetica, sans-serif !important; width: =
+100%; table-layout: fixed;">
+=09=09<div style=3D"width: 100%; margin: 0 auto;">
+=09=09=09<table width=3D"100%" align=3D"center" style=3D"Margin: 0 auto; ma=
+x-width: 700px; border-spacing: 0; color: #333333;" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0">
+=09=09=09=09<!-- START HEAD EMAIL -->
+=09=09=09=09<tr>
+=09<td style=3D"text-align: center; padding: 15px; background: rgb(230, 231=
+, 232);" align=3D"center">
+=09=09=09=09<p style=3D"margin: 0px;">
+=09=09=09<a href=3D"http://www.tiket.com/newsletter/d?sid=3D23029591&token=
+=3D3d7993588b1c28349e9fe17f47f7a661&part=3D201707" style=3D"text-decoration=
+: none; color: #333333;">Lihat tampilan di web browser anda</a>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/orange-dash-lin=
+e.jpg" style=3D"width: 100%; max-width: 700px; height: auto; " width=3D"700=
+">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/tiket-logo.j=
+pg" style=3D"max-width: 230px;" width=3D"230">
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154);">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/pesawat?utm_source=
+=3Dnewsletter&utm_medium=3Demail&utm_content=3Dflight-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">FLIGHT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/kereta-api?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dtrain-search-top-header&utm=
+_campaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration=
+: none;">TRAIN</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/hotel?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Dhotel-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">HOTEL</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/event?utm_source=3Dn=
+ewsletter&utm_medium=3Demail&utm_content=3Devent-search-top-header&utm_camp=
+aign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: non=
+e;">EVENT</a></p>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"padding: 10px;">
+=09=09=09=09=09<p class=3D"text-menu" style=3D"margin: 0px; text-align: cen=
+ter; font-size: 16px;"><a href=3D"http://www.tiket.com/sewa-mobil?utm_sourc=
+e=3Dnewsletter&utm_medium=3Demail&utm_content=3Dcar-search-top-header&utm_c=
+ampaign=3DUpdate New Rate for 2017" style=3D"color: #fff; text-decoration: =
+none;">CAR</a></p>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;" align=3D"center">
+=09=09<h2 style=3D"text-align: center; margin: 0px; font-size: 21px; color:=
+ #15629b; ">
+=09=09=09Hi Rico Satrianto=09=09</h2>
+=09</td>
+</tr>=09=09=09=09<!-- START HEAD EMAIL -->
+
+=09=09=09=09<!-- START CONTENT -->
+=09=09=09=09
+
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/KAITF-NL" t=
+arget=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_kereta-katf-semua_channel_jul2017_=
+newsletter-utama_704x702px.jpg" style=3D"max-width:700px; width: 100%; heig=
+ht: auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+<tr>
+=09<td style=3D"text-align: center; padding: 15px;" align=3D"center">
+=09=09=09=09=09<h1 style=3D"color: #f6921e;" align=3D"center">
+                Kereta Api Indonesia Travel Fair 2017            </h1>
+=09=09
+=09=09
+        <div style=3D"margin-bottom: 20px;" align=3D"center">Harga Spesial =
+Tiket Kereta Api&nbsp;<br>Juga, Kejutan Tambahan Lainnya<br>Semua Ada di KA=
+I Travel Fair 2017<br><br><strong>Waktu</strong>=C2=A0:=C2=A029 - 30 Juli 2=
+017<br><br><a href=3D"http://go.tiket.com/KAITF-NL" target=3D"_blank"><stro=
+ng>Temukan Informasinya Lebih Lanjut</strong></a><a data-reactid=3D".7.2.$l=
+azyPlaceholder_pending_4622783218.2.2.0.0.0.$0"><br></a></div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09=09=09=09<h2 class=3D"border-text" style=3D"width: 100%; height: 15px=
+; border-bottom: 1.5px solid #c0c0c0; text-align: center;">
+=09=09      <span class=3D"border-text" style=3D"font-size: 24px; backgroun=
+d-color: #fff; padding: 0 10px;">
+=09=09        Pilihan Promo Temani Perjalanan Anda =09=09      </span>
+=09=09    </h2>
+=09=09=09</td>
+</tr>
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/KAI-LBRN-NL=
+" target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_kereta_jul2017_ads_socmed_1200x628=
+px3.jpg" style=3D"max-width:700px; width: 100%; height: auto;" width=3D"700=
+"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/HtlWknd-NL"=
+ target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_top_hotel_weekend_extended_ads_ban=
+ner_1200x628px2.jpg" style=3D"max-width:700px; width: 100%; height: auto;" =
+width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+=09=09=09<tr>
+=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09=09=09=09=09=09<a href=3D"http://go.tiket.com/PnbngnINT-N=
+LD" target=3D"_blank">
+=09=09=09=09=09=09=09<img class=3D"img-responsive" src=3D"https://www.tiket=
+.com/img/newsletter/p/r/newsletter-promo_rute_internasional_flight-hanya_di=
+_app_update_template_jul2017_ads_socmed_1200x628px1.jpg" style=3D"max-width=
+:700px; width: 100%; height: auto;" width=3D"700"/>
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09
+
+
+=09=09=09=09<!-- END CONTENT -->
+
+=09=09=09=09<!-- START FOOTER -->
+=09=09=09=09<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/mail-line.jpg" =
+style=3D"width: 100%; max-width: 700px; height: auto;" width=3D"700">
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px; text-align: center;" align=3D"center">
+=09=09<p style=3D"margin: 0px;">
+=09=09=09<strong>Share Our Newsletter to a Friend!</strong>
+=09=09</p>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<form action=3D"https://www.tiket.com/newsletter_forward ?>" method=
+=3D"GET" enctype=3D"multipart/form-data">
+=09=09=09<input name=3D"newsletter_id" type=3D"hidden" value=3D"760">
+=09=09=09<input name=3D"newsletter_token" type=3D"hidden" value=3D"7aada350=
+e5c978fa2a37e02dd26ed864">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"wd-75" style=3D"width: 75%">
+=09=09=09=09=09=09<input name=3D"email" type=3D"email" placeholder=3D"examp=
+le@example.com" class=3D"form-lg" style=3D"border: none; background-color: =
+#e6e7e8; color: #333; padding: 20px 0 20px 15px; font-size: 18px; width: 95=
+%;">
+=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"wd-25" style=3D"width: 25%">
+=09=09=09=09=09=09<button class=3D"btn-lg-send" type=3D"submit" style=3D"ba=
+ckground: #00a7e1; padding: 20px; border: none; width: 100%; font-size: 12p=
+t; color:#fff;">
+=09=09=09=09=09=09=09SEND NOW=20
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+white-raquo.png" class=3D"icon-arrow" style=3D"max-width: 14px;" width=3D"1=
+4">
+=09=09=09=09=09=09</button>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</form>
+=09</td>
+</tr>
+<tr><td style=3D"padding: 15px;"></td></tr>
+<tr>
+=09<td style=3D"background: rgb(0, 96, 154); padding: 0px; width:100%; ">
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;">
+=09=09=09=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td style=3D"padding: 15px; text-align: center; col=
+or: #fff;">
+=09=09=09=09=09=09=09=09=09<h2 style=3D"margin: 10px 0 5px 0; font-size: 21=
+px;"><strong>Butuh Bantuan?</strong></h2>
+=09=09=09=09=09=09=09=09=09<p  style=3D"font-size: 16px; margin: 0 0 5px 0;=
+">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"tel:+622129633600" style=3D"text-d=
+ecoration: none; color: #fff;">+62 21 2963 3600</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 16px; margin: 0 0 5px 0;"=
+>
+=09=09=09=09=09=09=09=09=09=09Email : <a href=3D"mailto:cs@tiket.com" style=
+=3D"text-decoration: none; color: #fff;">cs@tiket.com</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"max-width: 350px; width: 100%; float: left; display: in=
+line-block; vertical-align: top;" class=3D"two-column">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" align=3D"right">
+=09=09=09=09=09=09<p style=3D"margin: 0px; text-align: right;">
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+cs-2.jpg" style=3D"max-width: 250px; width: 100% height: auto;" width=3D"25=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 15px;">
+=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09<tr>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/ee4c8d9c" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(160, 191, 94)=
+;">Available on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+android-2.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=
+=3D"210">
+=09=09=09=09=09=09</p>
+
+=09=09=09=09=09=09<p style=3D"font-size: 16px; margin-top: 10px; color: rgb=
+(160, 191, 94);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.co=
+m/images/newsletter/2/green-raquo.png" style=3D"max-width: 13px;" width=3D"=
+13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09=09<td style=3D"text-align: center;" align=3D"center">
+=09=09=09=09=09<a href=3D"http://m.onelink.me/6c61f6f2" style=3D"text-decor=
+ation: none;">
+=09=09=09=09=09=09<p style=3D"margin-bottom: 10px; color: rgb(7, 8, 8);">Av=
+ailable on :</p>
+=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter/2/=
+ios.jpg" style=3D"max-width: 210px; width: 100%; height: auto;" width=3D"21=
+0">
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin-top: 10px; font-size: 16px; color: rgb=
+(7, 8, 8);"><strong>DOWNLOAD</strong> <img src=3D"https://www.tiket.com/ima=
+ges/newsletter/2/raquo.png" style=3D"max-width: 13px;" width=3D"13"></p>
+=09=09=09=09=09</a>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</table>
+=09</td>
+</tr>
+<tr>
+=09<td style=3D"padding: 0px;">
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 250px;" class=3D"left-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center">
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09Sent to <a href=3D"#" style=3D"color: rgb(166, 168, 17=
+1); text-decoration: none;">rikosatrianto@gmail.com</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"margin: 10px 0;">
+=09=09=09=09=09=09=09Why did I get this? <a href=3D"http://www.tiket.com/ne=
+wsletter/manage_subscribe?email=3Drikosatrianto%40gmail.com&token=3D0a0b144=
+8fd3bb812268f0cc82d61bf6f" style=3D"text-decoration: none; color: #15629b;"=
+><strong>Unsubscribe</strong></a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p style=3D"color: rgb(166, 168, 171); font-size: 10px;">
+=09=09=09=09=09=09=09To ensure that our messages get to your inbox,<br/>
+=09=09=09=09=09=09=09please add <a href=3D"mailto:mailto:noreply@tiket.com"=
+ style=3D"color: rgb(166, 168, 171); text-decoration: none;">noreply@tiket.=
+com</a> to your address book.
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09=09<div style=3D"float: left; width: 100%; display: inline-block; max-wi=
+dth: 450px;" class=3D"right-footer">
+=09=09=09<table width=3D"100%" style=3D"border-spacing: 0;">
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"padding: 0px;" class=3D"sm-text-center" align=
+=3D"center">
+=09=09=09=09=09=09<p style=3D"padding: 15px; text-align: center;">
+=09=09=09=09=09=09=09<a href=3D"http://facebook.com/tiket" target=3D"_blank=
+" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/facebook.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://twitter.com/tiket" target=3D"_blank"=
+ style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/twitter.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://plus.google.com/+tiket" target=3D"_b=
+lank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/g+.jpg" style=3D"max-width: 45px; margin: 5px; " width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://tiketdotcom.tumblr.com/" target=3D"_=
+blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/tumblr.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09=09<a href=3D"http://www.youtube.com/user/tiketdotcom" ta=
+rget=3D"_blank" style=3D"border:none; display: inline-block;">
+=09=09=09=09=09=09=09=09<img src=3D"https://www.tiket.com/images/newsletter=
+/2/youtube.jpg" style=3D"max-width: 45px; margin: 5px;" width=3D"45">
+=09=09=09=09=09=09=09</a>
+=09=09=09=09=09=09</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</div>
+=09</td>
+</tr>=09=09=09=09<!-- END FOOTER -->
+=09=09=09</table>
+=09=09</div>
+=09</div>
+</body>
+</html>
+
+
+
+--_=_swift_v4_1501252473597b4b79812bd_=_--

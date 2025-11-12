@@ -1,0 +1,471 @@
+X-Apparently-To: taufikansyor@yahoo.co.id; Mon, 12 Jun 2017 13:27:19 +0000
+Return-Path: <bounces+54769-4b02-taufikansyor=yahoo.co.id@em.spotify.com>
+Received-SPF: pass (domain of em.spotify.com designates 208.117.48.81 as permitted sender)
+X-YMailISG: 32Fbnu8WLDsHz65pzJfheowVORrdF7gxGew8U8rATc.DjwOa
+ OjrpzjLNSl7EuSan4KQQ2Gx_rIkMKXO7JgkACi4FOshExb2Y6i.8rW7RLcXF
+ nbFuUVR9_g75U2uNgqq13A5Ogo_fK.kxDcDCvEuxJd9VvE_N8n_fl8bnB6md
+ ohQjEuNxEKzIS85bUYbjHeeWfww08esujBzwJgdDTPQZLaKM09FNGNmGJecc
+ OjaSuhfckGXeXTo_9tdO.gfiu5n9MkyFwoc22M5p1iNWCgxtZeLnm1Bel.uy
+ NvvPMrzu2aKAhYwEDlBMFV8EJ6qz9xJeuK7nExFOhwotdBEzOgMUKEyyhe._
+ iqSthPOZrv0ZK5O5BrctJ_1XfKZdsN6VdCvl3F_ZhfN4lOKHrJbS74M1byGi
+ YrzXWZrF6Jzcl0oZezXeVEllc0Cv23_.zCc4PomLv6bV.B82LU7qRN1JnbPx
+ Kv5k3u21sjMpJoBzmvd9lLCyRFnQeu.dMZLNm6LVCb721FMa_1HcEzvDHmtf
+ ticGwkr5F3EvFmIxfZr8CCudg37rQ.x.9oEgqYOTxCj.b5KbFv.PbSV_0Pom
+ EInuPPMtYCLEjtqQDMSXjS.XAIU8vYTijyCgNcR44CndRUnrsNSpS.wRJzjo
+ uVsNYux9XG4NcCkSG4iTYmmJaYh5N9z0E5jeoO8HxmrvNHaVJQIfoMuktcqc
+ vDm6wdZkxgtiZmdbiSohmlAKOLS9vWfCj96tiPDUT.v3J5udkDeit5B6ydvu
+ 4lZ9rOI.sG6Lt_9Y4vjFuIvXnBfgGI6cBcqoQ0XL3zbEyMP.ij7l.p8dwrwE
+ dSBAf66ioQUWaj.q0iGiwhUSyHXVFlW8cgtREw8.K2T7NqpgKBPGH6MRuq7F
+ JutqyY_07j0D_6EivcFd9rIRq_kCIOCUeDznmIX3_qTptBFGcQZrwoNakLNY
+ 6WmZDpp.zY2GZD7WScuaNqs2mIyKm1TwsKGThHiqI7z6aXjlxq1BVJ8Rtklg
+ frHdUP129TFRnPjyjJlTUCX4h297hl.AdwQEKZoVGqMqcM0lbs8KFk8DUS5W
+ wi19olgg3fJ8uMSAH6iQbGGOmLxWjJPEnbnNrJbrR_AtdeM3cKKM9m541zZU
+ 202_CpZvtLx23u2Xge.pLxHlRsPIv0AsP6T6ILzfMqnI7uSlJ1XB99ybPB9x
+ HPZ3fC.iDPexaRFB0PPsHHBL8HVXD89fzRneMaW9wrtGkcVeShR0fR4jVfw7
+ j3qrbyBXcEUEfhls8oR7z89XOziuetmO4hbNoRRXdY48ueC0QwMfM4tO4khw
+ hSUUkJHS19CvrB_jLohNjyqd0QvG_H_MSINrmB9BZnOwL9eOPoDzUVnXJpct
+ oXrlHDJqgsZkEnEoy5M3Z1yOmwqzzt4bbwIxfBgUumQgtRsyyxx5x3McP0Ux
+ OLYwM3.zO2.4GAGQW1wr76b0pb86P8TUUrWTXho4l86NMR6OnCDdlabCjPXC
+ diNanJsJKFWOu5z2OdnZM9i6SHpeQhW9F6bcbjut5gMPqArym3hE3VoBzQOl
+ rLK4Mu1.05Y47QyX13MoKGPRsnSth0NWQ_LRZDMGAwZwda0vCpyNtEzHU.QQ
+ Ev9011zxBJ2EYHlWpZC70DsejmdpS6Dz1B_Xh3NTR4pu8teVT1wd0ADNQ0Fg
+ hkWJWH222aKu6q_bJ5d_2dpirXctVh9GYmgeqgK5fDwUAL1xxhwwzO8tHSRG
+ oasuJQmEoruU04AubQZxYa6bt5PkKi9arIcq7fAfWfgapSZ2Y.7SyPrQmBMV
+ buAao5F1SF4oxxUMGR_jCYowPuSbF43mDWn1mOCSNIJCTdzR3tFJ_PgY9mNw
+ WFmrkgvTILtTa_CPes3DuZ5O
+X-Originating-IP: [208.117.48.81]
+Authentication-Results: mta1198.mail.sg3.yahoo.com  from=spotify.com; domainkeys=neutral (no sig);  from=sendgrid.info; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO o6.em.spotify.com) (208.117.48.81)
+  by mta1198.mail.sg3.yahoo.com with SMTPS; Mon, 12 Jun 2017 13:27:19 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=spotify.com; 
+	h=content-type:from:mime-version:reply-to:subject:to; s=s1; 
+	bh=7J1VenSH5eA+gK7uHw/RB+2md20=; b=OlQIMWvVxo9l7Dq1bJHp+w5Jm4n9q
+	bVO2hHTWypPM0GAheHOTeHR4xMmvtJ+d85Lo/88dL8QddaW3Ap8M4v+c4GAVZrYQ
+	9Mv9NeV4bTvVMmf03lugjoN9t8jmeRu/gAuiqNgrE643OgJDpR/aIbBXqFK6sQzu
+	4Ux+bPGvtbOXC4=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=content-type:from:mime-version:reply-to:subject:to; s=smtpapi; 
+	bh=7J1VenSH5eA+gK7uHw/RB+2md20=; b=ARyGOf94yvwXHY/eym4zqkvo2iubU
+	EnCHewzaaISQg0B3bGoTeKdy9d7eUKfgBI2Qvq0NCrB9YIWUM+o11axm1C7lpiPa
+	01/W8rv6cCuGQBzJjDFqheenN0Udq+JHVD73mdmsrXeu7smXAbN62NWm7AKLzgyT
+	PsJoHek8ljfzRU=
+Received: by filter0414p1mdw1.sendgrid.net with SMTP id filter0414p1mdw1-478-593E96B1-24
+        2017-06-12 13:27:13.651783086 +0000 UTC
+Received: from NTQ3Njk (o16789125x206.outbound-mail.sendgrid.net [167.89.125.206])
+	by ismtpd0004p1iad1.sendgrid.net (SG) with HTTP id yRYRGrXlR_m9VdN2-s21sQ
+	for <hello@spotify.com>; Mon, 12 Jun 2017 13:27:13.524 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=420e9741510474a0ebcbf7950e40c70f81fb0a98bf6f5f22ce4394a5139b
+Date: Mon, 12 Jun 2017 13:27:13 +0000
+From: "Spotify" <hello@spotify.com>
+Mime-Version: 1.0
+Reply-to: no-reply@spotify.com
+Subject: Rp 49.990 untuk 3 bulan musik tanpa iklan. Upgrade dengan pulsa HP-mu.
+To: taufikansyor@yahoo.co.id
+Message-ID: <yRYRGrXlR_m9VdN2-s21sQ@ismtpd0004p1iad1.sendgrid.net>
+X-SG-EID: eTtH3tIHJdcn54PhZMncEeTvLm2fz09pPoPtlU5ds+ZFrXo4mKfJvT2rmieyLme1J0+dajV2ldx9RS
+ 8BhBVVn7dRrTxjKodncyQi76vW74UHWwQPyB7At9R4B/gmTZ1DMxnw6W6uy6/uPzsz1CgezePaI4nj
+ 5U7NtBfiRML6BSWZLemalokyUaxa39khMugMbCS3GK8unuAY+gO5+IfldUewv9QFYvV6eNWNNbgbw8
+ 4=
+X-SG-ID: VPWZYjw6GOzHdwkwPeoX9QiEbzQXX/gF9P8njHP5+LABnP2genU6IX4rqnx+EvsXlZpu7zOp+llzEk
+ 7tk20SLqi4YV695tMN6rF/Xwr3mYXkF/yCJFJRSuouMrRbcqLb62od5P/sNipgH0P80NVL5Vqs81ll
+ ZjQ5pDTMrKBgoFAHLK8W44MLmj2pEtOWJv4/XbRCZblGUERyzifUO2FUD4NO3D9zCa2tspquAQhQV/
+ 5iPbM513hId2HAKuXTV/x1a52xOtFejgYZJXWV5KIcbt7aiJFeQiHZgl0FsCe7AUCmyua7S6m2+jb2
+ DcRVRp6SbAuHDPgfiFkrnxBwbQ6enwGhcKTryzZWMBL5kKaS+Nk=
+Content-Length: 28760
+
+--420e9741510474a0ebcbf7950e40c70f81fb0a98bf6f5f22ce4394a5139b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+( https://www.spotify.com/intro?utm_source=3DSpotify_premiumupsell&utm_medi=
+um=3Dhouse_email&utm_campaign=3Dpremium_17q2_intro&utm_content=3Did_id_apac=
+_email_summer_intro_w4_b_ali&checkout=3Dfalse&splot=3DbuUDqsA4QAmhiZC9l6YD8=
+A )
+
+ Dengar musikmu tanpa henti, tanpa gangguan iklan. Dapatkan 3 bulan Spotify=
+ Premium hanya Rp 49.990.
+
+ DAPATKAN SEKARANG ( https://www.spotify.com/intro?utm_source=3DSpotify_pre=
+miumupsell&utm_medium=3Dhouse_email&utm_campaign=3Dpremium_17q2_intro&utm_c=
+ontent=3Did_id_apac_email_summer_intro_w4_b_ali&checkout=3Dfalse&splot=3Dbu=
+UDqsA4QAmhiZC9l6YD8A )
+
+ ( https://www.spotify.com/intro?utm_source=3DSpotify_premiumupsell&utm_med=
+ium=3Dhouse_email&utm_campaign=3Dpremium_17q2_intro&utm_content=3Did_id_apa=
+c_email_summer_intro_w4_b_ali&checkout=3Dfalse&splot=3DbuUDqsA4QAmhiZC9l6YD=
+8A )
+
+ Eligibilitas terbatas,  syarat-syarat ( https://www.spotify.com/legal/intr=
+o-offer-terms-and-conditions/ ) berlaku.
+ Hanya Rp 49.990/bulan sesudahnya.
+Penawaran berakhir 26 Juni.
+
+ --------------------------------------------------------------------------=
+------
+
+ Dapatkan Spotify untuk: =C2=A0 iPhone ( https://itunes.apple.com/app/spoti=
+fy-music/id324684580 )iPad ( https://itunes.apple.com/app/spotify-music/id3=
+24684580 )Android ( https://play.google.com/store/apps/details?id=3Dcom.spo=
+tify.music )Lainnya ( https://www.spotify.com/download/ )------------------=
+--------------------------------------------------------------
+
+ Pesan ini telah dikirimkan ke taufikansyor@yahoo.co.id. Jika kamu tidak in=
+gin menerima email ini lagi dari Spotify, kamu bisa mengedit profilmu ( htt=
+ps://www.spotify.com/accounts/profile ) atau berhenti berlangganan ( https:=
+//www.spotify.com/account/unsubscribe?t=3DBcEBCsAgCADAr%2FSBQJozv6OkEAODaox=
+%2Bv7str%2FdHYp0xU4zd%2FeSwb2WJloe7zZUKImApqozKrheaA1XjCgxCVBuTKvH9Aw%3D%3D=
+&a=3Dunsubscribe ). Syarat-syarat Penggunaan ( https://www.spotify.com/lega=
+l/end-user-agreement/ )Kebijakan Privasi  ( https://www.spotify.com/legal/p=
+rivacy-policy/ )Hubungi Kami ( https://www.spotify.com/about-us/contact/ )S=
+potify AB, Birger Jarlsgatan 61, 4tr, 113 56 Stockholm, Sweden=
+
+--420e9741510474a0ebcbf7950e40c70f81fb0a98bf6f5f22ce4394a5139b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"margin=
+: 0; padding: 0"><head><meta charset=3D"utf-8" /><meta name=3D"viewport" co=
+ntent=3D"width=3Ddevice-width, initial-scale=3D1" /><title>Dengarkan musikm=
+u tanpa iklan: Spotify Premium, 3 bulan seharga Rp 49.990</title><style typ=
+e=3D"text/css">@media only screen and (min-device-width: 481px) {div[id=3D"=
+main"] {width: 480px !important;]</style><!--[if mso]><style>body, table, t=
+r, td, h1, h2, h3, h4, h5, h6, center p, a, span, table.MsoNormalTable {fon=
+t-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important}</s=
+tyle><![endif]--></head><body topmargin=3D"0" leftmargin=3D"0" rightmargin=
+=3D"0" bottommargin=3D"0" marginheight=3D"0" marginwidth=3D"0" style=3D"-we=
+bkit-font-smoothing: antialiased; width: 100% !important; -webkit-text-size=
+-adjust: none; margin: 0; padding: 0"><!--TEST-FORM--><!--[if (mso) | (IE)]=
+><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" valign=3D"top" wid=
+th=3D"480" align=3D"center"><tr><td valign=3D"top" align=3D"left" style=3D"=
+ word-break:normal; border-collapse:collapse; font-family:'Circular', 'Helv=
+etica Neue', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px=
+; color:#555555;"><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" valign=3D"top" width=3D"100%" align=3D"center" style=3D" width:1=
+00%; max-width:480px;"><tr><td valign=3D"top" align=3D"left" style=3D" word=
+-break:normal; border-collapse:collapse; font-family:'Circular', 'Helvetica=
+ Neue', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; col=
+or:#555555;"><center><div id=3D"main"><table class=3D"hero-image-root" widt=
+h=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; margi=
+n: 0px; border-collapse: collapse; padding: 0px; width: 100%;"><tbody valig=
+n=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><tr valign=
+=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><td valign=
+=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><center styl=
+e=3D"border: none; margin: 0px; padding: 0px;"><a href=3D"http://wl.spotify=
+.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h0/tvrLht0ZDgwlUaucEnIxBYo=
+mgDfayNacu2w1DMbusfPt7uqA-2F1Hhcs5nfVOaak7au5qKxuglb1zQHb8ANIpTY7tuGRidjWIj=
+I1AORbHpF9QPf94UEQmqC8hGBN2yA5UsEPoJ-2F-2BYU5W459jkwmUz2aJngNjerGU7Gxt-2BQ1=
+v4mW6xA113OHmbMERKIg6SbzIR1dHScBH4QuAfc-2BxCmBR2KTDzHtQgDG-2Fq2EgLPSNfX6DFy=
+5E31mv9jwBxVaysk4cASQP6G1pUraeuHnZZX886HsUV73dk3ASSB7JFF-2BzM34O8-3D" style=
+=3D"border: none; margin: 0px; padding: 0px; text-decoration: none;"><!--[i=
+f mso]><img style=3D"width: 480px; display: block" width=3D"480" src=3D"htt=
+p://aro.scdn.co/newsletters/33948fc83f52326a48135399c9f5452c.gif" /><![endi=
+f]--><!--[if mso]><div style=3D"mso-hide: all"><![endif]--><img class=3D"he=
+ro-image-image" src=3D"http://aro.scdn.co/newsletters/33948fc83f52326a48135=
+399c9f5452c.gif" width=3D"100%" align=3D"center" alt=3D"" style=3D"border: =
+none; padding: 0px; display: block; max-width: 100%; margin: 0px auto; text=
+-align: center; width: 100%;"><!--[if mso]></div><![endif]--></a></center><=
+/td></tr><tr class=3D"hero-image-padding" height=3D"30" valign=3D"middle" s=
+tyle=3D"border: none; margin: 0px; padding: 0px; height: 30px;"><td class=
+=3D"hero-image-padding" height=3D"30" valign=3D"middle" style=3D"border: no=
+ne; margin: 0px; padding: 0px; height: 30px;"></td></tr></tbody></table><ta=
+ble class=3D"text-root" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"border: none; margin: 0px; border-collapse: collapse; padding: 0px=
+; width: 100%;"><tbody valign=3D"middle" style=3D"border: none; margin: 0px=
+; padding: 0px;"><tr valign=3D"middle" style=3D"border: none; margin: 0px; =
+padding: 0px;"><td class=3D"table-separator" width=3D"6.25%" valign=3D"midd=
+le" style=3D"width: 6.25%; border: none; margin: 0px; padding: 0px;"></td><=
+td valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><ta=
+ble cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=
+=3D"margin: 0px; padding: 0px"><tbody><tr><td class=3D"font text-paragraph"=
+ align=3D"left" style=3D"border: none; margin: 0px; padding: 0px 0px 5px; f=
+ont-family: Circular, Helvetica Neue, Helvetica, Arial, sans-serif; font-we=
+ight: 200; text-align: left; text-decoration: none; color: rgb(97, 100, 103=
+); font-size: 14px; line-height: 20px;"> <center style=3D"border: none; mar=
+gin: 0px; padding: 0px;">Dengar musikmu tanpa henti, tanpa gangguan iklan. =
+Dapatkan 3 bulan Spotify Premium hanya Rp 49.990.</center> </td></tr></tbod=
+y></table></td><td class=3D"table-separator" width=3D"6.25%" valign=3D"midd=
+le" style=3D"width: 6.25%; border: none; margin: 0px; padding: 0px;"></td><=
+/tr><tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+"><td colspan=3D"3" class=3D"text-padding" height=3D"20" valign=3D"middle" =
+style=3D"border: none; margin: 0px; padding: 0px; height: 20px;"></td></tr>=
+</tbody></table><table class=3D"call-to-action-root" width=3D"100%" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"border: none; margin: 0px; border-col=
+lapse: collapse; padding: 0px; width: 100%;"><tbody valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px;"><tr valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px;"><td class=3D"table-separator"=
+ width=3D"6.25%" valign=3D"middle" style=3D"width: 6.25%; border: none; mar=
+gin: 0px; padding: 0px;"></td><td class=3D"font" valign=3D"middle" align=3D=
+"left" style=3D"border: none; margin: 0px; padding: 0px; font-family: Circu=
+lar, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 200; text-a=
+lign: left; text-decoration: none; font-size: 14px; line-height: 1.1em;"><c=
+enter style=3D"border: none; margin: 0px; padding: 0px;"><!--[if mso]><v:ro=
+undrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-mi=
+crosoft-com:office:word" href=3D"https://www.spotify.com/intro?utm_source=
+=3DSpotify_premiumupsell&utm_medium=3Dhouse_email&utm_campaign=3Dpremium_17=
+q2_intro&utm_content=3Did_id_apac_email_summer_intro_w4_b_ali&checkout=3Dfa=
+lse&splot=3DbuUDqsA4QAmhiZC9l6YD8A" style=3D"v-text-anchor: middle; width: =
+240px; height: 44px; text-decoration: none; color: #FFFFFF; font-family: 'H=
+elvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 13px; font-wei=
+ght: bold; line-height: 44px" arcsize=3D"50%" fillcolor=3D"#1DB954" strokec=
+olor=3D"#1DB954"><w:anchorlock ></w:anchorlock><center style=3D"color: #FFF=
+FFF; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-=
+size: 13px; font-weight: bold; line-height: 16px; text-transform:uppercase"=
+>DAPATKAN SEKARANG</center></v:roundrect><![endif]--><!--[if mso]><div styl=
+e=3D"mso-hide: all"><![endif]--><a href=3D"http://wl.spotify.com/mpss/c/4wA=
+/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h1/tvrLht0ZDgwlUaucEnIxBYomgDfayNacu2w1DM=
+busfPt7uqA-2F1Hhcs5nfVOaak7au5qKxuglb1zQHb8ANIpTY7tuGRidjWIjI1AORbHpF9QPf94=
+UEQmqC8hGBN2yA5UsEPoJ-2F-2BYU5W459jkwmUz2aJngNjerGU7Gxt-2BQ1v4mW6xA113OHmbM=
+ERKIg6SbzIR1dHScBH4QuAfc-2BxCmBR2KTDzHtQgDG-2Fq2EgLPSNfX6DFy5E31mv9jwBxVays=
+k4cASQP6G1pUraeuHnZZX886HsUV73dk3ASSB7JFF-2BzM34O8-3D" class=3D"call-to-act=
+ion-button" bgcolor=3D"#1ED760" style=3D"border: none; margin: 0px; padding=
+: 0px; text-decoration: none; width: 240px; height: 44px; background-color:=
+ rgb(30, 215, 96); border-radius: 22px; color: rgb(255, 255, 255); display:=
+ block;"><table class=3D"call-to-action-container" width=3D"240" height=3D"=
+44" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; margin: 0px;=
+ border-collapse: collapse; padding: 0px; width: 240px; height: 44px;"><tbo=
+dy valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><tr=
+ valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><td c=
+lass=3D"call-to-action-inner-padding" width=3D"22" valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px; width: 22px;"></td><td class=
+=3D"font call-to-action-cell" height=3D"100%" valign=3D"middle" align=3D"ce=
+nter" style=3D"border: none; margin: 0px; padding: 0px; font-family: Circul=
+ar, Helvetica Neue, Helvetica, Arial, sans-serif; text-decoration: none; bo=
+rder-radius: 22px; color: rgb(255, 255, 255); font-size: 13px; font-weight:=
+ bold; height: 100%; line-height: 16px; text-align: center; text-transform:=
+ uppercase;">DAPATKAN SEKARANG</td><td class=3D"call-to-action-inner-paddin=
+g" width=3D"22" valign=3D"middle" style=3D"border: none; margin: 0px; paddi=
+ng: 0px; width: 22px;"></td></tr></tbody></table></a><!--[if mso]></div><![=
+endif]--></center></td><td class=3D"table-separator" width=3D"6.25%" valign=
+=3D"middle" style=3D"width: 6.25%; border: none; margin: 0px; padding: 0px;=
+"></td></tr><tr class=3D"call-to-action-padding" height=3D"35" valign=3D"mi=
+ddle" style=3D"border: none; margin: 0px; padding: 0px; height: 35px;"><td =
+colspan=3D"3" class=3D"call-to-action-padding" height=3D"35" valign=3D"midd=
+le" style=3D"border: none; margin: 0px; padding: 0px; height: 35px;"></td><=
+/tr></tbody></table><table class=3D"image-root" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"border: none; margin: 0px; border-collaps=
+e: collapse; padding: 0px; width: 100%;"><tbody valign=3D"middle" style=3D"=
+border: none; margin: 0px; padding: 0px;"><tr valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px;"><td class=3D"table-separator" width=
+=3D"6.25%" valign=3D"middle" style=3D"width: 6.25%; border: none; margin: 0=
+px; padding: 0px;"></td><td valign=3D"middle" style=3D"border: none; margin=
+: 0px; padding: 0px;"><center style=3D"border: none; margin: 0px; padding: =
+0px;"><a href=3D"http://wl.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOs=
+oQnfGQQ/h2/tvrLht0ZDgwlUaucEnIxBYomgDfayNacu2w1DMbusfPt7uqA-2F1Hhcs5nfVOaak=
+7au5qKxuglb1zQHb8ANIpTY7tuGRidjWIjI1AORbHpF9QPf94UEQmqC8hGBN2yA5UsEPoJ-2F-2=
+BYU5W459jkwmUz2aJngNjerGU7Gxt-2BQ1v4mW6xA113OHmbMERKIg6SbzIR1dHScBH4QuAfc-2=
+BxCmBR2KTDzHtQgDG-2Fq2EgLPSNfX6DFy5E31mv9jwBxVaysk4cASQP6G1pUraeuHnZZX886Hs=
+UV73dk3ASSB7JFF-2BzM34O8-3D" style=3D"border: none; margin: 0px; padding: 0=
+px; text-decoration: none;"><!--[if mso]><img style=3D"max-width: 100%; dis=
+play: block" src=3D"http://aro.scdn.co/newsletters/f3734126b3e72b8bba60133e=
+47b44e17.jpg" /><![endif]--><!--[if mso]><div style=3D"mso-hide: all"><![en=
+dif]--><img class=3D"image-image" src=3D"http://aro.scdn.co/newsletters/f37=
+34126b3e72b8bba60133e47b44e17.jpg" align=3D"center" alt=3D"" style=3D"borde=
+r: none; padding: 0px; display: block; margin: 0px auto; max-width: 100%; t=
+ext-align: center;"><!--[if mso]></div><![endif]--></a></center></td><td cl=
+ass=3D"table-separator" width=3D"6.25%" valign=3D"middle" style=3D"width: 6=
+.25%; border: none; margin: 0px; padding: 0px;"></td></tr><tr class=3D"imag=
+e-padding" height=3D"30" valign=3D"middle" style=3D"border: none; margin: 0=
+px; padding: 0px; height: 30px;"><td colspan=3D"3" class=3D"image-padding" =
+height=3D"30" valign=3D"middle" style=3D"border: none; margin: 0px; padding=
+: 0px; height: 30px;"></td></tr></tbody></table><table class=3D"text-root" =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; m=
+argin: 0px; border-collapse: collapse; padding: 0px; width: 100%;"><tbody v=
+align=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><tr val=
+ign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><td class=
+=3D"table-separator" width=3D"6.25%" valign=3D"middle" style=3D"width: 6.25=
+%; border: none; margin: 0px; padding: 0px;"></td><td valign=3D"middle" sty=
+le=3D"border: none; margin: 0px; padding: 0px;"><table cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" width=3D"100%" style=3D"margin: 0px; padding: =
+0px"><tbody><tr><td class=3D"font text-paragraph" align=3D"left" style=3D"b=
+order: none; margin: 0px; padding: 0px 0px 5px; font-family: Circular, Helv=
+etica Neue, Helvetica, Arial, sans-serif; font-weight: 200; text-align: lef=
+t; text-decoration: none; color: rgb(97, 100, 103); font-size: 14px; line-h=
+eight: 20px;"> <center style=3D"border: none; margin: 0px; padding: 0px;"><=
+small style=3D"border: none; margin: 0px; padding: 0px;"><i align=3D"left" =
+style=3D"border: none; margin: 0px; padding: 0px; font-family: Circular, He=
+lvetica Neue, Helvetica, Arial, sans-serif; font-weight: 200; text-align: l=
+eft; text-decoration: none;">Eligibilitas terbatas, <a href=3D"http://wl.sp=
+otify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h3/tvrLht0ZDgwlUaucEn=
+IxBR3kYXi6hqQ0oVhFWbPsunrPSFA2MHfjTc6hqpt8b4zg0C7TFsUqcqorx-2FVei0grEA-3D-3=
+D" align=3D"left" style=3D"border: none; margin: 0px; padding: 0px; font-fa=
+mily: Circular, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: =
+200; text-align: left; text-decoration: none; color: rgb(30, 215, 96);"> sy=
+arat-syarat</a> berlaku.<br style=3D"border: none; margin: 0px; padding: 0p=
+x;"> Hanya Rp 49.990/bulan sesudahnya.<br style=3D"border: none; margin: 0p=
+x; padding: 0px;">Penawaran berakhir 26 Juni.</i></small></center> </td></t=
+r></tbody></table></td><td class=3D"table-separator" width=3D"6.25%" valign=
+=3D"middle" style=3D"width: 6.25%; border: none; margin: 0px; padding: 0px;=
+"></td></tr><tr valign=3D"middle" style=3D"border: none; margin: 0px; paddi=
+ng: 0px;"><td colspan=3D"3" class=3D"text-padding" height=3D"20" valign=3D"=
+middle" style=3D"border: none; margin: 0px; padding: 0px; height: 20px;"></=
+td></tr></tbody></table><style style=3D"border: none; margin: 0px; padding:=
+ 0px;"> .footer-root a.footer-link { color: #6D6D6D; text-decoration: none;=
+ font-weight: bold; } </style><table class=3D"footer-padding-root" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border: none; margin: 0=
+px; border-collapse: collapse; padding: 0px; width: 100%;"><tbody valign=3D=
+"middle" style=3D"border: none; margin: 0px; padding: 0px;"><tr class=3D"fo=
+oter-padding" height=3D"22" valign=3D"middle" style=3D"border: none; margin=
+: 0px; padding: 0px; height: 22px;"><td colspan=3D"3" class=3D"footer-paddi=
+ng" height=3D"22" valign=3D"middle" style=3D"border: none; margin: 0px; pad=
+ding: 0px; height: 22px;"></td></tr></tbody></table><table class=3D"footer-=
+root" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#F7F7F7=
+" style=3D"border: none; margin: 0px; border-collapse: collapse; padding: 0=
+px; background-color: rgb(247, 247, 247); width: 100%;"><tbody valign=3D"mi=
+ddle" style=3D"border: none; margin: 0px; padding: 0px;"><tr class=3D"foote=
+r-bottom-padding" height=3D"25" valign=3D"middle" style=3D"border: none; ma=
+rgin: 0px; padding: 0px; height: 25px;"><td colspan=3D"3" class=3D"footer-b=
+ottom-padding" height=3D"25" valign=3D"middle" style=3D"border: none; margi=
+n: 0px; padding: 0px; height: 25px;"></td></tr><tr valign=3D"middle" style=
+=3D"border: none; margin: 0px; padding: 0px;"><td width=3D"6.25%" valign=3D=
+"middle" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"><=
+/td><td valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+"><img class=3D"footer-logo" src=3D"http://aro.spotify.s3.amazonaws.com/new=
+sletter/images/logo_footer.png" width=3D"77" height=3D"23" alt=3D"" style=
+=3D"border: none; margin: 0px; padding: 0px; display: block; max-width: 100=
+%; width: 77px; height: 23px;"></td><td width=3D"6.25%" valign=3D"middle" s=
+tyle=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td></tr><=
+tr class=3D"footer-bottom-padding" height=3D"25" valign=3D"middle" style=3D=
+"border: none; margin: 0px; padding: 0px; height: 25px;"><td colspan=3D"3" =
+class=3D"footer-bottom-padding" height=3D"25" valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px; height: 25px;"></td></tr><tr valign=
+=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"><td width=3D=
+"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;=
+ width: 6.25%;"></td><td valign=3D"middle" style=3D"border: none; margin: 0=
+px; padding: 0px;"><hr bgcolor=3D"#D1D5D9" style=3D"border: none; margin: 0=
+px; padding: 0px; background-color: rgb(209, 213, 217); height: 1px;"></td>=
+<td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; p=
+adding: 0px; width: 6.25%;"></td></tr><tr class=3D"footer-top-padding" heig=
+ht=3D"12" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0p=
+x; height: 12px;"><td colspan=3D"3" class=3D"footer-top-padding" height=3D"=
+12" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; hei=
+ght: 12px;"></td></tr><tr valign=3D"middle" style=3D"border: none; margin: =
+0px; padding: 0px;"><td width=3D"6.25%" valign=3D"middle" style=3D"border: =
+none; margin: 0px; padding: 0px; width: 6.25%;"></td><td class=3D"font" val=
+ign=3D"middle" align=3D"left" style=3D"border: none; margin: 0px; padding: =
+0px; font-family: Circular, Helvetica Neue, Helvetica, Arial, sans-serif; f=
+ont-weight: 200; text-align: left; text-decoration: none; color: rgb(136, 1=
+37, 140); font-size: 11px; line-height: 1.65em;"> Dapatkan Spotify untuk: =
+=C2=A0 <a class=3D"footer-separated-text" href=3D"http://wl.spotify.com/mps=
+s/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h4/LO3b20GuNmy4LCnVtq84VkJOMK5Qnbs=
+1dgWlH8EvNhkDzqHFiZ8pTv4Ly6WYm8UPmDjGPjwAbqBtV2QAufnxvw-3D-3D" style=3D"bor=
+der-top: none; border-bottom: none; border-image: initial; margin: 0px; tex=
+t-decoration: none; border-right: 1px solid rgb(195, 195, 195); display: in=
+line-block; padding: 0px 7px 0px 0px; border-left: none; color: rgb(109, 10=
+9, 109); font-weight: bold;">iPhone</a><a class=3D"footer-separated-text" h=
+ref=3D"http://wl.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h5=
+/LO3b20GuNmy4LCnVtq84VkJOMK5Qnbs1dgWlH8EvNhkDzqHFiZ8pTv4Ly6WYm8UPmDjGPjwAbq=
+BtV2QAufnxvw-3D-3D" style=3D"border-top: none; border-bottom: none; border-=
+image: initial; margin: 0px; text-decoration: none; border-right: 1px solid=
+ rgb(195, 195, 195); border-left: 1px solid transparent; display: inline-bl=
+ock; padding: 0px 7px; color: rgb(109, 109, 109); font-weight: bold;">iPad<=
+/a><a class=3D"footer-separated-text" href=3D"http://wl.spotify.com/mpss/c/=
+4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h6/nlQbTENdQZslPMRJdVWnRnj-2FnNXGSj-2B=
+Xg1BkTbLhkx-2F-2Bigq8ecAM5hPiHjca2iCwNacv6E0W9pVUT4rwiJoPGQ-3D-3D" style=3D=
+"border-top: none; border-bottom: none; border-image: initial; margin: 0px;=
+ text-decoration: none; border-right: 1px solid rgb(195, 195, 195); border-=
+left: 1px solid transparent; display: inline-block; padding: 0px 7px; color=
+: rgb(109, 109, 109); font-weight: bold;">Android</a><a class=3D"footer-sep=
+arated-text" href=3D"http://wl.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-=
+mrOsoQnfGQQ/h7/tvrLht0ZDgwlUaucEnIxBX6BhcxDyjnQ8PcA7lnKNtT6nylaGOO7jGDF4PiN=
+dueq" style=3D"border-top: none; border-bottom: none; border-image: initial=
+; margin: 0px; text-decoration: none; border-left: 1px solid transparent; d=
+isplay: inline-block; padding: 0px 0px 0px 7px; border-right: none; color: =
+rgb(109, 109, 109); font-weight: bold;">Lainnya</a></td><td width=3D"6.25%"=
+ valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; width:=
+ 6.25%;"></td></tr><tr class=3D"footer-top-padding" height=3D"12" valign=3D=
+"middle" style=3D"border: none; margin: 0px; padding: 0px; height: 12px;"><=
+td colspan=3D"3" class=3D"footer-top-padding" height=3D"12" valign=3D"middl=
+e" style=3D"border: none; margin: 0px; padding: 0px; height: 12px;"></td></=
+tr><tr valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px;"=
+><td width=3D"6.25%" valign=3D"middle" style=3D"border: none; margin: 0px; =
+padding: 0px; width: 6.25%;"></td><td valign=3D"middle" style=3D"border: no=
+ne; margin: 0px; padding: 0px;"><hr bgcolor=3D"#D1D5D9" style=3D"border: no=
+ne; margin: 0px; padding: 0px; background-color: rgb(209, 213, 217); height=
+: 1px;"></td><td width=3D"6.25%" valign=3D"middle" style=3D"border: none; m=
+argin: 0px; padding: 0px; width: 6.25%;"></td></tr><tr class=3D"footer-bott=
+om-padding" height=3D"25" valign=3D"middle" style=3D"border: none; margin: =
+0px; padding: 0px; height: 25px;"><td colspan=3D"3" class=3D"footer-bottom-=
+padding" height=3D"25" valign=3D"middle" style=3D"border: none; margin: 0px=
+; padding: 0px; height: 25px;"></td></tr><tr valign=3D"middle" style=3D"bor=
+der: none; margin: 0px; padding: 0px;"><td width=3D"6.25%" valign=3D"middle=
+" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td><td=
+ class=3D"font" valign=3D"middle" align=3D"left" style=3D"border: none; mar=
+gin: 0px; padding: 0px; font-family: Circular, "Helvetica Neue", Helvetica,=
+ Arial, sans-serif; font-weight: 200; text-align: left; text-decoration: no=
+ne; color: rgb(136, 137, 140); font-size: 11px; line-height: 1.65em;"> Pesa=
+n ini telah dikirimkan ke taufikansyor@yahoo.co.id. Jika kamu tidak ingin m=
+enerima email ini lagi dari Spotify, kamu bisa <a class=3D"footer-link" hre=
+f=3D"http://wl.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h8/t=
+vrLht0ZDgwlUaucEnIxBXfhRqH-2FS9ecDN058U1qXOxCZU7nEVbUeg6UYDkO-2FyGQ" style=
+=3D"border: none; margin: 0px; padding: 0px; font-family: Circular, Helveti=
+ca Neue, Helvetica, Arial, sans-serif; text-align: left; color: rgb(109, 10=
+9, 109); text-decoration: none; font-weight: bold;" align=3D"left">mengedit=
+ profilmu</a> atau <a class=3D"footer-link" href=3D"http://wl.spotify.com/m=
+pss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h9/tvrLht0ZDgwlUaucEnIxBbqODJLza=
+y4zpEYxY9uEViUp01rC3yfxvEZhsONvpXlF1xFm-2BfcE-2FzC2W4v-2FXGwJnF6hFe4vZ2IR8-=
+2Ft94xuH6A-2FL-2FrMbHuVV9I-2BkJKU1cpgToU2LHe-2FW0ZN2Aut9gykCkIKG8Wo2E9DbeeK=
+gm7yRwFyJzKp0mVw3Xp9q3hqwug1kFp6Y-2FFuclllCyGCHum2sFgu7WRRSDLxaRKgEQzme9NY-=
+3D" style=3D"border: none; margin: 0px; padding: 0px; font-family: Circular=
+, Helvetica Neue, Helvetica, Arial, sans-serif; text-align: left; color: rg=
+b(109, 109, 109); text-decoration: none; font-weight: bold;" align=3D"left"=
+>berhenti berlangganan</a>. </td><td width=3D"6.25%" valign=3D"middle" styl=
+e=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"></td></tr><tr =
+class=3D"footer-middle-padding" height=3D"33" valign=3D"middle" style=3D"bo=
+rder: none; margin: 0px; padding: 0px; height: 33px;"><td colspan=3D"3" cla=
+ss=3D"footer-middle-padding" height=3D"33" valign=3D"middle" style=3D"borde=
+r: none; margin: 0px; padding: 0px; height: 33px;"></td></tr><tr valign=3D"=
+middle" style=3D"border: none; margin: 0px; padding: 0px;"><td width=3D"6.2=
+5%" valign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; wid=
+th: 6.25%;"></td><td class=3D"font font-small" valign=3D"middle" align=3D"l=
+eft" style=3D"border: none; margin: 0px; padding: 0px; font-family: Circula=
+r, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 200; text-ali=
+gn: left; text-decoration: none; color: rgb(136, 137, 140); line-height: 1.=
+65em; font-size: 11px;"><a class=3D"footer-separated-text" href=3D"http://w=
+l.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h10/tvrLht0ZDgwlU=
+aucEnIxBVRsi-2F-2FVmPlHmuY1hB6Lo0PE-2Fm5iPGg82-2F3GMp7hlSDRC98GKCYwXyxk2Agy=
+4i30MQ-3D-3D" style=3D"border-top: none; border-bottom: none; border-image:=
+ initial; margin: 0px; text-decoration: none; border-right: 1px solid rgb(1=
+95, 195, 195); display: inline-block; padding: 0px 7px 0px 0px; border-left=
+: none; color: rgb(109, 109, 109); font-weight: bold;">Syarat-syarat Penggu=
+naan</a><a class=3D"footer-separated-text" href=3D"http://wl.spotify.com/mp=
+ss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h11/tvrLht0ZDgwlUaucEnIxBcPm3aryX=
+9QtxfxbnrvB6vsmY8kBah2Eeb0dT02A-2FJNg" style=3D"border-top: none; border-bo=
+ttom: none; border-image: initial; margin: 0px; text-decoration: none; bord=
+er-right: 1px solid rgb(195, 195, 195); border-left: 1px solid transparent;=
+ display: inline-block; padding: 0px 7px; color: rgb(109, 109, 109); font-w=
+eight: bold;">Kebijakan Privasi </a><a class=3D"footer-separated-text" href=
+=3D"http://wl.spotify.com/mpss/c/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfGQQ/h12/t=
+vrLht0ZDgwlUaucEnIxBbzzl-2BV1ZOgP060JvCo-2B9fXxoIElIxXJ9AKDkZ3gU5VD" style=
+=3D"border-top: none; border-bottom: none; border-image: initial; margin: 0=
+px; text-decoration: none; border-left: 1px solid transparent; display: inl=
+ine-block; padding: 0px 0px 0px 7px; border-right: none; color: rgb(109, 10=
+9, 109); font-weight: bold;">Hubungi Kami</a></td><td width=3D"6.25%" valig=
+n=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%=
+;"></td></tr><tr valign=3D"middle" style=3D"border: none; margin: 0px; padd=
+ing: 0px;"><td colspan=3D"3" class=3D"footer-top-padding" height=3D"12" val=
+ign=3D"middle" style=3D"border: none; margin: 0px; padding: 0px; height: 12=
+px;"></td></tr><tr valign=3D"middle" style=3D"border: none; margin: 0px; pa=
+dding: 0px;"><td width=3D"6.25%" valign=3D"middle" style=3D"border: none; m=
+argin: 0px; padding: 0px; width: 6.25%;"></td><td class=3D"font font-small"=
+ valign=3D"middle" align=3D"left" style=3D"border: none; margin: 0px; paddi=
+ng: 0px; font-family: Circular, Helvetica Neue, Helvetica, Arial, sans-seri=
+f; font-weight: 200; text-align: left; text-decoration: none; color: rgb(13=
+6, 137, 140); line-height: 1.65em; font-size: 11px;">Spotify AB, Birger Jar=
+lsgatan 61, 4tr, 113 56 Stockholm, Sweden</td><td width=3D"6.25%" valign=3D=
+"middle" style=3D"border: none; margin: 0px; padding: 0px; width: 6.25%;"><=
+/td></tr><tr height=3D"20" valign=3D"middle" style=3D"border: none; margin:=
+ 0px; padding: 0px; height: 20px;"><td colspan=3D"3" class=3D"footer-bottom=
+-padding" height=3D"25" valign=3D"middle" style=3D"border: none; margin: 0p=
+x; padding: 0px; height: 25px;"></td></tr></tbody></table></div></center></=
+td></tr></table><!--[if (mso) | (IE)]></td></tr></table><![endif]-->
+<img src=3D"http://wl.spotify.com/mpss/o/4wA/8dU/t.284/kwkiyclcSH-mrOsoQnfG=
+QQ/o.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1p=
+x !important;width:1px !important;border-width:0 !important;margin-top:0 !i=
+mportant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0=
+ !important;padding-top:0 !important;padding-bottom:0 !important;padding-ri=
+ght:0 !important;padding-left:0 !important;"/>
+</body></html>
+
+--420e9741510474a0ebcbf7950e40c70f81fb0a98bf6f5f22ce4394a5139b--

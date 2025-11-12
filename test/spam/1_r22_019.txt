@@ -1,0 +1,1185 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.107.168.73 with SMTP id r70csp1226791ioe;
+        Wed, 30 Aug 2017 10:39:06 -0700 (PDT)
+X-Received: by 10.200.28.90 with SMTP id j26mr3366843qtk.150.1504114746454;
+        Wed, 30 Aug 2017 10:39:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504114746; cv=none;
+        d=google.com; s=arc-20160816;
+        b=w4qExCwI3cMfcHpycgPViGDcNXFT24B0Syxp2KuyTz765zBdY+vScenSYWuSbrg7Wx
+         ylOKZVwteE+/wLhemUJ6K8o6LNib+KJnUa9Jpb6m/oYnRXNrDtI63Q8ESC02xwDYb68q
+         ohNns+WzYvfbpnayYQeXpcNDEOSgGNuaWBqvWdNGePTmUeOhkjDtjFP/iDm6ZLQp92pj
+         oexiRRS5Z1u0dvlZIzOINEgU3WX08IacWxkXXbvLMM/JuzWJPNPTv5wravUYyU6C8w6H
+         BGgze8fqoHK17DY9Aq2mxh/ZpR8UAeMfjFVNE5BbvJcx7i7oJmPOeceqiow3I7jvCnLe
+         znNg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:date:sender
+         :domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=sdaT/139LZ4Z8fq9pQQQfTJ2LsUhtFievb5PSA5ya9k=;
+        b=E2iUbKfq0Yw6trw186poV4n35zN21oGf2YZ8AoPNdZ9H3nsgHlOibG4jGtNt8Ns/yA
+         faqunJiRdh9EYzsYx77fLr5UGlXKQn7M974DKBfQEx6q8vUqfIFnzg1O6f1/8AJKEEAu
+         vP5ifTvT/bu4zWee0j+s0dxIbdHIFYCObrE962vMzA/nQp3aZcn9G+cD7mRC44Yy2tzI
+         XeCtFMuehD6ujA6qtnd7rx4ChBNKLEghSw1UTFsupzFLMgMDXtcICww8QWGfAOW3pJ73
+         juNzLAUuW6caNJRxC8vfqlbbx96UXPeEz4jK161aD0LhRqBxeNfwv7dTaSVc6cVdq91U
+         8epw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=VKFFHy2i;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=I7tTYSLs;
+       spf=pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) smtp.mailfrom=bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com>
+Received: from mail224.static.mailgun.info (mail224.static.mailgun.info. [104.130.122.224])
+        by mx.google.com with UTF8SMTPS id h135si6200800qka.300.2017.08.30.10.39.04
+        for <riandebialfian@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Aug 2017 10:39:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) client-ip=104.130.122.224;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsletter.bukalapak.com header.s=smtp header.b=VKFFHy2i;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=I7tTYSLs;
+       spf=pass (google.com: domain of bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com designates 104.130.122.224 as permitted sender) smtp.mailfrom=bounce+16ac8a.fc5a0b-riandebialfian=gmail.com@newsletter.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=newsletter.bukalapak.com; q=dns/txt; s=smtp; t=1504114744; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=sdaT/139LZ4Z8fq9pQQQfTJ2LsUhtFievb5PSA5ya9k=; b=VKFFHy2iRkSAqtWBmWE6yuSb/sOfIgh3jFpmDZYdUpyepTIWXmQtFolkXwIfRrA2fuUJSmPV 9BkjeDNZbguPOjFTyBH0RAosWgbRFBI4wGVKfW+Yj4v4AEgzkMQuNHMDncxcfxXR+obZoQh6 EhfhUG+Llh+saIBsOd0I0gv41ZI=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=newsletter.bukalapak.com; s=smtp; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=ZSQnIe3k31hKRXWf9lUesjiiyG0REh2SV/G+XLROtdANk5DnAS4GJFwmv+8uPT5Y5Ax58I tR5iJPpWj1zAP+KPC0h3lf1C7rDwZbmW15SZsI+Jmgekvs+oD6bV3YShPyK7wc4a1VKQBop3 tl7MAflmq3WqSx/5w5m4TtW9poYbE=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1504114744; h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date: Sender: X-Feedback-Id; bh=sdaT/139LZ4Z8fq9pQQQfTJ2LsUhtFievb5PSA5ya9k=; b=I7tTYSLsxrzO+fw+RuldivGYO12kc+I179HZi4vo4idwVJJC2aceT0qND/grA3XllCsWt174 OHdtegtt3UK2MGy4A7Lk+b460LoSfCAkpqxT+cGEyw9tddtFpjFGEkVERDh41C5IBowtP3El 18Ytkt89wfYGB9Zzl3+MUay6Xqs=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns; h=X-Feedback-Id: Sender: Date: Message-Id: To: From: Subject: Mime-Version: Content-Type; b=Y8lMJNvM1TsPsiVbiwOqL1tRbNPmgQGfnZ7dchxS+A0JFhy+0LFBSCcDwvpy15DxNZCTfX XbHJ7CGsEwe87GaiXXL6/glMn9EmYj9DG6yetDj3/J0nJoy0ows4HYUq9jEOIrue4RKOMcNP ynmy01dKnWz9RVV0hd5EfMMYuXIeM=
+X-Feedback-Id: 57988b8e803267cd4092b267:mailgun
+Sender: info=newsleter.bukalapak.com@newsletter.bukalapak.com
+Date: Wed, 30 Aug 2017 17:39:04 +0000
+X-Mailgun-Sending-Ip: 104.130.122.224
+X-Mailgun-Sid: WyJkMGJjMSIsICJyaWFuZGViaWFsZmlhbkBnbWFpbC5jb20iLCAiZmM1YTBiIl0=
+Received: by luna.mailgun.net with HTTP; Wed, 30 Aug 2017 17:36:26 +0000
+Message-Id: <20170830173626.67801.4A6C16C0EA9EEC9C@newsletter.bukalapak.com>
+To: riandebialfian@gmail.com
+From: Bukalapak <info@newsleter.bukalapak.com>
+Subject: Mau Beli Hadiah? Pakai Voucher MERDEKASAY Lebih Hemat!
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="565ce154069b434fbd4e1e2d2a3b5288"
+
+--565ce154069b434fbd4e1e2d2a3b5288
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+Langsung dapat Diskon 10%
+
+Tampilkan Email Ini di
+Browser=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fnewsletter_manager%2Fview%2F%3Fid%3D507%26unsub_token%3Dfc4c3049391b6edfa=
+f3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbGZpYW5AZ21haWwu=
+Y29t%3D%26data%3D%3D%26utm_source%3Dnewsletter%26utm_medium%3Demail%26utm_c=
+ampaign%3Dmultikonten30agustus&lllsttu=3Dd8ddbcd4bfeb9b4e9f5b5116d9d0022515=
+fba36f161aec894d8cce2ad9bdf1b9&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+M=
+ERDEKASAY+Lebih+Hemat%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Dri=
+andebialfian%40gmail.com )
+
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2F%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikon=
+ten30agustus&lllsttu=3D423409ab1911fd555c78e57547527beff837b94286e997f93291=
+09dee1ccf544&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+He=
+mat%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gma=
+il.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo-detail%2Fsemangat-kemerdekaan-dapatkan-diskon-10%3Futm_source%3Dnew=
+sletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=
+=3D0c62dddf37ec5b11e05962a05ac848bd251c2d277940d1f9eab7b00a33df90bd&subject=
+=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewslet=
+ter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Voucher MERDEKASAY
+
+Jika kamu memiliki
+keinginan membeli hadiah spesial untuk keluarga atau orang
+terdekat, sekarang adalah waktu yang tepat. Kamu bisa mendapatkan
+diskon 10% saat belanja dengan menggunakan voucher diskon
+MERDEKASAY.
+
+Jangan sampai kamu
+kehabisan karena voucher bersifat terbatas!
+
+Yuk, belanja dan
+pelajari syarat & ketentuan lebih lanjut.
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo-detail%2Fsemangat-kemerdekaan-dapatkan-diskon-10%3Futm_source%3Dnew=
+sletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=
+=3D0c62dddf37ec5b11e05962a05ac848bd251c2d277940d1f9eab7b00a33df90bd&subject=
+=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewslet=
+ter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo%2Fsambut-hari-raya-haji-di-sini-bl%3D88%3Futm_source%3Dnewsletter%2=
+6utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=3Dfe5b459=
+3ba29e3042fca5f32487bea23c3983b166514065bf6ea0da0b9bcc001&subject=3DMau+Bel=
+i+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewsletter&type=
+=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Kurban
+
+Hari Raya Idul Adha
+semakin dekat. Saatnya berbuat pahala dengan membelikan hewan
+kurban untuk keluargamu. Cukup dengan membelinya di Bukalapak,
+dijamin lebih mudah dan kurban yang kamu beli akan tersalurkan
+tepat sasaran.
+
+Pilih dan beli hewan
+kurbanmu sekarang!
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo%2Fsambut-hari-raya-haji-di-sini-bl%3D88%3Futm_source%3Dnewsletter%2=
+6utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=3Dfe5b459=
+3ba29e3042fca5f32487bea23c3983b166514065bf6ea0da0b9bcc001&subject=3DMau+Bel=
+i+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewsletter&type=
+=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo-detail%2Fgratis-ongkos-kirim-dengan-go-send%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=3Dfd2=
+b979a6858b7cb89d1240333681e8ee313cd8a85e10288dc5d1310a66806fc&subject=3DMau=
++Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewsletter&ty=
+pe=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+Promo GO-SEND Same
+Day Delivery
+
+Gunakan GO-SEND Same
+Day Delivery untuk mengirim hadiah yang kamu beli untuk orang
+terdekatmu. Cukup gunakan voucher GOSENDINSAY ketika kamu belanja
+untuk mendapatkan gratis ongkos kirim. Voucher hanya bisa
+digunakan di aplikasi Bukalapak (baik Android atau iOS) dan
+tersedia terbatas.
+
+Pelajari syarat &
+ketentuannya lebih lanjut.
+
+Logo=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo-detail%2Fgratis-ongkos-kirim-dengan-go-send%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&lllsttu=3Dfd2=
+b979a6858b7cb89d1240333681e8ee313cd8a85e10288dc5d1310a66806fc&subject=3DMau=
++Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dnewsletter&ty=
+pe=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fpromo-detail%2Fdiskon-tiket-pesawat-lebih-murah-7-semua-rute%3Futm_source=
+%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&ll=
+lsttu=3Def0a118949634a1a96e60d5c709c1e12522254f13568ef75e85394c369523744&su=
+bject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&tag=3Dne=
+wsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2F%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikon=
+ten30agustus&lllsttu=3D423409ab1911fd555c78e57547527beff837b94286e997f93291=
+09dee1ccf544&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+He=
+mat%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gma=
+il.com )
+
+
+Copyright =C2=A9 2017, PT.
+Bukalapak.com All rights reserved.
+Plaza City View Lt. 1. Jl. Kemang Timur No. 22
+Jakarta Selatan. Indonesia. 12510
+
+Customer Support:
+Buka Bantuan=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbit.ly%2F2apHgGP%3F=
+utm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30=
+agustus&lllsttu=3D3e4187470855d15d673fc95c0a37c7909eb784b7b268a0bff726f6c93=
+fe38f5f&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%2=
+1&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.co=
+m )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fplay.google.com%2F=
+store%2Fapps%2Fdetails%3Fid%3Dcom.bukalapak.android%26referrer%3DAIEMF-NWSF=
+T%26utm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikont=
+en30agustus&lllsttu=3Dd0414df6c0ea60d5dbb39c9d4d84ff31f8f70d70967f2ca519042=
+fcaa3ac60f3&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hem=
+at%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmai=
+l.com )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1XmbQ4k%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3Dc50d41a35644b5c6c4daf6858d52f7b5514820c949f6d3190afbe3f9=
+23a35c65&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F2li9cPg%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3D4fd4e6e666552ff891960962601a7a2cb78973b43823506bece80aab=
+596046c0&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1ImzzOI%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3Dcddbf2cb42c252bae0ba993b666860e2f9de72ca9f2da6b5b30b608b=
+d9a760fd&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F2jWzjdG%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3Dbaef4b4e4485964a574f0f60c2964da5086b2e251b432206d85d5b66=
+d1d2b64a&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1W3g2Zx%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3D4f53a063cfc26d3b081e8d40a6d41ce0ab9fb5248554eaf71c846f94=
+e5d7e502&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+img=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1TKOre2%3=
+Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten3=
+0agustus&lllsttu=3D21f40f13fdf453a4f7b6687e4954a5be4c6f33ed0ef48057b878a5ac=
+3d13d443&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%=
+21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian%40gmail.c=
+om )
+
+
+Kami melindungi penggunaan data dan infomasi penting para
+pengguna Bukalapak.
+Silakan lihat di Kebijakan Privasi=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fbuka=
+lapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%=
+2Fprivacy%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dm=
+ultikonten30agustus&lllsttu=3D2109b83c7b52aad6799855794e69d08e7363283a3e69a=
+064b30be89223de7187&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+L=
+ebih+Hemat%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfia=
+n%40gmail.com )
+ Anda memperoleh email ini karena keanggotaan Anda pada
+Bukalapak.
+Untuk berhenti berlangganan newsletter klik di sini=20
+( http://glimpsetrack.net/redirect?late_id=3D2413&link=3Dhttps%3A%2F%2Fwww.=
+bukalapak.com%2Fother_settings%2Funsubscribe_newsletter%3Funsub_token%3Dfc4=
+c3049391b6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbG=
+ZpYW5AZ21haWwuY29t&lllsttu=3D93b281268adc6e0d2629fb813177d5f8c3d04502b815d6=
+c4c5ecf8559afc1e6f&subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Le=
+bih+Hemat%21&tag=3Dnewsletter&type=3DClickEmail&user_email=3Driandebialfian=
+%40gmail.com )
+.
+
+Harap jangan membalas email
+ini, karena email ini dikirimkan secara otomatis oleh sistem.
+--565ce154069b434fbd4e1e2d2a3b5288
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"width: 100%;">
+
+<head>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <!--[if !mso]><!-->
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <!--<![endif]-->
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Mau Beli Hadiah? Pakai Voucher MERDEKASAY Lebih Hemat!</title>
+ =20
+<style>.ReadMsgBody {
+width: 100%; background-color: #ffffff;
+}
+.ExternalClass {
+width: 100%; background-color: #ffffff;
+}
+.ExternalClass {
+line-height: 100%;
+}
+body {
+-webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padd=
+ing: 0;
+}
+img:hover {
+opacity: 1 !important;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    width: auto !important;
+  }
+  *[class=3D"table-inner"] {
+    width: 90% !important; text-align: center !important;
+  }
+  *[class=3D"table-full"] {
+    width: 100% !important; text-align: center !important;
+  }
+  img[class=3D"img1"] {
+    width: 100% !important; height: auto !important;
+  }
+}
+</style>
+</head>
+
+<body style=3D"-webkit-text-size-adjust: none; -ms-text-size-adjust: none; =
+margin: 0; padding: 0;">
+<!--hidden preview-->
+ <div style=3D"display: none; font-size: 1px; color: #333333; line-height: =
+1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+  Langsung dapat Diskon 10%         =20
+</div>
+<!--end hidden preview-->
+<!--Modul-->
+  <table bgcolor=3D"#ffffff" align=3D"center" width=3D"700" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout:=
+ fixed; margin: 0 auto;">
+    <tbody>
+      <tr>
+        <td height=3D"0"></td>
+      </tr>
+      <tr>
+        <td align=3D"center">
+          <table bgcolor=3D"#ffffff" border=3D"0" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"border-radius: 0px; border-spacing: 0;=
+ table-layout: fixed; margin: 0 auto; border: 0px solid #e2e2e2;">
+            <tbody>
+              <tr>
+                <td height=3D"20"></td>
+              </tr>
+              <tr>
+                <td width=3D"700" align=3D"center">
+                  <table width=3D"700" border=3D"0" align=3D"center" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: aut=
+o; margin: 0 auto;">
+                    <tbody>
+                      <tr>
+                        <td align=3D"center" style=3D"text-align: center; v=
+ertical-align: top; font-size: 0;">
+
+                          <!--right-->
+                          <div style=3D"display: inline-block; vertical-ali=
+gn: top;">
+                            <table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                              <tbody>
+                                <tr>
+                                  <td width=3D"700" align=3D"center">
+                                    <table align=3D"center" width=3D"100%" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0=
+; table-layout: auto; margin: 0 auto;">
+                                      <!--content-->
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"center"><a href=3D"h=
+ttp://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbuk=
+alapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com=
+%2Fnewsletter_manager%2Fview%2F%3Fid%3D507%26unsub_token%3Dfc4c3049391b6edf=
+af3a19724853288578e576d17f3c8aacee6b63ce545f4fddcmlhbmRlYmlhbGZpYW5AZ21haWw=
+uY29t%3D%26data%3D%3D%26utm_source%3Dnewsletter%26utm_medium%3Demail%26utm_=
+campaign%3Dmultikonten30agustus&amp;lllsttu=3Dd8ddbcd4bfeb9b4e9f5b5116d9d00=
+22515fba36f161aec894d8cce2ad9bdf1b9&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+=
+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEmai=
+l&amp;user_email=3Driandebialfian%40gmail.com" target=3D"blank" style=3D"fo=
+nt-family: Open sans, Arial, Sans-serif; font-size: 11px; color: #d71249; f=
+ont-style: regular; text-decoration: underline; font-weight: regular;">Tamp=
+ilkan Email Ini di Browser</a></td>
+                                        </tr>
+                                        <!--end content-->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--end right-->
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height=3D"20"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!--end Modul--> =20
+<!--Body-->
+  <table width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cel=
+lspacing=3D"0" bgcolor=3D"#ffffff" style=3D"border-spacing: 0; table-layout=
+: fixed; margin: 0 auto;">
+    <tr>
+            <td height=3D"0"></td>
+          </tr>
+    <tr>
+      <td align=3D"center">
+        <table bgcolor=3D"#FFFFFF" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-radius: 5px; border-spacing: 0; t=
+able-layout: fixed; margin: 0 auto; border: 1px solid #e2e2e2;">
+          <tr>
+            <td height=3D"10"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"700">
+              <table width=3D"100%" border=3D"0" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; =
+margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center; vertica=
+l-align: top; font-size: 0;">
+                    <!--logo-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table border=3D"0" align=3D"center" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin:=
+ 0 auto;">
+                        <tr>
+                          <td align=3D"center" width=3D"100">
+                            <table border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+                              <tr>
+                                <td align=3D"center" style=3D"line-height: =
+0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2F%3Futm_source%3Dnewsletter=
+%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=3D4=
+23409ab1911fd555c78e57547527beff837b94286e997f9329109dee1ccf544&amp;subject=
+=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnew=
+sletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" =
+target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><img sty=
+le=3D"display: block; line-height: 0px; font-size: 0px; height: 40px; width=
+: auto; border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/58=
+3c3b6a4a7987805fb8f125/583d6d61cee46d0a32851fd2/adf253e0f2856799aacedf3a52a=
+838d2/Logo_Bukalapak.png" alt=3D"Logo"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end logo-->
+                      </td>
+</tr>
+<tr>
+            <td height=3D"5"></td>
+          </tr>
+                    <!-- img -->
+                 <table width=3D"700" border=3D"0" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto=
+; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 1px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapa=
+k.com%2Fpromo-detail%2Fsemangat-kemerdekaan-dapatkan-diskon-10%3Futm_source=
+%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&am=
+p;lllsttu=3D0c62dddf37ec5b11e05962a05ac848bd251c2d277940d1f9eab7b00a33df90b=
+d&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&=
+amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%=
+40gmail.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: no=
+ne;"><img style=3D"display: block; line-height: 0px; font-size: 0px; border=
+: 0px;" class=3D"img1" src=3D"https://www.bukalapak.com/uploads/attachment/=
+21691/merdekasay_.jpg" alt=3D"img" width=3D"700" height=3D"auto"></a></td>
+                </tr>
+                  =20
+                    </table>
+                    <!-- 1/1 content center -->
+  <table align=3D"center" bgcolor=3D"#ffffff" width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td height=3D"15"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"700">
+              <table width=3D"90%" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+               =20
+                <!-- content -->
+                <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #d71249; font=
+-size: 24px; line-height: 32px; letter-spacing: 0px; font-weight: bold;">Vo=
+ucher MERDEKASAY</td>
+                    </tr>
+                                          <tr>
+            <td height=3D"15"></td>
+          </tr>
+                                          <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #333333; font=
+-size: 16px; line-height: 24px;">Jika kamu memiliki keinginan membeli hadia=
+h spesial untuk keluarga atau orang terdekat, sekarang adalah waktu yang te=
+pat. Kamu bisa mendapatkan <strong>diskon 10%</strong> saat belanja dengan =
+menggunakan voucher diskon <strong>MERDEKASAY</strong>.<br>
+                                              Jangan sampai kamu kehabisan =
+karena voucher bersifat terbatas!<br>
+                                              <br>
+                                            Yuk, belanja dan pelajari syara=
+t &amp; ketentuan lebih lanjut.<br>
+</td>
+                                          </tr>
+                <!-- end content -->
+                 <tr>
+            <td height=3D"30"></td>
+          </tr>
+                <!--button-->
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo-detail%2Fsemangat-ke=
+merdekaan-dapatkan-diskon-10%3Futm_source%3Dnewsletter%26utm_medium%3Demail=
+%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=3D0c62dddf37ec5b11e05962=
+a05ac848bd251c2d277940d1f9eab7b00a33df90bd&amp;subject=3DMau+Beli+Hadiah%3F=
++Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DCl=
+ickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" sty=
+le=3D"color: #f95759; text-decoration: none;"><img style=3D"display: block;=
+ line-height: 0px; font-size: 0px; height: 45px; width: auto; border: 0px;"=
+ src=3D"https://trello-attachments.s3.amazonaws.com/58d23dea31be8dfeee87f9f=
+a/596edf354f8050b7decdd742/762456e8bd48f2b61e79e7eddb3b4d9c/Button-65px.gif=
+" target=3D"_blank" alt=3D"Logo"></a>
+=09=09=09=09=09=09=09=09=09=09</td>
+                                    </tr>
+                                    <!--end button-->
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"40"></td>
+          </tr>
+         =20
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- end 1/1 content center -->
+                    <!-- end img -->
+                    <!-- img -->
+                 <table width=3D"700" border=3D"0" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto=
+; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 1px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapa=
+k.com%2Fpromo%2Fsambut-hari-raya-haji-di-sini-bl%3D88%3Futm_source%3Dnewsle=
+tter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3Dfe5b4593ba29e3042fca5f32487bea23c3983b166514065bf6ea0da0b9bcc001&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; border: 0px;"=
+ class=3D"img1" src=3D"https://www.bukalapak.com/uploads/attachment/71691/p=
+romokurban2017.jpg" alt=3D"img" width=3D"700" height=3D"auto"></a></td>
+                </tr>
+                  =20
+                    </table>
+                    <!-- 1/1 content center -->
+  <table align=3D"center" bgcolor=3D"#ffffff" width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td height=3D"15"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"700">
+              <table width=3D"90%" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+               =20
+                <!-- content -->
+                <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #d71249; font=
+-size: 24px; line-height: 32px; letter-spacing: 0px; font-weight: bold;">Ku=
+rban</td>
+                    </tr>
+                                          <tr>
+            <td height=3D"15"></td>
+          </tr>
+                                          <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #333333; font=
+-size: 16px; line-height: 24px;">Hari Raya Idul Adha semakin dekat. Saatnya=
+ berbuat pahala dengan membelikan hewan kurban untuk keluargamu. Cukup deng=
+an membelinya di Bukalapak, dijamin lebih mudah dan kurban yang kamu beli a=
+kan tersalurkan tepat sasaran.<br>
+                                            Pilih dan beli hewan kurbanmu s=
+ekarang!<br>
+</td>
+                                          </tr>
+                <!-- end content -->
+                 <tr>
+            <td height=3D"30"></td>
+          </tr>
+                <!--button-->
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo%2Fsambut-hari-raya-h=
+aji-di-sini-bl%3D88%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_ca=
+mpaign%3Dmultikonten30agustus&amp;lllsttu=3Dfe5b4593ba29e3042fca5f32487bea2=
+3c3983b166514065bf6ea0da0b9bcc001&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+Vo=
+ucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEmail&=
+amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"col=
+or: #f95759; text-decoration: none;"><img style=3D"display: block; line-hei=
+ght: 0px; font-size: 0px; height: 45px; width: auto; border: 0px;" src=3D"h=
+ttps://trello-attachments.s3.amazonaws.com/58d23dea31be8dfeee87f9fa/596edf3=
+54f8050b7decdd742/762456e8bd48f2b61e79e7eddb3b4d9c/Button-65px.gif" target=
+=3D"_blank" alt=3D"Logo"></a>
+=09=09=09=09=09=09=09=09=09=09</td>
+                                    </tr>
+                                    <!--end button-->
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"40"></td>
+          </tr>
+         =20
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- end 1/1 content center -->
+                   <!-- img -->
+                 <table width=3D"700" border=3D"0" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto=
+; margin: 0 auto;">
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px; border-to=
+p-color: #e2e2e2; border-top-width: 1px; border-top-style: solid;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapa=
+k.com%2Fpromo-detail%2Fgratis-ongkos-kirim-dengan-go-send%3Futm_source%3Dne=
+wsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lll=
+sttu=3Dfd2b979a6858b7cb89d1240333681e8ee313cd8a85e10288dc5d1310a66806fc&amp=
+;subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;t=
+ag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gma=
+il.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;">=
+<img style=3D"display: block; line-height: 0px; font-size: 0px; border: 0px=
+;" class=3D"img1" src=3D"https://www.bukalapak.com/uploads/attachment/22691=
+/gosend.jpg" alt=3D"img" width=3D"700" height=3D"auto"></a></td>
+                </tr>
+                  =20
+                    </table>
+                    <!-- 1/1 content center -->
+  <table align=3D"center" bgcolor=3D"#ffffff" width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td height=3D"15"></td>
+          </tr>
+          <tr>
+            <td align=3D"center" width=3D"700">
+              <table width=3D"90%" border=3D"0" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; m=
+argin: 0 auto;">
+               =20
+                <!-- content -->
+                <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #d71249; font=
+-size: 24px; line-height: 32px; letter-spacing: 0px; font-weight: bold;">Pr=
+omo GO-SEND Same Day Delivery</td>
+                    </tr>
+                                          <tr>
+            <td height=3D"15"></td>
+          </tr>
+                                          <tr>
+                                            <td align=3D"center" style=3D"f=
+ont-family: helvetica, 'Open Sans', Arial, sans-serif; color: #333333; font=
+-size: 16px; line-height: 24px;">Gunakan GO-SEND Same Day Delivery untuk me=
+ngirim hadiah yang kamu beli untuk orang terdekatmu. Cukup gunakan voucher =
+<strong>GOSENDINSAY</strong> ketika kamu belanja untuk mendapatkan gratis o=
+ngkos kirim. Voucher hanya bisa digunakan di aplikasi Bukalapak (baik Andro=
+id atau iOS) dan tersedia terbatas.<br>
+                                            Pelajari syarat &amp; ketentuan=
+nya lebih lanjut.<br>
+</td>
+                                          </tr>
+                <!-- end content -->
+                 <tr>
+            <td height=3D"30"></td>
+          </tr>
+                <!--button-->
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                  <a href=3D"http://glimpsetrack.net/redire=
+ct?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ=
+-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com%2Fpromo-detail%2Fgratis-ongk=
+os-kirim-dengan-go-send%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26ut=
+m_campaign%3Dmultikonten30agustus&amp;lllsttu=3Dfd2b979a6858b7cb89d12403336=
+81e8ee313cd8a85e10288dc5d1310a66806fc&amp;subject=3DMau+Beli+Hadiah%3F+Paka=
+i+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEm=
+ail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D=
+"color: #f95759; text-decoration: none;"><img style=3D"display: block; line=
+-height: 0px; font-size: 0px; height: 45px; width: auto; border: 0px;" src=
+=3D"https://trello-attachments.s3.amazonaws.com/58d23dea31be8dfeee87f9fa/59=
+6edf354f8050b7decdd742/762456e8bd48f2b61e79e7eddb3b4d9c/Button-65px.gif" ta=
+rget=3D"_blank" alt=3D"Logo"></a>
+=09=09=09=09=09=09=09=09=09=09</td>
+                                    </tr>
+                                    <!--end button-->
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"40"></td>
+          </tr>
+         =20
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- end 1/1 content center -->
+                    <!-- end img -->
+                    <!-- end img -->
+                    <!-- img sales -->
+                    <table width=3D"100%" border=3D"0" align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: =
+auto; margin: 0 auto;">
+                      <tr>
+                          <td height=3D"0"></td>
+                        </tr>
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapa=
+k.com%2Fpromo-detail%2Fdiskon-tiket-pesawat-lebih-murah-7-semua-rute%3Futm_=
+source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agus=
+tus&amp;lllsttu=3Def0a118949634a1a96e60d5c709c1e12522254f13568ef75e85394c36=
+9523744&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hem=
+at%21&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebia=
+lfian%40gmail.com" target=3D"_blank" style=3D"color: #f95759; text-decorati=
+on: none;"><img style=3D"display: block; line-height: 0px; font-size: 0px; =
+border-radius: 0px; border: 0px;" class=3D"img1" src=3D"https://www.bukalap=
+ak.com/uploads/attachment/72691/terbanglagisay.png" alt=3D"img" width=3D"70=
+0" height=3D"auto"></a></td>
+                </tr>
+                    =20
+                      <tr>
+                          <td height=3D"0"></td>
+                        </tr>
+                    </table>
+                    <!-- end img sales -->
+                   <!-- search bar -->
+                    <table width=3D"100%" border=3D"0" align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: =
+auto; margin: 0 auto;">
+                    =20
+                <tr>
+                  <td align=3D"center" style=3D"line-height: 0px;"><a href=
+=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%=
+2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapa=
+k.com%2F%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3Dmu=
+ltikonten30agustus&amp;lllsttu=3D423409ab1911fd555c78e57547527beff837b94286=
+e997f9329109dee1ccf544&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDE=
+KASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_em=
+ail=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"color: #f95759=
+; text-decoration: none;"><img style=3D"display: block; line-height: 0px; f=
+ont-size: 0px; border: 0px;" class=3D"img1" src=3D"https://trello-attachmen=
+ts.s3.amazonaws.com/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/8be86=
+f4549840c503005823442ca621b/search_bar.gif" alt=3D"img" width=3D"100%" heig=
+ht=3D"auto"></a></td>
+                </tr>
+                    </table>
+                    <!-- search bar -->
+                    <!--footer-->
+  <table width=3D"100%" bgcolor=3D"#f1f1f2" align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-layout=
+: auto; margin: 0 auto;">
+    <tr>
+      <td align=3D"center" bgcolor=3D"#ffffff">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0 auto;">
+          <tr>
+            <td bgcolor=3D"#f1f1f2" width=3D"700" align=3D"center">
+              <table width=3D"100%" align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; =
+margin: 0 auto;">
+                <tr>
+                  <td height=3D"20"></td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"text-align: center; vertica=
+l-align: top; font-size: 0;">
+                    <!--left-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin:=
+ 0 auto;">
+                        <tr>
+                          <td width=3D"395" align=3D"center">
+                            <table width=3D"85%" align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-l=
+ayout: auto; margin: 0 auto;">
+                              <!--content-->
+                              <tr>
+                                <td align=3D"left" style=3D"font-family: he=
+lvetica, 'Open sans', Arial, sans-serif; color: #9B9B9B; font-size: 11px; l=
+ine-height: 150%;">Copyright =C2=A9 2017, PT. Bukalapak.com All rights rese=
+rved.<br>Plaza City View Lt. 1. Jl. Kemang Timur No. 22<br>Jakarta Selatan.=
+ Indonesia. 12510</td>
+                              </tr>
+                              <!--end content-->
+                              <tr>
+                                <td height=3D"10"></td>
+                              </tr>
+                              <!--CS-->
+                                    <tr>
+                                      <td align=3D"left">
+                                        <table border=3D"0" align=3D"left" =
+cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#d0d2d3" style=3D"border-rad=
+ius: 4px; border-spacing: 0; table-layout: auto; margin: 0 auto; border: 0p=
+x solid #00974c;">
+                    <tr>
+                      <td height=3D"30" align=3D"center" style=3D"font-fami=
+ly: Helvetica; font-size: 12px; padding-left: 15px; padding-right: 15px; le=
+tter-spacing: 0px; color: #404041;">Customer Support:=20
+                        <a href=3D"http://glimpsetrack.net/redirect?late_id=
+=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2FNLACQ-MKO30AG%3=
+Fl%3Dhttp%3A%2F%2Fbit.ly%2F2apHgGP%3Futm_source%3Dnewsletter%26utm_medium%3=
+Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=3D3e4187470855d15d=
+673fc95c0a37c7909eb784b7b268a0bff726f6c93fe38f5f&amp;subject=3DMau+Beli+Had=
+iah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;typ=
+e=3DClickEmail&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blan=
+k" style=3D"color: #d71d4b; text-decoration: underline; font-weight: regula=
+r;">Buka Bantuan=20
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                                      </td>
+                                    </tr>
+                                    <!--end CS-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end left-->
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align=3D"center" style=3D"text-align:center;vertica=
+l-align:top;font-size:0;">
+                    <![endif]-->
+                    <!--right-->
+                    <div style=3D"display: inline-block; vertical-align: to=
+p;">
+                      <table align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tr>
+                          <td width=3D"255" align=3D"left">
+                            <table align=3D"left" width=3D"85%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-spacing: 0; table-lay=
+out: auto; margin: 0 auto;">
+                              <!--apps-->
+                              <tr>
+                                <td align=3D"center">
+                                  <table border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails=
+%3Fid%3Dcom.bukalapak.android%26referrer%3DAIEMF-NWSFT%26utm_source%3Dnewsl=
+etter%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllstt=
+u=3Dd0414df6c0ea60d5dbb39c9d4d84ff31f8f70d70967f2ca519042fcaa3ac60f3&amp;su=
+bject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; border-radius=
+: 4px; width: 105px; border: 0px;" src=3D"https://trello-attachments.s3.ama=
+zonaws.com/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/715ee3c1166d2e=
+a728026a3118953856/google_play.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1XmbQ4k%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3Dc50d41a35644b5c6c4daf6858d52f7b5514820c949f6d3190afbe3f923a35c65&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; border-radius=
+: 4px; width: 105px; border: 0px;" src=3D"https://trello-attachments.s3.ama=
+zonaws.com/583c3b6a4a7987805fb8f125/58734fa9b913777c4a6499d3/3400fd330acc55=
+bcca98b8098f211b42/app_store.png" alt=3D"img"></a>
+</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!--end apps-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                              <!--social-->
+                              <tr>
+                                <td align=3D"center">
+                                  <table border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: a=
+uto; margin: 0 auto;">
+                                    <tr>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F2li9cPg%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3D4fd4e6e666552ff891960962601a7a2cb78973b43823506bece80aab596046c0&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; =
+border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a=
+7987805fb8f125/583d6ee367f95c5820b2f059/07c9db834fe123a5276bdabd56b6d8b2/So=
+cial_FB_2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1ImzzOI%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3Dcddbf2cb42c252bae0ba993b666860e2f9de72ca9f2da6b5b30b608bd9a760fd&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; =
+border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a=
+7987805fb8f125/583d6ee367f95c5820b2f059/605e4f15dd1f53c2f5dbba00faa16dd6/So=
+cial_TW_2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F2jWzjdG%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3Dbaef4b4e4485964a574f0f60c2964da5086b2e251b432206d85d5b66d1d2b64a&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; =
+border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a=
+7987805fb8f125/583d6ee367f95c5820b2f059/65fcbe2a943a06d2c2a78f4bd7912d30/So=
+cial_GP_2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1W3g2Zx%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3D4f53a063cfc26d3b081e8d40a6d41ce0ab9fb5248554eaf71c846f94e5d7e502&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; =
+border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a=
+7987805fb8f125/583d6ee367f95c5820b2f059/5b9d5cc9e4aee105048e5a90a9d35742/So=
+cial_YTB_2.png" alt=3D"img"></a>
+</td>
+                                      <td width=3D"10"></td>
+                                      <td align=3D"center" style=3D"line-he=
+ight: 0px;">
+                                        <a href=3D"http://glimpsetrack.net/=
+redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbukalapak.com%2Fcampaign%2=
+FNLACQ-MKO30AG%3Fl%3Dhttp%3A%2F%2Fbukl.pk%2F1TKOre2%3Futm_source%3Dnewslett=
+er%26utm_medium%3Demail%26utm_campaign%3Dmultikonten30agustus&amp;lllsttu=
+=3D21f40f13fdf453a4f7b6687e4954a5be4c6f33ed0ef48057b878a5ac3d13d443&amp;sub=
+ject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=
+=3Dnewsletter&amp;type=3DClickEmail&amp;user_email=3Driandebialfian%40gmail=
+.com" target=3D"_blank" style=3D"color: #f95759; text-decoration: none;"><i=
+mg style=3D"display: block; line-height: 0px; font-size: 0px; width: 35px; =
+border: 0px;" src=3D"https://trello-attachments.s3.amazonaws.com/583c3b6a4a=
+7987805fb8f125/583d6ee367f95c5820b2f059/939c2c72b84a380a12b8990df87d0fe6/So=
+cial_IG_2.png" alt=3D"img"></a>
+</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!--end social-->
+                              <tr>
+                                <td height=3D"15"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--end right-->
+                    <!-- copyright -->
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-spacing: 0; table-layout: auto; margin: 0=
+ auto;">
+                        <tr>
+                          <td width=3D"700" align=3D"center">
+                            <table width=3D"85%" border=3D"0" align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; table-l=
+ayout: auto; margin: 0 auto;">
+                              <tr>
+                                <td align=3D"left" style=3D"font-family: He=
+lvetica; font-size: 11px; line-height: 150%; color: #9B9B9B; font-style: no=
+rmal;">
+Kami melindungi penggunaan data dan infomasi penting para pengguna Bukalapa=
+k. <br>Silakan lihat di<span style=3D"color: #D71249;"> </span><a href=3D"h=
+ttp://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps%3A%2F%2Fbuk=
+alapak.com%2Fcampaign%2FNLACQ-MKO30AG%3Fl%3Dhttps%3A%2F%2Fwww.bukalapak.com=
+%2Fprivacy%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26utm_campaign%3D=
+multikonten30agustus&amp;lllsttu=3D2109b83c7b52aad6799855794e69d08e7363283a=
+3e69a064b30be89223de7187&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+Voucher+MER=
+DEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEmail&amp;user_=
+email=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"color: #f957=
+59; text-decoration: none;"><span style=3D"color: #D71249; text-decoration:=
+ underline;">Kebijakan Privasi</span></a> Anda memperoleh email ini karena =
+keanggotaan Anda pada Bukalapak.<br>Untuk berhenti berlangganan newsletter =
+<a href=3D"http://glimpsetrack.net/redirect?late_id=3D2413&amp;link=3Dhttps=
+%3A%2F%2Fwww.bukalapak.com%2Fother_settings%2Funsubscribe_newsletter%3Funsu=
+b_token%3Dfc4c3049391b6edfaf3a19724853288578e576d17f3c8aacee6b63ce545f4fddc=
+mlhbmRlYmlhbGZpYW5AZ21haWwuY29t&amp;lllsttu=3D93b281268adc6e0d2629fb813177d=
+5f8c3d04502b815d6c4c5ecf8559afc1e6f&amp;subject=3DMau+Beli+Hadiah%3F+Pakai+=
+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewsletter&amp;type=3DClickEmai=
+l&amp;user_email=3Driandebialfian%40gmail.com" target=3D"_blank" style=3D"c=
+olor: #f95759; text-decoration: none;"><span style=3D"color: #d71249; text-=
+decoration: underline;">klik di sini</span></a>.<br>
+                                  Harap jangan membalas email ini, karena e=
+mail ini dikirimkan secara otomatis oleh sistem.
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height=3D"20"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+              <!-- end copyright -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end footer-->
+                    <tr>
+            <td height=3D"0"></td>
+          </tr>
+                 =20
+               =20
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height=3D"0"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end Body-->
+ =20
+<img src=3D"http://glimpsetrack.net/img?late_id=3D2413&amp;llsttu=3De6b0508=
+7dd231b9705daa1fae4faeae716ead7729b94ff29afac2f32ec101011&amp;subject=3DMau=
++Beli+Hadiah%3F+Pakai+Voucher+MERDEKASAY+Lebih+Hemat%21&amp;tag=3Dnewslette=
+r&amp;type=3DOpenEmail&amp;user_email=3Driandebialfian%40gmail.com">
+</body>
+
+</html>
+
+--565ce154069b434fbd4e1e2d2a3b5288--
