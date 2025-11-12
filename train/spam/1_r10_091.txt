@@ -1,0 +1,455 @@
+Delivered-To: farhanfahlevi021@gmail.com
+Received: by 10.37.108.130 with SMTP id h124csp2532955ybc;
+        Thu, 10 Aug 2017 08:18:37 -0700 (PDT)
+X-Received: by 10.200.54.152 with SMTP id a24mr17907847qtc.66.1502378317438;
+        Thu, 10 Aug 2017 08:18:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502378317; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XVEdtA1cGJ+IN9m5SxBwLzbhV3Bn+ZQrk7XXsvfzN1dvbBs5q5jhrjG8G2aL68aFo7
+         U13EiIc7wck0WmU2C8WdBtZDX7RbwOMTAh8xDYLsqTwEihO64MPxfuq27qGztdu3QLgG
+         KjrPjDl9o/Ev8z5DUbcGd8x75yUv5sOFqTdfDwHE351DyrfHmNVFAWV+bn0uMkCHPZhh
+         vNKgtrzoFFyOphTcJr/jRlVoaU1A4J337FZ2u6FnfbIoSmKtRKFXTR+unUnAwyvxDbQY
+         eo7dbINw2lDz+SB2dIFO1tQN7AUgDebwZEvO+u4m5rBQdKAdQr1mM6kAJ3eTpf8qzWbg
+         H1IA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:mime-version:subject:message-id:to:from
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=VQGSyNQUcJT+piQswOuCPsAjIuGZxsags5OPYinLSSc=;
+        b=bRFdSw/SqAXwbVQA7e1t5jMC/IWbzMR95BTv+L1G1xgP7pBU/OoKlJGReSbc32IzMa
+         uu7IQ0Vdnvuytf44lQmUgohWw+GSWO8WP+igXFjQfThBX4Idvrs+pj5HRLfuaX0T7rI9
+         5JxaOYCZEmGiEnuzLmap296GZF+YIptLQ+a4RLVCsBiAhSeNleRQuaWC+DB3oHa91a28
+         3lQPfkPL1127oX0Rgzct8qcT4DW0rfTCgxuW8ECXiKBYpJYgmp3x2NTgtCCRomaxdt0/
+         N7QE/pkeBnk+OYtpOx8xxE5FlRzoB1g4/s0gRNKjvCihJsc7XB5uLmrNB3f0+eHplYSe
+         w6YQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@traveloka.com header.s=3jiusqivom6qhghpndnknrf3pzaxixcv header.b=Fu/F+n2f;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=YttvYg3x;
+       spf=pass (google.com: domain of 0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com designates 54.240.11.126 as permitted sender) smtp.mailfrom=0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=traveloka.com
+Return-Path: <0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com>
+Received: from a11-126.smtp-out.amazonses.com (a11-126.smtp-out.amazonses.com. [54.240.11.126])
+        by mx.google.com with ESMTPS id c38si6050031qtc.31.2017.08.10.08.18.37
+        for <farhanfahlevi021@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 10 Aug 2017 08:18:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com designates 54.240.11.126 as permitted sender) client-ip=54.240.11.126;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@traveloka.com header.s=3jiusqivom6qhghpndnknrf3pzaxixcv header.b=Fu/F+n2f;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=YttvYg3x;
+       spf=pass (google.com: domain of 0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com designates 54.240.11.126 as permitted sender) smtp.mailfrom=0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=traveloka.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=3jiusqivom6qhghpndnknrf3pzaxixcv; d=traveloka.com; t=1502378317; h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date; bh=aD1VlLyhXYYi18Hxu6MyyBCzBhb5TyXKJZzLj2jF4oY=; b=Fu/F+n2fY4OCP45UN0nhQlGn8GI/2lxDT5Gw3RBg6EkeHlb8frZl3FIWuda2SlC1 e0O+i5lfN8EtTM24BIOEon884NkhEWddjJ66QHAtBnHyD/hKBIMeW+KwxaO4L3hDujX TPLwEUNBTwQ6RznN+rgfu0uHnkitZz57G47uDyVA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1502378317; h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date:Feedback-ID; bh=aD1VlLyhXYYi18Hxu6MyyBCzBhb5TyXKJZzLj2jF4oY=; b=YttvYg3x0fA1ypjWYqsBK+lTnzeTRwRJKJKIOqt3PafzOjVoq/XX1vCqe9m8s/vX ApaicZd18s1IFCIm6Z5RbmUIHBKaP0sHI8CKKGu5PEhqfGhxNmsYhAjz8X1qqZ2JtfL N7Nh5bJ4AlTcuFr+x5KEfHSUnivhUD2rDYofWzao=
+From: Traveloka <reward@traveloka.com>
+To: "farhanfahlevi021@gmail.com" <farhanfahlevi021@gmail.com>
+Message-ID: <0100015dccb9c815-9bbdb4f1-4ca7-41c6-8d6d-07b20d36024c-000000@email.amazonses.com>
+Subject: Kupon Diskon Tiket s.d. Rp150rb Spesial untuk Anda
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_10406263_127054080.1502378313347"
+Date: Thu, 10 Aug 2017 15:18:33 +0000
+X-SES-Outgoing: 2017.08.10-54.240.11.126
+Feedback-ID: 1.us-east-1.ptpQAtctyTH6xbFYLr9NK7TTWUz00JgABxwh6FOQ8SE=:AmazonSES
+
+------=_Part_10406263_127054080.1502378313347
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D'http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta httpEquiv=3D'Content-Type' content=3D'text/html; charset=3Dutf-8'=
+ />
+    <meta name=3D'viewport' content=3D'width=3Ddevice-width, initial-scale=
+=3D1.0' />
+    <title>Traveloka</title>
+    <style></style>
+  </head>
+  <body style=3D"margin: 0;">
+    <table width=3D"100%" style=3D"border-spacing: 0;">
+      <tr>
+        <td>
+         =20
+          <table class=3D'component-overflow null' align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"background: #fff; width:=
+ 100%;max-width: 600px;font-family:san-serif"bgcolor=3D"#fff" data-componen=
+t data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_firstline' dat=
+a-id=3D'1502355320494'><tr>
+  <td>
+    <p style=3D"color: #fff; font-size: 0px">
+      Hanya untuk Anda pelanggan setia Traveloka
+    </p>
+  </td>
+</tr>
+</table><table class=3D'component-overflow null' align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0" style=3D"background: #fff; width: 1=
+00%;max-width: 600px;font-family:san-serif"bgcolor=3D"#fff" data-component =
+data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_newsletter_Switc=
+hlang' data-id=3D'1502355320789'><tr>
+  <td>
+    <p style=3D"color: #fff; font-size: 0px">
+      Nikmati penawaran terbaik Traveloka minggu ini untuk Anda.
+    </p>
+    <img style=3D"display: block; font-size: 0px; height: auto; line-height=
+: 0em" src=3D"https://traveloka.com/o?id=3D1575348296474447369" alt=3D"" wi=
+dth=3D"1" height=3D"1" border=3D"0" />
+  </td>
+</tr>
+<tr>
+  <td style=3D"padding: 5px 0px; text-align: center; font-size: 11px; font-=
+family: sans-serif;" align=3D"center">
+    Ubah bahasa=20
+    <a style=3D"color: #1ba0e2; text-decoration: underline;" href=3D"http:/=
+/www.traveloka.com/r?id=3D1575348296474447369&amp;target=3Dhttps%3A%2F%2Fww=
+w.traveloka.com%2Fen-id%2Fstatic-newsletter%2Fnewsletter_2017_aug10_btl_ID_=
+flight_crossSell%3Futm_source%3Dnewsletter%26utm_content%3Dswitchlang%26utm=
+_medium%3Demail%26utm_campaign%3Dnewsletter_2017_aug07_btl_ID_flight_crossS=
+ell%26fl=3Dtrue">EN</a> |=20
+    <a style=3D"color: #1ba0e2; text-decoration: underline;" href=3D"http:/=
+/www.traveloka.com/r?id=3D1575348296474447369&amp;target=3Dhttps%3A%2F%2Fww=
+w.traveloka.com%2Fid-id%2Fstatic-newsletter%2Fnewsletter_2017_aug10_btl_ID_=
+flight_crossSell%3Futm_source%3Dnewsletter%26utm_content%3Dswitchlang%26utm=
+_medium%3Demail%26utm_campaign%3Dnewsletter_2017_aug07_btl_ID_flight_crossS=
+ell%26fl=3Dtrue">ID</a>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; margin-top: 10px;" data-component data-name=3D'newsletter_2017_au=
+g10_btl_ID_flight_crossSell_Headbanner' data-id=3D'1502355321313'><tr>
+  <td>
+    <img src=3D"https://da8hvrloj7e7d.cloudfront.net/imageResource/2017/07/=
+31/1501497002757-47c6e53f4d7880dd6c9a67d34f6cfc2f.jpeg" width=3D"100%" bord=
+er=3D"0" style=3D"display: block; height: auto; min-height: 50px; font-size=
+: 12px; color: #333;" alt=3D"" />
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px;  border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6"=
+ data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_=
+aboutpromo' data-id=3D'1502355321829'><tr>
+  <td class=3D"innerpadding" style=3D"background: #fff; padding: 8px 20px 0=
+; font-size: 16px; line-height: 1.5; text-align: center; margin-bottom: 20p=
+x; font-family: sans-serif; font-weight: 400;" bgcolor=3D"#fff">
+    <h2 style=3D"color: #434343; font-size: 19px; font-weight: bold; line-h=
+eight: 26px; margin: 10px 15px 20px; text-align: center" align=3D"center">K=
+ado Spesial untuk Anda</h2>
+    <p>Terbang ke mana saja jadi lebih hemat karena ada kupon diskon senila=
+i <strong>s.d. Rp150.000</strong> untuk semua maskapai, rute, dan tanggal p=
+enerbangan.</p>
+<p>Aktifkan diskonnya dengan kode kupon berikut:</p>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6" =
+data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_c=
+oupon' data-id=3D'1502355322363'><tr>
+  <td class=3D"innerpadding" style=3D"background: #fff; padding: 15px 20px =
+0; text-align: center; font-family: sans-serif; font-weight: 300;" bgcolor=
+=3D"#fff">
+    <div style=3D"display: inline-block; font-weight: bold; padding: 10px 3=
+0px; font-size: 28px; background: #f6f6f6; border: 1px solid #dadada; color=
+: #0d7fcc; border-radius: 5px; margin-bottom:10px;">
+      <span style=3D"display:block; font-size: 14px; color: #434343; margin=
+-bottom: 5px;">Kode Kupon Anda:</span>AAAUG10B1</div>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6" =
+data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_B=
+ookperiode' data-id=3D'1502355322879'><tr>
+  <td class=3D"innerpadding" style=3D"background: #fff; padding-right: 20px=
+; padding-left: 20px; text-align: center; line-height: 22px; font-family: s=
+ans-serif;" bgcolor=3D"#fff">
+    <p><strong>Periode booking: </strong>10 =E2=80=93 13 Agustus 2017</p>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px;  border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6"=
+ data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_=
+CTA' data-id=3D'1502355323398'><tr>
+  <td class=3D"innerpadding" style=3D"background: #fff; padding: 15px 20px =
+20px" bgcolor=3D"#fff">
+    <a style=3D"display: block; padding:15px 0; background: #f96d01; border=
+-radius: 5px; text-align: center; text-decoration: none; vertical-align: mi=
+ddle; color: #fff; font-size: 24px; line-height: 32px; font-weight:300;" hr=
+ef=3D"http://www.traveloka.com/hotel" style=3D"display:block; padding: 15px=
+ 10px; text-align: center; text-decoration: none">
+      <span style=3D"color: white; font-family: sans-serif; font-size: 22px=
+; font-weight: 300; margin: 6px;">Dapatkan promonya</span>
+      <img src=3D"https://s3-ap-southeast-1.amazonaws.com/traveloka/imageRe=
+source/2016/11/23/1479881440204-40a8ac852ce16caf097a9654d9dfbf31.png" borde=
+r=3D"0" style=3D"height: 27px; display: inline-block; vertical-align: middl=
+e;" />
+    </a>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6" =
+data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_h=
+owtouse' data-id=3D'1502355323922'><tr>
+  <td class=3D"innerpadding" style=3D"background: #fff; padding-right: 20px=
+; padding-left: 20px; text-align: center; line-height: 22px; font-family: s=
+ans-serif;" bgcolor=3D"#fff">
+    <a href=3D"https://blog.traveloka.com/berita/cara-menggunakan-kupon-eks=
+klusif-traveloka/">Lihat cara pakai kupon di sini</a>
+  </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6;"=
+ data-component data-name=3D'newsletter_2017_aug10_btl_ID_flight_crossSell_=
+Tnc' data-id=3D'1502355324456'><tr>
+=09<td class=3D"innerpadding" style=3D"background: #fff;padding: 20px;borde=
+r-bottom-width: 1px;border-bottom-color: #eee;border-bottom-style: solid;bo=
+rder-top-width: 1px;border-top-color: #eee;border-top-style: solid;line-hei=
+ght: 1.5;text-align: center;">
+=09  <p style=3D"font-family: sans-serif; font-weight: bold;">=09
+      <b>Syarat & Ketentuan</b>
+    </p>
+=09  <div style=3D"text-align: left; margin-bottom: 24px; font-family: sans=
+-serif; font-weight: 500;">
+=09    <ul>
+  <li>Diskon 10% <strong>(potongan s.d. Rp150.000)</strong> tanpa minimum t=
+ransaksi dalam satu No Pesanan.</li>
+  <li>Berlaku untuk pemesanan melalui Traveloka App versi minimum 2.10 (And=
+roid/iOS), desktop, dan mobile web.</li>
+  <li>Hanya berlaku untuk satu kali penggunaan selama periode promo.</li>
+  <li>Berlaku untuk <strong>semua maskapai</strong>, <strong>rute</strong> =
+dan <strong>periode penerbangan</strong>.</li>
+  <li>Berlaku untuk <strong>semua metode pembayaran</strong>.</li>
+  <li>Pemesanan yang menggunakan kupon diskon tidak akan mendapatkan Travel=
+oka Poin.</li>
+  <li>Untuk dapat memakai kupon diskon, pastikan Anda mendaftarkan akun/log=
+ in ke Traveloka menggunakan alamat email ini.</li>
+  <li>Kupon diskon tidak dapat digabung dengan promo lainnya.</li>
+  <li><strong>Periode booking</strong>: 10 =E2=80=93 13 Agustus 2017</li>
+  <li>Perhitungan refund dilakukan berdasarkan nominal yang dibayar setelah=
+ dipotong diskon, bukan harga awal.</li>
+  <li>Traveloka berhak penuh untuk mengubah syarat dan ketentuan tanpa pemb=
+eritahuan terlebih dahulu.</li>
+</ul>
+=09  </div>
+=09</td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px;  border-left: 1px solid #F6F6F6; border-right: 1px solid #F6F6F6"=
+ data-component data-name=3D'newsletter_footer_regard' data-id=3D'150114864=
+8906'><tr>
+=09<td class=3D"innerpadding" style=3D"background: #fff; padding: 20px 20px=
+ 20px; text-align: center;" bgcolor=3D"#fff">
+=09=09<p style=3D"margin: 0px; text-align: center; font-family: sans-serif;=
+">Salam,</p>
+=09=09<p style=3D"margin: 0px; text-align: center; font-family: sans-serif;=
+">Traveloka</p>
+=09=09=09=09=09<p style=3D"margin: 0px; text-align: center; font-family: sa=
+ns-serif;"><a href=3D"mailto:newsletter@traveloka.com" style=3D"color: #1ba=
+0e2">newsletter@traveloka.com</a></p>
+=09=09=09</td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; padding: 20px 30px 15px; background: #1ba0e2;" data-component dat=
+a-name=3D'newsletter_footer_contact' data-id=3D'1501148615420'><tr> =20
+=09<td align=3D"center">
+    <img src=3D"https://s3-ap-southeast-1.amazonaws.com/traveloka/asset/ima=
+ges/logo.png" width=3D"169" height=3D"47" border=3D"0" alt=3D"traveloka log=
+o" style=3D"height: auto" />
+  </td>
+</tr>
+<tr>
+=09<td align=3D"center" style=3D"border-bottom-color: #1e8cc3; border-botto=
+m-style: solid; border-bottom-width: 1px; color: #fff; font-size: 14px; fon=
+t-weight: 300; padding: 12px 0 17px; font-family: sans-serif;">
+=09=09<div style=3D"display: inline-block; margin-bottom: 5px; margin-right=
+: 10px;">
+=09=09  <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09    <tr>
+=09=09      <td align=3D"left">
+=09=09        <img src=3D"https://s3-ap-southeast-1.amazonaws.com/traveloka=
+/newsletter/icon+phone+cs.png" height=3D"24" width=3D"24" style=3D"margin-r=
+ight: 5px; vertical-align: middle;" />+60-15-4840-9469
+
+=09=09      </td>
+=09=09    </tr>
+=09=09  </table>
+=09=09</div>
+=09=09<div style=3D"display: inline-block; margin-bottom: 5px; margin-right=
+: 10px;">
+=09=09  <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09    <tr>
+=09=09      <td align=3D"left">
+=09=09        <img src=3D"https://s3-ap-southeast-1.amazonaws.com/traveloka=
+/newsletter/icon+email.png" height=3D"24" width=3D"24" style=3D"margin-righ=
+t: 5px; vertical-align: middle;" /><a href=3D"mailto:cs@traveloka.com" styl=
+e=3D"color: #FFF; text-decoration: none">cs@traveloka.com</a>
+=09=09          </td>
+=09=09        </tr>
+=09=09      </table>
+=09    </div>
+=09=09<div style=3D"display: inline-block; margin-bottom: 5px;">
+=09=09=09<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09  <tr>
+=09=09=09    <td align=3D"left">
+=09=09=09      <img src=3D"https://s3-ap-southeast-1.amazonaws.com/travelok=
+a/newsletter/icon+faq.png" height=3D"24" width=3D"24" style=3D"margin-right=
+: 5px; vertical-align: middle;" /><a href=3D"http://www.traveloka.com/r?id=
+=3D1575348296474447369&amp;target=3Dhttp%3A%2F%2Fwww.traveloka.com%2Fid-id%=
+2Ffaq%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26adloc%3Did-id%26utm_=
+campaign%3Dnewsletter_2017_aug07_btl_ID_flight_crossSell" style=3D"color: #=
+FFF">Halaman FAQ</a>
+=09=09=09    </td>
+=09=09=09  </tr>
+=09=09=09</table>
+=09=09</div>
+    </td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; padding: 0px 0px; background: #1ba0e2;" data-component data-name=
+=3D'newsletter_footer_downloadapp' data-id=3D'1501149490145'><tr>
+=09<td align=3D"center" style=3D"border-bottom-color: #1e8cc3; border-botto=
+m-style: solid; border-bottom-width: 1px; padding: 0 0 0px 6%; font-family:=
+ sans-serif;">
+=09  <table style=3D"width: 32%" align=3D"left" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0">
+=09    <tr>
+=09      <td align=3D"right">
+=09        <img src=3D"https://da8hvrloj7e7d.cloudfront.net/imageResource/2=
+017/02/08/1486538751847-56fe9ce9bff2bdfa425b9824843cb011.png" style=3D"heig=
+ht: auto; width: 100%" />
+=09      </td>
+=09    </tr>
+=09  </table>
+=09  <table style=3D"width: 55%; margin-top: 24px; margin-left: 20px;" alig=
+n=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09    <tr>
+=09      <td align=3D"left" style=3D"padding: 0 10px">
+=09        <!--<h4 style=3D"color: #fff; font-weight: 700; margin: 0">Lihat=
+ e-tiket/voucher tanpa koneksi internet.</h4>
+=09        <p style=3D"color: #d9f2ff; font-size: 14px; font-weight: 300; m=
+argin: 5px 0 10px">Pesannya cepat, harganya hemat. Download gratis di:</p>-=
+->
+          <img src=3D"https://da8hvrloj7e7d.cloudfront.net/imageResource/20=
+17/08/10/1502354823835-2c0a5b31ef2b6005daf5009b5ab7881a.png" border=3D"0" s=
+tyle=3D"height: auto; width: 100%; max-width: 180px; margin: -24px -8px -16=
+px;" />
+          <p style=3D"color: #d9f2ff; font-size: 14px; font-weight: 300; ma=
+rgin: 5px 0 10px">Pesannya cepat, harganya hemat. Download gratis di:</p>
+=09        <a style=3D"text-decoration: none;" href=3D"http://www.traveloka=
+.com/r?id=3D1575348296474447369&amp;target=3Dhttp%3A%2F%2Fwww.traveloka.com=
+%2Fads%2Feni%3Futm_source%3Dnewsletter%26utm_medium%3Demail%26adloc%3Did-id=
+%26utm_campaign%3Dnewsletter_2017_aug07_btl_ID_flight_crossSell"><img src=
+=3D"https://da8hvrloj7e7d.cloudfront.net/imageResource/2017/07/27/150115142=
+7064-f0cc4367dbf3c37f69c8f3046dc3e9f7.png" alt=3D"Aplikasi Traveloka untuk =
+iPhone/iPad/iPod" border=3D"0" style=3D"height: auto; margin-bottom: 5px; w=
+idth: 45%" />
+=09        </a>
+
+=09        <a href=3D"http://www.traveloka.com/r?id=3D1575348296474447369&a=
+mp;target=3Dhttp%3A%2F%2Fwww.traveloka.com%2Fads%2Fena%3Futm_source%3Dnewsl=
+etter%26utm_medium%3Demail%26adloc%3Did-id%26utm_campaign%3Dnewsletter_2017=
+_aug07_btl_ID_flight_crossSell"><img src=3D"https://da8hvrloj7e7d.cloudfron=
+t.net/imageResource/2017/07/27/1501151433177-d821906c1cda02deb9e95cafd72230=
+8f.png" alt=3D"Aplikasi Traveloka untuk Android" border=3D"0" style=3D"heig=
+ht: auto; margin-bottom: 5px; width: 45%" />
+=09        </a>
+
+=09      </td>
+=09    </tr>
+=09  </table>
+=09</td>
+</tr></table><table class=3D'component-overflow null' align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-widt=
+h: 580px; padding: 20px 30px 15px; background: #1ba0e2; margin-bottom: 20px=
+" data-component data-name=3D'newsletter_footer_tnc_crossSell_flight' data-=
+id=3D'1502074656620'>
+=09    <tr>
+=09      <td align=3D"center" class=3D"footercopy" style=3D"color: #d9f2ff;=
+ font-family: sans-serif; font-size: 14px; font-weight: 300; padding: 0 0 7=
+px">
+=09        Email ini ditujukan hanya untuk <span style=3D"color: #FFF">farh=
+anfahlevi021@gmail.com</span> karena Anda telah melakukan pemesanan hotel d=
+i Traveloka. Semua harga yang tertera di Traveloka dapat berubah sewaktu-wa=
+ktu tanpa pemberitahuan terlebih dahulu.
+=09        <br style=3D"line-height: 16px" />
+=09      </td>
+=09    </tr>
+=09    <tr>
+=09      <td align=3D"center" class=3D"footercopy" style=3D"color: #d9f2ff;=
+ font-family: sans-serif; font-size: 14px; font-weight: 300; padding: 7px 0=
+">
+=09        Copyright &copy; 2017 Traveloka
+=09      </td>
+=09    </tr>
+=09    <tr>
+=09      <td align=3D"center" style=3D"padding: 0">
+=09        <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09          <tr>
+              =09            <td width=3D"30" style=3D"padding: 0 5px; text=
+-align: center" align=3D"center">
+=09              <a href=3D"http://www.traveloka.com/r?id=3D157534829647444=
+7369&amp;target=3Dhttp%3A%2F%2Fwww.facebook.com%2FTravelokaID%3Futm_source%=
+3Dnewsletter%2526utm_medium%3Demail%2526utm_campaign%3Dnewsletter_2017_aug0=
+7_btl_ID_flight_crossSell">
+=09                <img src=3D"https://s3-ap-southeast-1.amazonaws.com/trav=
+eloka/asset/images/facebook.png" width=3D"30" alt=3D"Facebook" border=3D"0"=
+ style=3D"height: auto" />
+=09              </a>
+=09            </td>
+                            =09            <td width=3D"30" style=3D"paddin=
+g: 0 5px; text-align: center" align=3D"center">
+=09              <a href=3D"http://www.traveloka.com/r?id=3D157534829647444=
+7369&amp;target=3Dhttps%3A%2F%2Ftwitter.com%2Ftraveloka%3Futm_source%3Dnews=
+letter%2526utm_medium%3Demail%2526utm_campaign%3Dnewsletter_2017_aug07_btl_=
+ID_flight_crossSell">
+=09                <img src=3D"https://s3-ap-southeast-1.amazonaws.com/trav=
+eloka/asset/images/twitter.png" width=3D"30" alt=3D"Twitter" border=3D"0" s=
+tyle=3D"height: auto" />
+=09              </a>
+=09            </td>
+              =09            <td width=3D"30" style=3D"padding: 0 5px; text=
+-align: center" align=3D"center">
+=09              <a href=3D"http://www.traveloka.com/r?id=3D157534829647444=
+7369&amp;target=3Dhttps%3A%2F%2Finstagram.com%2Ftraveloka%3Futm_source%3Dne=
+wsletter%2526utm_medium%3Demail%2526utm_campaign%3Dnewsletter_2017_aug07_bt=
+l_ID_flight_crossSell">
+=09                <img src=3D"https://s3-ap-southeast-1.amazonaws.com/trav=
+eloka/imageResource/2016/06/15/1465963239641-7dfca16ed8d88311f5e4d90b346465=
+d9.png" width=3D"30" alt=3D"Instagram" border=3D"0" style=3D"height: auto; =
+margin-top: 1px;" />
+=09              </a>
+=09            </td>
+=09            <td width=3D"30" style=3D"padding: 0 5px; text-align: center=
+" align=3D"center">
+=09              <a href=3D"http://www.traveloka.com/r?id=3D157534829647444=
+7369&amp;target=3Dhttps%3A%2F%2Fplus.google.com%2F%25252BTraveloka%2Fposts%=
+3Futm_source%3Dnewsletter%2526utm_medium%3Demail%2526utm_campaign%3Dnewslet=
+ter_2017_aug07_btl_ID_flight_crossSell">
+=09                <img src=3D"https://s3-ap-southeast-1.amazonaws.com/trav=
+eloka/imageResource/2016/07/11/1468233124313-a8e8603eaad527eeea74b5fb679d16=
+73.png" width=3D"30" alt=3D"Google+" border=3D"0" style=3D"height: auto" />
+=09              </a>
+=09            </td>
+=09          </tr>
+=09        </table>
+=09      </td>
+=09    </tr></table><table class=3D'component-overflow null' align=3D"cente=
+r" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%; m=
+ax-width: 580px;  border-left: 1px solid #F6F6F6; border-right: 1px solid #=
+F6F6F6;  margin-top: -16px;" data-component data-name=3D'newsletter_footer_=
+unsubscribe' data-id=3D'1501488639174'><tr>
+=09<td style=3D"text-align: center;font-family: sans-serif;line-height: 22p=
+x;">
+=09=09Anda dapat:
+=09=09<br style=3D"line-height: 16px" /><a style=3D"font-size: 15px; line-h=
+eight: 1,5" href=3D"http://www.traveloka.com/r?id=3D1575348296474447369&amp=
+;target=3Dhttp%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fstopmailing%3Femail%3Dfa=
+rhanfahlevi021@gmail.com%26utm_source%3Dnewsletter%26utm_medium%3Demail%26a=
+dloc%3Did-id%26utm_campaign%3Dnewsletter_2017_aug07_btl_ID_flight_crossSell=
+">Berhenti berlangganan,</a>
+=09=09<br style=3D"line-height: 16px" />namun Anda akan kehilangan informas=
+i Promo Eksklusif Traveloka.
+=09</td>
+</tr>
+</table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+------=_Part_10406263_127054080.1502378313347--

@@ -1,0 +1,105 @@
+Delivered-To: azahrannisa@gmail.com
+Received: by 10.107.31.208 with SMTP id f199csp1712598iof;
+        Wed, 30 Aug 2017 19:46:10 -0700 (PDT)
+X-Received: by 10.202.114.150 with SMTP id p144mr3665748oic.303.1504147570540;
+        Wed, 30 Aug 2017 19:46:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504147570; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HuwGRUC7EYyqOAAjKR2PIm9oX8vv5aaznwm+hzS6lv8pds0FPRJC8HPB/WdEcGVKf2
+         kcV90qKZuhoHs8qhKFQ5WGOplAANQnnqBp6KK5avqXZzMpkPA5+K+2UehhSBuhHcrm+I
+         TKSbh6YA5Q+T8tCS9+DDLCZSv4gkUpDkRnZWb5rtNrkj+l79bK3NBmBybbUFYcR+Z4Cf
+         P+IfNgKxL/WQi0YNJpRSDjgsPKTfempwV1AnOYFc6POcr5bjk1lPwOdvDdW5a8VhUGJM
+         3qGmb+QSiN1ePdKKKvOg+aZ63QvN0Md1hVgptFf8kNr4dED+Rtskx9HxgUWLyp7q0Dsj
+         nqiQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to:from
+         :date:dkim-signature:arc-authentication-results;
+        bh=7G3S4BPU8v9IHs7qpXSh2gogU7PYBw700a+YotKK1bU=;
+        b=Eyi0ac6+GZBzZHSvzSIm9ef9tLysdNdSeMiPWbx7pyEKTQkQiNMzxHLot9ZiLSpjtt
+         Q/f4pQOEH8x3YBoADnDvHZNVhxaL7p/3Uw2bMHld7/QJ2fSgUZuT578bYPHmd2g231zX
+         4hY8Jnz1Rh4Z1So3IxGxFRNo7ay+hwb1ENR8AISGNrBUn4HShYBhsKRdtWuvN/zFuQQE
+         MA7rCGHo2lPgtjLt0q6lyJUr5Ki32vA1FfUg9oTs2xiuXUiOMxVnJu44iBgz6Mab++Zq
+         ZPVkeutO/rP/81qbcbCKFDmixM8VxJucjA3cfUcibwcsL44XaWQ6HfpTueGbUk032EOE
+         3dHA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mx2.4shared.com header.s=mail header.b=qffMcr9m;
+       spf=pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.33 as permitted sender) smtp.mailfrom=no-reply@mx2.4shared.com
+Return-Path: <no-reply@mx2.4shared.com>
+Received: from dc574.4shared.com ([204.155.149.33])
+        by mx.google.com with ESMTPS id w64si5206993oif.350.2017.08.30.19.46.10
+        for <azahrannisa@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Aug 2017 19:46:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.33 as permitted sender) client-ip=204.155.149.33;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mx2.4shared.com header.s=mail header.b=qffMcr9m;
+       spf=pass (google.com: domain of no-reply@mx2.4shared.com designates 204.155.149.33 as permitted sender) smtp.mailfrom=no-reply@mx2.4shared.com
+Received: from dc777204.4shared.com (smtp777.4shared.com [204.155.148.8]) by dc574.4shared.com (8.14.4/8.14.4) with ESMTP id v7V2kALA025401 for <azahrannisa@gmail.com>; Thu, 31 Aug 2017 02:46:10 GMT
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1504147570; s=mail; d=mx2.4shared.com; h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding; bh=7G3S4BPU8v9IHs7qpXSh2gogU7PYBw700a+YotKK1bU=; b=qffMcr9miN/w7bwrfX6h5JgNCT2OkRKhSYHimnV9NKQlTtgsX29rLt+eQ9NV5ZcM jdBFLvtS7RYJ2nceA3gMU/8RXb4hlRj3Tumna9PuThA5yxh5xrtUzAi5rPLyKUuWCr1 ufbO0qwiQvNIi3RCq8I7NFQ2BV1pToPN77gUlS8tIBwcjhklUAO0dfkmpCt/9U6QtT2 8iVWepDbJfRUyAfaz80x013oJRg7WYC36QBszuvfg6tHsMXYrxJjGzDLSXtolDT/C5o duZAuAZiRlLklommHiVg1RkjoKAMjh4/s13fEyCBWdAYfj/nFXt8D/5fZm4fpjJ4X13 ZQwy0KP9Bw==
+Date: Thu, 31 Aug 2017 02:46:10 +0000 (UTC)
+From: 4shared <no-reply@mx2.4shared.com>
+To: azahrannisa@gmail.com
+Message-ID: <1859691115.4447111.1504147570117.JavaMail.catalina@cron2.4shared.com>
+Subject: 4shared account is expiring in 10 days
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+x-4shared: x-4shared
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8" /><title>4shared e-mail</title></head><body style=
+=3D"margin: 0; background:#fafafa"><table cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"font-family: Arial, sans-serif; background:#fafafa" width=3D"10=
+0%"><tbody><tr><td><!--[if gte mso 10]><table width=3D"670"><tr><td width=
+=3D"670"><![endif]--><div style=3D"max-width: 670px; margin: 0 auto; paddin=
+g: 5% 0;"><table style=3D"border: 1px solid #cccccc; background:#ffffff" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td style=3D"ba=
+ckground-color: #ffffff; color: #0b80bd;"><img src=3D"https://static.4share=
+d.com/images/email/4shared-top-gradient.png" style=3D"display:block;border:=
+ 0; width:100%;height: auto; max-height: 10px;" /><img src=3D"https://stati=
+c.4shared.com/images/email/4shared-logo.png" alt=3D"Please, click 'Enable i=
+mages'" style=3D"display:block;border: 0; width:100%;height: auto; max-heig=
+ht: 77px;" /></td></tr><tr><td style=3D"padding: 10px 30px 15px 42px;" vali=
+gn=3D"top"><b style=3D"color: #4f5f6f; font-size: 20px; font-family: Tahoma=
+, sans-serif;">Kami merindukan Anda di 4shared, annisa.</b></td></tr><tr><t=
+d style=3D"padding: 3px 30px 10px 42px;" valign=3D"top"><span style=3D"colo=
+r: #4f5f6f; font-size: 13px;"> Akun 4shared Anda akan kedaluwarsa dalam 10 =
+hari dan sesuai dengan peraturan kami, akun tersebut akan dihapus. Agar tid=
+ak kedaluwarsa, pastikan untuk masuk ke akun Anda dalam 10 hari atau tingka=
+tkan menjadi Premium. </span></td></tr><tr><td style=3D"padding: 10px 30px =
+20px 42px;color: #4f5f6f; font-size: 13px;" valign=3D"top"><a href=3D"https=
+://www.4shared.com/web/login" style=3D"color: #0574b5; text-decoration: non=
+e;">Masuk ke 4shared</a></td></tr><tr><td style=3D"padding: 0 30px 20px 42p=
+x;" valign=3D"top"><br /><i style=3D"color: #8a8a8a; font-size: 13px;">Tim =
+4shared </i></td></tr><tr><td style=3D"padding: 0 30px 0 42px;" valign=3D"t=
+op"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"bord=
+er-top: 1px dotted #e1e2e3;"><tbody><tr><td style=3D"padding: 15px 0;"><spa=
+n style=3D"color: #8a8a8a; font-size: 11px;"> Ini merupakan pesan surel oto=
+matis, mohon jangan membalasnya secara langsung. Jika Anda memiliki pertany=
+aan <a href=3D"https://www.4shared.com/web/helpCenter" style=3D"color: #057=
+4b5; text-decoration: none;">hubungi </a> kami.</span></td></tr></tbody></t=
+able></td></tr></tbody></table><table cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" border=3D"0"><tbody><tr><td style=3D"padding: 5px 0 15px 0; t=
+ext-align: center;"><div style=3D"font-size: 14px; color: #919191;margin: 5=
+px 0;"> Akses berkas Anda dari mana saja</div><a href=3D"https://www.4share=
+d.com/web/ga?utm_campaign=3D4sharedWindowsPhone&redirectUrl=3Dhttps://www.w=
+indowsphone.com/en-us/store/app/4shared/e9e2cae0-2732-4351-adb6-fa1ab2cf36b=
+e" target=3D"_blank" style=3D"margin: 0 5px;text-decoration: none;"><img sr=
+c=3D"https://static.4shared.com/images/email/email-moblink-winphone.png" al=
+t=3D"4shared for Windows Phone" border=3D"0" width=3D"176" height=3D"50" st=
+yle=3D"border:0;" /></a><!--[if gte mso 10]>&nbsp;&nbsp;&nbsp;<![endif]--><=
+a href=3D"https://market.android.com/details?id=3Dcom.forshared" target=3D"=
+_blank" style=3D"margin: 0 5px;text-decoration: none;"><img src=3D"https://=
+static.4shared.com/images/email/email-moblink-android.png" alt=3D"4shared f=
+or Android" border=3D"0" width=3D"155" height=3D"50" style=3D"border:0;" />=
+</a><!--[if gte mso 10]>&nbsp;&nbsp;&nbsp;<![endif]--><a href=3D"https://it=
+unes.apple.com/us/app/4shared-sync/id444426162?mt=3D8&ls=3D1" target=3D"_bl=
+ank" style=3D"margin: 0 5px;text-decoration: none;"><img src=3D"https://sta=
+tic.4shared.com/images/email/email-moblink-iphone.png" alt=3D"4shared for i=
+Phone" border=3D"0" width=3D"155" height=3D"50" style=3D"border:0;" /></a><=
+/td></tr></tbody></table><table cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" border=3D"0"><tbody><tr><td style=3D"padding-top: 10px; border-to=
+p:1px #dfdfdf solid;"><span style=3D"color: #7a7a7a; font-size: 11px; font-=
+family: Tahoma, sans-serif;">&copy;2017 4shared. SELURUH HAK CIPTA DILINDUN=
+GI UNDANG-UNDANG.</span></td></tr></tbody></table></div><!--[if gte mso 10]=
+></td></tr></table><![endif]--></td></tr></tbody></table></body></html>

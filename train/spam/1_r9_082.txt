@@ -1,0 +1,336 @@
+﻿Delivered-To: erizza13@gmail.com
+Received: by 10.12.152.42 with SMTP id c39csp6419930qvd;
+        Wed, 30 Aug 2017 03:47:01 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb5NywNwihPRx344DZ4nU5NDF2K+X0zUl9zQ02Pyq/HRcmPZBj9zAFGD1XeVdzVJwTZLH/ET
+X-Received: by 10.55.96.6 with SMTP id u6mr9331001qkb.106.1504090021561;
+        Wed, 30 Aug 2017 03:47:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504090021; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YT77FaZeUWtoZ9R+Zyqg/coESR+Zhunr6EDqmMG+NhYsKH+u9nLjdtBFcklWKZmldf
+         2JPgYx0+eugZbeil0734RciuDLbDfnNBWZMjCW3aPAiZx/p4mOyAN6uduSjFTqU2nKoX
+         PB9S0U6Al51Gh2DZemUYk6u3b81LK+D49RQfnOCZpSQVAotFTWUlprREsIF6QBIUxdc5
+         wEwUsPZ7H3I/RWi4VeEj8fqqhr+tL4QZLJEiXYc+UZC1OFlB2Dm7SsWfbDGCLxTphCgV
+         nOqsLnJRMAmCDiBQZzelyrY0tCTCF4lRiBg5jWghGnKfjfxWXCEQgfzgG3DVvIl9dDUG
+         WokQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=precedence:list-unsubscribe:mime-version:subject:message-id:to
+         :reply-to:sender:from:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=jKPSnwqOJ5eiWZqtqE41S33xR7IwqhLrBQmD3AAX614=;
+        b=BHwx8bx0EDAAJuo0C7H+1ry3mY+AuVSWbfkVg99mjxUPerBWET8d0Ga1k/v0o2GV/h
+         RCj2+aGDY89vsbC7FcQ9qznLJYv2svhZ04IBrE6aBIeO1lHpZwur5wqLUHTQmwTrOmLQ
+         x+QdutWArGneD02VCt38sHbjTjP8J1dxkgOTjSoBnBnvE4ovox2Sihh/XpglfLRC76Jn
+         +BWa4wMiVLRGupCNdzev7GaE+zqu4QNW3s4Lw3dneoRxy2BWCgBeo71el9jYRKxxOeUL
+         2pbKBttOaSwQ/gFOM/MbqC1CrpoxUokvj+gEAWmPMqV+WQOfkOQLDCIrQbSTpfK76bMC
+         XOKQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sp03b.hubspotemail.net header.s=scph0417 header.b=WDszy4wG;
+       dkim=pass header.i=@sp03b.hubspotemail.net header.s=scph0417 header.b=WDszy4wG;
+       spf=pass (google.com: domain of bounces-erizza13=gmail.com@sp03b.hubspotemail.net designates 52.45.179.54 as permitted sender) smtp.mailfrom=bounces-erizza13=gmail.com@sp03b.hubspotemail.net
+Return-Path: <bounces-erizza13=gmail.com@sp03b.hubspotemail.net>
+Received: from mta1b12.sp01.hubspotemail.net (mta1b12.sp01.hubspotemail.net. [52.45.179.54])
+        by mx.google.com with ESMTPS id d79si464715qkj.73.2017.08.30.03.47.01
+        for <erizza13@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Aug 2017 03:47:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces-erizza13=gmail.com@sp03b.hubspotemail.net designates 52.45.179.54 as permitted sender) client-ip=52.45.179.54;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sp03b.hubspotemail.net header.s=scph0417 header.b=WDszy4wG;
+       dkim=pass header.i=@sp03b.hubspotemail.net header.s=scph0417 header.b=WDszy4wG;
+       spf=pass (google.com: domain of bounces-erizza13=gmail.com@sp03b.hubspotemail.net designates 52.45.179.54 as permitted sender) smtp.mailfrom=bounces-erizza13=gmail.com@sp03b.hubspotemail.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sp03b.hubspotemail.net; s=scph0417; t=1504090019; i=@sp03b.hubspotemail.net; bh=jKPSnwqOJ5eiWZqtqE41S33xR7IwqhLrBQmD3AAX614=; h=Date:From:To:Message-ID:Subject:Content-Type; b=WDszy4wGYStr8pRk0wBSFheniZKLP8IvV/Npc6jiCQMhUI6w0sGVwCEOkpVRnncKF
+	 bUER9BDlgX8J43iRIHtQpz1781AMWg0EVgJoP8geTFZ6TDjoFPypXaAuv6bNRjC1g4
+	 3qJ5lOccOBBVJcs6rjbQPYjFq/jCZGDhooncVSgo=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sp03b.hubspotemail.net; s=scph0417; t=1504090019; i=@sp03b.hubspotemail.net; bh=jKPSnwqOJ5eiWZqtqE41S33xR7IwqhLrBQmD3AAX614=; h=Date:From:To:Message-ID:Subject:Content-Type; b=WDszy4wGYStr8pRk0wBSFheniZKLP8IvV/Npc6jiCQMhUI6w0sGVwCEOkpVRnncKF
+	 bUER9BDlgX8J43iRIHtQpz1781AMWg0EVgJoP8geTFZ6TDjoFPypXaAuv6bNRjC1g4
+	 3qJ5lOccOBBVJcs6rjbQPYjFq/jCZGDhooncVSgo=
+X-MSFBL: zhspzLyrWybK2NH/tWEP5UVsb/xwIz1bj/F/J5uHqwA=|eyJyIjoiZXJpenphMTN AZ21haWwuY29tIiwiY2FtcGFpZ25faWQiOiJwMjgyODY5MSIsImIiOiJpcF81Mi4 0NS4xNzkuNTQiLCJ0ZW1wbGF0ZV92ZXJzaW9uIjoiMCIsInJjcHRfbWV0YSI6eyA iaG1pZCI6ICJDaVJoTmpkak1qaGhOQzFpWm1JeUxUUXlOelV0T0dFek1TMHhZVEJ oWTJKbVpXUTRPV0lRazlPc0FSaHhJQUFveG9yTkdqQ05sUGdCT2hKbGNtbDZlbUV 4TTBCbmJXRnBiQzVqYjIxQTc0WGtsZU1yU0lLMEFWb2daREZtWW1VNE5tVmpNRFk yTTJRNFpUa3lORFl3WkdOaU5HUXhOek15TlRWbEFBQ01RbkNmeVNLQUFRQ0tBU1F 3TlRObFlURXdOQzFqTkROakxUTTBZbU10T1dVeU1pMWhaamxpTjJNNU1qSXdNbVN nQVFDb0FRT3dBUURJQVFMU0FSaHBiV0Z1TG5WemJXRnVRSEoxWVc1blozVnlkUzV qYjIzaUFRcG5iMjluYkdVdVkyOXRnQUlCIiB9LCJ0ZW1wbGF0ZV9pZCI6InNtdHB fNjY2NTYyNTIyMDQ4NDc3MzgiLCJmcmllbmRseV9mcm9tIjoiaW1hbisyRXVzbWF uPXJ1YW5nZ3VydS5jb21Ac3AwM2IuaHVic3BvdGVtYWlsLm5ldCIsImciOiIzX0I iLCJ0cmFuc21pc3Npb25faWQiOiI2NjY1NjI1MjIwNDg0NzczOCIsImN1c3RvbWV yX2lkIjoiMSIsInJjcHRfdGFncyI6WyBdLCJzdWJhY2NvdW50X2lkIjoiMTAyIiw idGVuYW50X2lkIjoiaHVic3BvdGVhc3QiLCJtZXNzYWdlX2lkIjoiMDAwM2EzOTd hNjU5MDJiZDJhMzcifQ==
+Authentication-Results: c.plat2.hubspot.aws-use1d.prd.sparkpost smtp.user=<hidden>; auth=pass (LOGIN)
+Received: from [10.97.130.231] ([10.97.130.231:51311] helo=sour-field.iad02.hubspot-networks.net) by sp01.hubspotemail.net (envelope-from <bounces-erizza13=gmail.com@sp03b.hubspotemail.net>) (ecelerity 4.2.34.60511 r(Core:4.2.34.0)) with ESMTPSA (cipher=ECDHE-RSA-AES256-SHA) id A2/73-48386-3A796A95; Wed, 30 Aug 2017 10:46:59 +0000
+Date: Wed, 30 Aug 2017 10:46:59 +0000
+From: Iman Usman <iman.usman@ruangguru.com>
+Sender: Iman Usman <iman+2Eusman=ruangguru.com@sp03b.hubspotemail.net>
+Reply-To: iman.usman@ruangguru.com
+To: erizza13@gmail.com
+Message-ID: <1504089539311.a67c28a4-bfb2-4275-8a31-1a0acbfed89b@sp03b.hubspotemail.net>
+Subject: 🔊
+  Erizza Aditama, yuk bantu Indonesia jadi juara!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_2471451_1085035555.1504090019485"
+List-Unsubscribe: <mailto:1a1mvqhnnf3wfcgxhiw8z2a30swjdjowxqiac6m6rv21@m.hsms02.com?subject=unsubscribe>, <http://marketing.ruangguru.com/hs/manage-preferences/unsubscribe-all?d=eyJlYSI6ImVyaXp6YTEzQGdtYWlsLmNvbSIsImVjIjo1NTc4ODg3MCwic3Vic2NyaXB0aW9uSWQiOjQwNjU4MDUsImV0IjoxNTA0MDg5NTM5MzExLCJldSI6ImE2N2MyOGE0LWJmYjItNDI3NS04YTMxLTFhMGFjYmZlZDg5YiJ9&v=1>
+X-Report-Abuse-To: abuse@hubspot.com (see https://www.hubspot.com/abuse-complaints)
+X-HubSpot-MID: CiRhNjdjMjhhNC1iZmIyLTQyNzUtOGEzMS0xYTBhY2JmZWQ4O
+        WIQk9OsARhxIAAoxorNGjCNlPgBOhJlcml6emExM0BnbWFpbC5jb21A7
+        4XkleMrSIK0AVogZDFmYmU4NmVjMDY2M2Q4ZTkyNDYwZGNiNGQxNzMyN
+        TVlAACMQnCfySKAAQCKASQwNTNlYTEwNC1jNDNjLTM0YmMtOWUyMi1hZ
+        jliN2M5MjIwMmSgAQCoAQOwAQDIAQLSARhpbWFuLnVzbWFuQHJ1YW5nZ
+        3VydS5jb23iAQpnb29nbGUuY29tgAIB
+Precedence: bulk
+X-Binding: 3_B
+
+------=_Part_2471451_1085035555.1504090019485
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Halo, Erizza Aditama!
+
+Kami punya kabar gembira nih!
+
+Tim Ruangguru terpilih mewakili Indonesia untuk menjadi finalis pada kompet=
+isi SOLVE - MIT Global Challenge di Amerika Serikat setelah menyisihkan ham=
+pir 1000 tim dari 103 negara! Sesuai namanya, kompetisi ini bertujuan untuk=
+ menemukan solusi atas berbagai masalah yang sedang dihadapi dunia.
+
+Screen Shot 2017-08-30 at 4.20.35 PM.png (http://marketing.ruangguru.com/e1=
+t/sc/*W3HmDnQ2zQnS5W1JrYpq4FxDgS0 )
+Tim Ruangguru mengajukan program Ruangguru Digital Bootcamp sebagai salah s=
+atu solusi untuk membantu persiapan anak putus sekolah/ peserta kejar Paket=
+ C agar dapat memperoleh ijazah kelulusan SMA dengan nilai yang baik - sehi=
+ngga dapat melanjutkan ke perguruan tinggi/ memperoleh pekerjaan yang lebih=
+ baik.
+
+Caranya gampang:
+
+- Buka bit.ly/supportrg dan klik Log In to Vote
+- Buat akun di Solve MIT di bagian Sign Up dan aktivasi akun kamu
+- Setelah aktivasi/masuk, kembali klik Challenges dan di bagian Youth, Skil=
+ls & The Workforce of The Future, klik Vote for Solutions
+- Cari Ruangguru Digital Bootcamp dan klik icon love
+- Klik Vote Now di tombol warna oranye untuk vote. Kalau udah, tulisannya a=
+kan berubah jadi You Have Voted!
+
+Ruangguru Digital Bootcamp (http://marketing.ruangguru.com/e1t/sc/*W8yC7VQ3=
+HTQPMW3qYPb-1Rgr6F0 )
+
+Yuk, sebarkan kabar gembira ini! Ajak seluruh teman serta keluarga Anda unt=
+uk vote Ruangguru Digital Bootcamp di kompetisi SOLVE - MIT ini ya!
+
+Terima kasih, Erizza Aditama. Kami sangat mengapresiasi dukungan Anda. Semo=
+ga apa pun yang sedang Anda kerjakan diberi kelancaran ya. Semangat!
+
+Salam,
+Iman Usman
+Co-founder Ruangguru
+
+Ruangguru
+
+Jalan Tebet Barat Dalam Raya No.22 (Graha Sapta)
+
+Jakarta, Indonesia 12810
+
+Update your email preferences (http://marketing.ruangguru.com/hs/manage-pre=
+ferences/unsubscribe?d=3DeyJlYSI6ImVyaXp6YTEzQGdtYWlsLmNvbSIsImVjIjo1NTc4OD=
+g3MCwic3Vic2NyaXB0aW9uSWQiOjQwNjU4MDUsImV0IjoxNTA0MDg5NTM5MzExLCJldSI6ImE2N=
+2MyOGE0LWJmYjItNDI3NS04YTMxLTFhMGFjYmZlZDg5YiJ9&v=3D1&utm_campaign=3DSOLVE%=
+20-%20MIT%20Global%20Challenge&utm_source=3Dhs_email&utm_medium=3Demail&utm=
+_content=3D55788870&_hsenc=3Dp2ANqtz-8STQ-DFdqMe6FHkXVuUH3vk-r0JNHH49fUeNvG=
+iuKzxkEYCkUC-lkAjPNj45hrKvqwl72nTvF24ypNZw9bcNRhPJHThw&_hsmi=3D55788870 ) t=
+o choose the types of emails you receive.
+
+Ruangguru
+
+Jalan Tebet Barat Dalam
+
+Jakarta Selatan
+
+DKI Jakarta
+------=_Part_2471451_1085035555.1504090019485
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><!-- start coded_template: id:5296336602 =
+path:custom/email/responsive/plain_email.html --><html xmlns=3D"http://www.=
+w3.org/1999/xhtml"><head>
+    <style type=3D"text/css" id=3D"hs-inline-css">
+    /*<![CDATA[*/
+    /* everything in this node will be inlined */
+        body {
+            font-family:sans-serif;
+            color:#444444;
+            font-size:15px;
+        }
+       =20
+        .footer a {
+            color:#999999;
+        }
+    /*]]>*/
+    </style>
+<meta name=3D"generator" content=3D"HubSpot"><meta property=3D"og:url" cont=
+ent=3D"http://marketing.ruangguru.com/-temporary-slug-46afda96-1679-4378-9d=
+7a-10c6a3e78df8"></head>
+
+<body class=3D"hs_plain_email" style=3D"font-family:sans-serif; color:#4444=
+44; font-size:15px">
+<div id=3D"hs_cos_wrapper_hs_email_body" class=3D"hs_cos_wrapper hs_cos_wra=
+pper_widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-si=
+ze: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" dat=
+a-hs-cos-type=3D"rich_text"><p style=3D"margin-bottom: 1em; font-size: 15px=
+; text-align: left; color: #000000;"><span style=3D"color: #000000;">Halo, =
+Erizza Aditama!</span></p>
+<p style=3D"margin-bottom: 1em; font-size: 15px; text-align: left; color: #=
+000000;"><span style=3D"color: #000000;">Kami punya kabar gembira nih!</spa=
+n><br><br><span style=3D"color: #000000;">Tim Ruangguru terpilih <strong>me=
+wakili Indonesia</strong> untuk menjadi finalis pada kompetisi <strong>SOLV=
+E - MIT Global Challenge</strong> di Amerika Serikat setelah menyisihkan ha=
+mpir 1000 tim dari 103 negara! Sesuai namanya, kompetisi ini bertujuan untu=
+k menemukan solusi atas berbagai masalah yang sedang dihadapi dunia.</span>=
+</p>
+<center><span style=3D"color: #000000;"><a href=3D"http://marketing.ruanggu=
+ru.com/e1t/c/*TlT856n3RYqW1Wb_Gb37jb1P0/*W5JmgL76D3k7DW4nnZb02K4nlm0/5/f18d=
+Qhb0Sjvh8YHrCHN8VfDcTHyjJqN64R8z2QByKqN3hHhdQVMsQMVp3s9r5nrfpPW49g8VD2M3zYK=
+W54R-hs8HbRxPN8k1dMQpSBF3W8WhY9L4C7b61W58jcW_7XSBgdW2Gw6VP1rf4nWVYXrCp24X7D=
+VW8y1QRH14Mf0XN2yJF1WYT2jkW6P4lCX6hF7H5W69NG1w6Pr5qtW4NwcCJ96dt4SW4r1QvY13s=
+-w2W8gjY6L8WBKbVW56sy_82NhXFJW1hZ4z77t12F6Vs8dLF1DNZxDW1yBt4q1HGLj6N7JmCs5t=
+r7bFW7LkTp-7HJTqtW77nV3y76Ns5SW1D7BR11FVvGwW3mXrsh2syjVwW7KGd9J9d6wNkW2PXsf=
+_5NgzHyW8WtF-J1FYglgW4bFC254lBZ6FVnpt4x6s16_2W8Ph58-59BvB8W2KmvpT6c_NhzW4kn=
+sfQ36456LW3bFXhd5PkNt1W90X9t_7TrcQWW5-J2cT3YJgY3W66PYCp3m4bnDW6-P5Gg7jktxMM=
+Zpcmq9ZLh0f6sDbjY11" data-hs-link-id=3D"0" target=3D"_blank"><img src=3D"ht=
+tps://cdn2.hubspot.net/hub/2828691/hubfs/Screen%20Shot%202017-08-30%20at%20=
+4.20.35%20PM.png?t=3D1504086839548&amp;width=3D600&amp;name=3DScreen%20Shot=
+%202017-08-30%20at%204.20.35%20PM.png" alt=3D"Screen Shot 2017-08-30 at 4.2=
+0.35 PM.png" style=3D"width: 600px; display: block; margin-left: auto; marg=
+in-right: auto;" width=3D"600" title=3D"Screen Shot 2017-08-30 at 4.20.35 P=
+M.png" caption=3D"false" data-constrained=3D"true" align=3D"center" srcset=
+=3D"https://cdn2.hubspot.net/hub/2828691/hubfs/Screen%20Shot%202017-08-30%2=
+0at%204.20.35%20PM.png?t=3D1504086839548&amp;width=3D600&amp;name=3DScreen%=
+20Shot%202017-08-30%20at%204.20.35%20PM.png 600w, https://cdn2.hubspot.net/=
+hub/2828691/hubfs/Screen%20Shot%202017-08-30%20at%204.20.35%20PM.png?t=3D15=
+04086839548&amp;width=3D1200&amp;name=3DScreen%20Shot%202017-08-30%20at%204=
+.20.35%20PM.png 1200w" sizes=3D"(max-width: 600px) 100vw, 600px"></a></span=
+></center><br><span style=3D"color: #000000;">Tim Ruangguru mengajukan prog=
+ram <strong>Ruangguru Digital Bootcamp</strong> sebagai salah satu solusi u=
+ntuk membantu persiapan anak putus sekolah/ peserta kejar Paket C agar dapa=
+t memperoleh ijazah kelulusan SMA dengan nilai yang baik - sehingga dapat m=
+elanjutkan ke perguruan tinggi/ memperoleh pekerjaan yang lebih baik. </spa=
+n><br> <br><span style=3D"color: #000000;">Caranya gampang:</span>
+<ol>
+<li style=3D"font-size: 15px; text-align: left; color: #000000;"><span styl=
+e=3D"color: #000000;">Buka <strong>bit.ly/supportrg</strong> dan klik <stro=
+ng>Log In to Vote</strong></span></li>
+<li style=3D"font-size: 15px; text-align: left; color: #000000;"><span styl=
+e=3D"color: #000000;">Buat akun di Solve MIT di bagian <strong>Sign Up</str=
+ong> dan aktivasi akun kamu</span></li>
+<li style=3D"font-size: 15px; text-align: left; color: #000000;"><span styl=
+e=3D"color: #000000;">Setelah aktivasi/masuk, kembali klik <strong>Challeng=
+es</strong> dan di bagian <strong>Youth, Skills &amp; The Workforce of The =
+Future</strong>, klik <strong>Vote for Solutions</strong></span></li>
+<li style=3D"font-size: 15px; text-align: left; color: #000000;"><span styl=
+e=3D"color: #000000;">Cari <strong>Ruangguru Digital Bootcamp</strong> dan =
+klik <strong>icon love</strong></span></li>
+<li style=3D"font-size: 15px; text-align: left; color: #000000;"><span styl=
+e=3D"color: #000000;">Klik<strong> Vote Now</strong> di tombol warna oranye=
+ untuk vote. Kalau udah, tulisannya akan berubah jadi <strong>You Have Vote=
+d!</strong></span></li>
+</ol>
+<center><span style=3D"color: #000000;"><!--HubSpot Call-to-Action Code -->=
+<span class=3D"hs-cta-wrapper" data-hs-img-pg=3D"0976c730-650c-4512-b77f-31=
+43f112bc08" id=3D"hs-cta-wrapper-0976c730-650c-4512-b77f-3143f112bc08"><spa=
+n class=3D"hs-cta-node hs-cta-0976c730-650c-4512-b77f-3143f112bc08" id=3D"h=
+s-cta-0976c730-650c-4512-b77f-3143f112bc08"><a href=3D"http://marketing.rua=
+ngguru.com/e1t/c/*TlT856n3RYqW1Wb_Gb37jb1P0/*W5NWlc77SKyTmN4bf1j4ngYy20/5/f=
+18dQhb0S1Wf2N1XTjVMvS0W1MR3x9VFSHNv4N1_czW5mNhK94Mg1xvW7KTv-B4gw0B4W32DjJ97=
+M7sPFW6K0M3338bc8BW4PdDkw1DKJ8TW45f-ZD3qXqHnN8wtwgWJ0lYfW18FgMc8tLv1NW29nGl=
+p8QmLwcW6mMHXC1gGls6N3Tvk757FBfmW5m51sB4NvkSKVJzFLP1hg8yrW2_D-dR2QCK-8F5yfQ=
+ZF_ZNHN2W_jnY25_lzW8Wmk_j1yq_k1W6Vc51K6qRVHRW3q8dPK3KBGgqW2K85HJ68DSq9W8vfp=
+vl30YYwgW3KQTFt1F0pH7W1jwYmy2_sM0DW7pVjtv3yg_mcW101hSL5chpVmW7Z-4941XNTHpW2=
+yjVst39dbhnW5Tnh-j5rXt8fW311n2z1x3mtrW7y3lyn5CfhhpW1pxP2z2kS5bxW5XDgTw1jb2q=
+1W84vd152V8FpYW398tfn2pQFvpV4Xkz78z6CKhW5kJH4y2869N0W5VMZvn3VqTr9W24lGZ03R4=
+5mjVkCrYC5dtfGjN9j6DxK2yc1HW48PsNn4PwfwwW1KfJL27NWfbHN2FTx3qXDX54W6znrBy1g-=
+WqyW69yCNx3B9G1QW7mmx_K2v5GCxW39M6zJ5zmbtDW8sJG9Q4kNglRW1-45pq4k6_cBW8Kz0dD=
+7_hY8SVCMdXl5NZsbbW1Rp2JH3h-vtYW29JF962yc1xlW8w1jBV3_Z3-lW8MpGyy2fpzXxW3d6_=
+Bg8x4gBdW6fLwnw6nFQwPW4sFtVk5fWF35W3tHN9j4FR4q6W93g_sS9bWXL4W8LV6F29dH6qtW6=
+TsKPJ7gDvqqf4WlS6v21" target=3D"_blank" data-hs-link-id=3D"0"><img class=3D=
+"hs-cta-img" id=3D"hs-cta-img-0976c730-650c-4512-b77f-3143f112bc08" style=
+=3D"border-width:0px;width: auto !important; max-width: 100% !important;" m=
+ce_noresize=3D"1" src=3D"https://cta-image-cms2.hubspot.com/ctas/v2/public/=
+cs/il/?pg=3D0976c730-650c-4512-b77f-3143f112bc08&amp;pid=3D2828691&amp;ecid=
+=3DACsprvuwAuJDscrZximp95oYzjp2QceaLlTlcgwiFVv4mnxVQzVpy6HUTVZa0Cvomm_futDw=
+-0I5&amp;hseid=3D55788870&amp;hsic=3Dfalse" alt=3D"Ruangguru Digital Bootca=
+mp"></a></span></span><!-- end HubSpot Call-to-Action Code --></span></cent=
+er>
+<p style=3D"margin-bottom: 1em; font-size: 15px; text-align: left; color: #=
+000000;"><span style=3D"color: #000000;">Yuk, sebarkan kabar gembira ini! A=
+jak seluruh teman serta keluarga Anda untuk <strong>vote Ruangguru Digital =
+Bootcamp</strong> di kompetisi SOLVE - MIT ini ya!</span><br><br><span styl=
+e=3D"color: #000000;">Terima kasih, Erizza Aditama. Kami sangat mengapresia=
+si dukungan Anda. Semoga apa pun yang sedang Anda kerjakan diberi kelancara=
+n ya. Semangat!</span></p>
+<p style=3D"margin-bottom: 1em; font-size: 15px; text-align: left; color: #=
+000000;"><br><span style=3D"color: #000000;">Salam,</span><br><span style=
+=3D"color: #000000;"><strong>Iman Usman</strong></span><br><span style=3D"c=
+olor: #000000;"><strong>Co-founder Ruangguru</strong></span></p></div>
+<br>
+<div class=3D"footer" data-widget-type=3D"email_can_spam">
+<p style=3D"margin-bottom: 1em; font-size: 13px; margin: 0px; text-align: l=
+eft; padding: 0px; line-height: 12px; font-family: 'Open Sans', sans-serif;=
+ color: #333333; background-color: #ffffff;"><span style=3D"font-size: 11px=
+; color: #000000;">
+
+
+Ruangguru<br>
+Jalan Tebet Barat Dalam Raya No.22 (Graha Sapta)<br>
+Jakarta, Indonesia 12810<br><br>
+</span>
+</p>
+<p style=3D"margin-bottom: 1em; font-size: 13px; margin: 0px; text-align: l=
+eft; padding: 0px; line-height: 12px; font-family: 'Open Sans', sans-serif;=
+ color: #333333; background-color: #ffffff;"><span style=3D"font-size: 11px=
+; color: #000000;">
+Update your <a href=3D"http://marketing.ruangguru.com/hs/manage-preferences=
+/unsubscribe?d=3DeyJlYSI6ImVyaXp6YTEzQGdtYWlsLmNvbSIsImVjIjo1NTc4ODg3MCwic3=
+Vic2NyaXB0aW9uSWQiOjQwNjU4MDUsImV0IjoxNTA0MDg5NTM5MzExLCJldSI6ImE2N2MyOGE0L=
+WJmYjItNDI3NS04YTMxLTFhMGFjYmZlZDg5YiJ9&v=3D1&utm_campaign=3DSOLVE%20-%20MI=
+T%20Global%20Challenge&utm_source=3Dhs_email&utm_medium=3Demail&utm_content=
+=3D55788870&_hsenc=3Dp2ANqtz-_eKsM8FvjqcztfG9hDeOKON7xn_Q_gEa9_6d0rAuSExe4w=
+lTpf-Bll_1eGYNg2ymzTIvqiSYwxceCl9kbVfVzQAJhp4g&_hsmi=3D55788870" style=3D"c=
+olor:#999999" data-hs-link-id=3D"0" target=3D"_blank">email preferences</a>=
+ to choose the types of emails you receive.
+
+
+</span></p>
+<p style=3D"margin-bottom: 1em; display: none;">
+Ruangguru<br>
+Jalan Tebet Barat Dalam<br>
+Jakarta Selatan<br>
+DKI Jakarta
+</p>
+
+</div>
+
+<!-- end coded_template: id:5296336602 path:custom/email/responsive/plain_e=
+mail.html -->
+<img src=3D"http://marketing.ruangguru.com/e1t/o/*W8kcTKz94QWD2W4wX-cX4gRHW=
+f0/*W3WYJfV6fxn0cW4sN7jP2nDm9d0/5/f18dQhb0J6w1f0mpW7WjXjV6hnrcmW1f7_BB20Zsb=
+-W20W58C2WvzRzW1RGqgd2lhw0SN2XZgmPmV6v6W3T6lwr1Q45xwW3_R5921JxwY5VbhSzP17f7=
+hvW5JbN8c6jTDDTW52hSrB4T0b79N5r4CM628XXQW8m0Zr_197PxMf44lnTd02" alt=3D"" wi=
+dth=3D"1" height=3D"1" border=3D"0" style=3D"display:none!important;min-hei=
+ght:1px!important;width:1px!important;border-width:0!important;margin-top:0=
+!important;margin-bottom:0!important;margin-right:0!important;margin-left:0=
+!important;padding-top:0!important;padding-bottom:0!important;padding-right=
+:0!important;padding-left:0!important"><style>@media print{#_hs { backgroun=
+d-image: url('http://marketing.ruangguru.com/e1t/o/*W8kcTKz94QWD2W4wX-cX4gR=
+HWf0/*W6DV08L8VDvsNVCtnYp6l2BL60/5/f18dQhb0J6y1d9q8W8b5hlm6hnrcmW1f7_BB20Zs=
+b-W20W58D2YtZD-F346K26vFvnTDk7H2bs-zDW49M9-T3yNtBPW3P3Q7w3ZsjYmW3_bcB24-y9x=
+KVQtCyc9b-dmVN7fSGYDDsX_LW9gMZMT6-8WxWW8MCjwG8jc-vRW4m1k2X3yn_R-0');}} div.=
+OutlookMessageHeader {background-image:url('http://marketing.ruangguru.com/=
+e1t/o/*W8kcTKz94QWD2W4wX-cX4gRHWf0/*W6-J9ql4-Hl2zW6LV8m43lbFty0/5/f18dQhb0J=
+6B1clsYW8tVGmS6hnrcmW1f7_BB20Zsb-W20W58G2zLf-3F2nVMD-s7yKM2xwK0vlGxKVHj32k4=
+tGBT9W1V6H733zbV8YN3Fbt5g2qW-YW17f7hv5JbN8cW6jTDDT52hSrBW4T0b795r4CM6V28XXQ=
+8m0Zr_W197Drx88g_2j102')} table.moz-email-headers-table {background-image:u=
+rl('http://marketing.ruangguru.com/e1t/o/*W8kcTKz94QWD2W4wX-cX4gRHWf0/*W6-J=
+9ql4-Hl2zW6LV8m43lbFty0/5/f18dQhb0J6B1clsYW8tVGmS6hnrcmW1f7_BB20Zsb-W20W58G=
+2zLf-3F2nVMD-s7yKM2xwK0vlGxKVHj32k4tGBT9W1V6H733zbV8YN3Fbt5g2qW-YW17f7hv5Jb=
+N8cW6jTDDT52hSrBW4T0b795r4CM6V28XXQ8m0Zr_W197Drx88g_2j102')} blockquote #_h=
+s {background-image:url('http://marketing.ruangguru.com/e1t/o/*W8kcTKz94QWD=
+2W4wX-cX4gRHWf0/*W6-J9ql4-Hl2zW6LV8m43lbFty0/5/f18dQhb0J6B1clsYW8tVGmS6hnrc=
+mW1f7_BB20Zsb-W20W58G2zLf-3F2nVMD-s7yKM2xwK0vlGxKVHj32k4tGBT9W1V6H733zbV8YN=
+3Fbt5g2qW-YW17f7hv5JbN8cW6jTDDT52hSrBW4T0b795r4CM6V28XXQ8m0Zr_W197Drx88g_2j=
+102')} #MailContainerBody #_hs {background-image:url('http://marketing.ruan=
+gguru.com/e1t/o/*W8kcTKz94QWD2W4wX-cX4gRHWf0/*W6-J9ql4-Hl2zW6LV8m43lbFty0/5=
+/f18dQhb0J6B1clsYW8tVGmS6hnrcmW1f7_BB20Zsb-W20W58G2zLf-3F2nVMD-s7yKM2xwK0vl=
+GxKVHj32k4tGBT9W1V6H733zbV8YN3Fbt5g2qW-YW17f7hv5JbN8cW6jTDDT52hSrBW4T0b795r=
+4CM6V28XXQ8m0Zr_W197Drx88g_2j102')}</style><div id=3D"_hs"></div></body></h=
+tml>
+
+------=_Part_2471451_1085035555.1504090019485--

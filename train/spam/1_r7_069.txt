@@ -1,0 +1,376 @@
+﻿Delivered-To: diditarif@gmail.com
+Received: by 10.159.58.204 with SMTP id q12csp80022uag;
+        Tue, 25 Jul 2017 20:38:45 -0700 (PDT)
+X-Received: by 10.99.0.151 with SMTP id 145mr22068172pga.115.1501040325657;
+        Tue, 25 Jul 2017 20:38:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1501040325; cv=none;
+        d=google.com; s=arc-20160816;
+        b=s6/YzOfxbcF8YnFnc0N53tVkpRq02NvCJjdfw/q/7chWaU7VxX9bJDeJI/rRjV6qyo
+         RIz2hor5C7oVpKPYf4vob1JmB4LY95qF/7mwkejLS63nh6PML2YFwTLTv2Pk5NE3tprU
+         6QwLJ8fC/wE5lwDe3lrFwpHCJ6yAfgm8uwDTqnzpdzltWruhd8LiKYlyGoPHbwOOYXVX
+         84UimoggKb1Jp4Rh1UPH5C62ywLZkWxAl042Qb4B4SKC0dWq3TjmfgVifhg9Jf1oc0oa
+         GKYNGKCxWNj6gEvtXsmkmZoKU8DJgi8vp189dGMVR6sUdQ3UfM0jttRW6qI6frqFipWW
+         5QJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:date:subject:to:reply-to:from
+         :dkim-signature:arc-authentication-results;
+        bh=xKh+G6gpfJXtRqOG61FPqntSxp95A56fYpQbV0bA5mQ=;
+        b=OhDqfb5DGwC5mFsj9IAIk83akVHRngfxGH1XoCuuTuwP03656QNO5yBhH62Md/ekM+
+         OmMPOVAF95Bfc72KYBZBGfJz4Fqm9lWsYDvzpJGhMtcyYKm+fRVRv9bMVETp5in4kSEf
+         /inLBxdImlxn15ZhgmnalAAymcFyfnFiN34U1J7WsqFpSoSho0qSg4nLURgJpUlcs+q9
+         WjviLaSWxUHXJ2CTRalWfwBTwym5/nkgDS+1dTT6rD8JqhPt5uOvkhttwl3VheDtX+PK
+         6WtnbatlHcRNkXRc8HqDjnNoH4+rp46K/AquTDriLTL64GDXroqz99nr25RtDuRtqXUx
+         L9Sg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@citi.com header.b=agDi7Ga1;
+       spf=pass (google.com: domain of citibank.274989972.2604426.0@emailapps.globalcommon.citi.com designates 67.231.145.106 as permitted sender) smtp.mailfrom=citibank.274989972.2604426.0@emailapps.globalcommon.citi.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=emailapps.globalcommon.citi.com
+Return-Path: <citibank.274989972.2604426.0@emailapps.globalcommon.citi.com>
+Received: from mx0a-00123c01.pphosted.com (mx-a.mail.citi.com. [67.231.145.106])
+        by mx.google.com with ESMTPS id 187si5286429pfv.570.2017.07.25.20.38.45
+        for <diditarif@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 25 Jul 2017 20:38:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of citibank.274989972.2604426.0@emailapps.globalcommon.citi.com designates 67.231.145.106 as permitted sender) client-ip=67.231.145.106;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@citi.com header.b=agDi7Ga1;
+       spf=pass (google.com: domain of citibank.274989972.2604426.0@emailapps.globalcommon.citi.com designates 67.231.145.106 as permitted sender) smtp.mailfrom=citibank.274989972.2604426.0@emailapps.globalcommon.citi.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=emailapps.globalcommon.citi.com
+Received: from pps.filterd (m0083710.ppops.net [127.0.0.1]) by mx0a-00123c02.pphosted.com (8.16.0.21/8.16.0.21) with SMTP id v6Q3Wb3s022061 for <diditarif@gmail.com>; Wed, 26 Jul 2017 03:38:45 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=citi.com; h=from : reply-to : to : subject : date : message-id : mime-version : content-type; s=maila; bh=xKh+G6gpfJXtRqOG61FPqntSxp95A56fYpQbV0bA5mQ=; b=agDi7Ga1kRu+dZZxIVlOg39K1rNntxhS28ufuRpnpqrFJnVHl/gtOcVb9NBBawVYzmdB ieLSo4IubWPGcm/LQ/X+6MDUYWZREXxzxc0Q1vu0uVK/q+uzICCWRZcPJ9R8G6n+Vmqn thAw2OfwuPFX0lMuldFc5K8T+uVQI0EIoUtvd9G6HQuYp8iGdkUb6MJTQq4xvfXdVMcP 8Z0SZ+Bsgz0p9dMpcb0cFqwFBt0IXKggvuYv81ifzlFWe+/PEU/MQpRhuChAH+iwIB4C lt71IrKbORTmKODLV37rxn0kQuBZDqWZbdHLDSEnwqDp8AN9+FoIVghPJVOuDoSP26wR wg==
+Received: from mail.citigroup.com (smtpoutbound.citigroup.com [192.193.158.18]) by mx0a-00123c02.pphosted.com with ESMTP id 2bwyjg9fk3-1 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=NOT) for <diditarif@gmail.com>; Wed, 26 Jul 2017 03:38:44 +0000
+Received: from imbhub-sw31.nam.nsroot.net (imbhub-sw31.nam.nsroot.net [169.185.245.146]) by smtpinbound.citigroup.com (Sentrion-MTA-4.3.1/Sentrion-MTA-4.2.2) with ESMTP id v6Q3chQv001643 for <diditarif@gmail.com>; Wed, 26 Jul 2017 03:38:43 GMT
+Received: from emailapps.globalcommon.citi.com (sdcgcgkncla03p.apac.nsroot.net [10.217.179.34]) by imbhub-sw31.nam.nsroot.net (Sentrion-MTA-4.3.1/Sentrion-MTA-4.2.2) with ESMTP id v6Q35OJ6025910 for <diditarif@gmail.com>; Wed, 26 Jul 2017 03:38:42 GMT
+From: Citibank Indonesia <citibank@emailapps.globalcommon.citi.com>
+Reply-To: citibank.274989972.2604426.0@emailapps.globalcommon.citi.com
+To: diditarif@gmail.com
+Subject: One Day Voucher Promo! Visit participating Marks & Spencer outlets and get RP250.000,- Voucher.
+Date: Wed, 26 Jul 2017 11:38:42 +0800
+Message-ID: <1501040322995.citibank.274989972.2604426.0@emailapps.globalcommon.citi.com>
+X-Mailer: Brick Street Connect 10r4
+Mime-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,, definitions=2017-07-26_01:,, signatures=0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Citibank Indonesia</title>
+<script type="text/javascript" src="/views/scripts/jquery.js"></script>
+<style type="text/css">
+body { margin: 0px; }
+.common-ol {
+clear:both;
+overflow:hidden;
+margin: 0;
+}
+.common-ol ol {
+padding:0 0 0 10px;
+margin:0 0 0 20px;
+}
+.common-ol ol li { padding-bottom:2px; }
+.paddingLR10 { padding: 0 10px; }
+.paddingLR25 {
+padding: 0;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+}
+.link {
+font-family: Arial, Helvetica, sans-serif;
+color: #3399CC;
+text-decoration: none;
+}
+.link a, a:visited {
+font-family: Arial, Helvetica, sans-serif;
+color: #3399CC;
+text-decoration: none;
+}
+.link a:hover {
+font-family: Arial, Helvetica, sans-serif;
+color: #3399CC;
+text-decoration: underline;
+}
+.paddingLR25 {
+padding: 0;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+}
+.tourqsBlue_box {
+background-color: #E9F5F8;
+padding: 10px;
+border: 1px solid #AFDEE4;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #666666;
+}
+.text10 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #666666;
+}
+.text14 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: #666666;
+font-weight: bolder;
+}
+.text11 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #999999;
+}
+.title {
+font-size: 16px;
+color: #333333;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+font-family: Arial, Helvetica, sans-serif;
+color: #3399CC;
+text-decoration: none;
+}
+a:hover {
+font-family: Arial, Helvetica, sans-serif;
+color: #3399CC;
+text-decoration: underline;
+}
+a.L10:link {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #3399CC;
+text-decoration: none;
+}
+a.L10:visited {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #3399CC;
+text-decoration: none;
+}
+a.L10:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #3399CC;
+text-decoration: underline;
+}
+a.L10:active {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #3399CC;
+text-decoration: none;
+}
+a img { border: none; }
+.cbeccontent {
+FONT: 11px verdana, arial, helvetica;
+COLOR: #000000;
+TEXT-DECORATION: none;
+}
+.hdbottom {
+color:#999999;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+}
+.paddingLR10 { padding: 0 10px; }
+.paddingLR25 {
+padding: 0 25px;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text p {
+padding: 0;
+margin: 10px 0 0;
+}
+.text p.top {
+padding: 0;
+margin: 0;
+}
+.common-ul {
+clear:both;
+overflow:hidden;
+margin: 0;
+}
+.common-ul ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.common-ul ul li {
+background-repeat: no-repeat;
+background-position: 5px 5px;
+background-image: url(../images/eDM_e-Statement/bullet_blue.gif);
+padding-left: 20px;
+margin: 0 0 5px 0;
+}
+.common-ul ul li ul li {
+background: url(../images/eDM_e-Statement/dash.gif) no-repeat 5px 8px;
+padding-left: 20px;
+margin: 0 0 5px;
+}
+.common-ul ul li ul li.top { margin-top: 5px; }
+.subtitle01 {
+font-size: 14px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: #333333;
+}
+.blueTitle {
+font-size: 16px;
+color: #003e7d;
+font-weight: bolder;
+text-align: left;
+}
+.tourqsBlue_box1 {
+background-color: #f3fdff;
+padding: 10px;
+border: 1px solid #AFDEE4;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+}
+.preview-bar{
+background:#898baf; 
+color:#FFFFFF; 
+text-decoration:none;
+font-size:12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.preview-bar a{
+color:#FFFFFF;
+text-decoration:underline;
+}
+</style>
+<!-- Notice: If this text is displayed, your email client cannot display properly the format we've sent you. You may want to consider upgrading to a more recent version of your email client. If you would like to receive only plain text messages, please reply to this message and put "Change to text" in the subject.--> 
+</head>
+<body>
+<table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center"><table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td><table border="0" cellpadding="0" cellspacing="0">
+
+ 
+
+<tr>
+<td><table width="555" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGhZotYLCni0cRAUz7bKFBnA%3D" target="_blank"><img src="http://www.citibank.co.id/portal/0717/email/../images/e_template/header-edm-blue-fb.jpg" /></a></td>
+</tr>
+
+<tr>
+<td height="20" align="center"></td>
+</tr>
+<tr>
+<td height="30" align="center" class="preview-bar" >
+ Dapatkan voucher Rp250.000,- di outlet M&S pilihan.<br />
+ Kesulitan melihat email di bawah ini?<a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGhAODcTY4AGa3Ot6VGxzxDc%3D" target="_blank">Klik disini ></a></td>
+</tr>
+<tr>
+<td height="20" align="center"></td>
+</tr>
+<tr>
+<td colspan="2" class="text10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr align="left" style="padding-top:10px;">
+<td style="FONT: 12px Arial; COLOR: #333333; padding-left:15px;">Yang Terhormat  Bapak/Ibu WAHYU SRI MARTONO,</td>
+<td align="right" width="50%" style="FONT: 10px Arial; COLOR: #3399CC; padding-right:25px;">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="5" align="center"></td>
+</tr>
+<tr>
+<td><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGonS8XbimdwBg3RYp0ovIFw%3D" target="_blank"><img src="http://www.citibank.co.id/portal/0717/email/../images/kartu-kredit-promo-mns-072417-edm/kartu-kredit-promo-mns_01.jpg" alt="One Day Voucher Promo" width="600" height="458" /></a></td>
+</tr>
+
+<tr>
+  <td><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGtp%2FEwAvuGfRgoIBYIj86%2FI%3D" target="_blank"><img src="http://www.citibank.co.id/portal/0717/email/../images/kartu-kredit-promo-mns-072417-edm/kartu-kredit-promo-mns_02.jpg" alt="Untuk penawaran menarik lainnya, klik di sini >" width="600" height="33" /></a></td>
+</tr>
+<tr>
+  <td><img src="http://www.citibank.co.id/portal/0717/email/../images/kartu-kredit-promo-mns-072417-edm/kartu-kredit-promo-mns_03.jpg" alt="Syarat dan Ketentuan berlaku." width="600" height="99" /></td>
+</tr>
+
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGlRjOAw6Mr3pSu52HxS0LeY%3D" target="_blank"><img src="http://www.citibank.co.id/portal/0717/email/../images/edm-footer/bn-citi-mobile-one-step.jpg" alt="Download Citi Mobile App now." width="600" height="200" border="0" usemap="#html3"/></a></td>
+</tr>
+
+<tr>
+<td><img src="https://pixel.monitor1.returnpath.net/pixel.gif?r=bee975a861c254fc17795333291b42b190d4279d" alt="kartu kredit" width="1" height="1"   border="0"></td>
+</tr>
+</table></td>
+</tr>
+
+<tr>
+<td height="20" align="center"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td width="49%" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="10" align="center" valign="top" class="text10">-</td>
+<td valign="top" class="text10">Klik <a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGqHud8PJaVFewEeOdVCiLG0%3D" target="_blank">di sini</a> jika Anda tidak dapat melihat e-mail di atas.</td>
+</tr>
+<tr>
+<td align="center" valign="top" class="text10">-</td>
+<td valign="top" class="text10">Klik <a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGpsOAyzOVwzItcW1hNMxXkw%3D" target="_blank">di sini</a> untuk mengetahui penipuan via email.</td>
+</tr>
+</table></td>
+<td style="padding:0"><table width="1" border="0" cellspacing="0" cellpadding="0" style="padding:0;margin:0;width:1px">
+<tr>
+<td width="1" height="60" bgcolor="#CCCCCC"></td>
+</tr>
+</table></td>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGuFezEaE7pl3EYX40%2FbWEBc%3D" target="_blank"><img src="http://www.citibank.co.id/portal/0717/email/../images/e_template/expressLogin_v3.gif" /></a></td>
+<td class="text10"><div align="justify">Kini Anda dapat mengakses informasi rekening dan kartu kredit melalui Citibank Online. Lebih mudah, aman & praktis. Untuk membuat user ID dan Password <a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGuFezEaE7pl3EYX40%2FbWEBc%3D" target="_blank">klik di sini</a>.</div></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="10" ></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#CCCCCC"></td>
+</tr>
+<tr>
+<td height="10"></td>
+</tr>
+<tr>
+<td class="text10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="71%" height="52" class="text10" >Citibank adalah merek layanan Citigroup Inc. atau Citibank N.A., digunakan dan terdaftar di seluruh dunia.
+Citibank N.A., Indonesia adalah bank yang telah memiliki izin usaha, terdaftar dan diawasi oleh Otoritas Jasa Keuangan.<br />
+Copyright &#169; 2017 Citigroup Inc</td>
+<td valign="top" align="right" width="29%" style="FONT: 10px Arial; COLOR: #3399CC"><a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGk9SqWiGcnJvt8dOuWS%2BXCw%3D" target="_blank">Syarat dan Ketentuan</a> | <a href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGi1yuqEY%2FNZoLMUN%2F6ACLlw%3D" target="_blank">Privasi</a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="10"></td>
+</tr>
+</table>
+<map name="html3">
+  <area shape="rect" coords="422,108,575,153" href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGuscFufi7HnWOx%2BC5RzieeU%3D" alt="Download on the App Store" target="_blank"/>
+  <area shape="rect" coords="260,108,412,153" href="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGqspIPfc830X5%2FC8rLA237o%3D" alt="GET IT ON Google Play" target="_blank"/>
+</map>
+<script type="text/javascript" src="/bahasa/js/nSC_code.js"></script> 
+
+<img src="http://emailinfo.asia.citi.com/x43EGdnbeh7Zg4oIQmGVGlTno12T5ExZd6CU/uT1FDM="  WIDTH="1" HEIGHT="1" alt="" />
+</body>
+</html>

@@ -1,0 +1,785 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 21 Sep 2017 13:28:22 +0000 
+Return-Path: <hitsu_lim25@yahoo.com>
+Received-SPF: pass (domain of yahoo.com designates 106.10.242.210 as permitted sender)
+X-YMailISG: DrITGtAWLDudU7fPIX0QjpTFLND1h5heDKBEN9jHKqeqyLOS
+ 9.bAsVyHCPWsYT.B7EkTJnnkaslnH3CpJQGqn4VvYQG4Z96qjWaFNpzpO6JA
+ WesHeGFkRodGoETEoOxDrz2egcirxvIgvxZcbDJxS2JyFCpDoMyU22ivt7S2
+ BidDDj6vb7KI4mUP93g9I.fBvJM4Nh9PXNf8mZHoFfxYuz7oM9zyMUUoyQe7
+ oNjOtvQsQNlfI4Qz5ewvc35Q09bJbPcrJXqyVBXNokyDW0vOWwuDfHObifDe
+ pRzLGmpxUwKXiXpLoFQc_.8AEB3_Ya8YQ55_DIjeWBlS75Fn94pWiPYODzgx
+ EceYngzgbgEkXpsSfsRLBMeDEVAQCrv2N8D_8N1P0U83uRkKF8RB.Le1Q2Oi
+ qr6Du7Yvz7w_BKPz3jnC2nwICuEElNq7Hbq9rlkbU_Nd._rDmOnVfOCsbf.v
+ 6eSli10XKUozo2YzctTzZYzKcKzQJtfGll3QhQFXR8UFrEHRTZ8OmVXc6r4f
+ gTMxa02vkABNODmI44_CxMU_DXXcz4_3Q_x_rWUuL8XYt1EbYF39h6vBvqh_
+ mPuvSBbzP8KpjIGm47Xtx4sGz6rmy4CcBkhrQmeeop7r4F5jOI91PFBRW1dX
+ qI4sj1JjWAaH_TS0fm5j4bCDsuOvGOPfuHvTOSU0jQEqU4LIkrw2V5UNb_LD
+ 8Yck9ggEIx_gCLiPlAB7kGyzHs2447TSqc8DuE9qnRx3.D2tcYc7KeLZAhJU
+ PqCxnpdZ0MQcYB0geUUUzFT_OLGnYsu7ZUIYSb8KtGYOvrvEdNpTleDGJaBb
+ eE1Zi1mGL.8Ckm5FogSZscZXLvixcs39ItwmaDuJV9T69YFOK.TBOhdCda4m
+ uuGAvwGynx5.X8UuWtmRz.XfyINOUt8MEso0U8Kpcn12_C4Js30h4j77zsKx
+ aqw_z3tJTpNP6sIBpyJURgPsfEL3jqpmfLZ6NECRK_D8tJ2rQqF2CEqabYux
+ qr5TjGm5Tbvnq4B5SHVkiihiqMc6s2uNHZfoHD83NoJsXGkzvp_WU4W5Cj20
+ 5_bbPUDrbjFWkoaovHLOMgLmT8oNotGNOcDlb7ZjggeCT6PcZm9ae6Y5CucK
+ WOgGiOKbeKaZMBqSxhii1PcKXnsuT22RgfoeO0WhMFIpwNzMel6crviWlWev
+ iCswsS8EwC2vIPZzT5euoAp9O19roM5lOtzon.aELhkWGXRMCxhtfeKt81XH
+ GADAzkVwqR1Roy7ao2xZTiV03.von9Ns7mZ3cYAc3cwQ0wBYBQx2nZv2bZin
+ 9cXaCOpHjc53jIWU
+X-Originating-IP: [106.10.242.210]
+Authentication-Results: mta1111.mail.gq1.yahoo.com  from=yahoo.com; domainkeys=neutral (no sig);  from=yahoo.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO sonic304-20.consmr.mail.sg3.yahoo.com) (106.10.242.210)
+  by mta1111.mail.gq1.yahoo.com with SMTPS; Thu, 21 Sep 2017 13:28:21 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1506000499; bh=eKep77qxz+V4sH5sv/pzArKC2eWbZ/6WI0zFVuT+jlg=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=WDKOHdO2OvzBQidWumUf6xWULhDsUukYkKPzLq86W/MQnEFg9k+mWCMbYnmWXeqd4AaZC6RSiivR7lAeiHnfQCzSNUsLvUicHC9K9tegyq5lPret+hnALdbOpffFU3C7Hdt48ktqS+sgk7RqpbmJgoU0Q69Z80xfqjoGAcVBOOo2eI63lvlJRGtgNePTpHrYtC290ik0YPIiNtldeXt42a3IB6M81jfs8P168mH52L/5xFU3DYntORQqhW/slWTtG5H7vZEk+5VumdJWV7tJPTTJOAo9+SKSBUPx1rdH6Ja5ZFI6PrDuZ6JkrSqzXSb4TnGp88e62uX0t+dG2/5iJg==
+X-YMail-OSG: 24u.floVM1mGxJxtWkq7k3qt0jx01DareZbCOsUSmVUYVd.hdnctN2MwgBqHFUN
+ vAJkvsL8u0grDeCLLQYWxHHO2Ohuvl1Db749sT88vhyqJCLvdRpE2E6wUb.hJLFEBIx5cP_6SUhz
+ LC2mh5QOJj8qFWzTQ87G3goYrCEEY_aweSJO8ahXjt9pX2Byk4zF9SnWQ3OqPnuiyRgJ.zUPKIpj
+ am5t_klpgpv.hddykA3.uH67LL_V5hDEWxD7lsPphJv3PMxwElZV3t304bcAUEqyW8lo_TTticqB
+ 6h7Kj1yyDZybxHH4_VqFz.ez.Ey7_w_PElVwA3WkpJvoAUwXBSd6jVRrGGjaFf8g0baagWphJEmd
+ eug_ZXURlBAZmahxNYNAJvjYmSar6EIwZC9U5G0lgsw.Lc9q5.ZeRG3a2mx4DrJ3QY0mmKYPnBOR
+ XmN38pGMqmIzWWMaBOeXPmBke0I4c.3hnVHd9SJgBOg5orw0PRkkh6yicuzpDivT.
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic304.consmr.mail.sg3.yahoo.com with HTTP; Thu, 21 Sep 2017 13:28:19 +0000
+Date: Thu, 21 Sep 2017 13:28:14 +0000 (UTC)
+From: edwin lim <hitsu_lim25@yahoo.com>
+Reply-To: edwin lim <hitsu_lim25@yahoo.com>
+To: "yustinus_vernanda@yahoo.com" <yustinus_vernanda@yahoo.com>
+Message-ID: <265447978.7628886.1506000494614@mail.yahoo.com>
+In-Reply-To: <0101015e17e58557-2a0f26ce-424a-4841-a1a7-7cbe567d57cb-000000@us-west-2.amazonses.com>
+References: <0101015e17e58557-2a0f26ce-424a-4841-a1a7-7cbe567d57cb-000000@us-west-2.amazonses.com>
+Subject: =?UTF-8?Q?Trs:_=E2=9A=A1=EF=B8=8F=C2=A0Hai_Edwin_Salim,_Sud?=
+ =?UTF-8?Q?ah_Gajian=3F_Ayo_Bayar_Listrik!?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7628885_1561611240.1506000494607"
+X-Mailer: WebService/1.1.10521 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Content-Length: 34968
+
+------=_Part_7628885_1561611240.1506000494607
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+     Pada Jumat, 25 Agustus 2017 12:37, Tokopedia <exclusive@newsletter.tok=
+opedia.com> menulis:
+=20
+
+ #yiv3631967309 div, #yiv3631967309 p, #yiv3631967309 a, #yiv3631967309 li,=
+ #yiv3631967309 td {}#yiv3631967309 p {font-size:14px;Margin-bottom:10px;}#=
+yiv3631967309 body {Margin:0;padding:0;min-width:100%;background-color:#fff=
+fff;}#yiv3631967309 table {border-spacing:0;font-family:sans-serif;color:#3=
+33333;}#yiv3631967309 td {padding:0;}#yiv3631967309 img {border:0;}#yiv3631=
+967309 a {border-radius:3px;}#yiv3631967309 .yiv3631967309wrapper {width:10=
+0%;table-layout:fixed;}#yiv3631967309 .yiv3631967309webkit {max-width:600px=
+;}#yiv3631967309 .yiv3631967309outer {Margin:0 auto;width:100%;max-width:60=
+0px;}#yiv3631967309 .yiv3631967309full-width-image img {width:100%;max-widt=
+h:600px;min-height:auto;}#yiv3631967309 .yiv3631967309inner {padding:20px;}=
+#yiv3631967309 a {color:#ee6a56;text-decoration:underline;}#yiv3631967309 .=
+yiv3631967309h1 {font-size:21px;font-weight:bold;Margin-bottom:18px;}#yiv36=
+31967309 .yiv3631967309one-column .yiv3631967309contents {text-align:center=
+;}#yiv3631967309 .yiv3631967309two-column {text-align:center;font-size:0;}#=
+yiv3631967309 .yiv3631967309two-column .yiv3631967309column {width:100%;max=
+-width:300px;display:inline-block;vertical-align:top;}#yiv3631967309 .yiv36=
+31967309contents {width:100%;}#yiv3631967309 .yiv3631967309two-column .yiv3=
+631967309contents {font-size:14px;text-align:center;color:#000;}#yiv3631967=
+309 .yiv3631967309two-column img {width:100%;max-width:300px;min-height:aut=
+o;}#yiv3631967309 .yiv3631967309two-column .yiv3631967309text {padding-top:=
+30px;}#yiv3631967309 .yiv3631967309three-column {text-align:center;font-siz=
+e:0;padding-top:10px;padding-bottom:10px;}#yiv3631967309 .yiv3631967309thre=
+e-column .yiv3631967309column {width:100%;max-width:200px;display:inline-bl=
+ock;vertical-align:top;}#yiv3631967309 .yiv3631967309three-column .yiv36319=
+67309contents {font-size:14px;text-align:center;}#yiv3631967309 .yiv3631967=
+309three-column img {width:100%;max-width:60px;min-height:auto;}#yiv3631967=
+309 .yiv3631967309three-column .yiv3631967309text {padding-top:10px;}#yiv36=
+31967309 .yiv3631967309text-shadow {text-shadow:1px 1px 1px;text-align:cent=
+er;} Cashback Hingga Rp20.000 ke TokoCash.    =20
+|  =C2=A0  |
+|     |
+| =20
+| =20
+|  Hai, Edwin Salim! Mumpung baru gajian, jangan tunda lagi! Ayo beli token=
+ PLN atau bayar tagihan listrik kamu di Tokopedia dan dapatkan cashback sen=
+ilai 20% hingga Rp20.000 ke TokoCash!=20
+
+Pssstt, kamu juga bisa gunakan promo ini untuk beli pulsa, paket data, atau=
+ bayar tagihan HP pascabayar juga, lho!=20
+
+ Caranya mudah! Masukkan kode promo di bawah ini pada halaman pembayaran:  =
+ |
+|   Kode Promo:
+ TOPED20    Berlaku hingga 31 Agustus 2017   |
+| =20
+|  CEK SEKARANG  |
+
+ |
+
+ |
+
+ |
+|  Syarat dan Ketentuan:   =20
+   - Periode promo: 25 - 31 Agustus 2017;
+   - Berlaku untuk semua metode pembayaran di Tokopedia;
+   - Pengguna dapat mengikuti promo ini 3 (tiga) kali per produk selama mas=
+a promo;
+   - Untuk mendapatkan cashback, pengguna harus melakukan aktivasi TokoCash=
+, atau cashback akan hangus;
+   - Cek syarat dan ketentuan selengkapnya di sini.
+ |
+|     |
+|     |
+|     |
+|   |
+|   Top Up & Bayar Tagihan Dimulai Dari Tokopedia   |
+| =20
+| =20
+|    |
+|  Pulsa  |
+
+ |
+
+
+| =20
+|    |
+|  Paket Data  |
+
+ |
+
+
+| =20
+|    |
+|  PDAM  |
+
+ |
+
+
+| =20
+|    |
+|  Listrik PLN  |
+
+ |
+
+ |
+| =20
+| =20
+|    |
+|  TV Kabel  |
+
+ |
+
+
+| =20
+|    |
+|  Voucher Game  |
+
+ |
+
+
+| =20
+|    |
+|  BPJS  |
+
+ |
+
+
+| =20
+|    |
+|  Angsuran  |
+
+ |
+
+ |
+|   |
+|  =20
+| =20
+|  Download App Tokopedia    |
+
+ |
+
+ =20
+| =20
+|  Ikuti Kami       |
+
+ |
+
+  |
+| =20
+|   Hubungi Kami | Syarat & Ketentuan | Kebijakan Privasi | Unsubscribe  |
+|  =C2=A9 2009-2017, PT Tokopedia  |
+|   |
+
+ |
+
+=20
+
+  =20
+------=_Part_7628885_1561611240.1506000494607
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px"><div id=3D"yui_3_16_0_ym19_1_1505999512688_38513"><span></span>=
+</div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_ym19_1_1505999512688_38=
+515"><br><br></div>  <div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_15=
+05999512688_38519" style=3D"display: block;"> <div style=3D"font-family: He=
+lvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;=
+" id=3D"yui_3_16_0_ym19_1_1505999512688_38518"> <div style=3D"font-family: =
+HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;=
+ font-size: 16px;" id=3D"yui_3_16_0_ym19_1_1505999512688_38517"> <div dir=
+=3D"ltr"><font size=3D"2" face=3D"Arial"> Pada Jumat, 25 Agustus 2017 12:37=
+, Tokopedia &lt;exclusive@newsletter.tokopedia.com&gt; menulis:<br></font><=
+/div>  <br><br> <div class=3D"y_msg_container" id=3D"yui_3_16_0_ym19_1_1505=
+999512688_38528"><div id=3D"yiv3631967309">
+<title></title><style type=3D"text/css">
+#yiv3631967309 div, #yiv3631967309 p, #yiv3631967309 a, #yiv3631967309 li, =
+#yiv3631967309 td {
+
+}
+#yiv3631967309 p {
+font-size:14px;Margin-bottom:10px;}
+#yiv3631967309 body {
+Margin:0;padding:0;min-width:100%;background-color:#ffffff;}
+#yiv3631967309 table {
+border-spacing:0;font-family:sans-serif;color:#333333;}
+#yiv3631967309 td {
+padding:0;}
+#yiv3631967309 img {
+border:0;}
+#yiv3631967309 a {
+border-radius:3px;}
+#yiv3631967309 .yiv3631967309wrapper {
+width:100%;table-layout:fixed;}
+#yiv3631967309 .yiv3631967309webkit {
+max-width:600px;}
+#yiv3631967309 .yiv3631967309outer {
+Margin:0 auto;width:100%;max-width:600px;}
+#yiv3631967309 .yiv3631967309full-width-image img {
+width:100%;max-width:600px;min-height:auto;}
+#yiv3631967309 .yiv3631967309inner {
+padding:20px;}
+#yiv3631967309 a {
+color:#ee6a56;text-decoration:underline;}
+#yiv3631967309 .yiv3631967309h1 {
+font-size:21px;font-weight:bold;Margin-bottom:18px;}
+
+#yiv3631967309 .yiv3631967309one-column .yiv3631967309contents {
+text-align:center;}
+#yiv3631967309 .yiv3631967309two-column {
+text-align:center;font-size:0;}
+#yiv3631967309 .yiv3631967309two-column .yiv3631967309column {
+width:100%;max-width:300px;display:inline-block;vertical-align:top;}
+#yiv3631967309 .yiv3631967309contents {
+width:100%;}
+#yiv3631967309 .yiv3631967309two-column .yiv3631967309contents {
+font-size:14px;text-align:center;color:#000;}
+#yiv3631967309 .yiv3631967309two-column img {
+width:100%;max-width:300px;min-height:auto;}
+#yiv3631967309 .yiv3631967309two-column .yiv3631967309text {
+padding-top:30px;}
+
+#yiv3631967309 .yiv3631967309three-column {
+text-align:center;font-size:0;padding-top:10px;padding-bottom:10px;}
+#yiv3631967309 .yiv3631967309three-column .yiv3631967309column {
+width:100%;max-width:200px;display:inline-block;vertical-align:top;}
+#yiv3631967309 .yiv3631967309three-column .yiv3631967309contents {
+font-size:14px;text-align:center;}
+#yiv3631967309 .yiv3631967309three-column img {
+width:100%;max-width:60px;min-height:auto;}
+#yiv3631967309 .yiv3631967309three-column .yiv3631967309text {
+padding-top:10px;}
+#yiv3631967309 .yiv3631967309text-shadow {
+text-shadow:1px 1px 1px;text-align:center;}
+</style><div id=3D"yui_3_16_0_ym19_1_1505999512688_38527">
+
+   =20
+    <div style=3D"font-size:0px;">Cashback Hingga Rp20.000 ke TokoCash.</di=
+v>
+   =20
+
+
+    <center class=3D"yiv3631967309wrapper" style=3D"width:100%;table-layout=
+:fixed;" id=3D"yui_3_16_0_ym19_1_1505999512688_38526">
+        <div class=3D"yiv3631967309webkit" style=3D"max-width:600px;" id=3D=
+"yui_3_16_0_ym19_1_1505999512688_38525">
+
+               =20
+                <div style=3D"font-family:Arial, sans-serif;font-size:1px;c=
+olor:#f6f7fb;line-height:1px;display:none;max-width:0px;max-height:0px;over=
+flow:hidden;">
+                   =20
+                </div>
+               =20
+
+           =20
+
+            <table class=3D"yiv3631967309outer" align=3D"center" style=3D"b=
+order-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:10=
+0%;max-width:600px;" id=3D"yui_3_16_0_ym19_1_1505999512688_38524"><tbody id=
+=3D"yui_3_16_0_ym19_1_1505999512688_38523"><tr id=3D"yui_3_16_0_ym19_1_1505=
+999512688_38522"><td align=3D"center" width=3D"100%" height=3D"10" style=3D=
+"background-color:#42B549;padding:0;" id=3D"yui_3_16_0_ym19_1_1505999512688=
+_38521">
+                                    &nbsp;
+                  </td>
+                </tr><tr id=3D"yui_3_16_0_ym19_1_1505999512688_38533"><td c=
+lass=3D"yiv3631967309contents" id=3D"yui_3_16_0_ym19_1_1505999512688_38532"=
+>
+                       =20
+                        <a rel=3D"nofollow" target=3D"_blank" href=3D"http:=
+//trk.newsletter.tokopedia.com/ec?W5rFsZ/01m0GlAzb3apT0yOKyeX" id=3D"yui_3_=
+16_0_ym19_1_1505999512688_38531">
+                            <img src=3D"https://d39sghb3udgxv0.cloudfront.n=
+et/30045/1503630605.jpg" align=3D"absbottom" alt=3D"Beli Pulsa sampai Bayar=
+ Listrik Cashback Hingga Rp20.000" style=3D"display:block;width:100%;min-he=
+ight:auto;float:left;" id=3D"yui_3_16_0_ym19_1_1505999512688_38530" class=
+=3D"img-overlay-selected"></a>
+                       =20
+                    </td>
+                </tr><tr><td class=3D"yiv3631967309one-column" style=3D"pad=
+ding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                        <table width=3D"100%" border=3D"0" style=3D"border-=
+spacing:0;font-family:sans-serif;color:#333333;background:#ffffff;"><tbody>=
+<tr><td class=3D"yiv3631967309one-column" style=3D"padding-top:0;padding-bo=
+ttom:0;padding-right:0;padding-left:0;">
+                                    <table width=3D"100%" style=3D"border-s=
+pacing:0;font-family:sans-serif;color:#333333;"><tbody><tr><td class=3D"yiv=
+3631967309inner yiv3631967309contents" style=3D"background-color:#ffffff;pa=
+dding-top:0;padding-bottom:10px;padding-right:20px;padding-left:20px;width:=
+100%;text-align:left;color:#333333;font-size:20px;">
+                                               =20
+                                                <div style=3D"color:#333333=
+;font-size:24px;font-weight:600;">Hai, Edwin Salim!</div>
+                                                <div style=3D"font-size:15p=
+x;line-height:1.8em;">Mumpung baru gajian, jangan tunda lagi! Ayo beli toke=
+n PLN atau bayar tagihan listrik kamu di Tokopedia dan dapatkan <b><i>cashb=
+ack</i> senilai 20% hingga Rp20.000 ke TokoCash</b>!
+                                                <br><br><i>Pssstt</i>, kamu=
+ juga bisa gunakan promo ini untuk beli pulsa, paket data, atau bayar tagih=
+an HP pascabayar juga, lho!
+                                                <br><br>
+                                                Caranya mudah! Masukkan kod=
+e promo di bawah ini pada halaman pembayaran:=20
+                                                </div>
+                                               =20
+                                            </td>
+                                        </tr><tr><td>
+                                               =20
+                                                <div style=3D"font-weight:b=
+old;padding:10px 30px 5px;font-size:26px;color:#F26F46;text-align:center;">=
+=20
+                                                <span style=3D"font-size:12=
+px;color:#999;">Kode Promo:<br></span>
+                                                TOPED20=20
+                                                </div>
+                                                <div style=3D"background-co=
+lor:#f26039;min-height:4px;width:100px;text-align:center;margin:0 auto;">
+                                                </div>=20
+                                                <div style=3D"font-size:12p=
+x;color:#999;padding-top:8px;padding-bottom:20px;text-align:center;">Berlak=
+u hingga 31 Agustus 2017
+                                                </div>
+                                                =20
+                                            </td>
+                                        </tr><tr><td align=3D"center" style=
+=3D"padding-top:10px;padding-bottom:30px;padding-right:10px;padding-left:10=
+px;">
+                                                    <table border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center">
+                                <a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://trk.newsletter.tokopedia.com/ec?HkF9Xg/01m0GlAzb3apT0yOKyeX" sty=
+le=3D"font-size:20px;font-family:Arial, sans-serif;font-weight:bold;color:#=
+ffffff;text-decoration:none;border-radius:3px;background-color:#F26F46;bord=
+er-top:12px solid #F26F46;border-bottom:12px solid #F26F46;border-right:20p=
+x solid #F26F46;border-left:20px solid #F26F46;display:inline-block;">CEK S=
+EKARANG</a>
+                                                            </td>
+                                                        </tr></tbody></tabl=
+e></td>
+                                        </tr></tbody></table></td>
+                            </tr></tbody></table></td>
+              </tr><tr><td class=3D"yiv3631967309one-column" width=3D"100%"=
+ style=3D"background:#ffffcc;border-top:1px solid #e1e1e1;border-bottom:1px=
+ solid #e1e1e1;font-size:11px;">
+                  <div class=3D"yiv3631967309header" align=3D"center" style=
+=3D"text-decoration:none;font-weight:700;color:#000;font-size:12px;">Syarat=
+ dan Ketentuan:</div>
+                  <ul style=3D"padding:2% 10% 1%;line-height:1.6em;list-sty=
+le-type:disc;"><li style=3D"padding-bottom:5px;">Periode promo: <b>25 - 31 =
+Agustus 2017</b>;</li>
+                   =20
+                    <li style=3D"padding-bottom:5px;">Berlaku untuk semua m=
+etode pembayaran di Tokopedia;</li>
+                   =20
+                    <li style=3D"padding-bottom:5px;">Pengguna dapat mengik=
+uti promo ini <b>3 (tiga) kali per produk</b> selama masa promo;</li>
+                   =20
+                    <li style=3D"padding-bottom:5px;">Untuk mendapatkan <i>=
+cashback</i>, pengguna harus melakukan aktivasi TokoCash, atau <i>cashback<=
+/i> akan hangus;</li>
+
+                    <li>Cek syarat dan ketentuan selengkapnya <a rel=3D"nof=
+ollow" target=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?TTs=
+nQl/01m0GlAzb3apT0yOKyeX" style=3D"text-decoration:none;font-weight:bold;co=
+lor:#42B549;">di sini</a>.</li>
+                   =20
+                  </ul></td>
+              </tr><tr><td class=3D"yiv3631967309contents">
+                   =20
+                    <a rel=3D"nofollow" target=3D"_blank" href=3D"http://tr=
+k.newsletter.tokopedia.com/ec?TrMXTq/01m0GlAzb3apT0yOKyeX">
+                        <img src=3D"https://d39sghb3udgxv0.cloudfront.net/3=
+0045/1503545086.jpg" align=3D"absbottom" alt=3D"Ajukan Pinjaman dengan Agun=
+an Mobil Cashback hingga Rp1.000.000" style=3D"display:block;width:100%;min=
+-height:auto;float:left;padding-top:10px;background:#ffffff;"></a>
+                   =20
+                </td>
+                </tr><tr><td class=3D"yiv3631967309contents">
+                   =20
+                    <a rel=3D"nofollow" target=3D"_blank" href=3D"http://tr=
+k.newsletter.tokopedia.com/ec?ozYOHA/01m0GlAzb3apT0yOKyeX">
+                        <img src=3D"https://d39sghb3udgxv0.cloudfront.net/3=
+0045/1503545668.jpg" align=3D"absbottom" alt=3D"Miliki Asuransi Mega Insura=
+nce Hemat Premi hingga Rp600.000" style=3D"display:block;width:100%;min-hei=
+ght:auto;float:left;padding-top:10px;background:#ffffff;"></a>
+                   =20
+                </td>
+                </tr><tr><td class=3D"yiv3631967309contents">
+                   =20
+                    <a rel=3D"nofollow" target=3D"_blank" href=3D"http://tr=
+k.newsletter.tokopedia.com/ec?yVsmgj/01m0GlAzb3apT0yOKyeX">
+                        <img src=3D"https://d39sghb3udgxv0.cloudfront.net/3=
+0045/1503483610.jpg" align=3D"absbottom" alt=3D"Gratis Ongkir Hingga Rp40.0=
+00" style=3D"display:block;width:100%;min-height:auto;float:left;padding-to=
+p:10px;padding-bottom:10px;background:#ffffff;"></a>
+                   =20
+                </td>
+            </tr><tr><td align=3D"center" width=3D"100%" height=3D"4" style=
+=3D"background-color:#42B549;">
+              </td>
+            </tr><tr><td>
+                    <div style=3D"line-height:1.8em;text-align:center;font-=
+size:14px;font-weight:bold;padding-top:10px;background:#ffffff;">
+                    Top Up &amp; Bayar Tagihan Dimulai Dari Tokopedia
+                    </div>
+                </td>
+            </tr><tr><td style=3D"padding-right:0;padding-left:0;text-align=
+:center;font-size:0;padding-top:10px;padding-bottom:10px;background:#ffffff=
+;">
+
+                   =20
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"yiv3631967309column" style=3D"border-spacing:0;font-family:sans-s=
+erif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical=
+-align:top;"><tbody><tr><td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;"><tbody><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-alig=
+n:center;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?eNsgYb/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398838.png" width=3D"50" alt=3D"Product 1" style=3D"border-width:0;width:50=
+px;max-width:150px;min-height:auto;padding-left:50px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:50px=
+;">
+                                            Pulsa
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?N1zUnv/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398780.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;min-height:auto;margin-left:40px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:40px=
+;">
+                                            Paket Data
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?SNkJfD/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398461.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;min-height:auto;margin-left:50px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:50px=
+;">
+                                            PDAM
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?VSgEIt/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398806.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;margin-left:40px;" align=3D"center"></a>
+                                        </td>
+                                       =20
+                                    </tr><tr><td style=3D"padding-left:40px=
+;">
+                                            Listrik PLN
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table></td>
+            </tr><tr><td class=3D"yiv3631967309four-column" style=3D"paddin=
+g-right:0;padding-left:0;text-align:center;font-size:0;padding-top:0;paddin=
+g-bottom:10px;background:#ffffff;">
+
+                   =20
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"yiv3631967309column" style=3D"border-spacing:0;font-family:sans-s=
+erif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical=
+-align:top;"><tbody><tr><td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;"><tbody><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?MDo61C/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398866.png" width=3D"50" alt=3D"Product 1" style=3D"border-width:0;width:50=
+px;max-width:150px;min-height:auto;margin-left:45px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:45px=
+;">
+                                            TV Kabel
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?9C6s6y/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398746.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;min-height:auto;margin-left:30px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:30px=
+;">
+                                            Voucher Game
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?n5DmTH/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398724.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;min-height:auto;margin-left:50px;"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:50px=
+;">
+                                            BPJS
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table><table class=3D"yiv3631967309c=
+olumn" style=3D"border-spacing:0;font-family:sans-serif;color:#333333;width=
+:100%;max-width:150px;display:inline-block;vertical-align:top;"><tbody><tr>=
+<td>
+                                <table style=3D"border-spacing:0;font-famil=
+y:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;"><t=
+body><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;paddin=
+g-left:0;">
+                                            <a rel=3D"nofollow" target=3D"_=
+blank" href=3D"http://trk.newsletter.tokopedia.com/ec?CWnVS5/01m0GlAzb3apT0=
+yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:underline;=
+"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/307982017/04/1491=
+398484.png" width=3D"50" alt=3D"icon" style=3D"border-width:0;width:50px;ma=
+x-width:150px;margin-left:45px;" align=3D"center"></a>
+                                        </td>
+                                    </tr><tr><td style=3D"padding-left:45px=
+;">
+                                            Angsuran
+                                        </td>
+                                    </tr></tbody></table></td>
+                        </tr></tbody></table></td>
+            </tr><tr><td align=3D"center" width=3D"100%" height=3D"4" style=
+=3D"background-color:#42B549;">
+              </td>
+            </tr><tr><td class=3D"yiv3631967309two-column" style=3D"padding=
+-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;fo=
+nt-size:0;background:#f7f7f7;">
+
+                     =20
+                     =20
+                      <div class=3D"yiv3631967309column" style=3D"width:100=
+%;max-width:300px;display:inline-block;vertical-align:top;">
+                          <table width=3D"100%" style=3D"border-spacing:0;f=
+ont-family:sans-serif;color:#333333;"><tbody><tr><td class=3D"yiv3631967309=
+inner" style=3D"padding-top:20px;padding-bottom:20px;padding-right:20px;pad=
+ding-left:20px;">
+                                      <table class=3D"yiv3631967309contents=
+" style=3D"border-spacing:0;font-family:sans-serif;width:100%;font-size:14p=
+x;text-align:center;color:#333333;"><tbody><tr><td style=3D"padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0;">
+                                                  <div style=3D"font-family=
+:arial, sans-serif;font-size:11px;Margin:0;Margin-bottom:10px;">Download Ap=
+p Tokopedia</div>
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?yILzay/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/205872016/0=
+7/1468233846.png" alt=3D"Download di AppStore" width=3D"auto" height=3D"25"=
+ style=3D"border-width:0;max-height:25px;width:auto;"></a>
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?2RDRGX/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/205872016/0=
+7/1468233889.png" alt=3D"Download di Google PlayStore" width=3D"auto" heigh=
+t=3D"25" style=3D"border-width:0;max-height:25px;width:auto;"></a>
+                                              </td>
+                                          </tr></tbody></table></td>
+                              </tr></tbody></table></div>
+                     =20
+
+                     =20
+
+                     =20
+                      <div class=3D"yiv3631967309column" style=3D"width:100=
+%;max-width:300px;display:inline-block;vertical-align:top;">
+                          <table width=3D"100%" style=3D"border-spacing:0;f=
+ont-family:sans-serif;color:#333333;"><tbody><tr><td class=3D"yiv3631967309=
+inner" style=3D"padding-top:20px;padding-bottom:20px;padding-right:20px;pad=
+ding-left:20px;">
+                                      <table class=3D"yiv3631967309contents=
+" style=3D"border-spacing:0;font-family:sans-serif;width:100%;font-size:14p=
+x;color:#333333;"><tbody><tr><td valign=3D"middle" align=3D"left" style=3D"=
+padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:ce=
+nter;">
+                                                  <div style=3D"font-family=
+:arial, sans-serif;font-size:11px;Margin:0;Margin-bottom:10px;">Ikuti Kami<=
+/div>
+
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?TkxGj5/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://d39sghb3udgxv0.cloudfront.net/30045/1497495992.=
+jpg" alt=3D"Line Messenger" width=3D"25" style=3D"border-width:0;border-rad=
+ius:90%;max-width:25px;"></a>
+
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?GiPAKy/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/1=
+1/1480307802.png" alt=3D"Google+" width=3D"25" style=3D"border-width:0;bord=
+er-radius:90%;max-width:25px;"></a>
+
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?lANuyp/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/1=
+1/1480307762.png" alt=3D"Facebook" width=3D"25" style=3D"border-width:0;bor=
+der-radius:90%;max-width:25px;"></a>
+
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?01GaKo/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/1=
+1/1480307869.png" alt=3D"Twitter" width=3D"25" style=3D"border-width:0;bord=
+er-radius:90%;max-width:25px;"></a>
+
+                                                  <a rel=3D"nofollow" targe=
+t=3D"_blank" href=3D"http://trk.newsletter.tokopedia.com/ec?lVlYA4/01m0GlAz=
+b3apT0yOKyeX" style=3D"border-radius:3px;color:#ee6a56;text-decoration:unde=
+rline;"><img src=3D"https://s3.amazonaws.com/www.betaoutcdn.com/300452016/1=
+1/1480307832.png" alt=3D"Instagram" width=3D"25" style=3D"border-width:0;bo=
+rder-radius:90%;max-width:25px;"></a>
+                                              </td>
+                                          </tr></tbody></table></td>
+                              </tr></tbody></table></div>
+                     =20
+
+                     =20
+
+                  </td>
+              </tr><tr><td class=3D"yiv3631967309one-column" style=3D"backg=
+round-color:#f7f7f7;padding-top:0;padding-bottom:0;padding-right:0;padding-=
+left:0;">
+                      <table width=3D"100%" style=3D"border-spacing:0;font-=
+family:sans-serif;color:#333333;"><tbody><tr><td class=3D"yiv3631967309inne=
+r yiv3631967309contents" align=3D"left" style=3D"color:#333333;font-family:=
+arial;font-size:12px;padding-top:0;padding-bottom:10px;padding-right:20px;p=
+adding-left:20px;width:100%;text-align:center;width:600px;">
+                                  <div style=3D"font-family:arial;text-alig=
+n:center;font-size:11px;Margin:0;Margin-bottom:10px;margin-top:0px;">
+                                  <a rel=3D"nofollow" target=3D"_blank" hre=
+f=3D"http://trk.newsletter.tokopedia.com/ec?ALbOVY/01m0GlAzb3apT0yOKyeX" st=
+yle=3D"text-decoration:none;color:#2fbe38;">Hubungi Kami</a> |=20
+                                  <a rel=3D"nofollow" target=3D"_blank" hre=
+f=3D"http://trk.newsletter.tokopedia.com/ec?XpQxQJ/01m0GlAzb3apT0yOKyeX" st=
+yle=3D"text-decoration:none;color:#2fbe38;">Syarat &amp; Ketentuan</a> |=20
+                                  <a rel=3D"nofollow" target=3D"_blank" hre=
+f=3D"http://trk.newsletter.tokopedia.com/ec?gAKSwS/01m0GlAzb3apT0yOKyeX" st=
+yle=3D"text-decoration:none;color:#2fbe38;">Kebijakan Privasi</a> |=20
+                                   <a rel=3D"nofollow" target=3D"_blank" hr=
+ef=3D"http://trk.newsletter.tokopedia.com/unsubscribe/nv/c/01m0GlAzb3apT0yO=
+KyeX/p/30045/key/aGl0c3VfbGltMjVAeWFob28uY29t/" style=3D"text-decoration:no=
+ne;color:#2fbe38;">Unsubscribe</a></div>
+                              </td>
+                          </tr><tr><td class=3D"yiv3631967309inner yiv36319=
+67309contents" align=3D"left" style=3D"color:#333333;font-family:arial;font=
+-size:10px;padding-top:0;padding-bottom:20px;padding-right:20px;padding-lef=
+t:20px;width:100%;text-align:center;width:600px;">
+                                  =C2=A9 2009-2017, PT Tokopedia
+                              </td>
+                          </tr><tr><td align=3D"center" width=3D"100%" heig=
+ht=3D"20" style=3D"background-color:#42B549;">
+
+                              </td>
+                          </tr></tbody></table></td>
+              </tr></tbody></table></div>
+    </center>
+
+
+
+
+
+
+
+
+<img alt=3D"" src=3D"http://trk.newsletter.tokopedia.com/o/nv/c/01m0GlAzb3a=
+pT0yOKyeX.gif"></div>
+
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_7628885_1561611240.1506000494607--

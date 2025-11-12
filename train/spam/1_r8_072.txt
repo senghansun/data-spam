@@ -1,0 +1,940 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 21 Sep 2017 13:19:19 +0000 
+Return-Path: <hitsu_lim25@yahoo.com>
+Received-SPF: pass (domain of yahoo.com designates 106.10.241.39 as permitted sender)
+X-YMailISG: YQBG9JsWLDsJe1ehg9k8UpNlc.YyByB2yBdhVu_5k3btTziU
+ Pet5E3syBTAx6i82LlLaSNWyDL5xKZMhHFpt45uYQOhi5f4mh64jonhSHDVU
+ Obuy55d7maO1XWDCyTRd24zIgn6Md98l1bWSnbHK4dybk2VMETGXHer.oPdu
+ wU5juEtwLGo3Spxy903C.nk2Stz1REnoaQmJ8ZOaslNLY.N0OefjTs_oU.Cq
+ W4LqYYxPXCyZzefndJz2Mjv82RZGeJBPl5Hub1ES_59IxXnbG9pi.K5T4JEK
+ 3EcsknJ0zwxdtMLVmW1EGGc1LNHccWGl31cmV49oej7DOQ4SMWjNHq7vvCn8
+ zDW4cQEx8WxGChNuYn.A.AhSwmuM3ZCsWd9CMn_uPwgzJOxK71mOhqFRq8wW
+ uq.vrcUuAm2xPjVd616gBw0lnS99oFc1BkHieO7VEKlrF4WJbxH8HxOkrn0J
+ oQB777GL13FzFDwB76cDHHD8_LUTDAaWt0X5I3K7f4eLo_LXDeAKAtbwSRO8
+ jg.tHejsIrYx_U6vaILYru.Fu6BKXlKtzf47c.sLC7dBIpJf0WfEE2EsBlUx
+ 5DtCzZML00gfAu0n7GAJDGOrBFToj.DnK5dtX5IysvmD82ReuQLR4oOE8jwL
+ xhd0Nc2fB_Wq.N13r91UW6lSYPszVjeS96bdS41eOJa40dzElskWAbFTI4eE
+ UlkpOFgNMRxQhzPeWgMDDRoS_R4Rd6l61sDv1hxPruS6zd45vzCeSsNyMi.M
+ Gl9H0vkBkduRT.vBT7U2XytBOvhSDqVCJRyNd806ounq6oXUavfpZaxKemY7
+ x1XaanYBJTlcFLC9nzl3yxLchC_i_VAZ_7xhExM1j7aYSUcSelLb5k69uVG.
+ 0DO7kyvLp6gjQx.dcwLovdbXbJnIxIokPdoQA2TomBIMRw7fRQj98PgvbhFJ
+ pBKqA05YquDb0Ku.9h7nRJs1kViKjmlGvs6DN4d.UQ7hqq3GdQIkrtngkaFL
+ pMnWB67RWNNoXqKiziYJew94vI9J8BsRYqqzD8FNwtbKHb_RBywDOyR_Sjcd
+ d_iqtWlWi5hw.XVyJkVNrERFC9xZwmTZOGMoLdrYpN3Noaavh_yFNhuegdHl
+ QT.yMqrnR581eHI1FDe_aOTcJdLpp7E9_0rv.BhNr0ivHgzGS4BYRUJqcdsZ
+ 3LTOc9C2KOnxEhO3RBQZmJ0sW5xl0jeqw44OYZzN.nFw
+X-Originating-IP: [106.10.241.39]
+Authentication-Results: mta1095.mail.gq1.yahoo.com  from=yahoo.com; domainkeys=neutral (no sig);  from=yahoo.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO sonic307-22.consmr.mail.sg3.yahoo.com) (106.10.241.39)
+  by mta1095.mail.gq1.yahoo.com with SMTPS; Thu, 21 Sep 2017 13:19:18 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1505999956; bh=vo7MFfA5OfgcIllBMQcuXQN66UUV7hUsI5vqs/uJO6g=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=aYvKBTBqT8k9uX54vYUYBA2zmSMqJZCoetgkZ+PKaxtUSvaQZZort4QYGPmB6/f4eHJuHBcxf7vwi7j5SdLXfgC7UZkskxy8a9TVmGBclmixUWNssOuroLQTXtDxhDlsywpous+P9wMisEoDWX/YxC3hXVmtV4OpPlKKRgRs4QZkz62ltPsPe0CJ63FabCfYbO5pbzrSX4w1neNMSOk1dSylu6x6cc2p7S6D2rHSFC47Af0fJQCLJ+RcSKPc2X127TC6DoGtb2A8qAtxJWoFNnU+bCKeLIa/VQE7sFCzChyypBjbd1J73LciPVk3mXeqsoS8D8uvVQkNo8Y5PwyZpA==
+X-YMail-OSG: gFEzpeoVM1nq9jcMRRz0JHZxuq68VbFZwnZW3UsHL9AKZ_hDr_f3dxr2vAqDHr2
+ .J5Q15NEt1fIgnJz52Yw_0y2ZBDw5Y5KmgNvGaoXNPUDxXmN.qnlBWy4teM7WC4Wz1lfGN1kt18G
+ LbwNm35XzP81CUJKJOI3PEqlwUpw1egrgdBOS9kujd.rMtSrSsOaLiqgQHX0ovSyRjNiqVcpZrmr
+ YxOXQ_FX3CeFx0Gld3nNNf5Tiz8HcviC86_RvZ_Df.IYLYjQuQromH5N5msWNt9xwm5wsyxazkkW
+ UAjzGfUeRWqkkwqKl8s4kKY_W8PMtcdEbCtZBUDcY2FN9L9Njf6.cU.e7hpezgc4tlfUBnwJpFJz
+ U07l6PySxo.ahwJYtvlu0gAY6vwIO29TF6teZdTFmlVuLgDCQjNdSsBFxOjoVI..zERCUUz7sl0l
+ Iq9RgAoUry5TNuYqM.1M.9PrDDoH_wrgQWTGrD35aqAz33mDrsmeYd8SoRTlF6u36uOWPB78g9WX
+ beCtIc5B5nI4-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic307.consmr.mail.sg3.yahoo.com with HTTP; Thu, 21 Sep 2017 13:19:16 +0000
+Date: Thu, 21 Sep 2017 13:19:11 +0000 (UTC)
+From: edwin lim <hitsu_lim25@yahoo.com>
+Reply-To: edwin lim <hitsu_lim25@yahoo.com>
+To: "yustinus_vernanda@yahoo.com" <yustinus_vernanda@yahoo.com>
+Message-ID: <1477702787.7629868.1505999951366@mail.yahoo.com>
+In-Reply-To: <KHsG0kOcRai3NF5QabACjQ@ismtpd0003p1sjc2.sendgrid.net>
+References: <KHsG0kOcRai3NF5QabACjQ@ismtpd0003p1sjc2.sendgrid.net>
+Subject: Trs: Parking Day 2017: Imagine our cities with more open public
+ spaces
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7629867_1814311428.1505999951359"
+X-Mailer: WebService/1.1.10521 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Content-Length: 33451
+
+------=_Part_7629867_1814311428.1505999951359
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+     Pada Jumat, 15 September 2017 11:24, Uber Indonesia <uber.indonesia@ub=
+er.com> menulis:
+=20
+
+  #yiv2335178387 .yiv2335178387btn a:hover{background-color:#C90000!importa=
+nt;border-color:#C90000!important;}#yiv2335178387 .yiv2335178387textcta a:h=
+over{color:#C90000!important;}@media screen and (max-width:480px){#yiv23351=
+78387 .yiv2335178387hide-480 {display:none;font-size:0px !important;line-he=
+ight:0px !important;}#yiv2335178387 .yiv2335178387minimalText{padding-top:1=
+5px !important;display:block;}}@media screen and (max-width:699px){#yiv2335=
+178387 .yiv2335178387t1of12, #yiv2335178387 .yiv2335178387t2of12, #yiv23351=
+78387 .yiv2335178387t3of12, #yiv2335178387 .yiv2335178387t4of12, #yiv233517=
+8387 .yiv2335178387t5of12, #yiv2335178387 .yiv2335178387t6of12, #yiv2335178=
+387 .yiv2335178387t7of12, #yiv2335178387 .yiv2335178387t8of12, #yiv23351783=
+87 .yiv2335178387t9of12, #yiv2335178387 .yiv2335178387t10of12, #yiv23351783=
+87 .yiv2335178387t11of12, #yiv2335178387 .yiv2335178387t12of12, #yiv2335178=
+387 .yiv2335178387full{width:100%!important;max-width:none!important;}#yiv2=
+335178387 a .filtered99999 {color:inherit!important;text-decoration:none!im=
+portant;font-size:inherit!important;font-family:inherit!important;font-weig=
+ht:inherit!important;line-height:inherit!important;}}@media screen and ( _f=
+iltered_a ){#yiv2335178387 .yiv2335178387arrow{vertical-align:6%;line-heigh=
+t:20px!important;}}@media { _filtered #yiv2335178387 {font-family:'ClanPro-=
+Thin';font-weight:normal!important;font-style:normal!important;} _filtered =
+#yiv2335178387 {font-family:'ClanPro-Book';font-weight:normal!important;fon=
+t-style:normal!important;} _filtered #yiv2335178387 {font-family:'ClanPro-N=
+ews';font-weight:normal!important;font-style:normal!important;} _filtered #=
+yiv2335178387 {font-family:'ClanPro-Medium';font-weight:normal!important;fo=
+nt-style:normal!important;}#yiv2335178387 #yiv2335178387 .yiv2335178387yaho=
+oHide{display:none!important;}
+|=20
+|=20
+|  |
+
+
+|=20
+|  |  |  |
+
+ |
+
+
+|=20
+|  |=20
+|  |
+
+ |  |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+| =20
+|=20
+| Celebrating Parking Day 2017 |
+
+ |
+
+ |
+
+ |
+|=20
+|=20
+| Imagine if a city could reclaim a third of its land. Imagine all the new =
+schools and playgrounds and parks and bike paths that could take parking sp=
+aces. |
+
+ |
+
+ |
+| =20
+|=20
+|   CHECK THE FACTS HERE   |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+| =C2=A0 |
+|=20
+|=20
+
+
+|=20
+|  |
+
+ |
+
+
+|=20
+|=20
+|  |
+
+ |=20
+|  |
+
+ |=20
+|  |
+
+ |=20
+|  |
+
+ |
+
+ |
+
+ |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+|=20
+|=20
+|=20
+| Get help |
+| Unsubscribe |
+
+ |
+
+
+|=20
+|=20
+| Uber B.V.
+Vijzelstraat 68, 1017 HL=20
+Amsterdam, Nederland  |
+| Privacy=20
+Terms |
+
+ |
+
+ |
+
+ |
+
+ |
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+
+  =20
+------=_Part_7629867_1814311428.1505999951359
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px"><div id=3D"yui_3_16_0_ym19_1_1505999512688_11824"><span></span>=
+</div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_ym19_1_1505999512688_11=
+826"><br><br></div>  <div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_15=
+05999512688_11832" style=3D"display: block;"> <div style=3D"font-family: He=
+lvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;=
+" id=3D"yui_3_16_0_ym19_1_1505999512688_11831"> <div style=3D"font-family: =
+HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;=
+ font-size: 16px;" id=3D"yui_3_16_0_ym19_1_1505999512688_11830"> <div dir=
+=3D"ltr" id=3D"yui_3_16_0_ym19_1_1505999512688_11829"><font size=3D"2" face=
+=3D"Arial" id=3D"yui_3_16_0_ym19_1_1505999512688_11828"> Pada Jumat, 15 Sep=
+tember 2017 11:24, Uber Indonesia &lt;uber.indonesia@uber.com&gt; menulis:<=
+br></font></div>  <br><br> <div class=3D"y_msg_container" id=3D"yui_3_16_0_=
+ym19_1_1505999512688_11848"><div id=3D"yiv2335178387">
+
+
+=20
+=20
+
+=20
+
+
+
+
+<style>
+#yiv2335178387 .yiv2335178387btn a:hover{
+background-color:#C90000!important;
+border-color:#C90000!important;}
+#yiv2335178387 .yiv2335178387textcta a:hover{
+color:#C90000!important;}
+@media screen and (max-width:480px){
+#yiv2335178387 .yiv2335178387hide-480 {
+display:none;font-size:0px !important;line-height:0px !important;}
+#yiv2335178387 .yiv2335178387minimalText{
+padding-top:15px !important;display:block;}
+}
+</style>
+
+<style type=3D"text/css">@media screen and (max-width:699px){#yiv2335178387=
+ .yiv2335178387t1of12, #yiv2335178387 .yiv2335178387t2of12, #yiv2335178387 =
+.yiv2335178387t3of12, #yiv2335178387 .yiv2335178387t4of12, #yiv2335178387 .=
+yiv2335178387t5of12, #yiv2335178387 .yiv2335178387t6of12, #yiv2335178387 .y=
+iv2335178387t7of12, #yiv2335178387 .yiv2335178387t8of12, #yiv2335178387 .yi=
+v2335178387t9of12, #yiv2335178387 .yiv2335178387t10of12, #yiv2335178387 .yi=
+v2335178387t11of12, #yiv2335178387 .yiv2335178387t12of12, #yiv2335178387 .y=
+iv2335178387full{width:100%!important;max-width:none!important;}#yiv2335178=
+387 a .filtered99999 {color:inherit!important;text-decoration:none!importan=
+t;font-size:inherit!important;font-family:inherit!important;font-weight:inh=
+erit!important;line-height:inherit!important;}}@media screen and ( _filtere=
+d_a ){#yiv2335178387 .yiv2335178387arrow{vertical-align:6%;line-height:20px=
+!important;}}@media { _filtered #yiv2335178387 {font-family:'ClanPro-Thin';=
+font-weight:normal!important;font-style:normal!important;} _filtered #yiv23=
+35178387 {font-family:'ClanPro-Book';font-weight:normal!important;font-styl=
+e:normal!important;} _filtered #yiv2335178387 {font-family:'ClanPro-News';f=
+ont-weight:normal!important;font-style:normal!important;} _filtered #yiv233=
+5178387 {font-family:'ClanPro-Medium';font-weight:normal!important;font-sty=
+le:normal!important;}#yiv2335178387 </style>
+
+
+
+<div dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1505999512688_11847">
+<span style=3D"display:none;max-height:0px;font-size:0px;overflow:hidden;">
+</span>
+
+<style>#yiv2335178387 .yiv2335178387yahooHide{display:none!important;}</sty=
+le>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background-color:#d6d6d5;border:0;border-collapse:collapse;border-spac=
+ing:0;" bgcolor=3D"#d6d6d5" class=3D"yiv2335178387" id=3D"yui_3_16_0_ym19_1=
+_1505999512688_11846">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_11845">
+<tr id=3D"yui_3_16_0_ym19_1_1505999512688_11844">
+<td align=3D"center" style=3D"display:block;" id=3D"yui_3_16_0_ym19_1_15059=
+99512688_11843">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;max-width:700px;" c=
+lass=3D"yiv2335178387" id=3D"yui_3_16_0_ym19_1_1505999512688_11842">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_11841">
+<tr id=3D"yui_3_16_0_ym19_1_1505999512688_11840">
+<td style=3D"background-color:#ffffff;" id=3D"yui_3_16_0_ym19_1_15059995126=
+88_11839">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv23351=
+78387" id=3D"yui_3_16_0_ym19_1_1505999512688_11838">
+  <tbody id=3D"yui_3_16_0_ym19_1_1505999512688_11837"><tr id=3D"yui_3_16_0_=
+ym19_1_1505999512688_11836">
+      <td align=3D"center" id=3D"yui_3_16_0_ym19_1_1505999512688_11835"><im=
+g src=3D"https://d1g1f25tn8m2e6.cloudfront.net/b1080d7d-39c7-4751-a8bb-a029=
+0031770d.png" width=3D"100%" height=3D"auto" style=3D"border:none;clear:bot=
+h;display:block;min-height:auto;max-width:100%;outline:none;text-decoration=
+:none;width:100%;" alt=3D"" class=3D"yiv2335178387 img-overlay-selected" id=
+=3D"yui_3_16_0_ym19_1_1505999512688_11834"></td>
+  </tr>
+</tbody></table>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;max-width:700px;width:100%;">
+<tbody><tr>
+<td bgcolor=3D"#47D3D9" valign=3D"bottom" background=3D"https://uber-static=
+.s3.amazonaws.com/emails/2016/global/pattern/indonesia_aqua-6.jpg" style=3D=
+"background-size:cover;background-image:url('https://uber-static.s3.amazona=
+ws.com/emails/2016/global/pattern/indonesia_aqua-6.jpg');" align=3D"center"=
+>
+
+
+<div>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;width:100%;">
+<tbody><tr>
+<td style=3D"padding:0;margin:0;width:79%;" align=3D"center"></td>
+<td style=3D"padding:0;margin:0;width:15%;" align=3D"center" valign=3D"bott=
+om"><img src=3D"https://uber-static.s3.amazonaws.com/emails/2015/10/bit-top=
+1.png" width=3D"120" height=3D"" border=3D"0" style=3D"clear:both;display:b=
+lock;min-height:auto;max-height:60px;max-width:120px;min-width:65px;outline=
+:none;text-decoration:none;width:100%;" id=3D"yiv2335178387OWATemporaryImag=
+eDivContainer1843216"></td>
+<td style=3D"padding:0;margin:0;width:6%;min-width:15px;" align=3D"center">=
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;margin:0 auto;max-width:700px;width:100%;">
+<tbody><tr>
+<td style=3D"padding:0;margin:0;background-color:#ffffff;padding-bottom:30p=
+x;" align=3D"center"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"border:none;border-spacing:0;width:100%;">
+<tbody><tr>
+<td style=3D"padding:0;margin:0;width:79%;" align=3D"center"></td>
+<td style=3D"padding:0;margin:0;width:15%;" align=3D"center"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-spac=
+ing:0;width:100%;">
+<tbody><tr>
+<td style=3D"background-color:#000000;"><img src=3D"https://uber-static.s3.=
+amazonaws.com/emails/2016/global/logo/020116_uber_logo.png" width=3D"120" h=
+eight=3D"" border=3D"0" style=3D"clear:both;display:block;min-height:auto;m=
+ax-height:90px;max-width:120px;min-width:65px;outline:none;text-decoration:=
+none;width:100%;" id=3D"yiv2335178387OWATemporaryImageDivContainer409565"><=
+/td>
+</tr>
+</tbody></table></td>
+<td style=3D"padding:0;margin:0;width:6%;min-width:15px;" align=3D"center">=
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;margin:auto;max-wid=
+th:700px;" class=3D"yiv2335178387tron">
+<tbody>
+<tr>
+<td align=3D"center">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background-color:#fff;border:0;border-collapse:collapse;border-spacing=
+:0;margin:auto;" bgcolor=3D"#ffffff" class=3D"yiv2335178387basetable">
+<tbody>
+<tr>
+<td align=3D"center">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"yiv2335178387basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"background-color:#ffffff;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"yiv2335178387basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"yiv2335178387basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv23351=
+78387">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv23351=
+78387">
+<tbody>
+<tr>
+<td class=3D"yiv2335178387outsidegutter" align=3D"left" style=3D"padding:16=
+px 14px 0 14px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"text-align:left;">
+
+=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387t9of12 yiv2335178387basetable" align=3D"left" style=3D"border:0;border-c=
+ollapse:collapse;border-spacing:0;max-width:504px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178387base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td class=3D"yiv2335178387h1" style=3D"color:#000000;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:28px;line-height:36px;padding-bottom:30px;text-align:left;=
+">Celebrating Parking Day 2017</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387t10of12 yiv2335178387basetable" align=3D"left" style=3D"border:0;border-=
+collapse:collapse;border-spacing:0;max-width:560px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178387base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td class=3D"yiv2335178387p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:16px;line-height:28px;text-align:left;padding-bottom:32px;=
+"><div>Imagine if a city could reclaim a third of its land. Imagine all the=
+ new schools and playgrounds and parks and bike paths that could take parki=
+ng spaces.</div>
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+
+<tr>
+<td style=3D"padding-bottom:20px;text-align:left;">
+
+=20
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387t6of12 yiv2335178387basetable" align=3D"left" style=3D"border:0;border-c=
+ollapse:collapse;border-spacing:0;max-width:336px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178387base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><div class=3D"yiv2335178387bt=
+n yiv2335178387cta" lang=3D"x-btn" style=3D"font-family:'ClanPro-Medium', H=
+elvetica, Arial, sans-serif;font-size:14px;line-height:20px;text-transform:=
+uppercase;text-align:left;"> <a rel=3D"nofollow" target=3D"_blank" href=3D"=
+http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B5nFIVaqlVkmYt=
+AZ-2FK7f4m9tguiYiYCGubGQuhv-2B17fl1YhtUsSF62fz5HcW4DFSeg-3D-3D_b4FX5-2FwMFb=
+eNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCb=
+O8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9=
+AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BG=
+piJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3p=
+i4PCLWqy-2BPfdqgj2QAV73uqEkjFtUIzbb-2BGAedgBQjJhbTmIhU-2B7sFwhjCf-2FddQFF7r=
+23s59ZNXKiSRYde9QwiTOrARodj4eZ-2FDl8G-2BCYQseA1TyGmKTJvsMyQLse-2F-2FOL62CDR=
+-2B0KgM5jLjFnyfbcznRsaBbrpxbnNVdSUcN1s7R1i6BUhNm5H2BEkiV5E81y20mWiKMW3RY2BR=
+RhmaAYnmXMvBWwKQf8OZaNKYd6hondVmQ-3D-3D" style=3D"background-color:#DA0000;=
+border-color:#DA0000;border-radius:0px;border-style:solid;border-width:13px=
+ 16px;color:#ffffff;display:inline-block;letter-spacing:1px;max-width:300px=
+;min-width:150px;text-align:center;text-decoration:none;text-transform:uppe=
+rcase;text-align:left;"> <span style=3D"float:left;text-align:left;">CHECK =
+THE FACTS HERE</span>
+
+<span style=3D"float:right;padding-top:2px;display:inline-block;"> <img src=
+=3D"https://s3.amazonaws.com/uber-static/emails/2017/global/arrows/ctaArrow=
+_left.png" width=3D"16" height=3D"12" style=3D"Margin-left:16px;border:none=
+;clear:both;display:block;margin-top:2px;max-width:100%;outline:none;text-d=
+ecoration:none;width:auto;" alt=3D"" class=3D"yiv2335178387" id=3D"yiv23351=
+78387OWATemporaryImageDivContainer1463348"></span>
+
+
+</a> </div></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+
+</tbody></table></td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;margin:auto;max-wid=
+th:700px;background-color:#ffffff;" class=3D"yiv2335178387tron">
+<tbody>
+<tr>
+<td style=3D"display:block;padding-top:30px;background-color:#ffffff;">
+
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv23=
+35178387" bgcolor=3D"#ffffff">
+<tbody>
+
+<tr>
+<td align=3D"center" style=3D"background-color:rgb(0, 0, 0);text-align:left=
+;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:=
+none;border-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387">
+
+<tbody><tr>
+<td align=3D"center" style=3D"text-align:left;"><table width=3D"100%" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;max-width:700px;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"padding:0px 26px;text-align:left;">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;max-width:648px;=
+table-layout:fixed;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-top:20px;text-align:left=
+;">&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;"><table width=3D"100%" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;" class=3D"yiv2335178387">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><h1>
+
+
+
+
+</h1>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:335px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:40px;text-align:left;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"yiv2335178387basetable" width=3D"100%=
+" align=3D"left" style=3D"border:none;border-collapse:collapse;border-spaci=
+ng:0;table-layout:fixed;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><img src=3D"https://uber-stat=
+ic.s3.amazonaws.com/emails/2016/01/footer_logo.png" width=3D"90" height=3D"=
+20" style=3D"border:none;clear:both;display:block;max-width:100%;outline:no=
+ne;text-decoration:none;width:auto;" alt=3D"" class=3D"yiv2335178387" id=3D=
+"yiv2335178387OWATemporaryImageDivContainer1735528"></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:313px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:40px;text-align:left;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"yiv2335178387basetable" width=3D"100%=
+" align=3D"left" style=3D"border:none;border-collapse:collapse;border-spaci=
+ng:0;">
+<tbody><tr>
+<td style=3D"text-align:left;padding-right:15px;"><table width=3D"25" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2BzWhQWNW2y=
+0pfZIYB7UX6BotmCNGersmc7g488kiZ0b8_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1=
+n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT7h4F=
+k8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgjaMqx=
+V8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6ch45Z=
+fPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3pi4PCJUtFxZiyG6rHBGjJLQrgKBbu=
+92B5MawZEiwNrSMpAQfRT-2FntnnO-2FEp4pxk5HLbm2s-2B3ao-2BZGpELqDpKS8pcypjAOF3I=
+gMsBZWomLemjJhHZeUvIB1OARZUPQd7Ixt3sCDlxeImbiFRzXf18lITr-2BI6O44UmN2WMr1bAU=
+o81KTBit2UbLkMgygWvQOE8bo7Kup4yDhc0PtugPeTjzA1LBwqSamDEd5MZBhDfT6nqQ9Vtw-3D=
+-3D"><img src=3D"https://s3.amazonaws.com/uber-static/emails/2017/global/so=
+cial/footer_social_facebook50x40.png" style=3D"border:none;clear:both;displ=
+ay:block;min-height:20px;max-width:100%;outline:none;text-decoration:none;w=
+idth:25px;" alt=3D"" class=3D"yiv2335178387" width=3D"25" height=3D"20" id=
+=3D"yiv2335178387OWATemporaryImageDivContainer97690"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B7TWQX-2FZ=
+p9d6Vb1NubJYc99ZnjtkMt6W5-2BaeWXtj7EaO_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOH=
+HZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT=
+7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgj=
+aMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6c=
+h45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3pi4PCJsG1M7Sv3utzeqpSgLdF=
+gpqr-2BXBrt4w4gw3diM7IsspnhO-2FLqkfnFBLTRq4fLCDLKZyxwruADNkV6mBKni8hPQtt8QS=
+z-2BxaUOEsq5DzGIhRa-2BTg2dIMv2MfpBZBXDKO1h4nYSSIhYmYvdJyIIj2FWtmI-2B6X3BzFl=
+sZQduA9xjA2wFkEVQn9lvYZCoEMT67OQwhIjz0krFR9PTlNA96e5agbzEo3xAtNJqaR5tuti6WU=
+Q-3D-3D"><img src=3D"https://s3.amazonaws.com/uber-static/emails/2017/globa=
+l/social/footer_social_twitter50x40.png" style=3D"border:none;clear:both;di=
+splay:block;min-height:20px;max-width:100%;outline:none;text-decoration:non=
+e;width:25px;" width=3D"25" height=3D"20" alt=3D"" class=3D"yiv2335178387" =
+id=3D"yiv2335178387OWATemporaryImageDivContainer1948390"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2BwpNgEUODG=
+jJDQHwrDo-2FfZpXVOrIunYfLjWGIvdJRbx-2F_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOH=
+HZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT=
+7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgj=
+aMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6c=
+h45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3pi4PCL4eARVsSNP7DoULSZ7Hc=
+bi-2FMytRFasfpMtl447hapy9l-2BNG0lS1DcvKgjfLsjGDWO-2B7G6-2Byo09v-2BVv5AW62Ru=
+eahSHOj112Xcsl4nrgY6FKup2IZhbOSNHylrpD1iMxdJZ9DlqOsPOSih9axLzS2vmFu-2BX9PKx=
+ooMbGv73aktPEM5Ama2quqPyx94Wa2ziUAtsFlEooVxol8ozJ8U1HsA0k40m6pPWv7InbrO1hLy=
+5Ww-3D-3D"><img src=3D"https://s3.amazonaws.com/uber-static/emails/2017/glo=
+bal/social/footer_social_instagram50x40.png" style=3D"border:none;clear:bot=
+h;display:block;min-height:20px;max-width:100%;outline:none;text-decoration=
+:none;width:25px;" width=3D"25" height=3D"20" alt=3D"" class=3D"yiv23351783=
+87" id=3D"yiv2335178387OWATemporaryImageDivContainer1155660"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B1YhCHQAEk=
+t9yoT3fICys2JioqvDx499wZ0RthNGYg6VEIFKtI59GztuNGznPoaBgQ-3D-3D_b4FX5-2FwMFb=
+eNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCb=
+O8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9=
+AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BG=
+piJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3p=
+i4PCIdjjntglrqhjCQODAgxctjT2SrxzYjnBQvzNtb-2F7-2FDChYrHHCcm8lGCOwdQDzGGRCdj=
+gaPQVYLFUkeF9QhwtUaukHXfzbjPagzIxWuY65WA7YGnlkPiabi8MEzCLgGBiuzKW393It7F1lt=
+5oHjwfguOcjYEOtAJngw0QGuZjrcR5ig8HuJBHiGCE3O6UH4AwGvXKIf1NAxZfdjSKN5N2xOQ1f=
+W-2FRbuCFBeRjih-2BcFOxA-3D-3D"><img src=3D"https://s3.amazonaws.com/uber-st=
+atic/emails/2017/global/social/footer_social_linkedin50x40.png" style=3D"bo=
+rder:none;clear:both;display:block;min-height:20px;max-width:100%;outline:n=
+one;text-decoration:none;width:25px;" width=3D"25" height=3D"20" alt=3D"" c=
+lass=3D"yiv2335178387" id=3D"yiv2335178387OWATemporaryImageDivContainer1389=
+305"></a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"padding:40px 0px 0px 0px;text-align:left;"><table width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;bo=
+rder-collapse:collapse;border-spacing:0;" class=3D"yiv2335178387">
+
+<tbody><tr>
+<td height=3D"1" style=3D"font-size:0px;line-height:0px;background:rgb(51, =
+51, 51);text-align:left;">&nbsp;</td>
+</tr>
+
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"text-align:left;"><table width=3D"100%" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;" class=3D"yiv2335178387">
+<tbody><tr>
+<td style=3D"vertical-align:top;text-align:left;" valign=3D"top">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:335px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:30px;vertical-align:top;text-align:left;" valign=
+=3D"top" align=3D"left"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"yiv2335178387basetable" width=3D"100%" align=3D"left" style=
+=3D"border:none;border-collapse:collapse;border-spacing:0;table-layout:fixe=
+d;">
+<tbody><tr>
+<td class=3D"yiv2335178387p2" style=3D"color:rgb(255, 255, 255);font-family=
+:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, =
+Arial, sans-serif;font-size:14px;line-height:28px;text-align:left;" align=
+=3D"left"><a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.c=
+om/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2Bx2paTSh9Smww2ZWBfKdIRQ-3D_b4FX5-=
+2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8=
+NncNCbO8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReO=
+k-2FA9AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h0=
+1g-2BGpiJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7x=
+ukMd3pi4PCJjTKY726EQa9Mhfx6vuirNqMa9MgFRYcx7xXmccAtFKCmVQUXw7-2F9fcj-2FJHo-=
+2Bix0q23xk1pphFIFS7RpS5xHmPXKGUForNc6jknGgBXneQa9Lpook6Z4MC-2FCiAhDK18yW0hV=
+LrlFK7flvgU08XH19YIrFLrgNEBCrM7OrAhS-2F8g9rto06a-2BX8efiIqtPsuHOSkioblQZe20=
+Df0SfHUUDFei9raKrCQGNSDwFCbl6UEtA-3D-3D" style=3D"color:#ffffff;text-decora=
+tion:none;">Get help</a></td>
+</tr>
+
+<tr>
+<td class=3D"yiv2335178387p2" style=3D"color:rgb(255, 255, 255);font-family=
+:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, =
+Arial, sans-serif;font-size:14px;line-height:28px;text-align:left;" align=
+=3D"left"><a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.c=
+om/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2ByInknzUeA-2FEK6SdGuNVIDk9Dzw04Q8=
+62LcfmTGDws3Wg3s4fZTy2CVGlJrkbIY4CWlvqQsRz0Q-2BhkUhB4ROK95Hgo93c9FpaPIcdf8G=
+XhaF_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yK=
+q6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9=
+Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pc=
+EiZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa9=
+8AkxslITS7xukMd3pi4PCJrvWhvGxecZCwTkIu7kMH5Zz36-2BJTQBBhFawdKGpCapOHlGfNtgz=
+MPU7f9noRfV0wWGmXPXC-2FjPGGO-2BYCtkdJ-2BNo9rZDEczR1YOtk5-2BBhltkPrNfCp4FHbb=
+sSma2JVKmI7wf8WG7fUPX4Eg3zvwuBv1AlqdqrfoExGJKAhW8LYKaz8D7T1WdQafkBO-2BZIfVT=
+tK7u86G89y2SooGF6gk6tFr1SVZcZ5Mf96NyYoose8-2BA-3D-3D" style=3D"color:#fffff=
+f;text-decoration:none;">Unsubscribe</a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:313px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"yiv2335178387basetable" width=3D"100%" align=3D"left" =
+style=3D"border:none;border-collapse:collapse;border-spacing:0;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv2335178=
+387basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:205px;table-layout:fixed;">
+<tbody><tr>
+
+<td style=3D"color:rgb(157, 157, 163);font-family:'ClanPro-Medium', Helveti=
+ca, Arial, sans-serif;font-size:12px;line-height:18px;padding-top:30px;text=
+-align:left;" class=3D"yiv2335178387p3" align=3D"left">
+
+
+
+
+Uber B.V.<br>
+Vijzelstraat 68, 1017 HL <br>
+Amsterdam, Nederland </td>
+</tr>
+
+<tr>
+<td style=3D"color:rgb(157, 157, 163);font-family:'ClanPro-Medium', Helveti=
+ca, Arial, sans-serif;font-size:12px;line-height:26px;padding-top:6px;text-=
+align:left;" class=3D"yiv2335178387p3" align=3D"left"><a rel=3D"nofollow" t=
+arget=3D"_blank" href=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGF=
+X9ZvjAvAP-2B4U0SAY7Fg941f3qlAwxEvnrIQ6R3BTyR5CGqDjzzw5jAbOc5gbqXq3AeEcUu4zN=
+zQ-3D-3D_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfK=
+x5yKq6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNV=
+J4L9Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8f=
+y6pcEiZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1=
+yGa98AkxslITS7xukMd3pi4PCJeFxQ4xU9Geqv82VXxHnyuaEQUmcZODad4divcRcIgcnswBMzB=
+UOLjEuzMZyhp3CrhrhdRE21kK0832ZjNTa-2FeMdP2Dl2KtSVZycXWCwa6YujLHbjQLxvBt-2Fj=
+zJS6RlFm5ylOHNfj3BSUrBIoeA07s3AiOq8yHZ6sxk0ye3ATk6m2LYtIpMczuhXs1UrkE5poXM8=
+ogDKme-2FGDAoMPMoq5E6eT9UHzJiyjT7FsXNZuXMA-3D-3D" style=3D"color:#ffffff;te=
+xt-decoration:none;">Privacy</a> <br>
+<a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.com/wf/clic=
+k?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B4U0SAY7Fg941f3qlAwxEvn8rd9qsNs-2Fxl1OE4bxG=
+QHL_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq=
+6qWdXSfpT8NncNCbO8ZULep4gcYwd4UPq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9K=
+b92-2B3ReOk-2FA9AEsJZRoSGwTRa9xsOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcE=
+iZAYOtD2h01g-2BGpiJrqkyE2GmhbVsmMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98=
+AkxslITS7xukMd3pi4PCKp2ZtA5sajNzKjPhGolOAEQ19LuOEYrNAwCqMJ6xNYlX2-2F5rUya6h=
+wrJdSXIFJSH17AIHlOuZEkZ7B49hbjxwk9etLoeHqjomQua1VFLLCOZJ-2BQL7bY9taqf-2FDia=
+7x2mI5msCjij3tTAH-2FRmsV0VU2Phg4mIyPHzryV3hR8HcKVkjehr7nzbvUs73M8yPArOvKU1N=
+aD3XVFIL4-2BFjl3A3FWMt5IvqfzFLJUjoetybRUg-3D-3D" style=3D"color:#ffffff;tex=
+t-decoration:none;">Terms</a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-top:60px;text-align:left=
+;">&nbsp;</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<img src=3D"http://email.uber.com/wf/open?upn=3Db4FX5-2FwMFbeNHLhUKYm6ivOnL=
+89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5yKq6qWdXSfpT8NncNCbO8ZULep4gcYwd4U=
+Pq6gCE4MT7h4Fk8Pa7U6U2fFZOBxqa-2FrNFSNVJ4L9Kb92-2B3ReOk-2FA9AEsJZRoSGwTRa9x=
+sOtBkqxgjaMqxV8FQ0Ewsa3v-2BQ0-2F3ZKcA8fy6pcEiZAYOtD2h01g-2BGpiJrqkyE2GmhbVs=
+mMK-2Fg6ch45ZfPFyUx7N6YVKrs8m058TGZ42W1yGa98AkxslITS7xukMd3pi4PCIl6MQk-2BMW=
+y6m5GANGeXlhXy-2BWX9Z0Y-2BPj1kzcfOXRPljRsRRNLeibSLJHZWA4E-2FYA7BQPEhR4QHQjU=
+EnHceOyq8IE77cZaxE9TMOo-2FxSq0sMNpuTRlxWNH18mr9q0NiJAvlQ4HNAfts9iS-2F1LReKJ=
+a72ny8X8mAT60s8eaJh1cMvagSqlh8TymuPgrPFQmJsGT9lSKi1rlxwabS6wsgmKrYZyb-2F84T=
+SrhDxaUFKHTLFQ-3D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=
+=3D"min-height:1px !important;width:1px !important;border-width:0 !importan=
+t;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !import=
+ant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !imp=
+ortant;padding-right:0 !important;padding-left:0 !important;">
+</div>
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_7629867_1814311428.1505999951359--

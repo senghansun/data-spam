@@ -1,0 +1,994 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 21 Sep 2017 13:18:27 +0000
+Return-Path: <hitsu_lim25@yahoo.com>
+Received-SPF: pass (domain of yahoo.com designates 106.10.241.140 as permitted sender) 
+X-YMailISG: WPMqrvUWLDuZAuqsoCGbZSCaQdVI_7zyjZmwSYUzwxC4F7Rr
+ q80GC_iJ4CdJ0n9UwqiYaXyJ10Wn2eAEpOi9VLcMLom0FI7Z9uJuAaRx_2Tj
+ wRCpkqilKfcxQ09sJ5ofaeOiYHMv1Lo3oiYqct2PRTD_LTEZjXGpObZ9Dd.8
+ ieGJOCapkYLFCGSwzJfRrizGucaeaHVKkQXvTrvM2NU7U6Mn9.YqvnNmpZbi
+ _eG2Mq1kfB_kXLSSo8hrHlH2T6bB6UTF4ycbvMBjwWZeFjNd9.4qN8RGdN2Q
+ KidKZDik9Ui88Ch_9W.bqWKAI7JHB0ZPBgrzHg31hLokAE_pYQqdunMc53Zj
+ GpmThPGK3_wVS3oc2at1p5.VfkzTTAx8nqKEFAQ4sUGHDbojZVHbmuf1UWy8
+ GkWVlJl5Iv3vmMWwbSUw3cWercf_kAHlh_Qd2PrLtPIBr.rQx8S5BoKn6oXp
+ qto9OrdJ94AfW7o6WiNXMGEnQHrNdQZIjD9zXLXKGsJW7XD.OuuYRxO5VyI8
+ mH9Cd6xdKAATKpfHu3dt9wr2O5Xx_NkB4WkKcAVe.QVg1Ins.UOlcjFvVl_1
+ 9MPYVWRVjGQZ2kAvg5qWVa7hf8A98Uz1Tc7M5pHYgBcP.e1FTqg5AIOoAd1X
+ VxzuRgCdpccAUVOTDT6ozIY3EovoFVNUdcCBJpAOVmjXkdzHRqL2pES.F12a
+ 4rZwWac2Zhmu3BOX0.CWZPTv3fm1yWd1o2PuEtEcljeJs2bjLaVA3oFXFUuE
+ 0NWIJD8ppH_91ig3qtnIfen4xSz92nMZauo_CZqFdREFNyVJz6lffyhGzbqz
+ VpGb5pNlVUFlaaJy006hI_zeBePj8NuiWJLjfbuyxkKjClOI71pIWJyXojbY
+ 0nasanQaqChk6PwBcih7gr7rWre8G6KCxPnJxT7RaWrMuJpqfsmzV19dzZev
+ orkbrKQbg0gFD0K_FsGphRvyd7AdxPj7YrmHvYce1aQMdT5s60ky83BSViGn
+ dDyL10B5DSp2qyV7TXUNvWpSXyfjkTIFqT6iquG3VSGcNOOfl1tUApTMjNvf
+ xkJ5rsWH7QdNSirF3ZVNXRYhCmLKqCfiT_uSZ0kGj5z6MLVw.eKfF9.9AIkh
+ Z5IhPXOwpz9YJeGh9NZT5q7cueUDJzy3GZyU9rxDW9WvKb5cu7VbtPlWBDkg
+ H56s4gDHpoAjN0zCrIYkZaXhmpk7UjLRlufuycxISaT.ag--
+X-Originating-IP: [106.10.241.140]
+Authentication-Results: mta1145.mail.gq1.yahoo.com  from=yahoo.com; domainkeys=neutral (no sig);  from=yahoo.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO sonic306-20.consmr.mail.sg3.yahoo.com) (106.10.241.140)
+  by mta1145.mail.gq1.yahoo.com with SMTPS; Thu, 21 Sep 2017 13:18:27 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1505999904; bh=hClf3TJir7X5vnnkU8Hg5pjP2xDxGe8y1sRVCvTov/s=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=OleVX+J1ySJ4gKg+SIrTw3aUH7WOgY7WS3BE+l2vVX8BnNjUouQYaaQ++ssdwHWc8jlGhGkYhiiP4DSzz+y1JOh/xn4daPDw7XTIKYM/9CZMfH4jJom3ee8qhEVy3ONwkrzgjihobceZ/ogABQr/UAGODhw/2zXSZowvq3CraDbCBPlY6FPKwo4grQh8l23XabDXNTXavhR9LCWRs+tV0Pqu8KXGLJQNifyadjGQjqAzqJDYduuwamxfThFPgnCp912pvAvoVcSEbbaGLu5+yeY64kbShv+O32SPV5FqmY6OLjPD1wKnL1EKU9T8bVJvtTYYaL2YEp5G//8NfAb5WA==
+X-YMail-OSG: wKOgzv0VM1naTXJcABBQoic_bzx3Q0rUTiulicgUeYrd7PKCjVYtf.eqIq7VNzL
+ 6KNt_SiyrDKKoHSMUVPKrpDVwWL4ixs2NDKRqdxip7lQZy78BY9NXl4m2r9MOcOsr_S_xFXb.d65
+ 6dd5.mhLDTS.Y1wIMCQDjNRYUVxaifi9BKjBRtxrrPxxHmV6HvMA82niw7J5p8F.fhHUpxBOUi3C
+ dCD8EQWDRz9C5F111r7bh6XHRHwVrir70bdPsf0UAqhzeyGiCBIa5A6XljFG9A_WwPzUGOORXY_t
+ nP39VAHMwjsyt2TiJ..bAgkJcwaZDic4CPQoc_CUO2ElyDnHeG1vNLSEkW6.ceUs4ekKud0UCejH
+ h3QGteQFYTeVsAm_wWtxByxZ.sCGaPdYPuHG4NkbEoxBuXhEuDU.7J1.X.iiWlNPQHcFATnmPn2H
+ eeGgJ.ReE7pXt28kX9mkLzIeB6wmpcz22xdbrjMxqmBWGnceguSRRuLXUagS2cdQyMRjPN5qr7eF
+ 1RAc-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic306.consmr.mail.sg3.yahoo.com with HTTP; Thu, 21 Sep 2017 13:18:24 +0000
+Date: Thu, 21 Sep 2017 13:18:18 +0000 (UTC)
+From: edwin lim <hitsu_lim25@yahoo.com>
+Reply-To: edwin lim <hitsu_lim25@yahoo.com>
+To: "yustinus_vernanda@yahoo.com" <yustinus_vernanda@yahoo.com>
+Message-ID: <1427831321.7624324.1505999898955@mail.yahoo.com>
+In-Reply-To: <a4b282e66ea8e93693bc73c17.2c64c56283.20170920124110.59e081fab1.8cc21589@mail163.suw18.rsgsv.net>
+References: <a4b282e66ea8e93693bc73c17.2c64c56283.20170920124110.59e081fab1.8cc21589@mail163.suw18.rsgsv.net>
+Subject: Trs: Mau VIVO V7+? NgeGrab aja!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7624323_35632441.1505999898950"
+X-Mailer: WebService/1.1.10521 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Content-Length: 45013
+
+------=_Part_7624323_35632441.1505999898950
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+     Pada Rabu, 20 September 2017 19:44, Grab Indonesia <no-reply@grab.com>=
+ menulis:
+=20
+
+  Mau VIVO V7+? NgeGrab aja!#yiv0676866967 p{margin:10px 0;padding:0;}#yiv0=
+676866967 table{border-collapse:collapse;}#yiv0676866967 h1, #yiv0676866967=
+ h2, #yiv0676866967 h3, #yiv0676866967 h4, #yiv0676866967 h5, #yiv067686696=
+7 h6{display:block;margin:0;padding:0;}#yiv0676866967 img, #yiv0676866967 a=
+ img{border:0;min-height:auto;outline:none;text-decoration:none;}#yiv067686=
+6967 body, #yiv0676866967 #yiv0676866967bodyTable, #yiv0676866967 #yiv06768=
+66967bodyCell{min-height:100%;margin:0;padding:0;width:100%;}#yiv0676866967=
+ .yiv0676866967mcnPreviewText{display:none;}#yiv0676866967 #yiv0676866967ou=
+tlook a{padding:0;}#yiv0676866967 img{}#yiv0676866967 table{}#yiv0676866967=
+ .yiv0676866967ReadMsgBody{width:100%;}#yiv0676866967 .yiv0676866967Externa=
+lClass{width:100%;}#yiv0676866967 p, #yiv0676866967 a, #yiv0676866967 li, #=
+yiv0676866967 td, #yiv0676866967 blockquote{}#yiv0676866967 a .filtered9999=
+9 , #yiv0676866967 a .filtered99999 {color:inherit;cursor:default;text-deco=
+ration:none;}#yiv0676866967 p, #yiv0676866967 a, #yiv0676866967 li, #yiv067=
+6866967 td, #yiv0676866967 body, #yiv0676866967 table, #yiv0676866967 block=
+quote{}#yiv0676866967 .yiv0676866967ExternalClass, #yiv0676866967 .yiv06768=
+66967ExternalClass p, #yiv0676866967 .yiv0676866967ExternalClass td, #yiv06=
+76866967 .yiv0676866967ExternalClass div, #yiv0676866967 .yiv0676866967Exte=
+rnalClass span, #yiv0676866967 .yiv0676866967ExternalClass font{line-height=
+:100%;}#yiv0676866967 a .filtered99999 {color:inherit;text-decoration:none;=
+font-size:inherit !important;font-family:inherit !important;font-weight:inh=
+erit;line-height:inherit !important;}#yiv0676866967 #yiv0676866967bodyCell{=
+padding:10px;}#yiv0676866967 .yiv0676866967templateContainer{max-width:600p=
+x !important;}#yiv0676866967 a.yiv0676866967mcnButton{display:block;}#yiv06=
+76866967 .yiv0676866967mcnImage{vertical-align:bottom;}#yiv0676866967 .yiv0=
+676866967mcnTextContent{}#yiv0676866967 .yiv0676866967mcnTextContent img{mi=
+n-height:auto !important;}#yiv0676866967 .yiv0676866967mcnDividerBlock{tabl=
+e-layout:fixed;}#yiv0676866967 body, #yiv0676866967 #yiv0676866967bodyTable=
+{background-color:#FAFAFA;}#yiv0676866967 #yiv0676866967bodyCell{border-top=
+:0;}#yiv0676866967 .yiv0676866967templateContainer{border:0;}#yiv0676866967=
+ h1{color:#202020;font-family:Helvetica;font-size:26px;font-style:normal;fo=
+nt-weight:bold;line-height:125%;letter-spacing:normal;text-align:left;}#yiv=
+0676866967 h2{color:#202020;font-family:Helvetica;font-size:22px;font-style=
+:normal;font-weight:bold;line-height:125%;letter-spacing:normal;text-align:=
+left;}#yiv0676866967 h3{color:#202020;font-family:Helvetica;font-size:20px;=
+font-style:normal;font-weight:bold;line-height:125%;letter-spacing:normal;t=
+ext-align:left;}#yiv0676866967 h4{color:#202020;font-family:Helvetica;font-=
+size:18px;font-style:normal;font-weight:bold;line-height:125%;letter-spacin=
+g:normal;text-align:left;}#yiv0676866967 #yiv0676866967templatePreheader{ba=
+ckground-color:#FAFAFA;background-image:none;background-repeat:no-repeat;ba=
+ckground-position:center;background-size:cover;border-top:0;border-bottom:0=
+;padding-top:9px;padding-bottom:9px;}#yiv0676866967 #yiv0676866967templateP=
+reheader .yiv0676866967mcnTextContent, #yiv0676866967 #yiv0676866967templat=
+ePreheader .yiv0676866967mcnTextContent p{color:#656565;font-family:Helveti=
+ca;font-size:12px;line-height:150%;text-align:left;}#yiv0676866967 #yiv0676=
+866967templatePreheader .yiv0676866967mcnTextContent a, #yiv0676866967 #yiv=
+0676866967templatePreheader .yiv0676866967mcnTextContent p a{color:#656565;=
+font-weight:normal;text-decoration:underline;}#yiv0676866967 #yiv0676866967=
+templateHeader{background-color:#FFFFFF;background-image:none;background-re=
+peat:no-repeat;background-position:center;background-size:cover;border-top:=
+0;border-bottom:0;padding-top:0px;padding-bottom:0;}#yiv0676866967 #yiv0676=
+866967templateHeader .yiv0676866967mcnTextContent, #yiv0676866967 #yiv06768=
+66967templateHeader .yiv0676866967mcnTextContent p{color:#202020;font-famil=
+y:Helvetica;font-size:16px;line-height:150%;text-align:left;}#yiv0676866967=
+ #yiv0676866967templateHeader .yiv0676866967mcnTextContent a, #yiv067686696=
+7 #yiv0676866967templateHeader .yiv0676866967mcnTextContent p a{color:#2BAA=
+DF;font-weight:normal;text-decoration:underline;}#yiv0676866967 #yiv0676866=
+967templateBody{background-color:#FFFFFF;background-image:none;background-r=
+epeat:no-repeat;background-position:center;background-size:cover;border-top=
+:0;border-bottom:0;padding-top:0px;padding-bottom:0;}#yiv0676866967 #yiv067=
+6866967templateBody .yiv0676866967mcnTextContent, #yiv0676866967 #yiv067686=
+6967templateBody .yiv0676866967mcnTextContent p{color:#202020;font-family:H=
+elvetica;font-size:16px;line-height:150%;text-align:left;}#yiv0676866967 #y=
+iv0676866967templateBody .yiv0676866967mcnTextContent a, #yiv0676866967 #yi=
+v0676866967templateBody .yiv0676866967mcnTextContent p a{color:#2BAADF;font=
+-weight:normal;text-decoration:underline;}#yiv0676866967 #yiv0676866967temp=
+lateColumns{background-color:#FFFFFF;background-image:none;background-repea=
+t:no-repeat;background-position:center;background-size:cover;border-top:0;b=
+order-bottom:2px solid #EAEAEA;padding-top:0;padding-bottom:9px;}#yiv067686=
+6967 #yiv0676866967templateColumns .yiv0676866967columnContainer .yiv067686=
+6967mcnTextContent, #yiv0676866967 #yiv0676866967templateColumns .yiv067686=
+6967columnContainer .yiv0676866967mcnTextContent p{color:#202020;font-famil=
+y:Helvetica;font-size:16px;line-height:150%;text-align:left;}#yiv0676866967=
+ #yiv0676866967templateColumns .yiv0676866967columnContainer .yiv0676866967=
+mcnTextContent a, #yiv0676866967 #yiv0676866967templateColumns .yiv06768669=
+67columnContainer .yiv0676866967mcnTextContent p a{color:#2BAADF;font-weigh=
+t:normal;text-decoration:underline;}#yiv0676866967 #yiv0676866967templateFo=
+oter{background-color:#FAFAFA;background-image:none;background-repeat:no-re=
+peat;background-position:center;background-size:cover;border-top:0;border-b=
+ottom:0;padding-top:9px;padding-bottom:9px;}#yiv0676866967 #yiv0676866967te=
+mplateFooter .yiv0676866967mcnTextContent, #yiv0676866967 #yiv0676866967tem=
+plateFooter .yiv0676866967mcnTextContent p{color:#656565;font-family:Helvet=
+ica;font-size:12px;line-height:150%;text-align:center;}#yiv0676866967 #yiv0=
+676866967templateFooter .yiv0676866967mcnTextContent a, #yiv0676866967 #yiv=
+0676866967templateFooter .yiv0676866967mcnTextContent p a{color:#656565;fon=
+t-weight:normal;text-decoration:underline;}@media screen and (min-width:768=
+px){#yiv0676866967 .yiv0676866967templateContainer{width:600px !important;}=
+}@media screen and (max-width:480px){#yiv0676866967 body, #yiv0676866967 ta=
+ble, #yiv0676866967 td, #yiv0676866967 p, #yiv0676866967 a, #yiv0676866967 =
+li, #yiv0676866967 blockquote{}}@media screen and (max-width:480px){#yiv067=
+6866967 body{width:100% !important;min-width:100% !important;}}@media scree=
+n and (max-width:480px){#yiv0676866967 #yiv0676866967bodyCell{padding-top:1=
+0px !important;}}@media screen and (max-width:480px){#yiv0676866967 .yiv067=
+6866967columnWrapper{max-width:100% !important;width:100% !important;}}@med=
+ia screen and (max-width:480px){#yiv0676866967 .yiv0676866967mcnImage{width=
+:100% !important;}}@media screen and (max-width:480px){#yiv0676866967 .yiv0=
+676866967mcnCartContainer, #yiv0676866967 .yiv0676866967mcnCaptionTopConten=
+t, #yiv0676866967 .yiv0676866967mcnRecContentContainer, #yiv0676866967 .yiv=
+0676866967mcnCaptionBottomContent, #yiv0676866967 .yiv0676866967mcnTextCont=
+entContainer, #yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer, #y=
+iv0676866967 .yiv0676866967mcnImageGroupContentContainer, #yiv0676866967 .y=
+iv0676866967mcnCaptionLeftTextContentContainer, #yiv0676866967 .yiv06768669=
+67mcnCaptionRightTextContentContainer, #yiv0676866967 .yiv0676866967mcnCapt=
+ionLeftImageContentContainer, #yiv0676866967 .yiv0676866967mcnCaptionRightI=
+mageContentContainer, #yiv0676866967 .yiv0676866967mcnImageCardLeftTextCont=
+entContainer, #yiv0676866967 .yiv0676866967mcnImageCardRightTextContentCont=
+ainer{max-width:100% !important;width:100% !important;}}@media screen and (=
+max-width:480px){#yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer{=
+min-width:100% !important;}}@media screen and (max-width:480px){#yiv0676866=
+967 .yiv0676866967mcnImageGroupContent{padding:9px !important;}}@media scre=
+en and (max-width:480px){#yiv0676866967 .yiv0676866967mcnCaptionLeftContent=
+Outer .yiv0676866967mcnTextContent, #yiv0676866967 .yiv0676866967mcnCaption=
+RightContentOuter .yiv0676866967mcnTextContent{padding-top:9px !important;}=
+}@media screen and (max-width:480px){#yiv0676866967 .yiv0676866967mcnImageC=
+ardTopImageContent, #yiv0676866967 .yiv0676866967mcnCaptionBlockInner .yiv0=
+676866967mcnCaptionTopContent:last-child .yiv0676866967mcnTextContent{paddi=
+ng-top:18px !important;}}@media screen and (max-width:480px){#yiv0676866967=
+ .yiv0676866967mcnImageCardBottomImageContent{padding-bottom:9px !important=
+;}}@media screen and (max-width:480px){#yiv0676866967 .yiv0676866967mcnImag=
+eGroupBlockInner{padding-top:0 !important;padding-bottom:0 !important;}}@me=
+dia screen and (max-width:480px){#yiv0676866967 .yiv0676866967mcnImageGroup=
+BlockOuter{padding-top:9px !important;padding-bottom:9px !important;}}@medi=
+a screen and (max-width:480px){#yiv0676866967 .yiv0676866967mcnTextContent,=
+ #yiv0676866967 .yiv0676866967mcnBoxedTextContentColumn{padding-right:18px =
+!important;padding-left:18px !important;}}@media screen and (max-width:480p=
+x){#yiv0676866967 .yiv0676866967mcnImageCardLeftImageContent, #yiv067686696=
+7 .yiv0676866967mcnImageCardRightImageContent{padding-right:18px !important=
+;padding-bottom:0 !important;padding-left:18px !important;}}@media screen a=
+nd (max-width:480px){#yiv0676866967 .yiv0676866967mcpreview-image-uploader{=
+display:none;width:100% !important;}}@media screen and (max-width:480px){#y=
+iv0676866967 h1{font-size:22px !important;line-height:125% !important;}}@me=
+dia screen and (max-width:480px){#yiv0676866967 h2{font-size:20px !importan=
+t;line-height:125% !important;}}@media screen and (max-width:480px){#yiv067=
+6866967 h3{font-size:18px !important;line-height:125% !important;}}@media s=
+creen and (max-width:480px){#yiv0676866967 h4{font-size:16px !important;lin=
+e-height:150% !important;}}@media screen and (max-width:480px){#yiv06768669=
+67 .yiv0676866967mcnBoxedTextContentContainer .yiv0676866967mcnTextContent,=
+ #yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer .yiv0676866967mc=
+nTextContent p{font-size:14px !important;line-height:150% !important;}}@med=
+ia screen and (max-width:480px){#yiv0676866967 #yiv0676866967templatePrehea=
+der{display:block;}}@media screen and (max-width:480px){#yiv0676866967 #yiv=
+0676866967templatePreheader .yiv0676866967mcnTextContent, #yiv0676866967 #y=
+iv0676866967templatePreheader .yiv0676866967mcnTextContent p{font-size:14px=
+ !important;line-height:150% !important;}}@media screen and (max-width:480p=
+x){#yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent=
+, #yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent =
+p{font-size:16px !important;line-height:150% !important;}}@media screen and=
+ (max-width:480px){#yiv0676866967 #yiv0676866967templateBody .yiv0676866967=
+mcnTextContent, #yiv0676866967 #yiv0676866967templateBody .yiv0676866967mcn=
+TextContent p{font-size:16px !important;line-height:150% !important;}}@medi=
+a screen and (max-width:480px){#yiv0676866967 #yiv0676866967templateColumns=
+ .yiv0676866967columnContainer .yiv0676866967mcnTextContent, #yiv0676866967=
+ #yiv0676866967templateColumns .yiv0676866967columnContainer .yiv0676866967=
+mcnTextContent p{font-size:16px !important;line-height:150% !important;}}@m=
+edia screen and (max-width:480px){#yiv0676866967 #yiv0676866967templateFoot=
+er .yiv0676866967mcnTextContent, #yiv0676866967 #yiv0676866967templateFoote=
+r .yiv0676866967mcnTextContent p{font-size:14px !important;line-height:150%=
+ !important;}} =20
+| =20
+|  |
+|=20
+| =20
+|  |
+| =20
+|  | =20
+|    |   |  |
+
+ |
+
+  |
+
+
+|  |
+
+  |
+
+
+| =20
+|      |
+
+  |
+
+ |
+|=20
+| =20
+| =20
+|  Hai Grabbers,
+
+7 hari ke depan akan jadi luar biasa karena ada GRAB YOUR PERFECT 7, kerja =
+sama antara Grab dan Vivo yang memberikanmu kesempatan memenangkan ponsel V=
+IVO seri 7 terbaru dan free pass Vivo V7+ Perfect Moment Grand Launch! Mau =
+ikutan kan?=C2=A0
+
+Cara ikutannya, Pesan GrabCar dan GrabBike sebanyak-banyaknya mulai 20 - 26=
+ September 2017 dengan kode promo GRABVIVO dan nikmati kesempatanmu dapat p=
+engalaman terseru tahun ini!
+
+Pemenang akan diumumkan di akun Instagram=C2=A0Grab Indonesia pada 21 =E2=
+=80=93 27 September 2017 pukul 11.00 WIB. Pastikan kamu ga ketinggalan kese=
+ruannya! Karena ini, baru luar biasa!
+=C2=A0Berangkat dengan Grab dan ikutan GRAB YOUR PERFECT 7:1. Siap-siap buk=
+a aplikasi Grab.
+2. Pilih layanan GrabBike/GrabCar.
+3. Masukkan lokasi penjemputan dan tujuan.
+4. Masukkan kode promo GRABVIVO.
+5. Good luck!
+Syarat & Ketentuan berlaku.  |
+
+  |
+
+  |
+
+
+| =20
+|  Info lanjut  |
+
+  |
+
+ |
+| =20
+|  |
+
+=20
+|  |
+
+  |
+|=20
+| =20
+|  |
+|  | =20
+|   |
+| =20
+|   Help Centre
+
+ Grab Indonesia
+ I do not want to receive emails like this.
+   |  Stay connected with us.
+
+ =C2=A0=C2=A0 =C2=A0=C2=A0 =C2=A0=C2=A0 =20
+
+  |
+
+  |
+|  |
+
+ |  |
+
+  |
+
+ |
+
+  |
+
+ =20
+
+  =20
+------=_Part_7624323_35632441.1505999898950
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px"><div id=3D"yui_3_16_0_ym19_1_1505999512688_5928"><span></span><=
+/div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_ym19_1_1505999512688_593=
+0"><br><br></div>  <div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_1505=
+999512688_5955" style=3D"display: block;"> <div style=3D"font-family: Helve=
+tica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;" i=
+d=3D"yui_3_16_0_ym19_1_1505999512688_5954"> <div style=3D"font-family: Helv=
+eticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; fon=
+t-size: 16px;" id=3D"yui_3_16_0_ym19_1_1505999512688_5953"> <div dir=3D"ltr=
+"><font size=3D"2" face=3D"Arial"> Pada Rabu, 20 September 2017 19:44, Grab=
+ Indonesia &lt;no-reply@grab.com&gt; menulis:<br></font></div>  <br><br> <d=
+iv class=3D"y_msg_container" id=3D"yui_3_16_0_ym19_1_1505999512688_5952"><d=
+iv id=3D"yiv0676866967">
+
+=09
+=09=09
+=09=09=20
+       =20
+       =20
+=09=09<title>Mau VIVO V7+? NgeGrab aja!</title>
+
+    <style type=3D"text/css">
+#yiv0676866967 p{
+margin:10px 0;padding:0;}
+#yiv0676866967 table{
+border-collapse:collapse;}
+#yiv0676866967 h1, #yiv0676866967 h2, #yiv0676866967 h3, #yiv0676866967 h4,=
+ #yiv0676866967 h5, #yiv0676866967 h6{
+display:block;margin:0;padding:0;}
+#yiv0676866967 img, #yiv0676866967 a img{
+border:0;min-height:auto;outline:none;text-decoration:none;}
+#yiv0676866967 body, #yiv0676866967 #yiv0676866967bodyTable, #yiv0676866967=
+ #yiv0676866967bodyCell{
+min-height:100%;margin:0;padding:0;width:100%;}
+#yiv0676866967 .yiv0676866967mcnPreviewText{
+display:none;}
+#yiv0676866967 #yiv0676866967outlook a{
+padding:0;}
+#yiv0676866967 img{
+}
+#yiv0676866967 table{
+}
+#yiv0676866967 .yiv0676866967ReadMsgBody{
+width:100%;}
+#yiv0676866967 .yiv0676866967ExternalClass{
+width:100%;}
+#yiv0676866967 p, #yiv0676866967 a, #yiv0676866967 li, #yiv0676866967 td, #=
+yiv0676866967 blockquote{
+}
+#yiv0676866967 a .filtered99999 , #yiv0676866967 a .filtered99999 {
+color:inherit;cursor:default;text-decoration:none;}
+#yiv0676866967 p, #yiv0676866967 a, #yiv0676866967 li, #yiv0676866967 td, #=
+yiv0676866967 body, #yiv0676866967 table, #yiv0676866967 blockquote{
+}
+#yiv0676866967 .yiv0676866967ExternalClass, #yiv0676866967 .yiv0676866967Ex=
+ternalClass p, #yiv0676866967 .yiv0676866967ExternalClass td, #yiv067686696=
+7 .yiv0676866967ExternalClass div, #yiv0676866967 .yiv0676866967ExternalCla=
+ss span, #yiv0676866967 .yiv0676866967ExternalClass font{
+line-height:100%;}
+#yiv0676866967 a .filtered99999 {
+color:inherit;text-decoration:none;font-size:inherit !important;font-family=
+:inherit !important;font-weight:inherit;line-height:inherit !important;}
+#yiv0676866967 #yiv0676866967bodyCell{
+padding:10px;}
+#yiv0676866967 .yiv0676866967templateContainer{
+max-width:600px !important;}
+#yiv0676866967 a.yiv0676866967mcnButton{
+display:block;}
+#yiv0676866967 .yiv0676866967mcnImage{
+vertical-align:bottom;}
+#yiv0676866967 .yiv0676866967mcnTextContent{
+}
+#yiv0676866967 .yiv0676866967mcnTextContent img{
+min-height:auto !important;}
+#yiv0676866967 .yiv0676866967mcnDividerBlock{
+table-layout:fixed;}
+#yiv0676866967 body, #yiv0676866967 #yiv0676866967bodyTable{
+background-color:#FAFAFA;}
+#yiv0676866967 #yiv0676866967bodyCell{
+border-top:0;}
+#yiv0676866967 .yiv0676866967templateContainer{
+border:0;}
+#yiv0676866967 h1{
+color:#202020;font-family:Helvetica;font-size:26px;font-style:normal;font-w=
+eight:bold;line-height:125%;letter-spacing:normal;text-align:left;}
+#yiv0676866967 h2{
+color:#202020;font-family:Helvetica;font-size:22px;font-style:normal;font-w=
+eight:bold;line-height:125%;letter-spacing:normal;text-align:left;}
+#yiv0676866967 h3{
+color:#202020;font-family:Helvetica;font-size:20px;font-style:normal;font-w=
+eight:bold;line-height:125%;letter-spacing:normal;text-align:left;}
+#yiv0676866967 h4{
+color:#202020;font-family:Helvetica;font-size:18px;font-style:normal;font-w=
+eight:bold;line-height:125%;letter-spacing:normal;text-align:left;}
+#yiv0676866967 #yiv0676866967templatePreheader{
+background-color:#FAFAFA;background-image:none;background-repeat:no-repeat;=
+background-position:center;background-size:cover;border-top:0;border-bottom=
+:0;padding-top:9px;padding-bottom:9px;}
+#yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextContent=
+, #yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextConte=
+nt p{
+color:#656565;font-family:Helvetica;font-size:12px;line-height:150%;text-al=
+ign:left;}
+#yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextContent=
+ a, #yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextCon=
+tent p a{
+color:#656565;font-weight:normal;text-decoration:underline;}
+#yiv0676866967 #yiv0676866967templateHeader{
+background-color:#FFFFFF;background-image:none;background-repeat:no-repeat;=
+background-position:center;background-size:cover;border-top:0;border-bottom=
+:0;padding-top:0px;padding-bottom:0;}
+#yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent, #=
+yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent p{
+color:#202020;font-family:Helvetica;font-size:16px;line-height:150%;text-al=
+ign:left;}
+#yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent a,=
+ #yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent p=
+ a{
+color:#2BAADF;font-weight:normal;text-decoration:underline;}
+#yiv0676866967 #yiv0676866967templateBody{
+background-color:#FFFFFF;background-image:none;background-repeat:no-repeat;=
+background-position:center;background-size:cover;border-top:0;border-bottom=
+:0;padding-top:0px;padding-bottom:0;}
+#yiv0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent, #yi=
+v0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent p{
+color:#202020;font-family:Helvetica;font-size:16px;line-height:150%;text-al=
+ign:left;}
+#yiv0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent a, #=
+yiv0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent p a{
+color:#2BAADF;font-weight:normal;text-decoration:underline;}
+#yiv0676866967 #yiv0676866967templateColumns{
+background-color:#FFFFFF;background-image:none;background-repeat:no-repeat;=
+background-position:center;background-size:cover;border-top:0;border-bottom=
+:2px solid #EAEAEA;padding-top:0;padding-bottom:9px;}
+#yiv0676866967 #yiv0676866967templateColumns .yiv0676866967columnContainer =
+.yiv0676866967mcnTextContent, #yiv0676866967 #yiv0676866967templateColumns =
+.yiv0676866967columnContainer .yiv0676866967mcnTextContent p{
+color:#202020;font-family:Helvetica;font-size:16px;line-height:150%;text-al=
+ign:left;}
+#yiv0676866967 #yiv0676866967templateColumns .yiv0676866967columnContainer =
+.yiv0676866967mcnTextContent a, #yiv0676866967 #yiv0676866967templateColumn=
+s .yiv0676866967columnContainer .yiv0676866967mcnTextContent p a{
+color:#2BAADF;font-weight:normal;text-decoration:underline;}
+#yiv0676866967 #yiv0676866967templateFooter{
+background-color:#FAFAFA;background-image:none;background-repeat:no-repeat;=
+background-position:center;background-size:cover;border-top:0;border-bottom=
+:0;padding-top:9px;padding-bottom:9px;}
+#yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent, #=
+yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent p{
+color:#656565;font-family:Helvetica;font-size:12px;line-height:150%;text-al=
+ign:center;}
+#yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent a,=
+ #yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent p=
+ a{
+color:#656565;font-weight:normal;text-decoration:underline;}
+@media screen and (min-width:768px){
+#yiv0676866967 .yiv0676866967templateContainer{
+width:600px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 body, #yiv0676866967 table, #yiv0676866967 td, #yiv067686696=
+7 p, #yiv0676866967 a, #yiv0676866967 li, #yiv0676866967 blockquote{
+}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 body{
+width:100% !important;min-width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967bodyCell{
+padding-top:10px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967columnWrapper{
+max-width:100% !important;width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImage{
+width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnCartContainer, #yiv0676866967 .yiv067686696=
+7mcnCaptionTopContent, #yiv0676866967 .yiv0676866967mcnRecContentContainer,=
+ #yiv0676866967 .yiv0676866967mcnCaptionBottomContent, #yiv0676866967 .yiv0=
+676866967mcnTextContentContainer, #yiv0676866967 .yiv0676866967mcnBoxedText=
+ContentContainer, #yiv0676866967 .yiv0676866967mcnImageGroupContentContaine=
+r, #yiv0676866967 .yiv0676866967mcnCaptionLeftTextContentContainer, #yiv067=
+6866967 .yiv0676866967mcnCaptionRightTextContentContainer, #yiv0676866967 .=
+yiv0676866967mcnCaptionLeftImageContentContainer, #yiv0676866967 .yiv067686=
+6967mcnCaptionRightImageContentContainer, #yiv0676866967 .yiv0676866967mcnI=
+mageCardLeftTextContentContainer, #yiv0676866967 .yiv0676866967mcnImageCard=
+RightTextContentContainer{
+max-width:100% !important;width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer{
+min-width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageGroupContent{
+padding:9px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnCaptionLeftContentOuter .yiv0676866967mcnTe=
+xtContent, #yiv0676866967 .yiv0676866967mcnCaptionRightContentOuter .yiv067=
+6866967mcnTextContent{
+padding-top:9px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageCardTopImageContent, #yiv0676866967 .y=
+iv0676866967mcnCaptionBlockInner .yiv0676866967mcnCaptionTopContent:last-ch=
+ild .yiv0676866967mcnTextContent{
+padding-top:18px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageCardBottomImageContent{
+padding-bottom:9px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageGroupBlockInner{
+padding-top:0 !important;padding-bottom:0 !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageGroupBlockOuter{
+padding-top:9px !important;padding-bottom:9px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnTextContent, #yiv0676866967 .yiv0676866967m=
+cnBoxedTextContentColumn{
+padding-right:18px !important;padding-left:18px !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnImageCardLeftImageContent, #yiv0676866967 .=
+yiv0676866967mcnImageCardRightImageContent{
+padding-right:18px !important;padding-bottom:0 !important;padding-left:18px=
+ !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcpreview-image-uploader{
+display:none;width:100% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 h1{
+font-size:22px !important;line-height:125% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 h2{
+font-size:20px !important;line-height:125% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 h3{
+font-size:18px !important;line-height:125% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 h4{
+font-size:16px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer .yiv0676866967mcn=
+TextContent, #yiv0676866967 .yiv0676866967mcnBoxedTextContentContainer .yiv=
+0676866967mcnTextContent p{
+font-size:14px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templatePreheader{
+display:block;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextContent=
+, #yiv0676866967 #yiv0676866967templatePreheader .yiv0676866967mcnTextConte=
+nt p{
+font-size:14px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent, #=
+yiv0676866967 #yiv0676866967templateHeader .yiv0676866967mcnTextContent p{
+font-size:16px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent, #yi=
+v0676866967 #yiv0676866967templateBody .yiv0676866967mcnTextContent p{
+font-size:16px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templateColumns .yiv0676866967columnContainer =
+.yiv0676866967mcnTextContent, #yiv0676866967 #yiv0676866967templateColumns =
+.yiv0676866967columnContainer .yiv0676866967mcnTextContent p{
+font-size:16px !important;line-height:150% !important;}
+
+}@media screen and (max-width:480px){
+#yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent, #=
+yiv0676866967 #yiv0676866967templateFooter .yiv0676866967mcnTextContent p{
+font-size:14px !important;line-height:150% !important;}
+
+}</style>
+    <div id=3D"yui_3_16_0_ym19_1_1505999512688_5951">
+=09=09
+        <center id=3D"yui_3_16_0_ym19_1_1505999512688_5950">
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"yiv0676866967bodyTable" styl=
+e=3D"border-collapse:collapse;min-height:100%;margin:0;padding:0;width:100%=
+;background-color:#FAFAFA;">
+                <tbody id=3D"yui_3_16_0_ym19_1_1505999512688_5949"><tr id=
+=3D"yui_3_16_0_ym19_1_1505999512688_5948">
+                    <td align=3D"center" valign=3D"top" id=3D"yiv0676866967=
+bodyCell" style=3D"min-height:100%;margin:0;padding:10px;width:100%;border-=
+top:0;">
+=09=09=09=09=09=09
+=09=09=09=09=09=09
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" class=3D"yiv0676866967templateContainer" style=3D"border-coll=
+apse:collapse;border:0;max-width:600px !important;">
+=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09<td valign=3D"top" id=3D"yiv0676866967templatePrehe=
+ader" style=3D"background:#FAFAFA none no-repeat;background-color:#FAFAFA;b=
+ackground-image:none;background-repeat:no-repeat;background-position:center=
+;background-size:cover;border-top:0;border-bottom:0;padding-top:9px;padding=
+-bottom:9px;"></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td valign=3D"top" id=3D"yiv0676866967templateHeade=
+r" style=3D"background:#FFFFFF none no-repeat;background-color:#FFFFFF;back=
+ground-image:none;background-repeat:no-repeat;background-position:center;ba=
+ckground-size:cover;border-top:0;border-bottom:0;padding-top:0px;padding-bo=
+ttom:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"yiv0676866967mcnCodeBlock" style=3D"border-collapse:collapse;=
+">
+    <tbody class=3D"yiv0676866967mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"yiv0676866967mcnTextBlockInner" sty=
+le=3D"">
+                <table width=3D"100%" align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" bgcolor=3D"#009E49" style=3D"border-collapse:c=
+ollapse;">
+    <tbody><tr>
+      <td height=3D"15" align=3D"left" style=3D""></td>
+    </tr>
+    <tr>
+      <td align=3D"left" style=3D"text-align:center;">
+
+          <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse;">
+                          <tbody><tr>
+                            <td width=3D"45px" align=3D"left" class=3D"yiv0=
+676866967vspacer15" style=3D""></td>
+                            <td align=3D"left" valign=3D"top" class=3D"yiv0=
+676866967produceTdLast" style=3D"">
+                            <table width=3D"100%" border=3D"0" align=3D"lef=
+t" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;">
+                                <tbody><tr>
+                                  <td align=3D"left" valign=3D"middle" styl=
+e=3D"">
+                   <img src=3D"https://myteksi.s3.amazonaws.com/email_image=
+s/marketing_images/_logo.png" alt=3D"myteksi logo" width=3D"78" height=3D"3=
+0" border=3D"0" style=3D"display:inline-block;border:0;min-height:auto;outl=
+ine:none;text-decoration:none;">
+                                  </td>
+
+                                  <td width=3D"200" align=3D"right" valign=
+=3D"top" style=3D"font-family:Arial, 'Helvetica', sans-serif;font-weight:no=
+rmal;font-size:14px;line-height:16px;color:#ffffff;padding-top:10px;">
+                                  <span style=3D"font-weight:bolder;"></spa=
+n></td>
+                                  <td width=3D"45px" align=3D"left" class=
+=3D"yiv0676866967vspacer15" style=3D""></td>
+                                </tr>
+                              </tbody></table></td>
+                          </tr>
+                        </tbody></table>
+      </td>
+    </tr>
+</tbody></table>
+<table width=3D"100%" align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" bgcolor=3D"#009E49" style=3D"border-collapse:collapse;">
+    <tbody><tr>
+      <td height=3D"15" style=3D""><img style=3D"display:block;border:0;min=
+-height:auto;outline:none;text-decoration:none;" src=3D"https://grabtaxi-ma=
+rketing.s3.amazonaws.com/emails/my/img/_blank.gif" alt=3D"" width=3D"10" he=
+ight=3D"15" border=3D"0"></td>
+    </tr>
+</tbody></table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"yiv0676866967mcnImageBlock" style=3D"min-width:100%;border-col=
+lapse:collapse;">
+    <tbody class=3D"yiv0676866967mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding:0px;" class=3D"yiv06768=
+66967mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"yiv0676866967mcnImageContentContain=
+er" style=3D"min-width:100%;border-collapse:collapse;">
+                        <tbody><tr>
+                            <td class=3D"yiv0676866967mcnImageContent" vali=
+gn=3D"top" style=3D"padding-right:0px;padding-left:0px;padding-top:0;paddin=
+g-bottom:0;text-align:center;">
+
+                                    <a rel=3D"nofollow" target=3D"_blank" h=
+ref=3D"http://grab.us14.list-manage1.com/track/click?u=3Da4b282e66ea8e93693=
+bc73c17&amp;id=3D11c1e4aa7a&amp;e=3D2c64c56283" title=3D"" class=3D"yiv0676=
+866967" style=3D"">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/a4b282e66ea8e93693bc73c17/images/ae2cb6e4=
+-768c-4b0a-ad8d-951efb22636e.jpg" width=3D"600.0000152587891" style=3D"max-=
+width:1200px;padding-bottom:0;display:inline;vertical-align:bottom;border:0=
+;min-height:auto;outline:none;text-decoration:none;" class=3D"yiv0676866967=
+mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td valign=3D"top" id=3D"yiv0676866967templateBody"=
+ style=3D"background:#FFFFFF none no-repeat;background-color:#FFFFFF;backgr=
+ound-image:none;background-repeat:no-repeat;background-position:center;back=
+ground-size:cover;border-top:0;border-bottom:0;padding-top:0px;padding-bott=
+om:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" class=3D"yiv0676866967mcnBoxedTextBlock" style=3D"min-width:100%;border-=
+collapse:collapse;">
+   =20
+=09<tbody class=3D"yiv0676866967mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"yiv0676866967mcnBoxedTextBlockInner=
+" style=3D"">
+
+=09=09=09=09
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse=
+;" class=3D"yiv0676866967mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style=3D"padding-top:9px;padding-left:18px;padd=
+ing-bottom:9px;padding-right:18px;">
+
+                            <table border=3D"0" cellpadding=3D"18" cellspac=
+ing=3D"0" class=3D"yiv0676866967mcnTextContentContainer" width=3D"100%" sty=
+le=3D"min-width:100% !important;border-collapse:collapse;">
+                                <tbody><tr>
+                                    <td valign=3D"top" class=3D"yiv06768669=
+67mcnTextContent" style=3D"font-family:Arial,;font-size:14px;font-style:nor=
+mal;font-weight:normal;line-height:200%;text-align:left;color:#202020;">
+                                        <div dir=3D"ltr" style=3D"font-fami=
+ly:Arial,;font-size:14px;font-style:normal;font-weight:normal;line-height:2=
+00%;text-align:left;margin:10px 0;padding:0;color:#202020;"><span style=3D"=
+color:#696969;"><span style=3D"font-size:15px;">Hai Grabbers,<br>
+<br>
+7 hari ke depan akan jadi luar biasa karena ada GRAB YOUR PERFECT 7, kerja =
+sama antara Grab dan Vivo yang memberikanmu kesempatan memenangkan ponsel V=
+IVO seri 7 terbaru dan free pass Vivo V7+ Perfect Moment Grand Launch! Mau =
+ikutan kan?&nbsp;<br>
+<br>
+Cara ikutannya, Pesan GrabCar dan GrabBike sebanyak-banyaknya mulai 20 - 26=
+ September 2017 dengan kode promo GRABVIVO dan nikmati kesempatanmu dapat p=
+engalaman terseru tahun ini!<br>
+<br>
+Pemenang akan diumumkan di akun Instagram&nbsp;Grab Indonesia pada 21 =E2=
+=80=93 27 September 2017 pukul 11.00 WIB. Pastikan kamu ga ketinggalan kese=
+ruannya! Karena ini, baru luar biasa!</span></span><br>
+&nbsp;</div>
+<span style=3D"font-size:15px;"><span style=3D"color:#696969;"><strong>Bera=
+ngkat dengan Grab dan ikutan GRAB YOUR PERFECT 7:</strong></span></span>
+
+<div style=3D"text-align:justify;"><span style=3D"font-size:15px;"><span st=
+yle=3D"color:#696969;">1. Siap-siap buka aplikasi Grab.<br>
+2. Pilih layanan GrabBike/GrabCar.<br>
+3. Masukkan lokasi penjemputan dan tujuan.<br>
+4. Masukkan kode promo <strong>GRABVIVO</strong>.<br>
+5. Good luck!</span></span></div>
+<br>
+<span style=3D"font-size:10px;"><span style=3D"color:#696969;">Syarat &amp;=
+ Ketentuan berlaku.</span></span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09
+
+=09=09=09=09
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"yiv0676866967mcnButtonBlock" style=3D"min-width:100%;border-co=
+llapse:collapse;">
+    <tbody class=3D"yiv0676866967mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top:0;padding-right:18px;padding-bottom:18=
+px;padding-left:18px;" valign=3D"top" align=3D"center" class=3D"yiv06768669=
+67mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"yiv0676866967mcnButtonContentContainer" style=3D"border-collapse:sepa=
+rate;border-radius:0px;background-color:#009E49;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"yiv0676866967mcnButtonContent" style=3D"font-family:Arial;font-size:18px;p=
+adding:15px;">
+                                <a rel=3D"nofollow" class=3D"yiv0676866967m=
+cnButton " title=3D"Info lanjut" target=3D"_blank" href=3D"http://grab.us14=
+.list-manage.com/track/click?u=3Da4b282e66ea8e93693bc73c17&amp;id=3D5edfbe1=
+b43&amp;e=3D2c64c56283" style=3D"font-weight:bold;letter-spacing:normal;lin=
+e-height:100%;text-align:center;text-decoration:none;color:#FFFFFF;display:=
+block;" title-off=3D"">Info lanjut</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td valign=3D"top" id=3D"yiv0676866967templateColum=
+ns" style=3D"background:#FFFFFF none no-repeat;background-color:#FFFFFF;bac=
+kground-image:none;background-repeat:no-repeat;background-position:center;b=
+ackground-size:cover;border-top:0;border-bottom:2px solid #EAEAEA;padding-t=
+op:0;padding-bottom:9px;">
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"300" class=3D"yiv0676866967columnWrapper"=
+ style=3D"border-collapse:collapse;">
+=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" class=3D"yiv0676866967c=
+olumnContainer" style=3D""></td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"300" class=3D"yiv0676866967columnWrapper"=
+ style=3D"border-collapse:collapse;">
+=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" class=3D"yiv0676866967c=
+olumnContainer" style=3D""></td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td valign=3D"top" id=3D"yiv0676866967templateFoote=
+r" style=3D"background:#FAFAFA none no-repeat;background-color:#FAFAFA;back=
+ground-image:none;background-repeat:no-repeat;background-position:center;ba=
+ckground-size:cover;border-top:0;border-bottom:0;padding-top:9px;padding-bo=
+ttom:9px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"yiv0676866967mcnCodeBlock" style=3D"border-collapse:collaps=
+e;">
+    <tbody class=3D"yiv0676866967mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"yiv0676866967mcnTextBlockInner" sty=
+le=3D"">
+                <table width=3D"100%" align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" style=3D"border-collapse:c=
+ollapse;">
+    <tbody>
+    <tr>
+    <td height=3D"40" style=3D""><img style=3D"display:block;border:0;min-h=
+eight:auto;outline:none;text-decoration:none;" src=3D"https://myteksi.s3.am=
+azonaws.com/email_images/marketing_images/_blank.gif" alt=3D"" width=3D"10"=
+ height=3D"40" border=3D"0"></td>
+  </tr><tr>
+      <td valign=3D"top" class=3D"yiv0676866967vspacer15" width=3D"45" styl=
+e=3D""></td>
+      <td valign=3D"top" style=3D"font-family:'Helvetica', Arial, sans-seri=
+f;color:#000000;font-size:11px;">
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"border-collapse:collapse;">
+          <tbody><tr>
+            <td align=3D"left" style=3D"font-family:'Helvetica', Arial, san=
+s-serif;text-align:center;">
+
+            </td>
+           </tr>
+
+           <tr>
+            <td align=3D"left" style=3D"font-family:'Helvetica', Arial, san=
+s-serif;text-align:center;">
+            =09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-collapse:collapse;">
+                    <tbody><tr>
+                      <td width=3D"55%" align=3D"left" valign=3D"top" class=
+=3D"yiv0676866967produceTdLast" style=3D"font-family:'Helvetica', Arial, sa=
+ns-serif;color:#666666;padding-right:10%;">
+                      <span style=3D"color:#666666;"> <a rel=3D"nofollow" t=
+arget=3D"_blank" href=3D"http://grab.us14.list-manage.com/track/click?u=3Da=
+4b282e66ea8e93693bc73c17&amp;id=3D43863665cf&amp;e=3D2c64c56283" style=3D"f=
+ont-size:10px;line-height:12px;font-weight:bold;color:#666666;">Help Centre=
+</a></span><br><br>
+            <span style=3D"font-size:10px;font-weight:normal;">Grab Indones=
+ia<br>
+             <a rel=3D"nofollow" style=3D"color:#666666;text-decoration:und=
+erline;font-style:italic;line-height:21px;" href=3D""></a><a rel=3D"nofollo=
+w" target=3D"_blank" href=3D"http://grab.us14.list-manage.com/unsubscribe?u=
+=3Da4b282e66ea8e93693bc73c17&amp;id=3D98be1d0075&amp;e=3D2c64c56283&amp;c=
+=3D59e081fab1" style=3D"color:#666666;text-decoration:underline;">I do not =
+want to receive emails like this</a>.<br>
+            </span>
+                     </td>
+
+                      <td width=3D"35%" align=3D"left" valign=3D"top" class=
+=3D"yiv0676866967produceTdLast" style=3D"font-family:'Helvetica', Arial, sa=
+ns-serif;color:#666666;">
+                         <span style=3D"font-size:10px;line-height:12px;fon=
+t-weight:bold;">Stay connected with us.</span><br><br>
+                          <a rel=3D"nofollow" target=3D"_blank" href=3D"htt=
+p://grab.us14.list-manage1.com/track/click?u=3Da4b282e66ea8e93693bc73c17&am=
+p;id=3Db2121c3110&amp;e=3D2c64c56283" style=3D""><img width=3D"30px" src=3D=
+"https://grabtaxi-marketing.s3.amazonaws.com/emails/my/img/icon-fb.png" sty=
+le=3D"border:0;min-height:auto;outline:none;text-decoration:none;"></a>&nbs=
+p;&nbsp;
+                          <a rel=3D"nofollow" target=3D"_blank" href=3D"htt=
+p://grab.us14.list-manage.com/track/click?u=3Da4b282e66ea8e93693bc73c17&amp=
+;id=3D1e60204982&amp;e=3D2c64c56283" style=3D""><img width=3D"30px" src=3D"=
+https://grabtaxi-marketing.s3.amazonaws.com/emails/my/img/icon-twitter.png"=
+ style=3D"border:0;min-height:auto;outline:none;text-decoration:none;"></a>=
+&nbsp;&nbsp;
+                          <a rel=3D"nofollow" target=3D"_blank" href=3D"htt=
+p://grab.us14.list-manage.com/track/click?u=3Da4b282e66ea8e93693bc73c17&amp=
+;id=3D511ec52493&amp;e=3D2c64c56283" style=3D""><img width=3D"30px" src=3D"=
+https://grabtaxi-marketing.s3.amazonaws.com/emails/my/img/icon-instagram.pn=
+g" style=3D"border:0;min-height:auto;outline:none;text-decoration:none;"></=
+a>&nbsp;&nbsp;
+                          <a rel=3D"nofollow" target=3D"_blank" href=3D"htt=
+p://grab.us14.list-manage.com/track/click?u=3Da4b282e66ea8e93693bc73c17&amp=
+;id=3Da2599dde53&amp;e=3D2c64c56283" style=3D""><img width=3D"30px" src=3D"=
+https://grabtaxi-marketing.s3.amazonaws.com/emails/my/img/icon-linkedin.png=
+" style=3D"border:0;min-height:auto;outline:none;text-decoration:none;"></a=
+>
+                          <br><br>
+                      </td>
+                    </tr>
+                  </tbody></table>
+            </td>
+           </tr>
+           <tr>
+            <td height=3D"30" style=3D""></td>
+           </tr>
+
+
+ </tbody></table></td>
+           <td valign=3D"top" class=3D"yiv0676866967vspacer15" width=3D"45"=
+ style=3D""></td>
+     </tr>
+</tbody></table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09
+=09=09=09=09=09=09
+                    </td>
+                </tr>
+            </tbody></table>
+        </center>
+    <img src=3D"http://grab.us14.list-manage.com/track/open.php?u=3Da4b282e=
+66ea8e93693bc73c17&amp;id=3D59e081fab1&amp;e=3D2c64c56283" height=3D"1" wid=
+th=3D"1"></div>
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_7624323_35632441.1505999898950--

@@ -1,0 +1,430 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 21 Sep 2017 13:24:14 +0000 
+Return-Path: <hitsu_lim25@yahoo.com>
+Received-SPF: pass (domain of yahoo.com designates 106.10.244.82 as permitted sender)
+X-YMailISG: 5MIkzl8WLDtDzumV.a79RCltOsiZ1fwhML1LP7a4n8sHyFFf
+ YHQl3TB.8vTiuJ1ouLJj1_ILmZJaD8gWFNUxNKbpPxeLNjhxVTIr4AdDubdM
+ DC04ruKSU3sQM4oWt.CO22nAViZVqVqeH48KLeMtpgF9edWGOnhYTR94dfih
+ 062wIpSbxn3b3wSnAASwntFhqbKVHlEeE4n_94JTUOBZjzprcumDTuhtXXZn
+ P4v9mTqnzTcitaETaAxkig8jWDw95hRT7JlyvJ1qDOf4oG3dOji0Z78IDdvG
+ VCebePFSnupY9xKdEwbfJODNCkTMlAKNfPjS6Ad5nK7eqS81mZ1yLDy89pQb
+ o6IdW14fgP2IgZgOTmX6lmjsKKVaOuRi1nJzNodF2bEjgP9MUaoO_4pu67Bb
+ 8tDjqBurB50FGfsHP8NtTrcTYTzbmBXSKflDJHSrNEh6QaMz.mVUXac4N4i7
+ B8r8BZAj16nykVOtlQPAx4kRTq0chT3RNteSskhieSpsAwLUiyVD3oOVasLy
+ v8SJoSATRBK4FTrEJppkfkJIms2ILgp8K3IszcFjb7ayZq4g2oGK6pJO.kdE
+ txHa3l0o0HmRLwCmLbLPRA_Pkd29lUIPM4GhuxizW41WmRrBCZAaFev7020V
+ 9Rh3qjhRz0RwqWrCJvxd8cvvDaO_cVhEB14fvYmU6syFfCUITTAM1YR4lz_Q
+ xte9ANJm2fkwgSC3VtdX8juAjTgeQ5DSXjh7Tv9UakuU3V77hjbPEZZe8ut3
+ WLy0ih3yV7uaHWNvnUqyTP86XwFtU_2I4kNEgGhRA7k3fkgp84MxEkEYXaA6
+ ia6cnF6tYE5Bno9m5lWK6mLtgK.g6wwdmtmmmUnZwv4UlAihrt.zyrwoz7Ja
+ OuvqRV5iCUTk.LsIt24F5WSdZb_RDa9yS5okwaQ34JuWB63BeJu4P7P5tw3A
+ 88Bc4HAnW_K1ZTqsU32kDKPCqYINPBiWEztZOgHwCkrXL5AHLZsP6nb366Tl
+ d5jPtvkfrnakDBWIPnX4xfhOJO3mLEx3n.1uw6nV.6dihsHE6kv3rFKCsv38
+ b90aZmdHsKFo7VmB8RVSfYxAYn9OY5LTu.wQ_Ow06zKdscAWBtguRnxgFtsX
+ zVvX0IBwedWeoEuNtuoRdlbSLvZwN5PhprZAh4HD0PrCUjO8.1z56_D2.z5a
+ QkecorQwZt2h5WaGxk1f._MhcFKToSTMQFdoq2S5j5DqMPtf81vA1HHdnkYf
+ oRwiF.Xw9o9PMJusD_Wyly_TZouIfXoPqTVS80vk9quhL2MvSING6OJ4v_Uj
+ KaiQhhCLPvIj8un2_NsRfJyChNOIzp8dr6mVvNsuklWq0beBKXfcbGybuA5.
+ Sur8KD_9W7bz
+X-Originating-IP: [106.10.244.82]
+Authentication-Results: mta1202.mail.bf1.yahoo.com  from=yahoo.com; domainkeys=neutral (no sig);  from=yahoo.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO sonic309-19.consmr.mail.sg3.yahoo.com) (106.10.244.82)
+  by mta1202.mail.bf1.yahoo.com with SMTPS; Thu, 21 Sep 2017 13:24:14 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1506000251; bh=O4p4RsCqi5u7i1+wLPImKFiJTkXiuD4sJcsWLyc+kSc=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=AEGteS4sDpNyw+ImcnmYwcCknJMt5ZawVs2PpzJf6aS49UjFzcqrKYABSWNE18pK775mYVPXdgx8RoDuWtjHfCUMCg5Q/jRjwyDYz4XezJbK6V0PGWCUBGc4Nz1mMAKVK4B5CNwl9o3lSCGSG69/aRtO5At95QdrMXWpDRozuZ+S6O9UJEODT6MZev+PTCmpKUWa7eEogG6o5lBzmwdqdzpGVH6VlyHYZUq2/Qy3Cj7VF8Dzm6/kCLpaIy2W1ckc/Wz2v9jRt7HqUiWdnCA6crBYV13JicQ+u/+6C25NaOR1AW2w8dqqNLaf0jEyDCAecBpmz/HAxunQjfAnGsjCaA==
+X-YMail-OSG: rd.HtNQVM1lGp2JNmF4A1_QP_Vfm8Cu3Ajha9f_zq4rAzgSG3Sk2mkpfkaPWuKP
+ wwY5Oz4Bh7KNqaz2KmgsaALJyf3XDkYD0P4_s1_ZnOoD5HHBE7kwa1WoBugHg1zErzjveL.KESqS
+ zT8LAvWQPK9viDpH4yXdm78PE_B63BXKboEldrlUdvlG3rySlSpEX7n5gEq6g9HKSEJ4szr3XvA3
+ BpsxT0eQKpSHTVBcRUv5MoNT9kG2FNLzrz6Yvl4A8Efaer8PyfEgJIRY4im4vWeCvHqnexh2wrqp
+ f4Jpt8CrXc7IHWGCXGSJUe7RLHQd.Ztfv9gXItHey7eZbuLxepoTjoRTVg8u0ZJsuuWYLCD63OeJ
+ RIyb6LxuJbZprG.G.7qjRdF1QlIVzAdNgPqbaMYEHA1TIwn1BByIL5KIC2KqfUqLC523DK1yaAQT
+ sO.EijGezlvB9BFWGhVX7YkEKt90Np71qeJ92jgR0GhSi0s293BJHWBurX00bHOvWOAzCuPzB4uB
+ XNI2uW_PP3vYhrw--
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic309.consmr.mail.sg3.yahoo.com with HTTP; Thu, 21 Sep 2017 13:24:11 +0000
+Date: Thu, 21 Sep 2017 13:24:06 +0000 (UTC)
+From: edwin lim <hitsu_lim25@yahoo.com>
+Reply-To: edwin lim <hitsu_lim25@yahoo.com>
+To: "yustinus_vernanda@yahoo.com" <yustinus_vernanda@yahoo.com>
+Message-ID: <1864224987.7626854.1506000246712@mail.yahoo.com>
+In-Reply-To: <85082e56.AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0@mailjet.com>
+References: <85082e56.AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0@mailjet.com>
+Subject: Trs: Beli Kode Voucher Google Play (Rp) di Codashop!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7626853_1353873692.1506000246707"
+X-Mailer: WebService/1.1.10521 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Content-Length: 21225
+
+------=_Part_7626853_1353873692.1506000246707
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+     Pada Kamis, 31 Agustus 2017 16:01, Codashop Indonesia <codashop@codapa=
+yments.com> menulis:
+=20
+
+  Beli Kode Voucher Google Play (Rp) di Codashop!#yiv7882938818 #yiv7882938=
+818outlook a {padding:0;}#yiv7882938818 .yiv7882938818ReadMsgBody {width:10=
+0%;}#yiv7882938818 .yiv7882938818ExternalClass {width:100%;}#yiv7882938818 =
+.yiv7882938818ExternalClass * {line-height:100%;}#yiv7882938818 body {margi=
+n:0;padding:0;}#yiv7882938818 table, #yiv7882938818 td {border-collapse:col=
+lapse;}#yiv7882938818 img {border:0;min-height:auto;line-height:100%;outlin=
+e:none;text-decoration:none;}#yiv7882938818 p {display:block;margin:13px 0;=
+}@media screen and (max-width:480px){ _filtered #yiv7882938818 {width:320px=
+;} _filtered #yiv7882938818 {width:320px;}#yiv7882938818  _filtered ;@media=
+ screen and (min-width:480px){#yiv7882938818 .yiv7882938818mj-column-per-66=
+ {width:66.66666666666666%!important;}#yiv7882938818 .yiv7882938818mj-colum=
+n-per-33 {width:33.33333333333333%!important;}#yiv7882938818 .yiv7882938818=
+mj-column-per-100 {width:100%!important;}}=20
+|=20
+| Kabar gembira telah hadir=E2=80=A6 |
+
+
+| View online version |
+
+ |
+
+=20
+|=20
+|=20
+|  |
+
+ |
+|=20
+Beli Kode Voucher Google Play (Rp) di Codashop!
+ |
+
+ |
+
+=20
+|=20
+| Kode Voucher Google Play sekarang bisa dibeli di Codashop dengan mengguna=
+kan ATM Transfer, BCA Mobile, Mandiri Mobile, CIMB Go Mobile, BNI SMS Banki=
+ng, dan pembayaran tunai di Alfamart. Setelah menyelesaikan pembayaran meng=
+gunakan salah satu channel ini, kode voucher akan dikirimkan ke email pengg=
+una dan dapat diredeem di Google Play, di mana saldo tidak ada tanggal keda=
+luarsa.Berikut adalah nominal yang tersedia, dan tidak ada biaya layanan ta=
+mbahan atau biaya tambahan yang dikenakan oleh Codashop atau Google:  =20
+   - Rp. 50.000 kode voucher Google Play (Rp 55.000 Termasuk pajak)
+   - Rp. 100.000 kode voucher Google Play (Rp 110.000 Termasuk pajak)
+   - Rp. 150.000 kode voucher Google Play (Rp 165.000 Termasuk pajak)
+   - Rp. 300.000 kode voucher Google Play (Rp 330.000 Termasuk pajak)
+   - Rp. 500.000 kode voucher Google Play (Rp 550.000 Termasuk pajak)
+Beli disini: https://www.codashop.com/id/kode-voucher-google-play/=C2=A0 |
+|=20
+|=20
+|  |
+
+ | Share |
+
+ |
+|  |
+| Copyright =C2=A9 2017 Coda Payments All rights reserved.Our email address=
+ is:support@codapayments.comWant to change how you receive these emails?You=
+ can=C2=A0update your preferences=C2=A0or=C2=A0unsubscribe from this list |
+
+ |
+
+=20
+|=20
+|=20
+|  |
+
+ |
+
+ |
+
+=20
+|=20
+| This e-mail has been sent to hitsu_lim25@yahoo.com, click here to unsubsc=
+ribe. |
+| 77A Tras Street 079016 Singapore SG |
+
+ |
+
+
+
+
+  =20
+------=_Part_7626853_1353873692.1506000246707
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px"><div><span></span></div><div class=3D"qtdSeparateBR"><br><br></=
+div>  <div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_1505999512688_370=
+93" style=3D"display: block;"> <div style=3D"font-family: Helvetica Neue, H=
+elvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;" id=3D"yui_3_1=
+6_0_ym19_1_1505999512688_37092"> <div style=3D"font-family: HelveticaNeue, =
+Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16p=
+x;" id=3D"yui_3_16_0_ym19_1_1505999512688_37091"> <div dir=3D"ltr"><font si=
+ze=3D"2" face=3D"Arial"> Pada Kamis, 31 Agustus 2017 16:01, Codashop Indone=
+sia &lt;codashop@codapayments.com&gt; menulis:<br></font></div>  <br><br> <=
+div class=3D"y_msg_container" id=3D"yui_3_16_0_ym19_1_1505999512688_37090">=
+<div id=3D"yiv7882938818">
+
+
+  <title>Beli Kode Voucher Google Play (Rp) di Codashop!</title>
+ =20
+ =20
+ =20
+=20
+=20
+<style type=3D"text/css">
+#yiv7882938818 #yiv7882938818outlook a {padding:0;}
+#yiv7882938818 .yiv7882938818ReadMsgBody {width:100%;}
+#yiv7882938818 .yiv7882938818ExternalClass {width:100%;}
+#yiv7882938818 .yiv7882938818ExternalClass * {line-height:100%;}
+#yiv7882938818 body {margin:0;padding:0;}
+#yiv7882938818 table, #yiv7882938818 td {border-collapse:collapse;}
+#yiv7882938818 img {border:0;min-height:auto;line-height:100%;outline:none;=
+text-decoration:none;}
+#yiv7882938818 p {display:block;margin:13px 0;}
+</style>
+
+<style type=3D"text/css">
+@media screen and (max-width:480px){
+ _filtered #yiv7882938818 {width:320px;}
+ _filtered #yiv7882938818 {width:320px;}
+#yiv7882938818=20
+</style>
+
+
+
+
+
+   =20
+    <style type=3D"text/css">
+
+ _filtered ;
+
+</style>
+  <style type=3D"text/css">
+@media screen and (min-width:480px){
+#yiv7882938818 .yiv7882938818mj-column-per-66 {width:66.66666666666666%!imp=
+ortant;}
+#yiv7882938818 .yiv7882938818mj-column-per-33 {width:33.33333333333333%!imp=
+ortant;}
+#yiv7882938818 .yiv7882938818mj-column-per-100 {width:100%!important;}
+}
+</style>
+
+<div id=3D"yui_3_16_0_ym19_1_1505999512688_37089">
+ =20
+  <div class=3D"yiv7882938818mj-container" style=3D"background-color:#F4F4F=
+4;" id=3D"yui_3_16_0_ym19_1_1505999512688_37088"><div style=3D"margin:0px a=
+uto;max-width:600px;"><table cellpadding=3D"0" cellspacing=3D"0" style=3D"f=
+ont-size:0px;width:100%;" align=3D"center" border=3D"0"><tbody><tr><td styl=
+e=3D"text-align:center;vertical-align:top;direction:ltr;font-size:0px;paddi=
+ng:20px 0px 20px 0px;"><div class=3D"yiv7882938818mj-column-per-66 yiv78829=
+38818outlook-group-fix" style=3D"vertical-align:top;display:inline-block;di=
+rection:ltr;font-size:13px;text-align:left;width:100%;"><table cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0"><tbody><tr><td style=
+=3D"word-wrap:break-word;font-size:0px;padding:0px 0px 0px 25px;padding-top=
+:0px;padding-bottom:0px;" align=3D"left"><div style=3D"cursor:auto;color:#5=
+5575d;font-family:Arial, sans-serif;font-size:11px;line-height:22px;text-al=
+ign:left;"><div style=3D"margin:10px 0;">Kabar gembira telah hadir=E2=80=A6=
+</div></div></td></tr></tbody></table></div><div class=3D"yiv7882938818mj-c=
+olumn-per-33 yiv7882938818outlook-group-fix" style=3D"vertical-align:top;di=
+splay:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;=
+"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0"><t=
+body><tr><td style=3D"word-wrap:break-word;font-size:0px;padding:0px 25px 0=
+px 0px;padding-top:0px;padding-bottom:0px;" align=3D"right"><div style=3D"c=
+ursor:auto;color:#55575d;font-family:Arial, sans-serif;font-size:11px;line-=
+height:22px;text-align:right;"><div style=3D"margin:10px 0;"><a rel=3D"nofo=
+llow" target=3D"_blank" href=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4A=
+AABKtSMAAAAALOkAAA_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/1/Tg07vN4-aOcCl=
+EPnrY6U4g/aHR0cDovL2p2aTcubWp0Lmx1L25sMi9qdmk3L3B1Ny5odG1sP209QUVJQUFFZ3N5L=
+UlBQUFBeG5oNEFBQUJLdFNNQUFBQUFMT2tBQUFfLUFBamhpZ0JacDlCMEtqbXpNVlpxUmItejk4=
+bjlBNUpzQ2dBSWJNWSZiPTg1MDgyZTU2JmU9N2ExYmI3MDkmeD1FX19hSzNqRW00bGg2WG9BaWV=
+xc21IZl9MU01UWExNNzhvMGExWVhZRUpB" style=3D"color:inherit;text-decoration:n=
+one;">View online version</a></div></div></td></tr></tbody></table></div></=
+td></tr></tbody></table></div>
+      <div style=3D"margin:0px auto;max-width:600px;background:#ffffff;"><t=
+able cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:0px;width:100%;=
+background:#ffffff;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"=
+text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20=
+px 0px;padding-bottom:0px;padding-top:0px;"><div class=3D"yiv7882938818mj-c=
+olumn-per-100 yiv7882938818outlook-group-fix" style=3D"vertical-align:top;d=
+isplay:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%=
+;"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0"><=
+tbody><tr><td style=3D"word-wrap:break-word;font-size:0px;padding:10px 25px=
+;" align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" style=3D"bor=
+der-collapse:collapse;border-spacing:0px;" align=3D"center" border=3D"0"><t=
+body><tr><td style=3D"width:277px;"><a rel=3D"nofollow" target=3D"_blank" h=
+ref=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhi=
+gBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/2/pLGM9JrgTE0zv5yZJf_0uw/aHR0cHM6Ly93d3c=
+uY29kYXNob3AuY29tL2lkL2tvZGUtdm91Y2hlci1nb29nbGUtcGxheQ"><img alt=3D"" titl=
+e=3D"" height=3D"auto" src=3D"http://jvi7.mjt.lu/img/jvi7/b/pu7/xr9w.png" s=
+tyle=3D"border:none;border-radius:0px;display:block;font-size:13px;outline:=
+none;text-decoration:none;width:100%;min-height:auto;" width=3D"277"></a></=
+td></tr></tbody></table></td></tr><tr><td style=3D"word-wrap:break-word;fon=
+t-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;" align=3D"=
+left"><div style=3D"cursor:auto;color:#55575d;font-family:Arial, sans-serif=
+;font-size:13px;line-height:22px;text-align:left;"><h2 style=3D"font-size:1=
+8px;font-weight:bold;text-align:center;"><span style=3D"font-family:Lato, H=
+elvetica, Arial, sans-serif;"><span style=3D"font-size:20px;"><b><span styl=
+e=3D"color:#222222;">Beli Kode Voucher Google Play (Rp) di Codashop!</span>=
+</b></span></span></h2></div></td></tr></tbody></table></div></td></tr></tb=
+ody></table></div>
+      <div style=3D"margin:0px auto;max-width:600px;background:#ffffff;"><t=
+able cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:0px;width:100%;=
+background:#ffffff;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"=
+text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20=
+px 0px 0px 0px;"><div class=3D"yiv7882938818mj-column-per-100 yiv7882938818=
+outlook-group-fix" style=3D"vertical-align:top;display:inline-block;directi=
+on:ltr;font-size:13px;text-align:left;width:100%;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" border=3D"0"><tbody><tr><td style=3D"word=
+-wrap:break-word;font-size:0px;padding:0px 25px 0px 25px;padding-top:0px;pa=
+dding-bottom:0px;" align=3D"left"><div style=3D"cursor:auto;color:#55575d;f=
+ont-family:Arial, sans-serif;font-size:13px;line-height:22px;text-align:lef=
+t;"><div style=3D"font-size:12.800000190734863px;line-height:16px;margin:10=
+px 0;"><span style=3D"font-family:Lato, Helvetica, Arial, sans-serif;"><spa=
+n style=3D"font-size:10pt;"><a rel=3D"nofollow" style=3D"color:#1155cc;" ta=
+rget=3D"_blank" href=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAABKtSMA=
+AAAALOkAAA_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/3/ogtrO2ag90IxCf8SHBBtH=
+A/aHR0cHM6Ly93d3cuY29kYXNob3AuY29tL2lkL2tvZGUtdm91Y2hlci1nb29nbGUtcGxheS8">=
+Kode Voucher Google Play</a> sekarang bisa dibeli di Codashop dengan menggu=
+nakan ATM Transfer, BCA Mobile, Mandiri Mobile, CIMB Go Mobile, BNI SMS Ban=
+king, dan pembayaran tunai di Alfamart. Setelah menyelesaikan pembayaran me=
+nggunakan salah satu channel ini, kode voucher akan dikirimkan ke email pen=
+gguna dan dapat diredeem di Google Play, di mana saldo tidak ada tanggal ke=
+daluarsa.</span></span></div><div style=3D"font-size:12.800000190734863px;l=
+ine-height:16px;margin:10px 0;"><span style=3D"font-family:Lato, Helvetica,=
+ Arial, sans-serif;"><span style=3D"font-size:10pt;">Berikut adalah nominal=
+ yang tersedia, dan tidak ada biaya layanan tambahan atau biaya tambahan ya=
+ng dikenakan oleh Codashop atau Google:</span></span></div><ul style=3D"col=
+or:#222222;font-family:arial, sans-serif;font-size:12.800000190734863px;"><=
+li style=3D"font-family:Lato;font-size:10pt;line-height:14px;"><div style=
+=3D"font-size:12.800000190734863px;line-height:16px;margin:10px 0;"><span s=
+tyle=3D"font-family:Lato, Helvetica, Arial, sans-serif;"><span style=3D"fon=
+t-size:10pt;">Rp. 50.000 kode voucher Google Play (Rp 55.000 Termasuk pajak=
+)</span></span></div></li><li style=3D"font-family:Lato;font-size:10pt;line=
+-height:14px;"><div style=3D"font-size:12.800000190734863px;line-height:16p=
+x;margin:10px 0;"><span style=3D"font-family:Lato, Helvetica, Arial, sans-s=
+erif;"><span style=3D"font-size:10pt;">Rp. 100.000 kode voucher Google Play=
+ (Rp 110.000 Termasuk pajak)</span></span></div></li><li style=3D"font-fami=
+ly:Lato;font-size:10pt;line-height:14px;"><div style=3D"font-size:12.800000=
+190734863px;line-height:16px;margin:10px 0;"><span style=3D"font-family:Lat=
+o, Helvetica, Arial, sans-serif;"><span style=3D"font-size:10pt;">Rp. 150.0=
+00 kode voucher Google Play (Rp 165.000 Termasuk pajak)</span></span></div>=
+</li><li style=3D"font-family:Lato;font-size:10pt;line-height:14px;"><div s=
+tyle=3D"font-size:12.800000190734863px;line-height:16px;margin:10px 0;"><sp=
+an style=3D"font-family:Lato, Helvetica, Arial, sans-serif;"><span style=3D=
+"font-size:10pt;">Rp. 300.000 kode voucher Google Play (Rp 330.000 Termasuk=
+ pajak)</span></span></div></li><li style=3D"font-family:Lato;font-size:10p=
+t;line-height:14px;"><div style=3D"font-size:12.800000190734863px;line-heig=
+ht:16px;margin:10px 0;"><span style=3D"font-family:Lato, Helvetica, Arial, =
+sans-serif;"><span style=3D"font-size:10pt;">Rp. 500.000 kode voucher Googl=
+e Play (Rp 550.000 Termasuk pajak)</span></span></div></li></ul><div style=
+=3D"font-size:12.800000190734863px;line-height:16px;margin:10px 0;"><span s=
+tyle=3D"font-family:Lato, Helvetica, Arial, sans-serif;"><span style=3D"fon=
+t-size:13.3333px;">Beli disini: </span><span style=3D"color:#1155cc;font-si=
+ze:10pt;"><a rel=3D"nofollow" style=3D"color:#1155cc;" target=3D"_blank" hr=
+ef=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhig=
+BZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/4/D_gGV7rgEn-0-jl40eqAFA/aHR0cHM6Ly93d3cu=
+Y29kYXNob3AuY29tL2lkL2tvZGUtdm91Y2hlci1nb29nbGUtcGxheS8">https://www.codash=
+op.com/id/kode-voucher-google-play/</a></span></span></div><div style=3D"fo=
+nt-size:13px;margin:10px 0;">&nbsp;</div></div></td></tr><tr><td style=3D"w=
+ord-wrap:break-word;font-size:0px;padding:10px 25px;" align=3D"center"><div=
+><table cellpadding=3D"0" cellspacing=3D"0" style=3D"float:none;display:inl=
+ine-table;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"padding:4=
+px;vertical-align:middle;"><table cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"background:#3b5998;border-radius:3px;width:20px;" border=3D"0"><tbody><=
+tr><td style=3D"vertical-align:middle;width:20px;min-height:20px;"><a rel=
+=3D"nofollow" target=3D"_blank" href=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IA=
+AAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/5/SWBAu=
+uEZULMTBV_m6sc7Vg/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0NvZGFwYXk"><img alt=3D"=
+facebook" height=3D"20" src=3D"https://www.mailjet.com/images/theme/v1/icon=
+s/ico-social/facebook.png" style=3D"display:block;border-radius:3px;" width=
+=3D"20"></a></td></tr></tbody></table></td><td style=3D"padding:4px 4px 4px=
+ 0;vertical-align:middle;"><a rel=3D"nofollow" target=3D"_blank" href=3D"ht=
+tp://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0Kj=
+mzMVZqRb-z98n9A5JsCgAIbMY/6/barDamEwMa2gcW--lExv0A/aHR0cHM6Ly93d3cuZmFjZWJv=
+b2suY29tL0NvZGFwYXk" style=3D"text-decoration:none;text-align:left;display:=
+block;color:#55575d;font-family:Arial, sans-serif;font-size:13px;line-heigh=
+t:22px;border-radius:3px;">Share</a></td></tr></tbody></table></div></td></=
+tr><tr><td style=3D"word-wrap:break-word;font-size:0px;padding:10px 25px;">=
+<div style=3D"font-size:1px;margin:0px auto;border-top:4px solid #000000;wi=
+dth:100%;"></div></td></tr><tr><td style=3D"word-wrap:break-word;font-size:=
+0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;" align=3D"left"><=
+div style=3D"cursor:auto;color:#55575d;font-family:Arial, sans-serif;font-s=
+ize:13px;line-height:22px;text-align:left;"><div style=3D"font-size:13px;ma=
+rgin:10px 0;text-align:center;"><span style=3D"font-family:Helvetica, Arial=
+, sans-serif;"><i style=3D"color:#656565;font-family:Helvetica;font-size:12=
+px;">Copyright =C2=A9 2017 Coda Payments All rights reserved.</i></span></d=
+iv><div style=3D"font-size:13px;margin:10px 0;text-align:center;"><span sty=
+le=3D"font-family:Helvetica, Arial, sans-serif;"><b style=3D"color:#656565;=
+font-family:Helvetica;font-size:12px;">Our email address is:</b></span></di=
+v><div style=3D"font-size:13px;margin:10px 0;text-align:center;"><span styl=
+e=3D"font-family:Helvetica, Arial, sans-serif;"><a rel=3D"nofollow" style=
+=3D"color:#656565;font-family:Helvetica;font-size:12px;text-decoration:unde=
+rline;" ymailto=3D"mailto:support@codapayments.com" target=3D"_blank" href=
+=3D"mailto:support@codapayments.com">support@codapayments.com</a></span></d=
+iv><div style=3D"font-size:13px;margin:10px 0;text-align:center;"><span sty=
+le=3D"font-family:Helvetica, Arial, sans-serif;"><span style=3D"color:#6565=
+65;font-size:12px;">Want to change how you receive these emails?</span></sp=
+an></div><div style=3D"font-size:13px;margin:10px 0;text-align:center;"><sp=
+an style=3D"font-family:Helvetica, Arial, sans-serif;"><span style=3D"color=
+:#656565;font-size:12px;">You can&nbsp;</span><a rel=3D"nofollow" style=3D"=
+color:#656565;font-family:Helvetica;font-size:12px;text-decoration:underlin=
+e;" target=3D"_blank" href=3D"http://jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAA=
+BKtSMAAAAALOkAAA_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/7/02_iPASix0VjNnB=
+6Um_7mA/aHR0cDovL2NvZGFzaG9wLnVzOS5saXN0LW1hbmFnZTEuY29tL3Byb2ZpbGU_dT1jMGF=
+lMTg5YmI2YWM2MWJlYmFmNjU4MTNlJmlkPTAyMGI3YWVmMWQmZT0zYWUxZjNkOWE4">update y=
+our preferences</a><span style=3D"color:#656565;font-size:12px;">&nbsp;or&n=
+bsp;</span><a rel=3D"nofollow" style=3D"color:#656565;font-family:Helvetica=
+;font-size:12px;text-decoration:underline;" target=3D"_blank" href=3D"http:=
+//jvi7.mjt.lu/lnk/AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0KjmzM=
+VZqRb-z98n9A5JsCgAIbMY/8/YGrBFhuzKlLdx8UZirTIug/aHR0cDovL2NvZGFzaG9wLnVzOS5=
+saXN0LW1hbmFnZTEuY29tL3Vuc3Vic2NyaWJlP3U9YzBhZTE4OWJiNmFjNjFiZWJhZjY1ODEzZS=
+ZpZD0wMjBiN2FlZjFkJmU9M2FlMWYzZDlhOCZjPTE1MGY0NmFhOWY">unsubscribe from thi=
+s list</a></span></div></div></td></tr></tbody></table></div></td></tr></tb=
+ody></table></div>
+      <div style=3D"margin:0px auto;max-width:600px;background:#ffffff;"><t=
+able cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:0px;width:100%;=
+background:#ffffff;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"=
+text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0p=
+x 0px 20px 0px;"><div class=3D"yiv7882938818mj-column-per-100 yiv7882938818=
+outlook-group-fix" style=3D"vertical-align:top;display:inline-block;directi=
+on:ltr;font-size:13px;text-align:left;width:100%;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" border=3D"0"><tbody><tr><td style=3D"word=
+-wrap:break-word;font-size:0px;padding:10px 25px;" align=3D"center"><table =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;borde=
+r-spacing:0px;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"width=
+:550px;"><img alt=3D"" title=3D"" height=3D"auto" src=3D"http://jvi7.mjt.lu=
+/img/jvi7/b/221/x57o.png" style=3D"border:none;border-radius:0px;display:bl=
+ock;font-size:13px;outline:none;text-decoration:none;width:100%;min-height:=
+auto;" width=3D"550"></td></tr></tbody></table></td></tr></tbody></table></=
+div></td></tr></tbody></table></div>
+      <div style=3D"margin:0px auto;max-width:600px;"><table cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"font-size:0px;width:100%;" align=3D"center" =
+border=3D"0"><tbody><tr><td style=3D"text-align:center;vertical-align:top;d=
+irection:ltr;font-size:0px;padding:20px 0px 20px 0px;"><div class=3D"yiv788=
+2938818mj-column-per-100 yiv7882938818outlook-group-fix" style=3D"vertical-=
+align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left=
+;width:100%;"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bor=
+der=3D"0"><tbody><tr><td style=3D"word-wrap:break-word;font-size:0px;paddin=
+g:0px 20px 0px 20px;padding-top:0px;padding-bottom:0px;" align=3D"center"><=
+div style=3D"cursor:auto;color:#55575d;font-family:Arial, sans-serif;font-s=
+ize:11px;line-height:22px;text-align:center;"><div style=3D"margin:10px 0;"=
+>This e-mail has been sent to hitsu_lim25@yahoo.com, <a rel=3D"nofollow" ta=
+rget=3D"_blank" href=3D"http://jvi7.mjt.lu/unsub2?hl=3Den&amp;m=3DAEIAAEgsy=
+-IAAAAxnh4AAABKtSMAAAAALOkAAA_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY&amp;=
+b=3D85082e56&amp;e=3D7a1bb709&amp;x=3DE__aK3jEm4lh6XoAieqsmHf_LSMTXLM78o0a1=
+YXYEJA" style=3D"color:inherit;text-decoration:none;">click here to unsubsc=
+ribe</a>.</div></div></td></tr><tr><td style=3D"word-wrap:break-word;font-s=
+ize:0px;padding:0px 20px 0px 20px;padding-top:0px;padding-bottom:0px;" alig=
+n=3D"center"><div style=3D"cursor:auto;color:#55575d;font-family:Arial, san=
+s-serif;font-size:11px;line-height:22px;text-align:center;"><div style=3D"m=
+argin:10px 0;">77A Tras Street 079016 Singapore SG</div></div></td></tr></t=
+body></table></div></td></tr></tbody></table></div></div>
+
+<br><img src=3D"http://jvi7.mjt.lu/oo/AEIAAEgsy-IAAAAxnh4AAABKtSMAAAAALOkAA=
+A_-AAjhigBZp9B0KjmzMVZqRb-z98n9A5JsCgAIbMY/aeea9149/e.gif" height=3D"1" wid=
+th=3D"1" alt=3D"" border=3D"0" style=3D"min-height:1px;width:1px;border:0;"=
+>
+</div>
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_7626853_1353873692.1506000246707--

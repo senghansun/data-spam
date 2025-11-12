@@ -1,0 +1,499 @@
+﻿Delivered-To: anggidwir8@gmail.com
+Received: by 10.25.28.4 with SMTP id c4csp5771310lfc;
+        Thu, 24 Aug 2017 02:26:05 -0700 (PDT)
+X-Received: by 10.98.17.206 with SMTP id 75mr3191281pfr.265.1503566765497;
+        Thu, 24 Aug 2017 02:26:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503566765; cv=none;
+        d=google.com; s=arc-20160816;
+        b=M8EGSQdJbISkFM5xMiH6/wZ2EJTD4uu1VhqgxxK5tqsX3i6e9g3aZja+Lgv7ddAzNF
+         M4+ZAATcEfnKaxjLYAQCpvycgKzRuKAWI2fYQueaV08vS1CiTH4M9L/VJw9MQxGDtpuT
+         7pqEkcP8MjUKnIfFdHcZhUQDhG+RxHS65PWxEtZ+U8i1yfbJHyLdiOgeXKyI6rWydiYH
+         OuDo6Z2Tv9EzKXY5hjZHwcq8FwO6+EBhjxKypUYnX7eEnrusHm4eI34aZd0LyrNPcyjg
+         wY+AsAGT8vcy+MeNwgMrf8Ho0pU5YBSUhKTgPmGMV77Le7t/TPTNmSVuFmHHyuBhwn2D
+         6Y/Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:content-transfer-encoding:mime-version:list-unsubscribe
+         :message-id:subject:reply-to:from:to:date:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=VwMLthWG48aKwccTbNFotZeV7ShGVALLfC6SX+oZnHA=;
+        b=Hpu3xHW4tYBQYt1lLE66nfH1t/qGoJH7n3UAFKGs3VDxxwIRT0Hi/BWeSBIl69Yotc
+         jSCabkWAASfqSfeUKj05KPkc4m9ZFYLB+KMXsFEIFp8DHD1lSx+fSgP3qdFCizGT2lc+
+         ftr/AnDmthut1ft+Bn7ZbdahgiubLFOpbD1n4VJ2CdXL2znlrSal5IY5+JNU7hlUKiae
+         jqoE6YMFyAfI9j1mrAOLtj+CjaM40wWGSvUhEgezia7IkbLNofhwT49GXloCg0551eeV
+         WCf8NeTcT7l7Go1C1rS28wFs995HxJoKe47wAUpp0eZmH/sIBGauL8gemFJYJyBMoCpa
+         5V/g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@indonesiaflight.id header.s=dis474fcgqdhpb3wecwsuq5nbtyy5nhp header.b=KKXuVXeO;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=birw2e8W;
+       spf=pass (google.com: domain of 0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id designates 54.240.27.122 as permitted sender) smtp.mailfrom=0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=indonesiaflight.id
+Return-Path: <0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id>
+Received: from a27-122.smtp-out.us-west-2.amazonses.com (a27-122.smtp-out.us-west-2.amazonses.com. [54.240.27.122])
+        by mx.google.com with ESMTPS id n127si2507271pga.484.2017.08.24.02.26.04
+        for <anggidwir8@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 24 Aug 2017 02:26:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id designates 54.240.27.122 as permitted sender) client-ip=54.240.27.122;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indonesiaflight.id header.s=dis474fcgqdhpb3wecwsuq5nbtyy5nhp header.b=KKXuVXeO;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=birw2e8W;
+       spf=pass (google.com: domain of 0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id designates 54.240.27.122 as permitted sender) smtp.mailfrom=0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@newsletter.indonesiaflight.id;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=indonesiaflight.id
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=dis474fcgqdhpb3wecwsuq5nbtyy5nhp; d=indonesiaflight.id; t=1503566764; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding; bh=SL3q6l1Z/ywMDsNZt9x5uv6nsDQBci9JZGiKPs3sUFA=; b=KKXuVXeOOi+rEcs824Uv86HBc8ZP1rqTfOT76Yj5qDE7NgdgL4Rrl0gymc2DQD0U j1F+JXdbB3axPcYXjt9N9sXUbpkZ8R/Me/71wEfAQqNUQ7Fgsv9iDxtEtGWHCgVIQ/e sbuRmAiTsP/C9dn7dcKXlGEKot1/+OCEKRntAJS4=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1503566764; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID; bh=SL3q6l1Z/ywMDsNZt9x5uv6nsDQBci9JZGiKPs3sUFA=; b=birw2e8WJ8pwLCj3rgwFpb60pca0949B8ph741EZFZdgCsPILu7bFs40UiBRiGFU xFgm+QL/v+ccGyFccFFeml4S5bY+QW3i+rNWt31IQKTtOdoIwGhmI0Vqim0IVtH2ZUO bbk/bjIPWXD/YdPwLJ9e3UQSAwq876aD+5PES7Fc=
+Date: Thu, 24 Aug 2017 09:26:03 +0000
+To: Anggi Dwi Rahmawati <anggidwir8@gmail.com>
+From: Indonesia Flight <noreply@indonesiaflight.id>
+Reply-To: Indonesia Flight <noreply@indonesiaflight.id>
+Subject: Diskon Hingga 400rb! HBD Indonesia Flight 🎂
+Message-ID: <0101015e13901773-e88a485c-0eed-4153-9cf1-02c3729c7c09-000000@us-west-2.amazonses.com>
+X-Mailer: Indonesia Flight
+List-Unsubscribe: <https://newsletter.indonesiaflight.id/unsubscribe/OmzsR7XTBtQK892uJdppNdTmBLfJRcVzaGGMqOo37632H3Q/kLDb6fAFOqkjgvpLgRs7638Q/PuHrKi3dTmxucpjUwwVggw>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-SES-Outgoing: 2017.08.24-54.240.27.122
+Feedback-ID: 1.us-west-2.e46t9uH8MD3ws92R7gZ9OfcrRDLZKeyjEwNVr3aAOa8=:AmazonSES
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><meta content=3D"text/html; charset=3DUTF-8" http-equiv=3D"Content-Ty=
+pe"><meta content=3D"telephone=3Dno" name=3D"format-detection"><meta conten=
+t=3D"width=3Dmobile-width; initial-scale=3D1.0; maximum-scale=3D1.0; user-s=
+calable=3Dno;" name=3D"viewport"><meta content=3D"IE=3D9; IE=3D8; IE=3D7; I=
+E=3DEDGE;" http-equiv=3D"X-UA-Compatible">
+=09<title></title>
+</head>
+<body><!-- Start of banner -->
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" id=3D"body-table" style=3D"table-layout:fixed;" width=3D"=
+100%">
+=09<tbody><!-- click here if you don't read correctly the email. -->
+=09=09<tr>
+=09=09=09<td>
+=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"mobile-width" style=3D"margin: 0 auto;" width=3D"600">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td height=3D"28" style=3D"width: 50%; text-align: left !=
+important; font-family: Arial, Helvetica, sans-serif;font-size:11px; font-w=
+eight:normal; color:#7f8c8d;">Tiket Pesawat dan Hotel Murah</td>
+=09=09=09=09=09=09<td height=3D"28" style=3D"width: 50%; text-align: right =
+!important; font-family: Arial, Helvetica, sans-serif;font-size:11px; font-=
+weight:normal; color:#7f8c8d;"><a href=3D"https://newsletter.indonesiafligh=
+t.id/w/JaFsW3KS4DIeoUskNu892F8Q/kLDb6fAFOqkjgvpLgRs7638Q/PuHrKi3dTmxucpjUww=
+Vggw"  style=3D"color:#00c1f1; text-decoration:underline !important;">Click=
+ here</a> if you can&#39;t read the email correctly.</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09=09<!-- newsletter content -->
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#fff" valign=3D"top">
+=09=09=09<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"mobile-width" width=3D"600">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff" valign=3D"top"><=
+!-- filler --><!-- main header (download) -->
+=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"content-width-menu" width=3D"550">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" height=3D"25" valign=3D"middl=
+e"><a href=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892=
+F8Q/72JjZ892bnSpab4ssQMTGh4Q/PuHrKi3dTmxucpjUwwVggw" target=3D"_blank"><img=
+ alt=3D"" class=3D"emailImage" src=3D"https://newsletter.indonesiaflight.id=
+/uploads/1486619616.jpg" style=3D"border-width: 0px; border-style: solid; w=
+idth: 600px; margin-bottom: 7px; height: 90px;" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- main promo -->
+
+=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"full-width" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D"font-size: 13px; lin=
+e-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans=
+-serif;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+; text-align: center;"><strong>Dapatkan diskon tiket pesawat hingga Rp&nbsp=
+;300.000</strong></p>
+=09=09=09=09=09=09=09=09=09<a href=3D"https://newsletter.indonesiaflight.id=
+/l/JaFsW3KS4DIeoUskNu892F8Q/E8cvlN9NJq0V1c892u2TD0mw/PuHrKi3dTmxucpjUwwVggw=
+"><img alt=3D"5UPER 5ALE" asyik=3D"" src=3D"https://newsletter.indonesiafli=
+ght.id/uploads/1503545385.jpg" style=3D"width: 100%;" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- main promo caption -->
+
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"full-width" style=3D"margin: 0 auto; border-bottom: =
+1px dashed #CE2D29;" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"font-size: 13px; l=
+ine-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sa=
+ns-serif;" width=3D"600">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+;">Gunakan kode promo: <strong>ULTAH100</strong> atau <strong>ULTAH300</str=
+ong></p>
+
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-weight: normal;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr><!-- orange:fe9a06=20
+=09red:CE2D29
+=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"-webkit-b=
+order-radius: 3px; -moz-border-radius: 3px; border-radius:3px; color:#fffff=
+f; display:block; font-family: Arial, Helvetica, sans-serif; font-size:12px=
+; text-align:center; text-decoration:none; padding-top: 10px; padding-botto=
+m: 10px; -webkit-text-size-adjust:none; background-color:#CE2D29;"><a href=
+=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/E8cvlN=
+9NJq0V1c892u2TD0mw/PuHrKi3dTmxucpjUwwVggw" style=3D"padding:12px 60px; colo=
+r:#ffffff;font-family: Arial, Helvetica, sans-serif; font-size:12px; text-d=
+ecoration:none !important; " target=3D"_blank">Selengkapnya <img alt=3D"" s=
+rc=3D"https://newsletter.indonesiaflight.id/uploads/1475736182.png" style=
+=3D"width: 8px; height: 8px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td height=3D"25" style=3D"font-size:30px; line-=
+height:25px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- other promo container -->
+
+=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"full-width" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D"font-size: 13px; lin=
+e-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans=
+-serif;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+; text-align: center;"><strong>Khusus pengguna Kartu Kredit BCA dapatkan di=
+skon tiket pesawat Rp&nbsp;400.000</strong></p>
+=09=09=09=09=09=09=09=09=09<a href=3D"https://newsletter.indonesiaflight.id=
+/l/JaFsW3KS4DIeoUskNu892F8Q/4WR8X767630t763L9fms3TlDow/PuHrKi3dTmxucpjUwwVg=
+gw"><img alt=3D"5UPER 5SALE BCA" asyik=3D"" src=3D"https://newsletter.indon=
+esiaflight.id/uploads/1503545425.jpg" style=3D"width: 100%;" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- main promo caption -->
+
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"full-width" style=3D"margin: 0 auto; border-bottom: =
+1px dashed #CE2D29;" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"font-size: 13px; l=
+ine-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sa=
+ns-serif;" width=3D"600">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+;">Gunakan kode promo: <strong>ULTAH400</strong></p>
+
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-weight: normal;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr><!-- orange:fe9a06=20
+=09red:CE2D29
+=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"-webkit-b=
+order-radius: 3px; -moz-border-radius: 3px; border-radius:3px; color:#fffff=
+f; display:block; font-family: Arial, Helvetica, sans-serif; font-size:12px=
+; text-align:center; text-decoration:none; padding-top: 10px; padding-botto=
+m: 10px; -webkit-text-size-adjust:none; background-color:#CE2D29;"><a href=
+=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/4WR8X7=
+67630t763L9fms3TlDow/PuHrKi3dTmxucpjUwwVggw" style=3D"padding:12px 60px; co=
+lor:#ffffff;font-family: Arial, Helvetica, sans-serif; font-size:12px; text=
+-decoration:none !important; " target=3D"_blank">Selengkapnya <img alt=3D""=
+ src=3D"https://newsletter.indonesiaflight.id/uploads/1475736182.png" style=
+=3D"width: 8px; height: 8px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+;"><strong>Temukan juga harga spesial dari maskapai favoritmu!</strong><br =
+/>
+=09=09=09=09=09=09=09=09=09<br />
+=09=09=09=09=09=09=09=09=09Kapan lagi ada penawaran menarik<br />
+=09=09=09=09=09=09=09=09=09Apalagi kalau datangnya dari Indonesia Flight ya=
+ng asyik<br />
+=09=09=09=09=09=09=09=09=09Mau tiket internasional atau domestik<br />
+=09=09=09=09=09=09=09=09=09Yang penting bisa jalan-jalan ke destinasi ciami=
+k</p>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td height=3D"25" style=3D"font-size:30px; line-=
+height:25px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- other promo container -->
+
+=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"full-width" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td height=3D"25" style=3D"font-size:30px; line-=
+height:25px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D"font-size: 13px; lin=
+e-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans=
+-serif;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+; text-align: center;"><strong>Dapatkan juga diskon Hotel Diskon 20% Maks. =
+Rp&nbsp;300.000/transaksi</strong></p>
+=09=09=09=09=09=09=09=09=09<a href=3D"https://newsletter.indonesiaflight.id=
+/l/JaFsW3KS4DIeoUskNu892F8Q/QNJxLkU3h5QIdMs892Bv8ccg/PuHrKi3dTmxucpjUwwVggw=
+"><img alt=3D"5UPER 5SALE" asyik=3D"" src=3D"https://newsletter.indonesiafl=
+ight.id/uploads/1503546425.jpg" style=3D"width: 100%;" /></a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- main promo caption -->
+
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"full-width" style=3D"margin: 0 auto; border-bottom: =
+1px dashed #CE2D29;" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"font-size: 13px; l=
+ine-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sa=
+ns-serif;" width=3D"600">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+;">Gunakan Kode Promo: <strong>HUT300</strong></p>
+
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-weight: normal;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr><!-- orange:fe9a06=20
+=09red:CE2D29
+=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"-webkit-b=
+order-radius: 3px; -moz-border-radius: 3px; border-radius:3px; color:#fffff=
+f; display:block; font-family: Arial, Helvetica, sans-serif; font-size:12px=
+; text-align:center; text-decoration:none; padding-top: 10px; padding-botto=
+m: 10px; -webkit-text-size-adjust:none; background-color:#CE2D29;"><a href=
+=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/QNJxLk=
+U3h5QIdMs892Bv8ccg/PuHrKi3dTmxucpjUwwVggw" style=3D"padding:12px 60px; colo=
+r:#ffffff;font-family: Arial, Helvetica, sans-serif; font-size:12px; text-d=
+ecoration:none !important; " target=3D"_blank">Selengkapnya <img alt=3D"" s=
+rc=3D"https://newsletter.indonesiaflight.id/uploads/1475736182.png" style=
+=3D"width: 8px; height: 8px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td height=3D"25" style=3D"font-size:30px; line-=
+height:25px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- other promo container -->
+
+=09=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"full-width" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D"font-size: 13px; lin=
+e-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans=
+-serif;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+; text-align: center;"><strong>Dan diskon 25% Maks. Rp&nbsp;400.000/transak=
+si</strong></p>
+=09=09=09=09=09=09=09=09=09<a href=3D"https://newsletter.indonesiaflight.id=
+/l/JaFsW3KS4DIeoUskNu892F8Q/LuVx7CI8lR7892e9mNAwVxDg/PuHrKi3dTmxucpjUwwVggw=
+"><img alt=3D"5UPER 5ALE DISKON HOTEL" asyik=3D"" src=3D"https://newsletter=
+.indonesiaflight.id/uploads/1503545477.jpg" style=3D"width: 100%;" /></a></=
+td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- main promo caption -->
+
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"full-width" style=3D"margin: 0 auto; border-bottom: =
+1px dashed #CE2D29;" width=3D"100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"font-size: 13px; l=
+ine-height: 16px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sa=
+ns-serif;" width=3D"600">
+=09=09=09=09=09=09=09=09=09<p style=3D"font-size: 1.2em; line-height: 1.4em=
+;">Gunakan Kode Promo: <strong>HUT400</strong></p>
+
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-weight: normal;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr><!-- orange:fe9a06=20
+=09red:CE2D29
+=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"-webkit-b=
+order-radius: 3px; -moz-border-radius: 3px; border-radius:3px; color:#fffff=
+f; display:block; font-family: Arial, Helvetica, sans-serif; font-size:12px=
+; text-align:center; text-decoration:none; padding-top: 10px; padding-botto=
+m: 10px; -webkit-text-size-adjust:none; background-color:#CE2D29;"><a href=
+=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/LuVx7C=
+I8lR7892e9mNAwVxDg/PuHrKi3dTmxucpjUwwVggw" style=3D"padding:12px 60px; colo=
+r:#ffffff;font-family: Arial, Helvetica, sans-serif; font-size:12px; text-d=
+ecoration:none !important; " target=3D"_blank">Selengkapnya <img alt=3D"" s=
+rc=3D"https://newsletter.indonesiaflight.id/uploads/1475736182.png" style=
+=3D"width: 8px; height: 8px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td height=3D"25" style=3D"font-size:30px; line-=
+height:25px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- other promo container -->
+
+=09=09=09=09=09=09<table align=3D"center" bgcolor=3D"#fff" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"mobile-width" width=3D"600">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center"><!-- first other promo -->
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"full-width" width=3D"600">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center"><!-- End Column 2 =
+--></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+
+=09=09=09=09=09=09<table align=3D"center" bgcolor=3D"#fff" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"mobile-width" width=3D"600">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09=09=09=09<h3 style=3D"font-size: 0.9em; font-family: Aria=
+l, Helvetica, sans-serif; margin: 4% 5% 1% 5%; color: #CE2D29;"><span style=
+=3D"font-size:16px;">Pesan Tiket Pesawat Mudah dan Murah</span></h3>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09=09=09=09<h3 style=3D"font-size: 0.9em; font-family: Aria=
+l, Helvetica, sans-serif; margin: 1% 5% 2% 5%; color: #CE2D29;"><span style=
+=3D"font-size:16px;">Dengan Aplikasi Indonesia Flight</span></h3>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center"><img alt=3D"" src=3D"https:=
+//newsletter.indonesiaflight.id/uploads/1475736239.png" style=3D"margin: 1%=
+ 0% 3%; width: 10px;" /></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center"><!-- Start Block Content --=
+>
+=09=09=09=09=09=09=09=09=09<table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"content-width" width=3D"550">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr><!-- google play -->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"right" valign=3D"bottom" w=
+idth=3D"50%"><a href=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DI=
+eoUskNu892F8Q/sfFtQtJmfjGOom20XwU1uQ/PuHrKi3dTmxucpjUwwVggw" target=3D"_bla=
+nk"><img alt=3D"Android App on Google Play" src=3D"https://newsletter.indon=
+esiaflight.id/uploads/1486619715.png" style=3D"margin: 0px 3px; width: 164p=
+x; height: 189px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09<!-- app store -->
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" valign=3D"bottom" wi=
+dth=3D"50%"><a href=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIe=
+oUskNu892F8Q/763wUijN5MlIggvJgtDhLGXw/PuHrKi3dTmxucpjUwwVggw" target=3D"_bl=
+ank"><img alt=3D"Download on the App Store" src=3D"https://newsletter.indon=
+esiaflight.id/uploads/1486619725.png" style=3D"margin: 0px 3px; width: 164p=
+x; height: 189px;" /></a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- End Block Content --></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09<!-- Start second footer  -->
+
+=09=09=09=09=09=09<div style=3D"text-align:center; margin:0px; overflow:hid=
+den; padding: 15px; background-size: contain; background: url('https://news=
+letter.indonesiaflight.id/uploads/1476264392.PNG'), linear-gradient(-90deg,=
+ #871c1e 10%, #c32c28)">
+=09=09=09=09=09=09<div style=3D"overflow:hidden; display:table; margin: 0 a=
+uto;margin-bottom: 15px;"><a href=3D"tel:+622129633678"><img align=3D"left"=
+ alt=3D"" height=3D"49" src=3D"https://newsletter.indonesiaflight.id/upload=
+s/1476167366.png" style=3D"" width=3D"117" /></a> <a href=3D"mailto:cs@indo=
+nesiaflight.id"><img align=3D"left" alt=3D"" height=3D"49" src=3D"https://n=
+ewsletter.indonesiaflight.id/uploads/1476167382.png" style=3D"" width=3D"15=
+1" /></a></div>
+
+=09=09=09=09=09=09<div style=3D"overflow:hidden; display:table; margin: 0 a=
+uto;"><a href=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu=
+892F8Q/RzR59AAC7Mn3kmgFBqHBgg/PuHrKi3dTmxucpjUwwVggw"><img align=3D"left" a=
+lt=3D"twitter" height=3D"64" src=3D"https://newsletter.indonesiaflight.id/u=
+ploads/1476172542.png" style=3D"" width=3D"83" /></a> <a href=3D"https://ne=
+wsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/3kLw2DDX3zj4D4q3FBIz=
+rw/PuHrKi3dTmxucpjUwwVggw"><img align=3D"left" alt=3D"facebook" height=3D"6=
+4" src=3D"https://newsletter.indonesiaflight.id/uploads/1476172566.png" sty=
+le=3D"" width=3D"34" /></a> <a href=3D"https://newsletter.indonesiaflight.i=
+d/l/JaFsW3KS4DIeoUskNu892F8Q/6yqpjQLhZ8ZMt6FDNYzK9g/PuHrKi3dTmxucpjUwwVggw"=
+><img align=3D"left" alt=3D"instagram" height=3D"64" src=3D"https://newslet=
+ter.indonesiaflight.id/uploads/1476172574.png" style=3D"" width=3D"34" /></=
+a> <a href=3D"https://newsletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892=
+F8Q/rV5WPyr6Wi1U892c6a6nzwxg/PuHrKi3dTmxucpjUwwVggw"><img align=3D"left" al=
+t=3D"google+" height=3D"64" src=3D"https://newsletter.indonesiaflight.id/up=
+loads/1476172583.png" style=3D"" width=3D"34" /></a> <a href=3D"https://new=
+sletter.indonesiaflight.id/l/JaFsW3KS4DIeoUskNu892F8Q/MN8bNqxoxgfPJOVmekXBz=
+Q/PuHrKi3dTmxucpjUwwVggw"><img align=3D"left" alt=3D"" height=3D"64" src=3D=
+"https://newsletter.indonesiaflight.id/uploads/1476172590.png" style=3D"lin=
+e" width=3D"84" /></a></div>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>
+=09=09=09=09=09=09<p style=3D"color: rgb(170, 170, 170); font-style: italic=
+; text-align: center;font-size:14px;background-color: rgb(255, 255, 255);">=
+<small>Klik <a href=3D"https://newsletter.indonesiaflight.id/unsubscribe/Om=
+zsR7XTBtQK892uJdppNdTmBLfJRcVzaGGMqOo37632H3Q/kLDb6fAFOqkjgvpLgRs7638Q/PuHr=
+Ki3dTmxucpjUwwVggw" >di sini</a> untuk berhenti berlangganan. Namun Anda ak=
+an kehilangan informasi promo menarik&nbsp;untuk tiket pesawat dan tiket ke=
+reta api.</small></p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!-- End main table white containe --></td>
+=09=09</tr>
+=09</tbody>
+</table>
+</body>
+</html>
+<img src=3D"https://newsletter.indonesiaflight.id/t/PuHrKi3dTmxucpjUwwVggw/=
+JaFsW3KS4DIeoUskNu892F8Q" alt=3D"" style=3D"width:1px;height:1px;"/>

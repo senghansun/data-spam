@@ -1,0 +1,847 @@
+﻿Delivered-To: anggidwir8@gmail.com
+Received: by 10.25.28.4 with SMTP id c4csp1939401lfc;
+        Sat, 16 Sep 2017 20:05:38 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QAEHT8emY6Et/8epHc7TLNIbrCqyIxKFpZiHWH8IaFH0FMuLJ3TQZRkwCEv77qtnsDwrRFX
+X-Received: by 10.28.188.86 with SMTP id m83mr5575999wmf.83.1505617538814;
+        Sat, 16 Sep 2017 20:05:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1505617538; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vu3T5VVr4vRUX7qTgkKO4e1f40YJNt4lu2LoZxZwACysdK2DWGMTkdMu/uZrBM+w+B
+         xJDgSG9yNR2/9EMzZpQaVgCUw2jKqa9Npez19XsVrpJUyufQfF4jp6b7QGUHnTh0lJTe
+         afzacGyDiuj5CExaPIqSxDHTzGIMhQ8/bOM1JHJC8ZMm2P9MM7SHOes886DZ5JJYdigR
+         HKkooFPloEfgR4FGWXUcVBoDM5/0QPSWecROtU4UBQ9M9VOu7tKTW/sDuspKIeQB3ZkE
+         TjKXHDkIBNtzYuESP0Dpc/z4rSrYFcEBz0uyD5sa6wgv2c651d/wjnphi2+79Rr2SUCY
+         1B/w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:list-unsubscribe:list-id:mime-version:from:subject
+         :to:dkim-signature:arc-authentication-results;
+        bh=GadwjgwGlckCjak2WzV6LfUt67bOx42LeHMMwD5BuAU=;
+        b=bxVififDCc1OQvfkMFYdh3C01PujWnFdA9jLLrV2Frak2Kc/Zoj4oqZ/AxNOgj5aXB
+         1vpYnTHw2F8Gc6r77fxCd91enC6NyMM9S3FHAztPTrqNzquwi3WlHNgoQNcA2U08PwSC
+         Ulwj2ZZIBVGUyIx1ayx9lgDz0LLXwBTC/ToFU9obgETpAyOrv844Ndan6tlLlBBk2cfu
+         kbaQ+Xdbi2p22B9YR7tP1WfnIWHXyBTsW+snLXLKcH0OWMF4cGQ0AvqqY3hfCL+k0tDq
+         4Zqhmh8NUjI+XWg/NLZr2NJw99zhxtl7i6J06N7P+ub750yxvhahnMkqfUnTGtQjItoj
+         JQAw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@enews.mataharimall.com header.s=key2 header.b=m48E0S2r;
+       spf=pass (google.com: domain of suite11@return.mataharimall.com designates 185.90.23.134 as permitted sender) smtp.mailfrom=suite11@return.mataharimall.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=enews.mataharimall.com
+Return-Path: <suite11@return.mataharimall.com>
+Received: from suitepmta023134.emsmtp.us (suitepmta023134.emsmtp.us. [185.90.23.134])
+        by mx.google.com with ESMTPS id j42si3515102wrj.390.2017.09.16.20.05.38
+        for <anggidwir8@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 16 Sep 2017 20:05:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of suite11@return.mataharimall.com designates 185.90.23.134 as permitted sender) client-ip=185.90.23.134;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@enews.mataharimall.com header.s=key2 header.b=m48E0S2r;
+       spf=pass (google.com: domain of suite11@return.mataharimall.com designates 185.90.23.134 as permitted sender) smtp.mailfrom=suite11@return.mataharimall.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=enews.mataharimall.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=key2; d=enews.mataharimall.com; h=To:Subject:From:MIME-Version:List-Id:List-Unsubscribe:Content-Type:Message-ID:Date; i=info@enews.mataharimall.com; bh=GadwjgwGlckCjak2WzV6LfUt67bOx42LeHMMwD5BuAU=; b=m48E0S2ro0MO82hr0C4ATTdqHkgIWRhbZSd533TsS06DW9wi0qbCdkEqvfvTzlT2lUPC6PCs92Yx
+   lbP5/OqyBQgLQ3F38DF6OPGiecJT9KiezswW0ZgCowPx6FrvhtCtzhcjjGa5hSxGUIJ3Wtj53gUT
+   5yPtTSctsr3x42umZIs=
+Received: from (10.33.0.160) by suitepmta023134.emsmtp.us id hnnj841ev24o for <anggidwir8@gmail.com>; Sun, 17 Sep 2017 05:02:53 +0200 (envelope-from <suite11@return.mataharimall.com>)
+To: anggidwir8@gmail.com
+Subject: Kasih Kado Apa Yah Buat 12 Zodiak? 🎁
+X-Mailer: class SMTPMail
+From: "MatahariMall.com" <info@enews.mataharimall.com>
+MIME-Version: 1.0
+List-Id: 761547365 <MatahariMall.com>
+X-EMarSys-Identify: 761547365_2130891_205278
+X-EMarSys-Environment: suite11
+X-Report-Abuse: Please report abuse here: abuse-report@emarsys.com
+List-Unsubscribe: <mailto:list-unsubscribe+761547365_2130891_205278_rFMhuwN7jK@emarsys.net>, <https://list-unsubscribe.eservice.emarsys.net/api/unsubscribe/761547365_2130891_205278_rFMhuwN7jK>
+Content-Type: multipart/alternative; boundary="--=_---NextPart--=_-8NWUKih4Fr"
+Message-ID: <0.1.E.576.1D32F61744A52C0.0@suitepmta023134.emsmtp.us>
+Date: Sun, 17 Sep 2017 05:02:53 +0200
+
+----=_---NextPart--=_-8NWUKih4Fr
+Content-Type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+
+To view the graphic version (HTML) of this e-mail, click on the
+following link or copy it into your browser:
+http://link.mataharimall.com/u/gm.php?prm=3DrFMhuwN7jK_761547365_2130891_20=
+5278
+
+----=_---NextPart--=_-8NWUKih4Fr
+Content-Type: text/html; charset=utf-8
+Content-transfer-encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta charset=3D"utf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+<style type=3D"text/css">
+#outlook a{padding:0;}
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
+ .ExternalClass td, .ExternalClass div {line-height: 100%;}
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%=
+;}
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+img{-ms-interpolation-mode:bicubic;}
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:=
+none;}
+table{border-collapse:collapse !important;}
+body{height:100% !important; margin:0; padding:0; width:100% !important;}
+@media screen and (max-width: 600px) {
+.mobile-hide{
+display:none !important;
+}
+img[class=3D"img-max"]{
+max-width: 100% !important;
+width: 100% !important;
+height:auto !important;
+}
+table[class=3D"responsive-table"]{
+width:100%!important;
+}
+td[class=3D"mobile-wrapper"]{
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+table[class=3D"mobile-button-container"]{
+margin:0 auto;
+width:100% !important;
+}
+a[class=3D"mobile-button"]{
+border-top: 8px solid #d70000 !important;
+border-bottom: 8px solid #d70000 !important;
+border-left: 12px solid #d70000 !important;
+border-right: 12px solid #d70000 !important;
+}
+.footer{
+border: none !important;
+padding-left: 0px !important;
+}
+}
+</style>
+</head>
+<body bgcolor=3D"#f5f5f5" style=3D"margin-top:0;margin-bottom:0;margin-righ=
+t:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-le=
+ft:0;background-color:#f5f5f5;-webkit-text-size-adjust:100%;-ms-text-size-a=
+djust:100%;height:100% !important;width:100% !important;" ><table width=3D"=
+100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td align=3D"cen=
+ter"><font face=3D"Arial, Helvetica" size=3D"1" style=3D"font-size:9px;colo=
+r:#6d6d6d">If this e-mail is not displayed properly, click <a href=3D"http:=
+//link.mataharimall.com/u/gm.php?prm=3DrFMhuwN7jK_761547365_2130891_205278"=
+ target=3D"_blank"><font face=3D"Arial, Helvetica" size=3D"1" style=3D"font=
+-size:9px;color:#6d6d6d; text-decoration: none;"> here.</font></a><br></fon=
+t></td></tr></table>
+<table bgcolor=3D"#f5f5f5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"100%" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust=
+:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !i=
+mportant;" >
+<tr>
+<td align=3D"center" class=3D"mobile-wrapper" style=3D"padding-bottom:10px;=
+-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0p=
+t;mso-table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"max-width:600px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100=
+%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !impor=
+tant;" >
+<tr>
+<td align=3D"left" valign=3D"middle" style=3D"-webkit-text-size-adjust:100%=
+;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<p style=3D"font-family:Helvetica, arial, sans-serif;font-size:1px;color:#F=
+5F5F5;text-align:left;" >Jangan lewatkan promo terbaik dari MatahariMall!</=
+p>
+</td>
+<td width=3D"180" align=3D"right" style=3D"-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;=
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"mobile-wrapper" style=3D"padding-bottom:10px;=
+-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0p=
+t;mso-table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"max-width:600px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100=
+%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !impor=
+tant;" >
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_99&d=3DMTI3NzY1MzU4%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5YjE=
+%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-s=
+ize-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com/=
+email/logo-s4.png" alt=3D"MatahariMall.com" width=3D"130" border=3D"0" clas=
+s=3D"logo" style=3D"display:inline-block;-ms-interpolation-mode:bicubic;bor=
+der-width:0;height:auto;line-height:100%;outline-style:none;text-decoration=
+:none;" ></a>
+</td>
+<td align=3D"right" valign=3D"bottom" style=3D"-webkit-text-size-adjust:100=
+%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_100&d=3DMTI3NzY1MzU5%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/mapps-4.png" alt=3D"MatahariMall.com" width=3D"211" border=3D"0" cla=
+ss=3D"logo" style=3D"display:inline-block;-ms-interpolation-mode:bicubic;bo=
+rder-width:0;height:auto;line-height:100%;outline-style:none;text-decoratio=
+n:none;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"mobile-wrapper" style=3D"padding-bottom:0px;-=
+webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt=
+;mso-table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"max-width:600px;border-style:none;-webkit-text-size-adjust:100%;-ms-te=
+xt-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collap=
+se:collapse !important;" >
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"#" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaw=
+s.com/email/newsletter/2017/0917/image_01.jpg" width=3D"600" border=3D"0" s=
+tyle=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border=
+-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:no=
+ne;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_101&d=3DMTI3NzY1MzYw%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_02.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_102&d=3DMTI3NzY1MzYx%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_03.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"#" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaw=
+s.com/email/newsletter/2017/0917/image_04.jpg" width=3D"600" border=3D"0" s=
+tyle=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border=
+-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:no=
+ne;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_103&d=3DMTI3NzY1MzYy%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_05.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_104&d=3DMTI3NzY1MzYz%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_06.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"#" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaw=
+s.com/email/newsletter/2017/0917/image_07.jpg" width=3D"600" border=3D"0" s=
+tyle=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border=
+-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:no=
+ne;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_105&d=3DMTI3NzY1MzY0%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_08.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_106&d=3DMTI3NzY1MzY1%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_09.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"#" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaw=
+s.com/email/newsletter/2017/0917/image_10.jpg" width=3D"600" border=3D"0" s=
+tyle=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border=
+-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:no=
+ne;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_107&d=3DMTI3NzY1MzY2%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_11.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+<td width=3D"300" style=3D"min-width:300px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_108&d=3DMTI3NzY1MzY3%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_12.jpg" width=3D"300" border=3D"0" style=
+=3D"display:block;min-width:300px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_109&d=3DMTI3NzY1MzY4%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_13.jpg" width=3D"600" border=3D"0" style=
+=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"#" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaw=
+s.com/email/newsletter/2017/0917/image_14.jpg" width=3D"600" border=3D"0" s=
+tyle=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border=
+-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:no=
+ne;" ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_110&d=3DMTI3NzY1MzY5%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_15.jpg" width=3D"600" border=3D"0" style=
+=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f3eeea" align=3D"center" style=3D"-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"600" style=3D"min-width:600px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_111&d=3DMTI3NzY1Mzcw%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" ><img src=3D"https://mm-image-marketing.s3.amazonaws.com=
+/email/newsletter/2017/0917/image_16.jpg" width=3D"600" border=3D"0" style=
+=3D"display:block;min-width:600px;-ms-interpolation-mode:bicubic;border-wid=
+th:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;"=
+ ></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#f5f5f5" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/20150818-usp.=
+jpg" width=3D"600" border=3D"0" alt=3D"Berbelanja di MatahariMall" style=3D=
+"display:block;min-height:20px;-ms-interpolation-mode:bicubic;border-width:=
+0;height:auto;line-height:100%;outline-style:none;text-decoration:none;" >
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#E5E5E5" align=3D"center" style=3D"padding-bottom:0px;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-=
+table-rspace:0pt;" >
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"responsive-table" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-=
+adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:colla=
+pse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td valign=3D"top" style=3D"padding-top:20px;padding-bottom:10px;padding-ri=
+ght:20px;padding-left:20px;-webkit-text-size-adjust:100%;-ms-text-size-adju=
+st:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" clas=
+s=3D"responsive-table" style=3D"-webkit-text-size-adjust:100%;-ms-text-size=
+-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:coll=
+apse !important;" >
+<tr>
+<td style=3D"padding-bottom:10px;-webkit-text-size-adjust:100%;-ms-text-siz=
+e-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td width=3D"214" valign=3D"top" style=3D"-webkit-text-size-adjust:100%;-ms=
+-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<p style=3D"color:#555555;font-size:14px;font-family:Helvetica, Arial, sans=
+-serif;line-height:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;m=
+argin-left:0px;" >Hubungi Kami
+<br />Customer Service: <span style=3D"color:#d70000;" >1500038</span>
+<br />
+<a href=3D"mailto:help@mataharimall.com" style=3D"color:#d70000;font-size:1=
+4px;font-family:Helvetica, Arial, sans-serif;line-height:20px;text-decorati=
+on:none;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;" >help@mat=
+aharimall.com</a>
+</p>
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_112&d=3DMTI3NzY1Mzcx%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"color:#d70000;font-size:14px;font-famil=
+y:Helvetica, Arial, sans-serif;line-height:20px;text-decoration:none;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;" >Live Chat</a>
+<br />
+<br />
+<a href=3D"http://link.mataharimall.com/u/un.php?par=3DrFMhuwN7jK_2130891_2=
+05278_1" target=3D"_blank" style=3D"color:#d70000;font-size:14px;font-famil=
+y:Helvetica, Arial, sans-serif;line-height:20px;text-decoration:none;-webki=
+t-text-size-adjust:100%;-ms-text-size-adjust:100%;" >Berhenti berlangganan<=
+/a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"12" align=
+=3D"left" class=3D"mobile-hide" style=3D"-webkit-text-size-adjust:100%;-ms-=
+text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-coll=
+apse:collapse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+</tr>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" clas=
+s=3D"responsive-table" style=3D"-webkit-text-size-adjust:100%;-ms-text-size=
+-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:coll=
+apse !important;" >
+<tr>
+<td class=3D"footer" style=3D"padding-bottom:10px;padding-left:12px;border-=
+left-width:1px;border-left-style:solid;border-left-color:#cccccc;-webkit-te=
+xt-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-tabl=
+e-rspace:0pt;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td valign=3D"top" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adj=
+ust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<p style=3D"color:#555555;font-size:14px;font-family:Helvetica, Arial, sans=
+-serif;line-height:20px;margin-top:0px;margin-bottom:0px;margin-right:0px;m=
+argin-left:0px;" >Metode Pembayaran:</p>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding-top:5px;-webkit-text-size-adjust:100%;-=
+ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+60406-payment.png" width=3D"320" class=3D"img-max" style=3D"-ms-interpolati=
+on-mode:bicubic;border-width:0;height:auto;line-height:100%;outline-style:n=
+one;text-decoration:none;" >
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"mobile-wrapper" style=3D"padding-top:20px;pad=
+ding-bottom:10px;padding-right:10px;padding-left:10px;-webkit-text-size-adj=
+ust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0p=
+t;" >
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"-webkit-te=
+xt-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-tabl=
+e-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_113&d=3DMTI3NzY1Mzcy%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"http://f.e.mataharimall.com/i/39/2073531812/mobdownload-playsto=
+re.png" width=3D"150" alt=3D"Play Store" border=3D"0" class=3D"img-max" sty=
+le=3D"display:block;max-width:120px;-ms-interpolation-mode:bicubic;border-w=
+idth:0;height:auto;line-height:100%;outline-style:none;text-decoration:none=
+;" >
+</a>
+</td>
+<td width=3D"10" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjus=
+t:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_114&d=3DMTI3NzY1Mzcz%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"http://f.e.mataharimall.com/i/39/2073531812/mobdownload-appstor=
+e.png" width=3D"150" alt=3D"Play Store" border=3D"0" class=3D"img-max" styl=
+e=3D"display:block;max-width:136px;-ms-interpolation-mode:bicubic;border-wi=
+dth:0;height:auto;line-height:100%;outline-style:none;text-decoration:none;=
+" >
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-bottom:20px;-webkit-text-size-adjust:=
+100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" =
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:=
+600px;border-style:none;-webkit-text-size-adjust:100%;-ms-text-size-adjust:=
+100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !im=
+portant;" >
+<tr>
+<td valign=3D"top" style=3D"padding-top:0px;padding-bottom:0px;padding-righ=
+t:0px;padding-left:0px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1=
+00%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<!-- COLUMN -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" styl=
+e=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td align=3D"center" style=3D"padding-bottom:5px;-webkit-text-size-adjust:1=
+00%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"-webkit-te=
+xt-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-tabl=
+e-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_115&d=3DMTI3NzY1Mzc0%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+50902-socialfb.png" width=3D"35" style=3D"-ms-interpolation-mode:bicubic;bo=
+rder-width:0;height:auto;line-height:100%;outline-style:none;text-decoratio=
+n:none;" >
+</a>
+</td>
+<td width=3D"8" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust=
+:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_116&d=3DMTI3NzY1Mzc1%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+50902-socialtw.png" width=3D"35" style=3D"-ms-interpolation-mode:bicubic;bo=
+rder-width:0;height:auto;line-height:100%;outline-style:none;text-decoratio=
+n:none;" >
+</a>
+</td>
+<td width=3D"8" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust=
+:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_117&d=3DMTI3NzY1Mzc2%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+60722-socialig.png" width=3D"35" style=3D"-ms-interpolation-mode:bicubic;bo=
+rder-width:0;height:auto;line-height:100%;outline-style:none;text-decoratio=
+n:none;" >
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- SPACER -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"12" align=
+=3D"left" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;=
+mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !importa=
+nt;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+</tr>
+</table>
+<!-- COLUMN -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" styl=
+e=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td align=3D"center" style=3D"padding-bottom:5px;-webkit-text-size-adjust:1=
+00%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"-webkit-te=
+xt-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-tabl=
+e-rspace:0pt;border-collapse:collapse !important;" >
+<tr>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_118&d=3DMTI3NzY1Mzc3%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+50902-socialbbm.png" width=3D"35" style=3D"-ms-interpolation-mode:bicubic;b=
+order-width:0;height:auto;line-height:100%;outline-style:none;text-decorati=
+on:none;" >
+</a>
+</td>
+<td width=3D"8" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust=
+:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >&nbsp;</td>
+<td style=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_119&d=3DMTI3NzY1Mzc4%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/201=
+60722-socialsc.png" width=3D"35" style=3D"-ms-interpolation-mode:bicubic;bo=
+rder-width:0;height:auto;line-height:100%;outline-style:none;text-decoratio=
+n:none;" >
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top:5px;padding-bottom=
+:0px;padding-right:0px;padding-left:0px;-webkit-text-size-adjust:100%;-ms-t=
+ext-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<a href=3D"http://link.mataharimall.com/u/nrd.php?p=3DrFMhuwN7jK_205278_213=
+0891_1_120&d=3DMTI3NzY1Mzc5%7CckZNaHV3TjdqSw%3D%3D%7CYzdkMzc5N2UzNmNjNjY5Yj=
+E%3D%7C" target=3D"_blank" style=3D"-webkit-text-size-adjust:100%;-ms-text-=
+size-adjust:100%;" >
+<img src=3D"https://mm-image-marketing.s3.amazonaws.com/email/essential/add=
+friends_en.png" width=3D"130" style=3D"-ms-interpolation-mode:bicubic;borde=
+r-width:0;height:auto;line-height:100%;outline-style:none;text-decoration:n=
+one;" >
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"-webkit-text-size-adjust:100%;-ms-text-size-a=
+djust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+<p style=3D"color:#555555;font-size:12px;font-family:Helvetica, Arial, sans=
+-serif;line-height:16px;margin-top:0px;margin-bottom:0px;margin-right:0px;m=
+argin-left:0px;text-align:center;" >Copyright &copy; 2015 MatahariMall, All=
+ rights reserved.</p>
+<p style=3D"color:#555555;font-size:12px;font-family:Helvetica, Arial, sans=
+-serif;line-height:16px;margin-top:0px;margin-bottom:0px;margin-right:0px;m=
+argin-left:0px;text-align:center;" >Anda mendapat email ini karena Anda tel=
+ah
+<br />mendaftar di <span style=3D"color:#d70000;" >MatahariMall</span>.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img src=3D"http://link.mataharimall.com/mo/rFMhuwN7jK_761547365_2130891_20=
+5278_1957149.gif" height=3D"2" width=3D"2" border=3D"0"></body>
+</html>
+----=_---NextPart--=_-8NWUKih4Fr--

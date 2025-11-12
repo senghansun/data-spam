@@ -1,0 +1,2624 @@
+X-Apparently-To: yustinus_vernanda@yahoo.com; Thu, 21 Sep 2017 13:23:14 +0000 
+Return-Path: <hitsu_lim25@yahoo.com>
+Received-SPF: pass (domain of yahoo.com designates 106.10.241.83 as permitted sender)
+X-YMailISG: ZJUxx_4WLDtI5BkYRh1QIa8dKGqga5SRhvBAc4Fu2R_Yb8kG
+ OP2DhxA1rfIhyVi7EobKWkcNeBYHWkQm2Eq8mrXdGn7AWN1T4604ybeJ0iqY
+ 9Q5HEccr.VGN9By9X7JbxmuEwZ4WViJ0XBUxWjL7vap6cHYrn5JcRE9laufi
+ lJ9kUldgOCJVVHMvJAQ8xkff8gBgLbq_ROYyUR5JaiUJQPAzbHA6hY3FfuIm
+ SI_epfTA.xzAUz6PwFiNy60EHiSH4P.9q.JQOPd6Z6Yocqi.WLd9CQ4Hwyuu
+ Tc0GGapNS1OwgnFPZTlRAUMIVv5Ao0CHmPKC_nmHNoj3fgkF6TbGOheEzIuM
+ h4iXVq0by_GuF_Xk8fzn21ftaW0wHHP9HxXmJg0pCr3e4S7ZPqmd.aR4gGNl
+ ZwmdntYkLEGH0oleKlKFlU3Bko1_o1NQKSXe1vwYpXj_yN.LeLEran8ICqOE
+ ITIyBqei3mALOu9PJ_VD_ASsxHJnyLf0ShTDVsNJvAn.ScQV9td4ndx3jaZ6
+ bStozEZLyUJXRAhqxArpK0AvB9Di4CDBa8l3LVT2Bz8ZXeA05tOXb9GYy1GL
+ lODFkfiVZCsZHKkX5Wh8RTPSBzUYLDJBpoQ9g0UzWjhqdoLN.dgkoj1TMZAY
+ QJwSMueVl1iqK2XVW620wKmoawcMRpWcQGs6FtnW8ZqoSszni0lncwSehhMJ
+ ADD5zBsrslgE02LuWx_pfFldJ8jaHn4YiLwbtF2Ez3XHmE28KW5iOmkU8h75
+ bkuGXMJdyQGfXz_IJdchws_Qi7_D1cEFwXM7JIhYeQ4B7y9_YpPq3UIZpVkw
+ YWEHce5Fq.Pv._To5PHWh3FnfBEpCL5eJkL_2qpBPJL6669HupnPYzOHhpZP
+ vCbbuqfCBg0WxToY6YvgD22txqsblhRNwcGLCEd9XdmZ_oLpje4qTrPcpCSu
+ wYvACYwi8pcqdSUWaqEgsS5a22kHT.MCbg_buU5L011bmcY1PKMr4iFhr3vE
+ HTNOz8XQi4Iq3Mq.FYWsOpdNk9feJBtnLF1EWn2f3kUseKikb3Yp7amnKvrV
+ JCqUym7aYehYnY0M2mYl37SuowUdlrC2x08TcH41IotRvwLtq8z8Mj_YVN6P
+ uftLgjq2PVTW6EvWzyYBDBcqUzhQQqcdhvLZuG1lQ0fYXpxC72lDGy0Co6Gt
+ a_J4RF3zSmRtY28vniag.qBdpoCHxLdWszAcTo_rwaBZlvsHN5Q7MmGnse3V
+ Lt3ps0HOJS4W8S3E14ar0kpUPpovTZvYkp2vLiZ0wsdJ1reKl03MqfjnGawB
+ blaB_.kZdnhQlGI-
+X-Originating-IP: [106.10.241.83]
+Authentication-Results: mta1117.mail.ne1.yahoo.com  from=yahoo.com; domainkeys=neutral (no sig);  from=yahoo.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO sonic305-20.consmr.mail.sg3.yahoo.com) (106.10.241.83)
+  by mta1117.mail.ne1.yahoo.com with SMTPS; Thu, 21 Sep 2017 13:23:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1506000190; bh=mePbG4yEqNsoKvcD3IbApbDTQFCxyqLVVZ3PyjgTxBo=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=g9rWub9cIJ1d7voRvETWn8P+DIy437EuIiQuGYXbq6mcaLK7oRO1K31rnygVqJ0TLhOKtb/DRKqidde6AyHXwoCjTaBqS9iKWvSYcBSavLNm84TMjR2nWU6Uo1cVsRwstk/Jm8Luf/Gbmn5aoe7BrYXiUZ3rohOtzSXPMN/veLm1DrOOPQD79Ciynrw/naOJQbgWkzWRpTvy3Vow8Kban932/+tNdVRdaZzzAcPJBhgmkzZb7FUzVuuTIpvXSnelK9wCNIMStT/ES05hSgkshOOKeJp4b8HpsGbjykLoxD7eujCEvZGJWBnRAzzsBWXadIOP+UnYKemqARZiDjSHcA==
+X-YMail-OSG: mpSft2wVM1kF_xv5Ud3sohPxifF2LmWgyIVphLBU_mQ3zsxMo3qkn9MT5mKWepE
+ A6j1Ml2uso6GMWWpWsAwMZGQ0Ox_KYjOhgz_AKcv1uNsp3bEsl3P1A0osN4ZISOYlTUJpqRegjJV
+ Ew3ugAreVl8g3YnyEu8GDpbkh2RCYEYbYlR7kcuKH.zuzj3Qo_4rXIyzrNU4S32XX2KeezMCNnCq
+ RIo1fGydU63Ip17qa7_aa4NzokvDXdW07eBKuoXxCe0qnaj2rRp2jCR3_41B_tlRPow9q71vKJYo
+ RTpqwi9nICOYqjXZcvSwR40AnvGh60ic_PRpXay19lt5sdDP9wGMv.sCtqWpVyvpalmrv2v5uWBV
+ fTZEsZUodtKu4CopsqZqLUMG00aMTSwdLi5CQpTYkCZjj37VuzoPH8TmXkw5C0aHCu8L9_AFt88S
+ H4eY3ICksXN47nvMqHZ6dB9xmqiUaR1oXoFag.WD2v3PTvbBTkOA97jw9lYYxdC20x1k57er4uvC
+ JiUIIzeaxiIM-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic305.consmr.mail.sg3.yahoo.com with HTTP; Thu, 21 Sep 2017 13:23:10 +0000
+Date: Thu, 21 Sep 2017 13:23:08 +0000 (UTC)
+From: edwin lim <hitsu_lim25@yahoo.com>
+Reply-To: edwin lim <hitsu_lim25@yahoo.com>
+To: "yustinus_vernanda@yahoo.com" <yustinus_vernanda@yahoo.com>
+Message-ID: <1649941707.7632573.1506000188269@mail.yahoo.com>
+In-Reply-To: <YWDjNUOwSZqedM_nZuWsUw@ismtpd0004p1sjc2.sendgrid.net>
+References: <YWDjNUOwSZqedM_nZuWsUw@ismtpd0004p1sjc2.sendgrid.net>
+Subject: Trs: Anda dapat menghasilkan hingga Rp 4,500,000 sebulan dengan
+ UberDOST!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7632572_1497631919.1506000188257"
+X-Mailer: WebService/1.1.10521 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Content-Length: 74529
+
+------=_Part_7632572_1497631919.1506000188257
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+     Pada Selasa, 12 September 2017 10:20, Uber <uber.indonesia@uber.com> m=
+enulis:
+=20
+
+  #yiv3997747907 .yiv3997747907btn a:hover{background-color:#C90000!importa=
+nt;border-color:#C90000!important;}#yiv3997747907 .yiv3997747907textcta a:h=
+over{color:#C90000!important;}@media screen and (max-width:480px){#yiv39977=
+47907 .yiv3997747907hide-480 {display:none;font-size:0px !important;line-he=
+ight:0px !important;}#yiv3997747907 .yiv3997747907minimalText{padding-top:1=
+5px !important;display:block;}}@media screen and (max-width:699px){#yiv3997=
+747907 .yiv3997747907t1of12, #yiv3997747907 .yiv3997747907t2of12, #yiv39977=
+47907 .yiv3997747907t3of12, #yiv3997747907 .yiv3997747907t4of12, #yiv399774=
+7907 .yiv3997747907t5of12, #yiv3997747907 .yiv3997747907t6of12, #yiv3997747=
+907 .yiv3997747907t7of12, #yiv3997747907 .yiv3997747907t8of12, #yiv39977479=
+07 .yiv3997747907t9of12, #yiv3997747907 .yiv3997747907t10of12, #yiv39977479=
+07 .yiv3997747907t11of12, #yiv3997747907 .yiv3997747907t12of12, #yiv3997747=
+907 .yiv3997747907full{width:100%!important;max-width:none!important;}#yiv3=
+997747907 a .filtered99999 {color:inherit!important;text-decoration:none!im=
+portant;font-size:inherit!important;font-family:inherit!important;font-weig=
+ht:inherit!important;line-height:inherit!important;}}@media screen and ( _f=
+iltered_a ){#yiv3997747907 .yiv3997747907arrow{vertical-align:6%;line-heigh=
+t:20px!important;}}@media { _filtered #yiv3997747907 {font-family:'ClanPro-=
+Thin';font-weight:normal!important;font-style:normal!important;} _filtered =
+#yiv3997747907 {font-family:'ClanPro-Book';font-weight:normal!important;fon=
+t-style:normal!important;} _filtered #yiv3997747907 {font-family:'ClanPro-N=
+ews';font-weight:normal!important;font-style:normal!important;} _filtered #=
+yiv3997747907 {font-family:'ClanPro-Medium';font-weight:normal!important;fo=
+nt-style:normal!important;}#yiv3997747907 Datang ke acara kami dan ketahui =
+lebih lanjut tentang UberDOST#yiv3997747907 .yiv3997747907yahooHide{display=
+:none!important;}
+|=20
+|=20
+|=20
+|  |  |  |
+
+ |
+
+
+|=20
+|  |=20
+|  |
+
+ |  |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+| =20
+|=20
+| Datang ke acara ini dan kami akan jelaskan bagaimana caranya menghasilkan=
+ hingga Rp 4,500,000 dalam sebulan! |
+
+ |
+
+ |
+
+ |
+|=20
+|=20
+| Halo Edwin,Dengan UberDOST anda dapat menghasilkan uang dengan mengundang=
+ kenalan anda untuk mengemudi bersama Uber.Datang di acara kami dan pahami =
+bagaimana cara menghasilkan hingga Rp 4,500,000 dalam sebulan!Anda tidak pe=
+rlu menjadi mitra pengemudi atau pengguna aplikasi kami untuk mengapatkan i=
+nsentif ini, jadi anda boleh mengajak teman dan keluarga anda untuk menghad=
+iri acara ini. |
+
+ |
+
+ |
+| =20
+|=20
+|   KONFIRMASI KEDATANGAN ANDA DI SINI   |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+| =C2=A0 |
+|=20
+|=20
+| Jakarta Design Center (JDC) | peta |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+|=20
+| Sabtu |
+| 16 September 2017 |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| - Sesi 1 |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| 10:00 pagi |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+|=20
+|  |
+|  |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| - Sesi 2 |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| 12:00 siang |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+|=20
+|  |
+|  |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| - Sesi 3 |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| 02:00 siang |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+|=20
+|  |
+|  |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| - Sesi 4 |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+|=20
+| 04:00 sore |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+
+|=20
+|=20
+|=20
+| =C2=A0 |
+
+ |
+
+
+|=20
+|  Datang pada sesi yang anda inginkan! Kami tunggu kedatangan anda!Untuk i=
+nformasi lebih lanjut mengenai UberDOST anda dapat kunjungi website kami di=
+ http://t.uber.com/uberdostid |
+
+ |
+
+
+|=20
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+|=20
+|  |
+|=20
+|=20
+|=20
+| =C2=A0 |
+|=20
+|=20
+
+
+|=20
+|  |
+
+ |
+
+
+|=20
+|=20
+|  |
+
+ |=20
+|  |
+
+ |=20
+|  |
+
+ |=20
+|  |
+
+ |
+
+ |
+
+ |
+
+ |
+|=20
+| =C2=A0 |
+
+ |
+|=20
+|=20
+|=20
+| Cari Bantuan |
+| Berhenti berlangganan |
+
+ |
+
+
+|=20
+|=20
+| Uber B.V.
+Vijzelstraat 68, 1017 HL=20
+Amsterdam, Nederland  |
+| Privasi=20
+Ketentuan |
+
+ |
+
+ |
+
+ |
+
+ |
+| =C2=A0 |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+
+  =20
+------=_Part_7632572_1497631919.1506000188257
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:16px"><div id=3D"yui_3_16_0_ym19_1_1505999512688_27363"><span></span>=
+</div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_ym19_1_1505999512688_27=
+365"><br><br></div>  <div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_15=
+05999512688_27388" style=3D"display: block;"> <div style=3D"font-family: He=
+lvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;=
+" id=3D"yui_3_16_0_ym19_1_1505999512688_27387"> <div style=3D"font-family: =
+HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;=
+ font-size: 16px;" id=3D"yui_3_16_0_ym19_1_1505999512688_27386"> <div dir=
+=3D"ltr"><font size=3D"2" face=3D"Arial"> Pada Selasa, 12 September 2017 10=
+:20, Uber &lt;uber.indonesia@uber.com&gt; menulis:<br></font></div>  <br><b=
+r> <div class=3D"y_msg_container" id=3D"yui_3_16_0_ym19_1_1505999512688_273=
+85"><div id=3D"yiv3997747907">
+
+
+=20
+=20
+
+=20
+
+
+
+
+<style>
+#yiv3997747907 .yiv3997747907btn a:hover{
+background-color:#C90000!important;
+border-color:#C90000!important;}
+#yiv3997747907 .yiv3997747907textcta a:hover{
+color:#C90000!important;}
+@media screen and (max-width:480px){
+#yiv3997747907 .yiv3997747907hide-480 {
+display:none;font-size:0px !important;line-height:0px !important;}
+#yiv3997747907 .yiv3997747907minimalText{
+padding-top:15px !important;display:block;}
+}
+</style>
+
+<style type=3D"text/css">@media screen and (max-width:699px){#yiv3997747907=
+ .yiv3997747907t1of12, #yiv3997747907 .yiv3997747907t2of12, #yiv3997747907 =
+.yiv3997747907t3of12, #yiv3997747907 .yiv3997747907t4of12, #yiv3997747907 .=
+yiv3997747907t5of12, #yiv3997747907 .yiv3997747907t6of12, #yiv3997747907 .y=
+iv3997747907t7of12, #yiv3997747907 .yiv3997747907t8of12, #yiv3997747907 .yi=
+v3997747907t9of12, #yiv3997747907 .yiv3997747907t10of12, #yiv3997747907 .yi=
+v3997747907t11of12, #yiv3997747907 .yiv3997747907t12of12, #yiv3997747907 .y=
+iv3997747907full{width:100%!important;max-width:none!important;}#yiv3997747=
+907 a .filtered99999 {color:inherit!important;text-decoration:none!importan=
+t;font-size:inherit!important;font-family:inherit!important;font-weight:inh=
+erit!important;line-height:inherit!important;}}@media screen and ( _filtere=
+d_a ){#yiv3997747907 .yiv3997747907arrow{vertical-align:6%;line-height:20px=
+!important;}}@media { _filtered #yiv3997747907 {font-family:'ClanPro-Thin';=
+font-weight:normal!important;font-style:normal!important;} _filtered #yiv39=
+97747907 {font-family:'ClanPro-Book';font-weight:normal!important;font-styl=
+e:normal!important;} _filtered #yiv3997747907 {font-family:'ClanPro-News';f=
+ont-weight:normal!important;font-style:normal!important;} _filtered #yiv399=
+7747907 {font-family:'ClanPro-Medium';font-weight:normal!important;font-sty=
+le:normal!important;}#yiv3997747907 </style>
+
+
+
+<div dir=3D"ltr" id=3D"yui_3_16_0_ym19_1_1505999512688_27384">
+<span style=3D"display:none;max-height:0px;font-size:0px;overflow:hidden;">=
+Datang ke acara kami dan ketahui lebih lanjut tentang UberDOST
+</span>
+
+<style>#yiv3997747907 .yiv3997747907yahooHide{display:none!important;}</sty=
+le>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background-color:#d6d6d5;border:0;border-collapse:collapse;border-spac=
+ing:0;" bgcolor=3D"#d6d6d5" class=3D"yiv3997747907" id=3D"yui_3_16_0_ym19_1=
+_1505999512688_27383">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_27382">
+<tr id=3D"yui_3_16_0_ym19_1_1505999512688_27381">
+<td align=3D"center" style=3D"display:block;" id=3D"yui_3_16_0_ym19_1_15059=
+99512688_27380">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;max-width:700px;" c=
+lass=3D"yiv3997747907" id=3D"yui_3_16_0_ym19_1_1505999512688_27379">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_27378">
+<tr id=3D"yui_3_16_0_ym19_1_1505999512688_27377">
+<td style=3D"background-color:#ffffff;" id=3D"yui_3_16_0_ym19_1_15059995126=
+88_27376">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;max-width:700px;width:100%;" id=3D"yui_3_16_0_ym19_1_150=
+5999512688_27375">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_27374"><tr id=3D"yui_3_16_0_ym=
+19_1_1505999512688_27373">
+<td bgcolor=3D"#FFBE33" valign=3D"bottom" background=3D"https://uber-static=
+.s3.amazonaws.com/emails/2016/global/pattern/indonesia_amber-5.jpg" style=
+=3D"background-size:cover;background-image:url('https://uber-static.s3.amaz=
+onaws.com/emails/2016/global/pattern/indonesia_amber-5.jpg');" align=3D"cen=
+ter" id=3D"yui_3_16_0_ym19_1_1505999512688_27372">
+
+
+<div id=3D"yui_3_16_0_ym19_1_1505999512688_27371">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;width:100%;" id=3D"yui_3_16_0_ym19_1_1505999512688_27370=
+">
+<tbody id=3D"yui_3_16_0_ym19_1_1505999512688_27369"><tr id=3D"yui_3_16_0_ym=
+19_1_1505999512688_27368">
+<td style=3D"padding:0;margin:0;width:79%;" align=3D"center" id=3D"yui_3_16=
+_0_ym19_1_1505999512688_27367"></td>
+<td style=3D"padding:0;margin:0;width:15%;" align=3D"center" valign=3D"bott=
+om"><img src=3D"https://uber-static.s3.amazonaws.com/emails/2015/10/bit-top=
+1.png" width=3D"120" height=3D"" border=3D"0" style=3D"clear:both;display:b=
+lock;min-height:auto;max-height:60px;max-width:120px;min-width:65px;outline=
+:none;text-decoration:none;width:100%;" id=3D"yiv3997747907OWATemporaryImag=
+eDivContainer1843216"></td>
+<td style=3D"padding:0;margin:0;width:6%;min-width:15px;" align=3D"center">=
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-spacing:0;margin:0 auto;max-width:700px;width:100%;">
+<tbody><tr>
+<td style=3D"padding:0;margin:0;background-color:#ffffff;padding-bottom:30p=
+x;" align=3D"center"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"border:none;border-spacing:0;width:100%;">
+<tbody><tr>
+<td style=3D"padding:0;margin:0;width:79%;" align=3D"center"></td>
+<td style=3D"padding:0;margin:0;width:15%;" align=3D"center"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-spac=
+ing:0;width:100%;">
+<tbody><tr>
+<td style=3D"background-color:#000000;"><img src=3D"https://uber-static.s3.=
+amazonaws.com/emails/2016/global/logo/020116_uber_logo.png" width=3D"120" h=
+eight=3D"" border=3D"0" style=3D"clear:both;display:block;min-height:auto;m=
+ax-height:90px;max-width:120px;min-width:65px;outline:none;text-decoration:=
+none;width:100%;" id=3D"yiv3997747907OWATemporaryImageDivContainer409565"><=
+/td>
+</tr>
+</tbody></table></td>
+<td style=3D"padding:0;margin:0;width:6%;min-width:15px;" align=3D"center">=
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;margin:auto;max-wid=
+th:700px;" class=3D"yiv3997747907tron">
+<tbody>
+<tr>
+<td align=3D"center">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background-color:#fff;border:0;border-collapse:collapse;border-spacing=
+:0;margin:auto;" bgcolor=3D"#ffffff" class=3D"yiv3997747907basetable">
+<tbody>
+<tr>
+<td align=3D"center">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"yiv3997747907basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"background-color:#ffffff;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"yiv3997747907basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"yiv3997747907basetable" style=3D"border:0;border-collapse:collapse;bor=
+der-spacing:0;">
+<tbody>
+<tr>
+<td>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv39977=
+47907">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv39977=
+47907">
+<tbody>
+<tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:16=
+px 14px 0 14px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"text-align:left;">
+
+=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t9of12 yiv3997747907basetable" align=3D"left" style=3D"border:0;border-c=
+ollapse:collapse;border-spacing:0;max-width:504px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747907base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td class=3D"yiv3997747907h1" style=3D"color:#000000;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:28px;line-height:36px;padding-bottom:30px;text-align:left;=
+">Datang ke acara ini dan kami akan jelaskan bagaimana caranya menghasilkan=
+ hingga Rp 4,500,000 dalam sebulan!</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12 yiv3997747907basetable" align=3D"left" style=3D"border:0;border-=
+collapse:collapse;border-spacing:0;max-width:560px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747907base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:16px;line-height:28px;text-align:left;padding-bottom:32px;=
+"><div>Halo  Edwin,</div>
+
+<div>Dengan UberDOST anda dapat menghasilkan uang dengan mengundang kenalan=
+ anda untuk mengemudi bersama Uber.</div>
+
+<div>Datang di acara kami dan pahami bagaimana cara menghasilkan hingga Rp =
+4,500,000 dalam sebulan!</div>
+
+<div>Anda tidak perlu menjadi mitra pengemudi atau pengguna aplikasi kami u=
+ntuk mengapatkan insentif ini, jadi anda boleh mengajak teman dan keluarga =
+anda untuk menghadiri acara ini.</div>
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+
+<tr>
+<td style=3D"padding-bottom:20px;text-align:left;">
+
+=20
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t6of12 yiv3997747907basetable" align=3D"left" style=3D"border:0;border-c=
+ollapse:collapse;border-spacing:0;max-width:336px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747907base=
+table" width=3D"100%" align=3D"left" style=3D"border:none;border-collapse:c=
+ollapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><div class=3D"yiv3997747907bt=
+n yiv3997747907cta" lang=3D"x-btn" style=3D"font-family:'ClanPro-Medium', H=
+elvetica, Arial, sans-serif;font-size:14px;line-height:20px;text-transform:=
+uppercase;text-align:left;"> <a rel=3D"nofollow" target=3D"_blank" href=3D"=
+http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2BwUos-2FNAvRBg=
+rPWp8-2Fn-2BhkoGDxmpeKOF-2FPOkXfTik8QPV22rRbO69o01wx3cwGhT965VyQjJN9fxL-2Bf=
+n7TcAe-2FRWvkdyGJV7Jx1GNaSxxLC4gaXZWjLtci4aqbQhv4fDXQ-3D-3D_b4FX5-2FwMFbeNH=
+LhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1yrzr=
+Ip0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjb=
+k2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzN=
+mZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9t=
+OnoqZSzRlB-2FCvPiJigI-2BnFpKm5XVxW-2BU7cHG0hgdgm4AIhwmD79R1bl8ktSMuhbW-2F8e=
+2qInX0zWHyb23-2FEe5vRYl6DBa6VOVx9U36Ad2QdPfITdJnknjz8QWHJNdtRKjO2ubtCDtNGfT=
+Cpk4C8EINBfB1Txd4IlvZ5aBObT1F1cg-2Fd1566gmFChlw-2F-2FmTbil-2BT47tmlWy-2Begj=
+F20pWUysaZ" style=3D"background-color:#DA0000;border-color:#DA0000;border-r=
+adius:0px;border-style:solid;border-width:13px 16px;color:#ffffff;display:i=
+nline-block;letter-spacing:1px;max-width:300px;min-width:150px;text-align:c=
+enter;text-decoration:none;text-transform:uppercase;text-align:left;"> <spa=
+n style=3D"float:left;text-align:left;">KONFIRMASI KEDATANGAN ANDA DI SINI<=
+/span>
+
+<span style=3D"float:right;padding-top:2px;display:inline-block;"> <img src=
+=3D"https://s3.amazonaws.com/uber-static/emails/2017/global/arrows/ctaArrow=
+_left.png" width=3D"16" height=3D"12" style=3D"Margin-left:16px;border:none=
+;clear:both;display:block;margin-top:2px;max-width:100%;outline:none;text-d=
+ecoration:none;width:auto;" alt=3D"" class=3D"yiv3997747907" id=3D"yiv39977=
+47907OWATemporaryImageDivContainer1463348"></span>
+
+
+</a> </div></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+
+</tbody></table></td>
+</tr>
+</tbody>
+</table>
+
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;width:100%;">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:30=
+px 14px 30px 14px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t12of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:672px;width:100%;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td height=3D"1" class=3D"yiv3997747907tronhr" style=3D"background:#bfbfbf;=
+font-size:0px;line-height:0px;text-align:left;">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv39977=
+47907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+14px 0 14px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"padding-top:16px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t12of12 yiv3997747907basetable" align=3D"left" style=3D"border:0;border-=
+collapse:collapse;border-spacing:0;max-width:672px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td class=3D"yiv3997747907h1" style=3D"color:#000000;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:28px;line-height:36px;padding-bottom:26px;">
+Jakarta Design Center (JDC) | <a rel=3D"nofollow" target=3D"_blank" href=3D=
+"http://email.uber.com/wf/click?upn=3DODvK-2BkVkR4vVQluMJCRg0OopCuUa55OqA-2=
+BsScn97YD06MXjTIBNsAHyAdDMujgA1_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78=
+v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5=
+n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPi=
+p8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY=
+0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9tOmr2RSgFnPp2qaFA2koy5zWY0kRt=
+UgND1yyk6-2BgId9IX8Dkki5YaxpLECT4KoDz07wj1GDwoHx6YyBZHEbPTDpxNVdPtCCH-2Fugp=
+3-2FiMQkHnqIOJEvPWultXFG6weqzdqhDyMuPd96Qxe8CpEUN17DCog5ZloRfN8IgvRtPG-2FxS=
+7fQ1bNwRUYsorxrkZxAhcYxYPDuqvRsWSqTUorgi-2B2Cyc" style=3D"text-decoration:n=
+one;color:#12939A;">peta</a>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv39977=
+47907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+14px 0 14px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:0;b=
+order-collapse:collapse;border-spacing:0;width:100%;" class=3D"yiv399774790=
+7">
+<tbody><tr>
+<td style=3D"padding-bottom:20px;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;" class=3D"yiv39977=
+47907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+0 0 0;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background=
+-color:#f8f8f9;border:none;border-collapse:collapse;border-spacing:0;" clas=
+s=3D"yiv3997747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;padding-top:23px;padding-bot=
+tom:0px;text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;text-align:left;">
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:560px;width:100%;">
+<tbody><tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody>
+<tr>
+<td class=3D"yiv3997747907p2" style=3D"color:#000000;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:14px;line-height:28px;text-align:left;">
+Sabtu
+</td>
+</tr>
+<tr>
+<td class=3D"yiv3997747907h2" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+16 September 2017
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907h2-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t2of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:112px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+- Sesi 1
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+10:00 pagi
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+
+
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border:0;border-collapse:collapse;border-spacing:0;" c=
+lass=3D"yiv3997747907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+0 0 0;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;padding-top:23px;padding-bot=
+tom:0px;text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;text-align:left;">
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:560px;width:100%;">
+<tbody><tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody>
+<tr>
+<td class=3D"yiv3997747907p2" style=3D"color:#000000;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:14px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+<tr>
+<td class=3D"yiv3997747907h2" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907h2-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t2of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:112px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+- Sesi 2
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+12:00 siang
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+
+
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border:0;border-collapse:collapse;border-spacing:0;" c=
+lass=3D"yiv3997747907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+0 0 0;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background=
+-color:#f8f8f9;border:none;border-collapse:collapse;border-spacing:0;" clas=
+s=3D"yiv3997747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;padding-top:23px;padding-bot=
+tom:0px;text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;text-align:left;">
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:560px;width:100%;">
+<tbody><tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody>
+<tr>
+<td class=3D"yiv3997747907p2" style=3D"color:#000000;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:14px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+<tr>
+<td class=3D"yiv3997747907h2" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907h2-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t2of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:112px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+- Sesi 3
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+02:00 siang
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+
+
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border:0;border-collapse:collapse;border-spacing:0;" c=
+lass=3D"yiv3997747907">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:0 =
+0 0 0;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;padding-top:23px;padding-bot=
+tom:0px;text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td valign=3D"top" style=3D"vertical-align:top;text-align:left;">
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:560px;width:100%;">
+<tbody><tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody>
+<tr>
+<td class=3D"yiv3997747907p2" style=3D"color:#000000;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:14px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+<tr>
+<td class=3D"yiv3997747907h2" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907h2-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t2of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:112px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-N=
+ews', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+- Sesi 4
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t4of12 yiv3997747907basetable" align=3D"left" style=3D"border:none;borde=
+r-collapse:collapse;border-spacing:0;max-width:224px;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" width=3D"100%" align=3D"left" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-family:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif;font-size:14px;line-height:28px;t=
+ext-align:left;">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td class=3D"yiv3997747907p1" style=3D"color:#595959;font-family:'ClanPro-B=
+ook', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans=
+-serif;font-size:24px;line-height:28px;text-align:left;">
+04:00 sore
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;" width=3D"100%" class=3D"yiv39=
+97747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-bottom:24px;text-align:l=
+eft;" class=3D"yiv3997747907p1-p1 yiv3997747907lhreset">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+
+
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bor=
+der-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:0px;padding-right:0px;font-size:1px;min-height:1p=
+x;line-height:1px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;width:100%;">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:30=
+px 14px 30px 14px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t12of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:672px;width:100%;">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td height=3D"1" class=3D"yiv3997747907tronhr" style=3D"background:#bfbfbf;=
+font-size:0px;line-height:0px;text-align:left;">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;width:100%;">
+<tbody><tr>
+<td class=3D"yiv3997747907outsidegutter" align=3D"left" style=3D"padding:16=
+px 14px 16px 14px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:non=
+e;border-collapse:collapse;border-spacing:0;width:100%;" class=3D"yiv399774=
+7907">
+<tbody><tr>
+<td style=3D"text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12 yiv3997747907layout" align=3D"left" style=3D"border:none;border-c=
+ollapse:collapse;border-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"font-size:1px;min-height:1px;line-height:1px;padding-left:0px;=
+padding-right:0px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t10of12" align=3D"left" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;max-width:560px;width:100%;">
+<tbody><tr>
+<td style=3D"padding-left:12px;padding-right:12px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td class=3D"yiv3997747907p1 yiv3997747907p1-p1" align=3D"left" style=3D"co=
+lor:#595959;font-family:'ClanPro-Book', 'HelveticaNeue-Light', 'Helvetica N=
+eue Light', Helvetica, Arial, sans-serif;font-size:16px;line-height:28px;te=
+xt-align:left;">
+  =20
+   <div>Datang pada sesi yang anda inginkan! Kami tunggu kedatangan anda!</=
+div>
+
+<div>Untuk informasi lebih lanjut mengenai UberDOST anda dapat kunjungi web=
+site kami di <a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.ube=
+r.com/wf/click?upn=3DODvK-2BkVkR4vVQluMJCRg0KCwALsdnj6nH5i-2BJ-2B2-2BA0w8L7=
+bG0b0MrPxCyrged4rF_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2F=
+XWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-=
+2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysj=
+h4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2B=
+c4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9tOnLcKufjuXpdPoj-2BCr3RY-2BajWMEOWZ2nae1rB=
+nUCkOLfPQbSlhKb3hoj3kPNHzQROH2iML2qrTr1089Xht756lHOVzbeYRYUfVtq6iMhedh5suu8=
+Wm-2F2I9F-2FH8xXJVJsJL0WF3uiE6oe5IRQyiERq2e24UVBYgco6SRxyZk27cbIsunT1vi-2B6=
+AkgWAPfJqMcHPxYJeaxalDX2u2PldtyjPy">http://t.uber.com/uberdostid</a></div>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907t1of12 yiv3997747907layout" align=3D"left" style=3D"border:none;border-c=
+ollapse:collapse;border-spacing:0;max-width:56px;width:100%;">
+<tbody><tr>
+<td style=3D"font-size:1px;min-height:1px;line-height:1px;padding-left:0px;=
+padding-right:0px;text-align:left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"left" style=3D"border:none;border-collapse:collapse;border-spacing:0;t=
+able-layout:fixed;width:100%;">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:0;border-collapse:collapse;border-spacing:0;margin:auto;max-wid=
+th:700px;background-color:#ffffff;" class=3D"yiv3997747907tron">
+<tbody>
+<tr>
+<td style=3D"display:block;padding-top:30px;background-color:#ffffff;">
+
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv39=
+97747907" bgcolor=3D"#ffffff">
+<tbody>
+
+<tr>
+<td style=3D"text-align:left;"><img src=3D"https://uber-static.s3.amazonaws=
+.com/emails/2016/global/footer_img/indonesia_email-footer_amber.png" width=
+=3D"700" height=3D"" border=3D"0" style=3D"clear:both;display:block;min-hei=
+ght:auto;max-height:200px;max-width:700px;outline:none;text-decoration:none=
+;width:100%;" id=3D"yiv3997747907OWATemporaryImageDivContainer1184380"></td=
+>
+</tr>
+
+<tr>
+<td align=3D"center" style=3D"background-color:rgb(0, 0, 0);text-align:left=
+;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:=
+none;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+
+<tbody><tr>
+<td align=3D"center" style=3D"text-align:left;"><table width=3D"100%" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;max-width:700px;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"padding:0px 26px;text-align:left;">
+
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border:none;border-collapse:collapse;border-spacing:0;max-width:648px;=
+table-layout:fixed;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"font-size:0px;line-height:0px;padding-top:20px;text-align:left=
+;">&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;"><table width=3D"100%" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><h1>
+
+
+
+
+</h1>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:335px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:40px;text-align:left;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"yiv3997747907basetable" width=3D"100%=
+" align=3D"left" style=3D"border:none;border-collapse:collapse;border-spaci=
+ng:0;table-layout:fixed;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;"><img src=3D"https://uber-stat=
+ic.s3.amazonaws.com/emails/2016/01/footer_logo.png" width=3D"90" height=3D"=
+20" style=3D"border:none;clear:both;display:block;max-width:100%;outline:no=
+ne;text-decoration:none;width:auto;" alt=3D"" class=3D"yiv3997747907" id=3D=
+"yiv3997747907OWATemporaryImageDivContainer1735528"></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:313px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:40px;text-align:left;"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"yiv3997747907basetable" width=3D"100%=
+" align=3D"left" style=3D"border:none;border-collapse:collapse;border-spaci=
+ng:0;">
+<tbody><tr>
+<td style=3D"text-align:left;padding-right:15px;"><table width=3D"25" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;border-col=
+lapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2BzWhQWNW2y=
+0pfZIYB7UX6BotmCNGersmc7g488kiZ0b8_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1=
+n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba=
+7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2=
+FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5=
+xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9tOloCEhoiYX9BWh77yTC67P5jA=
+oFP-2Bj787gRRHnujWxy-2BClFlGJU77gFNlz9RlAGiPV8we0IjMw4DgEQk-2FpQII-2FtxcqN7=
+XO5TL6tlges6i8oZv-2F8-2F5rjhd7K2mx4YE8jMnYQswYUBZ27Z4WH-2BrsZZLncOxhfjMOE55=
+sqCNkOunLyqh41hbg73SuDObtLWkFxSxvLMzFI58BXniaDnkYsUZgG"><img src=3D"https:/=
+/s3.amazonaws.com/uber-static/emails/2017/global/social/footer_social_faceb=
+ook50x40.png" style=3D"border:none;clear:both;display:block;min-height:20px=
+;max-width:100%;outline:none;text-decoration:none;width:25px;" alt=3D"" cla=
+ss=3D"yiv3997747907" width=3D"25" height=3D"20" id=3D"yiv3997747907OWATempo=
+raryImageDivContainer97690"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B7TWQX-2FZ=
+p9d6Vb1NubJYc98-3D_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2F=
+XWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-=
+2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysj=
+h4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2B=
+c4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9tOnmM-2Fp-2ByZ3H-2BX8Npif59zaTzgqB08WtFeXi=
+ClCs2ZRAm29vJQah9Yu7xnLu2dDVkTuthFO50c5DBDbBY-2BOFFwVIDdB5eI0Hyay-2BS63q633=
+xtzbv5mJK4eKUTb0SRNeNTaCE-2BvuQBOkNx-2FA7tE0Ksv21kj4IXTsPjA-2Bhkl8eHF8QWdiW=
+-2FZH3vsHoVDqNLU9hIGHo7fCfNEJE0jgFILvPQ0DD"><img src=3D"https://s3.amazonaw=
+s.com/uber-static/emails/2017/global/social/footer_social_twitter50x40.png"=
+ style=3D"border:none;clear:both;display:block;min-height:20px;max-width:10=
+0%;outline:none;text-decoration:none;width:25px;" width=3D"25" height=3D"20=
+" alt=3D"" class=3D"yiv3997747907" id=3D"yiv3997747907OWATemporaryImageDivC=
+ontainer1948390"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2BwpNgEUODG=
+jJDQHwrDo-2FfZplxTPcLaRwtjOBSkU8qHsO_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZ=
+i1n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2F=
+ba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s=
+-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2=
+B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZvLWkijs9tOmfFyrj0eIrNlO6SxBPQja2=
+iKgyD7pmP1MYqx61EfZSL1cN2HEk6bwsGD6HDXrN8rZ9y6JcA0M8sBKzf8PitKlDHdNRrgxAV1W=
+jSuUdjQ5-2Bi3cfWFFNzHEUE18OKdK74F-2FKpMdxBenyrKPttd72eDCYHlSA3xRMaJJkmRURpq=
+TRf3iFDN5h1UDyCZK7cy3B0-2FBcDTzvB6DUl-2BKgahSdPTry"><img src=3D"https://s3.=
+amazonaws.com/uber-static/emails/2017/global/social/footer_social_instagram=
+50x40.png" style=3D"border:none;clear:both;display:block;min-height:20px;ma=
+x-width:100%;outline:none;text-decoration:none;width:25px;" width=3D"25" he=
+ight=3D"20" alt=3D"" class=3D"yiv3997747907" id=3D"yiv3997747907OWATemporar=
+yImageDivContainer1155660"></a></td>
+</tr>
+</tbody></table></td>
+<td style=3D"text-align:left;padding-right:15px;padding-left:15px;"><table =
+width=3D"25" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er:none;border-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907"=
+>
+<tbody><tr>
+<td style=3D"text-align:left;"><a rel=3D"nofollow" target=3D"_blank" href=
+=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B1YhCHQAEk=
+t9yoT3fICys2JioqvDx499wZ0RthNGYg6VEIFKtI59GztuNGznPoaBgQ-3D-3D_b4FX5-2FwMFb=
+eNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1y=
+rzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdo=
+Gjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2F=
+DzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZvLWkij=
+s9tOlJADYNwj1OA-2BARBHrrcwdv18tflxNlonU8ToaFEuOWfeKXyKIycCc161cSoTwgydeMq0q=
+rGa-2FR4GscsgQXfTaRrRYRPMxyxhXJf88TKXPGsjWturfM04b45YABL2BmK9UI-2B-2B4-2Fa6=
+HF52E9ZA1ZPbdp0AtHdL3AaiSVeyx-2FgUaZqJ1iHAOXRRgivETGQK54brghrqtryhSuCpcHQDq=
+VRrcL"><img src=3D"https://s3.amazonaws.com/uber-static/emails/2017/global/=
+social/footer_social_linkedin50x40.png" style=3D"border:none;clear:both;dis=
+play:block;min-height:20px;max-width:100%;outline:none;text-decoration:none=
+;width:25px;" width=3D"25" height=3D"20" alt=3D"" class=3D"yiv3997747907" i=
+d=3D"yiv3997747907OWATemporaryImageDivContainer1389305"></a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"padding:40px 0px 0px 0px;text-align:left;"><table width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border:none;bo=
+rder-collapse:collapse;border-spacing:0;" class=3D"yiv3997747907">
+
+<tbody><tr>
+<td height=3D"1" style=3D"font-size:0px;line-height:0px;background:rgb(51, =
+51, 51);text-align:left;">&nbsp;</td>
+</tr>
+
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"text-align:left;"><table width=3D"100%" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"border:none;border-collapse:collapse;bo=
+rder-spacing:0;" class=3D"yiv3997747907">
+<tbody><tr>
+<td style=3D"vertical-align:top;text-align:left;" valign=3D"top">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:335px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"padding-top:30px;vertical-align:top;text-align:left;" valign=
+=3D"top" align=3D"left"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"yiv3997747907basetable" width=3D"100%" align=3D"left" style=
+=3D"border:none;border-collapse:collapse;border-spacing:0;table-layout:fixe=
+d;">
+<tbody><tr>
+<td class=3D"yiv3997747907p2" style=3D"color:rgb(255, 255, 255);font-family=
+:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, =
+Arial, sans-serif;font-size:14px;line-height:28px;text-align:left;" align=
+=3D"left"><a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.c=
+om/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2Bx2paTSh9Smww2ZWBfKdIRQ-3D_b4FX5-=
+2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x=
+5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103E=
+PsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6I=
+xET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH5EMmbs2dZ=
+vLWkijs9tOmBEfZyripq6wUWGogwV9md3kIzA8taBE1OsPkt2G43VhsvsfnkynVcZBOlc6sC8sY=
+LkgALcJjrkLlA-2BQs6IkmjYolfwKE7vMlpQlBU30cPzg13pLA3CjVFvfd-2BVA9fqppdEmG3Yl=
+I7E9N-2BMJkcjERE-2FKBI-2F2quuUCxG-2FqjVStGLsm2-2BF5KY0UDwHI6GO1uUHwW1R7WDlP=
+B2O-2FuAYCuRF3d" style=3D"color:#ffffff;text-decoration:none;">Cari Bantuan=
+</a></td>
+</tr>
+
+<tr>
+<td class=3D"yiv3997747907p2" style=3D"color:rgb(255, 255, 255);font-family=
+:'ClanPro-News', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, =
+Arial, sans-serif;font-size:14px;line-height:28px;text-align:left;" align=
+=3D"left"><a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.c=
+om/wf/click?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2ByInknzUeA-2FEK6SdGuNVIDk9Dzw04Q8=
+62LcfmTGDws3WJcZZp1GsiyNF9pylWy95UF8BRrM4YaikEJpLuAiTWJH8nB238dig1N0XsvjVRk=
+zV_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reon=
+J8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSW=
+v7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2B=
+MIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSgH=
+5EMmbs2dZvLWkijs9tOkSFsRbXiQMCsJ7p7-2FKaYG55QL-2F6vQugWDBvEV6E5QaXL7pJqbYQk=
+6lkW1ake7HBqjLz2oCjeMd-2BD-2F75eFxIZtJ4qyvwWj94R9b3yoPwiv191-2FmDm4hOO-2FRu=
+scAfQlUreujAvHGDURBxIxicOIY1QwX4xP7BKfbKta-2FaTwIf1YHXLgoKLVSBDt3ptJcMZfejU=
+JETZvGQ0oFdkkqfzaY6fDJ" style=3D"color:#ffffff;text-decoration:none;">Berhe=
+nti berlangganan</a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:313px;table-layout:fixed;">
+<tbody><tr>
+<td style=3D"text-align:left;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"yiv3997747907basetable" width=3D"100%" align=3D"left" =
+style=3D"border:none;border-collapse:collapse;border-spacing:0;">
+<tbody><tr>
+<td align=3D"left" style=3D"text-align:left;">
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yiv3997747=
+907basetable" align=3D"left" style=3D"border:none;border-collapse:collapse;=
+border-spacing:0;max-width:205px;table-layout:fixed;">
+<tbody><tr>
+
+<td style=3D"color:rgb(157, 157, 163);font-family:'ClanPro-Medium', Helveti=
+ca, Arial, sans-serif;font-size:12px;line-height:18px;padding-top:30px;text=
+-align:left;" class=3D"yiv3997747907p3" align=3D"left">
+
+
+
+
+Uber B.V.<br>
+Vijzelstraat 68, 1017 HL <br>
+Amsterdam, Nederland </td>
+</tr>
+
+<tr>
+<td style=3D"color:rgb(157, 157, 163);font-family:'ClanPro-Medium', Helveti=
+ca, Arial, sans-serif;font-size:12px;line-height:26px;padding-top:6px;text-=
+align:left;" class=3D"yiv3997747907p3" align=3D"left"><a rel=3D"nofollow" t=
+arget=3D"_blank" href=3D"http://email.uber.com/wf/click?upn=3Du0Vt-2FupzkGF=
+X9ZvjAvAP-2B4U0SAY7Fg941f3qlAwxEvnrIQ6R3BTyR5CGqDjzzw5jAbOc5gbqXq3AeEcUu4zN=
+zQ-3D-3D_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfK=
+x5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh6=
+1IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6=
+wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK=
+4BVSgH5EMmbs2dZvLWkijs9tOl-2BLR4uPSGkFA3h-2F0xWlx1f7PY6AZvzXMdwSwg0fxgHpQZd=
+2cQONWDNChg2kcUnDY9MnXZVuo5OGOvxJgd7jZn4HMt8sSe-2BOMonFIgxOXyXOkcLG0-2BlY25=
+PIl010-2BausupZG1PKiDhBQY2qeA3vT91PgEYExyqkRSgq21EPlQGQAb-2B9yh5wn4HuAVGUbB=
+kMyoUCOmqPEzSL8-2FGp4siz1xBb" style=3D"color:#ffffff;text-decoration:none;"=
+>Privasi</a> <br>
+<a rel=3D"nofollow" target=3D"_blank" href=3D"http://email.uber.com/wf/clic=
+k?upn=3Du0Vt-2FupzkGFX9ZvjAvAP-2B4U0SAY7Fg941f3qlAwxEvn8rd9qsNs-2Fxl1OE4bxG=
+QHL_b4FX5-2FwMFbeNHLhUKYm6ivOnL89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reo=
+nJ8aTip91x5RHm1yrzrIp0bPgN56RGzG6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdS=
+Wv7mWw103EPsnDdoGjbk2SKfKK6HWAknR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2=
+BMIeNVan6IxET-2FDzNmZCCRBOnyNp0Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSg=
+H5EMmbs2dZvLWkijs9tOldSuWwZj6RB887Q5WtwE8-2BsGpKMAibB8FGuHe8DXztGAjnURIvMIn=
+hyUeZUNRkF0-2BYk1U1BXut-2BLLNH9C6-2F0m3alj80at4rrJ6XkbNrHCRL-2BEcwtVn4yAY03=
+PZ7b6N-2BQ-2FOJ66iUzULl2VlluTJAuWwDZ5ka-2F9arhpS-2BYibpEx4qIWEZZ6GYjU85OtjC=
+Ukx6tjvsA3DTKc7J3-2BqZKf8GZGd" style=3D"color:#ffffff;text-decoration:none;=
+">Ketentuan</a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td style=3D"font-size:0px;line-height:0px;padding-top:60px;text-align:left=
+;">&nbsp;</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+
+
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<img src=3D"http://email.uber.com/wf/open?upn=3Db4FX5-2FwMFbeNHLhUKYm6ivOnL=
+89LV9zzOHHZi1n78v8VYPlEnXL-2FXWZlhVAqfKx5reonJ8aTip91x5RHm1yrzrIp0bPgN56RGz=
+G6HM6PeF-2Fba7u5n7DeH1nfi8il-2FzEDj3Dh61IgdSWv7mWw103EPsnDdoGjbk2SKfKK6HWAk=
+nR7BKB1IN4s-2FPip8PpxvfIB1ysjh4mF5gCuf6wcp-2BMIeNVan6IxET-2FDzNmZCCRBOnyNp0=
+Ax5WN2D7Q-2B5xnY0EZm1AWeOP-2Bc4NqM7fxrK4BVSrRIocuqx7f4WYZxq3hNQNpsXvjFA6Kbi=
+17pK1iUgLk-2FIovn4QW7z-2Fnhs-2Ba-2FMtq4bvqtUxj87m-2Fly4-2F7-2FrcohPSRZ-2F-2=
+Fmx-2BfhLYSeeZSFDOk6KghPhsSR3zzx8l0AZlHbR50nSqhN7ViL-2BPABAV0WDZcBCukuwNN06=
+zkXaFaL5m6m2eeBfp8FU9WuB04FaDPEbsvZ3eL-2FFzgnTPnn3nwXz8U1rZU1yanLlQmK0CHttj=
+KB" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"min-height:1px =
+!important;width:1px !important;border-width:0 !important;margin-top:0 !imp=
+ortant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !=
+important;padding-top:0 !important;padding-bottom:0 !important;padding-righ=
+t:0 !important;padding-left:0 !important;">
+</div>
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_7632572_1497631919.1506000188257--
