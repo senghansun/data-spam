@@ -1,0 +1,125 @@
+﻿Delivered-To: anggidwir8@gmail.com
+Received: by 10.140.17.212 with SMTP id 78csp1532599qgd;
+        Thu, 12 Jan 2017 09:53:09 -0800 (PST)
+X-Received: by 10.157.14.85 with SMTP id n21mr7225668otd.244.1484243589032;
+        Thu, 12 Jan 2017 09:53:09 -0800 (PST)
+Return-Path: <jamalariyatin@gmail.com>
+Received: from mail-oi0-f50.google.com (mail-oi0-f50.google.com. [209.85.218.50])
+        by mx.google.com with ESMTPS id a45si1125352ote.99.2017.01.12.09.53.08
+        for <anggidwir8@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 12 Jan 2017 09:53:08 -0800 (PST)
+Received-SPF: pass (google.com: domain of jamalariyatin@gmail.com designates 209.85.218.50 as permitted sender) client-ip=209.85.218.50;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of jamalariyatin@gmail.com designates 209.85.218.50 as permitted sender) smtp.mailfrom=jamalariyatin@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-f50.google.com with SMTP id w204so1466oiw.0
+        for <anggidwir8@gmail.com>; Thu, 12 Jan 2017 09:53:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=LoChgIPQjAcBf3KMh4c3c2FIIQo0tPr/hIBjNs0NWmg=;
+        b=jaerCC1Lss8xjMWc6nSreWFK7vZ72mzxy6D9EITFA1Dcn2Mzg/BG6OBZx0jAQSAE7b
+         FbqGSNnKEWmGo8iKkp338JRpcaZ4PwUlEthEsNMtwbdVm536ArFIly90RRcF0L1Yiy7L
+         KsopFCgaRgtH3YZfaKCAmWtAfI05FrnfpuQEKzdepX3U5YVBC6hBzH42Tu8iH4jn+QLs
+         OEKzvS+cRRb950MCuFtb3ek9rHPIDmjlJE9PoPP03UFviQ/Y2P7OsK6CeW+75U4Pjwma
+         0Zxxl1/G0VvUZS4U8R0K4by2S0WQST0JUqWwFtHzmT14O4wawtMAPrARnIfXCN1FvFnz
+         tE8g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=LoChgIPQjAcBf3KMh4c3c2FIIQo0tPr/hIBjNs0NWmg=;
+        b=GLTGI9xLo06WYbQCQL0HReaH5fQvY1J/tIazLgxge1ZG2qcGIkXuxef+BJ9FffQGZL
+         +SnKCoC+BNP2L3pMOE6ndiyUPnPJhiY9tLCYPu2LaXHvhFK/VHQTSkvBGBHlWk9vn4BI
+         D53s+43yR5xiOB5ag0fU1tYJb7leprm5ZwmtAj/MrtZDk2bmoeEKMiyOdKbiqcMQAkvI
+         ac1lN6vfvAu1Uk8sbARzBF1USSGH5CsUCQ8ufq+LoUPfX/hV+8SvJ+Dwqj5/4EHDWKQm
+         xP1ssazM8DqonIDsRPTfTVBE4rMUzXP0X2V5HUjmBJxjS6A0vlsU8pL4fS33QUsIJjBc
+         Zlmw==
+X-Gm-Message-State: AIkVDXIRUAGWhm6zk4RV19m+JyoS8dXonmg026OjrSYC5cqWGJl/dd+1X/zNJ9dynJRNzkDjKFthPfsuDN6BTQ==
+X-Received: by 10.202.72.23 with SMTP id v23mr4915344oia.116.1484243588254; Thu, 12 Jan 2017 09:53:08 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.182.241.1 with HTTP; Thu, 12 Jan 2017 09:53:06 -0800 (PST)
+In-Reply-To: <CAHGHJvMMt6O+FuqFt7noGCJcmfMQYBY7xhRdkrcmpDemHbrVEQ@mail.gmail.com>
+References: <CAAwVCj=8OHj347bNnBgbZiC8bZU3a9wMj=+B4hNbuU0JQ-L1ew@mail.gmail.com> <CAHGHJvMS_NRDSL=ofAau3GCUQhjFwK5HMLWH_egerQ3jW6BPig@mail.gmail.com> <CAHGHJvMMt6O+FuqFt7noGCJcmfMQYBY7xhRdkrcmpDemHbrVEQ@mail.gmail.com>
+From: Jamal Ariyatin <jamalariyatin@gmail.com>
+Date: Fri, 13 Jan 2017 00:53:06 +0700
+Message-ID: <CAHGHJvPyP-Enoyf+HiC4eaybpobktWLeng9hDdG3y0pe4r3TSw@mail.gmail.com>
+Subject: Re: tugas 4
+To: Anggi Dwi Rahmawati <anggidwir8@gmail.com>
+Content-Type: multipart/mixed; boundary=001a113db176d6b8020545e963e9
+
+--001a113db176d6b8020545e963e9
+Content-Type: multipart/alternative; boundary=001a113db176d6b7fd0545e963e7
+
+--001a113db176d6b7fd0545e963e7
+Content-Type: text/plain; charset=UTF-8
+
+di liat halamannya coba yaa..
+yg transportasi udah gua ganti alamatnya jadi di sangiang sama udah gua
+tambain sedikit alesan LC dan VAM yg terkecil..
+
+On Thu, Jan 12, 2017 at 10:44 PM, Jamal Ariyatin <jamalariyatin@gmail.com>
+wrote:
+
+> bab 1 pak yahya
+>
+> On Thu, Jan 12, 2017 at 7:56 AM, Jamal Ariyatin <jamalariyatin@gmail.com>
+> wrote:
+>
+>> finan sialan
+>>
+>> On Tue, Jan 10, 2017 at 4:55 PM, Anggi Dwi Rahmawati <
+>> anggidwir8@gmail.com> wrote:
+>>
+>>> mal, stepping stone nya gua nyerah ga ngerti
+>>>
+>>
+>>
+>
+
+--001a113db176d6b7fd0545e963e7
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">di liat halamannya coba yaa..<div>yg transportasi udah gua=
+ ganti alamatnya jadi di sangiang sama udah gua tambain sedikit alesan LC d=
+an VAM yg terkecil..</div></div><div class=3D"gmail_extra"><br><div class=
+=3D"gmail_quote">On Thu, Jan 12, 2017 at 10:44 PM, Jamal Ariyatin <span dir=
+=3D"ltr">&lt;<a href=3D"mailto:jamalariyatin@gmail.com" target=3D"_blank">j=
+amalariyatin@gmail.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_=
+quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1=
+ex"><div dir=3D"ltr">bab 1 pak yahya</div><div class=3D"HOEnZb"><div class=
+=3D"h5"><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">On Thu, J=
+an 12, 2017 at 7:56 AM, Jamal Ariyatin <span dir=3D"ltr">&lt;<a href=3D"mai=
+lto:jamalariyatin@gmail.com" target=3D"_blank">jamalariyatin@gmail.com</a>&=
+gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 =
+0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">finan =
+sialan</div><div class=3D"m_5519907552321037678HOEnZb"><div class=3D"m_5519=
+907552321037678h5"><div class=3D"gmail_extra"><br><div class=3D"gmail_quote=
+">On Tue, Jan 10, 2017 at 4:55 PM, Anggi Dwi Rahmawati <span dir=3D"ltr">&l=
+t;<a href=3D"mailto:anggidwir8@gmail.com" target=3D"_blank">anggidwir8@gmai=
+l.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"m=
+argin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"l=
+tr">mal, stepping stone nya gua nyerah ga ngerti</div>
+</blockquote></div><br></div>
+</div></div></blockquote></div><br></div>
+</div></div></blockquote></div><br></div>
+
+--001a113db176d6b7fd0545e963e7--
+--001a113db176d6b8020545e963e9
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="BAB V Transportasi edit jamal.docx"
+Content-Disposition: attachment; filename="BAB V Transportasi edit jamal.docx"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_ixuo92p61
+
+
+--001a113db176d6b8020545e963e9
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="BAB VI Finansial edit jamal.docx"
+Content-Disposition: attachment; filename="BAB VI Finansial edit jamal.docx"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_ixuo97uh2
+
+
+--001a113db176d6b8020545e963e9--

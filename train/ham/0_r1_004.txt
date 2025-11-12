@@ -1,0 +1,141 @@
+Delivered-To: abdelhaqf@gmail.com
+Received: by 10.79.144.90 with SMTP id s87csp4555771ivd;
+        Mon, 17 Jul 2017 21:56:14 -0700 (PDT)
+X-Received: by 10.84.232.135 with SMTP id i7mr1188938plk.300.1500353774546;
+        Mon, 17 Jul 2017 21:56:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1500353774; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wxRrOkbioeSuhsrE7L00MgnAe4PJ5SmhTW1iVbe7XFE8elbPpfO2FCAG2Ke5YqyCv+
+         +CkTQryc0Eo2qyOeYPSaEiLUkzfjipEU+/SseJG0hngAhtRks4YjUVkllWU/4LaFmu7Q
+         e4d9cIMW+BexQMuXkiSfuAFKx2e8Z7nwqWW5WajnjeBqQeRdcAtHefENOLMV9m0hN9Gn
+         ME/kdVx4qzjSgomCCF5B315ZNPKeKGtME3G4UtXQr4Bs1FsnVgV074Jla6t4LQ9vSMPt
+         lnhtwf0bZK6oaS5yh5L/semyyRaeVgBPpu9Y9RmMcxcDvo0nd+BzmbTwdITOIUQrPnUb
+         TV4w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:cc:from:mime-version:subject:to:dkim-signature
+         :arc-authentication-results;
+        bh=Tf7ki+tyERUc/ls8THoxcjMftknGI5wI9Apnc7MyNWY=;
+        b=nUFGZj6qgMaBz4CvkbYlP9BygDRm+RDKqTaaPHfT8nce6ALn+hk/IAPWNz9CX2DVls
+         6UNW/XRpJoD+iJvv8LfEPGIubtYqvvGvkF2Y55O/v2izRkI1gegN+XiNJ+qmESOBQ0Ms
+         kNS95fYpoDZ9kPMTyBj4B5rEwlTScpleuyMA7+FoHUCSLjWSblKQy/OUYxyEKNIvg+Ro
+         sBR9sLgbgH2NDi4Q5AlgktdWaEjQmmGsI3UHCclb1724pBBW5v2JiwbMfZ6+tFf/5Yvi
+         kd+ZBw3JtWIa8vjMRtZdNMGfKHutblCATUksfeYz0waOR+rxgq0W7LP6wOsMJ23pwgXW
+         MkZA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@njt.co.id header.b=Ey0SMsQK;
+       spf=pass (google.com: domain of service@njt.co.id designates 137.59.126.150 as permitted sender) smtp.mailfrom=service@njt.co.id
+Return-Path: <service@njt.co.id>
+Received: from cpanel.njt.co.id (webmail.njt.co.id. [137.59.126.150])
+        by mx.google.com with ESMTPS id g61si933495plb.121.2017.07.17.21.56.13
+        for <abdelhaqf@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Jul 2017 21:56:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of service@njt.co.id designates 137.59.126.150 as permitted sender) client-ip=137.59.126.150;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@njt.co.id header.b=Ey0SMsQK;
+       spf=pass (google.com: domain of service@njt.co.id designates 137.59.126.150 as permitted sender) smtp.mailfrom=service@njt.co.id
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=njt.co.id;
+	 s=default; h=Date:Message-Id:CC:From:Content-type:MIME-Version:Subject:To:
+	Sender:Reply-To:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=Tf7ki+tyERUc/ls8THoxcjMftknGI5wI9Apnc7MyNWY=; b=Ey0SMsQKGX+5V8nVHVZQBBNXY3
+	eZjpNx7yg0WcPzrCH5Zb5ecOJQNyd6gYjj+jos8axVraqQTnX4WV69rlfvjhQkmCvejzRZx2EVPJr
+	1w27u6L3QEeiNHs/mydo5f/EDdYUGX4fK6zqK37zVJN1k+jy1TFszNkYOTeChWKSEQOG6ksNshT/9
+	f0iITxR3cGbkAyAvxaSf3guXuDKWTt2H/MFPi6IJXryQuRyUJEArwfXOWkKSul23OyduDzs32pgqE
+	ljeiAn+UgSqy4Ke1hMTo3+9DadPbRhdu/RtZ0g2S8D7UxOEVTfx8eKmkWMTdk3yKxo+c5YAq7NB9c
+	ALQhvIWA==;
+Received: from njtadm by cpanel.njt.co.id with local (Exim 4.89)
+	(envelope-from <service@njt.co.id>)
+	id 1dXKYO-000EWu-82; Tue, 18 Jul 2017 11:56:12 +0700
+To: abdelhaqf@gmail.com
+Subject: Pembuatan Tanda Terima
+X-PHP-Script: service.njt.co.id/index.php for 182.253.179.215
+X-PHP-Originating-Script: 503:system.php
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Service <service@njt.co.id>
+CC: 
+Message-Id: <E1dXKYO-000EWu-82@cpanel.njt.co.id>
+Date: Tue, 18 Jul 2017 11:56:12 +0700
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cpanel.njt.co.id
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [503 498] / [47 12]
+X-AntiAbuse: Sender Address Domain - njt.co.id
+X-Get-Message-Sender-Via: cpanel.njt.co.id: authenticated_id: njtadm/from_h
+X-Authenticated-Sender: cpanel.njt.co.id: service@njt.co.id
+X-Source: /opt/cpanel/ea-php56/root/usr/bin/php-cgi
+X-Source-Args: /opt/cpanel/ea-php56/root/usr/bin/php-cgi /home/njtadm/public_html/serviceapps/index.php 
+X-Source-Dir: njt.co.id:/public_html/serviceapps
+
+<p style="text-align:center"><strong>Tanda Terima Service</strong></p>
+
+<div class="kanan">
+<div>PT. Nusantara Jaya Teknologi<br />
+Jl. Pangeran Jayakarta 26 Blok A No.24 Jakarta Pusat<br />
+Phone : 021-6018218 / 6293040</div>
+
+<div> </div>
+</div>
+
+<table border="0" cellpadding="1" cellspacing="1" style="height:185px; width:500px">
+	<tbody>
+		<tr>
+			<td><strong>Customer</strong></td>
+			<td>: Abdel</td>
+		</tr>
+		<tr>
+			<td><strong>Phone</strong></td>
+			<td>: 0858-853-51-646</td>
+		</tr>
+		<tr>
+			<td><strong>Alamat</strong></td>
+			<td>: </td>
+		</tr>
+		<tr>
+			<td><strong>Ket</strong></td>
+			<td>: </td>
+		</tr>
+		<tr>
+			<td><strong>No Referensi</strong></td>
+			<td>: SRV201707180001</td>
+		</tr>
+		<tr>
+			<td><strong>Tanggal</strong></td>
+			<td>: <span class="date"> Selasa, 18 Juli 2017</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><table width="100%" cellspacing="0" cellpadding="0" style="border:1px solid rgb(222,226,227);text-align:left;margin-top:30px"><thead style="background:none repeat scroll 0% 0% rgb(220,239,245);font-weight:bold">
+						<tr>
+							<th width="20px">No</th>
+							<th width="150px">Nama Produk</th>
+							<th>Kerusakan</th>
+							<th>Keterangan</th>
+							<th>Kelengkapan</th>
+							<th>Serial Number</th>
+							<th>Garansi</th>
+							<th width="70px">Qty</th>
+						</tr>
+					</thead><tbody style="font-size:12px"><tr>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">1</td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">GIGABYTE GV-R938G1 GAMING-4GD </td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">No Display </td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">tidak tampil, awalnya salah satu kipas rusak </td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">  </td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">4719331323288SN153451049162 </td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">2015-10-02</td>
+								<td style="padding:8px;border-bottom:1px dotted rgb(222,226,227)">1</td>
+							</tr></tbody></table></p>
+
+<p> </p>
+
+<p><strong>Catatan : </strong></p>
+
+<p>* Cek Status service bisa di lihat di website http://njt.co.id di menu cek status service</p>
+
+<p>* Pengambilan service HARUS disertakan TANDA TERIMA Asli. Barang yang sudah selesai, mohon diperiksa kembali (fisik & tipe barang). Barang selesai service selama 1 BULAN tidak diambil, BUKAN menjadi tanggung jawab kami bila barang rusak / hilang</p>
+

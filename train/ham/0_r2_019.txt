@@ -1,0 +1,154 @@
+﻿Delivered-To: abiyogaaron@gmail.com
+Received: by 10.114.177.138 with SMTP id cq10csp1404587ldc;
+        Mon, 27 Jun 2016 21:29:39 -0700 (PDT)
+X-Received: by 10.107.11.26 with SMTP id v26mr1569638ioi.107.1467088179329;
+        Mon, 27 Jun 2016 21:29:39 -0700 (PDT)
+Return-Path: <michael.wijaya@umn.ac.id>
+Received: from mail-oi0-f45.google.com (mail-oi0-f45.google.com. [209.85.218.45])
+        by mx.google.com with ESMTPS id i141si19707033ioa.48.2016.06.27.21.29.38
+        for <abiyogaaron@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 27 Jun 2016 21:29:39 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.218.45 is neither permitted nor denied by best guess record for domain of michael.wijaya@umn.ac.id) client-ip=209.85.218.45;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 209.85.218.45 is neither permitted nor denied by best guess record for domain of michael.wijaya@umn.ac.id) smtp.mailfrom=michael.wijaya@umn.ac.id
+Received: by mail-oi0-f45.google.com with SMTP id u201so58oie.0
+        for <abiyogaaron@gmail.com>; Mon, 27 Jun 2016 21:29:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=8YF8wwPiXETfMm38VTglGAifUTtp1L9BbvQzqnUZMCg=;
+        b=qCThCgHimWocvbsnzs0ldtifvfGiveWmBaxeMv7Aanp8ZStA9ApZ+nq8AhQET2iJ31
+         1bRdKMevQotWQ68C0hhn61IyxSdQ+22U7cmZ2BA3iuyBKphqTRh7EAXvCAbQQ8cuStlh
+         NQLDStCbHMrLHQT0qTF8QOgVA3bR1QUlfg513FbZ8v2CjtOwFryAM5cBv3Hz57nmB45/
+         aIwM2kilIpgR55gQyqu0m6+0NcqwyqwKKxzQDIYXjL9qRUSpVgLEc3iYOJzlhENYUlB5
+         TxB7gTSGD3I+mDK9WCLa/ns6MASGF9JqlGojGbWFhOImP2wsUVZFTeiz6XwtYmCvDNY5
+         qrEQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=8YF8wwPiXETfMm38VTglGAifUTtp1L9BbvQzqnUZMCg=;
+        b=QlXuKMsLSj67DduIGiqPJdfX1eSkgKu7HcUPNTX78vKJ6w/ZKzOxXIxA/aOx2hnSl6
+         1IPBAcMy7qG3qqIjiJn9vKgq7MF8is5Gv2t5PYu/3LL0WbLnUrKF9VJ4gx7ek+Qg9CLr
+         j93EdKBLrafXz43aPWzOWnlHCDyIKYkonMFGXFj7bGlxGnBr3DByC8Zuj7UcHnlcckW7
+         uHOrHxg3DuWFHbWFzvd6GFIvXxCrNAxgpBjpVBFQLX8RIKAWyVHTBGhcOpMeb+LWU36G
+         J6X/sBZu2ic0R8KZ+TBdArZZiIMzWQ5yCGK6N6dEhZT//4N5JkTg0VxjbnSQSwNgc38j
+         Ub2Q==
+X-Gm-Message-State: ALyK8tKT8LMe8PHDd3BP1TK4utUxohMD6D2C1DgOu2PMkcC/59PysJG7+nmM7edPueH2wPOK3cUi6YJY/zewFZEvzbPm7cRMfNo34OKYx/gl7WYmxAiuPtogWO+1ChVX13eHQqytFClLwsIz7zE=
+X-Received: by 10.202.104.95 with SMTP id d92mr445776oic.83.1467088178590; Mon, 27 Jun 2016 21:29:38 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.202.227.73 with HTTP; Mon, 27 Jun 2016 21:29:37 -0700 (PDT)
+From: MICHAEL WIJAYA SAPUTRA <michael.wijaya@umn.ac.id>
+Date: Tue, 28 Jun 2016 11:29:37 +0700
+Message-ID: <CANdPgm+41yVBNxbUG61JeLdzjg09OaHq1KMkqnwJD4BUQ8TYRg@mail.gmail.com>
+Subject: Pengumuman : Pengisian Class Evaluation
+To: a.yeusiwawan.h@gmail.com, abdelhagF@gmail.com, abi yoga <abiyogaaron@gmail.com>, albert.tandi@student.umn.ac.id, albert.yeusiawan@student.umn.ac.id, andi.tc@live.com, andri.wan@student.umn.ac.id, andy.tanu@student.umn.ac.id, arthur.bachtiar@student.umn.ac.id, aswin.darma@student.umn.ac.id, Aswin Darmasaputra <aswindarma16@gmail.com>, Bodhi Jaya <bodhi.jaya95@gmail.com>, Bodhi JAYA <bodhi.jaya@student.umn.ac.id>, candra winarta <candrawinarta@gmail.com>, dausan.djaja@yahoo.com, dennis.johanes@student.umn.ac.id, devin.ryan@student.umn.ac.id, dicky.pratama@student.umn.ac.id, Dicky Pratama <dickypratama17395@gmail.com>, fernandre_susanto@yahoo.com, Thomas Dwiatmoko <gabeaventh@gmail.com>, glenn.raditya.rp@gmail.com, hans.rafael@student.umn.ac.id, hermanprunama@gmail.com, ivan.jonathan@student.umn.ac.id, ivanjonathan85@gmail.com, Joash Chandra <joash.chandra@gmail.com>, joash.christian@student.umn.ac.id, jordy.jonathan@student.umn.ac.id, jurgen.raven@student.umn.ac.id, Kalindra ad <kalindraad@gmail.com>, Reynaldo Kevin <kevin.reynaldo18@gmail.com>, kevin.richie@student.umn.ac.id, kevin@kusnardi.com, kiki.susanto@student.umn.ac.id, kvnrichie@gmail.com, Naldie Chen <naldie.chen@gmail.com>, "Randy D'nata Prayogo" <randy.dnata@gmail.com>, randy.dnata@student.umn.ac.id, reynaldo.kevin@student.umn.ac.id, Richard FIRDAUS <richard.firdaus@student.umn.ac.id>, Richard Firdaus <richfir@gmail.com>, Timotius Adiprakoso Purnomo <timotiuspurnomo@yahoo.co.id>, Valiant Azarya <valiant.azarya@student.umn.ac.id>, vincentius.kurniawan@student.umn.ac.id, yustinnus.vernanda@yahoo.com, "CHRISTIAN WIJASA (13110110064)" <christian.wijasa@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary=001a11409d9cbd4b9e05364f15af
+
+--001a11409d9cbd4b9e05364f15af
+Content-Type: text/plain; charset=UTF-8
+
+Selamat siang kepada Para Mahasiswa CEH,
+
+Maaf mengganggu liburan semester dan magang kalian. Terdapat hal yang
+penting yang harus kalian lakukan agar dapat mengikuti UJIAN CEH yang akan
+dilakukan pada Bulan JULI 2016. Kalian harus mengisi evaluasi kelas dengan
+cara sebagai berikut.
+1. Login Ke ASPEN kalian masing-masing
+2. Pilihlah menu Class Eval
+3. Masukkan kode Class Eval yang telah anda dapatkan pada awal masa
+perkuliahann CEH1 (kode yang digunakan seperti : *******EVAL-*******)
+4. Instructor Name = Dennis Gunawan
+5. Training Center = UMN ( Universitas Multimedia Nusantara)
+6. Course Name = Certified Ethical Hacker V8
+
+Jika terdapat pertanyaan dapat langsung ditanyakan kepada saya, TETAPI
+TIDAK MELAYANI PERTANYAAN UNTUK KODE YANG HILANG ATAU TIDAK DAPAT DITEMUKAN.
+
+Atas perhatiannya saya ucapkan terima kasih.
+
+
+Selamat Liburan dan Good Luck untuk magangnya :)
+
+-- 
+Regard's
+Michael Wijaya Saputra
+Assist. Lecturer of Computer Science
+Faculty of ICT
+
+-- 
+
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--001a11409d9cbd4b9e05364f15af
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div><div><div><div><div><div><div><div>Selamat =
+siang kepada Para Mahasiswa CEH,<br><br></div>Maaf mengganggu liburan semes=
+ter dan magang kalian. Terdapat hal yang penting yang harus kalian lakukan =
+agar dapat mengikuti UJIAN CEH yang akan dilakukan pada Bulan JULI 2016. Ka=
+lian harus mengisi evaluasi kelas dengan cara sebagai berikut.<br></div>1. =
+Login Ke ASPEN kalian masing-masing<br></div>2. Pilihlah menu Class Eval<br=
+></div>3. Masukkan kode Class Eval yang telah anda dapatkan pada awal masa =
+perkuliahann CEH1 (kode yang digunakan seperti : *******EVAL-*******)<br></=
+div>4. Instructor Name =3D Dennis Gunawan<br></div>5. Training Center =3D U=
+MN ( Universitas Multimedia Nusantara)<br></div>6. Course Name =3D Certifie=
+d Ethical Hacker V8<br><br></div>Jika terdapat pertanyaan dapat langsung di=
+tanyakan kepada saya, TETAPI TIDAK MELAYANI PERTANYAAN UNTUK KODE YANG HILA=
+NG ATAU TIDAK DAPAT DITEMUKAN.<br><br></div>Atas perhatiannya saya ucapkan =
+terima kasih.<br><br><br></div><div>Selamat Liburan dan Good Luck untuk mag=
+angnya :) <br></div><div><div><div><div><div><div><div><div><div><div><div>=
+<div><div><br>-- <br><div class=3D"gmail_signature" data-smartmail=3D"gmail=
+_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><span style=3D"font=
+-family:comic sans ms,sans-serif">Regard&#39;s<br>Michael Wijaya Saputra<br=
+>Assist. Lecturer of Computer Science</span></div><div><span style=3D"font-=
+family:comic sans ms,sans-serif">Faculty of ICT</span></div></div></div></d=
+iv></div>
+</div></div></div></div></div></div></div></div></div></div></div></div></d=
+iv></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font>
+--001a11409d9cbd4b9e05364f15af--

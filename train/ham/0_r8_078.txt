@@ -1,0 +1,133 @@
+﻿Delivered-To: abiyogaaron@gmail.com
+Received: by 10.114.177.138 with SMTP id cq10csp1873533ldc;
+        Tue, 28 Jun 2016 18:17:11 -0700 (PDT)
+X-Received: by 10.36.95.207 with SMTP id r198mr18407448itb.48.1467163031621;
+        Tue, 28 Jun 2016 18:17:11 -0700 (PDT)
+Return-Path: <michael.wijaya@umn.ac.id>
+Received: from mail-ob0-x22d.google.com (mail-ob0-x22d.google.com. [2607:f8b0:4003:c01::22d])
+        by mx.google.com with ESMTPS id f19si850502ioj.206.2016.06.28.18.17.10
+        for <abiyogaaron@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 28 Jun 2016 18:17:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:4003:c01::22d is neither permitted nor denied by best guess record for domain of michael.wijaya@umn.ac.id) client-ip=2607:f8b0:4003:c01::22d;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:4003:c01::22d is neither permitted nor denied by best guess record for domain of michael.wijaya@umn.ac.id) smtp.mailfrom=michael.wijaya@umn.ac.id
+Received: by mail-ob0-x22d.google.com with SMTP id ru5so38926obc.1
+        for <abiyogaaron@gmail.com>; Tue, 28 Jun 2016 18:17:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=UH2TU+54r9oel4RCm5fjeDN7S5lfswZTJ9BZN6XYvog=;
+        b=Q7jSRYInXERisTjpWJfskZyqd0X/XRqrhjYWU/UnB8j8cajHsIt4TdQO3L3UN9mzJw
+         9g/Cq9VKkqCuB5xCi9GMkfJ7OWiipkEg/2WDpci3JzEL4Nghv0fWmO80AUUpOEnZF9Bj
+         ZCUb8+/H2w+NizwV/MEXET6Cf+Uw4zZw609hSXDKuWCPKdMMHg5yTipIfze5zljjxZJQ
+         A6mreAA+4zdKfZiN4HFB81gOk3Ro6VmgBIkpp63GwLtrhTmUmk8+1FVve7AqtXcihBNT
+         RphIu+QXhA9Q6ReWHNdIA/LI4fyWdKY4DxmfgGSgd7qII9OlcQQIBVqOA13Vc1vEpmSS
+         6GYA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=UH2TU+54r9oel4RCm5fjeDN7S5lfswZTJ9BZN6XYvog=;
+        b=Vpahdsn2gv7JOr6Q75SnEtvD3C2QNRIeFqywElbtgNo5Vz7JSzWkitCcgzAwI3bRnu
+         5LG69HF27CWZBveWHzi+Da/J/+33H+IGK/n9Xaz9aMXQkOZ0FofqO3hjALpN+xbwUylS
+         EhIe/Ujh8/wRH7xpJsGh80TF6eAxyT8nItnOgcFZTGOdMuzsZ1raoYhFnoIX3kWxaxdS
+         8s6W7WHwiJ0vDkq3S3NIyePu4NV9eWfKeTLZRBb3UVePhEVgQD4HQOHPkQMRFiirJuCq
+         SRlOvC2AWaEf+Ix0zFUhczZ9MyvOo1k1WVaZxLg939Kn39MjCpBKUtUmCdVMkNuQivuE
+         mV+w==
+X-Gm-Message-State: ALyK8tLCVVGI+L9mpNZyxzYnxajye3Zgtm7o52gGUqwRZkl2AerygddKGAUczFB0upzJqt9f8U/YwdJFTjBLGHzlm6J/tw/sW3pCLqNwSoXOJkO8JK+Z6tcRZOZ4cf4lol8oLKtf03Ry/H+dHpc=
+X-Received: by 10.202.227.149 with SMTP id a143mr3389004oih.57.1467163030295; Tue, 28 Jun 2016 18:17:10 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.202.227.73 with HTTP; Tue, 28 Jun 2016 18:17:09 -0700 (PDT)
+From: MICHAEL WIJAYA SAPUTRA <michael.wijaya@umn.ac.id>
+Date: Wed, 29 Jun 2016 08:17:09 +0700
+Message-ID: <CANdPgmKtLuSYicPVn=wvG-APoE6zFvUUGmben5orcgLz_J2riw@mail.gmail.com>
+Subject: Pengumuman : Access Code untuk Evaluasi
+To: Albert Yeusiawan <a.yeusiawan.h@gmail.com>, a.yeusiwawan.h@gmail.com, abdel_31354@yahoo.co.id, abdelhagF@gmail.com, Albert Tandi <albert.tandi@gmail.com>, albert.tandi@student.umn.ac.id, albert.yeusiawan@student.umn.ac.id, andi.tc@live.com, andri.wan@student.umn.ac.id, andri wan <andriwan1@gmail.com>, andy.tanu@student.umn.ac.id, arthur.bachtiar@student.umn.ac.id, arthurbachtiar@live.com, aswin.darma@student.umn.ac.id, candra winarta <candraawinarta@gmail.com>, Christian Wijasa <christian.wijasa@gmail.com>, Dausan Djaja <dausan.djaja@hotmail.com>, dausan.djaja@yahoo.com, dennis.johanes@student.umn.ac.id, devin.ryan@student.umn.ac.id, Devin Ryan Riota <devinryanriota@gmail.com>, dicky.pratama@student.umn.ac.id, fernandre_susanto@yahoo.com, fernandre_susatio@yahoo.com, glenn.raditya.rp@gmail.com, hans.rafael@student.umn.ac.id, hans rafael <hansrafael95@gmail.com>, hermanprunama@gmail.com, Herman Purnama <hermanpurnama@gmail.com>, ivan.jonathan@student.umn.ac.id, ivanjonathan85@gmail.com, ivanjonathan95@yahoo.com, Joash Chandra <joash.chandra96@gmail.com>, joash.christian@student.umn.ac.id, jordy.jonathan@student.umn.ac.id, jordy jonathan <jordyjonathan6@gmail.com>, jurgen.raven@student.umn.ac.id, kevin.richie@student.umn.ac.id, kevin@kusnardi.com, kiki.susanto@student.umn.ac.id, kvnrichie@gmail.com, Rahman Eko <maman.gafar@gmail.com>, Dennis Johanes <nightouga@gmail.com>, randy.dnata@student.umn.ac.id, reynaldo.kevin@student.umn.ac.id, Kiki Susanto <susantokiki96@gmail.com>, Valiant Azarya <valiant.azarya@gmail.com>, Vincentius K <vinc.detective007@gmail.com>, vincentius.kurniawan@student.umn.ac.id, Jurgen Raven <vincentjraven@gmail.com>, yustinnus.vernanda@yahoo.com, yustinus_vernanda@yahoo.com, abi yoga <abiyogaaron@gmail.com>, Aswin Darmasaputra <aswindarma16@gmail.com>, Bodhi JAYA <bodhi.jaya@student.umn.ac.id>, candra winarta <candrawinarta@gmail.com>, "CHRISTIAN WIJASA (13110110064)" <christian.wijasa@student.umn.ac.id>, Dicky Pratama <dickypratama17395@gmail.com>, Joash Chandra <joash.chandra@gmail.com>, Kalindra ad <kalindraad@gmail.com>, Naldie Chen <naldie.chen@gmail.com>, "Randy D'nata Prayogo" <randy.dnata@gmail.com>, Reynaldo Kevin <kevin.reynaldo18@gmail.com>, Richard FIRDAUS <richard.firdaus@student.umn.ac.id>, Thomas Dwiatmoko <gabeaventh@gmail.com>, Timotius Adiprakoso Purnomo <timotiuspurnomo@yahoo.co.id>, Valiant Azarya <valiant.azarya@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary=001a114093c63fe2b005366083e1
+
+--001a114093c63fe2b005366083e1
+Content-Type: text/plain; charset=UTF-8
+
+Selamat Pagi Mahasiswa CEH,
+
+Berikut saya lampirkan link untuk melihat code akses ke evaluasi, untuk
+passwordnya akan diberitahukan melalui media lain. Tolong secepatnya untuk
+diisi karena jika tidak anda tidak dapat mengikuti ujian sertifikasi CEH.
+
+https://drive.google.com/folderview?id=0B0EOxvGY58sDVFZkQjdQaUJJU1U&usp=sharing
+
+Atas perhatiannya saya ucapkan terima kasih
+
+-- 
+Regard's
+Michael Wijaya Saputra
+Assist. Lecturer of Computer Science
+Faculty of ICT
+
+-- 
+
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--001a114093c63fe2b005366083e1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div>Selamat Pagi Mahasiswa CEH,<br><br></div>Berikut=
+ saya lampirkan link untuk melihat code akses ke evaluasi, untuk passwordny=
+a akan diberitahukan melalui media lain. Tolong secepatnya untuk diisi kare=
+na jika tidak anda tidak dapat mengikuti ujian sertifikasi CEH. <br><br><a =
+href=3D"https://drive.google.com/folderview?id=3D0B0EOxvGY58sDVFZkQjdQaUJJU=
+1U&amp;usp=3Dsharing">https://drive.google.com/folderview?id=3D0B0EOxvGY58s=
+DVFZkQjdQaUJJU1U&amp;usp=3Dsharing</a><br><br></div><div>Atas perhatiannya =
+saya ucapkan terima kasih<br></div><div><div><div><br>-- <br><div class=3D"=
+gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><=
+div dir=3D"ltr"><div><span style=3D"font-family:comic sans ms,sans-serif">R=
+egard&#39;s<br>Michael Wijaya Saputra<br>Assist. Lecturer of Computer Scien=
+ce</span></div><div><span style=3D"font-family:comic sans ms,sans-serif">Fa=
+culty of ICT</span></div></div></div></div></div>
+</div></div></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font>
+--001a114093c63fe2b005366083e1--

@@ -1,0 +1,71 @@
+Delivered-To: abdelhaqf@gmail.com
+Received: by 10.140.94.166 with SMTP id g35csp1128827qge;
+        Sun, 3 Sep 2017 23:27:48 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb4XIyyBYU9zOI60Jj1CBzshwYFotl8MifhZdsM0nrCspuPdiXMo+eq7CT5uKzNrNae8bMpa
+X-Received: by 10.84.194.195 with SMTP id h61mr11274916pld.409.1504506468615;
+        Sun, 03 Sep 2017 23:27:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504506468; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dY4ZZYU29ZcVfjMobEWvSiFHhD9tsLU1reu8+LDIaLJJX3JfVSsnPqWdD8DtR8LkAN
+         ZuytsVxxy2M40ZaQXRXFH+Bm0pm+vobftYRO0E0bvauyRHkYtN5DSmFv3CbicusixiM0
+         a3nisE/eiSs5UtxS+i/mpW2m4bXXMQMoFnBNyaDMG4bUv2vR6DulHtM4I3Abld7e6WXz
+         NhfYFLhJBG6jWR7frYAARqbFdyx9cpXvxvTdu9D0j9VBWA36KOlAH+9mrxf1ALQVYCo0
+         oLgoDV9aWOe3mmqX5La2xD1LaxUvqZSytpSa+L8hBsgW+B/tGmwKlJz+n5a8W/Qr51cI
+         GGbw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:arc-authentication-results;
+        bh=TWaNx3V+dPtOZOTYHKOLKxo07FF0bJeF8L1Ha7rI4dw=;
+        b=flYrcBQBs3XhAz0h9coOiCfgzNjggR4GWBkWJ3q1mVodwrihHU0JO+FJv956Ei2LR7
+         N1tvf/PVNgqncgSi87U0k05B4BBudV5SlyW2GMo8MtAvyTdhUgCpUMoO96Ei7iuExvXr
+         Powx7rBeAF+7qdlBFw4v1iYKbx8WxgW2rKotniloMMZVzw90WM5gq9gjhMlhhYZVv9Gk
+         6UwumO4btm0/UaQJvdSVPPkGGjy2fBC66XdfF2jy9r/O97bD/JFceTx09CCCkksgNz2F
+         U50XM7lUhqKkI8GS78kiFa3L22PdyvFL5UenHWO0I7j/hGjI2dK2iEc8Hre8XIg8AnJZ
+         pEYA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of telkom@telkom.co.id designates 118.98.34.237 as permitted sender) smtp.mailfrom=TELKOM@telkom.co.id
+Return-Path: <TELKOM@telkom.co.id>
+Received: from securemailgwjt6.telkom.co.id (securemailgwjt4.telkom.co.id. [118.98.34.237])
+        by mx.google.com with ESMTPS id c4si4603952pgt.196.2017.09.03.23.27.47
+        for <abdelhaqf@gmail.com>
+        (version=TLS1 cipher=AES128-SHA bits=128/128);
+        Sun, 03 Sep 2017 23:27:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of telkom@telkom.co.id designates 118.98.34.237 as permitted sender) client-ip=118.98.34.237;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of telkom@telkom.co.id designates 118.98.34.237 as permitted sender) smtp.mailfrom=TELKOM@telkom.co.id
+X-IronPort-AV: E=Sophos;i="5.41,473,1498496400"; 
+   d="scan'208";a="100585006"
+Received: from unknown (HELO servicebus3.sdp.stl.telkom.co.id) ([10.0.61.29])
+  by securemailgwjt6.telkom.co.id with ESMTP; 04 Sep 2017 13:27:23 +0700
+Date: Mon, 4 Sep 2017 13:27:46 +0700 (WIT)
+From: TELKOM
+Reply-To: Telkom Indonesia <cs@telkom.co.id>
+To: abdelhaqf@gmail.com
+Message-ID: <838350625.6293.1504506466903.JavaMail.oracle@servicebus3.sdp.stl.telkom.co.id>
+Subject: Aktivasi INDIHOME
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+U2VsYW1hdCBhdGFzIGFrdGl2YXNpIGxheWFuYW4gSU5ESUhPTUUgQW5kYS4gTmlrbWF0aSBJTkRJ
+SE9NRSBsYW5nc3VuZyBwYWRhIHNtYXJ0cGhvbmUgRG93bmxvYWQgTW92aW7igJkgaHR0cDovL2Jp
+dC5seS9nb21vdmluIGdyYXRpcyB1bnR1ayBnYWRnZXQgcGVydGFtYQo8ZW0+PHNwYW4gc3R5bGU9
+IkZPTlQtU0laRTogOXB0OyBGT05ULUZBTUlMWTogJ0FyaWFsJywnc2Fucy1zZXJpZic7IENPTE9S
+OiAjNmM2YzZjOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbic7IG1z
+by1mYXJlYXN0LWxhbmd1YWdlOiBJTjsgbXNvLWFuc2ktbGFuZ3VhZ2U6IEVOLVVTIiBsYW5nPSJF
+Ti1VUyI+PHN0cm9uZz4tLS0tLS0tLS0tLS0tLS0tLS0tLS08YnI+RElTQ0xBSU1FUiA6PC9zdHJv
+bmc+PGJyPlRoaXMgDQplbGVjdHJvbmljIG1haWwgYW5kLyBvciBhbnkgZmlsZXMgdHJhbnNtaXR0
+ZWQgd2l0aCBpdCBtYXkgY29udGFpbiBjb25maWRlbnRpYWwgDQpvciBjb3B5cmlnaHQgaW5mb3Jt
+YXRpb24gb2YgUFQuIFRlbGVrb211bmlrYXNpIEluZG9uZXNpYSwgVGJrLiBhbmQvIG9yIGl0cyAN
+ClN1YnNpZGlhcmllcy4mbmJzcDtJZiB5b3UgYXJlIG5vdCBhbiBpbnRlbmRlZCByZWNpcGllbnQs
+IHlvdSBtdXN0IG5vdCBrZWVwLCBmb3J3YXJkLCANCmNvcHksIHVzZSwgb3IgcmVseSBvbiB0aGlz
+IGVsZWN0cm9uaWMgbWFpbCwgYW5kIGFueSBzdWNoIGFjdGlvbiBpcyB1bmF1dGhvcml6ZWQgDQph
+bmQgcHJvaGliaXRlZC4gSWYgeW91IGhhdmUgcmVjZWl2ZWQgdGhpcyBlbGVjdHJvbmljIG1haWwg
+aW4gZXJyb3IsIHBsZWFzZSByZXBseSANCnRvIHRoaXMgZWxlY3Ryb25pYyBtYWlsIHRvIG5vdGlm
+eSB0aGUgc2VuZGVyIG9mIGl0cyBpbmNvcnJlY3QgZGVsaXZlcnksIGFuZCB0aGVuIA0KZGVsZXRl
+IGJvdGggaXQgYW5kIHlvdXIgcmVwbHkuIEZpbmFsbHksIHlvdSBzaG91bGQgY2hlY2sgdGhpcyBl
+bGVjdHJvbmljIG1haWwgDQphbmQgYW55IGF0dGFjaG1lbnRzIGZvciB0aGUgcHJlc2VuY2Ugb2Yg
+dmlydXNlcy4gUFQuIFRlbGVrb211bmlrYXNpIEluZG9uZXNpYSwgDQpUYmsuIGFjY2VwdHMgbm8g
+bGlhYmlsaXR5IGZvciBhbnkgZGFtYWdlcyBjYXVzZWQgYnkgYW55IHZpcnVzZXMgdHJhbnNtaXR0
+ZWQgYnkgDQp0aGlzIGVsZWN0cm9uaWMgbWFpbC48L3NwYW4+PC9lbT4=
+

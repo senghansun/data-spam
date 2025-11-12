@@ -1,0 +1,89 @@
+﻿Delivered-To: farhanfahlevi021@gmail.com
+Received: by 10.37.199.131 with SMTP id w125csp127947ybe;
+        Fri, 22 Jul 2016 17:44:47 -0700 (PDT)
+X-Received: by 10.13.232.142 with SMTP id r136mr5691578ywe.2.1469234687183;
+        Fri, 22 Jul 2016 17:44:47 -0700 (PDT)
+Return-Path: <dika@froyo.co.id>
+Received: from mail-yw0-x231.google.com (mail-yw0-x231.google.com. [2607:f8b0:4002:c05::231])
+        by mx.google.com with ESMTPS id z1si2200864ybc.301.2016.07.22.17.44.46
+        for <farhanfahlevi021@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 22 Jul 2016 17:44:46 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:4002:c05::231 is neither permitted nor denied by best guess record for domain of dika@froyo.co.id) client-ip=2607:f8b0:4002:c05::231;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@froyo-co-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:4002:c05::231 is neither permitted nor denied by best guess record for domain of dika@froyo.co.id) smtp.mailfrom=dika@froyo.co.id
+Received: by mail-yw0-x231.google.com with SMTP id z8so70729577ywa.1
+        for <farhanfahlevi021@gmail.com>; Fri, 22 Jul 2016 17:44:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=froyo-co-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=sMFMWQwjDUtdtjwc9kEcEOYmc3xBQZpFbfTsw6lHJK4=;
+        b=d67lUyPOpuWqF99og5j4fZoZE3Jm83v2JNX5bBf7CLcW74ILsoeWCaEza62CHelyMS
+         TpaBZLRPRVnDbKuJ9vjbMp8lnhA/nzfB6dJNh02JL0yd43/hQFaJIGrp+ZD9+uuTPaiX
+         OVgTPYXanVUnhR3YLeorIAsBeUiTZURcW0Eh+qD93wlSUW4M5PAYW/mCTso/T+M0ZJCB
+         V5btS3DA8UgKy1Fl4P7rdEFYeIlWTmrnrcs/yWJwpwX9bIC7RDEygaZrg0ooGHkugrvC
+         hEzknmIV8VqA5JYHhyNZkpGG4GjmCMAVQUQuUdSPWtC3C9ecQbFHbaw1GCpZnJFGJyfX
+         y7+g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=sMFMWQwjDUtdtjwc9kEcEOYmc3xBQZpFbfTsw6lHJK4=;
+        b=fFAWqfxDEKbNMzy4ZU0s5yY1QgsXwysbG7gXnHrpHUhe7BoFFoDConBkkJHYYsD1xA
+         K2i1tUNdu7ohGS176zg1R/16YXPXwxfGgi+sKNt9rMAzIzL5uqYYk2pIyiNtrZ6YK6Gk
+         RPqAjSwd1EOPePze4RFpoIBgMJfZ7qeK2KaX6DAFbj8Nn9/o93IGeyuJC2HKI6rP4ywG
+         +Dk4ZKkURIAQCy8t6yRRK74OcYnrOkJW9/fkjCCKAF8p0/VcMGBzHG4AaFAo93JOvuxn
+         I3RNzX5BmpQDB8HkrjLqmXeT4onIg3AgL2N2ilzk0MQGUvjGYAnnTDjCJIifNyYLrXhP
+         5YCA==
+X-Gm-Message-State: AEkooutrDfxqipMylfprwdDolEMe2sgUPyT/JOI3MliLy+822WD2x+KwZIgcaWCtMu9+lGbah6lqo+0bfELrQw==
+MIME-Version: 1.0
+X-Received: by 10.129.76.4 with SMTP id z4mr6165796ywa.210.1469234686137; Fri, 22 Jul 2016 17:44:46 -0700 (PDT)
+Received: by 10.37.195.1 with HTTP; Fri, 22 Jul 2016 17:44:46 -0700 (PDT)
+Received: by 10.37.195.1 with HTTP; Fri, 22 Jul 2016 17:44:46 -0700 (PDT)
+In-Reply-To: <CAJVdPHb-fuHe=NX+LZR_0p81V9s+b1iWSM_UACNL6N4Ty6R+rA@mail.gmail.com>
+References: <CAJVdPHb-fuHe=NX+LZR_0p81V9s+b1iWSM_UACNL6N4Ty6R+rA@mail.gmail.com>
+Date: Sat, 23 Jul 2016 07:44:46 +0700
+Message-ID: <CAGQzFQdar6yLizPS=XmwgW9sq0m7feBf1HgAsrwkux-XVQ-YuA@mail.gmail.com>
+Subject: Re: Internship
+From: Andika Alivano <dika@froyo.co.id>
+To: Farhan Fahlevi <farhanfahlevi021@gmail.com>
+Content-Type: multipart/alternative; boundary=001a113f32ec8f53a9053842db84
+
+--001a113f32ec8f53a9053842db84
+Content-Type: text/plain; charset=UTF-8
+
+Hi Farhan,
+
+Ya, kami terima magang. Kirimkan saja dulu portfolio yang kamu punya agar
+bisa kami lihat.
+
+Thanks
+
+On Jul 23, 2016 12:53 AM, "Farhan Fahlevi" <farhanfahlevi021@gmail.com>
+wrote:
+
+> Selamat malam Froyo Story, saya Farhan mahasiswa Desain Komunikasi Visual
+> Universitas Esa Unggul. Mau tanya di Froyo Story tersedia untuk mahasiswa
+> magang atau tidak ya?
+>
+
+--001a113f32ec8f53a9053842db84
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Hi Farhan,</p>
+<p dir=3D"ltr">Ya, kami terima magang. Kirimkan saja dulu portfolio yang ka=
+mu punya agar bisa kami lihat.</p>
+<p dir=3D"ltr">Thanks</p>
+<div class=3D"gmail_extra"><br><div class=3D"gmail_quote">On Jul 23, 2016 1=
+2:53 AM, &quot;Farhan Fahlevi&quot; &lt;<a href=3D"mailto:farhanfahlevi021@=
+gmail.com">farhanfahlevi021@gmail.com</a>&gt; wrote:<br type=3D"attribution=
+"><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:=
+1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Selamat malam Froyo Story=
+, saya Farhan mahasiswa Desain Komunikasi Visual Universitas Esa Unggul. Ma=
+u tanya di Froyo Story tersedia untuk mahasiswa magang atau tidak ya? =C2=
+=A0</div>
+</blockquote></div></div>
+
+--001a113f32ec8f53a9053842db84--

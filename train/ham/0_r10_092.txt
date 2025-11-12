@@ -1,0 +1,129 @@
+﻿Delivered-To: farhanfahlevi021@gmail.com
+Received: by 10.37.108.130 with SMTP id h124csp3967218ybc;
+        Mon, 21 Aug 2017 00:21:06 -0700 (PDT)
+X-Received: by 10.99.53.13 with SMTP id c13mr15615154pga.235.1503300066248;
+        Mon, 21 Aug 2017 00:21:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503300066; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oDt3AGpbuzqzJOxOhQICxdO3mZLgBYxfoDKFxfZrhpYJI4Nw2i8uLd2MechmliXzmw
+         Gls1DpmAF4IRTZ6526YG71l303Ed8A7iH7Q9ahFXk4U4+7gYUP1kUzsVAotVpSB90YrI
+         AjmfN2UpQUCzyp0fQv7pZGbUqyGWe/tt5kJiBDBV3fJdootAxRUecC7lYiwrkng9vDxI
+         1RmytlKaijAwRL6D05JGMLCLJXiM3+jOs4kBQqGtSnXf6mdWHQTFbFJTFWFUSFewRVYS
+         vs6t8yNdFXeOsavU/bL3/rbOMYMdhOJOOb+GbatyB/ghboPkCWvyFm20ekXeoW9o27P1
+         sEXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=MF4ZFRQUuo4crWdtxlRflZqkGVAEB/BUXS/H76cydbc=;
+        b=NivN3XWo1Y788kfYukI+lZR/Fvo+2o65K5nXtOGVWtfH40ybHBYUfq3H5Cy5rflOw3
+         +/WpCe6Q9MNQoQGV32gYE1Vg/qytjLWabDGPjbbYcfnckJL9SFEVU42HEqbrMlmw9i6F
+         vYqvlWWkYjx2vj26eOMT4AnapMtUuEVinGCos1iv8EJ5udMK2BeNo4OugLpNkx5SfweY
+         7lcIhLAJ84t0eYAo0wkYmlvxR9UIEw406vO8cw/4cjH5Ci9uNM9HF0Kx/Hz9cSkNqu83
+         9M4InQn77YVU4GPLdoRh3NIDS+/E2Jelp4uaQiFrZR5QYfYVH2REY5OcMme61NSAwdn5
+         KuKA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GaYk5CuK;
+       spf=pass (google.com: domain of raga.wira@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=raga.wira@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <raga.wira@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id g1sor1823528plk.7.2017.08.21.00.21.05
+        for <farhanfahlevi021@gmail.com>
+        (Google Transport Security);
+        Mon, 21 Aug 2017 00:21:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of raga.wira@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GaYk5CuK;
+       spf=pass (google.com: domain of raga.wira@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=raga.wira@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=MF4ZFRQUuo4crWdtxlRflZqkGVAEB/BUXS/H76cydbc=;
+        b=GaYk5CuK5Ti1/yy9Ydsutu2+x/ZCJi3uWJgUxWCqXkncLjw4fE1cTp4cn9s/0n9nWt
+         apDqUTAm5LvW1584JLjdAVBF2LnYNDqXV2hr6IvqsOOkTczcIZ+T2nqPpHvzVeWLMQkw
+         9nRUD/AgyhJFiHOeqdjSpL5/nklmYyFhX32ViXD/etkGdpBQwoWPLWqBt9+nV1Xlm+9c
+         8BfML/NefwdUrrjYJVlkUJcYfg5cU9FS17jbMr+yh6UqYIUzvWZSD31wdkL7MAFKr+Ka
+         NBIuoWftL1NglJAqJvIa8Dc3gKurueHEiNm2xKyyBnWae7u7Y5yip2zNxCrzzwsyvIQN
+         AQUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=MF4ZFRQUuo4crWdtxlRflZqkGVAEB/BUXS/H76cydbc=;
+        b=WXIIMST3cNh2P4BnPBjp0lyY4Gh2tVPewzWDLRiCnMoeNbsmoCFHxqqey9MdBYSLyo
+         9HnMWunRkV14556FBM4fR1HWsAYITecgLhF1wejxI69Rv7iFCzKioLSSL3PU5RK9HpP1
+         r9exVoACLjHIOUWjLtvoiaG9rYDemPRlU3yhjon+KuFerR5qIYG3oCGnR8apeGyZG7UR
+         IBGE2ld7IuIZYnN78Iv7QdVsRuOc3dC2qhZwFWFVYXGwZfb408XbVloejhJDpcbf0GPb
+         6eK3PJumH1iKy827aH21YCydnp5hcqb/derNlxfcH9tKggwpzfq33Z4E5K58ppD+b4aa
+         abXg==
+X-Gm-Message-State: AHYfb5iYh7H+GkFLXBwrqjxKQFgrO940jitCgArnAPr+n9SGnt79AuUU em6ZP44sYS0OltLNutpgejKhnWLPtg==
+X-Received: by 10.84.217.76 with SMTP id e12mr16480435plj.220.1503300065395; Mon, 21 Aug 2017 00:21:05 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.100.153.3 with HTTP; Mon, 21 Aug 2017 00:21:04 -0700 (PDT)
+From: Raga Wira Cahya <raga.wira@gmail.com>
+Date: Mon, 21 Aug 2017 14:21:04 +0700
+Message-ID: <CALO28_vrzK3U7qdAae0dQKtfSu_NKZc4G=ehdqh16V4Lk4Nbsg@mail.gmail.com>
+Subject: Brader apakabar?
+To: Farhan Fahlevi <farhanfahlevi021@gmail.com>
+Content-Type: multipart/alternative; boundary="f403045c704a638a3605573e52d8"
+
+--f403045c704a638a3605573e52d8
+Content-Type: text/plain; charset="UTF-8"
+
+Farhan kerja dimana sekarang? Minta nomor telpon dong, btw lauw main main
+lah ke kantor EO gua di Cilandak :D
+
+Cheers!
+
+-- 
+Warm Regards,
+
+Raga Wira Cahya
+
+
+*A Production - PT. Anugrah Cahya Tjipta*
+
+Jl. TB. Simatupang No 41, Cilandak Timur - Jakarta Selatan
+
+
+Office : 021 2278 0877 - Mobile : 0817 29 1986
+
+e-mail : raga.wira@gmail.com
+
+--f403045c704a638a3605573e52d8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Farhan kerja dimana sekarang? Minta nomor telpon dong, btw=
+ lauw main main lah ke kantor EO gua di Cilandak :D<div><br></div><div>Chee=
+rs!<br clear=3D"all"><div><br></div>-- <br><div class=3D"gmail_signature" d=
+ata-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><d=
+iv><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D=
+"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><=
+div dir=3D"ltr"><div dir=3D"ltr"><font size=3D"2" color=3D"#000000"><font f=
+ace=3D"trebuchet ms, sans-serif">Warm Regards,</font><br></font></div><div =
+dir=3D"ltr"><font size=3D"2"><font color=3D"#000000"><br>Raga Wira Cahya</f=
+ont><br><br></font><div><font size=3D"2"><b><font color=3D"#666666">A Produ=
+ction - PT.=C2=A0</font><font color=3D"#444444">A</font><font color=3D"#666=
+666">nugrah=C2=A0</font><font color=3D"#444444">C</font><font color=3D"#666=
+666">ahya=C2=A0</font><font color=3D"#444444">T</font><font color=3D"#66666=
+6">jipta<br></font></b><br></font><p style=3D"margin-bottom:0.0001pt"><span=
+ style=3D"color:rgb(68,68,68)"><span style=3D"font-family:arial,helvetica,s=
+ans-serif"><font size=3D"2">Jl. TB. Simatupang No 41, Cilandak Timur - Jaka=
+rta Selatan</font></span></span></p><span style=3D"color:rgb(68,68,68)"><sp=
+an style=3D"font-family:arial,helvetica,sans-serif"><font size=3D"2"></font=
+></span></span><p style=3D"margin-bottom:0.0001pt"><span style=3D"color:rgb=
+(68,68,68)"><span style=3D"font-family:arial,helvetica,sans-serif"><font si=
+ze=3D"2"><br></font></span></span></p><div style=3D"font-family:arial"><fon=
+t size=3D"2"><span style=3D"font-family:arial,helvetica,sans-serif;color:rg=
+b(68,68,68)">Office : 021 2278 0877=C2=A0</span><span style=3D"font-family:=
+arial,helvetica,sans-serif;color:rgb(68,68,68)">-</span><span style=3D"font=
+-family:arial,helvetica,sans-serif;color:rgb(68,68,68)">=C2=A0Mobile :=C2=
+=A0</span>0817 29 1986<br></font></div><font size=3D"2"><br style=3D"font-f=
+amily:arial">e-mail :=C2=A0<a href=3D"mailto:raga.wira@gmail.com" style=3D"=
+color:rgb(17,85,204)" target=3D"_blank">raga.wira@gmail.com</a></font></div=
+></div></div></div></div></div></div></div></div></div></div></div></div></=
+div></div></div></div></div>
+</div></div>
+
+--f403045c704a638a3605573e52d8--

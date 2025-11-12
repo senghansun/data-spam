@@ -1,0 +1,183 @@
+Delivered-To: rwen.ibra@gmail.com
+Received: by 10.237.50.133 with SMTP id z5csp587960qtd;
+        Thu, 4 May 2017 07:36:49 -0700 (PDT)
+X-Received: by 10.129.174.38 with SMTP id m38mr33635057ywh.114.1493908609305;
+        Thu, 04 May 2017 07:36:49 -0700 (PDT)
+Return-Path: <3gTwLWQgTCfQjk-nalhuWYYkqjpo.ckkcha.Ykinsaj.eXnWciWeh.Yki@gaia.bounces.google.com>
+Received: from mail-yb0-x246.google.com (mail-yb0-x246.google.com. [2607:f8b0:4002:c09::246])
+        by mx.google.com with ESMTPS id l184si712730ybc.235.2017.05.04.07.36.49
+        for <rwen.ibra@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 04 May 2017 07:36:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3gtwlwqgtcfqjk-nalhuwyykqjpo.ckkcha.ykinsaj.exnwciweh.yki@gaia.bounces.google.com designates 2607:f8b0:4002:c09::246 as permitted sender) client-ip=2607:f8b0:4002:c09::246;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com;
+       spf=pass (google.com: domain of 3gtwlwqgtcfqjk-nalhuwyykqjpo.ckkcha.ykinsaj.exnwciweh.yki@gaia.bounces.google.com designates 2607:f8b0:4002:c09::246 as permitted sender) smtp.mailfrom=3gTwLWQgTCfQjk-nalhuWYYkqjpo.ckkcha.Ykinsaj.eXnWciWeh.Yki@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Received: by mail-yb0-x246.google.com with SMTP id k129so6083949ybb.15
+        for <rwen.ibra@gmail.com>; Thu, 04 May 2017 07:36:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20161025;
+        h=mime-version:date:feedback-id:message-id:subject:from:to;
+        bh=Mhii69VRttxjwBomY3n+fyU0PQCHcpbVJO6Uy6AIpGg=;
+        b=ChItVOw8Y8mtvAOAeRjgds9bAj09K9B8avXUjrDMDG91JfuDKbG/PCeakyVBFmVMK0
+         kFSYIeE23clbCwr9qduSvX5Fa9/RIY5QJfvGKDekawxzoyrSAdng3ViU+FpGwT1eCpSV
+         X1g89YDaJRrpFth9c7rKefdraRCPT8LVwcnFlHkZkCPaJr4IHTqDXKMYC68/u27hXLpo
+         pbmFfS/RZZYDBwmGAxznsK6oJRT1ub9y8O7oPvCqrsbVsneicz7BYWMOnTHqWMs55yt6
+         Od4xUnwovztLYuWcgzcPRCsPozmWTHm0L2k7ZSKRdjp5kM+LVTYVvF7qcVR8sHZhhnYO
+         6qnA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:feedback-id:message-id:subject
+         :from:to;
+        bh=Mhii69VRttxjwBomY3n+fyU0PQCHcpbVJO6Uy6AIpGg=;
+        b=JH5sJgfcXAvBQjtZEdk9/hh1JVS4Zn99fZgBzOdQviC5acJDVndUHtaRfblkL6W3hi
+         qgudtUwSJ9lstom3hDEWmPqgYRrVH+mVoPbGJhD7EMwy3fwpjQ3mQkl6ETGtrlHv+UXy
+         H3o2v5ZKyPmJKfUwDCOd5QqS58oqpYmEVQ8wZwOAoFHfKUqarcQe5NLnJ/zxErVzJWMb
+         twkKkPzzv68i12GqebPiFtDQr4qQ5VlH5egeM9S43UXl4lOF1nkQ0c2ty6i7t7LBlKAX
+         mXJAB7RiA9I6iYx9UDMBC3OXmk3QDO43e+2wefK6PuoyOgiRwOLxzoZke9xSMNJZLgt+
+         DETQ==
+X-Gm-Message-State: AN3rC/55xq5A+Z5KkYPEyM1K4NQihAcuCkPpZPpVju02hUgQouTkTD/6 vKp44AoBlR9YEA6UXSySOG7lq9egqfeh
+MIME-Version: 1.0
+X-Received: by 10.129.52.142 with SMTP id b136mr20035573ywa.115.1493908609020; Thu, 04 May 2017 07:36:49 -0700 (PDT)
+Date: Thu, 4 May 2017 14:36:42 +0000 (GMT)
+X-Notifications: XEAAAAGkkFE1r_eyhXqkoSrcbRwc
+X-Account-Notification-Type: 31
+Feedback-ID: 31:account-notifier
+Message-ID: <af7av1DUzPJNlzmGXWCb3Q@notifications.google.com>
+Subject: Upaya masuk yang baru dari Opera di Windows
+From: Google <no-reply@accounts.google.com>
+To: rwen.ibra@gmail.com
+Content-Type: multipart/alternative; boundary=001a11413978f7b28e054eb3b30d
+
+--001a11413978f7b28e054eb3b30d
+Content-Type: text/plain; charset=UTF-8; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+VXBheWEgbWFzdWsgeWFuZyBiYXJ1IGRhcmkgT3BlcmEgZGkgV2luZG93cw0KDQoNCg0KWWFuZyB0
+ZXJob3JtYXQgUndlbiwNCkFrdW4gR29vZ2xlIHJ3ZW4uaWJyYUBnbWFpbC5jb20gYmFydSBzYWph
+IGRpZ3VuYWthbiB1bnR1ayBtYXN1ayBkYXJpIE9wZXJhDQpkaSBXaW5kb3dzLg0KDQpSd2VuIEli
+cmFoaW0NCnJ3ZW4uaWJyYUBnbWFpbC5jb20NCg0KV2luZG93cw0KS2FtaXMsIDA0IE1laSAyMDE3
+IDIxLjM2IChXSUIpDQpCYW50ZW4sIEluZG9uZXNpYSoNCk9wZXJhKlRpZGFrIG1lbmdlbmFsaSBh
+a3Rpdml0YXMgaW5pPyoNClRpbmphdSBwZXJhbmdrYXQgeWFuZyBiYXJ1LWJhcnUgaW5pIGRpZ3Vu
+YWthbg0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1y
+d2VuLmlicmFAZ21haWwuY29tJmNvbnRpbnVlPWh0dHBzOi8vbXlhY2NvdW50Lmdvb2dsZS5jb20v
+ZGV2aWNlLWFjdGl2aXR5L250LzE0OTM5MDg2MDIwMDA/cmZuJTNEMzElMjZyZm5jJTNEMSUyNmVp
+ZCUzRDQ3NTEwOTYxODEyNjk1ODExNDUlMjZldCUzRDAlMjZhc2FlJTNEMj4NCnNla2FyYW5nLg0K
+DQpNZW5nYXBhIGthbWkgbWVuZ2lyaW1ueWE/IEthbWkgbWVtcGVyaGF0aWthbiBrZWFtYW5hbiBk
+ZW5nYW4gc2FuZ2F0IHNlcml1cw0KZGFuIGluZ2luIG1lbWJlcmkgdGFodSBBbmRhIHRlbnRhbmcg
+dGluZGFrYW4gcGVudGluZyBwYWRhIGFrdW4gQW5kYS4NCkthbWkgdGlkYWsgZGFwYXQgbWVuZW50
+dWthbiBhcGFrYWggQW5kYSBzZWJlbHVtbnlhIHBlcm5haCBtZW5nZ3VuYWthbg0KYnJvd3NlciBh
+dGF1IHBlcmFuZ2thdCBpbmkgZGVuZ2FuIGFrdW4gQW5kYS4gSW5pIGRhcGF0IHRlcmphZGkgamlr
+YSBBbmRhDQptYXN1ayBwZXJ0YW1hIGthbGkgZGkga29tcHV0ZXIsIHBvbnNlbCwgYXRhdSBicm93
+c2VyIGJhcnUsIGppa2EgQW5kYQ0KbWVuZ2d1bmFrYW4gbW9kZSBwZW55YW1hcmFuIGF0YXUgcGVu
+amVsYWphaGFuIHByaWJhZGkgYXRhdSBtZW5naGFwdXMNCmNvb2tpZSwgYXRhdSBqaWthIG9yYW5n
+IGxhaW4gbWVuZ2Frc2VzIGFrdW4gQW5kYS4NClRpbSBBa3VuIEdvb2dsZQ0KDQoNCg0KKkxva2Fz
+aSBhZGFsYWggaGFzaWwgcGVya2lyYWFuIGRhbiBkaXRlbnR1a2FuIG9sZWggYWxhbWF0IElQIGFz
+YWxueWEuDQoNCkVtYWlsIGluaSB0aWRhayBkYXBhdCBtZW5lcmltYSBiYWxhc2FuLiBVbnR1ayBt
+ZW1iZXJpa2FuIG1hc3VrYW4gdGVudGFuZw0KbGFuc2lyYW4gaW5pLCBrbGlrIGRpIHNpbmkNCjxo
+dHRwczovL3N1cHBvcnQuZ29vZ2xlLmNvbS9hY2NvdW50cy9jb250YWN0L2RldmljZV9hbGVydF9m
+ZWVkYmFjaz9obD1pZD4uDQpVbnR1ayBpbmZvcm1hc2kgc2VsZW5na2FwbnlhLCBrdW5qdW5naSBQ
+dXNhdCBCYW50dWFuIEFrdW4gR29vZ2xlDQo8aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vYWNj
+b3VudHMvYW5zd2VyLzI3MzMyMDM+Lg0KDQoNCg0KQW5kYSBtZW5lcmltYSBwZW5ndW11bWFuIGxh
+eWFuYW4gZW1haWwgd2FqaWIgaW5pIGFnYXIgbWVtcGVyb2xlaCBpbmZvcm1hc2kNCnRlcmJhcnUg
+dGVudGFuZyBwZXJ1YmFoYW4gcGVudGluZyBwYWRhIHByb2R1ayBhdGF1IGFrdW4gR29vZ2xlIEFu
+ZGEuDQoNCsKpIDIwMTcgR29vZ2xlIEluYy4sIDE2MDAgQW1waGl0aGVhdHJlIFBhcmt3YXksIE1v
+dW50YWluIFZpZXcsIENBIDk0MDQzLCBVU0ENCg==
+--001a11413978f7b28e054eb3b30d
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"id"><head><meta name=3D"format-detection" content=3D"date=3Dn=
+o"><meta name=3D"format-detection" content=3D"email=3Dno"></head><body styl=
+e=3D"margin: 0; padding: 0;" bgcolor=3D"#FFFFFF"><table width=3D"100%" heig=
+ht=3D"100%" style=3D"min-width: 348px;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0"><tr height=3D"32px"></tr><tr align=3D"center"><td width=3D"32=
+px"></td><td><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"max-width: 600px;"><tr><td><table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tr><td align=3D"left"><img width=3D"92" height=
+=3D"32" src=3D"https://www.gstatic.com/accountalerts/email/googlelogo_color=
+_188x64dp.png" style=3D"display: block; width: 92px; height: 32px;"></td><t=
+d align=3D"right"><img width=3D"32" height=3D"32" style=3D"display: block; =
+width: 32px; height: 32px;" src=3D"https://www.gstatic.com/accountalerts/em=
+ail/keyhole.png"></td></tr></table></td></tr><tr height=3D"16"></tr><tr><td=
+><table bgcolor=3D"#4184F3" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px s=
+olid #E0E0E0; border-bottom: 0; border-top-left-radius: 3px; border-top-rig=
+ht-radius: 3px;"><tr><td height=3D"72px" colspan=3D"3"></td></tr><tr><td wi=
+dth=3D"32px"></td><td style=3D"font-family: Roboto-Regular,Helvetica,Arial,=
+sans-serif; font-size: 24px; color: #FFFFFF; line-height: 1.25;">Upaya masu=
+k yang baru dari Opera di Windows</td><td width=3D"32px"></td></tr><tr><td =
+height=3D"18px" colspan=3D"3"></td></tr></table></td></tr><tr><td><table bg=
+color=3D"#FAFAFA" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px solid #F0F0=
+F0; border-bottom: 1px solid #C0C0C0; border-top: 0; border-bottom-left-rad=
+ius: 3px; border-bottom-right-radius: 3px;"><tr height=3D"16px"><td width=
+=3D"32px" rowspan=3D"3"></td><td></td><td width=3D"32px" rowspan=3D"3"></td=
+></tr><tr><td><table style=3D"min-width: 300px;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tr><td style=3D"font-family: Roboto-Regular,Helve=
+tica,Arial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5;pa=
+dding-bottom: 4px;">Yang terhormat Rwen,</td></tr><tr><td style=3D"font-fam=
+ily: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 13px; color: #20=
+2020; line-height: 1.5;padding: 4px 0;">Akun Google <a>rwen.ibra@gmail.com<=
+/a> baru saja digunakan untuk masuk dari <span style=3D"white-space:nowrap;=
+">Opera</span> di <span style=3D"white-space:nowrap;">Windows</span>.<table=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-top: 48px=
+; margin-bottom: 48px;"><tr valign=3D"middle"><td width=3D"32px" ></td><td =
+align=3D"center" ><img src=3D"https://www.gstatic.com/accountalerts/email/a=
+nonymous_profile_photo.png" width=3D"48px" height=3D"48px" style=3D"width: =
+48px; height: 48px; display: block; border-radius: 50%;"></td><td width=3D"=
+16px" ></td><td style=3D"line-height: 1.2;"><span style=3D"font-family: Rob=
+oto-Regular,Helvetica,Arial,sans-serif;font-size: 20px; color: #202020;">Rw=
+en Ibrahim</span><br><span style=3D"font-family: Roboto-Regular,Helvetica,A=
+rial,sans-serif;font-size: 13px; color: #727272;"><a>rwen.ibra@gmail.com</a=
+></span></td></tr><tr valign=3D"middle"><td width=3D"32px" height=3D"24px">=
+</td><td align=3D"center" height=3D"24px"><img src=3D"https://www.gstatic.c=
+om/accountalerts/email/down_arrow.png" width=3D"4px" height=3D"10px" style=
+=3D"width: 4px; height: 10px; display: block; "></td></tr><tr valign=3D"top=
+"><td width=3D"32px" ></td><td align=3D"center" ><img src=3D"https://www.gs=
+tatic.com/accountalerts/devices/windows_laptop_wallpaper_big.png" width=3D"=
+48px" height=3D"48px" style=3D"width: 48px; height: 48px; display: block; "=
+></td><td width=3D"16px" ></td><td style=3D"line-height: 1.2;"><span style=
+=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 16px=
+; color: #202020;">Windows</span><br><span style=3D"font-family: Roboto-Reg=
+ular,Helvetica,Arial,sans-serif; font-size: 13px; color: #727272;">Kamis, 0=
+4 Mei 2017 21.36 (WIB)<br>Banten, Indonesia*<br>Opera</span></td></tr></tab=
+le><b>Tidak mengenali aktivitas ini?</b><br>Tinjau <a href=3D"https://accou=
+nts.google.com/AccountChooser?Email=3Drwen.ibra@gmail.com&amp;continue=3Dht=
+tps://myaccount.google.com/device-activity/nt/1493908602000?rfn%3D31%26rfnc=
+%3D1%26eid%3D4751096181269581145%26et%3D0%26asae%3D2" data-meta-key=3D"revi=
+ew-devices" style=3D"text-decoration: none; color: #4285F4;" target=3D"_bla=
+nk">perangkat yang baru-baru ini digunakan</a> sekarang.<br><br>Mengapa kam=
+i mengirimnya? Kami memperhatikan keamanan dengan sangat serius dan ingin m=
+emberi tahu Anda tentang tindakan penting pada akun Anda.<br>Kami tidak dap=
+at menentukan apakah Anda sebelumnya pernah menggunakan browser atau perang=
+kat ini dengan akun Anda. Ini dapat terjadi jika Anda masuk pertama kali di=
+ komputer, ponsel, atau browser baru, jika Anda menggunakan mode penyamaran=
+ atau penjelajahan pribadi atau menghapus cookie, atau jika orang lain meng=
+akses akun Anda.</td></tr><tr><td style=3D"font-family: Roboto-Regular,Helv=
+etica,Arial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5; =
+padding-top: 28px;">Tim Akun Google</td></tr><tr height=3D"16px"></tr><tr><=
+td><table style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; =
+font-size: 12px; color: #B9B9B9; line-height: 1.5;"><tr><td>*Lokasi adalah =
+hasil perkiraan dan ditentukan oleh alamat IP asalnya.<br></td></tr><tr><td=
+>Email ini tidak dapat menerima balasan. Untuk memberikan masukan tentang l=
+ansiran ini, <a href=3D"https://support.google.com/accounts/contact/device_=
+alert_feedback?hl=3Did" data-meta-key=3D"feedback" style=3D"text-decoration=
+: none; color: #4285F4;" target=3D"_blank">klik di sini</a>.<br>Untuk infor=
+masi selengkapnya, kunjungi <a href=3D"https://support.google.com/accounts/=
+answer/2733203" data-meta-key=3D"help" style=3D"text-decoration: none; colo=
+r: #4285F4;" target=3D"_blank">Pusat Bantuan Akun Google</a>.</td></tr></ta=
+ble></td></tr></table></td></tr><tr height=3D"32px"></tr></table></td></tr>=
+<tr height=3D"16"></tr><tr><td style=3D"max-width: 600px; font-family: Robo=
+to-Regular,Helvetica,Arial,sans-serif; font-size: 10px; color: #BCBCBC; lin=
+e-height: 1.5;"><tr><td><table style=3D"font-family: Roboto-Regular,Helveti=
+ca,Arial,sans-serif; font-size: 10px; color: #666666; line-height: 18px; pa=
+dding-bottom: 10px"><tr><td>Anda menerima pengumuman layanan email wajib in=
+i agar memperoleh informasi terbaru tentang perubahan penting pada produk a=
+tau akun Google Anda.</td></tr><tr height=3D"6px"></tr><tr><td><div style=
+=3D"direction: ltr; text-align: left">&copy; 2017 Google Inc., 1600 Amphith=
+eatre Parkway, Mountain View, CA 94043, USA</div></td></tr></table></td></t=
+r></td></tr></table></td><td width=3D"32px"></td></tr><tr height=3D"32px"><=
+/tr></table></body></html>
+--001a11413978f7b28e054eb3b30d--

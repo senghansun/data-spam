@@ -1,0 +1,154 @@
+Delivered-To: diditarif@gmail.com
+Received: by 10.159.58.204 with SMTP id q12csp2318485uag;
+        Thu, 31 Aug 2017 06:57:21 -0700 (PDT)
+X-Google-Smtp-Source: ADKCNb59uqht1NoUbaLJxAWkvitpIJlXcRZqFFYYsOY45d4auECfmB/EPewWZq8NdaMsSzuygiu+
+X-Received: by 10.107.9.196 with SMTP id 65mr4909509ioj.350.1504187841768;
+        Thu, 31 Aug 2017 06:57:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1504187841; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jh6+H9+fJhoG7yMupvBUeElEVGwvp/pPWcVY6ILMCefmCtZJe8GGXaH6f1DwU17Ml3
+         58zbNYe372HPa6cWTteJ9QatYQdtBMrSic9rGvzVMHiz8HTNdZsaUMAN0GNeet+sUKjY
+         20S16bUAQebVbmXPfkaGXGBycmAsvAZtxIKmPJd15jLGPxzAIAX8E9B8ZtzUfvm+6NAO
+         mlTdkSeYF9chyzOl6ckkh+cSnFrNLePEY0Fq75WEL7eDVM79ebSkKHNhZrM4bn8cMToV
+         7zDDPvHogM8aFkdSv6BLZcliqSYZ8LFb7Ry/1MyLM1YMBjk8bGdRvpSKojtqFSm0aG0y
+         ovqg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:references:in-reply-to:message-id:to:from:date
+         :dkim-signature:arc-authentication-results;
+        bh=VkKOhxh8shCBQmyacSJoXLCWWcCEIoM9f8tlm42bQ7Y=;
+        b=fgQi2FwBBW+LR1Q8MRziUny0EgWmG6tYaChIi1xjVBVxZ1PkDn1S94fzIdvdtRI3/+
+         Ut/vyur5FZA4xCHrpeHgrDVv//VPTa5vY5nZkQAxaPxh++JwNdXW2DaHWYTYwL//15Cd
+         /PQlq0rMaHd3ckCjaa+YHyJ9TJyjIvWQlGNvE8znxOlfI6Bwao6NJXdbv5WorOKInqOR
+         4OF4ZYTyjEXQsLYNj8NYrxIHeGbma7rnF8O2n+sAEcBwebztetFtn5Av9aMoWv/uCjmF
+         5RxFU/8tfoooy2JarPp5cp6QJR93zFbSRauF48cVHgoUY/D+vtewI8koEKn2/w3YxpDn
+         HbjQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=rLGJnOEm;
+       spf=pass (google.com: domain of imampur2002@yahoo.com designates 66.163.184.228 as permitted sender) smtp.mailfrom=imampur2002@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <imampur2002@yahoo.com>
+Received: from sonic317-1.consmr.mail.ne1.yahoo.com (sonic317-1.consmr.mail.ne1.yahoo.com. [66.163.184.228])
+        by mx.google.com with ESMTPS id j63si168132iod.382.2017.08.31.06.57.21
+        for <diditarif@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 31 Aug 2017 06:57:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of imampur2002@yahoo.com designates 66.163.184.228 as permitted sender) client-ip=66.163.184.228;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=rLGJnOEm;
+       spf=pass (google.com: domain of imampur2002@yahoo.com designates 66.163.184.228 as permitted sender) smtp.mailfrom=imampur2002@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1504187841; bh=VkKOhxh8shCBQmyacSJoXLCWWcCEIoM9f8tlm42bQ7Y=; h=Date:From:To:In-Reply-To:References:Subject:From:Subject; b=rLGJnOEmnl3JNZw38/ONKJA0EbDVvQwEHC0LgTFUjyAL+vdsq/yk2klyPGejvhs1tsuKZmFU01M3z88AAxAVKg5w7lOZYaCANyXYLH/q9Kq9QDIhRYuhBhiRVCS10OQQMYVLm9dZ+cF6PzaJpLOpOXPO1HrHBDQnjtP1UWe/74Rz/1hgxaM0iURlluY5lFQ2DAsNdZOXiVdSVHAMnYimDFTr5bxg3UN9r2e5lwzTBXiaz0erqLXELHJnYr3sCJxVbERqw5Bx13d2cRWavECdrPCSyNiO47x6Lv0kllerPCNB8vKu60xsEDHCryD8OfyCFXXT6PpHeDbSQBhC2v+ilQ==
+X-YMail-OSG: aGeQmGwVM1n6W349ydukiMsO1DeTKzOiKtlcmKg7Z5m12bd_ropsY2AZX.SANhv V7l6TtCFgh0.28dAc46pPkv00lbgXwZKzVxmdjr3MZHGbkq_dOmWinnLmxemoU0vazpjqwErt1o0 v513Ns3fBNMgaRsRjC0OteXI2wqRNVWtSqzy_bfcQAtKSubwjI9dwj_MGqNAkUsdcPH8K5JU0wz6 d.uZxhnvQfdL0penbtz6kkx7Tiqrpl1QmhN7HIC_AdJs6maPFyyViity3ZloBb3T9JZXjY8IPiQn AeROimF1cQNNxHfW3yIvrWpN_.M5ggSEYTHvDYRtrtJpuF79u_INZoraGwVismbxipzhwIIppJf_ eeVxRCMGUdXq2oDnY4PMWeuwhnYJU0UoLIMn0NSgEcObQyAndqmOGbtmczYB7q8sI_mTr0pYXABk SoHQs0ApEXDh0vA4Zs2q_CIVcm6KPkzqOP6smvsk95IcTboCZhCm3vgPzW8ZdEXBrvYi2VpW1w1X h03g3
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.ne1.yahoo.com with HTTP; Thu, 31 Aug 2017 13:57:21 +0000
+Date: Thu, 31 Aug 2017 13:53:20 +0000 (UTC)
+From: imam purwanto <imampur2002@yahoo.com>
+To: Didit Arif Wicaksono <diditarif@gmail.com>
+Message-ID: <1846032945.416755.1504187600312@mail.yahoo.com>
+In-Reply-To: <CAHh1QGgzBxwMn4xNuvtk0goxR_4iyN=q=gHDRRhrN8wbHf_iWA@mail.gmail.com>
+References: <CAHh1QGjqjjBwXaFsbn=Wr7TUof9oXXiogbTSjQApYQMwOzcRsw@mail.gmail.com> <CAHh1QGiSuKD72i2+zu3ETx2HX=3e-n4zgN56O=MSBkvs3jORDg@mail.gmail.com> <CAHh1QGgzBxwMn4xNuvtk0goxR_4iyN=q=gHDRRhrN8wbHf_iWA@mail.gmail.com>
+Subject: Re: Jadwal Sidang
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_416754_205067844.1504187600310"
+X-Mailer: WebService/1.1.10495 YMailNorrin Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0
+Content-Length: 3635
+
+------=_Part_416754_205067844.1504187600310
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Mantap....kuasai materi dan tenang yaa saat sidang nanti.
+
+
+Salam,
+
+Imam Purwanto
+
+
+
+
+
+On Wednesday, August 30, 2017, 5:31:55 PM GMT+7, Didit Arif Wicaksono <didi=
+tarif@gmail.com> wrote:
+
+Selamat Sore pak, saya dapat jadwal sidang Kamis, 7 September 2017.
+Terima Kasih
+On Aug 22, 2017 5:43 PM, "imam purwanto" <imampur2002@yahoo.com> wrote:
+
+okd didit, saya tunggu kabarnya.
+
+Salam,
+
+Imam Purwanto
+
+
+
+
+------------------------------ --------------
+On Sun, 8/20/17, Didit Arif Wicaksono <diditarif@gmail.com> wrote:
+
+=C2=A0Subject: Skripsi
+=C2=A0To: "imam purwanto" <imampur2002@yahoo.com>
+=C2=A0Date: Sunday, August 20, 2017, 1:29 PM
+
+=C2=A0Ini saya lampirkan
+=C2=A0lagi skripsi lengkapnya pak.=C2=A0Baik, nanti saya sms
+=C2=A0& email soalnya hari senin besok baru daftar
+=C2=A0sidang.Aamiin. Terima Kasih pak.
+
+
+
+
+
+------=_Part_416754_205067844.1504187600310
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"font-family:lucida console, sans-ser=
+if;font-size:13px;"><div>Mantap....kuasai materi dan tenang yaa saat sidang=
+ nanti.<br><div><br></div><div><br></div><div class=3D"ydp560fe8e9signature=
+"><font size=3D"5"><span style=3D"font-family:garamond, new york, times, se=
+rif;">Salam,<br><br><span style=3D"font-style:italic;font-weight:bold;color=
+:rgb(64, 160, 255);">Imam Purwanto<br><br><span style=3D"color:rgb(0, 0, 0)=
+;"><span style=3D"font-style:italic;"></span><br></span></span></span></fon=
+t></div><div><br></div></div><div><br></div><div><br></div><div id=3D"yahoo=
+_quoted_4865016197" class=3D"yahoo_quoted"><div style=3D"font-family:'Helve=
+tica Neue', Helvetica, Arial, sans-serif;font-size:13px;color:#26282a;"><di=
+v>On Wednesday, August 30, 2017, 5:31:55 PM GMT+7, Didit Arif Wicaksono &lt=
+;diditarif@gmail.com&gt; wrote:</div><div><br></div><div><br></div><div><di=
+v id=3D"yiv5728345036"><div>Selamat Sore pak, saya dapat jadwal sidang Kami=
+s, 7 September 2017.<div><br></div><div>Terima Kasih</div></div><div class=
+=3D"yiv5728345036gmail_extra"><br><div class=3D"yiv5728345036gmail_quote">O=
+n Aug 22, 2017 5:43 PM, &quot;imam purwanto&quot; &lt;<a rel=3D"nofollow" y=
+mailto=3D"mailto:imampur2002@yahoo.com" target=3D"_blank" href=3D"mailto:im=
+ampur2002@yahoo.com">imampur2002@yahoo.com</a>&gt; wrote:<br><blockquote cl=
+ass=3D"yiv5728345036m_6590248496195270196quote" style=3D"margin:0 0 0 .8ex;=
+border-left:1px #ccc solid;padding-left:1ex;">okd didit, saya tunggu kabarn=
+ya.<br>
+<br>
+Salam,<br>
+<br>
+Imam Purwanto<br>
+<font color=3D"#aaaaaa"><br>
+<br>
+<br>
+<br>
+------------------------------ --------------<br>
+On Sun, 8/20/17, Didit Arif Wicaksono &lt;<a rel=3D"nofollow" ymailto=3D"ma=
+ilto:diditarif@gmail.com" target=3D"_blank" href=3D"mailto:diditarif@gmail.=
+com">diditarif@gmail.com</a>&gt; wrote:<br>
+<br>
+=C2=A0Subject: Skripsi<br>
+=C2=A0To: &quot;imam purwanto&quot; &lt;<a rel=3D"nofollow" ymailto=3D"mail=
+to:imampur2002@yahoo.com" target=3D"_blank" href=3D"mailto:imampur2002@yaho=
+o.com">imampur2002@yahoo.com</a>&gt;<br>
+=C2=A0Date: Sunday, August 20, 2017, 1:29 PM<br>
+</font><div class=3D"yiv5728345036m_6590248496195270196elided-text"><br>
+=C2=A0Ini saya lampirkan<br>
+=C2=A0lagi skripsi lengkapnya pak.=C2=A0Baik, nanti saya sms<br>
+=C2=A0&amp; email soalnya hari senin besok baru daftar<br>
+=C2=A0sidang.Aamiin. Terima Kasih pak.<br>
+<br>
+<br>
+</div></blockquote></div><br></div></div></div></div></div></div></body></h=
+tml>
+------=_Part_416754_205067844.1504187600310--

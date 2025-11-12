@@ -1,0 +1,81 @@
+Delivered-To: diditarif@gmail.com
+Received: by 10.159.58.204 with SMTP id q12csp2555300uag;
+        Sat, 12 Aug 2017 17:10:10 -0700 (PDT)
+X-Received: by 10.200.49.155 with SMTP id h27mr26206895qte.261.1502583010545;
+        Sat, 12 Aug 2017 17:10:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502583010; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FPuDG4Z3lArEw6OJdmkmhHXLDZw1HetZAL0SSukU3Yvz+PH5y/MDSe+9y8zsykGIdM
+         fXttq/ZwqxTgRcLADj/8pHtSbLxAOobfwNWh2h4W5WvK8lATcoZ5e5IzN+pfbkS6N3zr
+         EkiTWMXdX9mSS8OqJU4EvOCJA1PqzQ18PdMC8wbommEsYskmxarpgPdcGu1NWWbOMWFn
+         sXmg3GCp0jKEMTFJIgBeW2eAMzpnv/wNwkjqaf0oYqt8qtBP/+ogGo3BqKh0AtochSEV
+         9CsnqFjCOnJdaDKnb1ZL89InSv6c4sPaYvaypQEdNpLHplukxwWINFNBMbYGGwDSslnw
+         pBSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-length:references:content-transfer-encoding:mime-version
+         :subject:message-id:to:reply-to:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=RbldoIp5qP1vnb+M/ov+EZursVH8LVhnRZBp2Eg1am0=;
+        b=VsWjtH0VrbgmpApdtZPI6g1TwQdRaAB60YO0psa7ON7Rp6S5KFV86YwxPG5ryeM2d+
+         NDairaCmtOcXQR3JURlPiqWSu/Ucb0cSjdgifkf3bqBH0iN880xMJgkdB8azdZrcWAUq
+         onrYJjG/TTglTI1dchzoDZ/voof5OtTg0H2lCtj//yZ1Z19bNImc2Ma6GsZ0vcJZw1gF
+         qYq4rQOC+6uswxb3Gu23recwM9YaBwdw3JlzS2jrSluH9taS8KDCQzqIiEA1nG0PigGV
+         yEP912RmbzZvzgffeHogD3SI0LsstU/QgxiEBx+o101L4QYkDwP/uwixBrw+iqizRpEB
+         pykw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=frreNeDa;
+       spf=pass (google.com: domain of imampur2002@yahoo.com designates 74.6.129.85 as permitted sender) smtp.mailfrom=imampur2002@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <imampur2002@yahoo.com>
+Received: from sonic317-30.consmr.mail.bf2.yahoo.com (sonic317-30.consmr.mail.bf2.yahoo.com. [74.6.129.85])
+        by mx.google.com with ESMTPS id 94si3749121qtg.399.2017.08.12.17.10.10
+        for <diditarif@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 12 Aug 2017 17:10:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of imampur2002@yahoo.com designates 74.6.129.85 as permitted sender) client-ip=74.6.129.85;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=frreNeDa;
+       spf=pass (google.com: domain of imampur2002@yahoo.com designates 74.6.129.85 as permitted sender) smtp.mailfrom=imampur2002@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1502583010; bh=RbldoIp5qP1vnb+M/ov+EZursVH8LVhnRZBp2Eg1am0=; h=Date:From:Reply-To:To:Subject:References:From:Subject; b=frreNeDaWlXfZAx/qNg1AYG9thg/cPiqSDdsUyBKyShdx7OVqDUcv6zkyMjVDgMYyJMXeT4/7RDEM2JjD7IePEEm9SrcCeUxrFDTJnrG8uJoeAyOONBUE20acV3CId2O83FLH+uohxXWPGaZEpkPWSbk2/kSaJKTnVvGdI2on214M599usyco08qoHrmN6pO80Qitg2PUenY65c81prsJxRC6g58x6hWdTLqgFE/on9ve7wk9oH/JgHAHcqNlKuSIQWJxteUjvELk/sTwrM1JVXJdn1AXW4ppP4tKn+EZrQ3sPClGH5uvhRy23iQksRU4mqYf6QyR8AZ24pUhVN1jg==
+X-YMail-OSG: IMSlWo4VM1l3JdJm2TttGq8BMmea8Nx0nclxM.iuem0fmFGXWh37RQajXxaJGy2 etT41k9uLT8Vk9NKz3R76JN9Otyt3TL.Hg5N9qaK5ZSYY5SAvnk.OG6RNznbaYRronsPac9jG3pv LzPf.g1LdvVvx2Z2gJsbWJcgdnz43.5UH5e7SeUAG6r6XH0n859g0TUt88SKL24pV9C3ZlP4Gmh1 wjOOyRr5u5WO99sUZaCSAbWWslfCKCnefSK7NKUOUNPkc6qSUTa3qqTu05dmo3v9RTK34GtSDiF0 gV2Uecf3Ve6RzkoBM_5ABIbzPOYETqm5AfdlrchAjVylqBDRfb05Q36kiMfjxI0p4snza8Oj9vzl CTL2TofAP_kPOrA_SeK_R5bFz5BRDW0QzPwBRTlKQt0eps.NmM2PzyQCgCxOvxxRjO8hoMDGclRH NVKrXVv_KUWQLlAwQzSYYspcfd9bnaI4vzAIdVzr.mENdeEEDzxhLpEMpezN9eY1r.lQ-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.bf2.yahoo.com with HTTP; Sun, 13 Aug 2017 00:10:10 +0000
+Date: Sun, 13 Aug 2017 00:10:08 +0000 (UTC)
+From: imam purwanto <imampur2002@yahoo.com>
+Reply-To: imam purwanto <imampur2002@yahoo.com>
+To: Didit Arif Wicaksono <diditarif@gmail.com>
+Message-ID: <837538114.589396.1502583008742@mail.yahoo.com>
+Subject: Re: Penulisan Skripsi & SK Skripsi
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+References: <837538114.589396.1502583008742.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.10343 YahooMailBasic Mozilla/5.0 (Linux; Android 6.0.1; SM-J700F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36
+Content-Length: 867
+
+foto2 nya dimasukkan dalam bab 4 ya....setelah tabel pengujian alat dan unt=
+uk video cantumkan dalam penulisan di bab 4 juga setelah gambar/foto2 alat =
+sebagai link ke youtube yaa....
+jika itu sudah optimal ya gpp hanya siapkan saja catatan apa2 yang bisa dij=
+adikan alasan/argumen yang jika saat sidang ditanyakan oleh penguji.
+
+Salam,
+
+Imam Purwanto
+
+
+
+
+--------------------------------------------
+On Sat, 8/12/17, Didit Arif Wicaksono <diditarif@gmail.com> wrote:
+
+ Subject: Re: Penulisan Skripsi & SK Skripsi
+ To: "imam purwanto" <imampur2002@yahoo.com>
+ Date: Saturday, August 12, 2017, 5:43 PM
+=20
+ Kemudian
+ ini foto & video dari alatnya pak. Sudah berfungsi
+ walaupun masih bergetar dan kurang stabil.Sudah saya
+ ubah-ubah nilai PID nya dan saya coba berkali-kali, sejauh
+ ini video diatas yang paling maksimal=E2=80=8B=C2=A020170812_165552.mp4=E2=
+=80=8B
