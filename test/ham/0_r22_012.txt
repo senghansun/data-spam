@@ -1,0 +1,112 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.157.62.135 with SMTP id b7csp153669otc;
+        Wed, 31 May 2017 00:06:21 -0700 (PDT)
+X-Received: by 10.176.25.26 with SMTP id v26mr649355uag.81.1496214381535;
+        Wed, 31 May 2017 00:06:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496214381; cv=none;
+        d=google.com; s=arc-20160816;
+        b=iuJKI5uxxYmjibDpMI10pzk2eddyFZ/8pYoJfhyUJgiy2HAL6VtxV25csVE0PlruGp
+         kER6CLglhfPuQeYrWAji6msSEH6en/Nv0kDGdFagr9kMFa87gDQjF9OtnrtYECfcUmYX
+         znwaqlUp6mWUOLEM5qqHnu3/WY1ajKDE+2jLWRhYdAKF7CwSxrJ5JrcwljiB/hBkDQ8w
+         5Y7Ks7CXFvCf3mw7X5KmnJNr2InOo0NeQfLJTp9WSCbcaTDSJYZt8KwnPflvD2Pdlr1h
+         4w1wWPE1u/vEEBFS7fT0hurb3G5m7qY4A9U0XIIhWGMshoxIKd6cL6K5cnYs18jI20Mp
+         OWpQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=UHr11mTnCVt97TDTYzwHT/sZmxu7rH1ql0kMmaytbq4=;
+        b=Z4dWsVU5efOIGIAsnvzJO+ucvGHn4I4NyvtBhCAge73rLMedAdTs+E7HfGZ5CdnCnS
+         Idd10Amu8dp6G3NruEHTmack3YFtyB7A8VsML0+/P61buuDQXZwnhBBqs5AxOBejaeYd
+         bVwZ4N4PswUmwD9bDjReKpwmYbsENscsNp9k9oZVStSHegLr8feIt+dC3sKKvokklqAs
+         O/zX7vv86owQQkhoreM/6JzLEycuIy9lQEjPova4SNzjsZxqeblDs86hw9s2PUDEUUbg
+         hU+bMfiAhWJhqUcLXl2rU+7UF9yB6jPL4fresqBCovr5LK4arHIFPyKD0ImIqEvpARKJ
+         ULaQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 209.85.213.52 as permitted sender) smtp.mailfrom=mohiqbal.gunadarma@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <mohiqbal.gunadarma@gmail.com>
+Received: from mail-vk0-f52.google.com (mail-vk0-f52.google.com. [209.85.213.52])
+        by mx.google.com with ESMTPS id n38si2374555uai.205.2017.05.31.00.06.21
+        for <riandebialfian@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 31 May 2017 00:06:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 209.85.213.52 as permitted sender) client-ip=209.85.213.52;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 209.85.213.52 as permitted sender) smtp.mailfrom=mohiqbal.gunadarma@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vk0-f52.google.com with SMTP id p85so37vkd.3
+        for <riandebialfian@gmail.com>; Wed, 31 May 2017 00:06:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=UHr11mTnCVt97TDTYzwHT/sZmxu7rH1ql0kMmaytbq4=;
+        b=dN++I8Hg3miat/C2O3HKk74n3cOjmtHDxoA/8x4IlOzFxaRH1y1ZO7iJw7vE9SjLhG
+         xhGCBY7PVUnsY62SkWlOHkNOkh55u8cBQE8uorvWczxc8Mr1fURwHxs54snEVxz5iMrE
+         CccyqCNM/EbfYHT7f0OfPhodlxR6fP08SFNGtXrhGne4n2E/tSdBfQ69YJtXCw9a9lE2
+         ZmzXEgn+dnWqPhqPRb6Mz8eraVrwoOohhejYnglUVTeUVa8vokQPgiM1Uz+4uwJO2nxt
+         xQYkcAOKV/kptuq1wYZSx8n/FPzt7N4MwUZh/HruVEwCSZNeCbpj4w6bmc9sMdj/laQr
+         M08A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=UHr11mTnCVt97TDTYzwHT/sZmxu7rH1ql0kMmaytbq4=;
+        b=Eg6V6LjEfK91lz3Afp+Rnu6dH/u0DNDndoQALRRas9tBfx9KEikkH/giNg7cdbeqRC
+         dx0j+BsZ2dTRkwblEFWdlENPoGpQ8c+GQ4XV+7NY63Sh0SI46ZUxaa5I3KG4py1aOooE
+         SYmsMf/hX6S4ZtvTa0oAihnTYNA8mxAOPOMCcATobkILeAZnMXS3yAarfCUvh6EtWEwq
+         1WN472+wX9vOmg6m5Du/ypAs3/wVL7IK51RY8IcOJLn3Q/kyzx5c0CdaQ6227fBerUlV
+         QkPyFGhEN2Wc11HozTIov6QGA7VpN3YYQTE2HI7jGQO13TYt248gC7jlx8kfmAA/jrfw
+         /36g==
+X-Gm-Message-State: AODbwcCcTqK4LeCkPWH1+rkcK3si1+y9OvnnVCGC0yK4b9xRdX9EOrJA 8T14Z6rZg5c8eWlUN+PdaIljAU7rl7iv
+X-Received: by 10.31.62.76 with SMTP id l73mr11625969vka.11.1496214381048; Wed, 31 May 2017 00:06:21 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.91.213 with HTTP; Wed, 31 May 2017 00:06:20 -0700 (PDT)
+In-Reply-To: <CAKKcBs9qOL1z0nFDXVK8rLT6BR1Pkv_+fGAiUWzziLaf2jfiLg@mail.gmail.com>
+References: <CAKKcBs9qOL1z0nFDXVK8rLT6BR1Pkv_+fGAiUWzziLaf2jfiLg@mail.gmail.com>
+From: Mohammad Iqbal <mohiqbal.gunadarma@gmail.com>
+Date: Wed, 31 May 2017 14:06:20 +0700
+Message-ID: <CAGeHff7a_jxBg2AjZoKoEA_kd+JYC48tzAC5T+sWtt8ZcqYR2g@mail.gmail.com>
+Subject: Re: TugasKelompok23Mei17_4KB09_[KukaYouBot]
+To: Rian Debi Alfian <riandebialfian@gmail.com>
+Content-Type: multipart/alternative; boundary="001a114476c2b0e51d0550cc8ed2"
+
+--001a114476c2b0e51d0550cc8ed2
+Content-Type: text/plain; charset="UTF-8"
+
+Tugasnya sudah saya terima
+
+2017-05-30 18:47 GMT+07:00 Rian Debi Alfian <riandebialfian@gmail.com>:
+
+> Nama Kelompok
+> Deni Ramadhan
+> Demita Astriani
+> Rian Debi Alfia
+>
+
+
+
+-- 
+*Dr. Mohammad Iqbal*
+*Lecturer and Researcher*
+*PSMA Online Gunadarma University*
+
+--001a114476c2b0e51d0550cc8ed2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Tugasnya sudah saya terima</div><div class=3D"gmail_extra"=
+><br><div class=3D"gmail_quote">2017-05-30 18:47 GMT+07:00 Rian Debi Alfian=
+ <span dir=3D"ltr">&lt;<a href=3D"mailto:riandebialfian@gmail.com" target=
+=3D"_blank">riandebialfian@gmail.com</a>&gt;</span>:<br><blockquote class=
+=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padd=
+ing-left:1ex"><div dir=3D"ltr">Nama Kelompok<div>Deni Ramadhan</div><div>De=
+mita Astriani</div><div>Rian Debi Alfia</div></div>
+</blockquote></div><br><br clear=3D"all"><br>-- <br><div class=3D"gmail_sig=
+nature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><b>Dr. Mohammad=
+ Iqbal</b><div><i>Lecturer and Researcher</i></div><div><i>PSMA Online Guna=
+darma University</i></div></div></div>
+</div>
+
+--001a114476c2b0e51d0550cc8ed2--

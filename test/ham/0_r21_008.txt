@@ -1,0 +1,227 @@
+Delivered-To: ranggih.pramantha@student.umn.ac.id
+Received: by 10.140.39.103 with SMTP id u94csp184103qgu;
+        Sun, 11 Jun 2017 20:51:11 -0700 (PDT)
+X-Received: by 10.157.44.174 with SMTP id p43mr24825220otb.178.1497239471227;
+        Sun, 11 Jun 2017 20:51:11 -0700 (PDT)
+ARC-Seal: i=3; a=rsa-sha256; t=1497239471; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=OoSeWK/cK02Kxs39HR3SDCCcolfpFLsX+PLYq1zeJ/n5AxpMnpJzbdStTBNvnk0Kxa
+         dOe5tPJDK0DszjLp2O37NK01cQSpkpS0z7ieRpD2pkCuJn+b0uWJ/d7nX9CZ/vlyvovD
+         Q9B9OJA1Yu0XsU6ekxLs2sxmiuBbj8U468QV/qbtWaUCwpmqw7vQkC8kmzojhWm5Naqf
+         XKBdEGnOOCeFqnfAhN7Q/TTsCbBbUAFZY6mIO3cJlw2dCRw+tOA3ch11K1NCswyp2ZgP
+         PqZXd01LUm/vKVS/UWzvXwKGOaYWx+NrBPS+QL45M8gcXyly5vWjoNaqUPZCXfFEi70O
+         XSbA==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:importance:priority:mime-version:subject
+         :message-id:cc:to:from:date:arc-authentication-results
+         :arc-message-signature:dkim-signature:arc-authentication-results
+         :arc-message-signature:arc-authentication-results;
+        bh=0n3APIcren7VHcFaeKvklJdudtuiEISvLAowq08KhWs=;
+        b=o1LCy6cvlCNZxHVoxmYDEU8mvtu+3uW2rZs6oaHQAOPyIOyHLxgypT6jtJ7MPcY2NU
+         LBZSB6YbFbyvETSFY3Oxvm3OI/uDORDDDbuRrg2lcCr4/YGvin9sfgeSx6jaS5jZ/ICO
+         AwNdLslzDATo3pSD3NZl7Ijz1M1W6ik3WQ1+UXhsQ1BLtLomzxPEZ31Sz2vK+WUhFj/x
+         QyDKgv6tqs6ADfDnDT1SjYafmdinHhg5jIiLdG1aE6LiArn4/AWfZu7hSWkLaLGE12VQ
+         h8c3nOs99kM/3swOo9PimdN62ca94dbJiu/9VSchK8XtlQOvqthwPdZ/U60O/XqBJR6U
+         Q6dA==
+ARC-Authentication-Results: i=3; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       arc=pass (i=2 dkim=pass dkdomain=umn-ac-id.20150623.gappssmtp.com);
+       spf=neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbdu77deqkgqersz44uq@umn.ac.id) smtp.mailfrom=student+bncBCSZN6W2VELBBDU77DEQKGQERSZ44UQ@umn.ac.id
+Return-Path: <student+bncBCSZN6W2VELBBDU77DEQKGQERSZ44UQ@umn.ac.id>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id t33sor4448627ote.16.2017.06.11.20.51.10
+        for <ranggih.pramantha@student.umn.ac.id>
+        (Google Transport Security);
+        Sun, 11 Jun 2017 20:51:10 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbdu77deqkgqersz44uq@umn.ac.id) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       arc=pass (i=2 dkim=pass dkdomain=umn-ac-id.20150623.gappssmtp.com);
+       spf=neutral (google.com: 209.85.220.69 is neither permitted nor denied by best guess record for domain of student+bncbcszn6w2velbbdu77deqkgqersz44uq@umn.ac.id) smtp.mailfrom=student+bncBCSZN6W2VELBBDU77DEQKGQERSZ44UQ@umn.ac.id
+ARC-Seal: i=2; a=rsa-sha256; t=1497239470; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=olqRS6IZZ9dD6DE1wtXWfjbXwihYW4MBCnrZ2gk5DZQPCKfgYDB9Vn3TKDE6ssoiiU
+         UIsP3EFCas5m3u5QSbLItSb2MMe8v3sZcVzKSvGvxNtAN7zF/RbzFdRozE7oZzOcgKh/
+         /zsYCUYFliuSHZCOWyE7exYGwbOO1w5d1eDzurysbrCuxR1dkgyc5BbqS5i1Lh9CJELH
+         eOxQ2WuBP6UlTPQq1xkINsCd2opHwU9QrRdB3+mYgOcr+Preca+zulOD/deuw/uWT/aJ
+         ZyZNxwdQk+NPQcazn5EgrwR7cX659g3F6eIH22jAfN8xI1RRQgSL05ecXyPgtvBlEILY
+         Gmqg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:importance:priority:mime-version:subject
+         :message-id:cc:to:from:date:arc-authentication-results
+         :arc-message-signature:dkim-signature:arc-authentication-results;
+        bh=0n3APIcren7VHcFaeKvklJdudtuiEISvLAowq08KhWs=;
+        b=vto0p5KdHYZQ3HtS80o9kchAeAfUilNl6PaLhqOh09jYI/Aw8QhPgr5viLUOoXmRMY
+         q6wp6nKpYCqXNvZbjzAa+WaLEOKXJzsGV+8qbtlE/+/I0GOJ76Ym3/U5kZZTQNJ5rqTW
+         Gs5HMADnsIMSWSodbYE9oN6Jh2exYtS6tUPE37oXZye/zJgpjIBoTatDO8jDd2A4yL3V
+         pfnM9mcEhaHKXf4I10f/+mEcF+U44An+n4GDBw+a2/F1rvohyljbVvnanc0SE+Sh6rs7
+         MOzTc5KD5DnZ90N4NLG+s/e0yycZ1F55OG0iHbQuMbuaL5VABDf9kbhMYq9mdzNT1sB6
+         qSZA==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=date:from:to:cc:message-id:subject:mime-version:priority:importance
+         :x-original-sender:x-original-authentication-results:precedence
+         :mailing-list:list-id:x-spam-checked-in-group:list-post:list-help
+         :list-archive:list-unsubscribe;
+        bh=0n3APIcren7VHcFaeKvklJdudtuiEISvLAowq08KhWs=;
+        b=ZXXpHDGK3OfPKs9cvgq0Ae0TxUh8s+t0b8IEuZrASd0h86azgXWRElTR9z5Z8lWtZB
+         pOfLpaUzNhYbAsaLOpYZK5PBIsqgZvtekjZm0aF50Ah461UAsgRdZmgeCHmH0mJESx9f
+         B6eyMi8p8tHwULnkLuhnoxFj5r8XDRmXuf3sq0dTtmSBcPnw0JUEYIoUScBTl5icUYSd
+         /5QmRynx32HnT03IZh5Uc8SFdKCYE3UlWKUTzI1vBE/I2Q/zITYuLSS0/JnBvV/QPDnZ
+         bpGc9UCwMqk8/oeWMc9KJ75+z6e6M9cFsozf+crJ1fYMriOMMZd+2JJWnxiqxWQF2yII
+         uE7g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:to:cc:message-id:subject:mime-version
+         :priority:importance:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-spam-checked-in-group:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=0n3APIcren7VHcFaeKvklJdudtuiEISvLAowq08KhWs=;
+        b=qlMOWzWs1RNEqC8DglUZA4W8moHdPfcX2nJG0EBUiIxubBoLYrNm5eVR3W5VaaVe/A
+         MpSQylmwhMX5yXGKciphcqTZpASuaquyVCAmObaFW/efn7wLwp5PiuiAHom8iJlq+I4H
+         UdwDkR+7PAGMG0xaPZWuObdxIxTTTohBFoRAN8Kwl39Axw3vIOhw//f1KVQGngFbCn0o
+         v17aNbO6zSzEv7YROPycIaupb8toTlOreDWVER88cjVFG94SyOPJP/EUd5GLoHbZCnH9
+         V5ZS4TouCPk5kzSqd+Q9zCSI1k47bDGx3fiX681TErsvFmP/2xwQhAdA+TSxyuWfGDwo
+         +E2Q==
+X-Gm-Message-State: AKS2vOz54YiFllr2M72s8Td9xWLHx8+6duEG3jf0GpC63VtmE8m8M0Wv IlYvyd3AhBZAzsBM
+X-Received: by 10.157.12.227 with SMTP id o32mr28602575otd.59.1497239463737;
+        Sun, 11 Jun 2017 20:51:03 -0700 (PDT)
+X-BeenThere: student@umn.ac.id
+Received: by 10.36.25.133 with SMTP id b127ls1563631itb.10.canary-gmail; Sun, 11 Jun 2017 20:50:37 -0700 (PDT)
+X-Received: by 10.98.88.196 with SMTP id m187mr38312630pfb.87.1497239437290;
+        Sun, 11 Jun 2017 20:50:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1497239437; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CeFLn1/jiiOtgmaD0jZiEzqZ0M+e1TE8knzJlll7DZZ2KyTgJOfsghX7toi3G3OBy8
+         SNFF7EczpCJ2fnMf0guHPPFCDVxz9WdP1/U8njgwvHjjvhRmLWaROBtq+Nz/GXdqtvC1
+         zjUCHUj2CfDDLk7NWr0r9bRrllf6QoYmu/3+nyTY30bLrRCT3o/Or8M2th/4FtngRxsF
+         U9NawTuUT/rQxEmcTeaLziJlclAGQmmbkdc11p2C1St7b4h8jgoUVHvdCEVisNkefVEq
+         QkpL5C1Ox3wxQEyc5A5PdDBYry8CbZfuSkB3x/Z7AS97lSvbwcFRoFfATmnWf2zkbZtA
+         96XA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=importance:priority:mime-version:subject:message-id:cc:to:from:date
+         :dkim-signature:arc-authentication-results;
+        bh=isjAGsxg65QL3P6mXrIwP3fuBTfR7iXiePn0GtSNJus=;
+        b=zjHes69NGxh+5fR5aQvbvnDMeLC8kYCJEdfspw78GqUlg3xX35+6PYHIJWOeLNe+Lh
+         z8mEpiXCoKBmlWgf7l8LXMBffaJTCKrWNXg13m3+a63ahk08PKTpJEALoc2vRYeFnMSZ
+         n3ww0LMYmMrSFlJITz2Eq3tjH3Ogl5Nw9hzTf19Jd5U9HZNJ0GpX+iig4r7NsXhc6sP/
+         m6G37O7CM4jmOwFR50wUhoyDY03GeQGUIRxSff7LuziPNMuKxw7rwqXgv2jo7hjWmo2/
+         0Sy6Ln9qorrT3asQRGMZ1NGBXSrjl79lI+pv8tilkW13hrkG69+pIlOKSfA5g9f6MGiM
+         uWqQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y17sor5056601pge.3.2017.06.11.20.50.37
+        for <student@umn.ac.id>
+        (Google Transport Security);
+        Sun, 11 Jun 2017 20:50:37 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of info@umn.ac.id) client-ip=209.85.220.41;
+X-Received: by 10.99.152.70 with SMTP id l6mr54329925pgo.136.1497239436163;
+        Sun, 11 Jun 2017 20:50:36 -0700 (PDT)
+Received: from prodapp ([123.231.236.250])
+        by smtp.gmail.com with ESMTPSA id x64sm17541459pff.123.2017.06.11.20.50.04
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 11 Jun 2017 20:50:32 -0700 (PDT)
+Date: Sun, 11 Jun 2017 20:50:32 -0700 (PDT)
+From: info@umn.ac.id
+To: student@umn.ac.id
+Cc: danry.ray@umn.ac.id, glen.lee@umn.ac.id
+Message-ID: <1178775084.1.1497214389273.JavaMail.peoplesoft@prodapp>
+Subject: Perpustakaan
+  Merilis ePerpus, Layanan Terbaru Digital Library
+MIME-Version: 1.0
+Priority: urgent
+X-Priority: 1
+X-MSMail-Priority: high
+Importance: high
+Content-Type: multipart/alternative; differences=Content-type; boundary="----=_Part_0_722530058.1497214382739"
+X-Original-Sender: info@umn.ac.id
+X-Original-Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of info@umn.ac.id) smtp.mailfrom=info@umn.ac.id
+Precedence: list
+Mailing-list: list student@umn.ac.id; contact student+owners@umn.ac.id
+List-ID: <student.umn.ac.id>
+X-Spam-Checked-In-Group: student@umn.ac.id
+X-Google-Group-Id: 838748173165
+List-Post: <https://groups.google.com/a/umn.ac.id/group/student/post>, <mailto:student@umn.ac.id>
+List-Help: <https://support.google.com/a/umn.ac.id/bin/topic.py?topic=25838>, <mailto:student+help@umn.ac.id>
+List-Archive: <https://groups.google.com/a/umn.ac.id/group/student/>
+List-Unsubscribe: <mailto:googlegroups-manage+838748173165+unsubscribe@googlegroups.com>, <https://groups.google.com/a/umn.ac.id/group/student/subscribe>
+
+------=_Part_0_722530058.1497214382739
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p><span style=3D"color:#000000;">Dear Rekan-rekan Mahasiswa UMN,<br /><br =
+/>Kabar gembira bagi seluruh sivitas akademika UMN dari Perpustakaan UMN.<b=
+r /><br />Perpustakaan UMN telah meluncurkan aplikasi ePerpus, sebuah aplik=
+asi perpustakaan digital yang memberikan akses kepada anggota perpustakaan =
+untuk dapat meminjam dan membaca buku, majalah serta koran digital yang dap=
+at diunduh langsung melalui perangkat smartphone IOS (iPad, iPhone, iPod To=
+uch) maupun Android.<br /><br />Hanya dengan menggunakan username dan passw=
+ord yang diberikan melalui email masing-masing, rekan-rekan mahasiswa dapat=
+ meminjam buku yang ingin dibaca dan dikembalikan sendiri selayaknya perpus=
+takaan fisik.<br /><br />Jadi tunggu apalagi?<br />Unduh sekarang juga apli=
+kasi ePerpus dan nikmati koleksi buku, majalah serta koran digital terbaik =
+dari penerbit Kompas Gramedia Group, Erlangga, Mizan, Yayasan Pustaka Obor =
+dan penerbit lainnya. </span></p><p>Informasi lebih lanjut silahkan hubungi=
+ Sdri. Yusniar (ext. 1202/email: maria.yusniar@umn.ac.id)</p><p>&nbsp;</p><=
+p>Happy reading :)</p><p><br /><br /><span style=3D"color:#000000;">Regards=
+,<br />Library Department </span></p>
+Do not reply this email. For more questions, please contact us at (021)5422=
+0808 or 082323900900 [IT Helpdesk] through Whatsapp or Line.
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/images/umn_unggul.png"><b style=3D"font-family:aria=
+l,sans-serif"><font size=3D"4" color=3D"#0000ff"><br>Universitas =C2=A0 Mul=
+timedia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><fo=
+nt face=3D"arial, sans-serif" size=3D"2" color=3D"#0000ff"><span style=3D"b=
+ackground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins=
+ With Excellent Education</font>&quot;</i></b></span></font></div><div styl=
+e=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans=
+-serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Se=
+rpong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-s=
+erif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia=
+</span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,2=
+55,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(2=
+55,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-famil=
+y:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">=
++62-21.5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">; (f)=C2=A0</span><a value=3D"+622154220800" style=
+=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(=
+255,255,255)">+62-21.5422.0800</a><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">;</span><br style=3D"font-family:aria=
+l,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-family:=
+arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Universitas M=
+ultimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;backgro=
+und-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;bac=
+kground-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=3D"fo=
+nt-family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web:=C2=
+=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,sans=
+-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=3D"_b=
+lank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;backgrou=
+nd-color:rgb(255,255,255)"></span></font>
+------=_Part_0_722530058.1497214382739
+Content-Type: image/jpeg; name=how_to_access_eperpus.jpg
+Content-Transfer-Encoding: base64
+Content-Disposition: Attachment; filename=how_to_access_eperpus.jpg
+Content-Description: how_to_access_eperpus.jpg
+
+
+------=_Part_0_722530058.1497214382739
+Content-Type: image/png; name=banner-e-perpus-UMN-A3_brosur.png
+Content-Transfer-Encoding: base64
+Content-Disposition: Attachment; filename=banner-e-perpus-UMN-A3_brosur.png
+Content-Description: banner-e-perpus-UMN-A3_brosur.png
+
+
+------=_Part_0_722530058.1497214382739--

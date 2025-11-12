@@ -1,0 +1,88 @@
+﻿Delivered-To: ansyortaufik@gmail.com
+Received: by 10.200.35.120 with SMTP id b53csp693126qtb;
+        Wed, 30 Nov 2016 21:11:55 -0800 (PST)
+X-Received: by 10.28.212.131 with SMTP id l125mr29742589wmg.117.1480569115717;
+        Wed, 30 Nov 2016 21:11:55 -0800 (PST)
+Return-Path: <satriaanjar14@gmail.com>
+Received: from mail-wm0-x22d.google.com (mail-wm0-x22d.google.com. [2a00:1450:400c:c09::22d])
+        by mx.google.com with ESMTPS id k1si31251488wjn.263.2016.11.30.21.11.55
+        for <ansyortaufik@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 30 Nov 2016 21:11:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of satriaanjar14@gmail.com designates 2a00:1450:400c:c09::22d as permitted sender) client-ip=2a00:1450:400c:c09::22d;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of satriaanjar14@gmail.com designates 2a00:1450:400c:c09::22d as permitted sender) smtp.mailfrom=satriaanjar14@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wm0-x22d.google.com with SMTP id f82so25768681wmf.1
+        for <ansyortaufik@gmail.com>; Wed, 30 Nov 2016 21:11:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=kTnQpUvVOaiAU77IqT3bEerdGDLqURCGPHwpTS7HoRA=;
+        b=GmU1Ma6iaFLAvRPTOe5CklrQPoeWPJnlTrxt5C4iLr+82PsEgNrXxz6/RtIBJwYz5X
+         9wTSXi3WOpyOchI67MYUqvcyNc8J/aXhiSv01Y+XoorWXtIEGjLe8AmEI8eTQUGGawPM
+         IEh33+oaBeXCPu6HfGUdAOlWycG6cwkk0Dbljl0BtwUBLE8Ju1SA23zBVp0OT4O5ymlF
+         ilegYLOn2Ww4VE89mpMZ1kY+4naF4GjHKDF77e1F6F3apcFxwUXSCXMs+ApTegORccIb
+         pF4Xho9Bo6lwJlRYZZqUTqRaJZAMbR7g41bWJFo0pxmOVgiIHJDMc6kcvMBgWRfKXkKq
+         pBjQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=kTnQpUvVOaiAU77IqT3bEerdGDLqURCGPHwpTS7HoRA=;
+        b=NTMN4xIVUhpf/nr4VPXNjtFxDQLXnEgjknI7ORbGtnxgBtjBLxlkgsnkhSLtBajO2F
+         rinlQQWD6gKSDJ0Ddx4jOVizpVK5QOL272mA7ZaGEQLzoo6vwqpt+1Oc9MgP0zZfz9HD
+         irG6sBgZTUDntZV8BNHO1usCYDj1XmHY/lb64p4M4I/Cww5rG6KAz+akDIL24JhCDZW0
+         mYQM1lBrdfU8Bl7XulNr25w8kIyP64gWWRDB/77IZe+y443PtZFPNUT95wyLGEyMWE05
+         +pkg6mtg7+JHEZkHmvrFrNlLbSSEKUsbg4pIGXImd8Nb/paivY0DbGFrcMeU9dCdtEkC
+         sp7A==
+X-Gm-Message-State: AKaTC01uv3Dgrs6kXr3FO3YuIWIsdLZulNce6zWnHPWC79IZaladne3jlJayOj4Dsufp3gZ1T+QBHaITyL1IqQ==
+X-Received: by 10.28.166.20 with SMTP id p20mr32881876wme.87.1480569115147; Wed, 30 Nov 2016 21:11:55 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.194.232.198 with HTTP; Wed, 30 Nov 2016 21:11:54 -0800 (PST)
+In-Reply-To: <CANCp-vBtjCD1Yo2bSfPqvq29wvxX9xo_NTpD-OG62G6iBGuXQw@mail.gmail.com>
+References: <CANCp-vBtjCD1Yo2bSfPqvq29wvxX9xo_NTpD-OG62G6iBGuXQw@mail.gmail.com>
+From: Satria Anjar <satriaanjar14@gmail.com>
+Date: Thu, 1 Dec 2016 12:11:54 +0700
+Message-ID: <CAE6aje4_4mSW-B_Hi31Fr0Gw0+SMvZExVXtTvhYE8-Od1=UMUQ@mail.gmail.com>
+Subject: Re: Tugas
+To: Taufik Ansyor <ansyortaufik@gmail.com>
+Content-Type: multipart/mixed; boundary=94eb2c127cb82cede7054291dc73
+
+--94eb2c127cb82cede7054291dc73
+Content-Type: multipart/alternative; boundary=94eb2c127cb82cede4054291dc71
+
+--94eb2c127cb82cede4054291dc71
+Content-Type: text/plain; charset=UTF-8
+
+ppt
+nanti lu baca slide 6-9
+
+On Thu, Dec 1, 2016 at 11:28 AM, Taufik Ansyor <ansyortaufik@gmail.com>
+wrote:
+
+>
+>
+
+--94eb2c127cb82cede4054291dc71
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">ppt<div>nanti lu baca slide 6-9</div></div><div class=3D"g=
+mail_extra"><br><div class=3D"gmail_quote">On Thu, Dec 1, 2016 at 11:28 AM,=
+ Taufik Ansyor <span dir=3D"ltr">&lt;<a href=3D"mailto:ansyortaufik@gmail.c=
+om" target=3D"_blank">ansyortaufik@gmail.com</a>&gt;</span> wrote:<br><bloc=
+kquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #cc=
+c solid;padding-left:1ex"><div dir=3D"ltr"><br></div>
+</blockquote></div><br></div>
+
+--94eb2c127cb82cede4054291dc71--
+--94eb2c127cb82cede7054291dc73
+Content-Type: application/vnd.openxmlformats-officedocument.presentationml.presentation; name="PRESENTATION KOMPEM.pptx"
+Content-Disposition: attachment; filename="PRESENTATION KOMPEM.pptx"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_iw54rckp1
+
+
+--94eb2c127cb82cede7054291dc73--

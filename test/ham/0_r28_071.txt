@@ -1,0 +1,61 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.159.39.68 with SMTP id a62csp1842412uaa;
+        Tue, 2 May 2017 05:31:47 -0700 (PDT)
+X-Received: by 10.107.14.8 with SMTP id 8mr27097150ioo.46.1493728307471;
+        Tue, 02 May 2017 05:31:47 -0700 (PDT)
+Return-Path: <0100015bc925247e-29512bf2-dff6-4bde-a097-10cbb86039d9-000000@amazonses.com>
+Received: from a8-23.smtp-out.amazonses.com (a8-23.smtp-out.amazonses.com. [54.240.8.23])
+        by mx.google.com with ESMTPS id w18si779255itc.126.2017.05.02.05.31.47
+        for <itsmetenki@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Tue, 02 May 2017 05:31:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015bc925247e-29512bf2-dff6-4bde-a097-10cbb86039d9-000000@amazonses.com designates 54.240.8.23 as permitted sender) client-ip=54.240.8.23;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@unipin.com;
+       dkim=pass header.i=@amazonses.com;
+       spf=pass (google.com: domain of 0100015bc925247e-29512bf2-dff6-4bde-a097-10cbb86039d9-000000@amazonses.com designates 54.240.8.23 as permitted sender) smtp.mailfrom=0100015bc925247e-29512bf2-dff6-4bde-a097-10cbb86039d9-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=fnl537svh7ldeok6slahuumf5rai3tt4; d=unipin.com; t=1493728306; h=From:Date:To:Subject:Content-Type:Content-Transfer-Encoding:MIME-Version:Message-ID; bh=QA+sXaxrIcSsOtqY8C2n1BGiub6XGl1L8grif+oYbPQ=; b=XZGMo/xUb2iRFAzJDQ/ESXjbQVV09dOigGhxx31z8TaMYoA4XGoezwI4MQL7XYlC NclQDk/4AEMzAZUyPn2QAbzgu4DPrPY/n3+KByAnqy6o+xPF1NPFwHjyNSWdSQx3zSy s4IKdqle3V0wNjwnfhrDBKY8xgbfaY+n0knfEX5k=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1493728306; h=From:Date:To:Subject:Content-Type:Content-Transfer-Encoding:MIME-Version:Message-ID:Feedback-ID; bh=QA+sXaxrIcSsOtqY8C2n1BGiub6XGl1L8grif+oYbPQ=; b=cFIwpSGiCczJtfiDx0x1Ajm+hvLtbe5waVenqoBr6vo1kDkz54ngHB3oc1C6GS6P KGWpRpTeZd7TogCaUaxQ4hjg/k5z5D60RuEIM+i/nnLsB/vCo71K4FtK2dzOo8r6BqY ZF9txt4odxtOeQRR5qO4PXfWa/taC0zuL5E2BBDo=
+From: UniPin <cs@unipin.com>
+Date: Tue, 2 May 2017 12:31:46 +0000
+To: itsmetenki@gmail.com
+Subject: Welcome to UniPin
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+MIME-Version: 1.0
+Message-ID: <0100015bc925247e-29512bf2-dff6-4bde-a097-10cbb86039d9-000000@email.amazonses.com>
+X-SES-Outgoing: 2017.05.02-54.240.8.23
+Feedback-ID: 1.us-east-1.1QZecReJYqyWtywB8spV6pNXTadhHzi0WTq5EcdP13Q=:AmazonSES
+
+
+<style type=3D"text/css">
+<!--
+.text {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+-->
+</style>
+<body class=3D"text">
+<p>Dear Flackness</p>
+<p>Terima kasih atas registrasi anda. Akun UniPass anda sekarang sudah diak=
+tivasi.</p>
+<hr size=3D"1" />
+<p><strong>Detail UniPass</strong> anda adalah:</strong></p>
+
+<table width=3D"300" border=3D"0" cellpadding=3D"3" cellspacing=3D"0" class=
+=3D"text">
+  <tr>
+    <td>Email</td>
+    <td> :  itsmetenki@gmail.com</td>
+  </tr>
+</table>
+
+<p><br />
+  Apabila ada pertanyaan, silahkan hubungi: <br />
+  <u><a href=3D"mailto:cs@24jam.asia">cs@24jam.asia</a></u><br><br>
+  Untuk keterangan lebih lanjut tentang promosi kami silahkan kunjungi <a h=
+ref=3D"http://www.unipin.co.id" target=3D"_blank">http://www.unipin.co.id</=
+a></p>
+
+<p>&nbsp;</p>
+<p>Salam,<br />
+  UniPin</p>

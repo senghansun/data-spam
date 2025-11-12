@@ -1,0 +1,158 @@
+Delivered-To: rwen.ibra@gmail.com
+Received: by 10.200.48.88 with SMTP id g24csp1267788qte;
+        Mon, 26 Jun 2017 00:35:38 -0700 (PDT)
+X-Received: by 10.36.28.139 with SMTP id c133mr22232557itc.117.1498462538815;
+        Mon, 26 Jun 2017 00:35:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498462538; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xyilfWUvu1pJAyzZutZKI+TfcAej7ukxrtXFvgeQTSlEY9gaD9MCmruHTZYTxn4ocU
+         Xoxkv0O15JeYVTCbzb0G4G0e50CAPCkyGcgERMNbMAAm3b3jhD15PCtn4Ltfv18VczCu
+         xQuhG+qI8m6e32hALp/lqx4iBbI0ISVo84eCk0qod8SFYk/bacL5rmlFHv5LFOKHxQgJ
+         FZ3vM9FDtWstNUsPbHL9GtfyR9dNPDYqiMgPgjgRxd2UFkKcBCeRedQHfi4421NvGYUa
+         lf80jK4nZ417UMBIXEffNiFvViIvKPYb3EmxNE4FZQZDmxE1U/qZ5DEmIeCRSFbji5iY
+         egsQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=ngbN+ueXkouBxRi5QAYoozFfsdRSSCwXUGRL2pQW0eM=;
+        b=AKzbpQ7dGfYGoUXeLQJdFOp/zPi/Dt49WMjP178w5vJVrujHBGlXQ1CWC0fCHvdxjq
+         cNc+IA+2IA24zd/rx9wgy+rb2XfmXzZY9FQ7Ijtun3+j6hDalwzt8L/7LcSQZ5vw/hMH
+         Rd1TTnhp+J1W+MrfLInKzVo5e7mRySaVUInoTKISYEO46pOvtlNFXDCpPjCkVzdZ+yLs
+         lmGY557uFvsVTHLPXIG8HxoLJk2xgJWG3kaTgP+hs9e9ozY9PPeWSc3kj8L3KGd10752
+         n/xF+LRXuPhtNKPZlVM4JMj3jkddB+D/YVKjW/dlZwKJgVGSrYMIX/HKspBmmwQ0LJBo
+         6GGQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.b=WTvdYEVl;
+       spf=pass (google.com: domain of 3srlqwqgtcc889-cza6jvxx9f8ed.19916z.x97chz8.3wcv17v36.x97@gaia.bounces.google.com designates 2607:f8b0:4001:c06::248 as permitted sender) smtp.mailfrom=3SrlQWQgTCc889-CzA6Jvxx9F8ED.19916z.x97CHz8.3wCv17v36.x97@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3SrlQWQgTCc889-CzA6Jvxx9F8ED.19916z.x97CHz8.3wCv17v36.x97@gaia.bounces.google.com>
+Received: from mail-io0-x248.google.com (mail-io0-x248.google.com. [2607:f8b0:4001:c06::248])
+        by mx.google.com with ESMTPS id b23si1629525ioj.118.2017.06.26.00.35.38
+        for <rwen.ibra@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 26 Jun 2017 00:35:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3srlqwqgtcc889-cza6jvxx9f8ed.19916z.x97chz8.3wcv17v36.x97@gaia.bounces.google.com designates 2607:f8b0:4001:c06::248 as permitted sender) client-ip=2607:f8b0:4001:c06::248;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.b=WTvdYEVl;
+       spf=pass (google.com: domain of 3srlqwqgtcc889-cza6jvxx9f8ed.19916z.x97chz8.3wcv17v36.x97@gaia.bounces.google.com designates 2607:f8b0:4001:c06::248 as permitted sender) smtp.mailfrom=3SrlQWQgTCc889-CzA6Jvxx9F8ED.19916z.x97CHz8.3wCv17v36.x97@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Received: by mail-io0-x248.google.com with SMTP id h134so58967354iof.1
+        for <rwen.ibra@gmail.com>; Mon, 26 Jun 2017 00:35:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20161025;
+        h=mime-version:date:feedback-id:message-id:subject:from:to;
+        bh=ngbN+ueXkouBxRi5QAYoozFfsdRSSCwXUGRL2pQW0eM=;
+        b=WTvdYEVlml0jQ5w22BC6jhCfJCj/OTryybM2ffpxOPAnSMPR6AxnlZlmO/B6cTB3AB
+         ytPV3VS7cnFM/GF1j5klDWlEjZHzoUK5haHNgwaqtw0UZzsS4RzIJymUcu7KSrKVwytR
+         Gdln3IhUlB+V5cOfdzYKKQspUZSUmdHF9hvxUwCdRNsUYOr2NSrIThMHZi/5jU2fb9xh
+         wxua5Vh9q5ZcxfXdcSutQBqQN0vJDI1XGe+vLkPZLJgQVE9wtQeVdSw2Kf0BYKJiXTt2
+         ET1j/vB1/BUQWtskJ2ooUTlNVvvjD+cZ1WLDfY9ByGDCl4+kxqoRVna1kSbvUalykSFJ
+         e0LQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:feedback-id:message-id:subject
+         :from:to;
+        bh=ngbN+ueXkouBxRi5QAYoozFfsdRSSCwXUGRL2pQW0eM=;
+        b=aXnSkjZ1/lR/Kb6MGwYIpPFuxJaul6Hhj0DzCGKefhFzI5+AvCc5iI2HtRS65MuIM1
+         vfQ9+RPC8RaajEeRC6W2Fu2UmdwrG/D/JRMjV6II8mbuhjdxah+DmveZGssxZXqt94Q3
+         9caT4AUJgTaq8ZKFJO9DX42au8N1N1IkLbMtUQA7u7MOi48wF3kXLxF9XWowqhtj+nKX
+         JBK1fKdjYQTsy810hnr1P2EuytI4Q98cRp7QU2peZo1KgQ6Zbtt2caRLHg2zi1Os6POf
+         EdNTiwXvg4J+R9h8swEFw+zC39pPIEIaVtjTJI+XLNj02KdykAR3k/6tSx7f6LRwzX6a
+         OUZg==
+X-Gm-Message-State: AKS2vOycHF8RPMlFLbO/h2gNK39l2UPvxdnUCbAKXmgmuiQU0i+Eu3Pn cIUVRv50IbQbSoFTNzPmgi5qGRA3cBZi
+MIME-Version: 1.0
+X-Received: by 10.36.44.66 with SMTP id i63mr9429435iti.2.1498462538667; Mon, 26 Jun 2017 00:35:38 -0700 (PDT)
+Date: Mon, 26 Jun 2017 07:35:17 +0000 (UTC)
+X-Notifications: XEAAAAJXxAjZ44FOMVNj-V4ki5lw
+X-Account-Notification-Type: 4
+Feedback-ID: 4:account-notifier
+Message-ID: <JT7Yvei9KVxX-jmJxd8Vog@notifications.google.com>
+Subject: Nomor telepon pemulihan telah diubah
+From: Google <no-reply@accounts.google.com>
+To: rwen.ibra@gmail.com
+Content-Type: multipart/alternative; boundary="001a114453485397720552d7ff54"
+
+--001a114453485397720552d7ff54
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+Tm9tb3IgdGVsZXBvbiBwZW11bGloYW4gdGVsYWggZGl1YmFoDQoNCg0KDQpZYW5nIHRlcmhvcm1h
+dCBSd2VuLA0KTm9tb3IgdGVsZXBvbiBwZW11bGloYW4gdW50dWsgQWt1biBHb29nbGUgcndlbi5p
+YnJhQGdtYWlsLmNvbSBiYXJ1LWJhcnUgaW5pDQpkaXViYWguDQoNCipUaWRhayBtZW5nZW5hbGkg
+YWt0aXZpdGFzIGluaT8qDQpUaW5qYXUgcGVyYW5na2F0IHlhbmcgYmFydS1iYXJ1IGluaSBkaWd1
+bmFrYW4NCjxodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vQWNjb3VudENob29zZXI/RW1haWw9
+cndlbi5pYnJhQGdtYWlsLmNvbSZjb250aW51ZT1odHRwczovL215YWNjb3VudC5nb29nbGUuY29t
+L2RldmljZS1hY3Rpdml0eS9udC8xNDk4NDYyNTE3Nzk3P3JmbiUzRDQlMjZyZm5jJTNEMSUyNmVp
+ZCUzRC0zMjA2Nzc3NTIxMTI5ODQzNzkwJTI2ZXQlM0QwJTI2YXNhZSUzRDI+DQpzZWthcmFuZy4N
+ClRpbSBBa3VuIEdvb2dsZQ0KDQoNCg0KRW1haWwgaW5pIHRpZGFrIGRhcGF0IG1lbmVyaW1hIGJh
+bGFzYW4uIFVudHVrIGluZm9ybWFzaSBzZWxlbmdrYXBueWEsDQprdW5qdW5naSBQdXNhdCBCYW50
+dWFuIEFrdW4gR29vZ2xlDQo8aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vYWNjb3VudHMvYW5z
+d2VyLzI0NTAyMzY+Lg0KDQoNCg0KQW5kYSBtZW5lcmltYSBwZW5ndW11bWFuIGxheWFuYW4gZW1h
+aWwgd2FqaWIgaW5pIGFnYXIgbWVtcGVyb2xlaCBpbmZvcm1hc2kNCnRlcmJhcnUgdGVudGFuZyBw
+ZXJ1YmFoYW4gcGVudGluZyBwYWRhIHByb2R1ayBhdGF1IGFrdW4gR29vZ2xlIEFuZGEuDQoNCsKp
+IDIwMTcgR29vZ2xlIEluYy4sIDE2MDAgQW1waGl0aGVhdHJlIFBhcmt3YXksIE1vdW50YWluIFZp
+ZXcsIENBIDk0MDQzLCBVU0ENCg==
+--001a114453485397720552d7ff54
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"id"><head><meta name=3D"format-detection" content=3D"date=3Dn=
+o"><meta name=3D"format-detection" content=3D"email=3Dno"></head><body styl=
+e=3D"margin: 0; padding: 0;" bgcolor=3D"#FFFFFF"><table width=3D"100%" heig=
+ht=3D"100%" style=3D"min-width: 348px;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0"><tr height=3D"32px"></tr><tr align=3D"center"><td width=3D"32=
+px"></td><td><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"max-width: 600px;"><tr><td><table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tr><td align=3D"left"><img width=3D"92" height=
+=3D"32" src=3D"https://www.gstatic.com/accountalerts/email/googlelogo_color=
+_188x64dp.png" style=3D"display: block; width: 92px; height: 32px;"></td><t=
+d align=3D"right"><img width=3D"32" height=3D"32" style=3D"display: block; =
+width: 32px; height: 32px;" src=3D"https://www.gstatic.com/accountalerts/em=
+ail/wrench.png"></td></tr></table></td></tr><tr height=3D"16"></tr><tr><td>=
+<table bgcolor=3D"#E6E6E6" width=3D"100%" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px so=
+lid #F0F0F0; border-bottom: 0; border-top-left-radius: 3px; border-top-righ=
+t-radius: 3px;"><tr><td height=3D"72px" colspan=3D"3"></td></tr><tr><td wid=
+th=3D"32px"></td><td style=3D"font-family: Roboto-Regular,Helvetica,Arial,s=
+ans-serif; font-size: 24px; color: #000000; line-height: 1.25; min-width: 3=
+00px;">Nomor telepon pemulihan telah diubah</td><td width=3D"32px"></td></t=
+r><tr><td height=3D"18px" colspan=3D"3"></td></tr></table></td></tr><tr><td=
+><table bgcolor=3D"#FAFAFA" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1px s=
+olid #F0F0F0; border-bottom: 1px solid #C0C0C0; border-top: 0; border-botto=
+m-left-radius: 3px; border-bottom-right-radius: 3px;"><tr height=3D"16px"><=
+td width=3D"32px" rowspan=3D"3"></td><td></td><td width=3D"32px" rowspan=3D=
+"3"></td></tr><tr><td><table style=3D"min-width: 300px;" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0"><tr><td style=3D"font-family: Roboto-Regular=
+,Helvetica,Arial,sans-serif; font-size: 13px; color: #202020; line-height: =
+1.5;padding-bottom: 4px;">Yang terhormat Rwen,</td></tr><tr><td style=3D"fo=
+nt-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 13px; colo=
+r: #202020; line-height: 1.5;padding: 4px 0;">Nomor telepon pemulihan untuk=
+ Akun Google <a>rwen.ibra@gmail.com</a> baru-baru ini diubah.<br><br><b>Tid=
+ak mengenali aktivitas ini?</b><br>Tinjau <a href=3D"https://accounts.googl=
+e.com/AccountChooser?Email=3Drwen.ibra@gmail.com&amp;continue=3Dhttps://mya=
+ccount.google.com/device-activity/nt/1498462517797?rfn%3D4%26rfnc%3D1%26eid=
+%3D-3206777521129843790%26et%3D0%26asae%3D2" data-meta-key=3D"review-device=
+s" style=3D"text-decoration: none; color: #4285F4;" target=3D"_blank">peran=
+gkat yang baru-baru ini digunakan</a> sekarang.</td></tr><tr><td style=3D"f=
+ont-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 13px; col=
+or: #202020; line-height: 1.5; padding-top: 28px;">Tim Akun Google</td></tr=
+><tr height=3D"16px"></tr><tr><td><table style=3D"font-family: Roboto-Regul=
+ar,Helvetica,Arial,sans-serif; font-size: 12px; color: #B9B9B9; line-height=
+: 1.5;"><tr><td>Email ini tidak dapat menerima balasan. Untuk informasi sel=
+engkapnya, kunjungi <a href=3D"https://support.google.com/accounts/answer/2=
+450236" data-meta-key=3D"help" style=3D"text-decoration: none; color: #4285=
+F4;" target=3D"_blank">Pusat Bantuan Akun Google</a>.</td></tr></table></td=
+></tr></table></td></tr><tr height=3D"32px"></tr></table></td></tr><tr heig=
+ht=3D"16"></tr><tr><td style=3D"max-width: 600px; font-family: Roboto-Regul=
+ar,Helvetica,Arial,sans-serif; font-size: 10px; color: #BCBCBC; line-height=
+: 1.5;"><tr><td><table style=3D"font-family: Roboto-Regular,Helvetica,Arial=
+,sans-serif; font-size: 10px; color: #666666; line-height: 18px; padding-bo=
+ttom: 10px"><tr><td>Anda menerima pengumuman layanan email wajib ini agar m=
+emperoleh informasi terbaru tentang perubahan penting pada produk atau akun=
+ Google Anda.</td></tr><tr height=3D"6px"></tr><tr><td><div style=3D"direct=
+ion: ltr; text-align: left">&copy; 2017 Google Inc., 1600 Amphitheatre Park=
+way, Mountain View, CA 94043, USA</div></td></tr></table></td></tr></td></t=
+r></table></td><td width=3D"32px"></td></tr><tr height=3D"32px"></tr></tabl=
+e></body></html>
+--001a114453485397720552d7ff54--

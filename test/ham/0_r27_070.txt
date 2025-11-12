@@ -1,0 +1,152 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.88.66 with SMTP id m63csp1052265ywb;
+        Fri, 11 Dec 2015 01:42:01 -0800 (PST)
+X-Received: by 10.50.17.74 with SMTP id m10mr3838278igd.8.1449826921684;
+        Fri, 11 Dec 2015 01:42:01 -0800 (PST)
+Return-Path: <maria@umn.ac.id>
+Received: from mail-ig0-x230.google.com (mail-ig0-x230.google.com. [2607:f8b0:4001:c05::230])
+        by mx.google.com with ESMTPS id i4si2484036iga.75.2015.12.11.01.42.01
+        for <sylviestephanies@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 11 Dec 2015 01:42:01 -0800 (PST)
+Received-SPF: neutral (google.com: 2607:f8b0:4001:c05::230 is neither permitted nor denied by best guess record for domain of maria@umn.ac.id) client-ip=2607:f8b0:4001:c05::230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 2607:f8b0:4001:c05::230 is neither permitted nor denied by best guess record for domain of maria@umn.ac.id) smtp.mailfrom=maria@umn.ac.id;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com
+Received: by mail-ig0-x230.google.com with SMTP id mv3so32470888igc.0
+        for <sylviestephanies@gmail.com>; Fri, 11 Dec 2015 01:42:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Bqn+sk3ELqCnFTZnN8fVLv+DiZxWdYhpE8uswDZYO40=;
+        b=gTwjIV6nERbdevyD5ADCKNQhUV9wvxLjHB+j/oGm540+Lnv+FjPbEgCmwHWZXrTxoc
+         pM0dcmNe0YwiD46CjbpWXR+ug9OqUDX1edwO2mTfV8+yEHmeC/HNfHLCowL2p4O8nC6M
+         mnNXGflwpfbqQolqXwD8fUg/5eD2Y1YkCnwZXawJnaxcRlijkx6SEuEMRSFgiYmjc+Q7
+         pQqu9TiUkAksXd046+1ExWMifdTsv1u53rBbCAOmHUpLJDkQQk5pFUrV61w6c1RlnHRQ
+         iKr1YJY+Zcpeb5H8nX3wLmGZoj7eNdVgMdM5xp3i9mJQDM+Ht9bO2tcF3i15fFR67UGu
+         yqpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to
+         :content-type;
+        bh=Bqn+sk3ELqCnFTZnN8fVLv+DiZxWdYhpE8uswDZYO40=;
+        b=dsxNz1xzh6ukelKrtfkCMKuIiKwKDadRL4d5F4p+ct6DvAmEzG56BjgS2iDNsjwDTN
+         /+9VJlma2bambEdX+2mt1A+6E0p53RYpXiUdUxU6qoZXGbRoodaRpwcdaIUi//EU4ST4
+         DLkna9sheVy+YtPUumQmILIoofEGIPZ3MTcAXbOVr55N0E2bJCM0McIWVJx2HMslLP6e
+         8QejnPtoncZJjf8lYdXub5dFXh8H3jPqgTzFAJozNfXh8vK0Ughzi26VnsklSuj6TSzD
+         TAl+Qw7DVtCbtOPTOwVKS6Htcq1onG4e+QpnMuep3QNILGNFAmGsW08F7ptVf6B368hM
+         EixQ==
+X-Gm-Message-State: ALoCoQnRNFVzp7E2O9U2B9iqyT3aQXhqcikghvFlQdPNPr3IXhkmVqmnW/h/FK/JNkkmbXmIYzzcqAxAjPzckb4nQn5jZsGIFj2BPug9y+ss3Nzo9ABEe6KtjPpVOfAlxrauKMK6xZKIs+4nQZpwo0pyj7GXcVE7fWb0Q6B1EezfJlz7ZjgU4xU=
+MIME-Version: 1.0
+X-Received: by 10.50.79.131 with SMTP id j3mr3729667igx.49.1449826921346; Fri,
+ 11 Dec 2015 01:42:01 -0800 (PST)
+Received: by 10.107.12.229 with HTTP; Fri, 11 Dec 2015 01:42:01 -0800 (PST)
+Date: Fri, 11 Dec 2015 16:42:01 +0700
+Message-ID: <CAED465DeW6ZnT7obhxLjVQh=dE0vvAQB1wsKu0h2O6qmkaguyw@mail.gmail.com>
+Subject: Reminder
+From: Maria Irmina P <maria@umn.ac.id>
+To: irma.yunita@student.umn.ac.id, darwin.candra@student.umn.ac.id, 
+	julius.tanuwijaya@student.umn.ac.id, a.yeusiawan.h@gmail.com, 
+	pramantharanggih@gmail.com, juniusprim14@gmail.com, santo_ario93@yahoo.com, 
+	"DIAN KARTIKA PUSPITARANI (00000009308)" <dian.puspitarani@student.umn.ac.id>, Wilson.brain@student.umn.ac.id, 
+	devin.ryan@student.umn.ac.id, andriwan1@gmail.com, michaeltjoee@gmail.com, 
+	Vannia Ferdina <niaferdina@gmail.com>, EricGaniwijaya@yahoo.com, owenyuwono@gmail.com, 
+	julio.edbert@student.umn.ac.id, hendro.wijaya@student.umn.ac.id, 
+	charlesx29@outlook.com, Aurelia.rianto@student.umn.ac.id, 
+	andre.utomo@student.umn.ac.id, hendrix@student.umn.ac.id, 
+	sylviestephanies@gmail.com, ben021884@gmail.com, sidhartaprabawa@gmail.com, 
+	willy.es97@hotmail.com, valiant.azarya@student.umn.ac.id, 
+	My.name.is.ronny.susanto@gmail.com, yoan.pratama@student.umn.ac.id, 
+	"JULIA (12110110036)" <julia@student.umn.ac.id>, bebegede@hotmail.com, 
+	veronica.sari@student.umn.ac.id, george.kristian@student.umn.ac.id, 
+	raditya.adi@student.umn.ac.id, audy@student.umn.ac.id, 
+	joshua5@student.umn.ac.id, aswindarma16@gmail.com, cindy_astrina@yahoo.co.id, 
+	eka.cahya@student.umn.ac.id
+Content-Type: multipart/alternative; boundary=089e011609f4a23bca05269c22b1
+
+--089e011609f4a23bca05269c22b1
+Content-Type: text/plain; charset=UTF-8
+
+Dear rekan-rekan mahasiswa peserta lomba CSIC,
+Hari ini (11 desember 2015) adalah batas waktu pengumpulan prototipe dan
+laporan.
+Ditunggu pengumpulan, di lantai 6, fakultas ICT dengan ibu Ni Made Satvika.
+Terima kasih.
+
+Salam
+
+*-- *
+
+*~ Maria Irmina P ~*
+Head of Computer Science Department
+Universitas Multimedia Nusantara
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--089e011609f4a23bca05269c22b1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div><div><span style=3D"font-family:georgia,ser=
+if"><b><br clear=3D"all"></b></span></div><font size=3D"4"><span style=3D"f=
+ont-family:georgia,serif">Dear rekan-rekan mahasiswa peserta lomba CSIC,<br=
+></span></font></div><font size=3D"4"><span style=3D"font-family:georgia,se=
+rif">Hari ini (11 desember 2015) adalah batas waktu pengumpulan prototipe d=
+an laporan.<br></span></font></div><font size=3D"4"><span style=3D"font-fam=
+ily:georgia,serif">Ditunggu pengumpulan, di lantai 6, fakultas ICT dengan i=
+bu Ni Made Satvika.<br></span></font></div><font size=3D"4"><span style=3D"=
+font-family:georgia,serif">Terima kasih.<br></span></font><div><div><div><d=
+iv><font size=3D"4"><span style=3D"font-family:georgia,serif"><br></span></=
+font></div><div><span style=3D"font-family:georgia,serif"><font size=3D"4">=
+Salam</font><b><br></b></span></div><div><span style=3D"font-family:georgia=
+,serif"><b>-- <br></b></span><div class=3D"gmail_signature"><div dir=3D"ltr=
+"><div><div><span style=3D"font-family:georgia,serif"><b>~ Maria Irmina P ~=
+<br></b></span></div><span style=3D"font-family:georgia,serif">Head of Comp=
+uter Science Department<br></span></div><span style=3D"font-family:georgia,=
+serif">Universitas Multimedia Nusantara</span><br></div></div>
+</div></div></div></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/include/images/template/logo-for-twitter22.png"></d=
+iv><div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><b=
+ style=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" size=3D"4">=
+Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font></b></div><div style=
+=3D"font-size:1.3em"><font face=3D"arial, sans-serif" color=3D"#0000ff" siz=
+e=3D"2"><span style=3D"background-color:rgb(255,255,255)"><b><i>&quot;<font=
+>Excellent Career Begins With Excellent Education</font>&quot;</i></b></spa=
+n></font></div><div style=3D"font-size:1.3em"><span style=3D"font-size:smal=
+l;font-family:arial,sans-serif;background-color:rgb(255,255,255)">Jl. Scien=
+tia Boulevard, Gading Serpong,</span></div><font size=3D"2"><span style=3D"=
+font-family:arial,sans-serif;background-color:rgb(255,255,255)">Tangerang, =
+Banten - 15811 Indonesia</span><br style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-seri=
+f;background-color:rgb(255,255,255)">(t)=C2=A0</span><a value=3D"+622154220=
+808" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-=
+color:rgb(255,255,255)">+62-21. 5422.0808</a><span style=3D"font-family:ari=
+al,sans-serif;background-color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a=
+ value=3D"+622154220800" style=3D"font-family:arial,sans-serif;color:rgb(17=
+,85,204);background-color:rgb(255,255,255)">+62-21. 5422.0800</a><span styl=
+e=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">;</spa=
+n><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,25=
+5)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">Facebook: Universitas Multimedia Nusantara</span><br style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"f=
+ont-family:arial,sans-serif;background-color:rgb(255,255,255)">Twitter: @um=
+n_serpong</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.umn.ac.id/" st=
+yle=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:r=
+gb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)">=C2=A0</span></font=
+>
+--089e011609f4a23bca05269c22b1--

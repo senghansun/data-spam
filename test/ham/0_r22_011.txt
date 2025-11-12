@@ -1,0 +1,109 @@
+Delivered-To: riandebialfian@gmail.com
+Received: by 10.157.62.135 with SMTP id b7csp153758otc;
+        Wed, 31 May 2017 00:06:38 -0700 (PDT)
+X-Received: by 10.31.84.4 with SMTP id i4mr11179956vkb.142.1496214397980;
+        Wed, 31 May 2017 00:06:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496214397; cv=none;
+        d=google.com; s=arc-20160816;
+        b=opETQ1uRUHldpO8dTDCKAh0Wr60yt97DnPxwr+X7xg3Eh6VnrYxY4tWldCdVB/BZo1
+         RTXqU4NN9y2Nl4PJRfYgCYrZ2AQR1iOHFAlln0yYZhJw3/rS/qVh8IPFu2jnErxq+4Of
+         w1jZUF8xcziHJT9wNHITleUPXrRfk8aWeM+Qh4TDURq+PZCYJWqH48WS8BrqA6bSg82f
+         GLrKrd3g0FfEIqJ5cK21uX0MzporYKx0r8n+KqaddYjuYmAS+Bf0MTN233wZUCn3QA7R
+         ZKBNsaLV9lOKP67EvUEXtq9c7LXL7rfYwUJeKi087IVNJ+WHDvkggHKN6Gp4UoFq04NN
+         R6XA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=PPW4weHcZUCNbPg2d8imWu2nkr5nkA+cRqHnLMOuqB4=;
+        b=hG49/CI/rjL0izfMkI7+PYpbeD8+AqsAshcqutxWV2JWpWNGDufe0Aoc1eu4qa2RsJ
+         NcsTdfXv+Dz6cEh2aM0ODGzDKYfRPUqI/mK2erkSuZ3kGThJtatGCnBi6a9o25vqFU4H
+         fOsGNQRPI4yeD6SgLCr40SOGbq4mcDRYdiq5WJP1BSp3iuqPUiuO1QBFm4qb/pOW/SHj
+         tlafMS9XTn+vrO+F0bS3kDN2vNf8SczmemrEWlniu/f5Jhxs89OBDLzcViJpnvfsxs64
+         pKqGi0mkGoZnUYTdYBfZVflZZ5RyUjUW5JCt4hFRznMD4/lGHGzr8knb1wdasmP7uYfC
+         y5ew==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 2607:f8b0:400c:c08::236 as permitted sender) smtp.mailfrom=mohiqbal.gunadarma@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <mohiqbal.gunadarma@gmail.com>
+Received: from mail-ua0-x236.google.com (mail-ua0-x236.google.com. [2607:f8b0:400c:c08::236])
+        by mx.google.com with ESMTPS id q17si7174456uaf.238.2017.05.31.00.06.37
+        for <riandebialfian@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 31 May 2017 00:06:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 2607:f8b0:400c:c08::236 as permitted sender) client-ip=2607:f8b0:400c:c08::236;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of mohiqbal.gunadarma@gmail.com designates 2607:f8b0:400c:c08::236 as permitted sender) smtp.mailfrom=mohiqbal.gunadarma@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ua0-x236.google.com with SMTP id j17so199uag.3
+        for <riandebialfian@gmail.com>; Wed, 31 May 2017 00:06:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=PPW4weHcZUCNbPg2d8imWu2nkr5nkA+cRqHnLMOuqB4=;
+        b=X8aInprwsBy/AqLgxsfkoW6rjZhoK1Ob2J5yDMRJ7FDMpwu2h7Qasv5+Hw3X1ro7xi
+         bpxYUHwbK4+qNxuQCd4DC9aN8tEpqB2WpGObNv7g0kfgq1mgvnSNLnwDl8jT0qX6C9bp
+         IoqQoezeyCQ0CY28De4mRmYP3nrcZ5WNt3TLhPCkY9o7rmZG3S+rIdbCzcHU2dEXgPey
+         V/K5Q8FMAklGRdEtiuRLw0bv8YdOQKLRCZqYMEkegE3BtRBxx5S8oMIAsfkzWCnM/1Jq
+         01i2C+hvrrtCkctWcWHW0mvXWpH388EbxjA1CqdDZ+Pc3fLpHdF1JbAyzSieP/3DP5aL
+         U0qQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=PPW4weHcZUCNbPg2d8imWu2nkr5nkA+cRqHnLMOuqB4=;
+        b=cohmwxyvO42ozfxwqZmKnQgYX11SzntvVoKijvcW822cJnyvx7Is3dj8RNEtftMck0
+         ZSv4hM/voW0Y2wIxofMzQ8DDjspyQ09/ZBdK8RrqrGx3SCJNn2QKhJA19QKdmJoh8xow
+         2soA/XpjLPqN59NrNKS6gQyhItP4EJupmxdzbTBlBiS1jVnJVJ03/5TNja+kfHlkyUYx
+         tZgduuVe5n6AZFII5DjlwVOeokl8ot2j2yn5bnyFAwblq7U2pbh7Nqe1mHEYJze3zc9J
+         iLKUFnoPVTFSYg/g62Ay/LOm+n3PEv8h/X8ezSi26gJxdtrCUwGP9C6kmtLdRYWzyCGO
+         +uQw==
+X-Gm-Message-State: AODbwcDkui4TcA0xQ+BtPBGXjHnrRCBCLq2F241bQYUeVrMb6x1JcBnc rH/pHD+1oiM0wmLWTqmYe28Zbr/gOwjM
+X-Received: by 10.176.76.207 with SMTP id e15mr3206270uag.135.1496214397650; Wed, 31 May 2017 00:06:37 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.91.213 with HTTP; Wed, 31 May 2017 00:06:37 -0700 (PDT)
+In-Reply-To: <CAKKcBs8jAZndoBbgGGh+TkVNKp+SyAGGNK803ptO3Rf03R49GQ@mail.gmail.com>
+References: <CAKKcBs8jAZndoBbgGGh+TkVNKp+SyAGGNK803ptO3Rf03R49GQ@mail.gmail.com>
+From: Mohammad Iqbal <mohiqbal.gunadarma@gmail.com>
+Date: Wed, 31 May 2017 14:06:37 +0700
+Message-ID: <CAGeHff7wLZs51ww2g+HnkpBQrWyJ46FqfTgOdzBz4exLs3Oc5w@mail.gmail.com>
+Subject: Re: Ujian23Mei17_4KB09_[Robot Humanoid]
+To: Rian Debi Alfian <riandebialfian@gmail.com>
+Content-Type: multipart/alternative; boundary="f4030435a7b8ae3b050550cc8f4c"
+
+--f4030435a7b8ae3b050550cc8f4c
+Content-Type: text/plain; charset="UTF-8"
+
+Ujiannya sudah saya terima
+
+On Tue, May 30, 2017 at 6:43 PM, Rian Debi Alfian <riandebialfian@gmail.com>
+wrote:
+
+> 27113558 - Rian Debi Alfia
+>
+
+
+
+-- 
+*Dr. Mohammad Iqbal*
+*Lecturer and Researcher*
+*PSMA Online Gunadarma University*
+
+--f4030435a7b8ae3b050550cc8f4c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Ujiannya sudah saya terima</div><div class=3D"gmail_extra"=
+><br><div class=3D"gmail_quote">On Tue, May 30, 2017 at 6:43 PM, Rian Debi =
+Alfian <span dir=3D"ltr">&lt;<a href=3D"mailto:riandebialfian@gmail.com" ta=
+rget=3D"_blank">riandebialfian@gmail.com</a>&gt;</span> wrote:<br><blockquo=
+te class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc so=
+lid;padding-left:1ex"><div dir=3D"ltr">27113558 - Rian Debi Alfia</div>
+</blockquote></div><br><br clear=3D"all"><br>-- <br><div class=3D"gmail_sig=
+nature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><b>Dr. Mohammad=
+ Iqbal</b><div><i>Lecturer and Researcher</i></div><div><i>PSMA Online Guna=
+darma University</i></div></div></div>
+</div>
+
+--f4030435a7b8ae3b050550cc8f4c--

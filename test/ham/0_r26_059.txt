@@ -1,0 +1,408 @@
+﻿Delivered-To: sherra.rizka@gmail.com
+Received: by 10.12.210.211 with SMTP id x19csp5126927qvh;
+        Thu, 24 Aug 2017 08:49:55 -0700 (PDT)
+X-Received: by 10.129.80.137 with SMTP id e131mr5478018ywb.309.1503589795466;
+        Thu, 24 Aug 2017 08:49:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503589795; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NuOZm8QOJOl6pXQoPI+H9MPTGpZk5cDg0UyEAx6s/gdINCJ92GoO4uuLbcZsiAgJYo
+         vd2ehFwTGPQA74zWDdCKYZTYmudDr9uL4Jd2YcKfyBv1Gzig7s1OcjzcKkr4/nyiyA6U
+         E/yPxdGxaXn9pX/50nz1TSNlKa508aIAdE1AN0cOMPA2KwcvrP0gtCxUqPVQZCu0ltZZ
+         ECb1tHDpyr6VNhNrwo/0HEBUUluFhsb4MBR7eloBHJXaHT6lGylOF7rfDRHHZjFqqrvU
+         yyI/EXpPGWZxLl45xwQ8jtsEUoxUTQVw3tBnKYeSvH1o8Rx2BwWRiL+F5F0eNv2vIE7b
+         7H1A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=8oHIxeTL9/5q32l36oEULaoFglc3FmslTTqdK137cek=;
+        b=PO9BDbI7H0RFKxmMpbmVKMiYT9lwx3qWadivylexp3QDCby+7hq1HpECDWyFDCLotl
+         Ubg/J8e7rAU39gn+suhVe0kc/zajYR3UFm3iSwqDAGYqQPsLRlI2Xzb4TTc+kFjq97WO
+         cMRUUfr0MxypjM7uu4UZ+BpUGHoyr858yQS6C6U0IJjeixTiIwUsXxZO2eSLMx/Hh6bW
+         /YwEE1q/M/DcLlcaV/GKgAfFrOtE7M8HFThrEucSy6Z/yIAikZed6Z/a5cnLZGIGhEpx
+         m6l6lYcvkmExHMpwFWr2UoeZTfaoJF9ZrK9vMcGeBdbRxeNxFxBRR78YiMZQUQT27AJZ
+         5BAg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=XhXrAenZ;
+       spf=pass (google.com: domain of hildanovianti21@gmail.com designates 2607:f8b0:4002:c05::229 as permitted sender) smtp.mailfrom=hildanovianti21@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <hildanovianti21@gmail.com>
+Received: from mail-yw0-x229.google.com (mail-yw0-x229.google.com. [2607:f8b0:4002:c05::229])
+        by mx.google.com with ESMTPS id 8si981259ybp.323.2017.08.24.08.49.55
+        for <sherra.rizka@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 24 Aug 2017 08:49:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hildanovianti21@gmail.com designates 2607:f8b0:4002:c05::229 as permitted sender) client-ip=2607:f8b0:4002:c05::229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=XhXrAenZ;
+       spf=pass (google.com: domain of hildanovianti21@gmail.com designates 2607:f8b0:4002:c05::229 as permitted sender) smtp.mailfrom=hildanovianti21@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yw0-x229.google.com with SMTP id f185so2328219ywh.0
+        for <sherra.rizka@gmail.com>; Thu, 24 Aug 2017 08:49:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=8oHIxeTL9/5q32l36oEULaoFglc3FmslTTqdK137cek=;
+        b=XhXrAenZ3/mAE4Cl0vbXyeRrCx77MuJwl8SUj1f3zh4UY7w4o6FBGlnSJk4zOTwL+b
+         cK97y1drCpQ3VJxu2Y5HpBcgqplNJji6g/F0yhlnE+qYbusEVo907MdVYCvryFwU0SoF
+         B1ulSM69XPYXcc3O7uS4fAyxH1ryJN41z46NgpZdmNvKpmoAyEFQ5otHewi+uTBD41JU
+         IlMeKhkjr+SNKSh2ZqPVaD6kyjIVh5DZlmQl/VyEAfPSJ4xVxji532Oo8mqDxxyNjSPW
+         2lX3EghN1VmK9RLi8BsjRvZfpXF6hOueUkNu1+/9/QPzWtOdA8mo3urHJw1lbo++S6Zw
+         zRgA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=8oHIxeTL9/5q32l36oEULaoFglc3FmslTTqdK137cek=;
+        b=dFaXtUalouiFfn7a7DexOSYa5Rh47iVipzz4kzycKhbFy7hCf9gdiPcAEOpxkR8LHU
+         y548WsSvsVZ5boSDtiioHLdqH1JmZ1EwUBp5iGXVz6TUAHHiG7xtr2ezGUpLSW5dnDj2
+         f99IcauG0ojFp1m107EDOC9A+WH6YdCqFXNEem3ZDGjm8zY4yvRHg1gIu8L5wbweuOAl
+         0Pc0Kgr6b7wMFFqA06nCwe/rW0pPfke8jWJ4WnfZE+jFa9+JrNDZir0iINzbU5vS6iI3
+         lkBN0dYEn7lKTY3OETzor4+hnomhROR5DeggRnPQKeRdMP8Ay/7xEHpp/jaxoeL2WAQt
+         N3yw==
+X-Gm-Message-State: AHYfb5jbA6QPiSOm90WS/nh/HbCusAkpPVY85afi+R0rl2x9vozAHJ0Y HfCpDGaEzT5qiARUDyUKzYUhFOL2sw==
+X-Received: by 10.37.26.5 with SMTP id a5mr5407089yba.232.1503589794883; Thu, 24 Aug 2017 08:49:54 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.129.201.66 with HTTP; Thu, 24 Aug 2017 08:49:54 -0700 (PDT)
+Received: by 10.129.201.66 with HTTP; Thu, 24 Aug 2017 08:49:54 -0700 (PDT)
+In-Reply-To: <903819B8-4730-453D-B8EF-90801FC84F1E@yahoo.co.id>
+References: <533914830.304886.1503044720750@MOORDUCK> <903819B8-4730-453D-B8EF-90801FC84F1E@yahoo.co.id>
+From: hilda novianti <hildanovianti21@gmail.com>
+Date: Thu, 24 Aug 2017 22:49:54 +0700
+Message-ID: <CAK9R_7Ov3qRJokVY8wDLd-2B-LePNN3ZS5oTsU_t65GGynu_kw@mail.gmail.com>
+Subject: Fwd: Bursa Kerja Nasional XVI – 2017, 25 - 26 Agustus 2017
+To: sherra.rizka@gmail.com
+Content-Type: multipart/alternative; boundary="001a114289ea9cb0f7055781c733"
+
+--001a114289ea9cb0f7055781c733
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ----------
+From: "Ines Stephanie" <inesstephanie12@yahoo.co.id>
+Date: 24 Aug 2017 09:03
+Subject: Fwd: Bursa Kerja Nasional XVI =E2=80=93 2017, 25 - 26 Agustus 2017
+To: <Hildanovianti21@gmail.com>
+Cc:
+
+
+
+Sent from my iPhone
+
+Begin forwarded message:
+
+*From:* <marketing-id@jobstreet.com>
+*Date:* August 18, 2017 at 3:25:20 PM GMT+7
+*To:* inesstephanie12@yahoo.co.id
+*Subject:* *Bursa Kerja Nasional XVI =E2=80=93 2017, 25 - 26 Agustus 2017*
+*Reply-To:* lina-noreply@jobstreet.com
+
+If you cannot read the message below, click here http://www.jobstreet.co.id=
+/
+announcement/2017/k/kemnaker/kemnaker4ccwl.htm
+
+
+
+
+*Bursa Kerja Nasional XVI =E2=80=93 2017 *Peningkatan Pelayanan Penempatan =
+Tenaga
+Kerja Guna Memperluas Kesempatan Kerja
+[image: Undangan Bursa Kerja Nasional 2017]
+
+Dear Ines,
+
+Hadirilah Bursa Kerja Nasional XVI =E2=80=93 2017 yang diselenggarakan oleh
+KEMNAKER RI sebagai wujud tanggung jawab pemerintah dalam mengurangi angka
+pengangguran di Indonesia. Diikuti oleh lebih dari 100 perusahaan ternama,
+yang akan di selenggarakan pada:
+
+*Tanggal * *25 =E2=80=93 26 Agustus 2016*
+*Lokasi* *Arena JIEXPO Kemayoran Hall C2 & C3*
+*Waktu* *08.00 s/d 16.00 WIB*
+Beberapa hal yang perlu anda perhatikan sebelum mendatangi Bursa Kerja
+Nasional XVI
+
+   1. Disarankan untuk men daftar *online* terlebih dahulu untuk
+   menghindari antrian padat saat hari H, disini
+   <http://linabanner.jobstreet.com/goto.asp?id=3D45755&text_id=3D45681>
+   2. *Print Barcode* anda sebagai akses masuk ke area Bursa Kerja.
+   3. *Cek Perusahaan* peserta Bursa Kerja Nasional XVI disini
+   <http://linabanner.jobstreet.com/goto.asp?id=3D45756&text_id=3D45682>
+
+Dan selalu perbarui profil JobStreet anda dan lengkapi informasi yang masih
+kurang. Ikuti langkah mudah berikut ini:
+
+   1. Log in
+   <http://linabanner.jobstreet.com/goto.asp?id=3D45757&text_id=3D45683> da=
+n
+   masuk ke halaman profil saya -> ubah profil
+   2. Masukkan pengalaman terakhir, pendidikan dan kemampuan anda yang
+   terbaru dan relevan
+   3. Pastikan profilmu *bisa dicari* oleh perusahaan (profil saya ->
+   pengaturan privasi -> dicari dengan detil informasi)
+
+
+Pendaftaran Online
+Bursa Kerja Nasinal XVI
+<http://linabanner.jobstreet.com/goto.asp?id=3D45758&text_id=3D45684>
+
+Update Profil
+JobStreet-mu disini
+<http://linabanner.jobstreet.com/goto.asp?id=3D45759&text_id=3D45685>
+
+
+Salam hangat,
+LiNa
+
+
+
+------------------------------
+Privacy Policy <http://www.jobstreet.co.id/aboutus/privacy_policy.htm> ~
+Copyright <http://www.jobstreet.co.id/aboutus/terms_use.htm> =C2=A9 2017
+JobStreet.com
+<http://www.jobstreet.co.id/>JobStreet.com Indonesia - Wisma Bumiputera 5th
+floor, Jl. Jend. Sudirman Kav. 75 Jakarta 12910
+<http://www.jobstreet.com.my/aboutus/contact_usID.htm>
+* This is not an unsolicited message. To unsubscribe
+<http://linabanner.jobstreet.com/edm/unsub.asp?c=3D132&r=3D2&e=3Dinesstepha=
+nie12@yahoo.co.id>
+please click here
+<http://linabanner.jobstreet.com/edm/unsub.asp?c=3D132&r=3D2&e=3Dinesstepha=
+nie12@yahoo.co.id>
+
+--001a114289ea9cb0f7055781c733
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><div class=3D"gmail_quote">---------- Forwarded mes=
+sage ----------<br>From: &quot;Ines Stephanie&quot; &lt;<a href=3D"mailto:i=
+nesstephanie12@yahoo.co.id">inesstephanie12@yahoo.co.id</a>&gt;<br>Date: 24=
+ Aug 2017 09:03<br>Subject: Fwd: Bursa Kerja Nasional XVI =E2=80=93 2017, 2=
+5 - 26 Agustus 2017<br>To:  &lt;<a href=3D"mailto:Hildanovianti21@gmail.com=
+">Hildanovianti21@gmail.com</a>&gt;<br>Cc: <br><br type=3D"attribution"><di=
+v dir=3D"auto"><div><br><br>Sent from my iPhone</div><div><br>Begin forward=
+ed message:<br><br></div><blockquote type=3D"cite"><div><b>From:</b> &lt;<a=
+ href=3D"mailto:marketing-id@jobstreet.com" target=3D"_blank">marketing-id@=
+jobstreet.com</a>&gt;<br><b>Date:</b> August 18, 2017 at 3:25:20 PM GMT+7<b=
+r><b>To:</b> <a href=3D"mailto:inesstephanie12@yahoo.co.id" target=3D"_blan=
+k">inesstephanie12@yahoo.co.id</a><br><b>Subject:</b> <b>Bursa Kerja Nasion=
+al XVI =E2=80=93 2017, 25 - 26 Agustus 2017</b><br><b>Reply-To:</b> <a href=
+=3D"mailto:lina-noreply@jobstreet.com" target=3D"_blank">lina-noreply@jobst=
+reet.com</a><br><br></div></blockquote><blockquote type=3D"cite"><div>
+
+
+
+
+
+
+
+
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"700" align=3D"center" b=
+order=3D"0">
+  <tbody><tr>
+    <td align=3D"center"><span style=3D"font-family:Arial,Helvetica,sans-se=
+rif;font-size:11px">If you cannot read the message below, click here <a sty=
+le=3D"color:#000000" href=3D"http://www.jobstreet.co.id/announcement/2017/k=
+/kemnaker/kemnaker4ccwl.htm" target=3D"_blank">http://www.jobstreet.co.id/<=
+wbr>announcement/2017/k/kemnaker/<wbr>kemnaker4ccwl.htm</a></span></td>
+  </tr>
+  <tr>
+    <td align=3D"center">=C2=A0</td>
+  </tr>
+</tbody></table>
+<table width=3D"700" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border:#666666 1px solid;font-family:Arial,Helvetica,s=
+ans-serif">
+  <tbody><tr>
+    <td><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0">
+      <tbody><tr>
+        <td bgcolor=3D"#fff">=C2=A0</td>
+      </tr>
+    </tbody></table>
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+      <tbody><tr>
+        <td bgcolor=3D"#fff" style=3D"line-height:5px">=C2=A0</td>
+      </tr>
+    </tbody></table>
+    =20
+      <table width=3D"90%" border=3D"0" align=3D"center" cellpadding=3D"0" =
+cellspacing=3D"0">
+      =20
+      </table>
+      <table width=3D"100%" border=3D"0" cellpadding=3D"10" cellspacing=3D"=
+0">
+        <tbody><tr>
+          <td align=3D"center" style=3D"font-family:Arial,Helvetica,sans-se=
+rif;font-size:30px">
+            <strong>Bursa Kerja Nasional XVI =E2=80=93 2017<br>
+            </strong><span style=3D"font-size:15px">Peningkatan Pelayanan P=
+enempatan Tenaga Kerja Guna Memperluas Kesempatan Kerja</span><br>
+            </td>
+        </tr>
+       =20
+        <tr>
+    <td><img src=3D"http://www.jobstreet.co.id/announcement/2017/k/kemnaker=
+/pic/kemnaker4-01.jpg" alt=3D"Undangan Bursa Kerja Nasional 2017" width=3D"=
+700" height=3D"244"></td>
+  </tr>
+       =20
+        <tr>
+          <td align=3D"left" style=3D"font-family:Arial,Helvetica,sans-seri=
+f;font-size:15px;line-height:18px"><br>
+                       Dear Ines,  <br><br>
+                  Hadirilah Bursa Kerja Nasional XVI =E2=80=93 2017 yang di=
+selenggarakan oleh KEMNAKER RI sebagai wujud tanggung jawab pemerintah dala=
+m mengurangi angka pengangguran di Indonesia.  Diikuti oleh lebih dari 100 =
+perusahaan ternama, yang akan di selenggarakan pada:<br>
+                  <br>
+                 =20
+                   <table width=3D"100%" border=3D"0" align=3D"center" cell=
+padding=3D"5" cellspacing=3D"0">
+            <tbody><tr>
+              <td><table width=3D"71%" align=3D"center" cellpadding=3D"10" =
+cellspacing=3D"0" class=3D"m_378906973812842742tbl">
+                  <tbody><tr>
+                    <td width=3D"16%" bgcolor=3D"#3169B6"><span style=3D"co=
+lor:#ffffff"><strong>Tanggal </strong></span></td>
+                    <td width=3D"84%" bgcolor=3D"#eee"><strong>25 =E2=80=93=
+ 26 Agustus 2016</strong></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor=3D"#3169B6"><span style=3D"color:#ffffff"><=
+strong>Lokasi</strong></span></td>
+                     <td width=3D"84%" bgcolor=3D"#eee"><strong>Arena JIEXP=
+O Kemayoran Hall C2 &amp; C3</strong></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor=3D"#3169B6"><span style=3D"color:#ffffff"><=
+strong>Waktu</strong></span></td>
+                     <td width=3D"84%" bgcolor=3D"#eee"><strong>08.00 s/d 1=
+6.00 WIB</strong></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+          </tbody></table><br>
+                 =20
+Beberapa hal yang perlu anda perhatikan sebelum mendatangi Bursa Kerja Nasi=
+onal XVI
+
+<ol style=3D"padding-left:20px">
+<li>Disarankan untuk men daftar <em><strong>online</strong></em> terlebih d=
+ahulu untuk menghindari antrian padat saat hari H, <a href=3D"http://linaba=
+nner.jobstreet.com/goto.asp?id=3D45755&amp;text_id=3D45681" target=3D"_blan=
+k">disini</a></li>
+<li><strong>Print Barcode</strong> anda sebagai akses masuk ke area Bursa K=
+erja.</li>
+<li><strong>Cek Perusahaan</strong> peserta Bursa Kerja Nasional XVI <a hre=
+f=3D"http://linabanner.jobstreet.com/goto.asp?id=3D45756&amp;text_id=3D4568=
+2" target=3D"_blank">disini</a></li>
+</ol>
+
+
+Dan selalu perbarui profil JobStreet anda dan lengkapi informasi yang masih=
+ kurang. Ikuti langkah mudah berikut ini:
+
+<ol style=3D"padding-left:20px">
+<li><a href=3D"http://linabanner.jobstreet.com/goto.asp?id=3D45757&amp;text=
+_id=3D45683" target=3D"_blank">Log in</a> dan masuk ke halaman profil saya =
+-&gt; ubah profil</li>
+<li>Masukkan pengalaman terakhir, pendidikan dan kemampuan anda yang terbar=
+u dan relevan</li>
+<li>Pastikan profilmu <strong>bisa dicari</strong> oleh perusahaan (profil =
+saya -&gt; pengaturan privasi -&gt; dicari dengan detil informasi)</li>
+</ol>
+
+<br>
+
+            </td>
+        </tr>
+    </tbody></table>
+   =20
+     <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"width:150px">
+                          <tbody><tr>
+                            <td style=3D"height:50px;border-radius:3px" bgc=
+olor=3D"#fff800" valign=3D"middle" align=3D"center"><div style=3D"text-alig=
+n:center;padding:0px 20px;max-width:320px;font-size:14px"> <a style=3D"text=
+-decoration:none;color:#212121" href=3D"http://linabanner.jobstreet.com/got=
+o.asp?id=3D45758&amp;text_id=3D45684" target=3D"_blank"> <span style=3D"dis=
+play:block;white-space:nowrap;color:#212121;font-size:14px;font-weight:bold=
+;line-height:1.2;font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-=
+serif">Pendaftaran Online <br>Bursa Kerja Nasinal XVI</span></a></div></td>
+                            <td width=3D"200">=C2=A0=C2=A0=C2=A0=C2=A0</td>=
+=20
+                           =20
+                            <td style=3D"height:50px;border-radius:3px" bgc=
+olor=3D"#fff800" valign=3D"middle" align=3D"center"><div style=3D"text-alig=
+n:center;padding:0px 20px;max-width:320px;font-size:14px"> <a style=3D"text=
+-decoration:none;color:#212121" href=3D"http://linabanner.jobstreet.com/got=
+o.asp?id=3D45759&amp;text_id=3D45685" target=3D"_blank"> <span style=3D"dis=
+play:block;white-space:nowrap;color:#212121;font-size:14px;font-weight:bold=
+;line-height:1.2;font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-=
+serif">Update Profil<br>JobStreet-mu disini</span></a></div></td>
+                          </tr>
+                         =20
+                         =20
+                         =20
+                          <tr>
+          <td align=3D"left" style=3D"font-family:Arial,Helvetica,sans-seri=
+f;font-size:15px;line-height:18px">=C2=A0
+            </td>
+        </tr>
+          </tbody></table>
+   =20
+   =20
+    </td></tr><tr>
+          <td align=3D"left" style=3D"font-family:Arial,Helvetica,sans-seri=
+f;font-size:15px;line-height:18px;padding-left:10px"><br>
+                      Salam hangat,<br>
+                      LiNa<br><br>   =20
+            </td>
+        </tr>
+       =20
+        <tr>
+          <td align=3D"left" style=3D"font-family:Arial,Helvetica,sans-seri=
+f;font-size:15px;line-height:18px">=C2=A0
+            </td>
+        </tr>  =20
+ =20
+ =20
+ =20
+</tbody></table>
+<br>
+<br>
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"700" align=3D"center" b=
+order=3D"0">
+  <tbody><tr>
+    <td align=3D"center"><hr noshade size=3D"2">
+      <span class=3D"m_378906973812842742style12"><a style=3D"color:#000000=
+" href=3D"http://www.jobstreet.co.id/aboutus/privacy_policy.htm" target=3D"=
+_blank">Privacy Policy</a> ~ <a style=3D"color:#000000" href=3D"http://www.=
+jobstreet.co.id/aboutus/terms_use.htm" target=3D"_blank">Copyright</a> =C2=
+=A9 2017 <a style=3D"color:#000000" href=3D"http://www.jobstreet.co.id/" ta=
+rget=3D"_blank">JobStreet.com<br>
+      </a><a style=3D"color:#999999;text-decoration:none" href=3D"http://ww=
+w.jobstreet.com.my/aboutus/contact_usID.htm" target=3D"_blank">JobStreet.co=
+m Indonesia  - Wisma Bumiputera 5th floor, Jl. Jend. Sudirman Kav. 75 Jakar=
+ta 12910</a></span></td>
+  </tr>
+</tbody></table>
+<br><center><font size=3D"1" face=3D"verdana">* This is not an unsolicited =
+message. To <a href=3D"http://linabanner.jobstreet.com/edm/unsub.asp?c=3D13=
+2&amp;r=3D2&amp;e=3Dinesstephanie12@yahoo.co.id" target=3D"_blank"><font si=
+ze=3D"1" face=3D"verdana" color=3D"black">unsubscribe</font></a> please <a =
+href=3D"http://linabanner.jobstreet.com/edm/unsub.asp?c=3D132&amp;r=3D2&amp=
+;e=3Dinesstephanie12@yahoo.co.id" target=3D"_blank"><font size=3D"1" face=
+=3D"verdana" color=3D"black">click here</font></a></font><br><br></center>
+<img src=3D"http://linabanner.jobstreet.com/show_banner.asp?bid=3D28578" bo=
+rder=3D"0">
+
+
+
+
+
+
+</div></blockquote></div></div>
+
+--001a114289ea9cb0f7055781c733--

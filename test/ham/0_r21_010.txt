@@ -1,0 +1,239 @@
+Delivered-To: ranggih.pramantha@student.umn.ac.id
+Received: by 10.79.105.199 with SMTP id e190csp1071780ivc;
+        Sun, 15 May 2016 08:37:53 -0700 (PDT)
+X-Received: by 10.194.20.162 with SMTP id o2mr24918786wje.78.1463326672922;
+        Sun, 15 May 2016 08:37:52 -0700 (PDT)
+Return-Path: <himti@umn.ac.id>
+Received: from mail-wm0-x233.google.com (mail-wm0-x233.google.com. [2a00:1450:400c:c09::233])
+        by mx.google.com with ESMTPS id ju6si33589943wjb.182.2016.05.15.08.37.52
+        for <ranggih.pramantha@student.umn.ac.id>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 15 May 2016 08:37:52 -0700 (PDT)
+Received-SPF: neutral (google.com: 2a00:1450:400c:c09::233 is neither permitted nor denied by best guess record for domain of himti@umn.ac.id) client-ip=2a00:1450:400c:c09::233;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2a00:1450:400c:c09::233 is neither permitted nor denied by best guess record for domain of himti@umn.ac.id) smtp.mailfrom=himti@umn.ac.id
+Received: by mail-wm0-x233.google.com with SMTP id a17so100868593wme.0
+        for <ranggih.pramantha@student.umn.ac.id>; Sun, 15 May 2016 08:37:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to;
+        bh=Qbl4OjNyGcuoOowGqMLjl+8ZzqLeyLlXMtbqJAT3i50=;
+        b=QwDln7lcx3VgqKmoOhiAnsXnhC3gefdnCfRINC/mIVDMikyaAMVyJhdo4K9vMbrQOF
+         WUr7ba6sqK+mPZPsAwRwl+INIgOsxUqs3nFuXMm1n7VFNYn7zbffGzKwgeajjRdD6w40
+         vs4AVnuu1bBU0wWHarV2/K9aeRmznpYmcyEFdxAgd79aKRwH0xmZEWFeyyWQrm193Tbz
+         DX2eXlQnxakI7fmN93mqle+qt4/2LlJ2BXUwkL/HqNFTu1IVzeV1xH/id5Ymeh9uhIMM
+         aVY8OsI7JV2PZlQnHK3AbMxl7eynq7OXoagQpx1/UosEZg0mysF9rP3o5WeONW4ZSkS7
+         XnSw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to;
+        bh=Qbl4OjNyGcuoOowGqMLjl+8ZzqLeyLlXMtbqJAT3i50=;
+        b=WnWoZ/cmKsezo/ar+yHT0rFmiyBuj9mlQ3QqGEoLq6B3roT+hBZ4Eft5EQkPb4wI/Z
+         qDkH0YdgqCkJ4OZNF0+bQPiFv33rKMZDU0+DXTzrb4J0vw7YD3Qxp1HjXdrSuartDN7K
+         MQ30wRZJWsesPewavbkwQQH1MFOAqzLk6/LB33FYXoI/uju7cSLRx0I+wvL4/hIobYGq
+         wvZIZnZXqRnH8dhusmKuw6w6l3H/ExfqWZO8YmA0RePLAAU96QuESmkK3+I1tb98f1Ob
+         flNn0LfVjPvVxvC+CM2YzDR7ZbIg8g3MpoQgLGE2zoi5ZwJvG9Xrz0vUF0pIHBIxLHft
+         tiTA==
+X-Gm-Message-State: AOPr4FX8SSRK9JORb2175D1H+/dvaI4KpOHM60xEzYD+Ffd51m97xgY76HkbGq32YwxtGal9J2wM17ctbQlRaLuLjG2mCyRwf+5nabj/JX4QBGE6nPcTTo4xeCALXSlB6JSNyC2hL5TrA5c2cGJG9rAsBGf6YTd5jRxD37AS
+MIME-Version: 1.0
+X-Received: by 10.28.165.216 with SMTP id o207mr12721492wme.31.1463326672392; Sun, 15 May 2016 08:37:52 -0700 (PDT)
+Received: by 10.28.57.67 with HTTP; Sun, 15 May 2016 08:37:52 -0700 (PDT)
+In-Reply-To: <CAM3+H4OhDTgY+d+0j=pp+hMMCVhMwcnFVFWADwtnfTx3k3psRw@mail.gmail.com>
+References: <CAM3+H4OhDTgY+d+0j=pp+hMMCVhMwcnFVFWADwtnfTx3k3psRw@mail.gmail.com>
+Date: Sun, 15 May 2016 22:37:52 +0700
+Message-ID: <CAHbpjk020nxviLFduRZ1yKqFLaJFCQaOhQfNYXN6aivhHjJUaw@mail.gmail.com>
+Subject: Re: TI-sign Competition
+From: HIMTI UMN <himti@umn.ac.id>
+To: "RANGGIH PRAMANTHA (13110110107)" <ranggih.pramantha@student.umn.ac.id>
+Content-Type: multipart/alternative; boundary=001a114bdd8e7f97b60532e34ac1
+
+--001a114bdd8e7f97b60532e34ac1
+Content-Type: text/plain; charset=UTF-8
+
+HI HIMTI'ers!!
+
+Terimakasih atas partisipasi kalian pada *TI-sign Competition *2016.
+Dikarenakan jumlah partisipan terlalu banyak, maka juri melakukan seleksi
+hingga mendapatkan TOP 20 yang nantinya akan di voting melalui *BOOTH TI's
+DAY.*
+
+Tapi jangan khawatir, seluruh peserta lomba tetap BERHAK untuk mendapatkan
+1 poin SKKM minat dan bakat, dan bagi peserta yang masuk TOP 20, berhak
+mendapatkan TIKET TI's PARTY secara cuma cuma.
+
+*TI's PARTY akan berlangsung pada:*
+*Hari/Tanggal : Jumat/20 Mei 2016*
+*Waktu : 17.30 - Selesai*
+*Tempat : Student Lounge*
+
+Disana kita bakal ngerayain hari ulang tahun HIMTI yang ke-6, sekaligus
+nonton dan makan bareng sama dosen juga loh. Bagi TOP 20 *diwajibkan* untuk
+hadir karena akan ada pengumuman pemenang *TI-Sign Competition*.
+
+Untuk Pengambilan tiket bisa langsung diambil di BOOTH TI's DAY yang berada
+di kantin gedung C dari tanggal 16-20 Mei 2016.
+
+Jadi, jangan lupa untuk kunjungi BOOTH TI's DAY dan menangkan beberapa
+hadiah menarik! SEE YOU HIMTI'ers!!!
+
+
+*CP:Hendro Wijaya*
+*SMS/WA: 0822 8102 9700*
+*Line: hendrowijaya*
+
+2016-05-10 17:05 GMT+07:00 RANGGIH PRAMANTHA (13110110107) <
+ranggih.pramantha@student.umn.ac.id>:
+
+>
+>
+>
+> *Universitas   Multimedia   Nusantara*
+> *"Excellent Career Begins With Excellent Education"*
+> Jl. Scientia Boulevard, Gading Serpong,
+> Tangerang, Banten - 15811 Indonesia
+> (t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+> Facebook: Universitas Multimedia Nusantara
+> Twitter: @umn_serpong
+> Web: www.umn.ac.id
+
+-- 
+
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--001a114bdd8e7f97b60532e34ac1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"font-size:12.8px"><font color=3D"#000000" fa=
+ce=3D"arial, helvetica, sans-serif">HI HIMTI&#39;ers!!</font></div><div sty=
+le=3D"font-size:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, s=
+ans-serif"><br></font></div><div style=3D"font-size:12.8px"><font color=3D"=
+#000000" face=3D"arial, helvetica, sans-serif">Terimakasih atas partisipasi=
+ kalian pada=C2=A0<b>TI-sign Competition=C2=A0</b>2016. Dikarenakan jumlah =
+partisipan terlalu banyak, maka juri melakukan seleksi hingga mendapatkan T=
+OP 20 yang nantinya akan di voting melalui=C2=A0<b>BOOTH TI&#39;s DAY.</b><=
+/font></div><div style=3D"font-size:12.8px"><font color=3D"#000000" face=3D=
+"arial, helvetica, sans-serif"><br></font></div><div style=3D"font-size:12.=
+8px"><font color=3D"#000000" face=3D"arial, helvetica, sans-serif">Tapi jan=
+gan khawatir, seluruh peserta lomba tetap BERHAK untuk mendapatkan 1 poin S=
+KKM minat dan bakat, dan bagi peserta yang masuk TOP 20, berhak mendapatkan=
+ TIKET TI&#39;s PARTY secara cuma cuma.</font></div><div style=3D"font-size=
+:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, sans-serif"><br>=
+</font></div><div style=3D"font-size:12.8px"><b><font color=3D"#000000" fac=
+e=3D"arial, helvetica, sans-serif">TI&#39;s PARTY akan berlangsung pada:</f=
+ont></b></div><div style=3D"font-size:12.8px"><b><font color=3D"#000000" fa=
+ce=3D"arial, helvetica, sans-serif">Hari/Tanggal : Jumat/20 Mei 2016</font>=
+</b></div><div style=3D"font-size:12.8px"><b><font color=3D"#000000" face=
+=3D"arial, helvetica, sans-serif">Waktu : 17.30 - Selesai</font></b></div><=
+div style=3D"font-size:12.8px"><b><font color=3D"#000000" face=3D"arial, he=
+lvetica, sans-serif">Tempat : Student Lounge</font></b></div><div style=3D"=
+font-size:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, sans-se=
+rif"><br></font></div><div style=3D"font-size:12.8px"><font color=3D"#00000=
+0" face=3D"arial, helvetica, sans-serif">Disana kita bakal ngerayain hari u=
+lang tahun HIMTI yang ke-6, sekaligus nonton dan makan bareng sama dosen ju=
+ga loh. Bagi TOP 20=C2=A0<b>diwajibkan</b>=C2=A0untuk hadir karena akan ada=
+ pengumuman pemenang=C2=A0<b>TI-Sign Competition</b>.</font></div><div styl=
+e=3D"font-size:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, sa=
+ns-serif"><br></font></div><div style=3D"font-size:12.8px"><font color=3D"#=
+000000" face=3D"arial, helvetica, sans-serif">Untuk Pengambilan tiket bisa =
+langsung diambil di BOOTH TI&#39;s DAY yang berada di kantin gedung C dari =
+tanggal 16-20 Mei 2016.</font></div><div style=3D"font-size:12.8px"><font c=
+olor=3D"#000000" face=3D"arial, helvetica, sans-serif"><br></font></div><di=
+v style=3D"font-size:12.8px"><font color=3D"#000000" face=3D"arial, helveti=
+ca, sans-serif">Jadi, jangan lupa untuk kunjungi BOOTH TI&#39;s DAY dan men=
+angkan beberapa hadiah menarik! SEE YOU HIMTI&#39;ers!!!=C2=A0</font></div>=
+<div style=3D"font-size:12.8px"><font color=3D"#000000" face=3D"arial, helv=
+etica, sans-serif"><br></font></div><div style=3D"font-size:12.8px"><font c=
+olor=3D"#000000" face=3D"arial, helvetica, sans-serif"><b>CP:<br>Hendro Wij=
+aya</b></font></div><span class=3D"im" style=3D"font-size:12.8px"><div styl=
+e=3D"font-size:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, sa=
+ns-serif"><b>SMS/WA: 0822 8102 9700</b></font></div><div style=3D"font-size=
+:12.8px"><font color=3D"#000000" face=3D"arial, helvetica, sans-serif"><b>L=
+ine: hendrowijaya</b></font></div></span></div><div class=3D"gmail_extra"><=
+br><div class=3D"gmail_quote">2016-05-10 17:05 GMT+07:00 RANGGIH PRAMANTHA =
+(13110110107) <span dir=3D"ltr">&lt;<a href=3D"mailto:ranggih.pramantha@stu=
+dent.umn.ac.id" target=3D"_blank">ranggih.pramantha@student.umn.ac.id</a>&g=
+t;</span>:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;=
+border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><br></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font></blockquote></div><br=
+></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font>
+--001a114bdd8e7f97b60532e34ac1--

@@ -1,0 +1,479 @@
+Delivered-To: itsmetenki@gmail.com
+Received: by 10.202.55.213 with SMTP id e204csp3335118oia;
+        Thu, 19 May 2016 05:37:27 -0700 (PDT)
+X-Received: by 10.202.186.132 with SMTP id k126mr6597924oif.113.1463661447375;
+        Thu, 19 May 2016 05:37:27 -0700 (PDT)
+Return-Path: <apache@oauth-devel.localdomain>
+Received: from smtp-gw1.mcs.co.id (smtp-gw1.mcs.co.id. [175.103.51.6])
+        by mx.google.com with ESMTPS id k52si5027156otd.130.2016.05.19.05.37.26
+        for <itsmetenki@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 19 May 2016 05:37:27 -0700 (PDT)
+Received-SPF: neutral (google.com: 175.103.51.6 is neither permitted nor denied by best guess record for domain of apache@oauth-devel.localdomain) client-ip=175.103.51.6;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indowebster.com;
+       spf=neutral (google.com: 175.103.51.6 is neither permitted nor denied by best guess record for domain of apache@oauth-devel.localdomain) smtp.mailfrom=apache@oauth-devel.localdomain;
+       dmarc=pass (p=NONE dis=NONE) header.from=indowebster.com
+X-MCSBorder-Mailborder-Watermark: 1464266239.91356@t74v7/m092+TbcnlxcoiPQ
+X-MCSBorder-Mailborder-From: apache@oauth-devel.localdomain
+X-MCSBorder-Mailborder-SpamCheck: not spam, SpamAssassin (not cached, score=-0.482, required 5, BAYES_00 -1.90, DKIM_SIGNED 0.10, DKIM_VALID -0.10, DKIM_VALID_AU -0.10, HTML_IMAGE_RATIO_08 0.00, HTML_MESSAGE 0.00, MIME_HTML_ONLY 0.72, RDNS_NONE 0.79)
+X-MCSBorder-Mailborder-IP-Protocol: IPv4
+X-MCSBorder-Mailborder: Found to be clean
+X-MCSBorder-Mailborder-ID: 145E043AB8.A0679
+X-MCSBorder-Mailborder-Information: Please contact your admin for more information
+Received: from oauth-devel.localdomain (unknown [175.103.59.38]) by smtp-gw1.mcs.co.id (Postfix) with ESMTP id 145E043AB8 for <itsmetenki@gmail.com>; Thu, 19 May 2016 19:37:18 +0700 (WIB)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=indowebster.com; s=border; t=1463661438; bh=EiF1eRg2GtWvXhtL6aEPX95dngrBFlcT6TBEGygPRtQ=; h=To:Subject:From:Reply-To:Date; b=K8il3e+7VPx8Dnw2SA+pYRRagtHmx+2sAx0SnbQyRJdCTQ/DTnz+UcEewv1nUauKR
+	 bPJ4DqsxEtQLaT0Z06xwcZPv2lYzu6U5jDabIbqAeETVV6x7OQHzN4rGieqwQdrrWm
+	 AFf4sRBVAixB099oTCB4wLhDMjet2hw4aC3n7McQ=
+DomainKey-Signature: a=rsa-sha1; s=border; d=indowebster.com; c=simple; q=dns; b=i0Y0SI07miku3vHTkHHp1QHZVmBItDXq5NOyPTeneswGYWLRh99oLPEoju1Mf6Nk8 7k0WyAVCKNIgg3f7Nj8VtPnRpwLiPkddpYlG47ABOWn4YNYFrA9H9HpBnn5gdgfwiwW JjOJJK+RBAEUDMUpUJgECACcN1cvFlw6ZxaVnEY=
+Received: by oauth-devel.localdomain (Postfix, from userid 48) id 5C284A3647; Thu, 19 May 2016 19:49:42 +0700 (WIB)
+To: itsmetenki@gmail.com
+Subject: IDWS Registration
+X-PHP-Originating-Script: 502:functions.php
+From: no-reply <no-reply@indowebster.com>
+Reply-To: no-reply@indowebster.com
+MIME-Version: 1.0
+Content-type: text/html; charset=ISO-8859-1
+Message-Id: <20160519124942.5C284A3647@oauth-devel.localdomain>
+Date: Thu, 19 May 2016 19:49:42 +0700 (WIB)
+
+
+		<html>
+		<head>
+		<meta http-equiv=Content-Type content=text/html; charset=UTF-8 />
+		<meta name=viewport content=width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 />
+		<title>Indowebster Email Template</title>
+		<style type='text/css'>
+		html {
+			width:100%
+		}
+		::-moz-selection {
+			background:#63bcd4;
+			color:#fff
+		}
+		::selection {
+			background:#63bcd4;
+			color:#fff
+		}
+		body {
+			background-color:#fff;
+			margin:0;
+			padding:0
+		}
+		.ReadMsgBody {
+			width:100%;
+			background-color:#fff
+		}
+		.ExternalClass {
+			width:100%;
+			background-color:#fff
+		}
+		a {
+			color:#63bcd4;
+			text-decoration:none;
+			font-weight:400;
+			font-style:normal
+		}
+		a:hover {
+			color:#262626;
+			text-decoration:none;
+			font-weight:400;
+			font-style:normal
+		}
+		p, div {
+			margin:0!important
+		}
+		table {
+			border-collapse:collapse
+		}
+		@media only screen and (max-width:640px) {
+			body {
+				width:auto!important
+			}
+			table table {
+				width:100%!important
+			}
+			td[class=full_width] {
+				width:100%!important
+			}
+			div[class=div_scale] {
+				width:440px!important;
+				margin:0 auto!important
+			}
+			table[class=table_scale] {
+				width:440px!important;
+				margin:0 auto!important
+			}
+			td[class=td_scale] {
+				width:440px!important;
+				margin:0 auto!important
+			}
+			img[class=img_scale] {
+				width:100%!important;
+				height:auto!important
+			}
+			td[class=spacer] {
+				display:none!important
+			}
+			td[class=spacer_spec] {
+				display:none!important
+			}
+			td[class=divider] {
+				width:100%!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=center] {
+				text-align:center!important
+			}
+			td[class=social_left] {
+				float:left;
+				width:400px;
+				display:block!important;
+				text-align:center!important;
+				padding:20px!important
+			}
+			td[class=social_right] {
+				float:left;
+				width:400px;
+				display:block!important;
+				text-align:center!important;
+				padding:0 20px 20px!important
+			}
+			td[class=one_one] {
+				width:440px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_half] {
+				width:440px!important;
+				padding-bottom:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_half_last] {
+				width:440px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important;
+				padding:0!important
+			}
+			td[class=one_half_alt_last] {
+				width:440px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important;
+				padding:0!important
+			}
+			td[class=one_third] {
+				width:440px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third] {
+				width:440px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third_last] {
+				width:440px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third_alt_last] {
+				width:440px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_third_last] {
+				width:440px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_third_alt_last] {
+				width:440px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_fourth] {
+				width:85px!important;
+				display:block!important;
+				padding-left:20px!important;
+				padding-bottom:0!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_fourth_last] {
+				width:85px!important;
+				margin-top:0!important;
+				display:block!important;
+				padding-top:20px!important;
+				padding-left:20px!important;
+				float:left;
+				text-align:inherit!important
+			}
+		}
+		@media only screen and (max-width:479px) {
+			body {
+				width:auto!important
+			}
+			table table {
+				width:100%!important
+			}
+			td[class=full_width] {
+				width:100%!important
+			}
+			div[class=div_scale] {
+				width:280px!important;
+				margin:0 auto!important
+			}
+			table[class=table_scale] {
+				width:280px!important;
+				margin:0 auto!important
+			}
+			td[class=td_scale] {
+				width:280px!important;
+				margin:0 auto!important
+			}
+			img[class=img_scale] {
+				width:100%!important;
+				height:auto!important
+			}
+			td[class=spacer] {
+				display:none!important
+			}
+			td[class=spacer_spec] {
+				display:none!important
+			}
+			td[class=divider] {
+				width:100%!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=center] {
+				text-align:center!important
+			}
+			td[class=social_left] {
+				float:left;
+				width:240px;
+				display:block!important;
+				text-align:center!important;
+				padding:20px!important
+			}
+			td[class=social_right] {
+				float:left;
+				width:240px;
+				display:block!important;
+				text-align:center!important;
+				padding:0 20px 20px!important
+			}
+			td[class=one_one] {
+				width:280px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_half] {
+				width:280px!important;
+				padding-bottom:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_half_last] {
+				width:280px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important;
+				padding:0!important
+			}
+			td[class=one_half_alt_last] {
+				width:280px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important;
+				padding:0!important
+			}
+			td[class=one_third] {
+				width:280px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third] {
+				width:280px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third_last] {
+				width:280px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=two_third_alt_last] {
+				width:280px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_third_last] {
+				width:280px!important;
+				margin-top:40px!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_third_alt_last] {
+				width:280px!important;
+				margin-top:0!important;
+				display:block!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_fourth] {
+				width:110px!important;
+				display:block!important;
+				padding-left:20px!important;
+				padding-bottom:0!important;
+				float:left;
+				text-align:inherit!important
+			}
+			td[class=one_fourth_last] {
+				width:110px!important;
+				margin-top:0!important;
+				display:block!important;
+				padding-top:20px!important;
+				padding-left:20px!important;
+				float:left;
+				text-align:inherit!important
+			}
+		}
+		</style>
+
+		</head>
+		<body><table width='100%' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ecf0f1' style='padding: 0; margin: 0;'>
+
+		<tr>
+			<td class='full_width' align='center' width='100%' bgcolor='#ecf0f1' style=''><div class='div_scale' style='width:600px;'>
+			<table class='table_scale' width='600' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ecf0f1' style='padding:0; margin: 0;'>
+			<tr>
+			<td class='td_scale' width='600' height='30' bgcolor='#ecf0f1' align='center' valign='middle' style='height: 30px; padding: 0px; font-size:0 ; color:#686868; font-family: Arial,sans-serif; line-height: 0; '>&nbsp;</td>
+			</tr>
+			</table>
+			</div></td>
+		</tr>
+
+		<tr>
+			<td class='full_width' align='center' width='100%' bgcolor='#ecf0f1' style=''><div class='div_scale' style='width:600px;'>
+			<table class='table_scale' width='600' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ecf0f1' style='padding:0; margin: 0;'>
+			<tr>
+			<!-- START OF SUBJECT LINE-->
+			<td class='one_one' align='left' valign='middle' width='600' bgcolor='#ecf0f1' style='padding-top: 10px; padding-bottom: 10px;'><table width='100%'>
+			<tr>
+			<td class='center' align='left' valign='middle' style='font-family:Arial, sans-serif; font-style: italic; color:#ffffff; font-size:13px; line-height:18px;'>
+			<a href='#' style='font-style: normal;'> <img src='http://billing.indowebster.com/tambahan/desain/assets/images/logo.png' width='96' height='26' alt='image' border='0' style='display: inline-block;' /> </a></td>
+		</tr>
+		</table></td>
+
+		<!-- END OF SUBJECT LINE-->
+		</tr>
+		</table>
+								  </div></td>
+							  </tr>
+
+							  <tr>
+								<td class='full_width' align='center' width='100%' bgcolor='#ecf0f1' style=''><div class='div_scale' style='width:600px;'>
+									<table class='table_scale' width='600' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ecf0f1' style='padding:0; margin: 0;'>
+									  <tr>
+										<td class='td_scale' width='600' height='30' bgcolor='#ecf0f1' align='center' valign='middle' style='height: 30px; padding: 0px; font-size:0 ; color:#686868; font-family: Arial,sans-serif; line-height: 0; '>&nbsp;</td>
+									  </tr>
+									</table>
+								  </div></td>
+							  </tr>
+							   <tr>
+								<td class='full_width' align='center' width='100%' bgcolor='#ecf0f1' style=''><div class='div_scale' style='width:600px;'>
+									<table class='table_scale' width='' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ffffff' style='padding:0; margin: 0;'>
+									  <tr>
+										<td class='full_width' align='left' valign='top' width='600' bgcolor='#ffffff' style=''><table width='100%'>
+										<tr>
+                  <td valign='top' style='padding: 0px; font-size:13px ; color:#727272; font-family: Arial,sans-serif; line-height: 23px; '><a href='#' style='font-style: normal;'> <img class='img_scale' src='http://billing.indowebster.com/tambahan/desain/assets/images/header-email.jpg' width='600' height='100' alt='image' border='0' style='display: block;' /> </a></td>
+                </tr>
+
+		</tr>
+											<tr>
+											  <td align='left' valign='top' style='padding-top: 23px; padding-right: 30px; padding-bottom: 0; padding-left: 30px; font-size:24px ; line-height: 34px; text-transform: uppercase; color:#1f2122; font-family: Arial,sans-serif; '><a href='#' style='font-weight: normal; color:#1f2122; text-decoration: none;'> hello, flackness !</a></td>
+											</tr>
+											<tr>
+											  <td align='left' valign='top' style='padding-top: 4px; padding-right: 30px; padding-bottom: 0; padding-left: 30px; font-size:14px ; color:#999b9e; font-family: Arial,sans-serif; line-height: 24px; '>
+
+											  <p>Tinggal selangkah lagi untuk mengaktifkan akun IDWS Anda!<br>Klik link di bawah ini untuk aktivasi akun IDWS.<br><br> <a href='http://my.idws.id/activated/1066623/8pH9CdQYyAK5o0vr3bq668rFFaKTmd
+' target='_blank'>link aktivasi </a><br><br>
+                        Atau tulis dan jalankan baris kode berikut ini di browser anda:<br>http://my.idws.id/activated/1066623/8pH9CdQYyAK5o0vr3bq668rFFaKTmd
+ </p>
+
+											  <p>&nbsp;</p>
+
+											  <p>Terima kasih telah menggunakan layanan IDWS.</p>
+											  <p>&nbsp;</p>
+											  <p>Anda dapat menghubungi customer support kami:<br>
+												Telp: (021) 79188364/66, E-mail inquiry@idws.id, Yahoo Messenger: idwscs</p>
+											  <p>&nbsp;</p>
+
+
+											  <p>All the best,</p>
+											  <p>IDWS Team</p>
+											  <p><br clear='none' />
+											  </p>
+											  </td>
+											</tr>
+
+
+											<tr>
+											  <td align='left' width='' valign='top' style='padding-top: 16px; padding-right: 30px; padding-bottom: 0; padding-left: 30px;  font-size:14px ; color:#ffffff; font-family: Arial,sans-serif; line-height: 24px;'>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td height='40' bgcolor='#ffffff' style='padding:0; line-height: 0;'>&nbsp;</td>
+											</tr>
+										  </table></td>
+									  </tr>
+									</table>
+								  </div>
+
+									<!-- JUST A VERTICAL SPACER-->
+								  <div class='div_scale' style='width:600px; display: block; '>
+									<table class='table_scale' width='600' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='#ecf0f1' style='padding:0; margin: 0;'>
+									  <tr>
+										<td class='td_scale' width='600' height='40' bgcolor='#ecf0f1' align='center' valign='middle' style='height: 40px; padding: 0px; font-size:0 ; color:#686868; font-family: Arial,sans-serif; line-height: 0; '>&nbsp;</td>
+									  </tr>
+									</table>
+								  </div>
+								  <!-- END OF JUST A VERTICAL SPACER--></td>
+							  </tr>
+							  <!-- END OF 1/1 COLUMN-->
+							  <!-- START OF 1/2 COLUMN TOP IMAGE-->
+							</table>
+							</body>
+							</html>
+		

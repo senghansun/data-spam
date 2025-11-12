@@ -1,0 +1,104 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.13.68 with SMTP id 65csp878845vsn;
+        Thu, 18 May 2017 09:05:04 -0700 (PDT)
+X-Received: by 10.28.191.26 with SMTP id p26mr12383781wmf.54.1495123503027;
+        Thu, 18 May 2017 09:05:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495123502; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hVk96EeLvAODQgr0Dox2eYRcBF/gj17sysTnPUdfJNM0dbR4L2CBxO5r0LfYA4JpG5
+         9mKy6dVeKLgfxNkxYYy/tjjc5FaBJWoay7gKH51JNpLEINnMXIwALyeLlUvSCKMNoBSX
+         9cHtxoMfcmBaZfFHFAQh8IUzv88BHwcAJhTm1oZzYbKRfw0p+VV/QSrRW5PPAnn3pwTN
+         tu8vnL9vBFAEE/50zQYmyDv9poua2KsWBkcnUAEazEVbPg1p2R3YGEBxbVCygKx6OEex
+         cn2xx9PgcG4un9zIWuV66k/zHC+K0H8htSCRkNECXvrK2T3L0snYTwnGXz95Fz4RZd+G
+         LfYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=UtlCpD8dcpURayNmV5+obTAJGY1Hp1QM9MiKf1ySoxA=;
+        b=xaNXe4pK+/9Nv0RSxqZ+9hVIkQiQrgj8247uCbo3t0XTmMiNBH5T8xFZpWIQF2ccko
+         /Ht4SxOJL8K3mlV0HzZlRW9pz+mysqaACKnpDi9ZAhGfZ3GZVgOjVqIuoYQ+1mJq7Q1Z
+         HUVDNFGhFsecgJye9fv+XWPAGoHqtHvfKYTbfm/2jgtXPLW621USYWVofMWzo2da7xDG
+         hRNQTaZx7ElwqIrKFhvkyqJYawuUNZfs+aWYmTn/cvrvN2UUlJ4WzN8Zb3ErvrCL1ho1
+         nL/wx/MKM1L8QzQuTN0joqTMlsz/SlzqijJHTr683O6+2rdER72rWWtShoGMmiYfTFWD
+         jshQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of alfirizyadhi@gmail.com designates 74.125.82.44 as permitted sender) smtp.mailfrom=alfirizyadhi@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <alfirizyadhi@gmail.com>
+Received: from mail-wm0-f44.google.com (mail-wm0-f44.google.com. [74.125.82.44])
+        by mx.google.com with ESMTPS id a4si15815301wmd.30.2017.05.18.09.05.02
+        for <rikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 18 May 2017 09:05:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alfirizyadhi@gmail.com designates 74.125.82.44 as permitted sender) client-ip=74.125.82.44;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of alfirizyadhi@gmail.com designates 74.125.82.44 as permitted sender) smtp.mailfrom=alfirizyadhi@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wm0-f44.google.com with SMTP id d127so85wmf.0
+        for <rikosatrianto@gmail.com>; Thu, 18 May 2017 09:05:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=UtlCpD8dcpURayNmV5+obTAJGY1Hp1QM9MiKf1ySoxA=;
+        b=vd93d3ViHxHCJnjnDHLWac+3d/xotQ1ZUxsV8+j4MN94c+eZLTkzNhiG6bhTv0uGfh
+         Hr/nXhFvJiSHvpt6GU2WncwQqC+yPU7UNeX8CtfjitlyL/i+QRlewc+ya7jvRgBQzvQY
+         kmZSC2HnoJX1Q/dBuW3vQWossGjxvdrv9lN/ALVqo68YpEPToqOsD4OdkJIAh4u9Nrjk
+         6Xx9Lnfhboris+SpLoqKn6ej798qNQS5cuUxAhjyVY/ldmyRpHmwYbENB1k/G1CX7gxX
+         OOO47eMGDHODLpsD9ZPggL75qmyHgNy9pBqthnZOyH9OV4oDsoJ0mEqNztgabTiNruXD
+         ImuA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=UtlCpD8dcpURayNmV5+obTAJGY1Hp1QM9MiKf1ySoxA=;
+        b=eQVldbsJ+9b/vA2Cc1XdTk6raOrS5ifU7mF7NJBpYfr36buR4IGF8IwUcrvTioVjts
+         TT/uAhPD8SiiI126jYkkVbxkKglaLXdrlcmeF2Xeke5/g4X1UghDrw/oGlmVDK5z1U9B
+         1cTehk3FDIHOISQEXtNgEzhJEB4LlngWOJLWnD/tm+DBOgNN6LqgSstbPB3x6RQVCQ7g
+         +IKxIN5iTaeuoi+HLgSn8srTCvO4PHqe19WlgadrIkdt8JdAQ6haxSffPRZMDomfysTd
+         +PuRBHn8AHCNwLaYiyLFjVJwl89Her/bK7YA31Tb38SGGhycHibReyPkTJdFbm+dXSb8
+         5mTA==
+X-Gm-Message-State: AODbwcD8OqRekS3MO+0CqSpMiGUuz3Dyl5GuvdSnM5xeDN8nmxis7Bvo 1sunMyz1Q/FSMPutTaxyOucV1O2+Zw==
+X-Received: by 10.25.229.69 with SMTP id c66mr1301197lfh.102.1495123501287; Thu, 18 May 2017 09:05:01 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.25.204.150 with HTTP; Thu, 18 May 2017 09:04:58 -0700 (PDT)
+Received: by 10.25.204.150 with HTTP; Thu, 18 May 2017 09:04:58 -0700 (PDT)
+In-Reply-To: <CAF7hU+UL9BhKPrvV802LeBbSFDn1g4Z4a=ONxnQ=jFee852dQw@mail.gmail.com>
+References: <CAF7hU+UL9BhKPrvV802LeBbSFDn1g4Z4a=ONxnQ=jFee852dQw@mail.gmail.com>
+From: Alfi Rizyadhi <alfirizyadhi@gmail.com>
+Date: Thu, 18 May 2017 23:04:58 +0700
+Message-ID: <CAF7hU+X9=p+QX7h4Dxbyj2GWONx9zVxOKNV83_7Hw6HTLnS2tg@mail.gmail.com>
+Subject: Bagi 'PROPOSAL SKRIPSI DINDIN.pdf'
+To: Riko Satrianto <rikosatrianto@gmail.com>
+Content-Type: multipart/mixed; boundary="001a113c0cb23105ef054fce91af"
+
+--001a113c0cb23105ef054fce91af
+Content-Type: multipart/alternative; boundary="001a113c0cb23105e9054fce91ad"
+
+--001a113c0cb23105e9054fce91ad
+Content-Type: text/plain; charset="UTF-8"
+
+Ada proposal pnya dini sama punya gua co
+
+--001a113c0cb23105e9054fce91ad
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Ada proposal pnya dini sama punya gua co</div>
+
+--001a113c0cb23105e9054fce91ad--
+--001a113c0cb23105ef054fce91af
+Content-Type: application/pdf; name="PROPOSAL SKRIPSI DINDIN.pdf"
+Content-Disposition: attachment; filename="PROPOSAL SKRIPSI DINDIN.pdf"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 1567750560870306261-local0
+
+
+--001a113c0cb23105ef054fce91af
+Content-Type: application/pdf; name="PROPOSAL TA.pdf"
+Content-Disposition: attachment; filename="PROPOSAL TA.pdf"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 1567750560870306261-local1
+
+
+--001a113c0cb23105ef054fce91af--

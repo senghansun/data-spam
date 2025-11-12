@@ -1,0 +1,181 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.88.9 with SMTP id m9csp1667848ywb;
+        Wed, 16 Dec 2015 04:01:00 -0800 (PST)
+X-Received: by 10.50.134.233 with SMTP id pn9mr6871279igb.71.1450267260338;
+        Wed, 16 Dec 2015 04:01:00 -0800 (PST)
+Return-Path: <maria@umn.ac.id>
+Received: from mail-ig0-x22e.google.com (mail-ig0-x22e.google.com. [2607:f8b0:4001:c05::22e])
+        by mx.google.com with ESMTPS id y33si11058168ioi.7.2015.12.16.04.01.00
+        for <sylviestephanies@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 16 Dec 2015 04:01:00 -0800 (PST)
+Received-SPF: neutral (google.com: 2607:f8b0:4001:c05::22e is neither permitted nor denied by best guess record for domain of maria@umn.ac.id) client-ip=2607:f8b0:4001:c05::22e;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 2607:f8b0:4001:c05::22e is neither permitted nor denied by best guess record for domain of maria@umn.ac.id) smtp.mailfrom=maria@umn.ac.id;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com
+Received: by mail-ig0-x22e.google.com with SMTP id sf7so12825550igc.1
+        for <sylviestephanies@gmail.com>; Wed, 16 Dec 2015 04:01:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=mCBFkgwMO8HeiKf3mzciWnHe9ugP+XH9AMY0IE4t2+E=;
+        b=GyHYX5s1jpL8V6APpv3p8L6rdfctIACeMZIbMLxQ3QNteRmJX5bcz+7xsfsuSN4wTw
+         KoQkY2eGyuvwM12s2ucALe68mIKVFg7XTk88rB7Y2yA6yzmEgDezUnXI3WShJvHmECDz
+         gNGqnUad4prjHCiluJi6qE+lIOOfs0Gp7/z8L1Ou7HwcMBAWukg8XG+G6h7io5xO/AWV
+         q7m/RZL3+U+RaK0LM7dPoV0LNZnTcBje8JoKJd2xpQMFxih+dhztD0vgctrdtwM4cJ6I
+         CyUTqStg4jcMUcl0lLszk5qp4nKj4uNesR/vfRqQ05OKcP31hTODk0ITVv5fDxY9H9E6
+         J71Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to
+         :content-type;
+        bh=mCBFkgwMO8HeiKf3mzciWnHe9ugP+XH9AMY0IE4t2+E=;
+        b=BbxHCYsw4513FckZ+zPGr0vn3wS9plMr6EBxsKAh9rTge+hCU/ftmWQBYvC1Z6+aRr
+         RJUtiOOShHLw4DMfvBXZg+QEJYQg8tX36tJ7vJRne3XlFMVpsmKkVh1ntLsBKbO+EXQr
+         fjtBypTjGXD3uhLAdHIXTemMHjblx0OQpH0apQrLrUY9ydvJwyyCXbEhqn7+qIboodUR
+         CwyPsdcE6PHTIr4BSiurz92Tw1eSUfi1XsL0Q0uyfv32Z8XjgbQaiusuBVXMgFmkSi6e
+         kOkPqYJZVkpx7H/OpZYysSR1taEikVZysHparhEKr6xoIjkMLNs83ZllXnpNwPF9jrM7
+         whNA==
+X-Gm-Message-State: ALoCoQlnZu6dnAanJd30iSvokOZSDm56emOeaf1xqqNyaCIfQf6hwAhNSfrwUJPKliX0i8klS0ciD5lemORTffr1OTRLsYR0AMe120u34Qjv5oAdeZtqgQ5QwqtFVvjT80Oz5l00PmGf/93s35tMz+k63iJj4UfQjbA3DFn9OsX5WHQGQYiiwwg=
+MIME-Version: 1.0
+X-Received: by 10.50.65.39 with SMTP id u7mr9005222igs.85.1450267260062; Wed,
+ 16 Dec 2015 04:01:00 -0800 (PST)
+Received: by 10.107.161.146 with HTTP; Wed, 16 Dec 2015 04:01:00 -0800 (PST)
+Date: Wed, 16 Dec 2015 19:01:00 +0700
+Message-ID: <CAED465CO0VU_p37JEAD4YrT3Qtxw6H7-KJ9B0fbPP_R-2kV3qw@mail.gmail.com>
+Subject: Undangan acara puncak CSIC 2015
+From: Maria Irmina P <maria@umn.ac.id>
+To: Julius Tanuwijaya 14110110027 <julius.tanuwijaya@student.umn.ac.id>, 
+	Albert Yeusiawan <a.yeusiawan.h@gmail.com>, Ranggih Pramantha <pramantharanggih@gmail.com>, 
+	junius primavera <juniusprim14@gmail.com>, 
+	"DIAN KARTIKA PUSPITARANI (00000009308)" <dian.puspitarani@student.umn.ac.id>, devin.ryan@student.umn.ac.id, 
+	andri wan <andriwan1@gmail.com>, Michael Tjoe <michaeltjoee@gmail.com>, EricGaniwijaya@yahoo.com, 
+	Owen Yuwono <owenyuwono@gmail.com>, julio.edbert@student.umn.ac.id, 
+	hendro.wijaya@student.umn.ac.id, charlesx29@outlook.com, 
+	Aurelia.rianto@student.umn.ac.id, andre.utomo@student.umn.ac.id, 
+	hendrix@student.umn.ac.id, Sylvie Stephanie <sylviestephanies@gmail.com>, 
+	Valiant Azarya <valiant.azarya@student.umn.ac.id>, 
+	Ronny Susanto <My.name.is.ronny.susanto@gmail.com>, yoan.pratama@student.umn.ac.id, 
+	"JULIA (12110110036)" <julia@student.umn.ac.id>, Bun Bun <bebegede@hotmail.com>, 
+	VERONICA DIAN SARI <veronica.sari@student.umn.ac.id>, 
+	GEORGE JOSEPH KRISTIAN <george.kristian@student.umn.ac.id>, 
+	RADITYA ADI BASKARA <raditya.adi@student.umn.ac.id>, audy@student.umn.ac.id, 
+	joshua5@student.umn.ac.id, Aswin Darmasaputra <aswindarma16@gmail.com>, 
+	cindy_astrina@yahoo.co.id, eka.cahya@student.umn.ac.id
+Content-Type: multipart/alternative; boundary=047d7b2e1455ddf095052702a8e2
+
+--047d7b2e1455ddf095052702a8e2
+Content-Type: text/plain; charset=UTF-8
+
+Terima kasih atas partisipasi rekan-rekan dalam Lomba Computer Science
+Innovation Challenge 2015.
+Apabila rekan-rekan berkenan untuk mengikutsertakan aplikasi/ide yang telah
+diusulkan ini dalam Program Kreativitas Mahasiswa (PKM) 2016, silahkan
+menghubungi program studi Teknik Informatika.
+Kami mengundang rekan-rekan untuk dapat hadir pada:
+Hari dan tanggal : Kamis, 17 Desember 2015
+Waktu                  : pk 08.00 - selesai
+Tempat                : Lecturer Theater/Lecturer Hall, Gedung C - Lantai
+3, Universitas Multimedia Nusantara
+Acara                    : - Presentasi 10 finalis
+                                - Nonton film bareng
+Rekan-rekan berkesempatan untuk mendapatkan hadiah menarik dari acara
+tersebut.
+
+
+Salam
+
+-- 
+
+*~ Maria Irmina P ~*
+Head of Computer Science Department
+Universitas Multimedia Nusantara
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--047d7b2e1455ddf095052702a8e2
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div><div><div><div><div><font size=3D"4"><span =
+style=3D"font-family:georgia,serif">Terima kasih atas partisipasi rekan-rek=
+an dalam Lomba Computer Science Innovation Challenge 2015.<br></span></font=
+></div><font size=3D"4"><span style=3D"font-family:georgia,serif">Apabila r=
+ekan-rekan berkenan untuk mengikutsertakan aplikasi/ide yang telah diusulka=
+n ini dalam Program Kreativitas Mahasiswa (PKM) 2016, silahkan menghubungi =
+program studi Teknik Informatika.<br></span></font></div><font size=3D"4"><=
+span style=3D"font-family:georgia,serif">Kami mengundang rekan-rekan untuk =
+dapat hadir pada:<br></span></font></div><font size=3D"4"><span style=3D"fo=
+nt-family:georgia,serif">Hari dan tanggal : Kamis, 17 Desember 2015<br></sp=
+an></font></div><font size=3D"4"><span style=3D"font-family:georgia,serif">=
+Waktu=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 : pk 08.00 - selesai<br></span></font></d=
+iv><font size=3D"4"><span style=3D"font-family:georgia,serif">Tempat=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 : Lecturer Theater/Lecturer Hall, Gedung C - Lantai 3, Universita=
+s Multimedia Nusantara<br></span></font></div><font size=3D"4"><span style=
+=3D"font-family:georgia,serif">Acara=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+ : - Presentasi 10 finalis<br></span></font></div><font size=3D"4"><span st=
+yle=3D"font-family:georgia,serif">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 - =
+Nonton film bareng<br></span></font><div><div><div><div><div><div><div><div=
+><font size=3D"4"><span style=3D"font-family:georgia,serif">Rekan-rekan ber=
+kesempatan untuk mendapatkan hadiah menarik dari acara tersebut.<br><br><br=
+></span></font></div><div><font size=3D"4"><span style=3D"font-family:georg=
+ia,serif">Salam</span></font>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0 </div><div><div><br>-- <br><div class=3D"gmail_signature"><=
+div dir=3D"ltr"><div><div><b><span style=3D"font-family:comic sans ms,sans-=
+serif">~ Maria Irmina P ~<br></span></b></div><span style=3D"font-family:co=
+mic sans ms,sans-serif">Head of Computer Science Department<br></span></div=
+><span style=3D"font-family:comic sans ms,sans-serif">Universitas Multimedi=
+a Nusantara</span><br></div></div>
+</div></div></div></div></div></div></div></div></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://umn.ac.id/include/images/template/logo-for-twitter22.png"></d=
+iv><div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><b=
+ style=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" size=3D"4">=
+Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font></b></div><div style=
+=3D"font-size:1.3em"><font face=3D"arial, sans-serif" color=3D"#0000ff" siz=
+e=3D"2"><span style=3D"background-color:rgb(255,255,255)"><b><i>&quot;<font=
+>Excellent Career Begins With Excellent Education</font>&quot;</i></b></spa=
+n></font></div><div style=3D"font-size:1.3em"><span style=3D"font-size:smal=
+l;font-family:arial,sans-serif;background-color:rgb(255,255,255)">Jl. Scien=
+tia Boulevard, Gading Serpong,</span></div><font size=3D"2"><span style=3D"=
+font-family:arial,sans-serif;background-color:rgb(255,255,255)">Tangerang, =
+Banten - 15811 Indonesia</span><br style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-seri=
+f;background-color:rgb(255,255,255)">(t)=C2=A0</span><a value=3D"+622154220=
+808" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-=
+color:rgb(255,255,255)">+62-21. 5422.0808</a><span style=3D"font-family:ari=
+al,sans-serif;background-color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a=
+ value=3D"+622154220800" style=3D"font-family:arial,sans-serif;color:rgb(17=
+,85,204);background-color:rgb(255,255,255)">+62-21. 5422.0800</a><span styl=
+e=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">;</spa=
+n><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,25=
+5)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">Facebook: Universitas Multimedia Nusantara</span><br style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"f=
+ont-family:arial,sans-serif;background-color:rgb(255,255,255)">Twitter: @um=
+n_serpong</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.umn.ac.id/" st=
+yle=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:r=
+gb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)">=C2=A0</span></font=
+>
+--047d7b2e1455ddf095052702a8e2--

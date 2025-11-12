@@ -1,0 +1,80 @@
+﻿Delivered-To: sherra.rizka@gmail.com
+Received: by 10.12.210.211 with SMTP id x19csp5168789qvh;
+        Thu, 24 Aug 2017 09:25:17 -0700 (PDT)
+X-Received: by 10.98.70.151 with SMTP id o23mr5842949pfi.34.1503591917450;
+        Thu, 24 Aug 2017 09:25:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1503591917; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rln98Pxurk5S6GnQXPtAi/CvjMcSN9W7fQ2GFr5Z0w2ncbPsTGCKfv71OyJm8LHKPG
+         iGKNfNJPQiHQtSwkJyAd9k5XVEIsmnT6Fk0sexZLGoqGtr77Xu8TwbgEemwIEoCufEgw
+         1LsL7ogbSkGnMMr3nycquGvBG5cxc3LUJhm6vo58QNpRLzj4uhFKvmCLsz8tZCKHkm+3
+         DL5RORz4gYVqSpALE8ItbtB9YYYIjyKHGgg2+My4ez9V3ANJ0JAnzczXRM/i/bENedky
+         mYOqXwWru+m2o30kCbuTosx8HsOrPE/8F22kyHR+IyI6ZZFHcXvuYy7+lAG3yvtj5EE+
+         fohg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :from:to:date:arc-authentication-results;
+        bh=2VgWwO8u/qhQE1+PHnIQpxhsMKG8LbP9vp3I7z6ALkU=;
+        b=GnTto5NwREbxfMl1sBzCabpOl7DdG0C1/8mRptGtF75eizyUKzeUS0knGK9GbkIL7A
+         xNPFI2uuxJOtRACYss1vkaaMz+9vXaDCo991GrkMqjTh8sOZWJBgvqOqjSvhDLOJO99t
+         2sxB55ENOXPAhkKX7u2PnCxasqW4gVliyY+A37oSNRiOKSOx03XXkLgb8ozhMVT3kYYm
+         rtCCXTtNBVDz0M51bTYdH06Ux2GnCo4sD71kRQXmk65U04ICLyOZXqN0pQEspaxDYQfW
+         ar7H+O0sCsqC9Cm1RM8GHTpoe4NK8zHmyclIRAypj4FNUhoUHSeTWpVj2tM1NmL7Ds3h
+         IYKg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 103.87.196.2 is neither permitted nor denied by best guess record for domain of e-bursakerja@naker.go.id) smtp.mailfrom=e-bursakerja@naker.go.id
+Return-Path: <e-bursakerja@naker.go.id>
+Received: from Mail.naker.go.id ([103.87.196.2])
+        by mx.google.com with ESMTPS id y94si3213199plh.826.2017.08.24.09.25.17
+        for <sherra.rizka@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 24 Aug 2017 09:25:17 -0700 (PDT)
+Received-SPF: neutral (google.com: 103.87.196.2 is neither permitted nor denied by best guess record for domain of e-bursakerja@naker.go.id) client-ip=103.87.196.2;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 103.87.196.2 is neither permitted nor denied by best guess record for domain of e-bursakerja@naker.go.id) smtp.mailfrom=e-bursakerja@naker.go.id
+Received: from e-bursakerja.kemnaker.go.id (192.168.212.118) by Mail.naker.go.id (192.168.99.189) with Microsoft SMTP Server (TLS) id 14.3.301.0; Thu, 24 Aug 2017 23:28:25 +0700
+Date: Thu, 24 Aug 2017 16:25:15 +0000
+To: "Hello ,Sherra Rizka Rachman" <sherra.rizka@gmail.com>
+From: e-bursa kerja <e-bursakerja@naker.go.id>
+Reply-To: First Last <e-bursakerja@naker.go.id>
+Subject: Registrasi e-bursa kerja
+Message-ID: <97f81c5e21e8117886b998f843d70266@e-bursakerja.kemnaker.go.id>
+X-Mailer: PHPMailer 5.2.14 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_97f81c5e21e8117886b998f843d70266"
+Content-Transfer-Encoding: 8bit
+Return-Path: e-bursakerja@naker.go.id
+X-Originating-IP: [192.168.212.118]
+
+--b1_97f81c5e21e8117886b998f843d70266
+Content-Type: text/plain; charset="us-ascii"
+
+This is a plain-text message body
+
+
+--b1_97f81c5e21e8117886b998f843d70266
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+<div align='center'>
+	<div style='font-family: Arial;width:380px !important;'>
+		<div style='background-color: #15406A; padding:3px; color:#fff;'>
+		<h4 align='center'>e-bursa kerja <br> Direktorat Penempatan Tenaga Kerja Dalam Negeri <br> Direktorat Jenderal Pembinaan Penempatan <br> Tenaga Kerja dan Perluasan Kesempatan Kerja <br> Kementerian Ketenagakerjaan RI</h4>
+		</div>
+		<div style='background-color: #f0f0f0; padding:3px;'>
+		<p><small align='center'>Terima kasih anda telah melakukan registrasi pada website <br> e-bursa kerja. <br> Print barcode dibawah ini dan harap dibawa sebagai tanda masuk Jobfair kemennaker RI</small></p>
+		 <div align='center'>
+		 	 <img style='width: 140px' src='http://e-bursakerja.kemnaker.go.id/assets/img/qr/GeB2iIwyTM.png'>
+		 </div>
+		 Sherra Rizka Rachman
+		 <br>
+		 </div>
+		 <div style='background-color: #15406A; padding:3px; color:#fff;'>
+		<p><small align='center'>� 2016 Kementerian Ketenagakerjaan RI.</small></p>
+		</div>
+	</div>
+</div>
+
+
+
+--b1_97f81c5e21e8117886b998f843d70266--

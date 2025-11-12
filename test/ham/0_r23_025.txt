@@ -1,0 +1,660 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.5.131 with SMTP id 125csp2944266vsf;
+        Thu, 10 Aug 2017 10:33:46 -0700 (PDT)
+X-Received: by 10.107.139.13 with SMTP id n13mr10284178iod.253.1502386426807;
+        Thu, 10 Aug 2017 10:33:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502386426; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VFwGCooNWHxBE1uutipCUDyoBzzPtscXxsSr1CA7UvyTM/tqxGJiaHPdH57ZuU6uEg
+         Ea9ivVSs7VhLlJEWBuHDtXsel2cyUqwYguzcK7vBXuGYOyZdVqKBiDkgfjIlaTK8VEU3
+         STkb5bdSon4J0KxsfbTaab+F1wu2OZGc02+MjmlqOiPnhoqvtwf6SC3ISBL9TzbtZJqy
+         2j5L9CCIQD6YFlPnpfxe/fIwAGaP+9FpPs+nrGXiFRjdCAiXl37XKXSycczjjxuidiVb
+         E21uaaVc9BAn1Nusq+bMvoMshYhohzgBKQvxd4PAUec6+iokKxpiIqmndBHQe4RdTso9
+         2Mvw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:content-transfer-encoding
+         :date:sender:domainkey-signature:dkim-signature:domainkey-signature
+         :dkim-signature:arc-authentication-results;
+        bh=Km4AQgDaqdk0qUrb+H6LSk9C3vvA4TV6DZrTmwh/82s=;
+        b=C99cFe6mJ+OvXmF4OGv5l0L80rYT8cIQ3JWm8vWutzLRea1EAtLtXDXPXDWYWT9GKC
+         N/OnH6YX/QGbO5Q0XH8tXngePNehxvgoi6ssokttF2z4TvZhHYL494PqowV/8UwgZAPA
+         E1uCZ3KFwiw43hk0adg8LkUd2oEh6/rsriKPtnIQcr6M7mwlEfOFW6hbPLfShbigKB94
+         +XTlvOspMpfBx06zYGDO5/w1HnDxNPe0HJSvtkSm3Z7TMZvx+s1RROKf66PxFpk1djji
+         aLMb6i6q18y4PPpo6Sq0NQi8kVknRMw5QjyO1VftyffW3Tzmn0FoAvoRNolMTNKEKhBE
+         EV0w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@noreply.bukalapak.com header.s=mx header.b=jrlpFW6D;
+       dkim=pass header.i=@sand.mailgun.org header.s=mx header.b=T93tSnWc;
+       spf=pass (google.com: domain of bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com designates 23.253.182.47 as permitted sender) smtp.mailfrom=bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+Return-Path: <bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com>
+Received: from mail-182-47.mailgun.info (mail-182-47.mailgun.info. [23.253.182.47])
+        by mx.google.com with UTF8SMTPS id p129si7637877itd.106.2017.08.10.10.33.46
+        for <rikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 10 Aug 2017 10:33:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com designates 23.253.182.47 as permitted sender) client-ip=23.253.182.47;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@noreply.bukalapak.com header.s=mx header.b=jrlpFW6D;
+       dkim=pass header.i=@sand.mailgun.org header.s=mx header.b=T93tSnWc;
+       spf=pass (google.com: domain of bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com designates 23.253.182.47 as permitted sender) smtp.mailfrom=bounce+4a2c68.b2717-rikosatrianto=gmail.com@noreply.bukalapak.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=bukalapak.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=noreply.bukalapak.com; q=dns/txt; s=mx; t=1502386426; h=Mime-Version: Content-Type: Subject: From: To: Message-Id: Content-Transfer-Encoding: Date: Sender: X-Feedback-Id; bh=Km4AQgDaqdk0qUrb+H6LSk9C3vvA4TV6DZrTmwh/82s=; b=jrlpFW6D3P5jVb1ZvMcmGir9F4IBIuo0g5K06YJYaa0DlaksD8stioNMs3bl3+2WF+NmWhfn MY0oE9HppbJcphvikiaC9VG0YkCPhC/BUVxJPmDMda0kFp/LO7cjmqyjP8PefF+mqbpOkyej 67/4CtoomY3Q7fxo5LCOc6AcAfg=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=noreply.bukalapak.com; s=mx; q=dns; h=X-Feedback-Id: Sender: Date: Content-Transfer-Encoding: Message-Id: To: From: Subject: Content-Type: Mime-Version; b=ePmrUzc725E2hJQJ7C0qptGp15Rgo9E9AyxkdKbz+YiHH4rwGk6qunQb1dOIJF4dpVzZ2K UZsPjx+PqvZuwYfrA+sKZ1adkAHxU65+muFOkf/TwAMHLmqW5kae5Q6JI24WIAZVC2S5CP63 hYg2WyJ4hprK5coFI+bIZTpnuGfwA=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=sand.mailgun.org; q=dns/txt; s=mx; t=1502386426; h=Mime-Version: Content-Type: Subject: From: To: Message-Id: Content-Transfer-Encoding: Date: Sender: X-Feedback-Id; bh=Km4AQgDaqdk0qUrb+H6LSk9C3vvA4TV6DZrTmwh/82s=; b=T93tSnWcgrsO/HZaoj0JbGujcx1cXWBG7wDoP3Atu5mgTLxBy+bZE2+4Uh95QvQcDFiSioZg AVskqA3Z6rqk70TAFRpM/sTK56jkcVgL+j0ZnaDXY5QqcKhF6sG1AQL2+CnkgtWV6M47ZlqC LYNu0nxKXNBu9vqx4Wc5+s/EC84=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=sand.mailgun.org; s=mx; q=dns; h=X-Feedback-Id: Sender: Date: Content-Transfer-Encoding: Message-Id: To: From: Subject: Content-Type: Mime-Version; b=TIWlmkn9v0v4UCZWfBwRIvplEDJRQPnb1sOu0EUia9gI1XEROUty1XjhYwEd/0k5aOV5H8 JKQ01rLySqoqv3ulo4ptsWHY7qZFV3aHFXSI7vTEM3M/GLqkNncCKET3uMA+adI+ue499pA3 OcxBqVzSbM5U2DOBvNU85bO+DssBM=
+X-Feedback-Id: 5714ae9a4cd30028b9e92ee7:mailgun
+Sender: mail@noreply.bukalapak.com
+Date: Thu, 10 Aug 2017 17:33:46 +0000
+X-Mailgun-Sending-Ip: 23.253.182.47
+X-Mailgun-Sid: WyJhZmY3NSIsICJyaWtvc2F0cmlhbnRvQGdtYWlsLmNvbSIsICJiMjcxNyJd
+Content-Transfer-Encoding: quoted-printable
+Received: by luna.mailgun.net with HTTP; Thu, 10 Aug 2017 17:33:44 +0000
+Message-Id: <20170810173344.27836.1C208C01AB2AEFF6@noreply.bukalapak.com>
+X-Mc-Tags: warn_device_not_authorized
+To: rikosatrianto@gmail.com
+From: Bukalapak <mail@noreply.bukalapak.com>
+Subject: Pemberitahuan Device Login
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Pemberitahuan Device Login</title>
+
+
+<style>body {
+width: 100% !important;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+}
+body {
+margin: 0; padding: 0;
+}
+img {
+border: 0 none; height: auto; line-height: 100%; outline: none; text-decora=
+tion: none;
+}
+body {
+background-color: #f8f8f8;
+}
+</style>
+</head>
+<body leftmargin=3D"0" marginheight=3D"0" marginwidth=3D"0" offset=3D"0" to=
+pmargin=3D"0" style=3D"width: 100% !important; -webkit-text-size-adjust: no=
+ne; margin: 0; padding: 0;" bgcolor=3D"#f8f8f8">
+<center class=3D"simplifyEmailCenterWrapper" style=3D"display: block; text-=
+align: center;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" id=
+=3D"simplifyEmailOuterTable" width=3D"100%" style=3D"border-collapse: colla=
+pse; border-spacing: 0; margin: 0; padding: 0;">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"templateContainer" width=3D"600" style=3D"border-collapse: collapse;=
+ border-spacing: 0; margin: 0 auto; padding: 0;">
+<tr>
+<td align=3D"left" style=3D'border-collapse: collapse; border-spacing: 0; f=
+ont-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; =
+padding: 0;'>
+<table width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0=
+; margin: 0; padding: 0;">
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td width=3D"550" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'>
+<img src=3D"https://www.bukalapak.com/images/logo/single_352x56_0_red_03052=
+016.png" style=3D"width: 176px; height: 28px; line-height: 100%; outline: n=
+one; text-decoration: none; border: 0 none;">
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td bgcolor=3D"#ffffff" id=3D"contentContainer" style=3D'border-collapse: c=
+ollapse; border-spacing: 0; font-family: "Arial", sans-serif; color: #999; =
+line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" width=3D"100%" style=3D"border-collapse: collapse; bo=
+rder-spacing: 0; margin: 0; padding: 0;">
+<tr>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"20" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td align=3D"left" width=3D"550" style=3D'border-collapse: collapse; border=
+-spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.=
+5; margin: 0; padding: 0;'>
+<table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; margin: 0; padding: 0;" width=3D"100%=
+">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Hai Rico Satrianto,</p>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>=
+=C2=A0</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Akun Bukalapak kamu telah diguna=
+kan untuk masuk menggunakan Windows pada:</p>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>=
+=C2=A0</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 10px 3=
+0px;'>
+<table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; margin: 0; padding: 0;" width=3D"100%=
+">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Browser</p>
+</td>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>:</p>
+</td>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Chrome</p>
+
+</td>
+</tr>
+<tr>
+<td style=3D'width: 20; border-collapse: collapse; border-spacing: 0; font-=
+family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; padd=
+ing: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Waktu</p>
+</td>
+<td style=3D'width: 5%; border-collapse: collapse; border-spacing: 0; font-=
+family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; padd=
+ing: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>:</p>
+</td>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Jum=E2=80=99at, 11 Agustus 2017 =
+pukul 00:33 WIB</p>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Lokasi</p>
+</td>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>:</p>
+</td>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Indonesia</p>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>=
+=C2=A0</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Jika kamu merasa <span style=3D'=
+font-size: 14px; color: #000; font-weight: bold; font-family: "Arial", sans=
+-serif; line-height: 1.5; margin: 0; padding: 0;'>tidak melakukan login</sp=
+an>, segera ubah password untuk mengamankan akunmu di <a href=3D"http://gli=
+mpsetrack.net/redirect?link=3Dhttps%3A%2F%2Fwww.bukalapak.com%2Freset%2Fk3e=
+lwqj8rJEbG6zPRun1&amp;llsttu=3D85e530e2e10b88722ea1668d9713b352906dd371e60b=
+42ba281b847ea446247b&amp;subject=3DPemberitahuan+Device+Login&amp;tag=3Dwar=
+n_device_not_authorized&amp;type=3DClickEmail&amp;user_email=3Drikosatriant=
+o%40gmail.com" style=3D'text-decoration: underline; font-family: "Arial", s=
+ans-serif; color: #a30046 !important; line-height: 1.5; font-size: 14px; ma=
+rgin: 0; padding: 0;'><span style=3D'color: #FF0000; font-size: 16px; font-=
+weight: bold; font-family: "Arial", sans-serif; line-height: 1.5; margin: 0=
+; padding: 0;'>sini</span></a>.</p>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>=
+=C2=A0</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 0 5p=
+x;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #555; line-height: 1.5=
+; font-size: 14px; margin: 0; padding: 0;'>Untuk informasi lebih lanjut, si=
+lakan hubungi kami melalui halaman Hubungi Bukalapak.</p>
+</td>
+</tr>
+</table>
+
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"30" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"30" width=3D"550" style=3D'border-collapse: collapse; border-=
+spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'></td>
+<td height=3D"30" width=3D"15" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" id=3D"securityAnnouncementWrapper" width=3D"100%" sty=
+le=3D"border-collapse: collapse; border-spacing: 0; font-size: 12px; margin=
+: 0; padding: 0;" bgcolor=3D"#f0f0f0">
+<tr>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"24" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"10" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"516" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+</tr>
+<tr>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td height=3D"26" width=3D"24" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'>
+<img alt=3D"Hati-hati" src=3D"https://www.bukalapak.com/images/icon_warning=
+.png" style=3D"height: auto; line-height: 100%; outline: none; text-decorat=
+ion: none; border: 0 none;">
+</td>
+<td width=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+<td align=3D"left" width=3D"516" style=3D'border-collapse: collapse; border=
+-spacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.=
+5; margin: 0; padding: 0;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Segala bentuk informasi seperti
+<b>
+nomor kontak, alamat e-mail, atau password kamu bersifat rahasia.
+</b>
+Jangan menginformasikan data-data tersebut kepada siapa pun, termasuk kepad=
+a pihak yang mengatasnamakan Bukalapak.
+</p>
+</td>
+<td width=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"24" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"10" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"516" style=3D'border-collapse: collapse; border-s=
+pacing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5;=
+ margin: 0; padding: 0;'></td>
+<td height=3D"5" width=3D"15" style=3D'border-collapse: collapse; border-sp=
+acing: 0; font-family: "Arial", sans-serif; color: #999; line-height: 1.5; =
+margin: 0; padding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table width=3D"100%" style=3D"border-collapse: collapse; border-spacing: 0=
+; margin: 0; padding: 0;">
+<tr>
+<td height=3D"30" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table align=3D"left" class=3D"footerWrapper" style=3D"text-align: left; bo=
+rder-collapse: collapse; border-spacing: 0; font-size: 11px; line-height: 1=
+.7; margin: 0; padding: 0;" width=3D"300">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Copyright =C2=A9 2017 PT Bukalapak.com. All Rights Reserved
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Plaza City View Lt. 1 Jl. Kemang Timur No. 22
+</p>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Jakarta Selatan Indonesia 12510
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+<table align=3D"right" class=3D"footerWrapper text-right" width=3D"250" sty=
+le=3D"border-collapse: collapse; border-spacing: 0; text-align: right; font=
+-size: 11px; line-height: 1.7; margin: 0; padding: 0;">
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<ul class=3D"inline-list non-list-style" style=3D"list-style-type: none; ma=
+rgin: 0; padding: 0;">
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Fbukl.pk%2FAnDrOiDaPp&amp;llsttu=3D36159488642372c35efc9d99b6a2577ee6=
+fbf1f4b8bcc67cb6a734c3b1be8e9d&amp;subject=3DPemberitahuan+Device+Login&amp=
+;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&amp;user_email=3Dri=
+kosatrianto%40gmail.com" style=3D'font-family: "Arial", sans-serif; color: =
+#a30046 !important; line-height: 1.5; text-decoration: none; margin: 0; pad=
+ding: 0;'><img alt=3D"Download Aplikasi Android Bukalapak" style=3D"width: =
+100px; height: 33px; line-height: 100%; outline: none; text-decoration: non=
+e; border: 0 none;" src=3D"https://www.bukalapak.com/images/mailer/simplify=
+_template/downloadAndroid.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fitunes.apple.com%2Fid%2Fapp%2Fbukalapak-jual-beli-online%2Fid100316=
+9137%3Fmt%3D8&amp;llsttu=3Dde0ec6c777a756a0cd7aad61bb177d231fb9f1229d29fab7=
+85e1af7c43b9dc4b&amp;subject=3DPemberitahuan+Device+Login&amp;tag=3Dwarn_de=
+vice_not_authorized&amp;type=3DClickEmail&amp;user_email=3Drikosatrianto%40=
+gmail.com" style=3D'font-family: "Arial", sans-serif; color: #a30046 !impor=
+tant; line-height: 1.5; text-decoration: none; margin: 0; padding: 0;'><img=
+ alt=3D"Download Aplikasi iOS Bukalapak" style=3D"width: 100px; height: 33p=
+x; line-height: 100%; outline: none; text-decoration: none; border: 0 none;=
+" src=3D"https://www.bukalapak.com/images/mailer/simplify_template/download=
+Ios.png">
+</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td height=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<ul class=3D"inline-list non-list-style" style=3D"list-style-type: none; ma=
+rgin: 0; padding: 0;">
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Ffacebook.com%2Fbukalapak&amp;llsttu=3D1f43d59a77b37968155e62d6e834c4=
+42a3b662e07c60f75903ce37c7eb68a352&amp;subject=3DPemberitahuan+Device+Login=
+&amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&amp;user_email=
+=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial", sans-serif; co=
+lor: #a30046 !important; line-height: 1.5; text-decoration: none; margin: 0=
+; padding: 0;'><img alt=3D"Facebook Bukalapak" style=3D"width: 24px; height=
+: 24px; line-height: 100%; outline: none; text-decoration: none; border: 0 =
+none;" src=3D"https://www.bukalapak.com/images/mailer/simplify_template/fac=
+ebook.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttp%3=
+A%2F%2Ftwitter.com%2Fbukalapak&amp;llsttu=3Da878c37ae9fe7b00204cbb9f6e7e057=
+1cfe6aa5d0044d5b017e70cb3dfb1037e&amp;subject=3DPemberitahuan+Device+Login&=
+amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&amp;user_email=
+=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial", sans-serif; co=
+lor: #a30046 !important; line-height: 1.5; text-decoration: none; margin: 0=
+; padding: 0;'><img alt=3D"Twitter Bukalapak" style=3D"width: 24px; height:=
+ 24px; line-height: 100%; outline: none; text-decoration: none; border: 0 n=
+one;" src=3D"https://www.bukalapak.com/images/mailer/simplify_template/twit=
+ter.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fplus.google.com%2F%2Bbukalapakdotcom&amp;llsttu=3D47e1321afdf22cd1b=
+1d4f65e19defc0e9fa8f1bb5a0bd16bb5da9f1e86826f1e&amp;subject=3DPemberitahuan=
++Device+Login&amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&am=
+p;user_email=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial", sa=
+ns-serif; color: #a30046 !important; line-height: 1.5; text-decoration: non=
+e; margin: 0; padding: 0;'><img alt=3D"Google+ Bukalapak" style=3D"width: 2=
+4px; height: 24px; line-height: 100%; outline: none; text-decoration: none;=
+ border: 0 none;" src=3D"https://www.bukalapak.com/images/mailer/simplify_t=
+emplate/googlePlus.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fwww.youtube.com%2Fuser%2Fbukalapak&amp;llsttu=3D10fe5a4695cdf239c45=
+b23a5ce2e446e8d4d4f30a707b4df8ba030be319345c4&amp;subject=3DPemberitahuan+D=
+evice+Login&amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&amp;=
+user_email=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial", sans=
+-serif; color: #a30046 !important; line-height: 1.5; text-decoration: none;=
+ margin: 0; padding: 0;'><img alt=3D"Youtube Bukalapak" style=3D"width: 24p=
+x; height: 24px; line-height: 100%; outline: none; text-decoration: none; b=
+order: 0 none;" src=3D"https://www.bukalapak.com/images/mailer/simplify_tem=
+plate/youtube.png">
+</a>
+</li>
+<li style=3D"display: inline-block;">
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Finstagram.com%2Fbukalapak%2F&amp;llsttu=3D2252f3d0a3a397d3828021931=
+1bb3ee8cd7dbe7b2d5510813e03e880dfd6271c&amp;subject=3DPemberitahuan+Device+=
+Login&amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEmail&amp;user_e=
+mail=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial", sans-serif=
+; color: #a30046 !important; line-height: 1.5; text-decoration: none; margi=
+n: 0; padding: 0;'><img alt=3D"Instagram Bukalapak" style=3D"width: 24px; h=
+eight: 24px; line-height: 100%; outline: none; text-decoration: none; borde=
+r: 0 none;" src=3D"https://www.bukalapak.com/images/mailer/simplify_templat=
+e/instagram.png">
+</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table id=3D"footerSeparator" width=3D"100%" style=3D"border-collapse: coll=
+apse; border-spacing: 0; table-layout: fixed; border-top-width: 2px; border=
+-top-style: solid; border-top-color: #ccc; margin: 0; padding: 0;">
+<tr>
+<td height=3D"2" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0;'>
+<table id=3D"additionalFooterWrapper" width=3D"100%" style=3D"border-collap=
+se: collapse; border-spacing: 0; font-size: 10px; text-align: center; margi=
+n: 0; padding: 0;">
+<tr>
+<td height=3D"10" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Anda memperoleh e-mail ini karena keanggotaan Anda pada Bukalapak.com. Anda=
+ bisa mengubah
+<a target=3D"_blank" href=3D"http://glimpsetrack.net/redirect?link=3Dhttps%=
+3A%2F%2Fwww.bukalapak.com%2Fnotification_settings&amp;llsttu=3D5523f18b2e65=
+f9583c105f3c2702abd81dcf636ba655614c38c278e0b6d91295&amp;subject=3DPemberit=
+ahuan+Device+Login&amp;tag=3Dwarn_device_not_authorized&amp;type=3DClickEma=
+il&amp;user_email=3Drikosatrianto%40gmail.com" style=3D'font-family: "Arial=
+", sans-serif; color: #a30046 !important; line-height: 1.5; text-decoration=
+: none; margin: 0; padding: 0;'>pengaturan notifikasi</a>
+kapanpun.
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"5" style=3D'border-collapse: collapse; border-spacing: 0; fon=
+t-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; pa=
+dding: 0;'></td>
+</tr>
+<tr>
+<td style=3D'border-collapse: collapse; border-spacing: 0; font-family: "Ar=
+ial", sans-serif; color: #999; line-height: 1.5; margin: 0; padding: 0 10px=
+;'>
+<p style=3D'font-family: "Arial", sans-serif; color: #999; line-height: 1.5=
+; margin: 0; padding: 0;'>
+Harap jangan membalas e-mail ini, karena e-mail ini dikirimkan secara otoma=
+tis oleh sistem.
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"15" style=3D'border-collapse: collapse; border-spacing: 0; fo=
+nt-family: "Arial", sans-serif; color: #999; line-height: 1.5; margin: 0; p=
+adding: 0;'></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<img src=3D"http://glimpsetrack.net/img?ssttu=3D7e7631df650033090e185aa1de0=
+8177f2b76986d920b44e0bd6ecbe14253d565&amp;subject=3DPemberitahuan+Device+Lo=
+gin&amp;tag=3Dwarn_device_not_authorized&amp;type=3DOpenEmail&amp;user_emai=
+l=3Drikosatrianto%40gmail.com" style=3D"height: auto; line-height: 100%; ou=
+tline: none; text-decoration: none; border: 0 none;">
+</body>
+</html>

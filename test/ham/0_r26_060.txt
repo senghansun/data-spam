@@ -1,0 +1,233 @@
+﻿Delivered-To: sherra.rizka@gmail.com
+Received: by 10.12.147.97 with SMTP id e30csp645452qve;
+        Wed, 9 Aug 2017 02:47:51 -0700 (PDT)
+X-Received: by 10.98.211.193 with SMTP id z62mr7586621pfk.133.1502272071469;
+        Wed, 09 Aug 2017 02:47:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502272071; cv=none;
+        d=google.com; s=arc-20160816;
+        b=i4nhKFpOos6dKVwOiYw3an9Sj7zHDjZqEqvPPQ1PiY4sGlwx8YktAjSS/7SWC8dQec
+         liQI5agALLfnDTY8abcIkQqkm7QsO2worXvpoDn74LbDdMYpnWapm0yT9Qx+vBcu6NLk
+         dFuG2MHv0iaHg55C7NK8BOAkSLsmR6tHTy4V2je8iqZkWbZO091AT1bbS6JF7nYuYKL8
+         G2K8CRmP9K0l2eMu3kAs4c0W8JsR72AWo/hsHOrUmO4myergFOetBMsrG69j+fWtsUO8
+         XvSeReD3IuMdxV9w9gwNkFKdRE/xBBydg9ltcfYDCtHrLr//TrAcL6LvntQ+G2NrJmrK
+         X9Qw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:reply-to:subject:to:from:date:user-agent
+         :arc-authentication-results;
+        bh=NOfCXhKesXPPUt4GyrIol1hVeNrZUY1pm/KdX7ptsOE=;
+        b=JAh1gbd8oj0El7kZMnMPAK9zVEGzjKnq5wUGXurui8L+T7SRQV0ePlV2jURgK7Layu
+         KTgxyQGGRyDIfJkeDUhhUEFQxzLrmedqkiugjb2var6dDBdkAp+02pyJHwKeiFQ/uNic
+         WgGg0WJNxEM9Bc4njVobkkMoyY9fmQY59wTo3c3ef3sA7W7mg5T6i28pla7GkuNb20dK
+         d7c/AZNdYRc2Va8rCGlP+hFy7I/kHvbIh37NAKc7jkAZfK71Aa4kBmc8NEDanEV+V3hz
+         KaFItY8HpfCEzF9OrY2XFiFmpDLnuHAyKzhXskCxIF1obVx7KzHh7O73wgQgkCF9vi6b
+         mCGA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 202.43.163.116 is neither permitted nor denied by best guess record for domain of recruitment@karirmis.com) smtp.mailfrom=recruitment@karirmis.com
+Return-Path: <recruitment@karirmis.com>
+Received: from mail.bahayadiabetes.com (mail.bahayadiabetes.com. [202.43.163.116])
+        by mx.google.com with ESMTPS id p27si2191209pgc.750.2017.08.09.02.47.50
+        for <sherra.rizka@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 09 Aug 2017 02:47:51 -0700 (PDT)
+Received-SPF: neutral (google.com: 202.43.163.116 is neither permitted nor denied by best guess record for domain of recruitment@karirmis.com) client-ip=202.43.163.116;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 202.43.163.116 is neither permitted nor denied by best guess record for domain of recruitment@karirmis.com) smtp.mailfrom=recruitment@karirmis.com
+Received: from localhost (localhost [127.0.0.1]) by mail.bahayadiabetes.com (Postfix) with ESMTP id 02113125616 for <sherra.rizka@gmail.com>; Wed,
+  9 Aug 2017 16:47:43 +0700 (WIB)
+Received: from mail.bahayadiabetes.com ([127.0.0.1]) by localhost (mail.bahayadiabetes.com [127.0.0.1]) (amavisd-new, port 10032) with ESMTP id TBxhXUGY9mIR for <sherra.rizka@gmail.com>; Wed,
+  9 Aug 2017 16:47:42 +0700 (WIB)
+Received: from localhost (localhost [127.0.0.1]) by mail.bahayadiabetes.com (Postfix) with ESMTP id 4B8E512560E for <sherra.rizka@gmail.com>; Wed,
+  9 Aug 2017 16:47:42 +0700 (WIB)
+X-Virus-Scanned: amavisd-new at bahayadiabetes.com
+Received: from mail.bahayadiabetes.com ([127.0.0.1]) by localhost (mail.bahayadiabetes.com [127.0.0.1]) (amavisd-new, port 10026) with ESMTP id exXAqj_r-ouj for <sherra.rizka@gmail.com>; Wed,
+  9 Aug 2017 16:47:42 +0700 (WIB)
+Received: from karirmis.com (unknown [202.43.163.115]) by mail.bahayadiabetes.com (Postfix) with ESMTP id 292E912560A for <sherra.rizka@gmail.com>; Wed,
+  9 Aug 2017 16:47:42 +0700 (WIB)
+User-Agent: CodeIgniter
+Date: Wed, 9 Aug 2017 16:47:47 +0700
+From: Mitra Insan Sejahtera <recruitment@karirmis.com>
+To: sherra.rizka@gmail.com
+Subject: Status Seleksi Karyawan Sherra rizka rachman
+Reply-To: "recruitment@karirmis.com" <recruitment@karirmis.com>
+X-Sender: recruitment@karirmis.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: <598ada432a5c3@karirmis.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_598ada432a617"
+
+--B_ALT_598ada432a617
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hati hati penipuan ! Proses Seleksi penerimaan karyawan tidak dipungut biay=
+a
+apapun.
+
+=20
+
+Kepada: Sdr/i Sherra rizka rachman
+
+di tempat=20
+
+=20
+=20
+=20
+ Selamat,=20
+
+=20
+ Anda telah lulus tahap seleksi tes online kami & menjadi salah satu
+kandidat potensial bagi Mitra Insan Sejahtera
+
+=20
+=20
+Kami melihat kesesuaian profil Anda dengan posisi yang tersedia saat ini.
+Keberhasilan Anda pada tes online kami membuka kesempatan untuk lanjut ke
+seleksi tahap II, yaitu PSIKOTEST yang dapat Anda ikuti di kantor cabang
+terdekat. PSIKOTEST dapat Anda ikuti setelah Anda mendaftar kembali dengan
+langkah-langkah sbb :
+
+ 1. Klik Hyperlink berikut: http://www.karirmis.com/login
+
+=20
+ 2. User Id Anda : 927206
+
+ 3. Masukkan nomor tanggal lahir Anda sebagai password dengan
+format(YYYYMMDD). Contoh : Tgl Lahir 29 Feb 1994, maka passwordnya :
+19940229
+
+Apabila Anda mengalami kesulitan dalam proses pendaftaran psikotes tersebut=
+,
+silahkan menghubungi kami melalui telepon 021-7200981 EXT.303=20
+
+Untuk kelengkapan data, mohon bantuannya untuk membawa printout CV pribadi
+Anda pada saat Anda menghadiri psikotest tersebut. Kehadiran Anda untuk iku=
+t
+psikotest amatlah penting untuk memastikan kecocokan potensi Anda dengan
+jabatan yang diminati/ pilih. Apabila Anda lolos psikotest ini, maka Anda
+akan memasuki tahap III dan terakhir yaitu interview dengan Direktur
+perusahaan kami.
+
+Sampai bertemu dan semoga berhasil.
+
+Salam Sukses untuk Anda,
+
+HR Department
+
+Mitra Insan Sejahtera=20
+
+=20
+ Mitra Insan Sejahtera
+
+
+--B_ALT_598ada432a617
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+=09=09=09=09=09=09<body>
+=09=09=09=09=09=09=09<table>
+=09=09=09=09=09=09=09 <tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09 <br>
+=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09 Hati hati penipuan ! Proses Seleksi penerima=
+an karyawan tidak dipungut biaya apapun.
+=09=09=09=09=09=09=09=09=09=09<b>
+=09=09=09=09=09=09=09=09=09=09<br>
+=09=09=09=09=09=09=09=09 </td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09<p>
+=09=09=09=09=09=09=09=09=09=09Kepada: Sdr/i Sherra rizka rachman
+=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09di tempat=20
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09=09 <p>
+=09=09=09=09=09=09=09=09=09 <b>
+=09=09=09=09=09=09=09=09=09 Selamat,=20
+=09=09=09=09=09=09=09=09=09=09</b>
+=09=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09=09 Anda telah lulus tahap seleksi tes online kami =
+& menjadi salah satu kandidat potensial bagi Mitra Insan Sejahtera
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09=09 <p>
+Kami melihat kesesuaian profil Anda dengan posisi yang tersedia saat ini. K=
+eberhasilan Anda pada tes online kami membuka kesempatan untuk lanjut ke se=
+leksi tahap II, yaitu PSIKOTEST yang dapat Anda ikuti di kantor cabang terd=
+ekat. PSIKOTEST dapat Anda ikuti setelah Anda mendaftar kembali dengan lang=
+kah-langkah sbb :
+</p>
+<p>
+ 1. Klik Hyperlink berikut: <p><a rel =3D "nofollow" href =3D http://www.ka=
+rirmis.com/login>http://www.karirmis.com/login</a></p>
+</p>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09=09 2. User Id Anda : 927206
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td><p>
+ 3. Masukkan nomor tanggal lahir Anda sebagai password dengan format(YYYYMM=
+DD). Contoh : Tgl Lahir 29 Feb 1994, maka passwordnya : 19940229
+</p>
+
+<p>
+Apabila Anda mengalami kesulitan dalam proses pendaftaran psikotes tersebut=
+, silahkan menghubungi kami melalui telepon <b> 021-7200981 EXT.303 </b>
+</p>
+
+<p>
+Untuk kelengkapan data, mohon bantuannya untuk membawa printout CV pribadi =
+Anda pada saat Anda menghadiri psikotest tersebut. Kehadiran Anda untuk iku=
+t psikotest amatlah penting untuk memastikan kecocokan potensi Anda dengan =
+jabatan yang diminati/ pilih. Apabila Anda lolos psikotest ini, maka Anda a=
+kan memasuki tahap III dan terakhir yaitu interview dengan Direktur perusah=
+aan kami.
+</p>
+<p>
+Sampai bertemu dan semoga berhasil.
+</p>
+
+
+
+<p>
+Salam Sukses untuk Anda,
+</p>
+
+<p>
+HR Department
+</p>
+
+
+<p>
+Mitra Insan Sejahtera=20
+</p>
+
+
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09 <td>
+=09=09=09=09=09=09=09=09=09 Mitra Insan Sejahtera
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</body>
+=09=09=09=09=09</html>
+
+--B_ALT_598ada432a617--

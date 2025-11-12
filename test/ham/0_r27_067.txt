@@ -1,0 +1,185 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.129.158.202 with SMTP id v193csp683510ywg;
+        Thu, 12 May 2016 02:59:00 -0700 (PDT)
+X-Received: by 10.28.48.203 with SMTP id w194mr9867316wmw.67.1463047140510;
+        Thu, 12 May 2016 02:59:00 -0700 (PDT)
+Return-Path: <ict.lab@umn.ac.id>
+Received: from mail-wm0-f66.google.com (mail-wm0-f66.google.com. [74.125.82.66])
+        by mx.google.com with ESMTPS id jo9si11628250wjc.10.2016.05.12.02.58.59
+        for <sylviestephanies@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 12 May 2016 02:58:59 -0700 (PDT)
+Received-SPF: neutral (google.com: 74.125.82.66 is neither permitted nor denied by best guess record for domain of ict.lab@umn.ac.id) client-ip=74.125.82.66;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 74.125.82.66 is neither permitted nor denied by best guess record for domain of ict.lab@umn.ac.id) smtp.mailfrom=ict.lab@umn.ac.id
+Received: by mail-wm0-f66.google.com with SMTP id r12so11529091wme.0
+        for <sylviestephanies@gmail.com>; Thu, 12 May 2016 02:58:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:date:message-id:subject:from:to:cc;
+        bh=63b+RH9oX/JIdRLfDfL0ACi+rwgjv69BHK25/2qE8/c=;
+        b=Zd7qOQbzrLPB8mW87M6u0YQ5Fi3S/FF3Kar12+6lu7zC/B6ABphmMFK8yTfxkMkmTv
+         C9tqMEYSiTCopxgsAyUb+giXhH/fKgylzl8Rl4WRMv4Uids7GLDO3G6ZLbdt1ohHDNQ6
+         oEOxNRnpR9jts8uH5byH85MlS2mQ2nXl8MBZmf2/m5xdDKkWwJ9j8KO9PUWPBj4Y5wZ3
+         uSBCPi1or+bL0n5SVrPTttVMeVVv/Pf26ObQ5ZpSoVHRNSjWCcootUvqLzHqEN+Z3Mvx
+         RfHxksKyLCiVySmdpG3jIsl/Ny1QvrrOCGWYxWafpyZsCDt8rmd4wvwUHoPmNibgLzw4
+         TgBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to:cc;
+        bh=63b+RH9oX/JIdRLfDfL0ACi+rwgjv69BHK25/2qE8/c=;
+        b=UTU5JjRTdl/1TAx56iwilSpcJB4vfrTa278UJbVkoVoEHNtexD7DsyqA8zIJEUVTMh
+         /0v0xXa5Ja5s0yl7pM3eJJk8l4K/bueEiSeojfrUERJJR3nq5fRK5yB2HlZfYPKE8RDC
+         NRojMGuPbBcmBUJj2ncMa3dPyHceXM+PcflLthV0LrbhgwjCzTyYsL3OA7pV2bBIk/b9
+         omHteNH+c17huopvw9l3Dldt8m2lC/5eTxZpbs3syFATCY9jne+y+fOLMjpkO9B8aCyK
+         1cAhk3ZoPyb5QZ78lWEiiM+MD4CnlyiTZ4SS6fwVRhy+z42Hdxtu+ChwVroblkNcsnnK
+         +Bdw==
+X-Gm-Message-State: AOPr4FVM3mqB9vJhfvVZ5GcOnllV7LJvOMrC3YJoWLvjO0DubJKuO2+FmaxhZlBg8+bAqRoFqUxZ/qhXN5JC3Qiz03RQRyJOil/r4KP9airUGs6ev/phXO1oQU37szB6szGLmqWoPjWhoqRc9x0q/+zxsQ==
+MIME-Version: 1.0
+X-Received: by 10.194.109.65 with SMTP id hq1mr8662473wjb.45.1463047138871;
+ Thu, 12 May 2016 02:58:58 -0700 (PDT)
+Received: by 10.194.38.68 with HTTP; Thu, 12 May 2016 02:58:58 -0700 (PDT)
+Date: Thu, 12 May 2016 16:58:58 +0700
+Message-ID: <CAPrdJKqbeN-DKqqogCaLae-dH0VjnGJT1sKGa6=G9xz+7j0dBQ@mail.gmail.com>
+Subject: AsLab Sistem Digital
+From: ICT LAB UMN <ict.lab@umn.ac.id>
+To: - Dyrn Zefanya Darmawan <dryndarmawan@gmail.com>, 
+	12110110001 - Anastasia Ervina Haryono <anastasia_ervina@yahoo.com>, 
+	12110110003 - Jason Anggada <jason.anggada@gmail.com>, 
+	12110110004 - David Domarco <davedomarco@gmail.com>, 
+	12110110006 - Alvin Hanjaya Tandrian <alvintandrian@gmail.com>, 12110110025 - Kharis Simon <kharis.arc@gmail.com>, 
+	12110110063 - Alfian Setyowijoyo <alfian.setyo17@gmail.com>, 12110110070 - Audy <audytanudjaja@gmail.com>, 
+	12110110074 - Handy Wijaya Prajitno <handy.wijaya.p@gmail.com>, 
+	12110110110 - Alvin William <alvin.william4@gmail.com>, 
+	12110210005 - Christian Orvin <christian.orvin@student.umn.ac.id>, 
+	12110210007 - Sylvie Ariesta Widianti <sylvieaw@gmail.com>, 12110210010 - Jovan Anggara <warriorsjov@gmail.com>, 
+	12110310024 - Elvyna Tunggawan <vrc.vyna@gmail.com>, 
+	13110110002 - Albert Yeusiawan Haryono <a.yeusiawan.h@gmail.com>, 
+	13110110008 - Ivan Jonathan <ivanjonathan95@yahoo.com>, 13110110012 - Hendrix <hendrixlau13@gmail.com>, 
+	13110110021 - Reynaldo Kevin <kevin.reynaldo18@gmail.com>, 
+	13110110028 - Vincentius Kurniawan <vinc.detective007@gmail.com>, 
+	13110110035 - Bodhi Jaya <Bodhi.jaya95@gmail.com>, 
+	13110110038 - Junius Primavera <Juniusprim14@gmail.com>, 
+	13110110046 - Leonardus Alexander Nickvaldo <nickvaldo25@gmail.com>, 
+	13110110064 - Christian Wijasa <christian.wijasa@gmail.com>, 
+	13110110068 - Rangga Surya Hutama <ranggasuryah@gmail.com>, 
+	13110110069 - Leonardus Wahluya <leon.wahluya@gmail.com>, 
+	13110110071 - Aurelia Rianto <aurelia.rianto@gmail.com>, 
+	13110110079 - Rico Savero <rico.savero@gmail.com>, 13110110080 - Andri Wan <andriwan1@gmail.com>, 
+	13110110081 - Eric Ganiwijaya Hasan <ericganiwijaya@yahoo.com>, 
+	13110110092 - Kevin Kusnardi <kevin@kusnardi.com>, 
+	13110110103 - Sylvie Stephanie <sylviestephanies@gmail.com>, 
+	13110110114 - Rian Suhito Purnama <riansuhito2105@gmail.com>, 
+	13110110116 - Devin Ryan Riota <devinryanriota@gmail.com>, 
+	13110210005 - Wahyudi Khusnandar <atek.khusnandar@gmail.com>, 
+	13110210008 - Dhanny Kurniawan Haryanto <mercury.scorpioboy@gmail.com>, 
+	13110210010 - Sunderi Pranata <sunderip128@gmail.com>, 
+	13110210017 - Matthew Edward <matthewedwardcs@gmail.com>, 
+	13110310009 - Theodorus Jonathan Nugraha <jonathannugraha@live.com>, 13110310014 - Stevencua <stevencua95@gmail.com>, 
+	13110310015 - Rino Yaohari <rino.yaohari@gmail.com>, 
+	13110310023 - Valencia Wirawan <valenciawrwn@gmail.com>, 
+	13110310026 - Santi Surya <skholastica21@gmail.com>, 
+	13110310052 - Aries Sianto Halim <ariesxisi@gmail.com>, 
+	13110310054 - Valdo Henschel Haholongan Nainggolan <valdo.nainggolan95@gmail.com>, 
+	13110310055 - I Putu Adi Sudana <adisudana231@gmail.com>, 
+	13110310061 - Ahmad Faza <ahmad.faza@student.umn.ac.id>, 
+	13110310064 - Budianto Mahasin <budianto.mahasin@student.umn.ac.id>, 
+	14110110002 - Vicky Reynaldo <vickyreynaldo@gmail.com>, 14110110006 - Rudiyanto <rynto14@yahoo.com>, 
+	14110110007 - Edwin Handoko <edwin.handoko.a@gmail.com>, 
+	14110110012 - Febrian Wilson <febrianwilson@gmail.com>, 
+	14110110021 - Sintya Oktaviani <sintyasin@rocketmail.com>, 
+	14110110023 - Naldiyanto Sofian <naldiyanto.sofian@gmail.com>, 
+	14110110024 - Annastasya Indarsin <annastasya@gmail.com>, 14110110025 - Josua Kevin Wira <josuax13@gmail.com>, 
+	14110110039 - Viktor <victorlee0727@windowslive.com>, 
+	14110110040 - Astrid Tamara <astrid.tamara@student.umn.ac.id>, 
+	14110110056 - Hansen Edrick Harianto <hansenedrick@yahoo.com>, 
+	14110110061 - Cindy Astrina <cindy_astrina@yahoo.co.id>, 
+	14110110074 - Reza Satyawijaya <rezas.h1234@yahoo.com>, 
+	14110110118 - Kevin Alexander <kevin.alexander@student.umn.ac.id>, 
+	14110110126 - Ronny susanto <my.name.is.ronny.susanto@gmail.com>, 
+	14110210010 - Franciscus Xaverius Eriksen Finarto <eriksen.finarto@gmail.com>, 
+	14110310058 - Monica Devi Kristiadi <monicadevikristiadi@gmail.com>, 
+	14110310073 - Elisabeth <chenlisa2389@yahoo.co.id>
+Cc: rio.raymundus@umn.ac.id, eka.harsono@umn.ac.id, Wendy <wendy@umn.ac.id>, 
+	"Bp Eko (umn)" <yustinus.eko@umn.ac.id>
+Content-Type: multipart/alternative; boundary=089e013c683400aaa70532a23535
+
+--089e013c683400aaa70532a23535
+Content-Type: text/plain; charset=UTF-8
+
+Kepada Rekan-Rekan AsLab Semester Genap 2015-2016,
+
+Bagi yang berminat untuk menjadi *AsLab MaKul Sistem Digital (2x pertemuan
+@3jam)* mohon untuk hubungi kami sesegera mungkin *(kami tunggu hingga
+minggu ini)*.
+Untuk kelengkapan dokumen, Anda hanya perlu untuk mengirimkan SS nilai
+MaKul SisDig dengan membalas email ini.
+*(Anda dapat langsung menghubungi Rio Raymundus)*
+
+Hak, Kewajiban, dan Peraturan masih sama dengan AsLab pada umumnya.
+
+Terima kasih. Salam,
+ICT Lab
+
+-- 
+
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21. 5422.0808 ; (f) +62-21. 5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id 
+
+--089e013c683400aaa70532a23535
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Kepada Rekan-Rekan AsLab Semester Genap 2015-2016,<div><br=
+></div><div>Bagi yang berminat untuk menjadi <b>AsLab MaKul Sistem Digital =
+(2x pertemuan @3jam)</b> mohon untuk hubungi kami sesegera mungkin <b>(kami=
+ tunggu hingga minggu ini)</b>.</div><div>Untuk kelengkapan dokumen, Anda h=
+anya perlu untuk mengirimkan SS nilai MaKul SisDig dengan membalas email in=
+i.</div><div><b>(Anda dapat langsung menghubungi Rio Raymundus)</b><br></di=
+v><div><br></div><div>Hak, Kewajiban, dan Peraturan masih sama dengan AsLab=
+ pada umumnya.</div><div><br></div><div>Terima kasih. Salam,</div><div>ICT =
+Lab</div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><img =
+src=3D"http://360.umn.ac.id/umn_logo.png"></div><div style=3D"font-size:1.3=
+em;font-family:Arial,Helvetica,sans-serif"><br></div><div style=3D"font-siz=
+e:1.3em;font-family:Arial,Helvetica,sans-serif"><b style=3D"font-family:ari=
+al,sans-serif"><font color=3D"#0000ff" size=3D"4">Universitas =C2=A0 Multim=
+edia =C2=A0 Nusantara</font></b></div><div style=3D"font-size:1.3em"><font =
+face=3D"arial, sans-serif" color=3D"#0000ff" size=3D"2"><span style=3D"back=
+ground-color:rgb(255,255,255)"><b><i>&quot;<font>Excellent Career Begins Wi=
+th Excellent Education</font>&quot;</i></b></span></font></div><div style=
+=3D"font-size:1.3em"><span style=3D"font-size:small;font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)">Jl. Scientia Boulevard, Gading Ser=
+pong,</span></div><font size=3D"2"><span style=3D"font-family:arial,sans-se=
+rif;background-color:rgb(255,255,255)">Tangerang, Banten - 15811 Indonesia<=
+/span><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(25=
+5,255,255)">(t)=C2=A0</span><a value=3D"+622154220808" style=3D"font-family=
+:arial,sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)">+=
+62-21. 5422.0808</a><span style=3D"font-family:arial,sans-serif;background-=
+color:rgb(255,255,255)">=C2=A0; (f)=C2=A0</span><a value=3D"+622154220800" =
+style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color=
+:rgb(255,255,255)">+62-21. 5422.0800</a><span style=3D"font-family:arial,sa=
+ns-serif;background-color:rgb(255,255,255)">;</span><br style=3D"font-famil=
+y:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"font-f=
+amily:arial,sans-serif;background-color:rgb(255,255,255)">Facebook: Univers=
+itas Multimedia Nusantara</span><br style=3D"font-family:arial,sans-serif;b=
+ackground-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-ser=
+if;background-color:rgb(255,255,255)">Twitter: @umn_serpong</span><br style=
+=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Web=
+:=C2=A0</span><a href=3D"http://www.umn.ac.id/" style=3D"font-family:arial,=
+sans-serif;color:rgb(17,85,204);background-color:rgb(255,255,255)" target=
+=3D"_blank">www.umn.ac.id</a><span style=3D"font-family:arial,sans-serif;ba=
+ckground-color:rgb(255,255,255)">=C2=A0</span></font>
+--089e013c683400aaa70532a23535--

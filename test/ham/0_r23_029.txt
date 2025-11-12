@@ -1,0 +1,273 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.41.69 with SMTP id p66csp714312vsp;
+        Sat, 24 Jun 2017 01:26:57 -0700 (PDT)
+X-Received: by 10.107.140.85 with SMTP id o82mr7101596iod.3.1498292817139;
+        Sat, 24 Jun 2017 01:26:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498292817; cv=none;
+        d=google.com; s=arc-20160816;
+        b=F4AnG8O+E1yanRTYIeLu/bsAvFO/Ew7V+Iuq1miDMmSDRzQoyO0wvWv+Q1AKCs4QiB
+         XhJSKj7aaDGZQ22H5q4zkFZMq3y+GGixy9nHgNFGtANAR9Q/pcd3G27ruV8r6hlHDIXx
+         2KHGDDmilMbOKgLJabcaQEpyMdvRtq4wFNpqWJa+Nv54647LURgB3m3SZtVddeq4Qd6u
+         OzJKuhBJXuAEhKFaMka/jDpvphg6Hxl9WW7JAXRVvq9pKiJvNUUa5orryNULTIOcf+hO
+         RUNC0peuCEf73kBHsp8Nxpv/RjhpAFj+1lmgwUn2cYEd3QxCN8kOOcMWgmhOl9wnqnnT
+         TbfA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:content-transfer-encoding:mime-version:subject
+         :message-id:to:from:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=cEMmVnviRLjwr/n301rHiywCFeYgVSwN0Lb5XAlKPys=;
+        b=MMQgJlcHpEz4dV20zoR9isKKm1OyKCmzwp3KN27yNsZSDE/Fu8uqDbSwS+RWvhorvP
+         VJkZNiCUf3Z6OWuzlQxzH1VVJ3JCLGJuJ4IRwnGUzXE8g7XvkYuuRFUW1Bzl8mB2RHG4
+         cvVhVA2gWBCaGcje9CHbiAovBOileee0HMnBZpg4vW3WGVGpu0ZJRIpijXKaRyPgS+UW
+         Jn2WNhw14JLOqCsGbkHZIpRWQj81Qx50J7dSPM+oZ1ZVsRqXZ7TYn47llsLj9abRI5bJ
+         kd1b+SiToCmbSK7UQNsSr251KFNhrCGzt8p3x+d7NoE9UAVt0KymRAOWUz5W3x2x09T8
+         dBSg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@customeriomail.com header.b=GSbzqQF5;
+       dkim=pass header.i=@sendgrid.info header.b=BBH0nDQa;
+       spf=pass (google.com: domain of bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com designates 198.21.4.114 as permitted sender) smtp.mailfrom=bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com
+Return-Path: <bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com>
+Received: from o6.delivery.customeriomail.com (o6.delivery.customeriomail.com. [198.21.4.114])
+        by mx.google.com with ESMTPS id l92si3772410ioi.131.2017.06.24.01.26.56
+        for <rikosatrianto@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 24 Jun 2017 01:26:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com designates 198.21.4.114 as permitted sender) client-ip=198.21.4.114;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@customeriomail.com header.b=GSbzqQF5;
+       dkim=pass header.i=@sendgrid.info header.b=BBH0nDQa;
+       spf=pass (google.com: domain of bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com designates 198.21.4.114 as permitted sender) smtp.mailfrom=bounces+2651171-8f16-rikosatrianto=gmail.com@delivery.customeriomail.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=customeriomail.com; h=from:to:subject:mime-version:content-type:content-transfer-encoding:list-unsubscribe; s=smtpapi; bh=6L3hRBFzfr9rMsRJ0vyQBJbWpQM=; b=GSbzqQF5h5P9D94bI9 RKvKNzZ2BvK8D2qobWTsCm5xHLBHDFHpKk4GrierH4H30XxMRHKi73xmIkBCab1F 3xb0Vy1zExcMYFBL5k11+2GBapBbc3q6KSLjfkDBVFla8ZAwT9wgFT5sIovIVJqY NR4m/xmOf56Xet9D9WFeXWquw=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; h=from:to:subject:mime-version:content-type:content-transfer-encoding:list-unsubscribe:x-feedback-id; s=smtpapi; bh=6L3hRBFzfr9rMsRJ0vyQBJbWpQM=; b=BBH0nDQacPNxo5LzLy 8BvpReofwx/yAv8/T2iNM84WvaRp24gyQmRnLOHLbSBVdChtK4cRLNwB1Bc/XpQE eG+qkrjord1Iq7PAxTVo6cDLgxXwqmiIDTQeV+LTg53QbJIT7HmDjLJNmAmwOiw/ 3CUTUlloH9j+bqHbj6j/G/ZpA=
+Received: by filter1179p1mdw1.sendgrid.net with SMTP id filter1179p1mdw1-27788-594E2250-2C
+        2017-06-24 08:26:56.333264684 +0000 UTC
+Received: from delivery.customeriomail.com (ovh69.cio.host [192.99.100.212]) by ismtpd0002p1iad1.sendgrid.net (SG) with ESMTP id HNh0tH4_S5O34tk5p6LvDQ for <rikosatrianto@gmail.com>; Sat, 24 Jun 2017 08:26:56.128 +0000 (UTC)
+Date: Sat, 24 Jun 2017 08:26:55 +0000
+From: Rangga Husnaprawira <hello@bukapintu.co>
+To: rikosatrianto@gmail.com
+Message-ID: <594e224f876d2_248811b17185415015ad@ovh69.cio.host.mail>
+Subject: Rico, ini 4 skill yang pasti dibutuhkan di semua jenis pekerjaan
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="--==_mimepart_594e224f85a2c_248811b171854150125f"; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+List-Unsubscribe: <mailto:32.JZCGO52PKRVTMRTXIZWVKUKKNNAUCST2IFBFSMJRKJXUEWCGKNHDEMLXKZIUE2C2KRUUS2SBK4YDMTSUIV4U6RCRPJAUCPJ5@unsubscribe.customer.io>, <http://track.customer.io/unsubscribe/NDgwOTk6FwFmUQJkAAJzABY11RoBXFSN21wVQBhZTiIjAW06NTEyODQzAA==>
+X-SG-EID: O+6qEeb6jGNxcrpDywJ6JwCserDWd0lGVEnyY/Daippdw12nmrHwT0XPPwlDN0dd9mPE//rEy09RPn NksWxN5hYB884Sy7gCJr22Drc/QnZx4FlVOhfo7GTJo+3GMViGHQcyqr++jsM6wuoWmzxuZC8+K1Lr jCez2zuoErSixBALPgyln+cuFe2aSl/WHts/7klKH/C36eD1MWyQvMMBJLj0IwHsmU3MmHVHKUJv6y A=
+X-SG-ID: YDTqBOjidbCUo/ar1oAtZv94a5ECZWvtnbZL+sP9daFenUwYXrF5xPSnNDaINJ+Cnz0FsS6ztVtyHl IunoOOE0FdjIPMcOI3/PHZr0Z5TYMZr2fvYkDMV3y99VmLdswg
+X-Feedback-ID: 2651171:fzU27n3qF/pk0Er0MIhobaa2AovpMUIKCoQ4BC7f/NE=:fzU27n3qF/pk0Er0MIhobaa2AovpMUIKCoQ4BC7f/NE=:SG
+
+----==_mimepart_594e224f85a2c_248811b171854150125f
+Date: Sat, 24 Jun 2017 08:26:55 +0000
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <594e224f86a1a_248811b1718541501314@ovh69.cio.host.mail>
+
+------------------
+Happy Eid Mubarak!
+------------------
+
+Selamat menyambut hari Lebaran bagi yang merayakan! Sebelum
+memasuki hari raya Idul Fitri, berikut 2 (dua) artikel terbaru di
+Bukapintu yang mungkin akan bermanfaat untukmu.
+
+-----------------------------------------------------------------
+4 Hal yang Harus Berhenti Kamu Pikirkan, Bila Sudah Di Tahun
+Terakhir Jadi Anak Kuliahan
+-----------------------------------------------------------------
+
+Tahun ke empat kuliah adalah masa yang sangat krusial, karena ada
+semester terakhir yang katanya adalah masa sebenar-benarnya
+mahasiswa. Berjibaku dengan tugas akhir dan segala persiapan
+menyambut kehidupan setelah sarjana, ada beberapa hal yang
+seharusnya tidak lagi kamu pikirkan.
+
+Baca artikel ( https://bukapintu.co/tips-karir/4-hal-yang-harus-berhenti-kamu-pikirkan-bila-sudah-di-tahun-terakhir-jadi-anak-kuliahan?utm_medium=Email&utm_source=newsletter&utm_campaign=Regular%20Article&utm_content=tahun%20terakhir%20kuliah )
+
+----------------------------------------------------------
+Ini 4 Skill yang Pasti Dibutuhkan di Semua Jenis Pekerjaan
+----------------------------------------------------------
+
+Setiap pekerjaan tentunya membutuhkan skill yang berbeda-beda.
+Namun, ada beberapa skill yang pasti dibutuhkan di tiap
+pekerjaan. Pastikan kamu memiliki atau berusaha mempelajari semua
+skill di bawah ini, ya!
+
+Baca artikel ( https://bukapintu.co/tips-karir/ini-4-skill-yang-pasti-dibutuhkan-di-semua-jenis-pekerjaan?utm_medium=Email&utm_source=newsletter&utm_campaign=Regular%20Article&utm_content=ini%204%20skill%20pasti )
+
+Bukapintu adalah online platform untuk mahasiswa
+dan fresh graduates
+
+untuk mempelajari karir, budaya perusahan, serta
+mencari magang dan kerja.
+
+Tidak ingin menerima email kami? Berhenti ( http://track.customer.io/unsubscribe/NDgwOTk6FwFmUQJkAAJzABY11RoBXFSN21wVQBhZTiIjAW06NTEyODQzAA== )
+
+----==_mimepart_594e224f85a2c_248811b171854150125f
+Date: Sat, 24 Jun 2017 08:26:55 +0000
+Mime-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <594e224f87236_248811b1718541501469@ovh69.cio.host.mail>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light</title>
+  <style type="text/css">
+
+    /* Styles get inlined when email is sent */
+    .button {
+        border-radius: 3px;
+        color: white;
+        background: #2e99c8;
+        border-bottom: 3px solid #2885ae;
+        font-weight: bold;
+        text-align: center;
+        padding: 13px 18px;
+        line-height: 100%;
+        text-decoration: none;
+        
+        display: block;
+        margin: 0 auto;
+        max-width: 80px;
+        
+    }
+    
+    .button--narrow {
+        border-radius: 3px;
+        color: white;
+        background: #2e99c8;
+        border-bottom: 3px solid #2885ae;
+        font-weight: bold;
+        text-align: center;
+        padding: 13px 18px;
+        line-height: 100%;
+        text-decoration: none;
+        
+        display: block;
+        margin: 0 auto;
+        max-width: 50px;
+        
+    }
+    
+    .button--wide {
+        border-radius: 3px;
+        color: white;
+        background: #2e99c8;
+        border-bottom: 3px solid #2885ae;
+        font-weight: bold;
+        text-align: center;
+        padding: 13px 18px;
+        line-height: 100%;
+        text-decoration: none;
+        
+        display: block;
+        margin: 0 auto;
+        max-width: 120px;
+        
+    }
+    
+    
+    .button:hover {
+        background: #2885ae;
+        border-bottom-color: #1b5b78;
+    }
+    
+    img {
+        max-width: 100%;
+        width: auto;
+    }
+    
+    .image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #backgroundTable { width: 100%; margin: 0; border: 0; padding: 0; border-spacing: 0; background-color: #F0F4F7; }
+    .wrapperCell { text-align: center; padding: 9px 9px; }
+    #contentTable { width: 100%; max-width: 520px; background-color: #FFF;  border: 1px solid #DAE1E8; border-radius: 3px;}
+    .headerCell { padding: 25px; border-bottom: 1px solid #DAE1E8; text-align: center;}
+    .headerCell img { width: 130px; opacity: 0.7;}
+    .contentCell { 
+        padding:20px; text-align: left; color: #444; font-size: 13px; line-height: 140%;
+    }
+    .contentCell h2 {
+      color: #444 !important; font-size: 16px; line-height: 130%; margin: 0;
+    }
+    body { padding:0; margin: 0; background-color: #FAFAFA; -webkit-font-smoothing: antialiased; font-family: sans-serif; font-size: 13px; }
+    #footerTable { }
+    .footerCell { color: #808080; font-size: 11px; padding-bottom: 15px; text-align: center;}
+    .footerCell a { color: #9F9F9F; text-decoration: none;}
+    h1 { font-weight: 600; color: #E5E5E5; font-size: 24px; line-height: 26px; margin:0; padding:0; };
+    h2 { color: #444 !important; font-size: 16px; line-height: 130%; margin: 0; }
+
+    /* Make this awesome on mobile */
+    @media only screen and (max-device-width: 480px) {
+      body { width: 100% !important; min-width: 320px; margin: 0; padding: 0; }
+      table[id="backgroundTable"] { width: 100% !important; }
+      td[class="wrapperCell"] { width: 100% !important; padding: 0 15px;}
+      td[class="headerCell"] h1 { font-size: 20px !important; }
+      table[id="contentTable"] { width: 100% !important; }
+      table[id="footerTable"] { width: 320px !important; }
+      td[class="contentCell"] { padding:0; }
+      td img { height:auto !important; max-width:100% !important;}
+    }
+
+  </style>
+
+</head>
+
+<body style="-webkit-font-smoothing: antialiased; font-family: sans-serif; font-size: 13px; background: #FAFAFA; margin: 0; padding: 0;" bgcolor="#FAFAFA">
+
+<table id="backgroundTable" style="width: 100%; border-spacing: 0; background: #F0F4F7; margin: 0; padding: 0; border: 0;" bgcolor="#F0F4F7">
+  <tbody>
+    <tr>
+      <td class="wrapperCell" style="text-align: center; padding: 9px;" align="center">
+
+        <table id="contentTable" align="center" style="width: 100%; max-width: 520px; border-radius: 3px; background: #FFF; border: 1px solid #dae1e8;" bgcolor="#FFF">
+          <tbody>
+            <tr><td class="headerCell" style="padding: 25px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DAE1E8; text-align: center;" align="center">
+              <img src="https://res.cloudinary.com/bukapintu/image/upload/v1463476763/bukapintu-logo-black.png" style="max-width: 100%; width: 130px; opacity: 0.7;">
+            </td></tr>
+            <tr><td class="contentCell" style="text-align: left; color: #444; font-size: 13px; line-height: 140%; padding: 20px;" align="left">
+
+              <!-- We'll replace this content tag with whatever you write in your email  -->
+              <h2 style="color: #444 !important; font-size: 16px; line-height: 130%; margin: 0;">Happy Eid Mubarak!</h2>
+<br><img alt="" style="max-width: 100%; width: auto;"><img alt="" src="http://userimg.customeriomail.com/CSXP4tkRemnCdlz5CvPu_eid%20mubarak%201438%20bukapintu.001.png" title="Image: http://userimg.customeriomail.com/CSXP4tkRemnCdlz5CvPu_eid%20mubarak%201438%20bukapintu.001.png" style="max-width: 100%; width: auto;"><br><br>Selamat menyambut hari Lebaran bagi yang merayakan! Sebelum memasuki hari raya Idul Fitri, berikut 2 (dua) artikel terbaru di Bukapintu yang mungkin akan bermanfaat untukmu.<br><br><br><h2 style="color: #444 !important; font-size: 16px; line-height: 130%; margin: 0;">4 Hal yang Harus Berhenti Kamu Pikirkan, Bila Sudah Di Tahun Terakhir Jadi Anak Kuliahan</h2>
+<br><img alt="" style="max-width: 100%; width: auto;"><br><img alt="" style="max-width: 100%; width: auto;"><img alt="" src="http://userimg.customeriomail.com/BPBOVABHTnSE8QanC2B7_sibuk%20sendiri.jpg" title="Image: http://userimg.customeriomail.com/BPBOVABHTnSE8QanC2B7_sibuk%20sendiri.jpg" style="max-width: 100%; width: auto;"><p>Tahun ke empat kuliah adalah masa yang sangat krusial, karena ada semester terakhir yang katanya adalah masa sebenar-benarnya mahasiswa. Berjibaku dengan tugas akhir dan segala persiapan menyambut kehidupan setelah sarjana, ada beberapa hal yang seharusnya tidak lagi kamu pikirkan.</p>
+<a target="_blank" href="http://e.customeriomail.com/e/c/eyJlbWFpbF9pZCI6Ik5EZ3dPVGs2RndGbVVRSmtBQUp6QUJZMTFSb0JYRlNOMjF3VlFCaFpUaUlqQVcwNk5URXlPRFF6QUE9PSIsInBvc2l0aW9uIjowLCJocmVmIjoiaHR0cHM6Ly9idWthcGludHUuY28vdGlwcy1rYXJpci80LWhhbC15YW5nLWhhcnVzLWJlcmhlbnRpLWthbXUtcGlraXJrYW4tYmlsYS1zdWRhaC1kaS10YWh1bi10ZXJha2hpci1qYWRpLWFuYWsta3VsaWFoYW4_dXRtX21lZGl1bT1FbWFpbCZ1dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX2NhbXBhaWduPVJlZ3VsYXIlMjBBcnRpY2xlJnV0bV9jb250ZW50PXRhaHVuJTIwdGVyYWtoaXIlMjBrdWxpYWgiLCJsaW5rX2lkIjozNzg0ODM3OH0/53a8004cd2a2b2b24b5ef8b9fdcfa57b4cfe3e40354dbf2c2a8f5d108b8e91fe" class="button--wide" style="border-radius: 3px; color: white; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #2885ae; font-weight: bold; text-align: center; line-height: 100%; text-decoration: none; display: block; max-width: 120px; background: #2e99c8; margin: 0 auto; padding: 13px 18px;">Baca artikel</a><br><br><h2 style="color: #444 !important; font-size: 16px; line-height:
+130%; margin: 0;">Ini 4 Skill yang Pasti Dibutuhkan di Semua Jenis Pekerjaan</h2>
+<p><img alt="" style="max-width: 100%; width: auto;"><img alt="" src="http://userimg.customeriomail.com/wgdIS603SDypZoV6v7PW_skill%20dibutuhkan.jpg" title="Image: http://userimg.customeriomail.com/wgdIS603SDypZoV6v7PW_skill%20dibutuhkan.jpg" style="max-width: 100%; width: auto;"><br><br>Setiap pekerjaan tentunya membutuhkan skill yang berbeda-beda. Namun, ada beberapa skill yang pasti dibutuhkan di tiap pekerjaan. Pastikan kamu memiliki atau berusaha mempelajari semua skill di bawah ini, ya!<br><br><a target="_blank"
+href="http://e.customeriomail.com/e/c/eyJlbWFpbF9pZCI6Ik5EZ3dPVGs2RndGbVVRSmtBQUp6QUJZMTFSb0JYRlNOMjF3VlFCaFpUaUlqQVcwNk5URXlPRFF6QUE9PSIsInBvc2l0aW9uIjoxLCJocmVmIjoiaHR0cHM6Ly9idWthcGludHUuY28vdGlwcy1rYXJpci9pbmktNC1za2lsbC15YW5nLXBhc3RpLWRpYnV0dWhrYW4tZGktc2VtdWEtamVuaXMtcGVrZXJqYWFuP3V0bV9tZWRpdW09RW1haWwmdXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9jYW1wYWlnbj1SZWd1bGFyJTIwQXJ0aWNsZSZ1dG1fY29udGVudD1pbmklMjA0JTIwc2tpbGwlMjBwYXN0aSIsImxpbmtfaWQiOjM3ODQ4Mzc5fQ/31044865aab254d575f4abd0c122d1b85adae37258b73049dd6d71e2475fbf5a" class="button--wide" style="border-radius: 3px; color: white; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #2885ae; font-weight: bold; text-align: center; line-height: 100%; text-decoration: none; display: block; max-width: 120px; background: #2e99c8; margin: 0 auto; padding: 13px 18px;">Baca artikel</a></p>
+            </td></tr>
+          </tbody>
+        </table>
+
+
+      </td>
+    </tr>
+    <tr>
+      <td class="footerWrapper">
+        <table id="footerTable" align="center">
+          <tbody>
+              <tr><td class="footerCell" style="color: #808080; font-size: 11px; padding-bottom: 15px; text-align: center;" align="center">
+               Bukapintu adalah online platform untuk mahasiswa dan fresh graduates <br>
+               untuk mempelajari karir, budaya perusahan, serta mencari magang dan kerja.
+            </td></tr>
+            <tr><td class="footerCell" style="color: #808080; font-size: 11px; padding-bottom: 15px; text-align: center;" align="center">
+               Tidak ingin menerima email kami? <a class="untracked" href="http://e.customeriomail.com/unsubscribe/NDgwOTk6FwFmUQJkAAJzABY11RoBXFSN21wVQBhZTiIjAW06NTEyODQzAA==" style="color: #9F9F9F; text-decoration: none;">Berhenti</a>
+            </td></tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="http://e.customeriomail.com/e/o/eyJlbWFpbF9pZCI6Ik5EZ3dPVGs2RndGbVVRSmtBQUp6QUJZMTFSb0JYRlNOMjF3VlFCaFpUaUlqQVcwNk5URXlPRFF6QUE9PSJ9">
+</body>
+</html>
+
+----==_mimepart_594e224f85a2c_248811b171854150125f--

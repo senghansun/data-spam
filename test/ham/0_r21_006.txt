@@ -1,0 +1,94 @@
+Delivered-To: pramantharanggih@gmail.com
+Received: by 10.182.158.166 with SMTP id wv6csp2479821obb;
+        Mon, 1 Aug 2016 00:22:32 -0700 (PDT)
+X-Received: by 10.36.160.9 with SMTP id o9mr57514263ite.40.1470036150249;
+        Mon, 01 Aug 2016 00:22:30 -0700 (PDT)
+Return-Path: <13102003@st3telkom.ac.id>
+Received: from mail-it0-x231.google.com (mail-it0-x231.google.com. [2607:f8b0:4001:c0b::231])
+        by mx.google.com with ESMTPS id a99si26439883ioj.83.2016.08.01.00.22.29
+        for <pramantharanggih@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 01 Aug 2016 00:22:29 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning 13102003@st3telkom.ac.id does not designate 2607:f8b0:4001:c0b::231 as permitted sender) client-ip=2607:f8b0:4001:c0b::231;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@st3telkom-ac-id.20150623.gappssmtp.com;
+       spf=softfail (google.com: domain of transitioning 13102003@st3telkom.ac.id does not designate 2607:f8b0:4001:c0b::231 as permitted sender) smtp.mailfrom=13102003@st3telkom.ac.id
+Received: by mail-it0-x231.google.com with SMTP id f6so158346157ith.0
+        for <pramantharanggih@gmail.com>; Mon, 01 Aug 2016 00:22:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=st3telkom-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :cc;
+        bh=w1ziVGSKLJg0AcTUthEWLD3/0fstVYw/h2g4/0qkAmY=;
+        b=C207OdUHRz5ny+hAso9nNoigAk2PclSfO5Ev5rqb6/pHTMXKZ9mW18QbTrlu2Gq3Bg
+         t3nbtltiCoB38Bec9ErOAcHIj1jQ1qsFmqaCfPge+C3Xj+VHp+UtVndLN9V4jOl3kZFM
+         nZOgtuBcI2r4mhqr2pkyykuUByx4kOQXN0QasO12JONaAG/YMOX6GUcXcdR9jxzT0nUt
+         LSTOC/k1JxAQ6KqmXrxRGCunI30WpykXLWuhplWO41lmdETfAZKApv01Gc02rUYN9gYX
+         YT5XybruSaSPfzQW9rohZGFutaoxkKe1bluJM6ecyWiNG4HXMwHCMUyxM2Hs08KA+xXA
+         vYRQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:cc;
+        bh=w1ziVGSKLJg0AcTUthEWLD3/0fstVYw/h2g4/0qkAmY=;
+        b=CQPNIGeIsydce35eSICa4oHpG6Zk3nL5i8LMUpxWwTRuFAgEZG3m8khM3628CtQiNq
+         aSQDhoMg6hfieuW/+/fEGG4AjqEXWfIYbTm3aMc7REC2di0D6TW//ie1QDCws/32977q
+         aksH2Li1kdVSAsPM1CBorzOBkCyiJv4o+aVWcEzPapWPbr4K3BAG1ElDK4rzI5NlndL0
+         1Jz2ipW06LrN9Jc5b9HLKo2y1o9CuD0gJqEpKteK/bTzpsQ3sKPPr0tDXkpOebIyfD6J
+         5q9+EHGIRDF1aVrM+PHtv3hPUPbj019Y+YKF6sdrmgsYTpfNZkx246xb0EZ5L8doJvPM
+         nJ7Q==
+X-Gm-Message-State: AEkoouv4P06YrsGtttahb2FtKaOmx2pIANmAvToXDFqyZ5HkgtynqDavEnYsM6/rS7JhYq45rVWm2zZOvl8Qf/6U
+X-Received: by 10.107.37.198 with SMTP id l189mr49785277iol.117.1470036147885; Mon, 01 Aug 2016 00:22:27 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.79.140.25 with HTTP; Mon, 1 Aug 2016 00:22:25 -0700 (PDT)
+In-Reply-To: <CAC0F_tt1MVEozk6_S0DwgYj_WH-RqbJOU8fvhG-qmJTYPi6cEA@mail.gmail.com>
+References: <CAC0F_tt1MVEozk6_S0DwgYj_WH-RqbJOU8fvhG-qmJTYPi6cEA@mail.gmail.com>
+From: ARDIAN PRASETYO NUGROHO <13102003@st3telkom.ac.id>
+Date: Mon, 1 Aug 2016 14:22:25 +0700
+Message-ID: <CAMsRD5xEHJcf3Sjvuzam3A4HoQO1WQMWNaRk-US-airTN-kLZQ@mail.gmail.com>
+Subject: Re: Ini yg terbaru designnya blm aku atur
+To: AHMAD AKBAR MARIUDDIN <14102004@st3telkom.ac.id>
+Cc: luthfanokti@gmail.com, Ranggih Pramantha <pramantharanggih@gmail.com>
+Content-Type: multipart/mixed; boundary=001a1140d93c6ab2630538fd7649
+
+--001a1140d93c6ab2630538fd7649
+Content-Type: multipart/alternative; boundary=001a1140d93c6ab25d0538fd7647
+
+--001a1140d93c6ab25d0538fd7647
+Content-Type: text/plain; charset=UTF-8
+
+catatan :
+1. Hompage = indexSlider.php
+2. Tampilan setelah login admin = blogrollDesign.php
+3. Tampilan setelah login super admin = index.php
+4. Tampilan Peasn = Contacts.php
+
+2016-08-01 12:27 GMT+07:00 AHMAD AKBAR MARIUDDIN <14102004@st3telkom.ac.id>:
+
+>
+>
+
+--001a1140d93c6ab25d0538fd7647
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">catatan :<br>1. Hompage =3D indexSlider.php<div>2. Tampila=
+n setelah login admin =3D blogrollDesign.php</div><div>3. Tampilan setelah =
+login super admin =3D index.php</div><div>4. Tampilan Peasn =3D Contacts.ph=
+p</div></div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">2016=
+-08-01 12:27 GMT+07:00 AHMAD AKBAR MARIUDDIN <span dir=3D"ltr">&lt;<a href=
+=3D"mailto:14102004@st3telkom.ac.id" target=3D"_blank">14102004@st3telkom.a=
+c.id</a>&gt;</span>:<br><blockquote class=3D"gmail_quote" style=3D"margin:0=
+ 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><br=
+></div>
+</blockquote></div><br></div>
+
+--001a1140d93c6ab25d0538fd7647--
+--001a1140d93c6ab2630538fd7649
+Content-Type: application/rar; name="bonno.rar"
+Content-Disposition: attachment; filename="bonno.rar"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_irbpe1yo3
+
+
+--001a1140d93c6ab2630538fd7649--

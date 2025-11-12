@@ -1,0 +1,105 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.5.70 with SMTP id 67csp3611410vsf;
+        Fri, 30 Jun 2017 16:07:39 -0700 (PDT)
+X-Received: by 10.98.10.153 with SMTP id 25mr11764339pfk.200.1498864059252;
+        Fri, 30 Jun 2017 16:07:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1498864059; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FDf+LAX/KdTsl/tN6O9IK7GbHoUhXghFe/RTbmUANAwmItzlMO0PR2xYk34B4q3TFF
+         sUOzoFnX0FSo7b71fnBfSl0rSHGLkCXmJ2YPbmwne8bnI5BKamQqf2b1qc2ik/skEEXm
+         INaAfOICJavmEEm4lH0+1MZ4npB/p6RYCWjWawFIM0242Pt7HsxV65nU7QUGGoQePTae
+         RVvP70iuTTvOMtGdLr46g5W7UOC1VBYqAyIca8S5IM7fSseDyDJ0H2yxd8iJ+L9LnsxW
+         j4D7K8tBREU8uUleYhXUS+fMWhbtIX72Sj2fj4o7Esop0eExuVzoa44oKOmfQYZXu5Um
+         V9bA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:reply-to:subject:to:from:date:user-agent
+         :dkim-signature:arc-authentication-results;
+        bh=ztDtrp3riUEJM4NVrf1FlHM/r/N0DvELMM23CDhtOTE=;
+        b=a+GvCM+8ZNZCbXcXRJcUQVYogfBRZOZTONCkSMIgnIIT4l4fnTl+IkCwr0s46cHgr3
+         +0LWBQWq3ilyBibpB9AtCznX1Y+cUG/AcSQyJFO/wfjBkNHqODMXNK4DvjVJgy1HNy7c
+         Y46JkbRuGhaZriTbUjunMcKhVpqQ1YtGoiPVFVlQvDBKJN3FLVzgrTtVSlADF78QskgH
+         aOZhJ+WBQ4L0VDNlxa2LNkom/HlEtuyf5EJeaX7SLsv98day0RR4h8q+v2rxz1T5/lVf
+         DnHWTv8PrPVfHKJBYX+jRkocx9kfHaJlxDBsw3Qa2Xu+Uyv+WXWmssBHe40zb9ccOaS4
+         lUoA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kaskusnetworks.com header.b=H4/KLUxB;
+       spf=pass (google.com: domain of noreply@kaskusnetworks.com designates 118.82.6.162 as permitted sender) smtp.mailfrom=noreply@kaskusnetworks.com
+Return-Path: <noreply@kaskusnetworks.com>
+Received: from ip-6-162.digi.net.id ([118.82.6.162])
+        by mx.google.com with ESMTP id l67si6672925pfj.233.2017.06.30.16.07.38
+        for <rikosatrianto@gmail.com>;
+        Fri, 30 Jun 2017 16:07:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@kaskusnetworks.com designates 118.82.6.162 as permitted sender) client-ip=118.82.6.162;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kaskusnetworks.com header.b=H4/KLUxB;
+       spf=pass (google.com: domain of noreply@kaskusnetworks.com designates 118.82.6.162 as permitted sender) smtp.mailfrom=noreply@kaskusnetworks.com
+Received: from www.kaskus.co.id (unknown [172.16.0.187]) by ip-6-162.digi.net.id (Postfix) with ESMTP id 57A7D200BDF for <rikosatrianto@gmail.com>; Sat,
+  1 Jul 2017 06:07:38 +0700 (WIB)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kaskusnetworks.com; s=default; t=1498864058; bh=ztDtrp3riUEJM4NVrf1FlHM/r/N0DvELMM23CDhtOTE=; h=Date:From:To:Subject:Reply-To; b=H4/KLUxBsx+vnzbtQWYelo8t4dU/GDACj1jR0TOny8tU3dVxyq4fqMXmxxyYRz5j9
+	 BaQJXiLGtsSX/jtYA0u4iRa9gPOuCfBaUTmbUbg02Fk/FCGap10yhi5qLwYyRrYQXh
+	 cKQwZS1XuU1T/NVvJ4JhJxF2Jsmnkkkyw3UT232I=
+User-Agent: CodeIgniter
+Date: Sat, 1 Jul 2017 06:07:38 +0700
+From: Kaskus <noreply@kaskusnetworks.com>
+To: rikosatrianto@gmail.com
+Subject: Konfirmasi Registrasi KASKUS
+Reply-To: "noreply@kaskusnetworks.com" <noreply@kaskusnetworks.com>
+X-Sender: noreply@kaskusnetworks.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: <5956d9ba5552a@kaskusnetworks.com>
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="B_ALT_5956d9ba5557d"
+
+--B_ALT_5956d9ba5557d
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Halo Gan neverslide, Makasih ya udah mau gabung di KASKUS. Untuk
+menyelesaikan registrasi, klik link
+berikut:https://www.kaskus.co.id/register/7794730/4b686ada3412f7d1ac2f8e5fb1d8bdf4d6cd72c0Bila
+URL diatas tidak berfungsi, silahkan gunakan web browser Agan untuk
+mengunjungi link berikut: https://www.kaskus.co.id/register/verifyKemudian,
+masukkan username dan kode validasi Agan berikut ini pada halaman yang
+muncul.Username: neverslide Kode Validasi:
+4b686ada3412f7d1ac2f8e5fb1d8bdf4d6cd72c0 Jika Agan masih menemui kesulitan,
+silahkan menghubungi KASKUS officer di cs.kaskus.co.idTerima Kasih, KASKUS
+Email ini di kirimkan kepada rikosatrianto@gmail.comJangan membalas email
+ini.Ingin mengatur notifikasi?Atur preferensi emailKASKUS
+&copy;1999-2017kaskus.co.id
+
+
+--B_ALT_5956d9ba5557d
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<table style=3D"color:#484848;margin:20px;font:13px/1.5 'Helvetica Neue', H=
+elvetica, Arial, 'Lucida Grande', sans-serif;border-collapse: collapse;bord=
+er-spacing: 0;border:none;"><thead><tr><th style=3D"position:relative;text-=
+align:left;border-bottom:solid 2px #f7941e;vertical-align:bottom;" colspan=
+=3D"2"><a href=3D"http://kaskus.co.id" style=3D"display:block;float:left;ma=
+rgin-bottom:10px;"><img src=3D"http://s.kaskus.id/img/skin/home-logo-n.png"=
+ width=3D"180" alt=3D"Kaskus Logo"></a><img src=3D"http://kkcdn-static.kask=
+us.co.id/images/smilies/cekpm.gif" alt=3D"" style=3D"float:right;display:bl=
+ock;margin-top:20px;"></th></tr></thead><tbody><tr><td style=3D"padding:10p=
+x 5%" colspan=3D"2"><br>Halo Gan neverslide, <br><br>Makasih ya udah mau ga=
+bung di KASKUS. Untuk menyelesaikan registrasi, klik link berikut:<br><a hr=
+ef=3D"https://www.kaskus.co.id/register/7794730/4b686ada3412f7d1ac2f8e5fb1d=
+8bdf4d6cd72c0">https://www.kaskus.co.id/register/7794730/4b686ada3412f7d1ac=
+2f8e5fb1d8bdf4d6cd72c0</a><br><br>Bila URL diatas tidak berfungsi, silahkan=
+ gunakan web browser Agan untuk mengunjungi link berikut: <br><a href=3D"ht=
+tps://www.kaskus.co.id/register/verify">https://www.kaskus.co.id/register/v=
+erify</a><br><br>Kemudian, masukkan username dan kode validasi Agan berikut=
+ ini pada halaman yang muncul.<br>Username: neverslide <br>Kode Validasi: 4=
+b686ada3412f7d1ac2f8e5fb1d8bdf4d6cd72c0 <br><br>Jika Agan masih menemui kes=
+ulitan, silahkan menghubungi KASKUS officer di <a href=3D"http://cs.kaskus.=
+co.id" target=3D"_blank">cs.kaskus.co.id</a><br><br>Terima Kasih, <br>KASKU=
+S <br><br><br><br></td></tr></tbody><tfoot style=3D"color:#666;border-top:s=
+olid 2px #0072bc;"><tr><td style=3D"font-size:10px;padding-top:20px;width:5=
+0%;">Email ini di kirimkan kepada rikosatrianto@gmail.com<br>Jangan membala=
+s email ini.<br>Ingin mengatur notifikasi?<a href=3D"http://www.kaskus.co.i=
+d/user/option" target=3D"blank">Atur preferensi email</a><br><br><b>KASKUS =
+&copy;1999-2017</b><br><a href=3D"http://kaskus.co.id" style=3D"color:#1e69=
+de">kaskus.co.id</a></td></tr></tfoot></table>
+
+--B_ALT_5956d9ba5557d--

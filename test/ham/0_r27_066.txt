@@ -1,0 +1,162 @@
+Delivered-To: sylviestephanies@gmail.com
+Received: by 10.13.202.140 with SMTP id m134csp321972ywd;
+        Mon, 17 Oct 2016 01:30:11 -0700 (PDT)
+X-Received: by 10.129.166.140 with SMTP id d134mr22679022ywh.100.1476693011175;
+        Mon, 17 Oct 2016 01:30:11 -0700 (PDT)
+Return-Path: <marcel.bonar@umn.ac.id>
+Received: from mail-yw0-x229.google.com (mail-yw0-x229.google.com. [2607:f8b0:4002:c05::229])
+        by mx.google.com with ESMTPS id m5si4599845ywe.244.2016.10.17.01.30.10
+        for <sylviestephanies@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Oct 2016 01:30:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 2607:f8b0:4002:c05::229 is neither permitted nor denied by best guess record for domain of marcel.bonar@umn.ac.id) client-ip=2607:f8b0:4002:c05::229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@umn-ac-id.20150623.gappssmtp.com;
+       spf=neutral (google.com: 2607:f8b0:4002:c05::229 is neither permitted nor denied by best guess record for domain of marcel.bonar@umn.ac.id) smtp.mailfrom=marcel.bonar@umn.ac.id
+Received: by mail-yw0-x229.google.com with SMTP id t192so71660630ywf.0
+        for <sylviestephanies@gmail.com>; Mon, 17 Oct 2016 01:30:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=umn-ac-id.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=qsAPfdbbekR+g/3nvxkZzqxM0Xxr0eQG9oJ9h8/lxsY=;
+        b=Wim0SgPH75sRV3e/oHGSDX69PneFY2mVPec5nj6DIzvTNOO9Jq/hzUpupid1fwgVss
+         KCz6hxo48nOiTCj/SGwB4KTGqUC4yrLGHMDBbyJpWCxMh9yVzr+lwb3JA6Y9VZy3K3R7
+         stDBcIz06nrqH5JQFhW1lhyWFKIuWCFJBvkJAQePRe/JJAv855ci+ntn2vZmMJgAoe+r
+         eySR/1daf6QGBlgtHNtS3+Pyl8Ib3ENNw73IalAVIa2aZ545sWYok649FHK9uEE7+ayS
+         cYb/e9sVOciYBt0cg6dWWpofH0etTLaGiSX4xFcXYkYz3RM6dwL+CP9HJyp1TDvSJhly
+         43Nw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=qsAPfdbbekR+g/3nvxkZzqxM0Xxr0eQG9oJ9h8/lxsY=;
+        b=ZF2ABRc/T7HOgSlIX5GtR3XgTyMCEP/sTsHB5b4AogxkPX0BXETl+Kdx7veXzgObpK
+         DSZsQhMhCycJCuvaacicpBmM1l36bpylZiq56FuR1VtD5OIhkF9S1GMYBbpfiWuXPITf
+         fg4REWsGdojI5WeWr9ei8VkEezO9AZnwg4c/W185taUPhl3FiJFPcGGLP+3BfaC9SMhQ
+         sy3BSL6+yPYPSsXV6EO8wyFqEGHRcZ3H7/Mdc8QUsCOrPn5op10DadMGWl0sHiKFPz1y
+         znBdSMGDWACp6ECmUdpnwk5m5ND4Wra+XDwz+GICFKs5K+SuPgdx7wYbdzFPonvk4Q8z
+         WiMg==
+X-Gm-Message-State: AA6/9RnWS31QmSItUfPpmfNEanLwDDxYfYJ1gskCXHZ7YuuLP/eChAyNVaWTzaizeAIdKUhWYVH4mYIAkjZ2j5pD4ei4QnFBAFCDT6xwFaHnXbkFw0wu54dtDzG/+BXMyc7zkpsH0Bzc5z6Grwf3k7hHVA==
+X-Received: by 10.13.203.80 with SMTP id n77mr22426113ywd.220.1476693010804;
+ Mon, 17 Oct 2016 01:30:10 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.37.217.144 with HTTP; Mon, 17 Oct 2016 01:30:10 -0700 (PDT)
+From: Marcel Bonar Kristanda <marcel.bonar@umn.ac.id>
+Date: Mon, 17 Oct 2016 15:30:10 +0700
+Message-ID: <CAN13YP7S8Xhq4Sahiz7Xx-QMWwxKDeO0kkgiCN0T1CmJ1d7P9w@mail.gmail.com>
+Subject: Jadwal Bimbingan Magang
+To: andri wan <andriwan1@gmail.com>, 
+	"RICKY SURYA (13110110034)" <ricky.surya@student.umn.ac.id>, 
+	Christian Wijasa <christian.wijasa@gmail.com>, Vannia Ferdina <niaferdina@gmail.com>, 
+	vania.chandra@student.umn.ac.id, richard.firdaus@student.umn.ac.id, 
+	wirya.gustinus@student.umn.ac.id, 
+	Sylvie Stephanie <sylviestephanies@gmail.com>
+Content-Type: multipart/alternative; boundary=001a114829fc5a21c0053f0b62ce
+
+--001a114829fc5a21c0053f0b62ce
+Content-Type: text/plain; charset=UTF-8
+
+Dear Bimbingans,
+
+Selama masa Ujian Tengah Semester (UTS) Semester Ganjil 2016 / 2017, maka
+jadwal bimbingan akan dilakukan pada tanggal dan waktu berikut
+
+Minggu I UTS
+
+Selasa, 18 Oktober 2016, Antara Pk.09.00 - Pk.12.00
+Rabu, 19 Oktober 2016, Antara Pk.09.00 - Pk.12.00
+
+Minggu II UTS
+
+Senin, 24 Oktober 2016, Antara Pk.09.00 - Pk.12.00
+Selasa, 25 Oktober 2016, Antara Pk.13.00 - Pk.17.00
+
+Tempat bimbingan adalah di Lantai 6 Gedung A Fakultas ICT. Setelah Masa UTS
+selesai maka jadwal bimbingan akan kembali seperti semula, yaitu:
+
+Selasa, 13.00 - 15.00
+Kamis, 13.00 -15.00
+
+*Harap datang di waktu yang sudah ditentukan saja karena jadwal pekerjaan
+saya di UMN semester ini cukup padat.
+
+*Harap sudah membawa progress aplikasi dan mengirimkan skripsi dalam
+editable format (*.doc / *.docx) satu hari sebelumnya.
+
+*Tentukan target kapan kalian mau ikut gelombang sidang magang secara
+spesifik dan diniatkan.
+
+-- 
+
+*Universitas   Multimedia   Nusantara*
+*"Excellent Career Begins With Excellent Education"*
+Jl. Scientia Boulevard, Gading Serpong,
+Tangerang, Banten - 15811 Indonesia
+(t) +62-21.5422.0808; (f) +62-21.5422.0800;
+Facebook: Universitas Multimedia Nusantara
+Twitter: @umn_serpong
+Web: www.umn.ac.id
+
+--001a114829fc5a21c0053f0b62ce
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"font-size:12.8px">Dear Bimbingans,</span><d=
+iv style=3D"font-size:12.8px"><br></div><div style=3D"font-size:12.8px">Sel=
+ama masa Ujian Tengah Semester (UTS) Semester Ganjil 2016 / 2017, maka jadw=
+al bimbingan akan dilakukan pada tanggal dan waktu berikut</div><div style=
+=3D"font-size:12.8px"><br></div><div style=3D"font-size:12.8px"><div style=
+=3D"font-size:12.8px">Minggu I UTS</div><div style=3D"font-size:12.8px"><br=
+></div><div style=3D"font-size:12.8px">Selasa, 18 Oktober 2016, Antara Pk.0=
+9.00 - Pk.12.00</div><div style=3D"font-size:12.8px">Rabu, 19 Oktober 2016,=
+ Antara Pk.09.00 - Pk.12.00</div></div><div style=3D"font-size:12.8px"><br>=
+</div><div style=3D"font-size:12.8px"><div style=3D"font-size:12.8px">Mingg=
+u II UTS</div><div style=3D"font-size:12.8px"><br></div><div style=3D"font-=
+size:12.8px">Senin, 24 Oktober 2016, Antara Pk.09.00 - Pk.12.00</div><div s=
+tyle=3D"font-size:12.8px">Selasa, 25 Oktober 2016, Antara Pk.13.00 - Pk.17.=
+00</div><div style=3D"font-size:12.8px"><br></div><div style=3D"font-size:1=
+2.8px">Tempat bimbingan adalah di Lantai 6 Gedung A Fakultas ICT. Setelah M=
+asa UTS selesai maka jadwal bimbingan akan kembali seperti semula, yaitu:</=
+div><div style=3D"font-size:12.8px"><br></div><div style=3D"font-size:12.8p=
+x">Selasa, 13.00 - 15.00=C2=A0</div><div style=3D"font-size:12.8px">Kamis, =
+13.00 -15.00</div><div style=3D"font-size:12.8px"><br></div><div style=3D"f=
+ont-size:12.8px">*Harap datang di waktu yang sudah ditentukan saja karena j=
+adwal pekerjaan saya di UMN semester ini cukup padat.</div><div style=3D"fo=
+nt-size:12.8px"><br></div><div style=3D"font-size:12.8px">*Harap sudah memb=
+awa progress aplikasi dan mengirimkan skripsi dalam editable format (*.doc =
+/ *.docx) satu hari sebelumnya.</div><div style=3D"font-size:12.8px"><br></=
+div><div style=3D"font-size:12.8px">*Tentukan target kapan kalian mau ikut =
+gelombang sidang magang secara spesifik dan diniatkan.</div></div></div>
+
+<br>
+<div style=3D"font-size:1.3em;font-family:Arial,Helvetica,sans-serif"><b st=
+yle=3D"font-family:arial,sans-serif"><font color=3D"#0000ff" size=3D"4"><im=
+g src=3D"https://upload.wikimedia.org/wikipedia/id/a/a4/Logo_UMNColor_small=
+.jpg"><br>Universitas =C2=A0 Multimedia =C2=A0 Nusantara</font></b></div><d=
+iv style=3D"font-size:1.3em"><font face=3D"arial, sans-serif" color=3D"#000=
+0ff" size=3D"2"><span style=3D"background-color:rgb(255,255,255)"><b><i>&qu=
+ot;<font>Excellent Career Begins With Excellent Education</font>&quot;</i><=
+/b></span></font></div><div style=3D"font-size:1.3em"><span style=3D"font-s=
+ize:small;font-family:arial,sans-serif;background-color:rgb(255,255,255)">J=
+l. Scientia Boulevard, Gading Serpong,</span></div><font size=3D"2"><span s=
+tyle=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">Tan=
+gerang, Banten - 15811 Indonesia</span><br style=3D"font-family:arial,sans-=
+serif;background-color:rgb(255,255,255)"><span style=3D"font-family:arial,s=
+ans-serif;background-color:rgb(255,255,255)">(t)=C2=A0</span><a value=3D"+6=
+22154220808" style=3D"font-family:arial,sans-serif;color:rgb(17,85,204);bac=
+kground-color:rgb(255,255,255)">+62-21.5422.0808</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)">; (f)=C2=A0</span><=
+a value=3D"+622154220800" style=3D"font-family:arial,sans-serif;color:rgb(1=
+7,85,204);background-color:rgb(255,255,255)">+62-21.5422.0800</a><span styl=
+e=3D"font-family:arial,sans-serif;background-color:rgb(255,255,255)">;</spa=
+n><br style=3D"font-family:arial,sans-serif;background-color:rgb(255,255,25=
+5)"><span style=3D"font-family:arial,sans-serif;background-color:rgb(255,25=
+5,255)">Facebook: Universitas Multimedia Nusantara</span><br style=3D"font-=
+family:arial,sans-serif;background-color:rgb(255,255,255)"><span style=3D"f=
+ont-family:arial,sans-serif;background-color:rgb(255,255,255)">Twitter: @um=
+n_serpong</span><br style=3D"font-family:arial,sans-serif;background-color:=
+rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif;background-co=
+lor:rgb(255,255,255)">Web:=C2=A0</span><a href=3D"http://www.umn.ac.id/" st=
+yle=3D"font-family:arial,sans-serif;color:rgb(17,85,204);background-color:r=
+gb(255,255,255)" target=3D"_blank">www.umn.ac.id</a><span style=3D"font-fam=
+ily:arial,sans-serif;background-color:rgb(255,255,255)"></span></font>
+--001a114829fc5a21c0053f0b62ce--

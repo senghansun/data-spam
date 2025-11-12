@@ -1,0 +1,175 @@
+Delivered-To: rikosatrianto@gmail.com
+Received: by 10.103.5.70 with SMTP id 67csp594334vsf;
+        Thu, 20 Jul 2017 23:24:44 -0700 (PDT)
+X-Received: by 10.55.111.4 with SMTP id k4mr7751085qkc.287.1500618284248;
+        Thu, 20 Jul 2017 23:24:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1500618284; cv=none;
+        d=google.com; s=arc-20160816;
+        b=x69bxIuuvKm9OoU0mJOo+uN3EhJLRPiyHuAXVWi69p9NJqbXHtDmeR7YqHhACf0736
+         f70+GCqdrlvLQIQt0bCX1Y/dxD9ZfC2giMKhQzc3ElaYi6C3ePYwIK5QsF1+QEgXkm7G
+         4mvX2NziAu+a3xqahJLODR0OUITj4cPoMaM51DkTyg5dw0dKJadlMV1wFh2fASnEZE6f
+         wfqOPFuW7dSRkA9c8VNVSz+Zq4yg0DNlMxnGQafj4b2MO3YKs1HqYqr9FPvOCM4wZ6xC
+         1kTFPEQNHnhjtrpd7lrX1IckUq5HESQYe7CXAcGBeqAaey5mJOnMOAtSDZexvXXP429W
+         GTog==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:list-unsubscribe:message-id:subject
+         :reply-to:from:to:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=vEfsNbYwBYgV5IzkiLmJm8G/2LsUcMtVw6M0ngL0yoE=;
+        b=xee4NTEOg+73Q4+LhS3KD3lEd1b/O1ARWfV1mtHg4ISebZkVnM9uM06TZDTjFs7rAG
+         kkYhPSm0hVhEUP/4UQj+aEVY67e53WLcrjSPm0TWVzv9dR5q5+8qgH5UmEgbtSGf0sXK
+         hVqp3uTQblGoE9JxiZsAZQ99dEYW5rIXxmwkI41mrCPDjxhKmZabTfcP1w1onAdwKSoF
+         dGuIeI9PN+UcHYH2ZNrOxP2BVmsfT78I4zbnAK8IJ5BV/kact7HuNX01xKu3icFozTPf
+         D3kmCsewXsU0Lt8Bjwuoceu9qIJp4fOL/lK7t5elxJ4E/Dv9eXsFAThkFqDBQvOs22n9
+         aB1w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kredivo.com header.b=jaPy4hGy;
+       dkim=pass header.i=@amazonses.com header.b=DlR885e+;
+       spf=pass (google.com: domain of 0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com designates 54.240.9.109 as permitted sender) smtp.mailfrom=0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com
+Return-Path: <0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com>
+Received: from a9-109.smtp-out.amazonses.com (a9-109.smtp-out.amazonses.com. [54.240.9.109])
+        by mx.google.com with ESMTPS id v184si3184341qki.396.2017.07.20.23.24.44
+        for <rikosatrianto@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 20 Jul 2017 23:24:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com designates 54.240.9.109 as permitted sender) client-ip=54.240.9.109;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kredivo.com header.b=jaPy4hGy;
+       dkim=pass header.i=@amazonses.com header.b=DlR885e+;
+       spf=pass (google.com: domain of 0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com designates 54.240.9.109 as permitted sender) smtp.mailfrom=0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=jyueq3vo4muy34dmhasgwp4whqnfkxx2; d=kredivo.com; t=1500618283; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type; bh=Sx4W0zCtgxVKUbB9+hON53dn/x/W5wFs6V157dsUzZY=; b=jaPy4hGyUfUqF9guK5F7bQuzv6py7vNIJgAE+rrRhjNR0pZWk3E/XllnpcBM4w6v 2COcRdsFZ8diUpEa5FesnGbBg+VBmswk3iZ86m7Wn7ZMSlQ7zbQLIh59or8fjSKRbHG BZKQhNScl8pBgpzLWdx2urnv9vQOJnKl3FoP/sxs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1500618283; h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Feedback-ID; bh=Sx4W0zCtgxVKUbB9+hON53dn/x/W5wFs6V157dsUzZY=; b=DlR885e+SaA7AJN0cK4+Ndl6drePcN4FCYvOLyyz1NysRmLCv0t8r4Zyjao7Pxc4 Fiw+nE57AYptCAj3rr7P6OduftFKUIf/B3nD5C2BECNIuhsKZGC2Xty8IArFVpv/WXF lmCObZRDCnyklwkbiAOokOE++u+02JoPPSXZXXb8=
+Date: Fri, 21 Jul 2017 06:24:43 +0000
+To: Rico Satrianto <rikosatrianto@gmail.com>
+From: Kredivo <no-reply@kredivo.com>
+Reply-To: Kredivo <no-reply@kredivo.com>
+Subject: Ikuti Langkah-Langkah Mendaftar Kredivo
+Message-ID: <0100015d63d1da6e-57c05b6e-ef5c-47f0-aab7-7bfd9e512d7c-000000@email.amazonses.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <https://sendy.kredivo.com/unsubscribe/GZ0SvwfHYI0L38fYoPoaQWtQhdu892Z89lzxBmoeM3s8U/dROxrYkha24nP2udK5Tccw/hJAIMjqDfEHWX8924hkKqVlA>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-SES-Outgoing: 2017.07.21-54.240.9.109
+Feedback-ID: 1.us-east-1.qHk3UnHYxBesWmPG2r9DBv3ELVIch91SvNJu2j7tESo=:AmazonSES
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="#f0f0f0" style="margin:0; padding:0; font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;">
+<table cellpadding="0" cellspacing="0" class="main" style="min-width:320px;" width="100%"><!-- header -->
+	<tbody>
+		<tr>
+			<td align="center" style="padding-top:30px;padding-bottom:30px;" width="100%"><a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/gdgpOracLZrIeG4OKRGsNA/hJAIMjqDfEHWX8924hkKqVlA"><img alt="Logo" height="48" src="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/e4fa60b3-8c81-4eaf-888a-a7741cb19401.png" width="140" /></a></td>
+		</tr>
+		<!-- content -->
+		<tr>
+			<td bgcolor="#f0f0f0" style="padding:0 0 50px;">
+			<table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;" width="600">
+				<tbody>
+					<tr>
+						<td>
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td background="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/00db3fbc-f500-46f9-926e-c36304cbd237.jpg" style="padding:50px 30px 30px;border-radius:3px 3px 0 0;font-size:24px;color:#ffffff;text-align:center;">Ikuti Langkah-Langkah Mendaftar Kredivo</td>
+								</tr>
+								<tr>
+									<td bgcolor="#ffffff" style="padding:50px 30px 30px 30px;border:1px solid #e0e0e0;border-radius:0 0 3px 3px;">
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td colspan="2" style="font-size:16px;color:#404448;">Hai Rico Satrianto	,</td>
+											</tr>
+											<tr>
+												<td colspan="2" style="font-size:16px;color:#404448;line-height:150%;">
+												<p>Terima kasih telah men-download aplikasi Kredivo. Ayo daftar sekarang untuk menikmati semua kemudahannya. Untuk mengetahui cara mendaftar, kamu bisa tonton video tutorialnya disini:</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/ceyx07Wm2MZ9IE4z1QnvyQ/hJAIMjqDfEHWX8924hkKqVlA"><img alt="center" src="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/011a287e-a1ce-4302-8c9f-32773635d872.jpg" style="float: left; overflow: hidden; width: 600px; height: 300px;" /></a>
+
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td colspan="2" style="font-size:16px;color:#404448;line-height:150%;">
+												<ol>
+													<li>Download aplikasi Kredivo di Google Play lalu buka aplikasinya. Klik &ldquo;Apply for Kredivo&rdquo;</li>
+													<li>Klik di kolom &ldquo;Pay in 30&rdquo; untuk mendaftar metode bayar dalam 30 hari atau cicilan 3/6/12 bulan</li>
+													<li>Sambungkan akun Facebook untuk proses verifikasi</li>
+													<li>Setelah Facebook terverifikasi, akan muncul halaman form data diri yang harus diisi, lalu klik &ldquo;submit&rdquo;</li>
+													<li>Klik &ldquo;upload KTP&rdquo; lalu upload foto KTP asli. Pastikan foto yang kamu upload jelas dan bisa terbaca</li>
+													<li>Setelah foto KTP berhasil di-upload, akan muncul tulisan &ldquo;uploaded&rdquo; di samping kanan. Selanjutnya klik di kolom &ldquo;Address&rdquo;</li>
+													<li>Sambungkan minimal 1 akun digital yang kamu punya untuk verifikasi alamat lalu klik &ldquo;submit&rdquo;</li>
+													<li>Setelah itu akun kamu akan diverifikasi terlebih dahulu. Silahkan tunggu paling lambat dalam 1x24 jam</li>
+													<li>Setelah akun Kredivo di approved, kamu bisa cek limit kredit di Dashboard</li>
+													<li>Jika ingin menggunakan program cicilan 3/6/12, silahkan cek kolom di sebelah kanan limit kredit dan daftar dengan cara klik &ldquo;Apply Installment&rdquo;. Langkah untuk mendaftar cicilan 3/6/12 bulan sama dengan &ldquo;Pay in 30&rdquo;, kamu hanya perlu menambahkan detail akun internet bankingmu</li>
+													<li>Setelah akunmu di-approved, kamu langsung bisa belanja dari merchant favoritmu</li>
+												</ol>
+												<br />
+												Terima kasih.<br />
+												Tim Kredivo</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Footer -->
+		<tr>
+			<td bgcolor="#f0f0f0" width="100%">
+			<table cellpadding="0" cellspacing="0" style="margin-left:auto;margin-right:auto;" width="600">
+				<tbody>
+					<tr>
+						<td style="text-align:center;" width="100%"><a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/cf443nxFQo2y36vjj43B5A/hJAIMjqDfEHWX8924hkKqVlA" style="margin-right:65px;" target="_blank"><img alt="Facebook" height="36" src="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/6f5256da-3754-46f7-ae90-1bed3b590cab.png" width="36" /></a> <a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/fflGwp892tL7oWT2bs7sEhPA/hJAIMjqDfEHWX8924hkKqVlA" target="_blank"><img alt="Twitter" height="36" src="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/b10dac70-9a78-4648-b182-9d7db9fdee86.png" width="36" /></a> <a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/ASKzHEAPSbWrW6X8sPoRFg/hJAIMjqDfEHWX8924hkKqVlA" style="margin-left:65px;" target="_blank"><img alt="Instagram" height="36" src="https://gallery.mailchimp.com/8c03719dcae554966193f4d2b/images/2968f422-941f-4d86-9e03-23c69252dc8a.png" width="36" /></a></td>
+					</tr>
+					<tr>
+						<td height="30" width="100%">&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold;color:#808888;text-align:center;" width="100%">Aplikasi Kredivo tersedia di Google Play</td>
+					</tr>
+					<tr>
+						<td style="text-align:center;" width="100%"><a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/j9pZWWo0dvGUuigjBltitg/hJAIMjqDfEHWX8924hkKqVlA"><img alt="Get it on Google Play" height="64" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a></td>
+					</tr>
+					<tr>
+						<td style="border-top:1px solid #e0e0e0;" width="100%">&nbsp;</td>
+					</tr>
+					<tr>
+						<td height="10" width="100%">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="100%">
+						<table cellpadding="0" cellspacing="0" style="padding-left:30px;padding-right:30px;font-size:12px;color:#808888;text-align:center;" width="100%">
+							<tbody>
+								<tr>
+									<td>Copyright &copy; 2017 <a href="https://sendy.kredivo.com/l/CTH6sjsrdHPR8926bYo2zXtw/pd3S9sQx7dlGVsyIAe1pIw/hJAIMjqDfEHWX8924hkKqVlA">FinAccel</a>. All rights reserved.</td>
+								</tr>
+								<tr>
+									<td>Klik <a href="https://sendy.kredivo.com/unsubscribe/GZ0SvwfHYI0L38fYoPoaQWtQhdu892Z89lzxBmoeM3s8U/dROxrYkha24nP2udK5Tccw/hJAIMjqDfEHWX8924hkKqVlA" ><i>unsubscribe</i></a> untuk berhenti menerima email penawaran Kredivo</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="50" width="100%">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+<img src="https://sendy.kredivo.com/t/hJAIMjqDfEHWX8924hkKqVlA/CTH6sjsrdHPR8926bYo2zXtw" alt="" style="width:1px;height:1px;"/>
